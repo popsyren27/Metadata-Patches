@@ -1,0 +1,14 @@
+/Lotus/Powersuits/Cowgirl/PrimeSlingerPistols
+PickUpMesh=/Lotus/Characters/Tenno/Gunslinger/MesaPrimeGun_skel.fbx
+THIRD_PERSON_ATTACHMENT={
+MAIN_HAND={
+Type=PrimeSlingerPistolsAttachment
+}
+OFF_HAND={
+Type=PrimeSlingerPistolsAttachmentOffhand
+}
+}
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Primes/PrimeSlingerPistolsName
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/ExaltedWeapons/PrimeSlingerPistols.png
+VariantType=VT_PRIME

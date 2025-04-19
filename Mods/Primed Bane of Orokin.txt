@@ -1,0 +1,6 @@
+/Lotus/Upgrades/Mods/Rifle/Expert/PrimedWeaponFactionDamageCorrupted
+Rarity=LEGENDARY
+LocalizeTag=/Lotus/Language/Upgrades/PrimedRifleModFactionDamageCorrupted
+CodexSecret=1
+FusionLimit=QA_VERY_HIGH
+IncludeInBoosterPack=0

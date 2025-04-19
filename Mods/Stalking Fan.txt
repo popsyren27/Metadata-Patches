@@ -1,0 +1,14 @@
+/Lotus/Weapons/Tenno/Melee/MeleeTrees/ScytheCmbTwoMeleeTree
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/ScytheStanceB
+LocalizeDescTag=/Lotus/Language/Items/ScytheStanceBDesc
+Icon=/Lotus/Interface/Cards/Images/Stances/ScytheCombo2a.png
+ExcludeFromCodex=0
+ArtifactPolarity=AP_POWER
+IncludeInBoosterPack=1
+EquippedAttackSets={
+CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/ScytheBranchB2Defaults
+CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/ScytheEquippedBDefaults
+CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/ScytheBranchBDefaults
+}

@@ -1,0 +1,17 @@
+/Lotus/Weapons/Tenno/Melee/MeleeTrees/StalkerSwordMeleeTree
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/StalkerStanceName
+LocalizeDescTag=/Lotus/Language/Items/StalkerStanceDesc
+Icon=/Lotus/Interface/Cards/Images/Stances/StalkerSwordStance.png
+ExcludeFromCodex=0
+ArtifactPolarity=AP_ATTACK
+UnequippedAttackSets={
+CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/StalkerSwordQuickDefaults
+}
+EquippedAttackSets={
+CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/StalkerSwordBranchA
+CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/StalkerSwordDefaults
+CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/StalkerSwordBranchC
+CC_GROUND_BRANCH_C=/Lotus/Weapons/Tenno/Melee/AttackSets/StalkerSwordBranchB
+}

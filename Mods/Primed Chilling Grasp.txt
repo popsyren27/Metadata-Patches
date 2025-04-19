@@ -1,0 +1,7 @@
+/Lotus/Upgrades/Mods/Shotgun/Expert/WeaponFreezeDamageModExpert
+Rarity=LEGENDARY
+LocalizeTag=/Lotus/Language/Upgrades/ShotgunModFreezeDamageExpert
+CodexSecret=1
+TradeCapability=RO_ALWAYS
+FusionLimit=QA_VERY_HIGH
+IncludeInBoosterPack=0

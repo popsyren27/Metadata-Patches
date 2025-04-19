@@ -1,0 +1,6 @@
+/Lotus/Upgrades/Mods/Pistol/Expert/WeaponPistolFactionDamageCorruptedExpert
+Rarity=LEGENDARY
+LocalizeTag=/Lotus/Language/Upgrades/PistolModFactionDamageCorruptedExpert
+CodexSecret=1
+FusionLimit=QA_VERY_HIGH
+IncludeInBoosterPack=0

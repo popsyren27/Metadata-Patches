@@ -1,0 +1,10 @@
+/Lotus/Powersuits/Excalibur/DoomSwordPrime
+THIRD_PERSON_ATTACHMENT={
+MAIN_HAND={
+Type=DoomSwordPrimeAttachment
+}
+}
+LocalizeTag=/Lotus/Language/Suits/DoomSwordPrimeName
+LocalizeDescTag=/Lotus/Language/Suits/DoomSwordPrimeDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/ExaltedWeapons/ExaltedBladePrime.png
+VariantType=VT_PRIME

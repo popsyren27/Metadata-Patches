@@ -1,0 +1,4 @@
+/Lotus/Upgrades/Mods/PvPMods/Pistol/MoreAccuracyLessRecoilSlidingPistolMod
+LocalizeTag=/Lotus/Language/Mods/MoreAccuracyLessRecoilSlidingName
+Icon=/Lotus/Interface/Cards/Images/PvP/Warframe/MoreAccuracyLessRecoilSlidingMod.png
+ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol

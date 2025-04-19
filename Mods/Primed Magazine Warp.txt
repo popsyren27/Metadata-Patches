@@ -1,0 +1,5 @@
+/Lotus/Upgrades/Mods/Rifle/Expert/WeaponClipMaxModExpert
+Rarity=LEGENDARY
+LocalizeTag=/Lotus/Language/Items/PrimedRifleModClipMax
+FusionLimit=QA_VERY_HIGH
+IncludeInBoosterPack=0

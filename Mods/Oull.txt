@@ -1,0 +1,7 @@
+/Lotus/Upgrades/Mods/Immortal/ImmortalWildcardMod
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/ImmortalWildcardModName
+LocalizeDescTag=/Lotus/Language/Mods/ImmortalWildcardModDesc
+Icon=/Lotus/Interface/Icons/ImmortalRunes/ImmortalRuneWildcard.png
+ExcludeFromCodex=0
+ImmortalGroup=1

@@ -1,0 +1,7 @@
+/Lotus/Upgrades/Mods/Warframe/Expert/AvatarAbilityDurationModExpert
+Rarity=LEGENDARY
+LocalizeTag=/Lotus/Language/Mods/ExpertWarframeModAbilityDuration
+CodexSecret=1
+BaseDrain=QA_MEDIUM
+FusionLimit=QA_VERY_HIGH
+IncludeInBoosterPack=0

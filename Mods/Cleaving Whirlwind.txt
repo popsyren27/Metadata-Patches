@@ -1,0 +1,14 @@
+/Lotus/Weapons/Tenno/Melee/MeleeTrees/AxeCmbTwoMeleeTree
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/AxeStanceB
+LocalizeDescTag=/Lotus/Language/Items/AxeStanceBDesc
+Icon=/Lotus/Interface/Cards/Images/Stances/AxeCombo2a.png
+ExcludeFromCodex=0
+ArtifactPolarity=AP_DEFENSE
+IncludeInBoosterPack=1
+EquippedAttackSets={
+CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/AxeEquippedTwoAttacksDefault
+CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/AxeEquippedTwoAttacksBDefault
+CC_GROUND_BRANCH_C=/Lotus/Weapons/Tenno/Melee/AttackSets/AxeEquippedTwoAttacksCDefault
+}

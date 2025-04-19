@@ -1,0 +1,6 @@
+/Lotus/Upgrades/Mods/Pistol/Expert/PrimedWeaponCritDamageMod
+Rarity=LEGENDARY
+LocalizeTag=/Lotus/Language/Items/PrimedPistolModCritDamage
+CodexSecret=1
+FusionLimit=QA_VERY_HIGH
+IncludeInBoosterPack=0

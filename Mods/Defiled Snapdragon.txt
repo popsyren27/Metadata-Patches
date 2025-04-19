@@ -1,0 +1,13 @@
+/Lotus/Weapons/Tenno/Melee/MeleeTrees/SwordWhipCmbOneMeleeTree
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/MiosStanceAName
+LocalizeDescTag=/Lotus/Language/Items/MiosStanceADesc
+Icon=/Lotus/Interface/Cards/Images/Stances/MiosStanceA.png
+ExcludeFromCodex=0
+ArtifactPolarity=AP_ATTACK
+EquippedAttackSets={
+CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/SwordWhipBranchC
+CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/SwordWhipBranchA
+CC_GROUND_BRANCH_C=/Lotus/Weapons/Tenno/Melee/AttackSets/SwordWhipBranchB
+}

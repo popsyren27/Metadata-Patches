@@ -1,0 +1,7 @@
+/Lotus/Upgrades/Mods/Immortal/AntivirusEightMod
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/1999Coda/AntivirusEightModName
+LocalizeDescTag=/Lotus/Language/1999Coda/AntivirusEightModDesc
+Icon=/Lotus/Interface/Icons/Antivirus/VirusPolice.png
+ExcludeFromCodex=0
+ImmortalGroup=2

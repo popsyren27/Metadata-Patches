@@ -1,0 +1,8 @@
+/Lotus/Upgrades/Mods/Melee/Expert/WeaponFireRateModExpert
+Rarity=LEGENDARY
+LocalizeTag=/Lotus/Language/Items/PrimedMeleeModFireRate
+CodexSecret=1
+TradeCapability=RO_NEVER
+FusionLimit=QA_VERY_HIGH
+IncludeInBoosterPack=0
+IsUnsellable=1

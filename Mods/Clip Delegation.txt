@@ -1,0 +1,13 @@
+/Lotus/Upgrades/Mods/Nightwave/SobekNightwaveMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/SobekNightwaveMod
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Nightwave/SobekNightwaveMod.png
+ExcludeFromCodex=0
+ArtifactPolarity=AP_DEFENSE
+ItemCompatibility=/Lotus/Weapons/Tenno/Shotgun/DoubleBarrelShotgun
+SubUpgrades={
+SobekNightwaveOnHitSubMod,
+SobekNightwaveOnReloadSubMod
+}

@@ -1,0 +1,11 @@
+/Lotus/Powersuits/MonkeyKing/WukongPrimeStaff
+THIRD_PERSON_ATTACHMENT={
+MAIN_HAND={
+Type=WukongPrimeStaffAttachment
+}
+}
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Primes/WukongPrimeStaffName
+LocalizeDescTag=/Lotus/Language/Primes/WukongPrimeStaffDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/ExaltedWeapons/WukongPrimeStaff.png
+VariantType=VT_PRIME

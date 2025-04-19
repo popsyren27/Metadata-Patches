@@ -1,0 +1,6 @@
+/Lotus/Upgrades/Mods/Rifle/Expert/SniperReloadDamageModExpert
+Rarity=LEGENDARY
+LocalizeTag=/Lotus/Language/Mods/ExpertSniperModReloadDamage
+TradeCapability=RO_NEVER
+FusionLimit=QA_VERY_HIGH
+IncludeInBoosterPack=0

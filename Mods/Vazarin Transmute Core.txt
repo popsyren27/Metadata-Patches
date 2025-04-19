@@ -1,5 +1,0 @@
-/Lotus/Upgrades/Mods/TransmuteCores/DefenseTransmuteCore
-LocalizeTag=/Lotus/Language/Items/TransmutationCoreDefenseName
-LocalizeDescTag=/Lotus/Language/Items/TransmutationCoreDefenseDesc
-Icon=/Lotus/Interface/Cards/Images/TransmuteCoreVazarinMod.png
-ArtifactPolarity=AP_DEFENSE

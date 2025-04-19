@@ -1,5 +1,0 @@
-/Lotus/Upgrades/Mods/TransmuteCores/AttackTransmuteCore
-LocalizeTag=/Lotus/Language/Items/TransmutationCoreAttackName
-LocalizeDescTag=/Lotus/Language/Items/TransmutationCoreAttackDesc
-Icon=/Lotus/Interface/Cards/Images/TransmuteCoreMaduraiMod.png
-ArtifactPolarity=AP_ATTACK

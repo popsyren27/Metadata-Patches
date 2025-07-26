@@ -1,0 +1,75 @@
+/Lotus/Upgrades/CosmeticEnhancers/Defensive/InvulnerabilityOnDeathOnMercyKill
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/InvulnerabilityOnDeathOnMercyKillName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Arcanes/InvulnerabilityOnDeathOnMercyKillBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionDR.png
+ExcludeFromCodex=0
+ExtraUpgrades={
+    {
+        UpgradeType=GAMEPLAY_FREE_REVIVE_COUNT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerBonusRevive
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+FusionLimit=QA_HIGH
+Script={
+    Script=InvulnerabilityOnDeathOnCondition.lua
+    Function=ApplyUpgrade
+    _maxStacksBase=9
+    _maxStacksPerLevel=0
+    _consumeStacksBase=3
+    _consumeStackPerLevel=0
+    _invulnDurationBase=2
+    _invulnDurationPerLevel=2
+}
+UnappliedScript={
+    Script=InvulnerabilityOnDeathOnCondition.lua
+    Function=UnapplyUpgrade
+    _maxStacksBase=15
+    _maxStacksPerLevel=0
+    _consumeStacksBase=5
+    _consumeStackPerLevel=0
+    _invulnDurationBase=5
+    _invulnDurationPerLevel=1
+}
+SubUpgrades={
+    InvulnerabilityOnDeathOnMercyKillSub
+}
+EnhancementTag=/Lotus/Language/Arcanes/InvulnerabilityOnDeathOnMercyKillDesc
+EnhancementTagLocScript={
+    Script=InvulnerabilityOnDeathOnCondition.lua
+    Function=GetDescriptionInfo
+    _maxStacksBase=9
+    _maxStacksPerLevel=0
+    _consumeStacksBase=3
+    _consumeStackPerLevel=0
+    _invulnDurationBase=2
+    _invulnDurationPerLevel=2
+}
+UpgradeChance=1
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDRBuff.png
+BaseDistillPointValue=21

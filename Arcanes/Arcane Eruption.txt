@@ -1,0 +1,62 @@
+/Lotus/Upgrades/CosmeticEnhancers/Utility/RadialKnockdownOnEnergyPickup
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/RadialKnockdownOnEnergyPickupName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionAU.png
+ExcludeFromCodex=0
+ExtraUpgrades={
+    {
+        UpgradeType=GAMEPLAY_FREE_REVIVE_COUNT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerBonusRevive
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+Script={
+    Script=RadialKnockdown.lua
+    Function=ApplyUpgrade
+    _knockdownRadius={
+        5,
+        10,
+        15,
+        20,
+        25,
+        30
+    }
+    _burstEffect=/Lotus/Fx/Gameplay/Arcanes/RadialKnockdownOnEnergy
+}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionRadialKnockdown
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=0.17
+ConditionalUpgrades={
+    OnEnergyPickupCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnEnergyPickupCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionAU.png
+BaseDistillPointValue=21

@@ -1,0 +1,50 @@
+/Lotus/Upgrades/Mods/Sets/Augur/AugurSetMod
+Rarity=RARE
+LocalizeTag=/Lotus/Language/Items/EmptyArtifact
+CodexSecret=1
+Upgrades={
+    {
+        UpgradeType=AVATAR_ABILITY_ENERGY_TO_OVERSHIELD
+        OperationType=STACKING_MULTIPLY
+        Value=0.40000001
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WarframeAugurSetDesc
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
+            Function=GetDescriptionInfo
+            _displayAsPercent={
+                1
+            }
+            _absoluteValue={
+                0
+            }
+            _maxDecimals={
+                1,
+                0
+            }
+            _addPlusses={
+                0
+            }
+            _multiplyDown={
+                0
+            }
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+    }
+}
+FusionLimit=QA_VERY_HIGH
+ModSetIcon=/Lotus/Interface/Cards/Images/Sets/Augur/AugurHeader.png
+InstallSound=/Lotus/Sounds/UI/NewUI/Common/UICommonAccent
+InstallEffect=/Lotus/Fx/Interface/ModSets/AugurInstall
+NumUpgradesInSet=6

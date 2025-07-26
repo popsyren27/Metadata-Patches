@@ -1,0 +1,73 @@
+/Lotus/Types/Sentinels/SentinelPrecepts/VoidBond/EximusHunter
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/VoidBondEximusHunterMod
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Pets/SentinelEximusHunter.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/VoidBondEximusHunterModDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Sentinels/SentinelAbilities/EximusHunter.lua
+    Function=GetDescription
+    _reducedIncapacitationTimePerRank=3
+    _bonusDamagePerRank=0.2
+    _damageDuration=30
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_MEDIUM
+SubUpgrades={
+EximusHunterKillSubmod
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/EximusHunter.png
+Ability={
+StatusDescTag=/Lotus/Language/Buffs/EximusHunterBuffDesc
+ExcludeFromCodex=0
+Script={
+Script=/Lotus/Types/Sentinels/SentinelAbilities/EximusHunter.lua
+Function=ActivateAbility
+_reducedIncapacitationTimePerRank=3
+_bonusDamagePerRank=0.2
+_damageDuration=30
+}
+SecondaryScripts={
+{
+tag=ApplyEximusHunter
+executionMode=EM_HOST
+inheritPrimary=0
+functionName=""
+scriptInstance={
+Script=/Lotus/Types/Sentinels/SentinelAbilities/EximusHunter.lua
+Function=ApplyEximusHunter
+_reducedIncapacitationTimePerRank=3
+_bonusDamagePerRank=0.2
+_damageDuration=30
+}
+}
+}
+EnergyRequiredToActivate=0
+ActivationXP=0
+IsPassive=1
+IsBlockable=0
+Blocking=0
+}

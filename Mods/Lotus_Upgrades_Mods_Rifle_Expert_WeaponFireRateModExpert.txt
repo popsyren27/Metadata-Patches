@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Rifle/Expert/WeaponFireRateModExpert
+patch not applied (yet)

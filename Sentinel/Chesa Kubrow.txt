@@ -1,0 +1,62 @@
+/Lotus/Types/Game/KubrowPet/RetrieverKubrowPetPowerSuit
+MarketMode=MM_HIDDEN
+AdditionalItems={
+    /Lotus/Types/Friendly/Pets/BeastWeapons/ChesaPetWeapon
+}
+LocalizeTag=/Lotus/Language/Items/RetrieverKubrowName
+LocalizeDescTag=/Lotus/Language/Items/RetrieverKubrowDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Companions/Pets/Kubrow/Breed/KubrowBreedChesa.png
+RectangleIcon=0
+Diorama=/Lotus/Levels/Episodes/KubrowRetriever.level
+ExcludeFromCodex=0
+ArtifactSlots={
+    AP_PRECEPT,
+    AP_DEFENSE,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_PRECEPT,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
+}
+DefaultSlottedUpgrades={
+    {
+        ItemType=/Lotus/Types/Friendly/Pets/KubrowPetPrecepts/KubrowLootPrecept
+        Slot=3
+        RandomUpgradeBuffTags={}
+        },
+        {
+            ItemType=/Lotus/Types/Friendly/Pets/KubrowPetPrecepts/KubrowDisarmPrecept
+            Slot=4
+            RandomUpgradeBuffTags={}
+            },
+            {
+                ItemType=/Lotus/Types/Sentinels/SentinelPrecepts/BeastUniversalVacuum
+                Slot=0
+                RandomUpgradeBuffTags={}
+            }
+        }
+        MaxHealthOverride=940
+        MaxShieldOverride=290
+        MiniMapIcon=/Lotus/Interface/Icons/Markers/Companions/KubrowChesaPortrait.png
+        MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Companions/LargePortraits/KubrowChesaLargePortrait.png
+        ExtraDependencies={
+            /Lotus/Types/Friendly/Pets/BeastWeapons/ChesaPetWeapon
+        }
+        SpecialSlotItem={
+            SPECIAL_B_SLOT={
+                ItemType=/Lotus/Types/Friendly/Pets/BeastWeapons/ChesaPetWeapon
+            }
+        }
+        DefaultTraits={
+            BaseColor=Colors/KubrowPetColorMundaneD
+            SecondaryColor=Colors/KubrowPetColorMundaneD
+            TertiaryColor=Colors/KubrowPetColorMundaneD
+            AccentColor=Colors/KubrowPetColorMundaneD
+            EyeColor=Colors/KubrowPetColorEyesA
+            FurPattern=Patterns/KubrowPetPatternE
+            Personality=RetrieverKubrowPetPowerSuit
+            BodyType=BodyTypes/KubrowPetRegularBodyType
+        }

@@ -1,0 +1,82 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/LongGunDamageOnHeadshot
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/LongGunDamageOnHeadshotName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/ArcaneRageBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionAL.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=WEAPON_DAMAGE_AMOUNT
+        OperationType=STACKING_MULTIPLY
+        Value=0.30000001
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=/Lotus/Weapons/Tenno/LotusLongGun
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponDamageModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ExtraUpgrades={
+    {
+        UpgradeType=GAMEPLAY_FREE_REVIVE_COUNT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerBonusRevive
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionWithDurationRifles
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=0.15000001
+UpgradeDuration=24
+DurationScalesWithRank=0
+ChanceScalesWithRank=0
+ConditionalUpgrades={
+    OnHeadshotCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnHeadshotCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionAL.png
+BaseDistillPointValue=28

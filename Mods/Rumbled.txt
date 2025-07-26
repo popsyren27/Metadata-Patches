@@ -1,0 +1,57 @@
+/Lotus/Powersuits/Brawler/BrawlerSummonPvPAugmentCard
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/BrawlerSummonAbilityAugment1PvPName
+Icon=/Lotus/Interface/Cards/Images/PvP/Augments/AtlasRumberAugment.png
+ExcludeFromCodex=0
+AvailableOnPvp=1
+Upgrades={
+{
+    UpgradeType=AVATAR_ABILITY_AUGMENT
+    OperationType=ADD
+    Value=1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=AUGMENT_PVP_ONE
+    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/BrawlerSummonAbility
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Suits/BrawlerSummonAbilityAugment1PvPDesc
+    LocKeyWordScript={
+    Script=/Lotus/Powersuits/PowersuitAbilities/BrawlerSummon.lua
+    Function=GetAugmentDescriptionInfo
+    _activateAnim=""
+    _agentType=""
+    _npcAgentType=""
+    _spawnAnims={}
+    _castEffect=""
+    _castBurstEffect=""
+    _spawnBurstEffect=""
+    _explodeOnDeathEffect=""
+    _markerType=""
+    _dieBank=""
+    _augmentSlamAnim=""
+    _augmentOneSlamEffect=""
+    _augmentPvpInputFilter=""
+    _augmentPvpSlamAnim=""
+    _augmentPvpAttach=""
+    _augmentPvpDeco=""
+    _augmentPvpSlamEffect=""
+    _rubbleType=""
+    _teleportInEffect=""
+    _teleportOutEffect=""
+    _primeMesh=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_POWER
+TipTags={
+OVERGUARD
+}

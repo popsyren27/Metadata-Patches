@@ -1,0 +1,57 @@
+/Lotus/Upgrades/Mods/Rifle/Event/Nightwave/NightwaveBattacorAugmentMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/NightwaveBattacorAugmentMod
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/SentientBarrageBuffDesc
+Icon=/Lotus/Interface/Cards/Images/Nightwave/NightwaveBattacorAugmentMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/NightwaveBattacorAugmentModDesc
+    LocKeyWordScript={
+    Script=/Lotus/Scripts/Mods/BattacorAltFire.lua
+    Function=GetLocValues
+    _critBonuses={
+    0.5,
+    1,
+    1.5,
+    2,
+    2.5,
+    3
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_ATTACK
+ItemCompatibility=/Lotus/Weapons/Corpus/LongGuns/CrpSentExperimentRifle/CrpSentExperimentRifle
+Script={
+Script=/Lotus/Scripts/Mods/BattacorAltFire.lua
+Function=ModifyAlternateFire
+_critBonuses={
+0.5,
+1,
+1.5,
+2,
+2.5,
+3
+}
+}
+UpgradeChance=1
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/IncreasedCritChance.png

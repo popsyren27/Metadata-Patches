@@ -1,0 +1,60 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryDamageOnHeatProc
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/SecondaryDamageOnHeatProc
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/CascadiaFlareBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionBY.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=WEAPON_DAMAGE_AMOUNT
+        OperationType=STACKING_MULTIPLY
+        Value=0.02
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=/Lotus/Weapons/Tenno/Pistol/LotusPistol
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponDamageModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.0099999998
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol
+IncompatibilityTags={}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDurationAndMaxBonus
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+UpgradeDuration=10
+DurationScalesWithRank=0
+StackMode=SM_GROUP
+MaxConditionalStacks=40
+ShowBonusForStacks=1
+ConditionalUpgrades={
+    OnHeatProcCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnHeatProcCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionBY.png
+HudBuffIconScaleWidth=1.45
+HudBuffIconScaleHeight=1.45
+UpgradeDifferentWeapon=1
+BaseDistillPointValue=22

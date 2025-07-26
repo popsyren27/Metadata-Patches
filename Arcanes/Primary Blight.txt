@@ -1,0 +1,84 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/PrimaryHeadshotCritMultOnHeadshot
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/PrimaryHeadshotCritMultOnHeadshot
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/PrimaryBlightBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionCS.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=WEAPON_CRIT_DAMAGE
+        OperationType=STACKING_MULTIPLY
+        Value=0.0060000001
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponCritDamage
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=9.9999997e-05
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+        },
+        {
+            UpgradeType=WEAPON_FIRE_ITERATIONS
+            OperationType=STACKING_MULTIPLY
+            Value=0.003
+            DamageType=DT_ANY
+            AutoType=1
+            ValidType=""
+            CheckTypeOnInstall=0
+            SymbolFilter=""
+            UpgradeObject=""
+            ValidPostures={}
+            ValidModifiers={}
+            InvalidModifiers={}
+            ValidProcTypes={}
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponMultishotModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+            DisplayAsMultiplier=0
+            DisplayAsPercent=1
+            ReverseValueSymbol=0
+            SmallerIsBetter=0
+            RoundTo=0.001
+            RoundingMode=RM_ROUND
+            AllowConditionalLocMerge=0
+        }
+    }
+    ApplyUpgradesByDefault=0
+    FusionLimit=QA_HIGH
+    ItemCompatibility=/Lotus/Weapons/Tenno/LotusLongGun
+    IncompatibilityTags={}
+    MultiBonusLoc=1
+    EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceTwoBonusesWithDurationAndStacks
+    EnhancementTagLocScript={
+        Script=""
+    }
+    UpgradeChance=1
+    UpgradeDuration=12
+    DurationScalesWithRank=0
+    StackMode=SM_GROUP
+    MaxConditionalStacks=40
+    ConditionalUpgrades={
+        OnToxinProcCondition
+    }
+    ConditionTag=/Lotus/Language/Upgrades/OnToxinProcCondition_Description
+    HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCSBuff.png
+    BaseDistillPointValue=24

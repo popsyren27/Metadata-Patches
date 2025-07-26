@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Warframe/Beginner/AvatarLootRadarModBeginner
+patch not applied (yet)

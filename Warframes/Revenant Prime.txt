@@ -1,0 +1,164 @@
+/Lotus/Powersuits/Revenant/RevenantPrime
+MarketMode=MM_HIDDEN
+PremiumPrice=325
+SellingPrice=10000
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Revenant/RevenantPrimeHelmet
+}
+LocalizeTag=/Lotus/Language/Primes/RevenantPrimeName
+LocalizeDescTag=/Lotus/Language/Primes/RevenantPrimeDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Primes/RevenantPrime.png
+Diorama=/Lotus/Levels/Episodes/WarframesRevenantPrime.level
+ExcludeFromCodex=0
+OwnerSetScript={
+    _burstEffect=/Lotus/Fx/PowersuitAbilities/Revenant/RevenantKnockdownBurst
+}
+ArtifactSlots={
+    AP_UNIVERSAL,
+    AP_DEFENSE,
+    AP_ATTACK,
+    AP_UNIVERSAL,
+    AP_TACTIC,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_TACTIC,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
+}
+DefaultCustomization={
+    Helmet={
+        ItemType=/Lotus/Upgrades/Skins/Revenant/RevenantPrimeHelmet
+    }
+    ArmLeft={
+        ItemType=/Lotus/Upgrades/Skins/Armor/WarframeDefaults/RevenantPrimeArmArmor
+    }
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0.029999999,-0.0099999998,-0.085000001}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,-0.043618999,0,0.99904799}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={-0.029999999,0.0099999998,0.085000001}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,-0.043618999,0,0.99904799}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Revenant/RevenantPrimeSkin
+    }
+    ArmRight={
+        ItemType=/Lotus/Upgrades/Skins/Armor/WarframeDefaults/RevenantPrimeArmArmor
+    }
+    FxSet={
+        ItemType=/Lotus/Upgrades/Skins/Revenant/RevenantEffectsSetDefault
+    }
+}
+VariantType=VT_PRIME
+MaxEnergy=175
+InitialEnergy=100
+MovementSpeedMultiplier=1.1
+MaxHealthOverride=270
+MaxShieldOverride=825
+IsPrime=1
+AttachedFX={
+    {
+        LocalPosition={0,-0.1,0}
+        LocalRotation={0,0,0,1}
+        BoneName=GAME_L1_WEAPON1
+        Type=/Lotus/Fx/PowersuitAbilities/Revenant/RevenantCastTrail
+        Chance=255
+        RelativeToBounds=0
+        Attach=1
+        DestroyWithOwner=1
+        DestroyParentOnDeath=0
+        FadeOutOnDestruction=0
+        Scale=1
+        },
+        {
+            LocalPosition={0,-0.1,0}
+            LocalRotation={0,0,0,1}
+            BoneName=GAME_R1_WEAPON1
+            Type=/Lotus/Fx/PowersuitAbilities/Revenant/RevenantCastTrail
+            Chance=255
+            RelativeToBounds=0
+            Attach=1
+            DestroyWithOwner=1
+            DestroyParentOnDeath=0
+            FadeOutOnDestruction=0
+            Scale=1
+            },
+            {
+                LocalPosition={0,0,0}
+                LocalRotation={0,0,0,1}
+                BoneName=""
+                Type=/Lotus/Characters/Tenno/Revenant/RevenantPrime/RevenantPrimeBodyExtrasDeco
+                Chance=255
+                RelativeToBounds=0
+                Attach=1
+                DestroyWithOwner=1
+                DestroyParentOnDeath=0
+                FadeOutOnDestruction=0
+                Scale=1
+                },
+                {
+                    LocalPosition={0,0,0}
+                    LocalRotation={0,0,0,1}
+                    BoneName=GAME_C1_SPINE5
+                    Type=/Lotus/Characters/Tenno/Revenant/RevenantPrime/Cloth/RevenantPrimeNeckFxClothSkeletalCloth
+                    Chance=255
+                    RelativeToBounds=0
+                    Attach=1
+                    DestroyWithOwner=1
+                    DestroyParentOnDeath=0
+                    FadeOutOnDestruction=0
+                    Scale=1
+                    },
+                    {
+                        LocalPosition={0,0,0}
+                        LocalRotation={0,0,0,1}
+                        BoneName=GAME_C1_HIP1
+                        Type=/Lotus/Characters/Tenno/Revenant/RevenantPrime/Cloth/RevenantPrimeSkirtClothSkeletalCloth
+                        Chance=255
+                        RelativeToBounds=0
+                        Attach=1
+                        DestroyWithOwner=1
+                        DestroyParentOnDeath=0
+                        FadeOutOnDestruction=0
+                        Scale=1
+                        },
+                        {
+                            LocalPosition={0,0,0}
+                            LocalRotation={0,0,0,1}
+                            BoneName=""
+                            Type=/Lotus/Characters/Tenno/Revenant/RevenantPrime/RevenantPrimeBodyFxDeco
+                            Chance=255
+                            RelativeToBounds=0
+                            Attach=1
+                            DestroyWithOwner=1
+                            DestroyParentOnDeath=0
+                            FadeOutOnDestruction=0
+                            Scale=1
+                        }
+                    }
+                    ApplyEnergyColor=1
+                    SimCollision=RevenantPowerSuitSimCollision
+                    MiniMapIcon=/Lotus/Interface/Icons/Markers/Powersuits/RevenantPrimePortrait.png
+                    MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Powersuits/LargePortraits/RevenantPrimeLargePortrait.png
+                    FightingGameAbilityIndex=2

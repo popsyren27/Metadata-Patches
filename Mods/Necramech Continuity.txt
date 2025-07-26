@@ -1,0 +1,36 @@
+/Lotus/Upgrades/Mods/Necromech/NecromechAbilityDurationMod
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Necromech/NecromechAbilityDurationMod
+Icon=/Lotus/Interface/Cards/Images/Necramech/NecramechAbilityDurationMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_ABILITY_DURATION
+    OperationType=STACKING_MULTIPLY
+    Value=0.050000001
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/AvatarAbilityDurationModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_MEDIUM
+ItemCompatibility=/Lotus/Powersuits/EntratiMech/BaseMechSuit

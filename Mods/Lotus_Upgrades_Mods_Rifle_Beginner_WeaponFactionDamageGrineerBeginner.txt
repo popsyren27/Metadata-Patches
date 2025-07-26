@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Rifle/Beginner/WeaponFactionDamageGrineerBeginner
+patch not applied (yet)

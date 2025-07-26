@@ -1,0 +1,40 @@
+/Lotus/Powersuits/Mag/ShieldRegenPvPAugmentCard
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/ShieldRegenAbilityAugment1PvPName
+Icon=/Lotus/Interface/Cards/Images/PvP/Augments/MagShieldPolarizePvPAugment.png
+ExcludeFromCodex=0
+AvailableOnPve=0
+AvailableOnPvp=1
+Upgrades={
+{
+    UpgradeType=AVATAR_ABILITY_AUGMENT
+    OperationType=ADD
+    Value=1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=AUGMENT_PVP_ONE
+    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/ShieldRegenAbility
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Suits/ShieldRegenAbilityAugment1PvPDesc
+    LocKeyWordScript={
+    Script=/Lotus/Powersuits/PowersuitAbilities/ShieldRegen.lua
+    Function=GetAugmentDescriptionInfo
+    _activateAnim=""
+    _protectAnim=""
+    _burstEffect=""
+    _ShieldProjector=""
+    _augmentOneBurst=""
+    _shrapnelType=""
+    _rangeDecoType=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_POWER

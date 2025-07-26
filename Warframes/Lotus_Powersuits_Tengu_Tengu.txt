@@ -1,0 +1,3 @@
+/Lotus/Powersuits/Tengu/Tengu
+MarketMode=MM_VISIBLE
+RecipeHelpText=/Lotus/Language/WarframeCrafting/ZephyerRecipeHelp

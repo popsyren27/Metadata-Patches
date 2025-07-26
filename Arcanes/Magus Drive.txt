@@ -1,0 +1,86 @@
+/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/HoverboardSpeedOnTransferenceIn
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/HoverboardSpeedOnTransferenceIn
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/MagusDriveBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/SolarisMagusDrive.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Arcanes/HoverboardSpeedOnTransferenceInDesc
+        LocKeyWordScript={
+            Script=HoverboardSpeed.lua
+            Function=GetDescription
+            _duration={
+                30,
+                30,
+                30,
+                30,
+                30,
+                30
+            }
+            _speed={
+                0.25,
+                0.5,
+                0.75,
+                1,
+                1.25,
+                1.5
+            }
+            _hoverboardType=""
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+Script={
+    Script=HoverboardSpeed.lua
+    Function=ApplyUpgrade
+    _duration={
+        30,
+        30,
+        30,
+        30,
+        30,
+        30
+    }
+    _speed={
+        0.25,
+        0.5,
+        0.75,
+        1,
+        1.25,
+        1.5
+    }
+    _hoverboardType=/Lotus/Types/Vehicles/Hoverboard/HoverboardSuit
+}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Events/OnTransferenceInCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnTransferenceInCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/SolarisMagusDrive.png
+TransferenceSupport=TS_PREVIOUS_AVATAR
+BaseDistillPointValue=12

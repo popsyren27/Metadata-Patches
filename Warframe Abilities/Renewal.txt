@@ -1,0 +1,53 @@
+/Lotus/Powersuits/PowersuitAbilities/RegenerationAbility
+LocalizeTag=/Lotus/Language/Suits/RegenerationAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/RegenerationAbilityDesc
+StatusDescTag=/Lotus/Language/Buffs/HealthRegenerationBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/PaladinRenewal.png
+UniquePowerIdentifier=OBERON_RENEWAL
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=Regeneration.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Paladin/Regenerate_anim.fbx
+    _regenEffect=/Lotus/Fx/PowersuitAbilities/Paladin/RegenerationAttach
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Paladin/RegenerationBurst
+    _augmentOneActivatedEffect=/Lotus/Fx/PowersuitAbilities/Paladin/RegenerationAugmentOneBurst
+    _augmentOneActivatedSound=""
+    _armourBuffType=/Lotus/Powersuits/Paladin/RegenerationAbilityBuff
+    _armourBuffTimerType=/Lotus/Powersuits/Paladin/RegenerationAbilityTimerBuff
+    _rangeDeco=/Lotus/Fx/PowersuitAbilities/Paladin/RegenerationWaveDeco
+}
+SecondaryScripts={
+    {
+        tag=SetNumAffected
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=Regeneration.lua
+            Function=SetNumAffected
+            _activateAnim=""
+            _regenEffect=""
+            _castEffect=""
+            _augmentOneActivatedEffect=""
+            _augmentOneActivatedSound=""
+            _armourBuffType=""
+            _armourBuffTimerType=""
+            _rangeDeco=""
+        }
+    }
+}
+NpcCooldownDuration=40
+EnergyConsumptionOverTime=2
+AllowToggle=1
+ActivationXP=75
+CastSound=/Lotus/Sounds/Warframes/Paladin/PaladinCast
+VideoTexture=/Lotus/Interface/AbilityVideos/OberonPower3_s.bk2
+ForceFeedbackEffectEvents={
+    {
+        EventName=OberonImpactFeedback
+        ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerImpact
+    }
+}

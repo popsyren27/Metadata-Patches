@@ -1,0 +1,60 @@
+/Lotus/Types/Friendly/Pets/KubrowPetPrecepts/KubrowShieldPrecept
+Rarity=RARE
+MarketMode=MM_HIDDEN
+RegularPrice=5000
+PremiumPrice=2
+LocalizeTag=/Lotus/Language/Items/KubrowShieldPreceptName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Kubrow/KubrowShield.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Items/KubrowShieldPreceptDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowShieldRechargeAbility.lua
+    Function=GetDescriptionInfo
+    _boostWhenShieldPercentageAtOrBelow=0
+    _shieldBoostPctPerLevel=0.050000001
+    _shieldUseAnim=""
+    _shieldUpFX=""
+    _castFX=""
+    _maxShieldBoostDistance=10
+    _shieldRegenDuration=3
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+BaseDrain=QA_NONE
+ItemCompatibility=/Lotus/Types/Game/KubrowPet/GuardKubrowPetPowerSuit
+Ability={
+Script={
+Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowShieldRechargeAbility.lua
+Function=NpcEvaluateAbility
+_boostWhenShieldPercentageAtOrBelow=1
+_shieldBoostPctPerLevel=0.050000001
+_shieldUseAnim=/Lotus/Animations/Creatures/KubrowFeral/Bite_anim.fbx
+_shieldUpFX=/Lotus/Fx/Sentinels/Precepts/GuardianEffect
+_castFX=/Lotus/Fx/Sentinels/Precepts/GuardianCast
+_maxShieldBoostDistance=16
+_shieldRegenDuration=3
+}
+CooldownDuration=5
+EnergyRequiredToActivate=0
+ActivationXP=15
+}

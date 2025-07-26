@@ -1,0 +1,48 @@
+/Lotus/Upgrades/CosmeticEnhancers/OperatorAmps/VoidToHeatDamage
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/VoidToHeatDamage
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/SolarisVirtuosForge.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=WEAPON_DAMAGE_CONVERSION
+        OperationType=ADD
+        Value=0.23999999
+        DamageType=DT_RADIANT
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=DT_FIRE
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Arcanes/VoidToHeatDamageDesc
+        LocKeyWordScript={
+            Script=DamageConversion.lua
+            Function=GetDescription
+            _value={
+                0.23999999,
+                0.47999999,
+                0.72000003,
+                0.98000002
+            }
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+ConditionTag=/Lotus/Language/Upgrades/OnHitCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/SolarisVirtuosForge.png
+BaseDistillPointValue=18

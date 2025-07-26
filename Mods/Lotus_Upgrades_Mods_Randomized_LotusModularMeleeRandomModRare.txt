@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Randomized/LotusModularMeleeRandomModRare
+patch not applied (yet)

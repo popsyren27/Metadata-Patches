@@ -1,0 +1,140 @@
+/Lotus/Types/Sentinels/SentinelPowersuits/MeleePetPowerSuit
+MarketMode=MM_VISIBLE
+PremiumPrice=75
+SellingPrice=5000
+ProductCategory=Sentinels
+LocalizeTag=/Lotus/Language/Items/MeleePetName
+LocalizeDescTag=/Lotus/Language/Items/MeleePetDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Companions/Sentinels/Types/Helios.png
+ExcludeFromCodex=0
+ArtifactSlots={
+    AP_PRECEPT,
+    AP_UNIVERSAL,
+    AP_DEFENSE,
+    AP_UNIVERSAL,
+    AP_PRECEPT,
+    AP_PRECEPT,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_PRECEPT
+}
+DefaultCustomization={
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=GAME_C1_MIDBOOM
+                PosOffset={0.18000001,0.13,0}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.5,-0.5,-0.5,0.5}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=GAME_C1_MIDBOOM
+                PosOffset={-0.18000001,0.13,0}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={-0.5,-0.5,0.5,0.5}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Sentinels/Skins/Defaults/DefaultHeliosSkin
+    }
+}
+DefaultSlottedUpgrades={
+    {
+        ItemType=/Lotus/Types/Sentinels/SentinelPrecepts/ThrowGlaivePrecept
+        Slot=9
+        RandomUpgradeBuffTags={}
+        },
+        {
+            ItemType=/Lotus/Types/Sentinels/SentinelPrecepts/CodexScannerPrecept
+            Slot=-1
+            RandomUpgradeBuffTags={}
+            },
+            {
+                ItemType=/Lotus/Types/Sentinels/SentinelPrecepts/UniversalVacuum
+                Slot=5
+                RandomUpgradeBuffTags={}
+            }
+        }
+        Mesh=/Lotus/Characters/Pets/CorpusMeleePet/CorpusMeleePet_skel.fbx
+        MaxHealthOverride=560
+        MaxShieldOverride=250
+        AttachedFX={
+            {
+                LocalPosition={0,0,0}
+                LocalRotation={0,0,0,1}
+                BoneName=GAME_C1_ROOT
+                Type=/Lotus/Types/Sentinels/SentinelWeapons/GlaivePartDecoMid
+                Chance=255
+                RelativeToBounds=0
+                Attach=1
+                DestroyWithOwner=1
+                DestroyParentOnDeath=0
+                FadeOutOnDestruction=0
+                Scale=1
+                },
+                {
+                    LocalPosition={0,0,0}
+                    LocalRotation={0,0,0,1}
+                    BoneName=GAME_C1_ROOT
+                    Type=/Lotus/Types/Sentinels/SentinelWeapons/GlaivePartDecoFront
+                    Chance=255
+                    RelativeToBounds=0
+                    Attach=1
+                    DestroyWithOwner=1
+                    DestroyParentOnDeath=0
+                    FadeOutOnDestruction=0
+                    Scale=1
+                    },
+                    {
+                        LocalPosition={0,0,0}
+                        LocalRotation={0,0,0,1}
+                        BoneName=GAME_C1_ROOT
+                        Type=/Lotus/Types/Sentinels/SentinelWeapons/GlaivePartDecoRear
+                        Chance=255
+                        RelativeToBounds=0
+                        Attach=1
+                        DestroyWithOwner=1
+                        DestroyParentOnDeath=0
+                        FadeOutOnDestruction=0
+                        Scale=1
+                        },
+                        {
+                            LocalPosition={0,0.5,0}
+                            LocalRotation={0,0,0,1}
+                            BoneName=""
+                            Type=/Lotus/Fx/Sentinels/HeliosAttach
+                            Chance=255
+                            RelativeToBounds=0
+                            Attach=1
+                            DestroyWithOwner=1
+                            DestroyParentOnDeath=0
+                            FadeOutOnDestruction=0
+                            Scale=1
+                        }
+                    }
+                    NamedSubTrees={
+                        {
+                            name=SentinelPreDeath
+                            tree=SentinelSubtrees/CorpusSentinelPreDeathTree.animtree
+                        }
+                    }
+                    IncompatibleWeapons={
+                        /Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetMeleeWeapon
+                    }
+                    MiniMapIcon=/Lotus/Interface/Icons/Markers/Companions/SentinelHeliosPortrait.png
+                    MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Companions/LargePortraits/SentinelHeliosLargePortrait.png
+                    IdleAnim=/Lotus/Animations/Pets/Corpus/Idle_anim.fbx
+                    UiName=/Lotus/Language/Items/MeleePetName
+                    DefaultWeapon=/Lotus/Types/Sentinels/SentinelWeapons/SentGlaiveWeapon

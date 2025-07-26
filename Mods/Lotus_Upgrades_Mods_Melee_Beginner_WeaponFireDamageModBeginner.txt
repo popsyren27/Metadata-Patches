@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Melee/Beginner/WeaponFireDamageModBeginner
+patch not applied (yet)

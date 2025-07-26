@@ -1,0 +1,171 @@
+/Lotus/Powersuits/Nezha/NezhaPrime
+MarketMode=MM_HIDDEN
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Nezha/NezhaPrimeHelmet
+}
+LocalizeTag=/Lotus/Language/Primes/NezhaPrimeName
+LocalizeDescTag=/Lotus/Language/Primes/NezhaPrimeDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Primes/NezhaPrime.png
+Diorama=/Lotus/Levels/Episodes/WarframesNezhaPrime.level
+ExcludeFromCodex=0
+ArtifactSlots={
+    AP_UNIVERSAL,
+    AP_ATTACK,
+    AP_UNIVERSAL,
+    AP_TACTIC,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_DEFENSE,
+    AP_UNIVERSAL,
+    AP_TACTIC,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
+}
+DefaultCustomization={
+    Helmet={
+        ItemType=/Lotus/Upgrades/Skins/Nezha/NezhaPrimeHelmet
+    }
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0.059999999,0,-0.050000001}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.064508997,-0.25391701,-0.072858997,0.962318}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={-0.059999999,0,0.050000001}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.064508997,-0.25391701,-0.072858997,0.962318}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Nezha/NezhaPrimeSkin
+    }
+}
+VariantType=VT_PRIME
+Mesh=/Lotus/Characters/Tenno/Nezha/NezhaPrimeBody_skel.fbx
+MovementSpeedMultiplier=1.2
+ArmourRatingOverride=265
+IsPrime=1
+AttachedFX={
+    {
+        LocalPosition={0,-0.11,0}
+        LocalRotation={0,0,0,1}
+        BoneName=GAME_R1_WEAPON1
+        Type=/Lotus/Fx/PowersuitAbilities/Nezha/NezhaCastTrail
+        Chance=255
+        RelativeToBounds=0
+        Attach=1
+        DestroyWithOwner=1
+        DestroyParentOnDeath=0
+        FadeOutOnDestruction=0
+        Scale=1
+        },
+        {
+            LocalPosition={0,0.11,0}
+            LocalRotation={0,0,0,1}
+            BoneName=GAME_L1_WEAPON1
+            Type=/Lotus/Fx/PowersuitAbilities/Nezha/NezhaCastTrail
+            Chance=255
+            RelativeToBounds=0
+            Attach=1
+            DestroyWithOwner=1
+            DestroyParentOnDeath=0
+            FadeOutOnDestruction=0
+            Scale=1
+            },
+            {
+                LocalPosition={0,0,0}
+                LocalRotation={0,0,0,1}
+                BoneName=GAME_C1_HOOP
+                Type=/Lotus/Characters/Tenno/Nezha/NezhaPrimeRingDeco
+                Chance=255
+                RelativeToBounds=0
+                Attach=1
+                DestroyWithOwner=1
+                DestroyParentOnDeath=0
+                FadeOutOnDestruction=0
+                Scale=1
+                },
+                {
+                    LocalPosition={0,0,0}
+                    LocalRotation={0,0,0,1}
+                    BoneName=GAME_C1_HIP1
+                    Type=/Lotus/Characters/Tenno/Nezha/Cloth/NezhaPrimeSkirtSkeletalCloth
+                    Chance=255
+                    RelativeToBounds=0
+                    Attach=1
+                    DestroyWithOwner=1
+                    DestroyParentOnDeath=0
+                    FadeOutOnDestruction=0
+                    Scale=1
+                    },
+                    {
+                        LocalPosition={-0.0099999998,-0.059999999,0.0099999998}
+                        LocalRotation={0.353553,0.61237198,-0.353553,0.61237198}
+                        BoneName=GAME_R1_LEG3
+                        Type=/Lotus/Characters/Tenno/Nezha/NezhaPrimeFootFlameDeco
+                        Chance=255
+                        RelativeToBounds=0
+                        Attach=1
+                        DestroyWithOwner=1
+                        DestroyParentOnDeath=0
+                        FadeOutOnDestruction=0
+                        Scale=1
+                        },
+                        {
+                            LocalPosition={-0.0099999998,-0.059999999,-0.0099999998}
+                            LocalRotation={0.353553,0.61237198,-0.353553,0.61237198}
+                            BoneName=GAME_L1_LEG3
+                            Type=/Lotus/Characters/Tenno/Nezha/NezhaPrimeFootFlameDeco
+                            Chance=255
+                            RelativeToBounds=0
+                            Attach=1
+                            DestroyWithOwner=1
+                            DestroyParentOnDeath=0
+                            FadeOutOnDestruction=0
+                            Scale=1
+                            },
+                            {
+                                LocalPosition={0,0,0}
+                                LocalRotation={0,0,0,1}
+                                BoneName=GAME_R1_LEG3
+                                Type=/Lotus/Characters/Tenno/Nezha/NezhaPrimeRShoeWheelDeco
+                                Chance=255
+                                RelativeToBounds=0
+                                Attach=1
+                                DestroyWithOwner=1
+                                DestroyParentOnDeath=0
+                                FadeOutOnDestruction=0
+                                Scale=1
+                                },
+                                {
+                                    LocalPosition={0,0,0}
+                                    LocalRotation={0,0,0,1}
+                                    BoneName=GAME_L1_LEG3
+                                    Type=/Lotus/Characters/Tenno/Nezha/NezhaPrimeLShoeWheelDeco
+                                    Chance=255
+                                    RelativeToBounds=0
+                                    Attach=1
+                                    DestroyWithOwner=1
+                                    DestroyParentOnDeath=0
+                                    FadeOutOnDestruction=0
+                                    Scale=1
+                                }
+                            }
+                            MiniMapIcon=/Lotus/Interface/Icons/Markers/Powersuits/NezhaPrimePortrait.png
+                            MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Powersuits/LargePortraits/NezhaPrimeLargePortrait.png

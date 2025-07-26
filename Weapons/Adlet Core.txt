@@ -1,0 +1,11 @@
+/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartBodyA
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Pets/ZanukaPetBodyA
+LocalizeDescTag=/Lotus/Language/Pets/ZanukaPetBodyADesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Companions/Zanukas/ZanukaPetBodyA.png
+ExcludeFromCodex=0
+Attachment=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetComponents/ZanukaPetBodyA
+UngildedMaterial=/Lotus/Characters/Guild/ZanukaCompanion/ZanukaCompanionBodyAUntint
+BaseHealth=350
+BaseShields=450
+BaseArmor=350

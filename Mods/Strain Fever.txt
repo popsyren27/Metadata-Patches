@@ -1,0 +1,107 @@
+/Lotus/Upgrades/Mods/Sets/Strain/HelminthStrainFeverMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/HelminthStrainFeverMod
+Icon=/Lotus/Interface/Cards/Images/Sets/Strain/HelminthStrainFeverMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/StrainFeverHelminthModDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowChargerStrainAbility.lua
+    Function=GetFeverLoc
+    _cystInterval=3
+    _evolveInterval=25
+    _sizeIncreasePct=0.050000001
+    _maggotPullRange=5
+    _maxCysts={
+    2,
+    4,
+    6,
+    8
+}
+_maggotDuration={
+3,
+6,
+9,
+12
+}
+_cystDeco=""
+_cystDecoPopped=""
+_cystBones={}
+_cystPositions={
+{0,0,0}
+}
+_cystRotations={
+{0,0,0}
+}
+_cystSpawnMaggotFx=""
+_feverMod=""
+_eruptionMod=""
+_consumeMod=""
+_infectionMod=""
+_feverDamage={
+0.1,
+0.2,
+0.30000001,
+0.40000001
+}
+_eruptionDamage={
+0.0099999998,
+0.02,
+0.029999999,
+0.039999999
+}
+_eruptionRange={
+2,
+4,
+6,
+8
+}
+_infectionDamage={
+0.050000001,
+0.1,
+0.15000001,
+0.2
+}
+_consumeHealth={
+0.0099999998,
+0.02,
+0.029999999,
+0.039999999
+}
+_consumeHealRate={
+0.5,
+1,
+1.5,
+2
+}
+_maggotPickupFx=""
+_maggotType=""
+_consumeMaggotType=""
+_deadMaggotLifespan=25
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Types/Friendly/Pets/BeastWeapons/HelminthPetWeapon
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/Companions/HelminthStrainFeverBuff.png
+ModSet=StrainSetMod

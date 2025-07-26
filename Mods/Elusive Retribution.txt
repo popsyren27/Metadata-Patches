@@ -1,0 +1,43 @@
+/Lotus/Powersuits/Pacifist/PacifistDodgeAugmentCard
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/PacifistDodgeAbilityAugment1Name
+Icon=/Lotus/Interface/Cards/Images/AbilityAugments/BaruukDodgeAugment.png
+RectangleIcon=0
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_ABILITY_AUGMENT
+    OperationType=ADD
+    Value=1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=AUGMENT_ONE
+    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/PacifistDodgeAbility
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Suits/PacifistDodgeAbilityAugment1Desc
+    LocKeyWordScript={
+    Script=/Lotus/Powersuits/PowersuitAbilities/PacifistDodge.lua
+    Function=GetAugmentDescriptionInfo
+    _activateAnim=""
+    _deactivateAnim=""
+    _dodgedEffect=""
+    _waistCloth=""
+    _angleDeco=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_POWER
+BaseDrain=QA_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=PacifistBaseSuit
+IsAbilityAugment=1

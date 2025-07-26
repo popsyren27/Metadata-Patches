@@ -1,0 +1,109 @@
+/Lotus/Powersuits/PowersuitAbilities/SentientBlastAbility
+LocalizeTag=/Lotus/Language/Suits/SentientBlastAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/SentientBlastAbilityDescription
+Icon=/Lotus/Interface/Icons/Abilities/CalibanTriLaser.png
+UniquePowerIdentifier=SENTIENT_BLAST
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE,
+    EFFECT_DEBUFF
+}
+Script={
+    Script=SentientBlast.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Caliban/LaserBlast_anim.fbx
+    _triggerType=/Lotus/Fx/PowersuitAbilities/Caliban/TriLaserStripRangeDeco
+    _npcActivateAnim=/Lotus/Animations/Tenno/Powers/Caliban/LaserBlastSentientTrooper_anim.fbx
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Caliban/TriLaserCast
+    _attachEffect=/Lotus/Fx/PowersuitAbilities/Caliban/TriLaserAttach
+    _beamDecoType=/Lotus/Fx/PowersuitAbilities/Caliban/TriLaserBeamDecoA
+    _beamDecoCoreType=/Lotus/Fx/PowersuitAbilities/Caliban/TriLaserBeamDecoCore
+    _rangeDecoType=/Lotus/Fx/PowersuitAbilities/Caliban/TriLaserStripRangeDeco
+    _endExplosion=/Lotus/Fx/PowersuitAbilities/Caliban/TriLaserExplode
+    _explosionOnEnemies=/Lotus/Fx/PowersuitAbilities/Caliban/CalibanLaserExplosionSpawner
+    _enemyExplosionSound=/Lotus/Sounds/Warframes/Caliban/CalibanBlastEnemyExplosion
+    _endPointEffect=/Lotus/Fx/PowersuitAbilities/Caliban/TriLaserEndPoint
+    _colorCorrection=/Lotus/Fx/ColorGradingData/ExplosionColorGrading
+}
+SecondaryScripts={
+    {
+        tag=ArmourStrip
+        executionMode=EM_HOST
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=SentientBlast.lua
+            Function=ArmourStrip
+            _activateAnim=""
+            _triggerType=""
+            _npcActivateAnim=""
+            _castEffect=""
+            _attachEffect=""
+            _beamDecoType=""
+            _beamDecoCoreType=""
+            _rangeDecoType=""
+            _endExplosion=""
+            _explosionOnEnemies=""
+            _enemyExplosionSound=""
+            _endPointEffect=""
+            _colorCorrection=""
+        }
+        },
+        {
+            tag=CreateTrigger
+            executionMode=EM_ALL
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=SentientBlast.lua
+                Function=CreateTrigger
+                _activateAnim=""
+                _triggerType=/Lotus/Powersuits/Sentient/BlastTrigger
+                _npcActivateAnim=""
+                _castEffect=""
+                _attachEffect=""
+                _beamDecoType=""
+                _beamDecoCoreType=""
+                _rangeDecoType=/Lotus/Fx/PowersuitAbilities/Caliban/TriLaserStripRangeDeco
+                _endExplosion=""
+                _explosionOnEnemies=""
+                _enemyExplosionSound=""
+                _endPointEffect=""
+                _colorCorrection=""
+            }
+            },
+            {
+                tag=ClientTimer
+                executionMode=EM_ALL
+                inheritPrimary=0
+                functionName=""
+                scriptInstance={
+                    Script=SentientBlast.lua
+                    Function=ClientTimer
+                    _activateAnim=""
+                    _triggerType=""
+                    _npcActivateAnim=""
+                    _castEffect=""
+                    _attachEffect=""
+                    _beamDecoType=""
+                    _beamDecoCoreType=""
+                    _rangeDecoType=""
+                    _endExplosion=""
+                    _explosionOnEnemies=""
+                    _enemyExplosionSound=""
+                    _endPointEffect=""
+                    _colorCorrection=""
+                }
+            }
+        }
+        EnergyRequiredToActivate=100
+        VideoTexture=/Lotus/Interface/AbilityVideos/CalibanPower4_s.bk2
+        SoundEvents={
+            {
+                EventName=SFXCalibanBlastCast
+                Sound=/Lotus/Sounds/Warframes/Caliban/CalibanBlastCast
+                Chance=1
+                Period=1
+                Context=PEC_ALL
+                CancelEventName=""
+            }
+        }

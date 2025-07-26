@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Melee/WeaponMeleeDamageOnHeavyKillMod
+patch not applied (yet)

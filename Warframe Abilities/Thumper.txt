@@ -1,0 +1,21 @@
+/Lotus/Powersuits/Archwing/ArchwingAbilities/ArtilleryBarrageAbility
+LocalizeTag=/Lotus/Language/Items/ArtilleryBarrageAbility
+LocalizeDescTag=/Lotus/Language/Items/ArtilleryBarrageAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/Archwing/ArchwingTwoArtilleryBarrage.png
+Script={
+    Script=ArtilleryBarrage.lua
+    Function=ActivateAbility
+    _projectileType=/Lotus/Powersuits/Archwing/DemolitionJetPack/Projectiles/ArtilleryBarrageProjectile
+    _missileMarker=/Lotus/Powersuits/Archwing/DemolitionJetPack/ArtilleryBarrageMarkerInfo
+    _bubbleType=/Lotus/Powersuits/Archwing/DemolitionJetPack/ArtilleryBarrageHelper
+    _bubbleFx=""
+    _explosionFx=""
+    _explosionWater=""
+    _projectileDeathEffect=""
+    _projectileDeathEffectWaterAdd=""
+}
+EnergyRequiredToActivate=75
+AllowToggle=1
+ActivationXP=75
+CastSound=/Lotus/Sounds/Weapons/Archwing/Powers/ArchwingArtilleryBarrage/ArchwingArtilleryBarrage3DShot
+VideoTexture=/Lotus/Interface/Cards/Images/ArchwingMods/Elytron/ArtilleryBarrage.png

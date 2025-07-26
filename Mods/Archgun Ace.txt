@@ -1,0 +1,102 @@
+/Lotus/Upgrades/Mods/Archwing/Rifle/ArchwingHeadshotKillAmmoEfficiencyMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/ArchwingHeadshotKillAmmoEfficiency
+StatusDescTag=/Lotus/Language/Buffs/ArchgunAceBuffDesc
+Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingRifle/ArchwingHeadshotKillAmmoEfficiencyMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=WEAPON_FIRE_RATE
+    OperationType=STACKING_MULTIPLY
+    Value=0.083329998
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/FireandChargeRate
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=WEAPON_CHARGE_RATE
+    OperationType=STACKING_MULTIPLY
+    Value=0.083329998
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=WEAPON_RELOAD_SPEED
+    OperationType=STACKING_MULTIPLY
+    Value=0.1666
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponReloadSpeedModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=1
+RoundingMode=RM_ROUND
+}
+}
+ApplyUpgradesByDefault=0
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/Archwing/Primary/ArchGun
+IncludeInBoosterPack=1
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionBonusDamageAfterLatch
+EnhancementTagLocScript={
+Script=""
+}
+UpgradeChance=0.25
+UpgradeDuration=1.5
+CanReproc=0
+StackMode=SM_GROUP
+ConditionalUpgrades={
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/OnArchwingHeadshotKillCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnHeadshotKillCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/MultiShotBuffIcon.png

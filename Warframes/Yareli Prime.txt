@@ -1,0 +1,194 @@
+/Lotus/Powersuits/Yareli/YareliPrime
+MarketMode=MM_HIDDEN
+PremiumPrice=325
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Yareli/YareliPrimeHelmet,
+    BoardPrimeSuit
+}
+LocalizeTag=/Lotus/Language/Primes/YareliPrimeSuitName
+LocalizeDescTag=/Lotus/Language/Primes/YareliPrimeSuitDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Primes/YareliPrime.png
+Diorama=/Lotus/Levels/Episodes/WarframesYareliPrime.level
+ExcludeFromCodex=0
+ArtifactSlots={
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_DEFENSE,
+    AP_UNIVERSAL,
+    AP_TACTIC,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_ATTACK,
+    AP_ATTACK,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
+}
+DefaultCustomization={
+    Helmet={
+        ItemType=/Lotus/Upgrades/Skins/Yareli/YareliPrimeHelmet
+    }
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={-0.0099999998,0,-0.039999999}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,0.087155998,0,0.99619502}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0.0099999998,0,0.039999999}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,0.087155998,0,0.99619502}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Yareli/YareliPrimeSkin
+    }
+}
+VariantType=VT_PRIME
+MaxEnergy=215
+InitialEnergy=75
+MovementSpeedMultiplier=1.1
+MaxHealthOverride=270
+MaxShieldOverride=550
+IsPrime=1
+AttachedFX={
+    {
+        LocalPosition={0,-0.039999999,0}
+        LocalRotation={0,0,0,1}
+        BoneName=GAME_L1_WEAPON1
+        Type=/Lotus/Fx/PowersuitAbilities/Yareli/YareliCastTrail
+        Chance=255
+        RelativeToBounds=0
+        Attach=1
+        DestroyWithOwner=1
+        DestroyParentOnDeath=0
+        FadeOutOnDestruction=0
+        Scale=1
+        },
+        {
+            LocalPosition={0,-0.039999999,0}
+            LocalRotation={0,0,0,1}
+            BoneName=GAME_R1_WEAPON1
+            Type=/Lotus/Fx/PowersuitAbilities/Yareli/YareliCastTrail
+            Chance=255
+            RelativeToBounds=0
+            Attach=1
+            DestroyWithOwner=1
+            DestroyParentOnDeath=0
+            FadeOutOnDestruction=0
+            Scale=1
+            },
+            {
+                LocalPosition={0,0,0}
+                LocalRotation={0,0,0,1}
+                BoneName=GAME_L1_ARM2
+                Type=/Lotus/Characters/Tenno/Yareli/YareliPrime/Cloth/YareliPrimeArmFinLClothSkeletalCloth
+                Chance=255
+                RelativeToBounds=0
+                Attach=1
+                DestroyWithOwner=1
+                DestroyParentOnDeath=0
+                FadeOutOnDestruction=0
+                Scale=1
+                },
+                {
+                    LocalPosition={0,0,0}
+                    LocalRotation={0,0,0,1}
+                    BoneName=GAME_R1_ARM2
+                    Type=/Lotus/Characters/Tenno/Yareli/YareliPrime/Cloth/YareliPrimeArmFinRClothSkeletalCloth
+                    Chance=255
+                    RelativeToBounds=0
+                    Attach=1
+                    DestroyWithOwner=1
+                    DestroyParentOnDeath=0
+                    FadeOutOnDestruction=0
+                    Scale=1
+                    },
+                    {
+                        LocalPosition={0,0,0}
+                        LocalRotation={0,0,0,1}
+                        BoneName=GAME_C1_SPINE5
+                        Type=/Lotus/Characters/Tenno/Yareli/YareliPrime/Cloth/YareliPrimeChestFinClothSkeletalCloth
+                        Chance=255
+                        RelativeToBounds=0
+                        Attach=1
+                        DestroyWithOwner=1
+                        DestroyParentOnDeath=0
+                        FadeOutOnDestruction=0
+                        Scale=1
+                        },
+                        {
+                            LocalPosition={0,0,0}
+                            LocalRotation={0,0,0,1}
+                            BoneName=GAME_L1_LEG4
+                            Type=/Lotus/Characters/Tenno/Yareli/YareliPrime/Cloth/YareliPrimeFeetFrillsLClothSkeletalCloth
+                            Chance=255
+                            RelativeToBounds=0
+                            Attach=1
+                            DestroyWithOwner=1
+                            DestroyParentOnDeath=0
+                            FadeOutOnDestruction=0
+                            Scale=1
+                            },
+                            {
+                                LocalPosition={0,0,0}
+                                LocalRotation={0,0,0,1}
+                                BoneName=GAME_R1_LEG4
+                                Type=/Lotus/Characters/Tenno/Yareli/YareliPrime/Cloth/YareliPrimeFeetFrillsRClothSkeletalCloth
+                                Chance=255
+                                RelativeToBounds=0
+                                Attach=1
+                                DestroyWithOwner=1
+                                DestroyParentOnDeath=0
+                                FadeOutOnDestruction=0
+                                Scale=1
+                                },
+                                {
+                                    LocalPosition={0,0,0}
+                                    LocalRotation={0,0,0,1}
+                                    BoneName=GAME_C1_SPINE2
+                                    Type=/Lotus/Characters/Tenno/Yareli/YareliPrime/Cloth/YareliPrimeSkirtClothSkeletalCloth
+                                    Chance=255
+                                    RelativeToBounds=0
+                                    Attach=1
+                                    DestroyWithOwner=1
+                                    DestroyParentOnDeath=0
+                                    FadeOutOnDestruction=0
+                                    Scale=1
+                                    },
+                                    {
+                                        LocalPosition={0,0,0}
+                                        LocalRotation={0,0,0,1}
+                                        BoneName=GAME_C1_SPINE2
+                                        Type=/Lotus/Characters/Tenno/Yareli/YareliPrime/Cloth/YareliPrimeSkirtFrontClothSkeletalCloth
+                                        Chance=255
+                                        RelativeToBounds=0
+                                        Attach=1
+                                        DestroyWithOwner=1
+                                        DestroyParentOnDeath=0
+                                        FadeOutOnDestruction=0
+                                        Scale=1
+                                    }
+                                }
+                                MiniMapIcon=/Lotus/Interface/Icons/Markers/Powersuits/YareliPrimePortrait.png
+                                MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Powersuits/LargePortraits/YareliPrimeLargePortrait.png
+                                SpecialSlotItem={
+                                    SPECIAL_A_SLOT={
+                                        ItemType=BoardPrimeSuit
+                                        AbilityIndex=1
+                                    }
+                                }

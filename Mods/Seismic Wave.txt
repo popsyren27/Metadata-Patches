@@ -1,0 +1,45 @@
+/Lotus/Upgrades/Mods/Melee/WeaponMeleeSlamDamageMod
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/MeleeModSlamDamage
+Icon=/Lotus/Interface/Cards/Images/Melee/WeaponMeleeSlamDamageMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=WEAPON_MELEE_SLAM_DAMAGE_BONUS
+    OperationType=STACKING_MULTIPLY
+    Value=0.5
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponMeleeSlamDmgBonusModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
+IncompatibilityTags={
+SENTINEL_WEAPON,
+HOUND_WEAPON,
+POWER_WEAPON_LITE
+}
+IncludeInBoosterPack=1

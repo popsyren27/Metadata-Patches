@@ -1,0 +1,42 @@
+/Lotus/Powersuits/PowersuitAbilities/IceShieldAbility
+LocalizeTag=/Lotus/Language/Suits/SnowGlobeAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/SnowGlobeAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/FrostSnowGlobe.png
+UniquePowerIdentifier=FROST_SNOW_GLOBE
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF,
+    EFFECT_DEBUFF
+}
+Script={
+    Script=IceShield.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Shield/Shield_anim.fbx
+    _ShieldTypes={
+        /Lotus/Powersuits/Frost/IceShieldDeco,
+        /Lotus/Powersuits/Frost/IceShieldDeco,
+        /Lotus/Powersuits/Frost/IceShieldDeco,
+        /Lotus/Powersuits/Frost/IceShieldDeco
+    }
+    _launchSound=""
+    _augmentOneDeco=""
+    _freezeProjPvP=/Lotus/Fx/PowersuitAbilities/Frost/IceGlobePvPSlow
+    _shieldCenterDeco=""
+    _iceShieldDestroy=""
+}
+NpcCooldownDuration=30
+EnergyRequiredToActivate=50
+ActivationXP=75
+CastSound=/Lotus/Sounds/Warframes/Frost/FrostCast
+VideoTexture=/Lotus/Interface/AbilityVideos/FrostPower3_s.bk2
+ForceFeedbackEffectEvents={
+    {
+        EventName=FrostImpactFeedback
+        ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerImpact
+    }
+}
+ResourceOverrides={
+    {
+        Tag=IceShieldCast
+        Resource=/Lotus/Fx/PowersuitAbilities/Frost/ShieldCast
+    }
+}

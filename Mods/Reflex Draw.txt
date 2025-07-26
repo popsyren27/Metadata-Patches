@@ -1,0 +1,45 @@
+/Lotus/Upgrades/Mods/PvPMods/Pistol/HolsterSpeedBonusMod
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/HolsterSpeedBonusModPistol
+LocalizeDescTag=/Lotus/Language/Mods/HolsterSpeedBonusModDesc
+StatusDescTag=/Lotus/Language/Buffs/HolsterSpeedBonusBuffDesc
+Icon=/Lotus/Interface/Cards/Images/PvP/Pistol/PvPWeaponSwapSpeedPistol.png
+ExcludeFromCodex=0
+AvailableOnPvp=1
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Mods/AvatarHolsterUpgradeDesc
+    LocKeyWordScript={
+    Script=/Lotus/Scripts/Mods/AvatarHolsterUpgrades.lua
+    Function=GetDescription
+}
+SmallerIsBetter=1
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_TACTIC
+BaseDrain=QA_MEDIUM
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol
+Script={
+Script=/Lotus/Scripts/Mods/AvatarHolsterUpgrades.lua
+Function=StartMod
+}
+IsUtility=1
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/IncreasedAccuracy.png

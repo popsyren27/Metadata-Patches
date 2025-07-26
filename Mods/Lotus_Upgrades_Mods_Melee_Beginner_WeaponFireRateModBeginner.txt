@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Melee/Beginner/WeaponFireRateModBeginner
+patch not applied (yet)

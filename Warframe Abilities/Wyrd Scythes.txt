@@ -1,0 +1,88 @@
+/Lotus/Powersuits/PowersuitAbilities/DagathVolleyAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/DagathVolleyAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/DagathVolleyAbilityDescription
+Icon=/Lotus/Interface/Icons/Abilities/DagathImpiety.png
+UniquePowerIdentifier=DAGATH_VOLLEY
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=DagathVolley.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Dagath/Impiety_anim.fbx
+    _sickleType=/Lotus/Fx/PowersuitAbilities/Dagath/DagathImpietySickleDeco
+    _dummyType=/Lotus/Fx/PowersuitAbilities/Dagath/DagathSickleDummyDeco
+    _animEventToWaitFor=AbilityCast
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Dagath/VolleyCast
+    _castEffectBurst=/Lotus/Fx/PowersuitAbilities/Dagath/VolleyCastBurst
+    _triggerType=/Lotus/Powersuits/Dagath/SickleElement
+    _spreadFxBurstType=/Lotus/Fx/PowersuitAbilities/Operator/Abilities/GhostWaveAttachFX
+    _endSound=""
+    _sickleDespawnFx=/Lotus/Fx/PowersuitAbilities/Dagath/DagathSickleEndFX
+    _spreadBeamEffect=""
+    _sickleProjectileType=/Lotus/Powersuits/Dagath/DagathImpietySickleProjectile
+    _projectileLaunchSound=/Lotus/Sounds/Warframes/Dagath/DagathImpietyStop
+    _preLaunchSound=/Lotus/Sounds/Warframes/Dagath/DagathImpietyRiser
+    _sickleWallFx=/Lotus/Fx/PowersuitAbilities/Dagath/SickleForwardCaster
+    _projectileHitEffect=""
+}
+SecondaryScripts={
+    {
+        tag=DoPassiveFx
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=/Lotus/Powersuits/Dagath/DagathPassive.lua
+            Function=DoPassiveFx
+            _horseIdleDecoType=""
+            _idleAttachedEffect=""
+            _passiveHealLoc=/Lotus/Language/Actions/HealthIncrease
+            _passiveEnergyLoc=/Lotus/Language/Actions/EnergyIncrease
+            _passiveBurstEffect=/Lotus/Fx/PowersuitAbilities/Dagath/PassivePickupBurst
+        }
+    }
+}
+AbilityEvents={
+    {
+        tag=OnPickUp
+        eventType=ET_ON_PICKUP
+        scriptInstance={
+            Script=/Lotus/Powersuits/Dagath/DagathPassive.lua
+            Function=OnPickUp
+            _horseIdleDecoType=""
+            _idleAttachedEffect=""
+            _passiveHealLoc=/Lotus/Language/Actions/HealthIncrease
+            _passiveEnergyLoc=/Lotus/Language/Actions/EnergyIncrease
+            _passiveBurstEffect=/Lotus/Fx/PowersuitAbilities/Dagath/PassivePickupBurst
+        }
+    }
+}
+CooldownDuration=1
+NpcCooldownDuration=3
+AllowReactivate=1
+AllowOnZipLines=1
+AllowDuringOverride=1
+ActivationXP=50
+HideMeleeWeapon=0
+VideoTexture=/Lotus/Interface/AbilityVideos/DagathPower1_s.bk2
+SoundEvents={
+    {
+        EventName=SFXDagathImpietyCast
+        Sound=/Lotus/Sounds/Warframes/Dagath/DagathImpietyCast
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=SFXDagathImpietyImpact
+            Sound=/Lotus/Sounds/Warframes/Dagath/DagathImpietyImpact
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+        }
+    }
+    HelminthOverrideDescTag=/Lotus/Language/Suits/DagathVolleyDescription_Helminth

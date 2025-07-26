@@ -1,6 +1,0 @@
-/Lotus/Upgrades/Mods/Rifle/Expert/PrimedWeaponFactionDamageInfested
-Rarity=LEGENDARY
-LocalizeTag=/Lotus/Language/Items/PrimedRifleModFactionDamageInfested
-CodexSecret=1
-FusionLimit=QA_VERY_HIGH
-IncludeInBoosterPack=0

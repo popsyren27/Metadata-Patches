@@ -1,0 +1,69 @@
+/Lotus/Upgrades/CosmeticEnhancers/Zariman/SecondaryOnStatusProcBonusDamage
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/SecondaryOnStatusProcBonusDamage
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionBT.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/ProcBonusDamage
+        LocKeyWordScript={
+            Script=SecondaryOnStatusProcBonusDamage.lua
+            Function=GetDescription
+            _damageAmounts={
+                250,
+                350,
+                450,
+                550,
+                650,
+                750
+            }
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol
+IncompatibilityTags={}
+Script={
+    Script=SecondaryOnStatusProcBonusDamage.lua
+    Function=ModApplied
+    _damageAmounts={
+        250,
+        350,
+        450,
+        550,
+        650,
+        750
+    }
+}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Offensive/OnStatusProcALLCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnProcCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionBT.png
+BaseDistillPointValue=22

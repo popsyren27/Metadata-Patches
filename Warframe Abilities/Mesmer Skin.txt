@@ -1,0 +1,71 @@
+/Lotus/Powersuits/PowersuitAbilities/RevenantSentientAbility
+LocalizeTag=/Lotus/Language/Suits/RevenantSentientAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/RevenantSentientAbilityDesc
+StatusDescTag=/Lotus/Language/Buffs/MesmerSkinBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/RevenantMesmerSkin.png
+UniquePowerIdentifier=REVENANT_SENTIENT
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=RevenantSentient.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Revenant/SentientPact_anim.fbx
+}
+SecondaryScripts={
+    {
+        tag=StunTarget
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=RevenantSentient.lua
+            Function=StunTarget
+            _activateAnim=""
+        }
+        },
+        {
+            tag=GiveCharge
+            executionMode=EM_ALL
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=RevenantSentient.lua
+                Function=GiveCharge
+                _activateAnim=""
+            }
+            },
+            {
+                tag=IncCharge
+                executionMode=EM_ALL
+                inheritPrimary=0
+                functionName=""
+                scriptInstance={
+                    Script=RevenantSentient.lua
+                    Function=IncCharge
+                    _activateAnim=""
+                }
+            }
+        }
+        AbilityEvents={
+            {
+                tag=OnReflect
+                eventType=ET_ON_DAMAGE_REFLECT
+                scriptInstance={
+                    Script=RevenantSentient.lua
+                    Function=OnReflect
+                    _activateAnim=""
+                }
+            }
+        }
+        EnergyRequiredToActivate=50
+        AllowReactivate=1
+        AllowDuringOverride=1
+        ActivationXP=50
+        VideoTexture=/Lotus/Interface/AbilityVideos/RevenantPower2_s.bk2
+        ForceFeedbackEffectEvents={
+            {
+                EventName=RevenantImpactFeedback
+                ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerImpact
+            }
+        }

@@ -1,0 +1,81 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/MaxEnergyForArmor
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/MaxEnergyForArmorName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/MaxEnergyForArmorBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionDF.png
+ExcludeFromCodex=0
+ExtraUpgrades={
+    {
+        UpgradeType=GAMEPLAY_FREE_REVIVE_COUNT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerBonusRevive
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+FusionLimit=QA_HIGH
+Script={
+    Script=/Lotus/Upgrades/Boons/Offensive/StatIncreasePerArmor.lua
+    Function=ApplyUpgrade
+    _armorAmountPerStatIncrease=1
+    _statUpgradeTypes={
+        AVATAR_POWER_MAX
+    }
+    _abilityStatModifier=0.050000001
+    _maxStatIncrease=1000
+    _refreshRateInSeconds=2
+    _displayDecimalLimit=0
+    _operationType=ADD
+}
+UnappliedScript={
+    Script=/Lotus/Upgrades/Boons/Offensive/StatIncreasePerArmor.lua
+    Function=RemoveUpgrade
+    _armorAmountPerStatIncrease=100
+    _statUpgradeTypes={
+        AVATAR_POWER_MAX
+    }
+    _abilityStatModifier=0.1
+    _maxStatIncrease=10
+    _refreshRateInSeconds=1
+    _displayDecimalLimit=0
+    _operationType=ADD
+}
+EnhancementTag=/Lotus/Language/Arcanes/MaxEnergyForArmorDesc
+EnhancementTagLocScript={
+    Script=/Lotus/Upgrades/Boons/Offensive/StatIncreasePerArmor.lua
+    Function=GetDescription
+    _armorAmountPerStatIncrease=1
+    _statUpgradeTypes={
+        AVATAR_ABILITY_STRENGTH
+    }
+    _abilityStatModifier=0.050000001
+    _maxStatIncrease=1000
+    _refreshRateInSeconds=1
+    _displayDecimalLimit=2
+    _operationType=ADD
+}
+UpgradeChance=1
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDFBuff.png
+BaseDistillPointValue=24

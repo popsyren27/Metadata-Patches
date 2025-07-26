@@ -1,0 +1,42 @@
+/Lotus/Upgrades/Mods/Hoverboard/HBEnergyInjectionMod
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Hoverboards/HoverboardEnergyInjectionMod
+Icon=/Lotus/Interface/Cards/Images/Hoverboard/HBEnergyInjectionMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Hoverboards/HoverboardEnergyInjectionModDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBEnergyInjection.lua
+    Function=GetDescriptionInfo
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_TACTIC
+BaseDrain=QA_MEDIUM
+FusionLimit=QA_VERY_HIGH
+ItemCompatibility=/Lotus/Types/Vehicles/Hoverboard/HoverboardSuit
+Script={
+Script=/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBEnergyInjection.lua
+Function=AddUpgrades
+}
+UnappliedScript={
+Script=/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBEnergyInjection.lua
+Function=RemoveUpgrades
+}

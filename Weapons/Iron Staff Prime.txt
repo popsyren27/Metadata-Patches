@@ -1,8 +1,8 @@
 /Lotus/Powersuits/MonkeyKing/WukongPrimeStaff
 THIRD_PERSON_ATTACHMENT={
-MAIN_HAND={
-Type=WukongPrimeStaffAttachment
-}
+    MAIN_HAND={
+        Type=WukongPrimeStaffAttachment
+    }
 }
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Primes/WukongPrimeStaffName

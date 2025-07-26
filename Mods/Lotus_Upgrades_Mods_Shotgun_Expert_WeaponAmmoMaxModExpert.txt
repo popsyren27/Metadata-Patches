@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Shotgun/Expert/WeaponAmmoMaxModExpert
+patch not applied (yet)

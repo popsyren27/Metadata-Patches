@@ -1,0 +1,68 @@
+/Lotus/Upgrades/Mods/Melee/Channel/ChannelCritsMod
+MarketMode=MM_VISIBLE
+LocalizeTag=/Lotus/Language/Items/ChannelCritsMod
+Icon=/Lotus/Interface/Cards/Images/MeleeChanneling/ChannelingCritChance.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=WEAPON_MELEE_COMBO_GAIN_EXTRA_CHANCE
+    OperationType=STACKING_MULTIPLY
+    Value=0.25
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/MeleeComboGainExtraChance
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+},
+{
+    UpgradeType=WEAPON_MELEE_COMBO_DURATION_BONUS
+    OperationType=STACKING_MULTIPLY
+    Value=-0.125
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/ComboDurationPercentModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_POWER
+BaseDrain=QA_MEDIUM
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
+IncompatibilityTags={
+SENTINEL_WEAPON,
+HOUND_WEAPON
+}
+IncludeInBoosterPack=1

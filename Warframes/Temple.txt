@@ -1,0 +1,159 @@
+/Lotus/Powersuits/Temple/Temple
+MarketMode=MM_VISIBLE
+PremiumPrice=370
+AdditionalItems={
+    ExaltedGuitar,
+    /Lotus/Upgrades/Skins/Temple/TempleHelmet
+}
+LocalizeTag=/Lotus/Language/Suits/TempleSuitName
+LocalizeDescTag=/Lotus/Language/Suits/TempleSuitDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Warframes/Temple.png
+ExcludeFromCodex=0
+OverrideDateAddedToManifest=1742396400
+RecipeHelpText=/Lotus/Language/Suits/TempleRecipeHelpText
+OwnerSetScript={
+    Script=TemplePassive.lua
+    Function=AddUpgrades
+    _abilityType=""
+    _idleAnim=""
+    _idleDecoAnim=""
+    _idleTime=2
+    _sweetSpotTickSound=/Lotus/Sounds/Warframes/Temple/Ticks/TempleMetronomeSweetSpotTick
+    _soloAbilityActivateAnim=/Lotus/Animations/Tenno/Powers/Glamrock/Solo_anim.fbx
+}
+OnRemovedScript={
+    Script=TemplePassive.lua
+    Function=RemoveUpgrades
+    _abilityType=""
+    _idleAnim=""
+    _idleDecoAnim=""
+    _idleTime=2
+    _sweetSpotTickSound=""
+    _soloAbilityActivateAnim=""
+}
+DefaultCustomization={
+    Helmet={
+        ItemType=/Lotus/Upgrades/Skins/Temple/TempleHelmet
+    }
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0.13,0,-0.090000004}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,-0.13052601,0,0.991445}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={-0.13,0,0.090000004}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,-0.13052601,0,0.991445}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Temple/TempleSkin
+    }
+}
+DefaultEnergyColor={255,57,0,255}
+DefaultEnergyColor1={255,5,0,255}
+Mesh=/Lotus/Characters/Tenno/Temple/TempleBody_skel.fbx
+NamedSubTrees={
+    {
+        name=Kneel
+        tree=/Lotus/Types/Friendly/Tenno/TempleKneelSubTree.animtree
+    }
+}
+SoundEvents={
+    {
+        EventName=StepL
+        Sound=/Lotus/Sounds/Warframes/Temple/Foley/TempleGenericFootstep
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=StepR
+            Sound=/Lotus/Sounds/Warframes/Temple/Foley/TempleGenericFootstep
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+            },
+            {
+                EventName=SFXWarframeGenericFoley
+                Sound=/Lotus/Sounds/Warframes/Temple/Foley/TempleGenericFoley
+                Chance=1
+                Period=1
+                Context=PEC_ALL
+                CancelEventName=""
+                },
+                {
+                    EventName=LandSoft
+                    Sound=/Lotus/Sounds/Warframes/Temple/Foley/TempleGenericLandSoft
+                    Chance=1
+                    Period=1
+                    Context=PEC_ALL
+                    CancelEventName=""
+                    },
+                    {
+                        EventName=LandHeavy
+                        Sound=/Lotus/Sounds/Warframes/Temple/Foley/TempleGenericLandHeavy
+                        Chance=1
+                        Period=1
+                        Context=PEC_ALL
+                        CancelEventName=""
+                        },
+                        {
+                            EventName=JumpStart
+                            Sound=/Lotus/Sounds/Characters/GenericFoley/GenericJump
+                            Chance=1
+                            Period=1
+                            Context=PEC_ALL
+                            CancelEventName=""
+                            },
+                            {
+                                EventName=JumpStart
+                                Sound=/Lotus/Sounds/Warframes/Temple/Foley/TempleGenericFoley
+                                Chance=1
+                                Period=1
+                                Context=PEC_ALL
+                                CancelEventName=""
+                            }
+                        }
+                        CustomHudMovie=/Lotus/Interface/PowerSuitCustomHuds/TempleCustomHud.swf
+                        ResourceOverrides={
+                            {
+                                Tag=StandToKneel
+                                Resource=/Lotus/Animations/Tenno/Menu/Idles/Glamrock/KneelSet/TempleStandToKneel_anim.fbx
+                                },
+                                {
+                                    Tag=KneelIdle
+                                    Resource=/Lotus/Animations/Tenno/Menu/Idles/Glamrock/KneelSet/TempleKneelIdle_anim.fbx
+                                    },
+                                    {
+                                        Tag=KneelToStand
+                                        Resource=/Lotus/Animations/Tenno/Menu/Idles/Glamrock/KneelSet/TempleKneelToStand_anim.fbx
+                                        },
+                                        {
+                                            Tag=KneelToStandTurn
+                                            Resource=/Lotus/Animations/Tenno/Menu/Idles/Glamrock/KneelSet/TempleKneelToStandTurn_anim.fbx
+                                        }
+                                    }
+                                    SpecialSlotItem={
+                                        SPECIAL_A_SLOT={
+                                            ItemType=ExaltedGuitar
+                                            AbilityIndex=3
+                                        }
+                                    }

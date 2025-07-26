@@ -1,0 +1,87 @@
+/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/HealOnVoidMode
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/HealOnVoidMode
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/SolarisMagusRepair.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Arcanes/HealOnVoidModeDesc
+        LocKeyWordScript={
+            Script=VoidHeal.lua
+            Function=GetDescription
+            _range={
+                30,
+                30,
+                30,
+                30,
+                30,
+                30
+            }
+            _healAmount={
+                0.050000001,
+                0.1,
+                0.15000001,
+                0.2,
+                0.22499999,
+                0.25
+            }
+            _healEffect=""
+            _UmbraType=""
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+Script={
+    Script=VoidHeal.lua
+    Function=VoidHeal
+    _range={
+        30,
+        30,
+        30,
+        30,
+        30,
+        30
+    }
+    _healAmount={
+        0.050000001,
+        0.1,
+        0.15000001,
+        0.2,
+        0.22499999,
+        0.25
+    }
+    _healEffect=/Lotus/Fx/HighlightGlow/HealProjectorQuickRepl
+    _UmbraType=/Lotus/Powersuits/Operator/UmbraAvatar
+}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Events/OnVoidModeCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnVoidModeCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/SolarisMagusRepair.png
+BaseDistillPointValue=18

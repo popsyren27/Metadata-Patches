@@ -1,0 +1,2 @@
+/Lotus/Weapons/CrewShip/ElectricTether/ElectricTetherInnateDamageRandomMod
+patch not applied (yet)

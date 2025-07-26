@@ -1,0 +1,84 @@
+/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/HealOnVoidDash
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/HealOnVoidDash
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/HealOnVoidDash.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/AvatarHealModDesc
+        LocKeyWordScript={
+            Script=DashHeal.lua
+            Function=GetDescription
+            _chance={
+                0.25,
+                0.5,
+                0.75,
+                1,
+                1,
+                1
+            }
+            _healAmount={
+                0.050000001,
+                0.1,
+                0.15000001,
+                0.2,
+                0.25,
+                0.30000001
+            }
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+Script={
+    Script=DashHeal.lua
+    Function=DashHeal
+    _chance={
+        0.25,
+        0.5,
+        0.75,
+        1,
+        1,
+        1
+    }
+    _healAmount={
+        0.050000001,
+        0.1,
+        0.15000001,
+        0.2,
+        0.25,
+        0.30000001
+    }
+}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+ChanceScalesWithRank=0
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Events/OnVoidDashCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnVoidDashCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/HealthRegen.png
+BaseDistillPointValue=18

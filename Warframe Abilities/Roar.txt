@@ -1,0 +1,57 @@
+/Lotus/Powersuits/PowersuitAbilities/RhinoRoarAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/RhinoRoarAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/RhinoRoarAbilityDesc
+StatusDescTag=/Lotus/Language/Buffs/DamageBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/RhinoRadialBlast.png
+UniquePowerIdentifier=RHINO_ROAR
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=RhinoDamageRoar.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Rhino/RhinoRoar_anim.fbx
+    _augmentOneBurst=/Lotus/Fx/PowersuitAbilities/Rhino/RoarAugmentOneBlast
+}
+NpcCooldownDuration=45
+EnergyRequiredToActivate=75
+AllowDuringOverride=1
+ActivationXP=75
+CastSound=/Lotus/Sounds/Warframes/Rhino/RhinoAbilityCast
+VideoTexture=/Lotus/Interface/AbilityVideos/RhinoPower3_s.bk2
+SoundEvents={
+    {
+        EventName=RhinoRoarPower2D
+        Sound=/Lotus/Sounds/Warframes/Rhino/RhinoRoarPower2D
+        Chance=1
+        Period=1
+        Context=PEC_LOCAL_ONLY
+        CancelEventName=""
+        },
+        {
+            EventName=RhinoRoarPower3D
+            Sound=/Lotus/Sounds/Warframes/Rhino/RhinoRoarPower3D
+            Chance=1
+            Period=1
+            Context=PEC_REMOTE_ONLY
+            CancelEventName=""
+        }
+    }
+    ForceFeedbackEffectEvents={
+        {
+            EventName=RhinoRoarFeedback
+            ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerCharge
+        }
+    }
+    HelminthOverrideDescTag=/Lotus/Language/Suits/RhinoRoarAbilityDesc_Helminth
+    ResourceOverrides={
+        {
+            Tag=RoarBurst
+            Resource=/Lotus/Fx/PowersuitAbilities/Rhino/RoarBurst
+            },
+            {
+                Tag=RoarBuffAttach
+                Resource=/Lotus/Fx/PowersuitAbilities/Rhino/RoarBuffAttach
+            }
+        }

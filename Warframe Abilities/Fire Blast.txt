@@ -1,0 +1,77 @@
+/Lotus/Powersuits/PowersuitAbilities/FireBlastAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/FireBlastAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/FireBlastAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/EmberFireBlast.png
+UniquePowerIdentifier=EMBER_FIRE_BLAST
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=FireBlastAbility.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Ember/FireBlast_anim.fbx
+    _sound=""
+    _fireBlastEntity=/Lotus/Powersuits/Ember/EmberFireBlastEntity
+    _pvpFireBlastEntity=/Lotus/Powersuits/Ember/EmberFireBlastPvPEntity
+}
+SecondaryScripts={
+    {
+        tag=PvPDamage
+        executionMode=EM_HOST
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=FireBlastAbility.lua
+            Function=PvpDealDamageHack
+            _activateAnim=""
+            _sound=""
+            _fireBlastEntity=""
+            _pvpFireBlastEntity=""
+        }
+        },
+        {
+            tag=DoAugmentPvpOne
+            executionMode=EM_ALL
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=FireBlastAbility.lua
+                Function=DoAugmentPvpOne
+                _activateAnim=""
+                _sound=""
+                _fireBlastEntity=""
+                _pvpFireBlastEntity=""
+            }
+        }
+    }
+    NpcCooldownDuration=40
+    ActivationXP=75
+    VideoTexture=/Lotus/Interface/AbilityVideos/EmberPower3_s.bk2
+    SoundEvents={
+        {
+            EventName=SFXFireBlast
+            Sound=/Lotus/Sounds/Warframes/Ember/EmberFireBlast3D
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+        }
+    }
+    ForceFeedbackEffectEvents={
+        {
+            EventName=EmberImpactFeedback
+            ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerImpact
+        }
+    }
+    HelminthOverrideDescTag=/Lotus/Language/Suits/FireBlastAbilityDesc_Helminth
+    ResourceOverrides={
+        {
+            Tag=FireblastCast
+            Resource=/Lotus/Fx/PowersuitAbilities/Ember/FireballCastSpawner
+            },
+            {
+                Tag=FireblastCastBurst
+                Resource=/Lotus/Fx/PowersuitAbilities/Ember/FireBlast
+            }
+        }

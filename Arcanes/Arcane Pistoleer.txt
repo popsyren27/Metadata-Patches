@@ -1,0 +1,87 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/AmmoEfficiencyOnPistolHeadshot
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/PistolHeadshotKillAmmoEfficiency
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/ArcanePistoleerBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionAmmoEfficiencyOnPistolHeadshot.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=WEAPON_AMMO_CONSUME_RATE
+        OperationType=STACKING_MULTIPLY
+        Value=-0.17
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Mods/ViperUnlimitedAmmo_desc
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=1
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ExtraUpgrades={
+    {
+        UpgradeType=GAMEPLAY_FREE_REVIVE_COUNT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerBonusRevive
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+IncompatibilityTags={
+    OPERATOR_SUIT,
+    TNJETTURBINEPISTOL
+}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionWithDuration
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=0.60000002
+UpgradeDuration=12
+DurationScalesWithRank=0
+ChanceScalesWithRank=0
+CanReproc=0
+ConditionalUpgrades={
+    /Lotus/Upgrades/Mods/PvPMods/Conditions/OnPistolHeadshotKillNoJetPistolCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnPistolHeadshotKillCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionAmmoEfficiencyOnPistolHeadshot.png
+BaseDistillPointValue=20

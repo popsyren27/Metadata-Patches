@@ -1,0 +1,54 @@
+/Lotus/Powersuits/PowersuitAbilities/WraithGloomAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/WraithGloomAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/WraithGloomAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/WraithGloom.png
+UniquePowerIdentifier=WRAITH_GLOOM
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF,
+    EFFECT_DEBUFF
+}
+Script={
+    Script=WraithGloom.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Wraithe/Gloom_anim.fbx
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Wraith/GloomCast
+    _castBurst=/Lotus/Fx/PowersuitAbilities/Wraith/GloomCastBurst
+    _rangeDeco=/Lotus/Fx/PowersuitAbilities/Wraith/GloomRangeDeco
+    _deactivateSound=/Lotus/Sounds/Warframes/Wraith/WraithGloomRelease
+    _enemyAttach=/Lotus/Fx/PowersuitAbilities/Wraith/GloomEnemyAttach
+    _friendlyAttach=/Lotus/Fx/PowersuitAbilities/Wraith/GloomFriendlyAttach
+    _abilityProbabilityScaling={
+        0.30000001,
+        0.1
+    }
+}
+NpcCooldownDuration=15
+EnergyRequiredToActivate=50
+AllowToggle=1
+ActivationXP=50
+VideoTexture=/Lotus/Interface/AbilityVideos/SevagothPower3_s.bk2
+SoundEvents={
+    {
+        EventName=SFXWraithGloomCharge
+        Sound=/Lotus/Sounds/Warframes/Wraith/WraithGloomCharge
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=SFXWraithGloomCast
+            Sound=/Lotus/Sounds/Warframes/Wraith/WraithGloomCast
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+        }
+    }
+    ForceFeedbackEffectEvents={
+        {
+            EventName=SFXWraithGloomCastForceFeedback
+            ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerImpact
+        }
+    }

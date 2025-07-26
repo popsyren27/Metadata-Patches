@@ -1,0 +1,31 @@
+/Lotus/Powersuits/PowersuitAbilities/EntratiMechOilGrenadeAbility
+LocalizeTag=/Lotus/Language/Necromech/EntratiMechOilGrenadeAbilityName
+LocalizeDescTag=/Lotus/Language/Necromech/EntratiMechOilGrenadeAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/Mech/NechramechOil.png
+UniquePowerIdentifier=OIL_GRENADE
+Script={
+    Script=/Lotus/Powersuits/EntratiMech/OilGrenadeAbility.lua
+    Function=ActivateAbility
+    _deployFx=/Lotus/Fx/Gameplay/Thanomech/OilGrenadeDeployFX
+    _oilPatchTriggerType=/Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/NechroTech/OilPatchSlowGooTrigger
+    _giveItemType=/Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/NechroTech/NechroTechOilCanItem
+    _activateSound=/Lotus/Sounds/Vehicles/NechroMech/Abilities/NechroMechOilGrenadeCreate
+    _oilThrowSeq=""
+    _shootCanFX=/Lotus/Fx/Explosions/Generic/ExplosionFXThanotechMediumSound
+    _oilCanDeco=/Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/NechroTech/OilGrenadeDecoA
+    _minNpcRange=20
+    _closeRange=15
+    _npcProjInitialSpeed=30
+    _npcProjMaxSpeed=70
+    _grabAnim=""
+    _activateAnim=/Lotus/Animations/Orokin/NechroTech/CanisterThrow_anim.fbx
+    _animRate=-1
+    _animEventToWaitFor=ThrowGameplayObject
+    _Hand=GAME_L1_ARM3
+    _npcProjType=/Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/NechroTech/OilGrenadePlayerProjectile
+    _launchSound=""
+    _isAiAbility=0
+}
+NpcCooldownDuration=20
+ActivationXP=25
+VideoTexture=/Lotus/Interface/AbilityVideos/Necramech/VoidrigPower1_s.bk2

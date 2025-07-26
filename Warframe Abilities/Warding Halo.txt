@@ -1,0 +1,60 @@
+/Lotus/Powersuits/PowersuitAbilities/NezhaSashAbility
+LocalizeTag=/Lotus/Language/Suits/NezhaSashAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/NezhaSashAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/NezhaSash.png
+UniquePowerIdentifier=NEZHA_SASH
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF,
+    EFFECT_DEBUFF
+}
+Script={
+    Script=NezhaSash.lua
+    Function=ActivateAbility
+    _damageTriggerType=/Lotus/Powersuits/Nezha/SashDamageTrigger
+    _pvpDamageTriggerType=/Lotus/Powersuits/Nezha/SashDamageTriggerPvP
+    _attachEffect=/Lotus/Fx/PowersuitAbilities/Nezha/SashAttach
+    _attachRingDeco=/Lotus/Fx/PowersuitAbilities/Nezha/SashAttachDecoA
+    _attachRingDecoLowSpec=/Lotus/Fx/PowersuitAbilities/Nezha/SashAttachDecoB
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Nezha/ArmillarySash_anim.fbx
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Nezha/SashCast
+    _castBurstEffect=/Lotus/Fx/PowersuitAbilities/Nezha/SashCastBurst
+    _pvpHitProxy=/Lotus/Powersuits/Nezha/SashHitProxyPvp
+    _pvpAugmentOneEffect=/Lotus/Fx/PowersuitAbilities/Nezha/SashPvpAugmentOneBurst
+    _augmentOneIgnoreTypes={
+        /Lotus/Types/Restoratives/Deployables/LisetTurretAvatar,
+        /Lotus/Powersuits/Bard/MusicAvatar,
+        /Lotus/Powersuits/Bard/CharmAvatar
+    }
+    _endEffect=/Lotus/Fx/PowersuitAbilities/Nezha/SashEndBurst
+}
+SecondaryScripts={
+    {
+        tag=UpdateBuff
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=NezhaSash.lua
+            Function=UpdateBuff
+            _damageTriggerType=""
+            _pvpDamageTriggerType=""
+            _attachEffect=""
+            _attachRingDeco=""
+            _attachRingDecoLowSpec=""
+            _activateAnim=""
+            _castEffect=""
+            _castBurstEffect=""
+            _pvpHitProxy=""
+            _pvpAugmentOneEffect=""
+            _augmentOneIgnoreTypes={}
+            _endEffect=""
+        }
+    }
+}
+NpcCooldownDuration=70
+EnergyRequiredToActivate=75
+AllowToggle=1
+ActivationXP=75
+CastSound=/Lotus/Sounds/Warframes/Nezha/NezhaArmillarySashCast
+VideoTexture=/Lotus/Interface/AbilityVideos/NezhaPower3_s.bk2
+PvpDescription=/Lotus/Language/Suits/NezhaSashAbilityPvPDesc

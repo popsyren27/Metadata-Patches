@@ -1,0 +1,76 @@
+/Lotus/Upgrades/CosmeticEnhancers/Utility/AbilityStatusProcsGiveAbilityStrengthAndEfficiency
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/1999/AbilityStatusProcsGiveAbilityStrengthAndEfficiencyName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/1999/AbilityStatusProcsGiveAbilityStrengthAndEfficiencyBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionDO.png
+ExcludeFromCodex=0
+ExtraUpgrades={
+    {
+        UpgradeType=GAMEPLAY_FREE_REVIVE_COUNT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerBonusRevive
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+Script={
+    Script=GiveStatsForUniqueStatusProcsFromAbilities.lua
+    Function=OnDamaged
+    _giveStatOneIncreaseBase=0.0099999998
+    _giveStatOneIncreasePerLevel=0.0099999998
+    _giveStatOneType=AVATAR_ABILITY_STRENGTH
+    _giveStatOneOperation=STACKING_MULTIPLY
+    _giveStatTwoIncreaseBase=0.0049999999
+    _giveStatTwoIncreasePerLevel=0.0049999999
+    _giveStatTwoType=AVATAR_ABILITY_EFFICIENCY
+    _giveStatTwoOperation=STACKING_MULTIPLY
+    _buffDuration=20
+    _areExaltedWeaponValid=1
+    _areSummonsValid=0
+}
+EnhancementTag=/Lotus/Language/1999/AbilityStatusProcsGiveAbilityStrengthAndEfficiencyDesc
+EnhancementTagLocScript={
+    Script=GiveStatsForUniqueStatusProcsFromAbilities.lua
+    Function=GetDescriptionInfo
+    _giveStatOneIncreaseBase=0.0099999998
+    _giveStatOneIncreasePerLevel=0.0099999998
+    _giveStatOneType=AVATAR_ABILITY
+    _giveStatOneOperation=ADD
+    _giveStatTwoIncreaseBase=0.0049999999
+    _giveStatTwoIncreasePerLevel=0.0049999999
+    _giveStatTwoType=AVATAR_ABILITY
+    _giveStatTwoOperation=ADD
+    _buffDuration=20
+    _areExaltedWeaponValid=0
+    _areSummonsValid=0
+}
+UpgradeChance=1
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Offensive/OnEnemyDamagedCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDOBuff.png
+BaseDistillPointValue=24

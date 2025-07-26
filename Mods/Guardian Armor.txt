@@ -1,0 +1,40 @@
+/Lotus/Powersuits/Dragon/DragonScalesAugmentTwoCard
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/DragonScalesAbilityAugment2Name
+Icon=/Lotus/Interface/Cards/Images/AbilityAugments/ChromaScalesAugmentTwo.png
+RectangleIcon=0
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_ABILITY_AUGMENT
+    OperationType=ADD
+    Value=1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=AUGMENT_TWO
+    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/DragonScalesAbility
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Suits/DragonScalesAbilityAugment2Desc
+    LocKeyWordScript={
+    Script=/Lotus/Powersuits/PowersuitAbilities/DragonScales.lua
+    Function=GetAugmentDescriptionInfo
+    _activateAnim=""
+    _attachEffectsType=""
+    _attachIndicator=""
+    _castEffect=""
+    _deactivateSound=""
+    _augmentOneBlastEffect=""
+    _augmentOnePunctureEffect=""
+    _healthAbilityBuffType=""
+    _shieldAbilityBuffType=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}

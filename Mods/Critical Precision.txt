@@ -1,0 +1,49 @@
+/Lotus/Upgrades/Mods/Rifle/Event/Nightwave/NightwaveTiberonAugmentMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/NightwaveTiberonAugmentMod
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Nightwave/NightwaveTiberonAugmentMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/NightwaveTiberonAugmentModDesc
+    LocKeyWordScript={
+    Script=/Lotus/Scripts/Mods/CritChanceOnHeadshot.lua
+    Function=GetModDescriptionInfo
+    _hudBuffType=NightwaveTiberonAugmentHudBuff
+    _tiberonPrimeType=/Lotus/Weapons/Tenno/LongGuns/PrimeTiberon/PrimeTiberonRifle
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ApplyUpgradesByDefault=0
+ArtifactPolarity=AP_ATTACK
+ItemCompatibility=/Lotus/Weapons/Tenno/LongGuns/DrakeRifle/DrakeRifle
+Script={
+Script=/Lotus/Scripts/Mods/CritChanceOnHeadshot.lua
+Function=ApplyUpgrade
+_hudBuffType=NightwaveTiberonAugmentHudBuff
+_tiberonPrimeType=/Lotus/Weapons/Tenno/LongGuns/PrimeTiberon/PrimeTiberonRifle
+}
+UpgradeChance=1
+PlayEffect=0
+ConditionalUpgrades={
+/Lotus/Upgrades/Mods/PvPMods/Conditions/OnRifleHeadshotCondition,
+/Lotus/Upgrades/Mods/PvPMods/Conditions/OnRifleBurstAllShotsMissedCondition
+}

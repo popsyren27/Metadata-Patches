@@ -1,0 +1,64 @@
+/Lotus/Powersuits/PowersuitAbilities/PagemasterDeathAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/PagemasterDeathAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/PagemasterDeathAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/DanteDarkVerse.png
+UniquePowerIdentifier=PAGEMASTER_DEATH
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=PagemasterDeath.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Pagemaster/Death_anim.fbx
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Pagemaster/DeathCast
+    _castEffectForward=/Lotus/Fx/PowersuitAbilities/Pagemaster/DeathCastViewForward
+    _castBurstEffect=/Lotus/Fx/PowersuitAbilities/Pagemaster/DeathCastBurst
+    _impactSound=""
+    _lifeStolenEffect=/Lotus/Fx/PowersuitAbilities/Pagemaster/DeathLifeStolenEnemyAttach
+    _flyerDeco=""
+    _dummyType=/Lotus/Fx/PowersuitAbilities/Pagemaster/CastDummyDeco
+    _targetSlashFx=/Lotus/Fx/PowersuitAbilities/Pagemaster/DanteXSlashFX
+    _slashDummyType=/Lotus/Fx/PowersuitAbilities/Pagemaster/SlashDummyDeco
+    _bookCastAnim=/Lotus/Animations/Tenno/Powers/Pagemaster/DeathWEP_anim.fbx
+}
+NpcCooldownDuration=12
+AllowOnZipLines=1
+AllowDuringOverride=1
+ActivationXP=75
+HideMeleeWeapon=0
+VideoTexture=/Lotus/Interface/AbilityVideos/DantePower3_s.bk2
+SoundEvents={
+    {
+        EventName=SFXDeathCast
+        Sound=/Lotus/Sounds/Warframes/Dante/DanteDeathCast
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=SFXDeathImpact
+            Sound=/Lotus/Sounds/Warframes/Dante/DanteDeathImpact
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+            },
+            {
+                EventName=SFXDeathScreams
+                Sound=/Lotus/Sounds/Warframes/Dante/DanteDeathScreams
+                Chance=1
+                Period=1
+                Context=PEC_ALL
+                CancelEventName=""
+                },
+                {
+                    EventName=SFXDeathQuill
+                    Sound=/Lotus/Sounds/Warframes/Dante/DanteDeathQuill
+                    Chance=1
+                    Period=1
+                    Context=PEC_ALL
+                    CancelEventName=""
+                }
+            }

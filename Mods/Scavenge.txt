@@ -1,0 +1,101 @@
+/Lotus/Types/Friendly/Pets/KubrowPetPrecepts/KubrowThiefPrecept
+MarketMode=MM_HIDDEN
+RegularPrice=5000
+PremiumPrice=2
+LocalizeTag=/Lotus/Language/Items/KubrowThiefPreceptName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Kubrow/KubrowThief.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_LOOT_CHANCE
+    OperationType=ADD
+    Value=0.15000001
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Items/KubrowThiefPreceptDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+BaseDrain=QA_NONE
+ItemCompatibility=/Lotus/Types/Game/Pets/PetPowerSuit
+Ability={
+Script={
+Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowThiefAbility.lua
+Function=NpcEvaluateAbility
+_initialDistance=4
+_incrementDistance=0.1
+_minTimeSinceAttack=2
+_ownerDistance=1.5
+_kubrowLockerOpenAnim=/Lotus/Animations/Creatures/KubrowTame/Tracking/LockerOpen_anim.fbx
+_catbrowLockerOpenAnim=/Lotus/Animations/Creatures/Catbrow/Melee01_anim.fbx
+_thiefScriptTrigger=/Lotus/Types/LevelObjects/LockerAttachments/ThiefScriptTrigger
+_specialRotatedLockers={
+/Lotus/Types/LevelObjects/GrineerStorageLocker,
+/Lotus/Types/LevelObjects/GrineerStorageLockerRare,
+/Lotus/Types/LevelObjects/GrineerDesertStorageLocker,
+/Lotus/Types/LevelObjects/GrineerDesertStorageLockerRare,
+/Lotus/Types/LevelObjects/GrineerForestStorageLocker,
+/Lotus/Types/LevelObjects/GrineerForestStorageLockerRare
+}
+_unlockFX=""
+_lockerScript=""
+_openColor={255,255,255,255}
+_blackboardTargetName=KubrowLootTarget
+_kubrowPetPowerSuitType=/Lotus/Types/Game/KubrowPet/KubrowPetPowerSuit
+_playBark=1
+_barkSuccess=VoiceBox_FOLLOW_ME
+_barkSuccessFilter=SFXKubrowLockerSuccessBark
+_barkFail=VoiceBox_FOLLOW_ME
+_barkFailFilter=SFXKubrowLockerFailBark
+}
+SecondaryScripts={
+{
+tag=KubrowOpenLocker
+executionMode=EM_ALL
+inheritPrimary=0
+functionName=""
+scriptInstance={
+Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowThiefAbility.lua
+Function=OpenLocked
+_initialDistance=5
+_incrementDistance=1
+_minTimeSinceAttack=5
+_ownerDistance=1.5
+_kubrowLockerOpenAnim=""
+_catbrowLockerOpenAnim=""
+_thiefScriptTrigger=/Lotus/Types/LevelObjects/LockerAttachments/ThiefScriptTrigger
+_specialRotatedLockers={}
+_unlockFX=/Lotus/Fx/PowersuitAbilities/Upgrades/ThiefLockerAttach
+_lockerScript=""
+_openColor={73,255,128,255}
+_blackboardTargetName=KubrowLootTarget
+_kubrowPetPowerSuitType=/Lotus/Types/Game/KubrowPet/KubrowPetPowerSuit
+_playBark=1
+_barkSuccess=VoiceBox_FOLLOW_ME
+_barkSuccessFilter=SFXKubrowLockerSuccessBark
+_barkFail=VoiceBox_FOLLOW_ME
+_barkFailFilter=SFXKubrowLockerFailBark
+}
+}
+}
+EnergyRequiredToActivate=0
+ActivationXP=10
+}

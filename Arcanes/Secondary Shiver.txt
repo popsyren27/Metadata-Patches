@@ -1,0 +1,46 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryExtraDamagePerFreezeStack
+Rarity=LEGENDARY
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/SecondaryExtraDamagePerFreezeStack
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionCP.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=WEAPON_DAMAGE_PER_ACTIVE_PROC_STACK_ON_VICTIM
+        OperationType=STACKING_MULTIPLY
+        Value=0.075000003
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={
+            PT_CHILLED
+        }
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/DamagePerFreezeStack
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+FusionLimit=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol
+IncompatibilityTags={}
+UpgradeChance=1
+DurationScalesWithRank=0
+ChanceScalesWithRank=0
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCPBuff.png
+BaseDistillPointValue=84

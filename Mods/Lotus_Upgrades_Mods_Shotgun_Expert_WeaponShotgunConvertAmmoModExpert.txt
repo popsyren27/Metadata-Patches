@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Shotgun/Expert/WeaponShotgunConvertAmmoModExpert
+patch not applied (yet)

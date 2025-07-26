@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Randomized/LotusModularPistolRandomModRare
+patch not applied (yet)

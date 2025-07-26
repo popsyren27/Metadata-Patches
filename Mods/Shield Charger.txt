@@ -1,0 +1,57 @@
+/Lotus/Types/Sentinels/SentinelPrecepts/Events/CorpusArena/ShieldAuraPrecept
+Rarity=RARE
+MarketMode=MM_HIDDEN
+RegularPrice=5000
+PremiumPrice=2
+LocalizeTag=/Lotus/Language/Mods/ShieldAuraPreceptName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/SentinelShieldingPrecept.png
+ExcludeFromCodex=0
+TradeCapability=RO_ALWAYS
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/ShieldAuraPreceptModDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Sentinels/SentinelAbilities/ShieldAuraAbility.lua
+    Function=GetLoc
+    _shieldMax=0.1
+    _shieldRegen=0.1
+    _duration=5
+    _durationPerLevel=1
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+BaseDrain=QA_NONE
+ItemCompatibility=/Lotus/Types/Game/Pets/RoboticPetPowerSuit
+Ability={
+MarketMode=MM_HIDDEN
+Script={
+Script=/Lotus/Powersuits/NpcPowersuits/NpcPowersuitAbilities/ActivateAura.lua
+Function=NpcEvaluateAbility
+_isSentinel=1
+_auraType=/Lotus/Upgrades/Mods/Sentinel/Events/Index/SentinelShieldAuraMod
+_abilityDuration=5
+_durationPerLevel=1
+_activateAnim=""
+}
+CooldownDuration=30
+EnergyRequiredToActivate=0
+ActivationXP=15
+Blocking=0
+}

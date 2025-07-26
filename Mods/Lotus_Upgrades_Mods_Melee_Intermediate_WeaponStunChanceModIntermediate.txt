@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Melee/Intermediate/WeaponStunChanceModIntermediate
+patch not applied (yet)

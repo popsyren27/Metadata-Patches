@@ -1,0 +1,82 @@
+/Lotus/Types/Friendly/Pets/MoaPets/MoaPetPowerSuit
+MarketMode=MM_HIDDEN
+RegularPrice=5000
+SellingPrice=2500
+ProductCategory=MoaPets
+LocalizeTag=/Lotus/Language/SolarisVenus/MoaPetItem
+LocalizeDescTag=/Lotus/Language/SolarisVenus/MoaPetItemDesc
+Icon=/Lotus/Interface/Icons/Store/Pets/NewUI/MoaHeadA.png
+CompatibilityTags={
+    MOA_MOD
+}
+ArtifactSlots={
+    AP_PRECEPT,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_PRECEPT,
+    AP_PRECEPT,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_PRECEPT
+}
+DefaultCustomization={
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=Invalid
+                PosOffset={0,0,0}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,0,0,1}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+        OFF_HAND={
+            {
+                BoneOverride=GAME_C1_SPINE1
+                PosOffset={-0.15000001,-0.02,0.094999999}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,0,1,0}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=GAME_C1_SPINE1
+                PosOffset={-0.15000001,-0.02,-0.094999999}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,0,0,1}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+        OFF_HAND={
+            {
+                BoneOverride=Invalid
+                PosOffset={0,0,0}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,0,0,1}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+    }
+}
+ArmourRatingOverride=0
+DeactivateAbilitiesOnPredeath=1
+IncompatibleWeapons={
+    /Lotus/Types/Sentinels/SentinelWeapons/SentGlaiveWeapon,
+    /Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetMeleeWeapon
+}
+MiniMapIcon=/Lotus/Interface/Icons/Markers/Companions/MoaAPortrait.png
+MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Companions/LargePortraits/MoaALargePortrait.png
+FxBone=GAME_C1_SPINE2

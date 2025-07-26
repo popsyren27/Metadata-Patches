@@ -1,0 +1,51 @@
+/Lotus/Powersuits/ConcreteFrame/ConcreteLaserAugmentCard
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/ConcreteLaserAbilityAugment1Name
+Icon=/Lotus/Interface/Cards/Images/AbilityAugments/ConcreteLaserAugmentCard.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_ABILITY_AUGMENT
+    OperationType=ADD
+    Value=1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=AUGMENT_ONE
+    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/ConcreteLaserAbility
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Suits/ConcreteLaserAbilityAugment1Desc
+    LocKeyWordScript={
+    Script=/Lotus/Powersuits/PowersuitAbilities/ConcreteLaser.lua
+    Function=GetAugmentDescriptionInfo
+    _startAnim=""
+    _loopAnim=""
+    _laserType=""
+    _castEffect=""
+    _castBurstEffect=""
+    _chainReactionBeamFx=""
+    _explosionRangeDeco=""
+    _chainExplosion=""
+    _laserBaseDecoType=""
+    _avatarAttachEffect=""
+    _augmentOneInputFilter=""
+    _augmentOneInputDuviriFilter=""
+    _augmentOneMeleeInputFilter=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_POWER
+BaseDrain=QA_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=ConcreteFrameBaseSuit
+IsAbilityAugment=1

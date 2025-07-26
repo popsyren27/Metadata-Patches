@@ -1,0 +1,77 @@
+/Lotus/Upgrades/Mods/PvPMods/Warframe/FreezeParkourPvPMod
+LocalizeTag=/Lotus/Language/Items/WarframePvPModParkourFreeze
+LocalizeDescTag=/Lotus/Language/Mods/PvPParkourFreeze
+Icon=/Lotus/Interface/Cards/Images/PvP/Warframe/FreezeParkour.png
+Upgrades={
+{
+    UpgradeType=AVATAR_PARKOUR_DAMAGE_ADDED
+    OperationType=SET
+    Value=0
+    DamageType=DT_FREEZE
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ParticleEvents={
+{
+EventName=BulletJumpStart
+ParticleSys=/Lotus/Fx/Gameplay/Movement/Mods/BulletJumpIce
+Attached=1
+OwnedByAvatar=0
+UseOtherEntity=0
+Bone=""
+LocalPosition={0,0,0}
+LocalRotation={0,0,0,1}
+Context=PEC_ALL
+},
+{
+EventName=WallHopRightEffect
+ParticleSys=/Lotus/Fx/Gameplay/Movement/Mods/WallHopIce
+Attached=1
+OwnedByAvatar=0
+UseOtherEntity=0
+Bone=GAME_R1_LEG5
+LocalPosition={0,0,0}
+LocalRotation={0,1,0,0}
+Context=PEC_ALL
+},
+{
+    EventName=WallHopLeftEffect
+    ParticleSys=/Lotus/Fx/Gameplay/Movement/Mods/WallHopIce
+    Attached=1
+    OwnedByAvatar=0
+    UseOtherEntity=0
+    Bone=GAME_L1_LEG5
+    LocalPosition={0,0,0}
+    LocalRotation={0,0,0,1}
+    Context=PEC_ALL
+    },
+    {
+        EventName=WallUpJumpEffect
+        ParticleSys=/Lotus/Fx/Gameplay/Movement/Mods/WallHopIce
+        Attached=1
+        OwnedByAvatar=0
+        UseOtherEntity=0
+        Bone=GAME_R1_LEG5
+        LocalPosition={0,0,0}
+        LocalRotation={0,0.70710677,0,0.70710677}
+        Context=PEC_ALL
+    }
+}

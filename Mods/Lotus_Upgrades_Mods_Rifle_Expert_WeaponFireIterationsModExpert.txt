@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Rifle/Expert/WeaponFireIterationsModExpert
+patch not applied (yet)

@@ -1,0 +1,37 @@
+/Lotus/Powersuits/PowersuitAbilities/GlassShankAbility
+LocalizeTag=/Lotus/Language/Suits/GlassShankAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/GlassShankAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/GlassShank.png
+UniquePowerIdentifier=GLASS_SHANK
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=GlassShank.lua
+    Function=ActivateAbility
+    _chargeAnim=/Lotus/Animations/Tenno/Powers/Glass/Sweep_anim.fbx
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Glass/ShankCast
+    _castBurstEffect=/Lotus/Fx/PowersuitAbilities/Glass/ShankCastBurst
+    _shardDecoType=/Lotus/Fx/PowersuitAbilities/Glass/ShankDeco
+    _decoAttachEffect=/Lotus/Fx/PowersuitAbilities/Glass/ShankDecoAttach
+    _decoDeathEffect=/Lotus/Fx/PowersuitAbilities/Glass/ShankDecoDeath
+    _decoDeathEffectHold=/Lotus/Fx/PowersuitAbilities/Glass/ShankDecoDeathHold
+    _weaponTrail=/Lotus/Fx/PowersuitAbilities/Glass/ShankSwingTrail
+    _maxNpcDistance=4
+}
+AbilityEvents={
+    {
+        tag=OnAbilityCast
+        eventType=ET_ON_ABILITY_ACTIVATE
+        scriptInstance={
+            Script=/Lotus/Powersuits/Glass/GlassPassive.lua
+            Function=OnAbilityCast
+            _blindProjector=""
+            _blindGlintEffect=/Lotus/Fx/PowersuitAbilities/Glass/PassiveBlindSpawn
+        }
+    }
+}
+NpcCooldownDuration=12
+AllowOnZipLines=1
+ActivationXP=25
+VideoTexture=/Lotus/Interface/AbilityVideos/GaraPower1_s.bk2

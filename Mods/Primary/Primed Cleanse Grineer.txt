@@ -1,6 +1,0 @@
-/Lotus/Upgrades/Mods/Shotgun/Expert/WeaponShotgunFactionDamageGrineerExpert
-Rarity=LEGENDARY
-LocalizeTag=/Lotus/Language/Upgrades/ShotgunModFactionDamageGrineerExpert
-CodexSecret=1
-FusionLimit=QA_VERY_HIGH
-IncludeInBoosterPack=0

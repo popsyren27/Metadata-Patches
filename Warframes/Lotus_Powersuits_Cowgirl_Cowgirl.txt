@@ -1,0 +1,40 @@
+/Lotus/Powersuits/Cowgirl/Cowgirl
+MarketMode=MM_VISIBLE
+PremiumPrice=325
+SellingPrice=10000
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Cowgirl/CowgirlHelmet,
+    SlingerPistols
+}
+FeaturedTexture=/Lotus/Interface/Graphics/Store/Banners/Gunslinger.png
+ExcludeFromCodex=0
+RecipeHelpText=/Lotus/Language/Menu/DetailedPurchase_MesaRecipeHelpText
+AvailableOnPvp=1
+DefaultCustomization={
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Cowgirl/CowgirlSkin
+    }
+}
+DefaultSlottedUpgrades={
+    {
+        ItemType=BallisticBatteryAbilityCard
+        Slot=9
+        RandomUpgradeBuffTags={}
+        },
+        {
+            ItemType=RussianRouletteAbilityCard
+            Slot=5
+            RandomUpgradeBuffTags={}
+            },
+            {
+                ItemType=RicochetArmourAbilityCard
+                Slot=4
+                RandomUpgradeBuffTags={}
+                },
+                {
+                    ItemType=GunFuAbilityCard
+                    Slot=0
+                    RandomUpgradeBuffTags={}
+                }
+            }
+            Mesh=/Lotus/Characters/Tenno/Gunslinger/GunslingerBody_skel.fbx

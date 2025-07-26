@@ -1,0 +1,143 @@
+/Lotus/Powersuits/PowersuitAbilities/HopliteArmyAbility
+LocalizeTag=/Lotus/Language/Suits/HopliteArmyAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/HopliteArmyAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/StyanaxOneManArmy.png
+UniquePowerIdentifier=HOPLITE_ARMY
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=HopliteArmy.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Hoplite/OneManArmyStart_anim.fbx
+    _loopAnim=/Lotus/Animations/Tenno/Powers/Hoplite/OneManArmyLoop_anim.fbx
+    _deactivateAnim=/Lotus/Animations/Tenno/Powers/Hoplite/OneManArmyEnd_anim.fbx
+    _throwAnims={
+        /Lotus/Animations/Tenno/Powers/Hoplite/OneManArmyLoop_anim.fbx,
+        /Lotus/Animations/Tenno/Powers/Hoplite/OneManArmyLoopB_anim.fbx,
+        /Lotus/Animations/Tenno/Powers/Hoplite/OneManArmyLoopC_anim.fbx,
+        /Lotus/Animations/Tenno/Powers/Hoplite/OneManArmyLoopD_anim.fbx
+    }
+    _throwHandRight={
+        1,
+        1,
+        0,
+        1
+    }
+    _throwHandLeft={
+        0,
+        1,
+        1,
+        0
+    }
+    _projectileType=/Lotus/Powersuits/Hoplite/ArmyProjectile
+    _ghostDecoType=/Lotus/Fx/PowersuitAbilities/Hoplite/ArmyCloneDeco
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Hoplite/ArmyCast
+    _castSeq=/Lotus/Sounds/Warframes/Hoplite/HopliteArmyLoopSeq
+    _cloneAttach=/Lotus/Fx/PowersuitAbilities/Hoplite/ArmyCloneAttach
+}
+SecondaryScripts={
+    {
+        tag=AugmentOverguard
+        executionMode=EM_HOST
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=HopliteArmy.lua
+            Function=AugmentOverguard
+            _activateAnim=""
+            _loopAnim=""
+            _deactivateAnim=""
+            _throwAnims={}
+            _throwHandRight={
+                1
+            }
+            _throwHandLeft={
+                0
+            }
+            _projectileType=""
+            _ghostDecoType=""
+            _castEffect=""
+            _castSeq=""
+            _cloneAttach=""
+        }
+    }
+}
+AbilityEvents={
+    {
+        tag=AugmentOnHit
+        eventType=ET_ON_HIT
+        scriptInstance={
+            Script=HopliteArmy.lua
+            Function=AugmentOnHit
+            _activateAnim=""
+            _loopAnim=""
+            _deactivateAnim=""
+            _throwAnims={}
+            _throwHandRight={
+                1
+            }
+            _throwHandLeft={
+                0
+            }
+            _projectileType=""
+            _ghostDecoType=""
+            _castEffect=""
+            _castSeq=""
+            _cloneAttach=""
+        }
+    }
+}
+NpcCooldownDuration=52
+EnergyRequiredToActivate=100
+VideoTexture=/Lotus/Interface/AbilityVideos/StyanaxPower4_s.bk2
+SoundEvents={
+    {
+        EventName=SFXHopliteArmyProjThrow
+        Sound=/Lotus/Sounds/Warframes/Hoplite/HopliteArmyProjThrow
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=SFXHopliteArmyCast
+            Sound=/Lotus/Sounds/Warframes/Hoplite/HopliteArmyCast
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+            },
+            {
+                EventName=SFXHopliteArmyCastRelease
+                Sound=/Lotus/Sounds/Warframes/Hoplite/HopliteArmyCastRelease
+                Chance=1
+                Period=1
+                Context=PEC_ALL
+                CancelEventName=""
+                },
+                {
+                    EventName=SFXHopliteArmyEnd
+                    Sound=/Lotus/Sounds/Warframes/Hoplite/HopliteArmyEnd
+                    Chance=1
+                    Period=1
+                    Context=PEC_ALL
+                    CancelEventName=""
+                    },
+                    {
+                        EventName=SFXHopliteArmyCastVocalLayer
+                        Sound=/Lotus/Sounds/Warframes/Hoplite/HopliteArmyCastVocalLayer
+                        Chance=1
+                        Period=1
+                        Context=PEC_ALL
+                        CancelEventName=""
+                        },
+                        {
+                            EventName=SFXHopliteArmyCastVocal
+                            Sound=/Lotus/Sounds/Warframes/Hoplite/HopliteArmyCastVocal
+                            Chance=1
+                            Period=1
+                            Context=PEC_ALL
+                            CancelEventName=""
+                        }
+                    }

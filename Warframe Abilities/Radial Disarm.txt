@@ -1,0 +1,46 @@
+/Lotus/Powersuits/PowersuitAbilities/RadialDisarmAbility
+LocalizeTag=/Lotus/Language/Suits/RadialDisarmAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/RadialDisarmAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/LokiRadialDisarm.png
+UniquePowerIdentifier=LOKI_DISARM
+AdditionalPowerIdentifiers={
+    EFFECT_DEBUFF
+}
+Script={
+    Script=RadialDisarm.lua
+    Function=ActivateAbility
+    _agentType=/Lotus/Types/Enemies/GenericDisarmedAgent
+    _meleeweapon=/Lotus/Weapons/Tenno/Melee/DisarmBasicMeleeWeapon
+    _disarmAnim=/Lotus/Animations/Tenno/Powers/Loki/RadialDisarm_anim.fbx
+    _tennoAvatarType=/Lotus/Types/Player/TennoAvatar
+    _confusedEffect=/Lotus/Fx/Gameplay/StatusEffects/Confused
+    _npcMaxRange=10
+}
+SecondaryScripts={
+    {
+        tag=DisablePlayers
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=RadialDisarm.lua
+            Function=DisablePlayers
+            _agentType=""
+            _meleeweapon=""
+            _disarmAnim=""
+            _tennoAvatarType=""
+            _confusedEffect=""
+            _npcMaxRange=10
+        }
+    }
+}
+NpcCooldownDuration=70
+EnergyRequiredToActivate=100
+VideoTexture=/Lotus/Interface/AbilityVideos/LokiPower4_s.bk2
+ForceFeedbackEffectEvents={
+    {
+        EventName=LokiImpactFeedback
+        ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerImpact
+    }
+}
+PvpDescription=/Lotus/Language/Suits/RadialDisarmAbilityPvPDesc

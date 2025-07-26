@@ -1,0 +1,72 @@
+/Lotus/Upgrades/Mods/PvPMods/Rifle/TiberonLowRoFAiming
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Upgrades/TiberonLowRoFAiming
+LocalizeDescTag=/Lotus/Language/Upgrades/TiberonLowRoFAiming_desc
+Icon=/Lotus/Interface/Cards/Images/PvP/Rifle/TiberonLowRoFAiming.png
+ExcludeFromCodex=0
+AvailableOnPve=0
+AvailableOnPvp=1
+Upgrades={
+{
+    UpgradeType=WEAPON_FIRE_RATE
+    OperationType=STACKING_MULTIPLY
+    Value=-0.15000001
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={
+    PM_AIM
+}
+InvalidModifiers={}
+ValidProcTypes={}
+OverrideLocalization=1
+LocTag=/Lotus/Language/Upgrades/FireRateModDesc
+LocKeyWordScript={
+Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
+{
+UpgradeType=WEAPON_DAMAGE_AMOUNT
+OperationType=STACKING_MULTIPLY
+Value=0.075000003
+DamageType=DT_ANY
+AutoType=1
+ValidType=""
+SymbolFilter=""
+UpgradeObject=""
+ValidPostures={}
+ValidModifiers={
+PM_AIM
+}
+InvalidModifiers={}
+ValidProcTypes={}
+OverrideLocalization=1
+LocTag=/Lotus/Language/Upgrades/WeaponDamageModDesc
+LocKeyWordScript={
+Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_VERY_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Weapons/Tenno/LongGuns/DrakeRifle/DrakeRifle
+UpgradeDuration=2
+CanReproc=0
+CanReprocPvp=0

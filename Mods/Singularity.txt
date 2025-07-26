@@ -1,0 +1,57 @@
+/Lotus/Powersuits/Jade/SelfBulletAttractorPvPAugmentCard
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/AbsorbAbilityAugment1PvPName
+Icon=/Lotus/Interface/Cards/Images/AbilityAugments/NyxSelfBulletAttractorPvPAugment.png
+ExcludeFromCodex=0
+AvailableOnPvp=1
+Upgrades={
+{
+    UpgradeType=AVATAR_ABILITY_AUGMENT
+    OperationType=ADD
+    Value=1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=AUGMENT_PVP_ONE
+    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/SelfBulletAttractorAbility
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Suits/AbsorbAbilityAugment1PvPDesc
+    LocKeyWordScript={
+    Script=/Lotus/Powersuits/PowersuitAbilities/SelfBulletAttractor.lua
+    Function=GetAugmentDescriptionInfo
+    _activateAnim=""
+    _idleAnim=""
+    _expfx=""
+    _deactivateAnim=""
+    _absorbDecoType=""
+    _attractorTypes={}
+    _augmentAttractorType=""
+    _hitProxyType=""
+    _attachBone=GAME_C1_HIP1
+    _animEventToWaitFor=""
+    _mixer=""
+    _cloakColorCorrection=""
+    _npcMaxHealthPct=0.80000001
+    _npcExtraScorePerTarget=0.1
+    _windType=""
+    _coreFlareType=""
+    _inputFilter=""
+    _augmentOneInputFilter=""
+    _augmentOneInputDuviriFilter=""
+    _augmentOneMeleeInputFilter=""
+    _invulNotifType=""
+    _explosionMinDamage=100
+    _range=5
+    _proxyRadius=2
+    _augmentPvpRing=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_POWER

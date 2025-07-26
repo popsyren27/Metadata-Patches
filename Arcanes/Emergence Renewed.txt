@@ -1,0 +1,72 @@
+/Lotus/Upgrades/CosmeticEnhancers/Zariman/OperatorOnEnergyDepletedRegenEnergy
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/OperatorOnEnergyDepletedRegenEnergy
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/EmergenceRenewedBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionBQ.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/RestoreEnergyOverTime
+        LocKeyWordScript={
+            Script=OperatorOnEnergyDepletedRegenEnergy.lua
+            Function=GetDescription
+            _regenThreshold=15
+            _energyRegenBuff={
+                50,
+                100,
+                150,
+                200,
+                250,
+                300
+            }
+            _duration=5
+            _cooldown=30
+            _showCooldown=1
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+FusionLimit=QA_HIGH
+Script={
+    Script=OperatorOnEnergyDepletedRegenEnergy.lua
+    Function=MainLoop
+    _regenThreshold=25
+    _energyRegenBuff={
+        0.5,
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+    }
+    _duration=5
+    _cooldown=30
+    _showCooldown=1
+}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeDuration=5
+ConditionTag=/Lotus/Language/Upgrades/OnEnergyDepletedCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionBQ.png
+BaseDistillPointValue=22

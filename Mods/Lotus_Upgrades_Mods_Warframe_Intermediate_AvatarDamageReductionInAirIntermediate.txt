@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Warframe/Intermediate/AvatarDamageReductionInAirIntermediate
+patch not applied (yet)

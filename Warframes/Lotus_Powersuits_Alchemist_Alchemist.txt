@@ -1,0 +1,63 @@
+/Lotus/Powersuits/Alchemist/Alchemist
+MarketMode=MM_VISIBLE
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Alchemist/AlchemistHelmet,
+    /Lotus/Upgrades/Skins/Armor/WarframeDefaults/LavosArmArmor
+}
+Icon=/Lotus/Interface/Icons/StoreIcons/Warframes/Lavos.png
+ExcludeFromCodex=0
+RecipeHelpText=/Lotus/Language/Events/LavosRecipeHelpText
+DefaultCustomization={
+    ArmLeft={
+        ItemType=/Lotus/Upgrades/Skins/Armor/WarframeDefaults/LavosArmArmor
+    }
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0.0099999998,-0.02,-0.079999998}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.086410001,0.13003001,-0.011376,0.98767197}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={-0.0099999998,0.02,0.079999998}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.086410001,0.13003001,-0.011376,0.98767197}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+    }
+    ArmRight={
+        ItemType=/Lotus/Upgrades/Skins/Armor/WarframeDefaults/LavosArmArmor
+    }
+}
+SoundEvents={
+    {
+        EventName=StepL
+        Sound=/Lotus/Sounds/Warframes/Alchemist/AlchemistVialFoley3D
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=StepR
+            Sound=/Lotus/Sounds/Warframes/Alchemist/AlchemistVialFoley3D
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+        }
+    }
+    MiniMapIcon=/Lotus/Interface/Icons/Markers/Powersuits/LavosPortrait.png
+    MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Powersuits/LargePortraits/LavosLargePortrait.png

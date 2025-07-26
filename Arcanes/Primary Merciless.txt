@@ -1,0 +1,92 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/PrimaryDamageOnKill
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/PrimaryDamageOnKill
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/PrimaryDamageIncreaseOnKillBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionSteelPathWarcrimesB.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=WEAPON_DAMAGE_AMOUNT
+        OperationType=STACKING_MULTIPLY
+        Value=0.050000001
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponDamageModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ExtraUpgrades={
+    {
+        UpgradeType=WEAPON_RELOAD_SPEED
+        OperationType=STACKING_MULTIPLY
+        Value=0.30000001
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponReloadSpeedModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ExtraUpgradeFusionLevel=QA_HIGH
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/LotusLongGun
+IncompatibilityTags={}
+UnappliedScript={
+    Script=/Lotus/Upgrades/Mods/Rifle/WeaponDamageOnNoMeleeArcane.lua
+    Function=OnUpgradeUnapplied
+}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDurationAndStacks
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+UpgradeDuration=4
+DurationScalesWithRank=0
+StackMode=SM_DECAY
+MaxConditionalStacks=12
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Events/OnPrimaryKillResetOnMeleeCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnKillCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/SteelPathArcanesBuff19.png
+HudBuffIconScaleWidth=1.45
+HudBuffIconScaleHeight=1.45
+BaseDistillPointValue=20

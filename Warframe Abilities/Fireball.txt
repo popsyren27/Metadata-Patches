@@ -1,0 +1,23 @@
+/Lotus/Powersuits/PowersuitAbilities/FireBallAbility
+LocalizeTag=/Lotus/Language/Suits/FireBallAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/FireBallAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/EmberFireBall.png
+UniquePowerIdentifier=EMBER_FIREBALL
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=FireBall.lua
+    Function=ActivateAbility
+    _pveProjType=/Lotus/Powersuits/Ember/FireProjectile
+    _pvpProjType=/Lotus/Powersuits/Ember/Projectiles/FireProjectilePVP
+    _fightingGameProjType=/Lotus/Powersuits/Ember/Projectiles/FireProjectileFighting
+    _pvpImpactSound=""
+    _damageAugmentEffect=/Lotus/Fx/PowersuitAbilities/Ember/FireballAugmentAttach
+    _augmentRangeDecoType=/Lotus/Fx/PowersuitAbilities/Ember/FireballFrenzyRangeDeco
+    _fireballHitDeco=""
+}
+NpcCooldownDuration=20
+AllowOnZipLines=1
+ActivationXP=25
+VideoTexture=/Lotus/Interface/AbilityVideos/EmberPower1_s.bk2

@@ -1,0 +1,42 @@
+/Lotus/Upgrades/Mods/Aura/PlayerPoisonImmunityAuraMod
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/PlayerPoisonImmunityBuffName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/MissionBuffs/PlayerPoisonImmunityBuff.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_DAMAGE_TAKEN
+    OperationType=MULTIPLY
+    Value=0.97500002
+    DamageType=DT_POISON
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/AvatarDamageResistancePoisonPercentModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.0099999998
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_DEFENSE
+ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
+TargetType=/Lotus/Types/Player/TennoAvatar
+ExcludedAvatars={
+/Lotus/Types/Player/LotusOperatorAvatar
+}

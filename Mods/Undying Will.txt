@@ -1,0 +1,40 @@
+/Lotus/Upgrades/Mods/Warframe/AvatarBleedoutDelayMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/WarframeModBleedoutModifier
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/AvatarMods/AvatarUndyingWillMod.png
+ExcludeFromCodex=0
+ReferalBonusTier=3
+Upgrades={
+{
+    UpgradeType=AVATAR_BLEEDOUT_MODIFIER
+    OperationType=MULTIPLY
+    Value=0.93000001
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/BleedoutModifierDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_DEFENSE
+ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
+IncludeInBoosterPack=1

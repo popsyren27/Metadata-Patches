@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Rifle/Intermediate/WeaponRecoilReductionModIntermediate
+patch not applied (yet)

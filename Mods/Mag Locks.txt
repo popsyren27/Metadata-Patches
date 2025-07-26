@@ -1,0 +1,35 @@
+/Lotus/Upgrades/Mods/Hoverboard/HBGrindMagnetismMod
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Upgrades/HoverboardGrindMagMod
+Icon=/Lotus/Interface/Cards/Images/Hoverboard/HoverboardModB.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=VEHICLE_MAGNETISM
+    OperationType=STACKING_MULTIPLY
+    Value=0.050000001
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/HoverboardGrindMagModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_TACTIC
+BaseDrain=QA_MEDIUM
+ItemCompatibility=/Lotus/Types/Vehicles/Hoverboard/HoverboardSuit

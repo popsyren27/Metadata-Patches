@@ -1,7 +1,0 @@
-/Lotus/Upgrades/Mods/Immortal/ImmortalTwoMod
-MarketMode=MM_HIDDEN
-LocalizeTag=/Lotus/Language/Mods/ImmortalTwoModName
-LocalizeDescTag=/Lotus/Language/Mods/ImmortalTwoModDesc
-Icon=/Lotus/Interface/Icons/ImmortalRunes/ImmortalRuneTruth.png
-ExcludeFromCodex=0
-ImmortalGroup=1

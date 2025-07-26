@@ -1,0 +1,118 @@
+/Lotus/Upgrades/Mods/PvPMods/Warframe/MoreBulletJumpLessShieldMod
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/MoreBulletJumpLessShieldMod
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/PvP/Warframe/MoreBulletJumpLessShieldMod.png
+ExcludeFromCodex=0
+AvailableOnPve=0
+AvailableOnPvp=1
+Upgrades={
+{
+    UpgradeType=AVATAR_PARKOUR_BOOST
+    OperationType=STACKING_MULTIPLY
+    Value=0.025
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/PvPMobilityDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=AVATAR_SHIELD_MAX
+    OperationType=ADD
+    Value=-7.5
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/AvatarShieldMaxNoPercentModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=AVATAR_SLIDE_BOOST
+    OperationType=STACKING_MULTIPLY
+    Value=0.0125
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=AVATAR_SLIDE_FRICTION
+    OperationType=STACKING_MULTIPLY
+    Value=-0.0125
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_TACTIC
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
+IncompatibilityTags={
+SANDMAN
+}
+IsUtility=1

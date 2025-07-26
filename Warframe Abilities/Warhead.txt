@@ -1,0 +1,20 @@
+/Lotus/Powersuits/Archwing/ArchwingAbilities/BigBoyAbility
+LocalizeTag=/Lotus/Language/Items/BigBoyAbility
+LocalizeDescTag=/Lotus/Language/Items/BigBoyAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/Archwing/ArchwingTwoBigBoy.png
+Script={
+    Script=BigBoy.lua
+    Function=ActivateAbility
+    _projectileTypes={
+        /Lotus/Powersuits/Archwing/DemolitionJetPack/Projectiles/BigBoyProjectileOne,
+        /Lotus/Powersuits/Archwing/DemolitionJetPack/Projectiles/BigBoyProjectileTwo,
+        /Lotus/Powersuits/Archwing/DemolitionJetPack/Projectiles/BigBoyProjectileThree,
+        /Lotus/Powersuits/Archwing/DemolitionJetPack/Projectiles/BigBoyProjectileFour
+    }
+    _missileMarker=""
+    _pushRange=30
+    _waterExplosion=""
+}
+EnergyRequiredToActivate=100
+CastSound=/Lotus/Sounds/Weapons/Archwing/Powers/ArchwingBigBoy/ArchwingBigBoy3DShot
+VideoTexture=/Lotus/Interface/Cards/Images/ArchwingMods/Elytron/BigBoy.png

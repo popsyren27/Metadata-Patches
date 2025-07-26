@@ -1,0 +1,6 @@
+/Lotus/Powersuits/YinYang/YinYang
+MarketMode=MM_VISIBLE
+ExcludeFromCodex=0
+RecipeHelpText=/Lotus/Language/WarframeCrafting/EquinoxRecipeHelp
+MaxHealthOverride=270
+MaxShieldOverride=270

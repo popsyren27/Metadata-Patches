@@ -1,0 +1,52 @@
+/Lotus/Upgrades/CosmeticEnhancers/Zariman/OperatorOnOperatorAbilityIncreaseDamage
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/OperatorOnOperatorCastIncreaseDamage
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/EternalEradicateBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionBP.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=WEAPON_DAMAGE_AMOUNT
+        OperationType=STACKING_MULTIPLY
+        Value=0.1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/IncreasedAmpDamage
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDuration
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+UpgradeDuration=8
+DurationScalesWithRank=0
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Utility/OnOperatorAbilityCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnOperatorAbilityCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionBP.png
+BaseDistillPointValue=22

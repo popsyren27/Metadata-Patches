@@ -1,0 +1,153 @@
+/Lotus/Powersuits/Necro/NekrosPrime
+MarketMode=MM_HIDDEN
+SellingPrice=25000
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Necro/NekrosPrimeHelmet
+}
+LocalizeTag=/Lotus/Language/Primes/NekrosPrimeName
+LocalizeDescTag=/Lotus/Language/Primes/NekrosPrimeDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Primes/NekrosPrime.png
+RectangleIcon=0
+Diorama=/Lotus/Levels/Episodes/WarframesNekrosPrime.level
+ExcludeFromCodex=0
+ArtifactSlots={
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_ATTACK,
+    AP_TACTIC,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_DEFENSE,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
+}
+DefaultCustomization={
+    Helmet={
+        ItemType=/Lotus/Upgrades/Skins/Necro/NekrosPrimeHelmet
+    }
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0,0,-0.125}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,0.13052601,0,0.991445}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0,0,0.125}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,0.13052601,0,0.991445}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Necro/NekrosPrimeSkin
+    }
+}
+VariantType=VT_PRIME
+Mesh=/Lotus/Characters/Tenno/Necromancer/NekrosPrimeBody_skel.fbx
+PassiveAbilityLocTag=/Lotus/Language/Primes/NekrosPrimePassiveAbility
+MaxEnergy=140
+InitialEnergy=75
+PvpBulletJumpSpeedMultiplier=0.89999998
+MaxHealthOverride=270
+MaxShieldOverride=455
+ArmourRatingOverride=135
+IsPrime=1
+AttachedFX={
+    {
+        LocalPosition={0,-0.11,0}
+        LocalRotation={0,0,0,1}
+        BoneName=GAME_R1_WEAPON1
+        Type=/Lotus/Fx/PowersuitAbilities/Necro/NecroCastTrail
+        Chance=255
+        RelativeToBounds=0
+        Attach=1
+        DestroyWithOwner=1
+        DestroyParentOnDeath=0
+        FadeOutOnDestruction=0
+        Scale=1
+        },
+        {
+            LocalPosition={0,0.11,0}
+            LocalRotation={0,0,0,1}
+            BoneName=GAME_L1_WEAPON1
+            Type=/Lotus/Fx/PowersuitAbilities/Necro/NecroCastTrail
+            Chance=255
+            RelativeToBounds=0
+            Attach=1
+            DestroyWithOwner=1
+            DestroyParentOnDeath=0
+            FadeOutOnDestruction=0
+            Scale=1
+            },
+            {
+                LocalPosition={0,0,0}
+                LocalRotation={0,0,0,1}
+                BoneName=GAME_R1_FINGER12
+                Type=/Lotus/Characters/Tenno/Necromancer/Cloth/NekrosPrimeFingerDangleRSkeletalCloth
+                Chance=255
+                RelativeToBounds=0
+                Attach=1
+                DestroyWithOwner=1
+                DestroyParentOnDeath=0
+                FadeOutOnDestruction=0
+                Scale=1
+                },
+                {
+                    LocalPosition={0,0,0}
+                    LocalRotation={0,0,0,1}
+                    BoneName=GAME_L1_FINGER12
+                    Type=/Lotus/Characters/Tenno/Necromancer/Cloth/NekrosPrimeFingerDangleLSkeletalCloth
+                    Chance=255
+                    RelativeToBounds=0
+                    Attach=1
+                    DestroyWithOwner=1
+                    DestroyParentOnDeath=0
+                    FadeOutOnDestruction=0
+                    Scale=1
+                    },
+                    {
+                        LocalPosition={0,0,0}
+                        LocalRotation={0,0,0,1}
+                        BoneName=GAME_R1_CLAV1
+                        Type=/Lotus/Characters/Tenno/Necromancer/Cloth/NekrosPrimeWingRSkeletalCloth
+                        Chance=255
+                        RelativeToBounds=0
+                        Attach=1
+                        DestroyWithOwner=1
+                        DestroyParentOnDeath=0
+                        FadeOutOnDestruction=0
+                        Scale=1
+                        },
+                        {
+                            LocalPosition={0,0,0}
+                            LocalRotation={0,0,0,1}
+                            BoneName=GAME_L1_CLAV1
+                            Type=/Lotus/Characters/Tenno/Necromancer/Cloth/NekrosPrimeWingLSkeletalCloth
+                            Chance=255
+                            RelativeToBounds=0
+                            Attach=1
+                            DestroyWithOwner=1
+                            DestroyParentOnDeath=0
+                            FadeOutOnDestruction=0
+                            Scale=1
+                        }
+                    }
+                    SimCollision=NecroPowerSuitSimCollision
+                    MiniMapIcon=/Lotus/Interface/Icons/Markers/Powersuits/NekrosPrimePortrait.png
+                    MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Powersuits/LargePortraits/NekrosPrimeLargePortrait.png

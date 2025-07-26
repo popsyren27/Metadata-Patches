@@ -1,0 +1,84 @@
+/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/DamageReductionOnVoidMode
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/DamageReductionOnVoidMode
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/SolarisMagusFirewall.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Arcanes/DamageReductionOnVoidModeDesc
+        LocKeyWordScript={
+            Script=VoidFirewall.lua
+            Function=GetDescription
+            _spawnTime={
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            }
+            _duration={
+                10,
+                20,
+                30,
+                40,
+                50,
+                60
+            }
+            _decoType=""
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+Script={
+    Script=VoidFirewall.lua
+    Function=VoidFirewall
+    _spawnTime={
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+    }
+    _duration={
+        10,
+        20,
+        30,
+        40,
+        50,
+        60
+    }
+    _decoType=/Lotus/Fx/PowersuitAbilities/Operator/FirewallParentDeco
+}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Events/OnVoidModeCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnVoidModeCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/SolarisMagusFirewall.png
+BaseDistillPointValue=12

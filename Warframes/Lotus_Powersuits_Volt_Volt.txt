@@ -1,0 +1,39 @@
+/Lotus/Powersuits/Volt/Volt
+MarketMode=MM_VISIBLE
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Volt/VoltHelmet
+}
+ExcludeFromCodex=0
+RecipeHelpText=/Lotus/Language/WarframeCrafting/VoltRecipeHelp
+DefaultCustomization={
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Volt/VoltSkin
+    }
+}
+DefaultSlottedUpgrades={
+    {
+        ItemType=ShockAbilityCard
+        Slot=9
+        RandomUpgradeBuffTags={}
+        },
+        {
+            ItemType=SpeedAbilityCard
+            Slot=5
+            RandomUpgradeBuffTags={}
+            },
+            {
+                ItemType=ShieldAbilityCard
+                Slot=4
+                RandomUpgradeBuffTags={}
+                },
+                {
+                    ItemType=OverloadAbilityCard
+                    Slot=0
+                    RandomUpgradeBuffTags={}
+                }
+            }
+            PvpBulletJumpSpeedMultiplier=0.89999998
+            MaxHealthOverride=270
+            AutoInputProfileId=Default
+            AutoInputProfileLocalizeTag=/Lotus/Language/Mobile/VoltAutoInputProfile
+            AutoInputProfileDescLocalizeTag=/Lotus/Language/Mobile/VoltAutoInputProfileDesc

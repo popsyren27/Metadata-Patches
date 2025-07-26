@@ -1,0 +1,39 @@
+/Lotus/Powersuits/Pacifist/Pacifist
+MarketMode=MM_VISIBLE
+PremiumPrice=325
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Priest/PriestHelmet,
+    PacifistFist
+}
+Icon=/Lotus/Interface/Icons/StoreIcons/Warframes/Pacifist.png
+ExcludeFromCodex=0
+RecipeHelpText=/Lotus/Language/Suits/DetailedPurchase_PacifistRecipeHelpText
+DefaultCustomization={
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0.029999999,0.0099999998,-0.059999999}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,0,0,1}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={-0.029999999,-0.0099999998,0.059999999}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,0,0,1}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+}
+PassiveAbilityLocTag=/Lotus/Language/Suits/PacifistPassiveDesc

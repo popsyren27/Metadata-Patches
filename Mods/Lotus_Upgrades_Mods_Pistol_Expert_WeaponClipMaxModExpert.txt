@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Pistol/Expert/WeaponClipMaxModExpert
+patch not applied (yet)

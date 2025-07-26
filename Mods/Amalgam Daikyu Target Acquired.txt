@@ -1,0 +1,132 @@
+/Lotus/Upgrades/Mods/DualSource/Rifle/DaikyuKatanaMod
+LocalizeTag=/Lotus/Language/Mods/DaikyuKatanaMod
+Icon=/Lotus/Interface/Cards/Images/DualSource/AmalgamDaikyu.png
+TradeCapability=RO_NEVER
+Upgrades={
+{
+    UpgradeType=WEAPON_HEADSHOT_MULTIPLIER
+    OperationType=STACKING_MULTIPLY
+    Value=0.125
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/SniperHeadshotMultiplierModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=WEAPON_LIFE_STEAL
+    OperationType=ADD
+    Value=0.0049999999
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=/Lotus/Weapons/Tenno/Melee/LotusKatanaSword
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/DaikyuKatanaPartBDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/DaikyuKatanaPartCDesc
+    LocKeyWordScript={
+    Script=/Lotus/Upgrades/Mods/Rifle/Event/Amalgam/PickUpArrows.lua
+    Function=GetLocValues
+    _pickupSuccess=""
+    _pickupFail=""
+    _pickupRadius=2
+    _ammoChance={
+    0.1,
+    0.2,
+    0.30000001,
+    0.40000001,
+    0.5,
+    0.60000002
+}
+_nikanaLifesteal={
+0.0049999999,
+0.0099999998,
+0.015,
+0.02,
+0.025,
+0.029999999
+}
+_modularNikanaParts={}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+BaseDrain=QA_VERY_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/Bows/AsymetricalBow/AsymetricalBow
+IncompatibilityTags={
+SENTINEL_WEAPON,
+POWER_WEAPON
+}
+Script={
+Script=/Lotus/Upgrades/Mods/Rifle/Event/Amalgam/PickUpArrows.lua
+Function=ApplyUpgrade
+_pickupSuccess=/Lotus/Sounds/Weapons/Tenno/DaikyuBow/DaikyuModArrowPickup
+_pickupFail=""
+_pickupRadius=1
+_ammoChance={
+0.1,
+0.2,
+0.30000001,
+0.40000001,
+0.5,
+0.60000002
+}
+_nikanaLifesteal={
+0.0049999999,
+0.0099999998,
+0.015,
+0.02,
+0.025,
+0.029999999
+}
+_modularNikanaParts={
+/Lotus/Weapons/Ostron/Melee/ModularMelee02/Tip/TipNine
+}
+}
+IsAmalgam=1

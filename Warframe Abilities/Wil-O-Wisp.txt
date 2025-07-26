@@ -1,0 +1,43 @@
+/Lotus/Powersuits/PowersuitAbilities/WispLightAbility
+LocalizeTag=/Lotus/Language/Suits/WispFrameLightAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/WispFrameLightAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/WispLight.png
+UniquePowerIdentifier=WISP_LIGHT
+AdditionalPowerIdentifiers={
+    EFFECT_MOBILITY
+}
+Script={
+    Script=WispLight.lua
+    Function=ActivateAbility
+    _spectreType=/Lotus/Powersuits/Wisp/LightAvatar
+    _spectreAnim=/Lotus/Animations/Tenno/Powers/Wisp/LightAvatarSprint_anim.fbx
+    _lightWarpSound=/Lotus/Sounds/Warframes/Wisp/WispLightTeleport3D
+    _portalDeco=/Lotus/Fx/PowersuitAbilities/Wisp/LightPortalDeco
+    _endWarningSound=/Lotus/Sounds/Warframes/Wisp/WispLightEnd
+}
+SecondaryScripts={
+    {
+        tag=SpeedUp
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=WispLight.lua
+            Function=SpeedUp
+            _spectreType=""
+            _spectreAnim=""
+            _lightWarpSound=""
+            _portalDeco=""
+            _endWarningSound=""
+        }
+    }
+}
+NpcCooldownDuration=12
+EnergyRequiredToActivate=35
+PvpEnergyRequiredToActivate=75
+AllowToggle=1
+AllowDuringOverride=1
+ActivationXP=75
+CastSound=/Lotus/Sounds/Warframes/Wisp/WispLight3D
+VideoTexture=/Lotus/Interface/AbilityVideos/WispPower2_s.bk2
+IsTeleportAbility=1

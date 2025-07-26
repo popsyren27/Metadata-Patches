@@ -1,0 +1,76 @@
+/Lotus/Powersuits/PowersuitAbilities/GarudaUnstoppableAbility
+LocalizeTag=/Lotus/Language/Suits/GarudaUnstopplableAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/GarudaUnstopplableAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/GarudaBoneZone.png
+UniquePowerIdentifier=GARUDA_UNSTOPPABLE
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=GarudaUnstoppable.lua
+    Function=ActivateAbility
+    _activateStartAnim=/Lotus/Animations/Tenno/Powers/Garuda/BladesStartLoop_anim.fbx
+    _activateEndAnim=/Lotus/Animations/Tenno/Powers/Garuda/BladesEndFloat_anim.fbx
+    _projectileType=/Lotus/Powersuits/Garuda/BlenderProjectile
+    _markFxType=""
+    _elementType=/Lotus/Powersuits/Garuda/UnstoppableElement
+    _pushTriggerType=/Lotus/Powersuits/Garuda/UnstoppablePushTrigger
+    _inputFilter=/Lotus/Powersuits/Garuda/UnstoppableInputFilter
+    _loopSequencer=/Lotus/Sounds/Warframes/Garuda/GarudaBladesLoopSeq
+    _chargeLoopSequencer=/Lotus/Sounds/Warframes/Garuda/GarudaBladesChargeSeq
+    _augmentBurst=/Lotus/Fx/PowersuitAbilities/Garuda/TalonsAugmentBurst
+    _quadHudType=/Lotus/Fx/PowersuitAbilities/Garuda/TalonsHudQuadDraw
+}
+SecondaryScripts={
+    {
+        tag=FireAt
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=GarudaUnstoppable.lua
+            Function=FireAt
+            _activateStartAnim=""
+            _activateEndAnim=""
+            _projectileType=""
+            _markFxType=""
+            _elementType=""
+            _pushTriggerType=""
+            _inputFilter=""
+            _loopSequencer=""
+            _chargeLoopSequencer=""
+            _augmentBurst=""
+            _quadHudType=""
+        }
+    }
+}
+AbilityEvents={
+    {
+        tag=AugmentMeleeHit
+        eventType=ET_ON_MELEE_HIT
+        scriptInstance={
+            Script=GarudaUnstoppable.lua
+            Function=OnMeleeHit
+            _activateStartAnim=""
+            _activateEndAnim=""
+            _projectileType=""
+            _markFxType=""
+            _elementType=""
+            _pushTriggerType=""
+            _inputFilter=""
+            _loopSequencer=""
+            _chargeLoopSequencer=""
+            _augmentBurst=""
+            _quadHudType=""
+        }
+    }
+}
+NpcCooldownDuration=40
+EnergyRequiredToActivate=100
+VideoTexture=/Lotus/Interface/AbilityVideos/GarudaPower4_s.bk2
+ForceFeedbackEffectEvents={
+    {
+        EventName=GarudaImpactLightFeedback
+        ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerImpactLight
+    }
+}

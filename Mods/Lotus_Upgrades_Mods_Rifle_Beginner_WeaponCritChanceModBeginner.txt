@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Rifle/Beginner/WeaponCritChanceModBeginner
+patch not applied (yet)

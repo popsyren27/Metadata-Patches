@@ -1,0 +1,113 @@
+/Lotus/Powersuits/PowersuitAbilities/OraxiaSpidersAbility
+LocalizeTag=/Lotus/Language/Suits/OraxiaBroodAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/OraxiaBroodAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/OraxiaSpiderlingBrood.png
+UniquePowerIdentifier=ORAXIA_SPIDERS
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=OraxiaSpiders.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Oraxia/WebTangleAbility4Ground_anim.fbx
+    _activateAnimGround=/Lotus/Animations/Tenno/Powers/Oraxia/WebTangleGround_anim.fbx
+    _castEffect=""
+    _debuffEffect=""
+    _projectileType=/Lotus/Powersuits/Oraxia/OraxiaStingerProjectile
+    _spiderAgentType=""
+    _spiderTrackFX=""
+    _spiderDeathEffect=""
+    _teleportOutEffect=""
+    _teleportInEffect=""
+}
+SecondaryScripts={
+    {
+        tag=SendOnSpiderDeath
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=SendOnSpiderDeath
+        scriptInstance={
+            Script=OraxiaSpiders.lua
+            Function=SendOnSpiderDeath
+            _activateAnim=/Lotus/Animations/Tenno/Powers/Oraxia/WebTangleGround_anim.fbx
+            _activateAnimGround=""
+            _castEffect=""
+            _debuffEffect=""
+            _projectileType=/Lotus/Powersuits/Oraxia/OraxiaStingerProjectile
+            _spiderAgentType=""
+            _spiderTrackFX=""
+            _spiderDeathEffect=/Lotus/Fx/PowersuitAbilities/Oraxia/OraxiaSpiderLingDeathSpawner
+            _teleportOutEffect=""
+            _teleportInEffect=""
+        }
+    }
+}
+AbilityEvents={
+    {
+        tag=OnKill
+        eventType=ET_ON_KILL_OR_ASSIST
+        scriptInstance={
+            Script=OraxiaSpiders.lua
+            Function=OnKill
+            _activateAnim=""
+            _activateAnimGround=""
+            _castEffect=""
+            _debuffEffect=""
+            _projectileType=""
+            _spiderAgentType=/Lotus/Powersuits/Oraxia/OraxiaSpiderlingAgent
+            _spiderTrackFX=/Lotus/Fx/Common/AllyVisionNew
+            _spiderDeathEffect=""
+            _teleportOutEffect=/Lotus/Fx/PowersuitAbilities/MonkeyKing/HairTeleport
+            _teleportInEffect=/Lotus/Fx/PowersuitAbilities/MonkeyKing/HairTeleportIn
+        }
+    }
+}
+NpcCooldownDuration=12
+EnergyRequiredToActivate=50
+PvpEnergyRequiredToActivate=50
+AllowOnZipLines=1
+AllowDuringOverride=1
+ActivationXP=75
+VideoTexture=/Lotus/Interface/AbilityVideos/OraxiaPower3_s.bk2
+SoundEvents={
+    {
+        EventName=SFXOraxiaBroodCast
+        Sound=/Lotus/Sounds/Warframes/Oraxia/Brood/OraxiaBroodCast
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=SFXOraxiaBroodCastVocal
+            Sound=/Lotus/Sounds/Warframes/Oraxia/Brood/OraxiaBroodCastVocal
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+            },
+            {
+                EventName=SFXOraxiaBroodImpact
+                Sound=/Lotus/Sounds/Warframes/Oraxia/Brood/OraxiaBroodImpact
+                Chance=1
+                Period=1
+                Context=PEC_ALL
+                CancelEventName=""
+                },
+                {
+                    EventName=SFXOraxiaBroodImpactLaunch
+                    Sound=/Lotus/Sounds/Warframes/Oraxia/Brood/OraxiaBroodImpactLaunch
+                    Chance=1
+                    Period=1
+                    Context=PEC_ALL
+                    CancelEventName=""
+                    },
+                    {
+                        EventName=SFXOraxiaBroodCastStop
+                        Sound=/Lotus/Sounds/Warframes/Oraxia/Brood/OraxiaBroodCastStop
+                        Chance=1
+                        Period=1
+                        Context=PEC_ALL
+                        CancelEventName=""
+                    }
+                }

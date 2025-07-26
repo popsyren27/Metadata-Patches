@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Pistol/Expert/WeaponImpactDamageModExpert
+patch not applied (yet)

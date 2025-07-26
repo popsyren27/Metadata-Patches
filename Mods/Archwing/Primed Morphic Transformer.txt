@@ -1,6 +1,0 @@
-/Lotus/Upgrades/Mods/Archwing/Expert/ArchwingSuitAbilityStrengthModExpert
-Rarity=LEGENDARY
-LocalizeTag=/Lotus/Language/Items/ArchwingSuitAbilityStrengthModExpert
-CodexSecret=1
-FusionLimit=QA_VERY_HIGH
-IncludeInBoosterPack=0

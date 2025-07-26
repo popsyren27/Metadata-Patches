@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Rifle/Expert/BowExplosionChanceModExpert
+patch not applied (yet)

@@ -1,0 +1,48 @@
+/Lotus/Upgrades/Mods/Warframe/HealthPickupGivesArmourMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/HealthPickupGivesArmourMod
+StatusDescTag=/Lotus/Language/Buffs/HealthConversionBuffDesc
+Icon=/Lotus/Interface/Cards/Images/Simaris/HealthPickupGivesArmourMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Mods/HealthPickupGivesArmourModDesc
+    LocKeyWordScript={
+    Script=/Lotus/Scripts/Mods/OnPickup.lua
+    Function=GetArmourForOneHitDesc
+    _activeEffect=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_DEFENSE
+BaseDrain=QA_VERY_HIGH
+ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
+Script={
+Script=/Lotus/Scripts/Mods/OnPickup.lua
+Function=InitializeMod
+_activeEffect=/Lotus/Fx/Gameplay/Librarian/Mods/PickupArmourIncrease
+}
+SubUpgrades={
+HealthPickupGivesArmourModSubUpgrade
+}
+UpgradeChance=1
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/Protected.png

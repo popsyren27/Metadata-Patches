@@ -1,0 +1,93 @@
+/Lotus/Powersuits/Trinity/Trinity
+MarketMode=MM_VISIBLE
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Trinity/TrinityHelmet
+}
+Icon=/Lotus/Interface/Icons/StoreIcons/Warframes/Trinity.png
+RectangleIcon=0
+ExcludeFromCodex=0
+RecipeHelpText=/Lotus/Language/WarframeCrafting/TrinityRecipeHelp
+DefaultCustomization={
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Trinity/TrinitySkin
+    }
+}
+DefaultSlottedUpgrades={
+    {
+        ItemType=WellOfLifeAbilityCard
+        Slot=9
+        RandomUpgradeBuffTags={}
+        },
+        {
+            ItemType=EnergyVampireAbilityCard
+            Slot=5
+            RandomUpgradeBuffTags={}
+            },
+            {
+                ItemType=LinkAbilityCard
+                Slot=4
+                RandomUpgradeBuffTags={}
+                },
+                {
+                    ItemType=BlessingAbilityCard
+                    Slot=0
+                    RandomUpgradeBuffTags={}
+                }
+            }
+            MaxHealthOverride=270
+            MaxShieldOverride=270
+            AttachedFX={
+                {
+                    LocalPosition={0,0,0}
+                    LocalRotation={0,0,0,1}
+                    BoneName=GAME_C1_HIP1
+                    Type=/Lotus/Characters/Tenno/Trinity/Cloth/TrinityTailSkeletalCloth
+                    Chance=255
+                    RelativeToBounds=0
+                    Attach=1
+                    DestroyWithOwner=1
+                    DestroyParentOnDeath=0
+                    FadeOutOnDestruction=0
+                    Scale=1
+                    },
+                    {
+                        LocalPosition={0,0,0}
+                        LocalRotation={0,0,0,1}
+                        BoneName=GAME_C1_HIP1
+                        Type=/Lotus/Characters/Tenno/Trinity/Cloth/TrinityBackBladeSkeletalCloth
+                        Chance=255
+                        RelativeToBounds=0
+                        Attach=1
+                        DestroyWithOwner=1
+                        DestroyParentOnDeath=0
+                        FadeOutOnDestruction=0
+                        Scale=1
+                        },
+                        {
+                            LocalPosition={0,0,0}
+                            LocalRotation={0,0,0,1}
+                            BoneName=GAME_C1_HIP1
+                            Type=/Lotus/Characters/Tenno/Trinity/Cloth/TrinityBladeSkeletalCloth
+                            Chance=255
+                            RelativeToBounds=0
+                            Attach=1
+                            DestroyWithOwner=1
+                            DestroyParentOnDeath=0
+                            FadeOutOnDestruction=0
+                            Scale=1
+                            },
+                            {
+                                LocalPosition={0,0,0}
+                                LocalRotation={0,0,0,1}
+                                BoneName=GAME_C1_HIP1
+                                Type=/Lotus/Characters/Tenno/Trinity/Cloth/TrinityFrontBladeSkeletalCloth
+                                Chance=255
+                                RelativeToBounds=0
+                                Attach=1
+                                DestroyWithOwner=1
+                                DestroyParentOnDeath=0
+                                FadeOutOnDestruction=0
+                                Scale=1
+                            }
+                        }
+                        SimCollision=TrinityPowerSuitSimCollision

@@ -1,0 +1,2 @@
+/Lotus/Weapons/CrewShip/CrewShipInnateFireRateRandomMod
+patch not applied (yet)

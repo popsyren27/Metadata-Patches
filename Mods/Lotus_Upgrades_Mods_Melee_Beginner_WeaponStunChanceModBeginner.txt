@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Melee/Beginner/WeaponStunChanceModBeginner
+patch not applied (yet)

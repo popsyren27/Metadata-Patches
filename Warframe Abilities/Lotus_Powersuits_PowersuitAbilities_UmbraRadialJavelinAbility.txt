@@ -1,0 +1,2 @@
+/Lotus/Powersuits/PowersuitAbilities/UmbraRadialJavelinAbility
+VideoTexture=/Lotus/Interface/AbilityVideos/ExcaliburUmbraPower3_s.bk2

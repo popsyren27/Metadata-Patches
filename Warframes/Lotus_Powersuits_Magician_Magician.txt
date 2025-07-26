@@ -1,0 +1,109 @@
+/Lotus/Powersuits/Magician/Magician
+MarketMode=MM_VISIBLE
+PremiumPrice=200
+SellingPrice=10000
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Magician/MagicianHelmet
+}
+Icon=/Lotus/Interface/Icons/StoreIcons/Warframes/Limbo.png
+RectangleIcon=0
+ExcludeFromCodex=0
+RecipeHelpText=/Lotus/Language/Menu/DetailedPurchase_LimboRecipeHelpText
+DefaultCustomization={
+    Helmet={
+        ItemType=/Lotus/Upgrades/Skins/Magician/MagicianHelmet
+    }
+    LegLeft={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0,0,0.090000004}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={-0.13052601,0,0,0.991445}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Magician/MagicianSkin
+    }
+    LegRight={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0,0,0.090000004}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={-0.13052601,0,0,0.991445}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+    }
+}
+DefaultSlottedUpgrades={
+    {
+        ItemType=BanishAbilityCard
+        Slot=9
+        RandomUpgradeBuffTags={}
+        },
+        {
+            ItemType=RiftWalkAbilityCard
+            Slot=5
+            RandomUpgradeBuffTags={}
+            },
+            {
+                ItemType=VolatileAbilityCard
+                Slot=4
+                RandomUpgradeBuffTags={}
+                },
+                {
+                    ItemType=TearInSpaceAbilityCard
+                    Slot=0
+                    RandomUpgradeBuffTags={}
+                }
+            }
+            Mesh=/Lotus/Characters/Tenno/Magician/MagicianBody_skel.fbx
+            AbilityTypes={
+                /Lotus/Powersuits/PowersuitAbilities/BanishAbility,
+                /Lotus/Powersuits/PowersuitAbilities/MagicianStasisAbility,
+                /Lotus/Powersuits/PowersuitAbilities/VolatileAbility,
+                /Lotus/Powersuits/PowersuitAbilities/TearInSpaceAbility
+            }
+            CastSounds={
+                /Lotus/Sounds/Warframes/Magician/MagicianAbilityCast
+            }
+            InitialEnergy=100
+            MovementSpeedMultiplier=1.15
+            MaxHealthOverride=270
+            AttachedFX={
+                {
+                    LocalPosition={0,0,0}
+                    LocalRotation={0,0,0,1}
+                    BoneName=GAME_C1_HIP1
+                    Type=/Lotus/Characters/Tenno/Magician/Cloth/MagicianTailsClothSkeletalCloth
+                    Chance=255
+                    RelativeToBounds=0
+                    Attach=1
+                    DestroyWithOwner=1
+                    DestroyParentOnDeath=0
+                    FadeOutOnDestruction=0
+                    Scale=1
+                    },
+                    {
+                        LocalPosition={0.11,0,0}
+                        LocalRotation={0,0,0.70710677,0.70710677}
+                        BoneName=GAME_C1_HAT
+                        Type=/Lotus/Fx/PowersuitAbilities/Magician/MagicianHatTrail
+                        Chance=255
+                        RelativeToBounds=0
+                        Attach=1
+                        DestroyWithOwner=1
+                        DestroyParentOnDeath=0
+                        FadeOutOnDestruction=0
+                        Scale=1
+                    }
+                }
+                SimCollision=MagicianPowerSuitSimCollision

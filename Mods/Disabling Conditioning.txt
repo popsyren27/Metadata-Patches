@@ -1,0 +1,33 @@
+/Lotus/Upgrades/Mods/Sentinel/Kubrow/BeastWeapon/BeastDisablingConditioningMod
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Pets/BeastDisablingConditioningModName
+Icon=/Lotus/Interface/Cards/Images/Kubrow/BeastDisablingConditionMod.png
+ExcludeFromCodex=0
+ExtraUpgrades={
+{
+    UpgradeType=WEAPON_DAMAGE_CONVERSION
+    OperationType=ADD
+    Value=1
+    DamageType=DT_PHYSICAL
+    AutoType=1
+    ValidType=""
+    SymbolFilter=DT_PUNCTURE
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Pets/BeastDisablingConditioningModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}

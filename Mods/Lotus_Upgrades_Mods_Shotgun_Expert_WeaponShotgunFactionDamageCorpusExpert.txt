@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Shotgun/Expert/WeaponShotgunFactionDamageCorpusExpert
+patch not applied (yet)

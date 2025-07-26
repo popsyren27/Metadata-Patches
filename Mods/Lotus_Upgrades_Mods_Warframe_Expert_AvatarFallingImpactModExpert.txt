@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Warframe/Expert/AvatarFallingImpactModExpert
+patch not applied (yet)

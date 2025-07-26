@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Pistol/Beginner/WeaponCritChanceModBeginner
+patch not applied (yet)

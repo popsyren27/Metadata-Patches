@@ -1,0 +1,14 @@
+/Lotus/Powersuits/Archwing/ArchwingAbilities/SupportEnergyAbility
+LocalizeTag=/Lotus/Language/Items/SupportEnergyAbilityName
+LocalizeDescTag=/Lotus/Language/Items/SupportEnergyAbilityDesc
+StatusDescTag=/Lotus/Language/Buffs/VengefulRushBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/Archwing/ArchwingFourBounty.png
+Script={
+    Script=SupportEnergy.lua
+    Function=ActivateAbility
+    _attachEffect=/Lotus/Fx/SpaceBattle/Abilities/Support/EnergyBountyAttach
+    _castBurstEffect=/Lotus/Fx/SpaceBattle/Abilities/Support/EnergyBountyCastBurst
+}
+EnergyRequiredToActivate=100
+CastSound=/Lotus/Sounds/Weapons/Archwing/Powers/ArchwingHealer/ArchwingHealerEnergyBountyCast
+VideoTexture=/Lotus/Interface/Cards/Images/ArchwingMods/SupportArchwing/SupportEnergyBountyAbility.png

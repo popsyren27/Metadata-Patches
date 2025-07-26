@@ -1,0 +1,39 @@
+/Lotus/Powersuits/PowersuitAbilities/ShedAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/ShedAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/ShedAbilityDesc
+StatusDescTag=/Lotus/Language/Buffs/MoltBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/SarynMoult.png
+UniquePowerIdentifier=SARYN_MOLT
+AdditionalPowerIdentifiers={
+    EFFECT_PERCEPTION
+}
+Script={
+    Script=Shed.lua
+    Function=ActivateAbility
+    _decoyAvatarType=/Lotus/Powersuits/Saryn/ShedDecoyAvatar
+    _decoyDestroyType=""
+    _decoyAttachType=""
+    _decoySpawnEffect=/Lotus/Fx/PowersuitAbilities/Asp/ShedSpawn
+    _decoyWispyDeco=""
+    _decoyProj=""
+    _avatarAttach=/Lotus/Fx/PowersuitAbilities/Asp/ShedAvatarAttach
+    _attachmentTypesToRemove={
+        /Lotus/Types/Enemies/Infested/AiWeek/Quadrupeds/RusherAvatar,
+        /Lotus/Types/Enemies/Infested/AiWeek/InfestedMoas/NaniteCloudDeco,
+        /Lotus/Types/Enemies/Grineer/AIWeek/Avatars/StickyRollingDroneDeco,
+        /Lotus/Types/Enemies/Corpus/Drones/AIWeek/LeechProjectile,
+        /Lotus/Types/Enemies/Grineer/Vip/RoyalJester/RoyalJesterAvatar,
+        /Lotus/Weapons/Grineer/LongGuns/GrnChemstrikeNox/GrnChemstrikeNoxProjectile,
+        /Lotus/Weapons/Tenno/Grenades/GrenadeProjectile
+    }
+    _pvpBulletAttractor=""
+    _cloneDecoType=""
+}
+EnergyRequiredToActivate=50
+AllowReactivate=1
+AllowOnZipLines=1
+ActivationXP=50
+CastSound=/Lotus/Sounds/Warframes/Saryn/SarynMoltCast
+VideoTexture=/Lotus/Interface/AbilityVideos/SarynPower2_s.bk2
+PvpDescription=/Lotus/Language/Suits/ShedAbilityPvPDesc

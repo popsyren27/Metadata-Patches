@@ -1,0 +1,60 @@
+/Lotus/Upgrades/Mods/PvPMods/Pistol/LessRecoilSmallerMagPistolMod
+Rarity=RARE
+LocalizeTag=/Lotus/Language/Mods/LessRecoilSmallerMagPistolMod
+Icon=/Lotus/Interface/Cards/Images/PvP/Pistol/LessRecoilSmallerMagPistolMod.png
+Upgrades={
+{
+    UpgradeType=WEAPON_RECOIL
+    OperationType=STACKING_MULTIPLY
+    Value=-0.1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponRecoilModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+},
+{
+    UpgradeType=WEAPON_CLIP_MAX
+    OperationType=STACKING_MULTIPLY
+    Value=-0.050000001
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponClipMaxModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+BaseDrain=QA_HIGH
+FusionLimit=QA_MEDIUM

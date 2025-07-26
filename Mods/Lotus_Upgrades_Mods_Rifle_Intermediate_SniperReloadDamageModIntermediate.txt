@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Rifle/Intermediate/SniperReloadDamageModIntermediate
+patch not applied (yet)

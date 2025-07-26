@@ -1,7 +1,0 @@
-/Lotus/Upgrades/Mods/Immortal/ImmortalFiveMod
-MarketMode=MM_HIDDEN
-LocalizeTag=/Lotus/Language/Mods/ImmortalFiveModName
-LocalizeDescTag=/Lotus/Language/Mods/ImmortalFiveModDesc
-Icon=/Lotus/Interface/Icons/ImmortalRunes/ImmortalRuneLight.png
-ExcludeFromCodex=0
-ImmortalGroup=1

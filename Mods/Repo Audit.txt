@@ -1,0 +1,111 @@
+/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPrecepts/ZanukaPetDisarmPulsePrecept
+Rarity=RARE
+MarketMode=MM_HIDDEN
+RegularPrice=5000
+PremiumPrice=2
+LocalizeTag=/Lotus/Language/Pets/ZanukaPetDisarmPulsePreceptName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Zanukas/ZanukaPetDisarmPulsePrecept.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Pets/ZanukaPetDisarmPulsePreceptDesc
+    LocKeyWordScript={
+    Script=/Lotus/Powersuits/NpcPowersuits/NpcPowersuitAbilities/Lich/PetDisarmPulseAbility.lua
+    Function=GetDescriptionInfo
+    _agentType=""
+    _meleeweapon=""
+    _shockwaveType=""
+    _threatDuration=7
+    _activateAnim=""
+    _firingAnim=""
+    _deActivateAnim=""
+    _impactSound=""
+    _impactFx=""
+    _temporaryDuration=7
+    _optimalTargetsInRange=4
+    _gunPickupType=""
+    _abilityType=""
+    _rangePerLevel={
+    5,
+    10,
+    15,
+    20,
+    25,
+    30
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+BaseDrain=QA_NONE
+ItemCompatibility=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPowerSuit
+TipTags={
+DISARM
+}
+SoundEvents={
+{
+EventName=SFXZanukaCompanionLaserBeamCast
+Sound=/Lotus/Sounds/Characters/Pets/Zanuka/ZanukaCompanionA/Abilities/ZanukaCompanionDisarmCast
+Chance=1
+Period=1
+Context=PEC_ALL
+CancelEventName=""
+}
+}
+Ability={
+Script={
+Script=/Lotus/Powersuits/NpcPowersuits/NpcPowersuitAbilities/Lich/PetDisarmPulseAbility.lua
+Function=ActivateAbility
+_agentType=/Lotus/Types/Enemies/GenericDisarmedAgent
+_meleeweapon=/Lotus/Weapons/Tenno/Melee/DisarmBasicMeleeWeapon
+_shockwaveType=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPreceptComponents/ZanukaPlayerPetDisarmPulseShockwaveEntity
+_threatDuration=7
+_activateAnim=/Lotus/Animations/Corpus/ParvosLich/Kubrow/CastLaser01Start_anim.fbx
+_firingAnim=/Lotus/Animations/Corpus/ParvosLich/Kubrow/CastLaser01Loop_anim.fbx
+_deActivateAnim=/Lotus/Animations/Corpus/ParvosLich/Kubrow/CastLaser01End_anim.fbx
+_impactSound=""
+_impactFx=""
+_temporaryDuration=7
+_optimalTargetsInRange=4
+_gunPickupType=""
+_abilityType=""
+_rangePerLevel={
+5,
+10,
+15,
+20,
+25,
+30
+}
+}
+CooldownDuration=20
+EnergyRequiredToActivate=0
+CastSound=/Lotus/Sounds/Characters/Pets/Zanuka/ZanukaCompanionA/Abilities/ZanukaCompanionDisarmCast
+EvaluateScript=0
+SoundEvents={
+{
+EventName=SFXZanukaCompanionLaserBeamCast
+Sound=/Lotus/Sounds/Characters/Pets/Zanuka/ZanukaCompanionA/Abilities/ZanukaCompanionDisarmCast
+Chance=1
+Period=1
+Context=PEC_ALL
+CancelEventName=""
+}
+}
+}

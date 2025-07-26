@@ -1,6 +1,0 @@
-/Lotus/Upgrades/Mods/Rifle/Expert/PrimedWeaponFactionDamageGrineer
-Rarity=LEGENDARY
-LocalizeTag=/Lotus/Language/Items/PrimedRifleModFactionDamageGrineer
-CodexSecret=1
-FusionLimit=QA_VERY_HIGH
-IncludeInBoosterPack=0

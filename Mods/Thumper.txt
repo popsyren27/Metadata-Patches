@@ -1,0 +1,39 @@
+/Lotus/Types/Sentinels/SentinelPrecepts/Thumper
+LocalizeTag=/Lotus/Language/Items/DjinnPrimaryPreceptName
+Icon=/Lotus/Interface/Cards/Images/Pets/SentinelThumperMod.png
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Items/DjinnPrimaryPreceptDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Sentinels/SentinelAbilities/SwiftDethAbility.lua
+    Function=GetDescriptionInfo
+    _maxDistance=30
+    _invalidTargetTypes={}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ItemCompatibility=/Lotus/Types/Sentinels/SentinelPowersuits/GubberPowerSuit
+Ability={
+Script={
+Script=/Lotus/Types/Sentinels/SentinelAbilities/SwiftDethAbility.lua
+_maxDistance=30
+}
+}

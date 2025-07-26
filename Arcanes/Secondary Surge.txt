@@ -1,0 +1,37 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/BonusDamageNextShotForCurEnergy
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/BonusDamageNextShotForCurEnergyName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionDE.png
+ExcludeFromCodex=0
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol
+IncompatibilityTags={}
+Script={
+    Script=BonusDamageNextShotForCurEnergy.lua
+    Function=ApplyUpgrade
+    _bonusPercentOfCurrentEnergy=0.5
+    _bonusLimit=3
+    _bonusLimitStepPerFusionLevel=1
+}
+EnhancementTag=/Lotus/Language/Arcanes/BonusDamageNextShotForCurEnergyDesc
+EnhancementTagLocScript={
+    Script=BonusDamageNextShotForCurEnergy.lua
+    Function=GetDescription
+    _bonusPercentOfCurrentEnergy=0.5
+    _bonusLimit=3
+    _bonusLimitStepPerFusionLevel=1
+}
+UpgradeChance=1
+DurationScalesWithRank=0
+ChanceScalesWithRank=0
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Utility/OnAbility1Condition,
+    /Lotus/Upgrades/CosmeticEnhancers/Utility/OnAbility2Condition,
+    /Lotus/Upgrades/CosmeticEnhancers/Utility/OnAbility3Condition,
+    /Lotus/Upgrades/CosmeticEnhancers/Utility/OnAbility4Condition
+}
+HudBuffIcon=""
+BaseDistillPointValue=24

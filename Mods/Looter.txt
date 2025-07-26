@@ -1,0 +1,53 @@
+/Lotus/Types/Sentinels/SentinelPrecepts/Looter
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/LooterStoreItemName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Pets/SentinelLooterMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Items/LooterStoreItemDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Sentinels/SentinelAbilities/Looter.lua
+    Function=GetDescriptionInfo
+    _validTargetTypes={}
+    _validTargetTags={}
+    _explodeFx=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ItemCompatibility=/Lotus/Types/Sentinels/SentinelPowersuits/CarrierBasePowerSuit
+Ability={
+Script={
+Script=/Lotus/Types/Sentinels/SentinelAbilities/Looter.lua
+Function=NpcEvaluateAbility
+_validTargetTypes={
+/Lotus/Types/PickUps/BaseMediumLootCrate
+}
+_validTargetTags={
+WyrmGiblit
+}
+_explodeFx=/Lotus/Fx/Sentinels/Precepts/Carrier/LooterBurst
+}
+CooldownDuration=1
+EnergyRequiredToActivate=0
+ActivationXP=0
+Blocking=0
+}

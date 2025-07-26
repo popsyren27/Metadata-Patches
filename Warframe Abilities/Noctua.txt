@@ -1,0 +1,99 @@
+/Lotus/Powersuits/PowersuitAbilities/PagemasterBookAbility
+LocalizeTag=/Lotus/Language/Suits/PagemasterBookAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/PagemasterBookAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/DanteNoctua.png
+UniquePowerIdentifier=PAGEMASTER_BOOK
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=PagemasterBook.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Pagemaster/ExaltedTome_anim.fbx
+    _deactivateAnim=/Lotus/Animations/Tenno/Powers/Pagemaster/ExaltedTomeDespawn_anim.fbx
+    _projectileType=""
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Pagemaster/ExaltedTomeFX
+    _handFireAttachFx=""
+    _scanFX=""
+    _scanfullFX=""
+    _scanSound=""
+}
+SecondaryScripts={
+    {
+        tag=GiveWeapon
+        executionMode=EM_HOST
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=PagemasterBook.lua
+            Function=GiveWeapon
+            _activateAnim=""
+            _deactivateAnim=""
+            _projectileType=""
+            _castEffect=""
+            _handFireAttachFx=""
+            _scanFX=""
+            _scanfullFX=""
+            _scanSound=""
+        }
+        },
+        {
+            tag=RemoveWeapon
+            executionMode=EM_HOST
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=PagemasterBook.lua
+                Function=RemoveWeapon
+                _activateAnim=""
+                _deactivateAnim=""
+                _projectileType=""
+                _castEffect=""
+                _handFireAttachFx=""
+                _scanFX=""
+                _scanfullFX=""
+                _scanSound=""
+            }
+        }
+    }
+    NpcCooldownDuration=12
+    EnergyRequiredToActivate=5
+    PvpEnergyRequiredToActivate=0
+    AllowToggle=1
+    AllowOnZipLines=1
+    ActivationXP=75
+    VideoTexture=/Lotus/Interface/AbilityVideos/DantePower1_s.bk2
+    SoundEvents={
+        {
+            EventName=SFXEquipNoctuaCast
+            Sound=/Lotus/Sounds/Warframes/Dante/DanteEquipNoctuaCast
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+            },
+            {
+                EventName=SFXEquipNoctuaScreams
+                Sound=/Lotus/Sounds/Warframes/Dante/DanteEquipNoctuaScreams
+                Chance=1
+                Period=1
+                Context=PEC_ALL
+                CancelEventName=""
+                },
+                {
+                    EventName=SFXEquipNoctuaImpact
+                    Sound=/Lotus/Sounds/Warframes/Dante/DanteEquipNoctuaImpact
+                    Chance=1
+                    Period=1
+                    Context=PEC_ALL
+                    CancelEventName=""
+                    },
+                    {
+                        EventName=SFXUnequipNoctua
+                        Sound=/Lotus/Sounds/Warframes/Dante/DanteUnequipNoctua
+                        Chance=1
+                        Period=1
+                        Context=PEC_ALL
+                        CancelEventName=""
+                    }
+                }

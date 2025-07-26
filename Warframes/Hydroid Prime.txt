@@ -1,0 +1,80 @@
+/Lotus/Powersuits/Pirate/HydroidPrime
+MarketMode=MM_HIDDEN
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Pirate/HydroidPrimeDefaultHelmet
+}
+LocalizeTag=/Lotus/Language/Primes/HydroidPrimeName
+LocalizeDescTag=/Lotus/Language/Primes/HydroidPrimeDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Primes/HydroidPrime.png
+RectangleIcon=0
+Diorama=/Lotus/Levels/Episodes/WarframesHydroidPrime.level
+ExcludeFromCodex=0
+ArtifactSlots={
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_TACTIC,
+    AP_UNIVERSAL,
+    AP_TACTIC,
+    AP_DEFENSE,
+    AP_ATTACK,
+    AP_TACTIC,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
+}
+DefaultCustomization={
+    Helmet={
+        ItemType=/Lotus/Upgrades/Skins/Pirate/HydroidPrimeDefaultHelmet
+    }
+    ArmLeft={
+        ItemType=/Lotus/Upgrades/Skins/Armor/WarframeDefaults/HydroidPrimeArmArmor
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Hydroid/HydroidPrimeSkin
+    }
+    ArmRight={
+        ItemType=/Lotus/Upgrades/Skins/Armor/WarframeDefaults/HydroidPrimeArmArmor
+    }
+}
+VariantType=VT_PRIME
+Mesh=/Lotus/Characters/Tenno/Hydroid/HydroidPrimeBody_skel.fbx
+MaxEnergy=175
+InitialEnergy=100
+PvpBulletJumpSpeedMultiplier=0.80000001
+MaxHealthOverride=270
+MaxShieldOverride=550
+ArmourRatingOverride=290
+IsPrime=1
+AttachedFX={
+    {
+        LocalPosition={0,0,0}
+        LocalRotation={0,0,0,1}
+        BoneName=GAME_C1_HIP1
+        Type=/Lotus/Characters/Tenno/Hydroid/Cloth/HydroidPrimeHipClothSkeletalCloth
+        Chance=255
+        RelativeToBounds=0
+        Attach=1
+        DestroyWithOwner=1
+        DestroyParentOnDeath=0
+        FadeOutOnDestruction=0
+        Scale=1
+    }
+}
+ForceFeedbackEffectEvents={
+    {
+        EventName=FFEPirateKrakenCast
+        ForceFeedbackEffect=/Lotus/Sounds/Warframes/Pirate/PirateKrakenCastFFE
+        },
+        {
+            EventName=FFEPirateTidalWaveCast
+            ForceFeedbackEffect=/Lotus/Sounds/Warframes/Pirate/PirateTidalWaveCastFFE
+            },
+            {
+                EventName=FFEPirateTidalWaveEnd
+                ForceFeedbackEffect=/Lotus/Sounds/Warframes/Pirate/PirateTidalWaveEndFFE
+            }
+        }
+        SimCollision=HydroidPrimePowerSuitSimCollision
+        MiniMapIcon=/Lotus/Interface/Icons/Markers/Powersuits/HydroidPrimePortrait.png
+        MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Powersuits/LargePortraits/HydroidPrimeLargePortrait.png

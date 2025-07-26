@@ -1,0 +1,43 @@
+/Lotus/Upgrades/Mods/Rifle/BowExplosionChanceMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/ParisModExplosionChance
+Icon=/Lotus/Interface/Cards/Images/Rifle/RambowMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=WEAPON_PROJECTILE_EXPLOSION_CHANCE
+    OperationType=ADD
+    Value=0.075000003
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponExplodeChance
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Weapons/Tenno/Bows/LotusBow
+IncompatibilityTags={
+CRPBOW
+}
+IncludeInBoosterPack=1

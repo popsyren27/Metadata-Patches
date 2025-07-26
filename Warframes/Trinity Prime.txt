@@ -1,0 +1,103 @@
+/Lotus/Powersuits/Trinity/TrinityPrime
+MarketMode=MM_HIDDEN
+SellingPrice=25000
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Trinity/TrinityPrimeHelmet
+}
+LocalizeTag=/Lotus/Language/Primes/TrinityPrimeName
+LocalizeDescTag=/Lotus/Language/Primes/TrinityPrimeDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Primes/TrinityPrime.png
+RectangleIcon=0
+Diorama=/Lotus/Levels/Episodes/WarframesTrinityPrime.level
+ExcludeFromCodex=0
+ArtifactSlots={
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_TACTIC,
+    AP_DEFENSE,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_ATTACK,
+    AP_DEFENSE,
+    AP_DEFENSE,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
+}
+DefaultCustomization={
+    Helmet={
+        ItemType=/Lotus/Upgrades/Skins/Trinity/TrinityPrimeHelmet
+    }
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0.050000001,0.015,-0.079999998}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.086410001,-0.13003001,0.011376,0.98767197}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={-0.050000001,-0.015,0.079999998}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.086410001,-0.13003001,0.011376,0.98767197}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Trinity/TrinityPrimeSkin
+    }
+}
+VariantType=VT_PRIME
+Mesh=/Lotus/Characters/Tenno/Trinity/TrinityPrimeBody_skel.fbx
+OverrideMaterials={
+    ""
+}
+InitialEnergy=125
+MovementSpeedMultiplier=1.1
+PvpBulletJumpSpeedMultiplier=0.89999998
+MaxHealthOverride=270
+MaxShieldOverride=455
+ArmourRatingOverride=135
+IsPrime=1
+AttachedFX={
+    {
+        LocalPosition={0,0,0}
+        LocalRotation={0,0,0,1}
+        BoneName=GAME_C1_HIP1
+        Type=/Lotus/Characters/Tenno/Trinity/Cloth/TrinityPrimeSkirtSkeletalCloth
+        Chance=255
+        RelativeToBounds=0
+        Attach=1
+        DestroyWithOwner=1
+        DestroyParentOnDeath=0
+        FadeOutOnDestruction=0
+        Scale=1
+        },
+        {
+            LocalPosition={0,0,0.055}
+            LocalRotation={0,0,0,1}
+            BoneName=GAME_C1_HIP1
+            Type=/Lotus/Characters/Tenno/Trinity/Cloth/TrinityPrimeTailSkeletalCloth
+            Chance=255
+            RelativeToBounds=0
+            Attach=1
+            DestroyWithOwner=1
+            DestroyParentOnDeath=0
+            FadeOutOnDestruction=0
+            Scale=1
+        }
+    }
+    SimCollision=TrinityPrimePowerSuitSimCollision
+    MiniMapIcon=/Lotus/Interface/Icons/Markers/Powersuits/TrinityPrimePortrait.png
+    MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Powersuits/LargePortraits/TrinityPrimeLargePortrait.png

@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Melee/Beginner/WeaponMeleeFactionDamageGrineerBeginner
+patch not applied (yet)

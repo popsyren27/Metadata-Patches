@@ -1,0 +1,68 @@
+/Lotus/Upgrades/Mods/Melee/MeleeStatusDamageDuoMod
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Upgrades/MeleeStatusDamageDuoModName
+Icon=/Lotus/Interface/Cards/Images/DoubleMods/MeleeStatusDamageDuoMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=WEAPON_PROC_DAMAGE
+    OperationType=STACKING_MULTIPLY
+    Value=0.15000001
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponStatusDamage
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+},
+{
+    UpgradeType=WEAPON_MELEE_HEAVY_CHARGE_SPEED
+    OperationType=STACKING_MULTIPLY
+    Value=0.1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponHeavyChargeSpeed
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.0099999998
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_DEFENSE
+BaseDrain=QA_MEDIUM
+ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
+TipTags={
+"STATUS DAMAGE"
+}

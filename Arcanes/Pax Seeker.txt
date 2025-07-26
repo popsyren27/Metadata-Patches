@@ -1,0 +1,55 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/SeekerProjOnHeadshotKill
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/SeekerProjOnHeadshotKillName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/SolarisSeekerProjOnHeadshotKill.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Arcanes/SeekerProjOnHeadshotKillDesc
+        LocKeyWordScript={
+            Script=SeekerProjOnHeadshotKill.lua
+            Function=GetDescriptionInfo
+            _projectileType=""
+            _projectileCountPerLevel=1
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+Script={
+    Script=SeekerProjOnHeadshotKill.lua
+    Function=SpawnSeekerProjectile
+    _projectileType=HeadshotKillClusterProj
+    _projectileCountPerLevel=1
+}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+ChanceScalesWithRank=0
+ConditionalUpgrades={
+    OnHeadshotKillNoScriptHitTypeCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnHeadshotKillCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/SolarisSeekerProjOnHeadshotKill.png
+BaseDistillPointValue=24

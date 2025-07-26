@@ -1,0 +1,41 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/CorrosiveMeleePerAbilityCast
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/CorrosiveMeleePerAbilityCastName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/CorrosiveMeleePerAbilityCastBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionCY.png
+ExcludeFromCodex=0
+ApplyUpgradesByDefault=0
+Script={
+    Script=CorrosiveMeleePerAbilityCast.lua
+    Function=OnAbilityCast
+    _buffStepPerCast=0.1
+    _buffStepPerFusionLevel=0.1
+    _buffDuration=25
+    _buffHardLimit=2.4000001
+    _damageUpgradeType=DT_CORROSIVE
+    _operationType=ADD
+    _upgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+}
+EnhancementTag=/Lotus/Language/Arcanes/CorrosiveMeleePerAbilityCastDesc
+EnhancementTagLocScript={
+    Script=CorrosiveMeleePerAbilityCast.lua
+    Function=GetDescription
+    _buffStepPerCast=0.1
+    _buffStepPerFusionLevel=0.1
+    _buffDuration=25
+    _buffHardLimit=2.4000001
+    _damageUpgradeType=DT_CORROSIVE
+    _operationType=STACKING_MULTIPLY
+    _upgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+}
+UpgradeChance=1
+DurationScalesWithRank=0
+ChanceScalesWithRank=0
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Utility/OnWarframeOnlyAbilityCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnAbilityCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCYBuff.png
+BaseDistillPointValue=24

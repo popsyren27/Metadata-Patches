@@ -1,0 +1,7 @@
+/Lotus/Upgrades/Mods/Immortal/AntivirusTwoMod
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/1999Coda/AntivirusTwoModName
+LocalizeDescTag=/Lotus/Language/1999Coda/AntivirusTwoModDesc
+Icon=/Lotus/Interface/Icons/Antivirus/WormBeGone.png
+ExcludeFromCodex=0
+ImmortalGroup=2

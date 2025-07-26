@@ -1,0 +1,57 @@
+/Lotus/Upgrades/Mods/PvPMods/Warframe/HealthRegenLongerShieldRecharge
+LocalizeTag=/Lotus/Language/Mods/HealthRegenLongerShieldRecharge
+Icon=/Lotus/Interface/Cards/Images/PvP/Warframe/HealthRegenLongerShieldRecharge.png
+Upgrades={
+{
+    UpgradeType=AVATAR_HEAL_RATE
+    OperationType=ADD
+    Value=0.25
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/HealthRegen
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=AVATAR_SHIELD_RECHARGE_DELAY
+    OperationType=STACKING_MULTIPLY
+    Value=0.125
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/AvatarShieldRechargeDelayModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=1
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_TACTIC
+BaseDrain=QA_VERY_HIGH

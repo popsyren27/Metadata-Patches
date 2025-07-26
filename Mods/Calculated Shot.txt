@@ -1,0 +1,42 @@
+/Lotus/Types/Sentinels/SentinelPrecepts/HeadShot
+LocalizeTag=/Lotus/Language/Items/HeadshotStoreItemName
+Icon=/Lotus/Interface/Cards/Images/Pets/ArcDroneHeadshot.png
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Items/HeadshotStoreItemDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Sentinels/SentinelAbilities/SwiftDethAbility.lua
+    Function=GetDescriptionInfo
+    _maxDistance=35
+    _invalidTargetTypes={}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ItemCompatibility=/Lotus/Types/Sentinels/SentinelPowersuits/ArcDronePowerSuit
+Ability={
+Script={
+Script=/Lotus/Types/Sentinels/SentinelAbilities/SwiftDethAbility.lua
+_maxDistance=35
+_invalidTargetTypes={
+/Lotus/Types/Enemies/Grineer/Vip/Avatars/DoubleBossAvatar
+}
+}
+}

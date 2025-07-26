@@ -1,0 +1,67 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/AbilityStrengthForMaxHealth
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/1999/AbilityStrengthForMaxHealthName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/1999/AbilityStrengthForMaxHealthBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionDI.png
+ExcludeFromCodex=0
+ExtraUpgrades={
+    {
+        UpgradeType=GAMEPLAY_FREE_REVIVE_COUNT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerBonusRevive
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+FusionLimit=QA_HIGH
+Script={
+    Script=GiveStatForStat.lua
+    Function=ApplyUpgrade
+    _giveStatIncreaseBase=0.0099999998
+    _giveStatIncreasePerLevel=0.0099999998
+    _giveStatType=AVATAR_ABILITY_STRENGTH
+    _giveStatOperation=STACKING_MULTIPLY
+    _haveStatThresholdBase=250
+    _haveStatThresholdPerLevel=0
+    _haveStatType=AVATAR_HEALTH_MAX
+    _discreteBuffTiers=0
+    _maxStacks=12
+}
+EnhancementTag=/Lotus/Language/1999/AbilityStrengthForMaxHealthDesc
+EnhancementTagLocScript={
+    Script=GiveStatForStat.lua
+    Function=GetDescriptionInfo
+    _giveStatIncreaseBase=0.0099999998
+    _giveStatIncreasePerLevel=0.0099999998
+    _giveStatType=AVATAR_ABILITY
+    _giveStatOperation=ADD
+    _haveStatThresholdBase=250
+    _haveStatThresholdPerLevel=0
+    _haveStatType=AVATAR_ABILITY
+    _discreteBuffTiers=1
+    _maxStacks=12
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDIBuff.png
+BaseDistillPointValue=24

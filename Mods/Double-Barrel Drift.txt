@@ -1,0 +1,4 @@
+/Lotus/Upgrades/Mods/PvPMods/Shotgun/MoreAccuracyLessRecoilSlidingShotgunMod
+LocalizeTag=/Lotus/Language/Mods/MoreAccuracyLessRecoilShotgunName
+Icon=/Lotus/Interface/Cards/Images/PvP/Shotgun/LessRecoilMoreAccuracyShotgunMod.png
+ItemCompatibility=/Lotus/Weapons/Tenno/Shotgun/LotusShotgun

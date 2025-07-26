@@ -1,0 +1,58 @@
+/Lotus/Types/Friendly/Pets/KubrowPetPrecepts/KubrowSanctuary
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/KubrowSanctuaryStoreItemName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Kubrow/KubrowShield.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Items/SanctuaryStoreItemDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Sentinels/SentinelAbilities/Sanctuary.lua
+    Function=GetDescriptionInfo
+    _initialShieldHealth=300
+    _incrementShieldHealth=150
+    _shieldCooldownOnDestroyed=10
+    _beamType=""
+    _castFX=""
+    _ShieldMesh=""
+    _createOnMaster=0
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_DEFENSE
+BaseDrain=QA_HIGH
+FusionLimit=QA_VERY_HIGH
+ItemCompatibility=/Lotus/Types/Game/Pets/PetPowerSuit
+Ability={
+Script={
+Script=/Lotus/Types/Sentinels/SentinelAbilities/Sanctuary.lua
+Function=NpcEvaluateAbility
+_initialShieldHealth=300
+_incrementShieldHealth=150
+_shieldCooldownOnDestroyed=10
+_beamType=/Lotus/Fx/Sentinels/Precepts/SanctuaryBeam
+_castFX=/Lotus/Fx/Sentinels/Precepts/SanctuaryAttach
+_ShieldMesh=/Lotus/Fx/Sentinels/Precepts/SanctuaryShieldDeco
+_createOnMaster=1
+}
+EnergyRequiredToActivate=0
+ActivationXP=25
+}

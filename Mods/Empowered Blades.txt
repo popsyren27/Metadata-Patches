@@ -1,0 +1,62 @@
+/Lotus/Upgrades/Mods/Aura/FairyQuest/FairyQuestShieldsToCritAuraMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/ShieldsToCritAuraName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Auras/FairyQuestShieldsToCritAura.png
+ExcludeFromCodex=0
+TradeCapability=RO_DEFAULT
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Mods/ShieldsToCritAuraDesc
+    LocKeyWordScript={
+    Script=/Lotus/Scripts/Mods/FairyQuestShieldsToCrit.lua
+    Function=GetDescription
+    _shieldDrain={
+    15,
+    30,
+    45,
+    60,
+    75,
+    90
+}
+_baseVal=0.1
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_TACTIC
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/IncreasedStatChance.png
+OnEnterAuraScript={
+Script=/Lotus/Scripts/Mods/AuraAddModsToWeapon.lua
+Function=EnterAura
+_auraMods={
+FairyQuestChargeAttackCritMod,
+FairyQuestLoseShieldsOnChargeAttackMod
+}
+_weaponSlot=SLOT_6
+}
+OnExitAuraScript={
+Script=/Lotus/Scripts/Mods/AuraAddModsToWeapon.lua
+Function=ExitAura
+_auraMods={
+FairyQuestChargeAttackCritMod,
+FairyQuestLoseShieldsOnChargeAttackMod
+}
+_weaponSlot=SLOT_6
+}

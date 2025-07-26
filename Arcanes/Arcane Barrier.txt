@@ -1,0 +1,80 @@
+/Lotus/Upgrades/CosmeticEnhancers/Defensive/InstantShieldOnDamage
+Rarity=LEGENDARY
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/InstantShieldOnDamageName
+LocalizeDescTag=""
+StatusDescTag=CosmeticEnhancerCooldownDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionAE.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ExtraUpgrades={
+    {
+        UpgradeType=GAMEPLAY_FREE_REVIVE_COUNT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerBonusRevive
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+Script={
+    Script=InstantShieldOnDamage.lua
+    Function=ApplyUpgrade
+    _effectType=/Lotus/Fx/Gameplay/Arcanes/InstantShieldOnDamage
+}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionInstantShieldRestore
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=0.0099999998
+UpgradeDuration=1
+CanReproc=0
+ConditionalUpgrades={
+    OnShieldDamageCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnShieldDamageCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionAE.png
+UseDebuffIcon=1
+BaseDistillPointValue=98

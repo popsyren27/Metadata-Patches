@@ -1,0 +1,56 @@
+/Lotus/Powersuits/AntiMatter/WormHoleAugmentCard
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/WormHoleAbilityAugment1Name
+Icon=/Lotus/Interface/Cards/Images/AbilityAugments/NovaWormholeAugments.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_ABILITY_AUGMENT
+    OperationType=ADD
+    Value=1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=AUGMENT_ONE
+    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/WormHoleAbility
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Suits/WormHoleAbilityAugment1Desc
+    LocKeyWordScript={
+    Script=/Lotus/Powersuits/PowersuitAbilities/WormHole.lua
+    Function=GetAugmentDescriptionInfo
+    _portalTriggerType=""
+    _projectileAttractor=""
+    _navBridgeActionType=""
+    _maxTeleportLerpCheck=3
+    _decorationShift={0,0,0}
+    _decoType=""
+    _endEffect=""
+    _beamType=""
+    _transportEffect=""
+    _wormExitSound=""
+    _ignoredTypes={}
+    _acceptedSweepEntityTypes={}
+    _augmentOneAttach=""
+    _usageCountDecoration=""
+    _deluxeSkin=""
+    _deluxeArmsDecoType=""
+    _targetEffect=""
+    _castSoundHold=""
+    _castSound=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_POWER
+BaseDrain=QA_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=NovaBaseSuit
+IsAbilityAugment=1
+IsUtility=1

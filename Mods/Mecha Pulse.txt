@@ -1,0 +1,81 @@
+/Lotus/Upgrades/Mods/Sets/Mecha/WarframeMechaPulseMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/WarframeMechaPulseMod
+StatusDescTag=/Lotus/Language/Buffs/MechaPulseBuffDesc
+Icon=/Lotus/Interface/Cards/Images/Sets/Mecha/WarframeMechaPulseMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/MechaPulseWarframeModDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowMarkMechaAbility.lua
+    Function=GetDescriptionPulse
+    _markCooldown={
+    60,
+    45,
+    30,
+    15
+}
+_markDuration={
+3,
+6,
+9,
+12
+}
+_statusSpreadRange={
+7.5,
+15,
+22.5,
+30
+}
+_markRange=30
+_markedDeathFx=""
+_armorBonus={
+0.15000001,
+0.30000001,
+0.44999999,
+0.60000002
+}
+_armorDuration={
+5,
+10,
+15,
+20
+}
+_armorEnemyRange={
+7.5,
+15,
+22.5,
+30
+}
+_pulseModWRes=""
+_markedFx=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
+IncompatibilityTags={
+HELMINTH_MOD
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/IncreasedArmour.png
+ModSet=MechaSetMod

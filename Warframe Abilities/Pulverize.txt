@@ -1,0 +1,117 @@
+/Lotus/Powersuits/PowersuitAbilities/DevourerBowlAbility
+LocalizeTag=/Lotus/Language/Suits/GrendelBowlAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/GrendelBowlAbilityDesc
+StatusDescTag=/Lotus/Language/Buffs/HealthRegenerationBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/GrendelBellyBowling.png
+UniquePowerIdentifier=DEVOURER_BOWL
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE,
+    EFFECT_MOBILITY
+}
+Script={
+    Script=DevourerBowl.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Devourer/BellyBowlingStart_anim.fbx
+    _endAnim=/Lotus/Animations/Tenno/Powers/Devourer/BellyBowlingEnd_anim.fbx
+    _endNoEnergyAnim=/Lotus/Animations/Tenno/Powers/Devourer/DizzyIdle_anim.fbx
+    _inputFilter=/Lotus/Powersuits/Devourer/BowlInputFilter
+    _scriptTriggerType=/Lotus/Powersuits/Devourer/BowlScriptTrigger
+    _ballMesh=/Lotus/Characters/Tenno/Devourer/DevourerBall_skel.fbx
+    _motionController=/Lotus/Powersuits/Devourer/BowlMotionController
+    _rollPhysics=/Lotus/Powersuits/Devourer/BowlPhysics
+    _walkPhysics=/Lotus/Types/Player/TennoWalk
+    _rangeDecoType=/Lotus/Fx/PowersuitAbilities/Devourer/BowlingRangeDeco
+    _landSound=/Lotus/Sounds/Warframes/Grendel/GrendelBowlLandRemote
+    _landSeqType=/Lotus/Sounds/Warframes/Grendel/GrendelBowlLoopSeq
+    _jumpSound=/Lotus/Sounds/Warframes/Grendel/GrendelBowlJump
+    _doubleJumpSound=/Lotus/Sounds/Warframes/Grendel/GrendelBowlJumpSecond
+    _hitProxy=/Lotus/Powersuits/Devourer/BowlTorso
+    _augmentPushSound=""
+}
+SecondaryScripts={
+    {
+        tag=DoLandAoE
+        executionMode=EM_HOST
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=DevourerBowl.lua
+            Function=DoLandAoE
+            _activateAnim=""
+            _endAnim=""
+            _endNoEnergyAnim=""
+            _inputFilter=""
+            _scriptTriggerType=""
+            _ballMesh=""
+            _motionController=""
+            _rollPhysics=""
+            _walkPhysics=""
+            _rangeDecoType=""
+            _landSound=""
+            _landSeqType=""
+            _jumpSound=""
+            _doubleJumpSound=""
+            _hitProxy=""
+            _augmentPushSound=""
+        }
+        },
+        {
+            tag=AugmentEnergyDrain
+            executionMode=EM_HOST
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=DevourerBowl.lua
+                Function=AugmentEnergyDrain
+                _activateAnim=""
+                _endAnim=""
+                _endNoEnergyAnim=""
+                _inputFilter=""
+                _scriptTriggerType=""
+                _ballMesh=""
+                _motionController=""
+                _rollPhysics=""
+                _walkPhysics=""
+                _rangeDecoType=""
+                _landSound=""
+                _landSeqType=""
+                _jumpSound=""
+                _doubleJumpSound=""
+                _hitProxy=""
+                _augmentPushSound=""
+            }
+        }
+    }
+    InputEvents={
+        {
+            tag=AugmentPush
+            inputCode=SECONDARY_FIRE
+            onDown=1
+            scriptInstance={
+                Script=DevourerBowl.lua
+                Function=AugmentPush
+                _activateAnim=""
+                _endAnim=""
+                _endNoEnergyAnim=""
+                _inputFilter=""
+                _scriptTriggerType=""
+                _ballMesh=""
+                _motionController=""
+                _rollPhysics=""
+                _walkPhysics=""
+                _rangeDecoType=""
+                _landSound=""
+                _landSeqType=""
+                _jumpSound=""
+                _doubleJumpSound=""
+                _hitProxy=""
+                _augmentPushSound=/Lotus/Sounds/Warframes/Grendel/GrendelBowlJumpLocal
+            }
+        }
+    }
+    NpcCooldownDuration=60
+    EnergyRequiredToActivate=0
+    AllowToggle=1
+    ActivationXP=25
+    VideoTexture=/Lotus/Interface/AbilityVideos/GrendelPower4_s.bk2
+    IsJoinInProgressAbility=1

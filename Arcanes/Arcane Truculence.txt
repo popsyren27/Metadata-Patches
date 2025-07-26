@@ -1,0 +1,82 @@
+/Lotus/Upgrades/CosmeticEnhancers/Defensive/RadialViralAttackOnOverguardGain
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/1999/RadialViralAttackOnOverguardGainName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/1999/RadialViralAttackOnOverguardGainBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionDN.png
+ExcludeFromCodex=0
+ExtraUpgrades={
+    {
+        UpgradeType=GAMEPLAY_FREE_REVIVE_COUNT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerBonusRevive
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+Script={
+    Script=RadialAttackOnOverguardGain.lua
+    Function=OnGainOverguard
+    _overguardGainedThreshold=3000
+    _attackDamageBase=50
+    _attackDamagePerLevel=0
+    _attackRadiusBase=5
+    _attackRadiusPerLevel=5
+    _attackTimeBase=1
+    _attackTimePerLevel=0.25
+    _radialAttackType=/Lotus/Types/Weapon/RadialViralShockwaveEntity
+    _attackProcTypes={
+        MAX_ProcType
+    }
+    _attackProcCount=10
+}
+SubUpgrades={
+    RadialViralAttackOnOverguardGainSubMod
+}
+EnhancementTag=/Lotus/Language/1999/RadialViralAttackOnOverguardGainDesc
+EnhancementTagLocScript={
+    Script=RadialAttackOnOverguardGain.lua
+    Function=GetDescriptionInfo
+    _overguardGainedThreshold=3000
+    _attackDamageBase=50
+    _attackDamagePerLevel=0
+    _attackRadiusBase=5
+    _attackRadiusPerLevel=5
+    _attackTimeBase=1
+    _attackTimePerLevel=0.333
+    _radialAttackType=""
+    _attackProcTypes={
+        MAX_ProcType
+    }
+    _attackProcCount=10
+}
+UpgradeChance=1
+ChanceScalesWithRank=0
+ConditionalUpgrades={
+    OnOverguardGainedCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDNBuff.png
+BaseDistillPointValue=24

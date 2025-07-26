@@ -1,0 +1,15 @@
+/Lotus/Weapons/Tenno/Melee/MeleeTrees/GunbladeCmbOneMeleeTree
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/GunbladeStanceA
+LocalizeDescTag=/Lotus/Language/Items/GunbladeStanceADesc
+Icon=/Lotus/Interface/Cards/Images/Stances/HighNoon.png
+ExcludeFromCodex=0
+ArtifactPolarity=AP_ATTACK
+IncludeInBoosterPack=1
+EquippedAttackSets={
+CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/GunbladeComboABranch
+CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/GunbladeEquippedQuickDefaults
+CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/GunbladeComboBBranch
+CC_GROUND_BRANCH_C=/Lotus/Weapons/Tenno/Melee/AttackSets/GunbladeComboCBranch
+}

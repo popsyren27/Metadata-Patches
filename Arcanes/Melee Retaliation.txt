@@ -1,0 +1,63 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/MeleeDamageForActiveShields
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/MeleeDamageForActiveShieldsName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/MeleeDamageForActiveShieldsBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionCX.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Arcanes/MeleeDamageForActiveShieldsDesc
+        LocKeyWordScript={
+            Script=MeleeDamageForActiveShields.lua
+            Function=GetDescription
+            _meleeDamagePerBonus=0.050000001
+            _meleeDamageStepPerFusionLevel=0.050000001
+            _overshieldMeleeDamageCoef=0.5
+            _shieldsToGetBonus=200
+            _shieldsToGetBonusStepPerFusionLevel=0
+            _meleeDamageLimit=4.1999998
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+Script={
+    Script=MeleeDamageForActiveShields.lua
+    Function=ApplyUpgrade
+    _meleeDamagePerBonus=0.050000001
+    _meleeDamageStepPerFusionLevel=0.050000001
+    _overshieldMeleeDamageCoef=0.5
+    _shieldsToGetBonus=200
+    _shieldsToGetBonusStepPerFusionLevel=0
+    _meleeDamageLimit=4.1999998
+}
+UnappliedScript={
+    Script=MeleeDamageForActiveShields.lua
+    Function=RemoveUpgrade
+    _meleeDamagePerBonus=0.30000001
+    _meleeDamageStepPerFusionLevel=0.1
+    _overshieldMeleeDamageCoef=0.5
+    _shieldsToGetBonus=200
+    _shieldsToGetBonusStepPerFusionLevel=0
+    _meleeDamageLimit=4.1999998
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCXBuff.png
+BaseDistillPointValue=18

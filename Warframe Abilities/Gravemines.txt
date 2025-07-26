@@ -1,0 +1,52 @@
+/Lotus/Powersuits/PowersuitAbilities/EntratiMechMinefieldAbility
+LocalizeTag=/Lotus/Language/Necromech/EntratiMechMinefieldAbilityName
+LocalizeDescTag=/Lotus/Language/Necromech/EntratiMechMinefieldAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/Mech/NechramechMine.png
+UniquePowerIdentifier=MINEFIELD
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=/Lotus/Powersuits/EntratiMech/MinefieldAbility.lua
+    Function=ActivateAbility
+    _leftSpawnBone=GAME_L1_SMALLARM
+    _rightSpawnBone=GAME_R1_SMALLARM
+    _leftReleaseAnimEvent=ReleaseMineL
+    _rightReleaseAnimEvent=ReleaseMineR
+    _mineType=/Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/NechroTech/MineProjectile
+    _activateSound=/Lotus/Sounds/Vehicles/NechroMech/Abilities/NechroMechGrenadeLaunchStart
+    _angleBetweenStreams=30
+    _triggerType=""
+    _maxSize=1
+    _mechFaction=Entrati
+    _npcMinRange=10
+    _npcMaxRange=20
+    _telegraphType=""
+    _telegraphPositionOffset={0,0,0}
+    _telegraphRotationOffset={0,0,0}
+    _isAiAbility=0
+}
+AbilityEvents={
+    {
+        tag=OnHit
+        eventType=ET_ON_HIT
+        scriptInstance={
+            Script=BrawlerPunch.lua
+            Function=OnHit
+            _activateAnims={}
+            _punchHands={}
+            _punchCastEffects={}
+            _castBurstEffect=""
+            _rockType=""
+            _invalidAvatarTypes={}
+            _augmentHelperType=""
+            _augmentTriggerType=""
+            _augmentEffect=""
+        }
+    }
+}
+EnergyRequiredToActivate=75
+PvpEnergyRequiredToActivate=0
+ActivationXP=75
+TurnToTarget=1
+VideoTexture=/Lotus/Interface/AbilityVideos/Necramech/VoidrigPower3_s.bk2

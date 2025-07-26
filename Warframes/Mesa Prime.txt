@@ -1,0 +1,131 @@
+/Lotus/Powersuits/Cowgirl/MesaPrime
+MarketMode=MM_HIDDEN
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Cowgirl/MesaPrimeHelmet,
+    PrimeSlingerPistols
+}
+LocalizeTag=/Lotus/Language/Primes/MesaPrimeName
+LocalizeDescTag=/Lotus/Language/Primes/MesaPrimeDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Primes/MesaPrime.png
+Diorama=/Lotus/Levels/Episodes/WarframesMesaPrime.level
+ExcludeFromCodex=0
+AvailableOnPvp=1
+ArtifactSlots={
+    AP_ATTACK,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_TACTIC,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_DEFENSE,
+    AP_TACTIC,
+    AP_ATTACK,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
+}
+DefaultCustomization={
+    Helmet={
+        ItemType=/Lotus/Upgrades/Skins/Cowgirl/MesaPrimeHelmet
+    }
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0.115,0.02,-0.090000004}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,-0.087155998,0,0.99619502}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={-0.115,-0.02,0.090000004}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,-0.087155998,0,0.99619502}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Cowgirl/MesaPrimeSkin
+    }
+}
+VariantType=VT_PRIME
+Mesh=/Lotus/Characters/Tenno/Gunslinger/MesaPrimeBody_skel.fbx
+PassiveAbilityLocTag=/Lotus/Language/Primes/MesaPrimePassiveAbility
+MaxEnergy=140
+InitialEnergy=65
+PvpBulletJumpSpeedMultiplier=0.89999998
+MaxHealthOverride=400
+ArmourRatingOverride=135
+IsPrime=1
+AttachedFX={
+    {
+        LocalPosition={0,0,0}
+        LocalRotation={0,0,0,1}
+        BoneName=GAME_L1_CLAV1
+        Type=/Lotus/Characters/Tenno/Gunslinger/Cloth/MesaPrimeLShoulderSkeletalCloth
+        Chance=255
+        RelativeToBounds=0
+        Attach=1
+        DestroyWithOwner=1
+        DestroyParentOnDeath=0
+        FadeOutOnDestruction=0
+        Scale=1
+        },
+        {
+            LocalPosition={0,0,0}
+            LocalRotation={0,0,0,1}
+            BoneName=GAME_R1_CLAV1
+            Type=/Lotus/Characters/Tenno/Gunslinger/Cloth/MesaPrimeRShoulderSkeletalCloth
+            Chance=255
+            RelativeToBounds=0
+            Attach=1
+            DestroyWithOwner=1
+            DestroyParentOnDeath=0
+            FadeOutOnDestruction=0
+            Scale=1
+            },
+            {
+                LocalPosition={-0.035999998,-0.023,0}
+                LocalRotation={-0.043577999,0.043577999,0.0019030001,0.998097}
+                BoneName=GAME_R1_LEG1
+                Type=/Lotus/Characters/Tenno/Gunslinger/Cloth/MesaPrimeRLegChapsCloth
+                Chance=255
+                RelativeToBounds=0
+                Attach=1
+                DestroyWithOwner=1
+                DestroyParentOnDeath=0
+                FadeOutOnDestruction=0
+                Scale=1
+                },
+                {
+                    LocalPosition={0.035999998,0.023,-0.023}
+                    LocalRotation={0,0,0,1}
+                    BoneName=GAME_L1_LEG1
+                    Type=/Lotus/Characters/Tenno/Gunslinger/Cloth/MesaPrimeLLegChapsCloth
+                    Chance=255
+                    RelativeToBounds=0
+                    Attach=1
+                    DestroyWithOwner=1
+                    DestroyParentOnDeath=0
+                    FadeOutOnDestruction=0
+                    Scale=1
+                }
+            }
+            SimCollision=MesaPrimePowerSuitSimCollision
+            MiniMapIcon=/Lotus/Interface/Icons/Markers/Powersuits/MesaPrimePortrait.png
+            MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Powersuits/LargePortraits/MesaPrimeLargePortrait.png
+            SpecialSlotItem={
+                SPECIAL_A_SLOT={
+                    ItemType=PrimeSlingerPistols
+                }
+            }

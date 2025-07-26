@@ -1,0 +1,95 @@
+/Lotus/Powersuits/PowersuitAbilities/ConcreteAuraAbility
+LocalizeTag=/Lotus/Language/Suits/QorvexAuraAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/QorvexAuraAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/QorvexDisometricGuard.png
+UniquePowerIdentifier=CONCRETE_AURA
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=ConcreteAura.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Concrete/HalfLife_anim.fbx
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Concrete/AuraCast
+    _castBurstEffect=/Lotus/Fx/PowersuitAbilities/Concrete/AuraCastBurst
+    _attachEffect=""
+    _hudBuffType=/Lotus/Powersuits/ConcreteFrame/ConcreteAuraBuff
+    _elementType=/Lotus/Powersuits/ConcreteFrame/AuraElement
+    _shockwaveFx=/Lotus/Fx/PowersuitAbilities/Concrete/PillarCastBurst
+    _chargeParent=/Lotus/Fx/PowersuitAbilities/Concrete/HalfLifeOrbitParentDeco
+    _chargeDeco=/Lotus/Fx/PowersuitAbilities/Concrete/HalfLifeBuffDeco
+}
+SecondaryScripts={
+    {
+        tag=GiveCharges
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=ConcreteAura.lua
+            Function=GiveCharges
+            _activateAnim=""
+            _castEffect=""
+            _castBurstEffect=""
+            _attachEffect=""
+            _hudBuffType=/Lotus/Powersuits/ConcreteFrame/ConcreteAuraBuff
+            _elementType=""
+            _shockwaveFx=""
+            _chargeParent=/Lotus/Fx/PowersuitAbilities/Concrete/HalfLifeOrbitParentDeco
+            _chargeDeco=/Lotus/Fx/PowersuitAbilities/Concrete/HalfLifeBuffDeco
+        }
+    }
+}
+AbilityEvents={
+    {
+        tag=AuraOnKill
+        eventType=ET_ON_KILL_OR_ASSIST
+        scriptInstance={
+            Script=ConcreteAura.lua
+            Function=AuraOnKill
+            _activateAnim=""
+            _castEffect=""
+            _castBurstEffect=""
+            _attachEffect=""
+            _hudBuffType=/Lotus/Powersuits/ConcreteFrame/ConcreteAuraBuff
+            _elementType=""
+            _shockwaveFx=""
+            _chargeParent=""
+            _chargeDeco=/Lotus/Fx/PowersuitAbilities/Concrete/HalfLifeBuffDeco
+        }
+        },
+        {
+            tag=ProcBlock
+            eventType=ET_ON_PROC_BLOCK
+            scriptInstance={
+                Script=ConcreteAura.lua
+                Function=ProcBlock
+                _activateAnim=""
+                _castEffect=""
+                _castBurstEffect=""
+                _attachEffect=""
+                _hudBuffType=/Lotus/Powersuits/ConcreteFrame/ConcreteAuraBuff
+                _elementType=""
+                _shockwaveFx=""
+                _chargeParent=""
+                _chargeDeco=""
+            }
+        }
+    }
+    NpcCooldownDuration=15
+    EnergyRequiredToActivate=75
+    AllowReactivate=1
+    AllowOnZipLines=1
+    AllowDuringOverride=1
+    ActivationXP=75
+    VideoTexture=/Lotus/Interface/AbilityVideos/QorvexPower3_s.bk2
+    ForceFeedbackEffectEvents={
+        {
+            EventName=FFEQorvexHalfLifeCast
+            ForceFeedbackEffect=/Lotus/Sounds/Warframes/Qorvex/QorvexHalfLifeCastFFE
+            },
+            {
+                EventName=FFEQorvexHalfLifeImpact
+                ForceFeedbackEffect=/Lotus/Sounds/Warframes/Qorvex/QorvexHalfLifeImpactFFE
+            }
+        }

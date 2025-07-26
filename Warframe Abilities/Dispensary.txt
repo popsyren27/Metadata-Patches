@@ -1,0 +1,51 @@
+/Lotus/Powersuits/PowersuitAbilities/OdaliskDispensaryAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/OdaliskDispensaryAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/OdaliskDispensaryAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/ProteaDispensary.png
+UniquePowerIdentifier=ODALISK_DISPENSARY
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=OdaliskDispensary.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Odalisk/Dispensary_anim.fbx
+    _pickupTypes={
+        /Lotus/Types/PickUps/HealthIncreaseExtraLarge,
+        /Lotus/Weapons/Ammo/AllAmmoPickup,
+        /Lotus/Types/PickUps/EnergyIncreaseSmall
+    }
+    _augmentPickupTypes={
+        /Lotus/Types/PickUps/CompanionHealSmall,
+        /Lotus/Types/PickUps/CompanionHeal,
+        /Lotus/Types/PickUps/CompanionHealBig,
+        /Lotus/Types/PickUps/CompanionHealHuge
+    }
+    _decoType=/Lotus/Characters/Tenno/Odalisk/OdaliskDispensaryDeco
+    _decoStartAnim=/Lotus/Animations/Tenno/Powers/Odalisk/DispensaryWEPStart_anim.fbx
+    _decoLoopAnim=/Lotus/Animations/Tenno/Powers/Odalisk/DispensaryWEPLoop_anim.fbx
+    _decoStopAnim=/Lotus/Animations/Tenno/Powers/Odalisk/DispensaryWEPEnd_anim.fbx
+    _markerType=/Lotus/Powersuits/Odalisk/DispensaryMarkerInfo
+    _augmentDeco=/Lotus/Fx/PowersuitAbilities/Odalisk/DispensaryAugmentSentinelDeco
+}
+NpcCooldownDuration=42
+EnergyRequiredToActivate=75
+ActivationXP=75
+CastSound=/Lotus/Sounds/Warframes/Protea/ProteaDispensaryCast
+VideoTexture=/Lotus/Interface/AbilityVideos/ProteaPower3_s.bk2
+HelminthOverrideDescTag=/Lotus/Language/Suits/OdaliskDispensaryAbilityDesc_Helminth
+ResourceOverrides={
+    {
+        Tag=DispensaryCast
+        Resource=/Lotus/Fx/PowersuitAbilities/Odalisk/DispensaryCast
+        },
+        {
+            Tag=DispensaryCastOnDeco
+            Resource=/Lotus/Fx/PowersuitAbilities/Odalisk/DispensaryCastOnDeco
+            },
+            {
+                Tag=DispensaryPickupSpawn
+                Resource=/Lotus/Fx/PowersuitAbilities/Odalisk/DispensaryPickupSpawn
+            }
+        }

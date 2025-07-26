@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Rifle/Expert/WeaponFactionDamageInfestedExpert
+patch not applied (yet)

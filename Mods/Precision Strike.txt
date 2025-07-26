@@ -1,0 +1,69 @@
+/Lotus/Upgrades/Mods/Rifle/Event/Arbitration/GrnGrenadeLauncherArbitrationMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/TonkorArbitrationMod
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/PrecisionStrikeBuffDesc
+Icon=/Lotus/Interface/Cards/Images/Rifle/GrnGrenadeLauncherArbitrationMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Mods/TonkorArbitrationModDesc
+    LocKeyWordScript={
+    Script=/Lotus/Scripts/WeaponAttachments/GrnGrenadeLauncher.lua
+    Function=GetLocValues
+    _avatarType=""
+    _damagePerRank=0.25
+    _nightwaveReloadSpeed={
+    0.375,
+    0.75,
+    1.1,
+    1.5
+}
+_nightwaveDuration=5
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ApplyUpgradesByDefault=0
+ArtifactPolarity=AP_TACTIC
+BaseDrain=QA_MEDIUM
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Weapons/Grineer/LongGuns/GrnGrenadeLauncher/GrnGrenadeLauncher
+IncompatibilityTags={
+POWER_WEAPON
+}
+Script={
+Script=/Lotus/Scripts/WeaponAttachments/GrnGrenadeLauncher.lua
+Function=ApplyNightwaveUpgrade
+_avatarType=""
+_damagePerRank=0.25
+_nightwaveReloadSpeed={
+0.375,
+0.75,
+1.1,
+1.5
+}
+_nightwaveDuration=5
+}
+UpgradeChance=1
+PlayEffect=0
+ConditionalUpgrades={
+OnProjectileHitCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/SpeedReloadBuffIcon.png

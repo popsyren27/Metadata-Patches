@@ -1,0 +1,77 @@
+/Lotus/Powersuits/PowersuitAbilities/ShockAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/ShockAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/ShockAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/VoltChainLightning.png
+UniquePowerIdentifier=VOLT_SHOCK
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=Shock.lua
+    Function=ActivateAbility
+    _activateAnim=""
+    _launchSound=""
+    _chain=1
+    _animEventToWaitFor=Shock
+    _Hand=GAME_L1_ARM3
+    _minRange=15.5
+    _ambientBeamEffectType=/Lotus/Fx/Weapons/Corpus/LightningRifle/SmallBeamSparkHitBurst
+    _beamScale=0.5
+    _isExtraBeam=0
+    _checkForStatus=0
+    _usethrow=1
+    _ignoreAvatarTypesWithoutHeldPosture={
+        /Lotus/Types/Enemies/Corpus/Turrets/TurretAvatars/AutoTurretAvatar
+    }
+    _throwEvent=VoltCast
+    _throwDoneEvent=CastAbility
+    _primeStrike=/Lotus/Fx/PowersuitAbilities/Volt/PrimeShockStrike
+    _pvpImpactSound=/Lotus/Sounds/Warframes/Volt/VoltGenericAbilityImpact
+    _teslaCoiledShockEffect=/Lotus/Fx/PowersuitAbilities/Volt/TeslaCoilShocked
+    _damageAugmentEffect=/Lotus/Fx/PowersuitAbilities/Volt/ShockTrooperBuffAttach
+    _augmentRangeDecoType=/Lotus/Fx/PowersuitAbilities/Volt/ShockTrooperRangeDeco
+}
+NpcCooldownDuration=8
+EnergyRequiredToActivate=15
+AllowOnZipLines=1
+ActivationXP=25
+CastSound=/Lotus/Sounds/Warframes/Volt/VoltCast
+VideoTexture=/Lotus/Interface/AbilityVideos/VoltPower1.bk2
+CanSnapCameraOnUse=1
+SoundEvents={
+    {
+        EventName=VoltShockCast2D
+        Sound=/Lotus/Sounds/Warframes/Volt/VoltChainLightning
+        Chance=1
+        Period=1
+        Context=PEC_LOCAL_ONLY
+        CancelEventName=""
+        },
+        {
+            EventName=VoltShockCast3D
+            Sound=/Lotus/Sounds/Warframes/Volt/VoltChainLightning3D
+            Chance=1
+            Period=1
+            Context=PEC_REMOTE_ONLY
+            CancelEventName=""
+        }
+    }
+    ResourceOverrides={
+        {
+            Tag=ShockCastBurst
+            Resource=/Lotus/Fx/PowersuitAbilities/Volt/ShockSpawner
+            },
+            {
+                Tag=ShockBeam
+                Resource=/Lotus/Fx/PowersuitAbilities/Volt/ShockBeam
+                },
+                {
+                    Tag=ShockExtraBeam
+                    Resource=/Lotus/Fx/PowersuitAbilities/Volt/ShockBeamExtra
+                    },
+                    {
+                        Tag=ShockAmbientBeam
+                        Resource=/Lotus/Fx/PowersuitAbilities/Volt/ShockBeamSmall
+                    }
+                }

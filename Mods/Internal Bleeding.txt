@@ -1,0 +1,83 @@
+/Lotus/Upgrades/Mods/Rifle/WeaponBleedOnImpactProcRifleMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/WeaponBleedOnImpactRifleModName
+Icon=/Lotus/Interface/Cards/Images/Rifle/WeaponBleedOnImpactProcRifleMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0.050000001
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Mods/WeaponBleedOnImpactModDesc
+    LocKeyWordScript={
+    Script=BleedOnImpactFireRateCheck.lua
+    Function=GetDescription
+    _fireRateDoubleBuff=2.5
+    _modProcType=WEAPON_SLASH_PROC_ON_IMPACT
+    _baseProcChance={
+    0.1,
+    0.15000001,
+    0.2,
+    0.25,
+    0.30000001,
+    0.34999999,
+    0.40000001,
+    0.44999999,
+    0.5
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_VERY_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/Rifle/LotusRifle
+Script={
+Script=BleedOnImpactFireRateCheck.lua
+Function=ApplyUpgrade
+_fireRateDoubleBuff=2.5
+_modProcType=WEAPON_SLASH_PROC_ON_IMPACT
+_baseProcChance={
+0.1,
+0.15000001,
+0.2,
+0.25,
+0.30000001,
+0.34999999,
+0.40000001,
+0.44999999,
+0.5
+}
+}
+UnappliedScript={
+Script=BleedOnImpactFireRateCheck.lua
+Function=UnapplyUpgrade
+_fireRateDoubleBuff=2
+_modProcType=WEAPON_SLASH_PROC_ON_IMPACT
+_baseProcChance={
+0.1,
+0.15000001,
+0.2,
+0.25,
+0.30000001,
+0.34999999,
+0.40000001,
+0.44999999,
+0.5
+}
+}

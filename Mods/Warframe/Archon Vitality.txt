@@ -1,9 +1,0 @@
-/Lotus/Upgrades/Mods/Warframe/Kahl/KahlAvatarHealthMaxMod
-Rarity=LEGENDARY
-LocalizeTag=/Lotus/Language/Mods/KahlAvatarHealthMax
-Icon=/Lotus/Interface/Cards/Images/Kahl/KahlAvatarHealthMaxMod.png
-BaseDrain=QA_HIGH
-SubUpgrades={
-KahlAvatarDoubleFireSubMod
-}
-IncludeInBoosterPack=0

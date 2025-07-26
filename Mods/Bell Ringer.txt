@@ -1,0 +1,68 @@
+/Lotus/Upgrades/Mods/Sentinel/Kubrow/BeastWeapon/BeastKnockdownWeaponMod
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Pets/BeastReelingImpactModName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Kubrow/BeastKnockdownWeaponMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Pets/BeastReelingImpactModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ExtraUpgrades={
+{
+UpgradeType=WEAPON_FORCED_PROC_CHANCE
+OperationType=ADD
+Value=1
+DamageType=DT_ANY
+AutoType=1
+ValidType=""
+SymbolFilter=""
+UpgradeObject=""
+ValidPostures={}
+ValidModifiers={}
+InvalidModifiers={}
+ValidProcTypes={
+PT_KNOCKED_DOWN
+}
+OverrideLocalization=1
+LocTag=""
+LocKeyWordScript={
+Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ExtraUpgradeFusionLevel=QA_NONE
+ArtifactPolarity=AP_TACTIC
+BaseDrain=QA_MEDIUM
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Types/Friendly/Pets/BeastPetMeleeWeaponBase

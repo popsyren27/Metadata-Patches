@@ -1,0 +1,41 @@
+/Lotus/Powersuits/Loki/InvisibilityAugmentCard
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/InvisibilityAbilityAugment1Name
+Icon=/Lotus/Interface/Cards/Images/AbilityAugments/LokiInvisibilityAugment.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_ABILITY_AUGMENT
+    OperationType=ADD
+    Value=1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=AUGMENT_ONE
+    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/InvisibilityAbility
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Suits/InvisibilityAbilityAugment1Desc
+    LocKeyWordScript={
+    Script=/Lotus/Powersuits/PowersuitAbilities/InvisibilityAbility.lua
+    Function=GetAugmentDescriptionInfo
+    _cloakSound=""
+    _cloakOutSound=""
+    _activateAnim=""
+    _invisMixEffect=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_POWER
+BaseDrain=QA_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=LokiBaseSuit
+IsAbilityAugment=1
+IsUtility=1

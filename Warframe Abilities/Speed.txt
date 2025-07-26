@@ -1,0 +1,48 @@
+/Lotus/Powersuits/PowersuitAbilities/SpeedAbility
+LocalizeTag=/Lotus/Language/Suits/SpeedAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/SpeedAbilityDesc
+StatusDescTag=/Lotus/Language/Buffs/SpeedBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/VoltSuperSpeed.png
+UniquePowerIdentifier=VOLT_SPEED
+AdditionalPowerIdentifiers={
+    EFFECT_MOBILITY
+}
+Script={
+    Script=Speed.lua
+    Function=ActivateAbility
+    _SpeedSound=""
+    _SpeedEndSound=""
+    _SpeedTrail=""
+    _augmentOneElementType=""
+    _ambientBeamEffectType=""
+    _ExcludedBoostTypes={
+        /Lotus/Types/Enemies/Duviri/VoidEclipse/EclipseDuviriDaxAvatar
+    }
+}
+SecondaryScripts={
+    {
+        tag=GiveSpeed
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=Speed.lua
+            Function=GiveSpeed
+            _SpeedSound=/Lotus/Sounds/Warframes/Volt/VoltSpeedDash3D
+            _SpeedEndSound=/Lotus/Sounds/Warframes/Volt/VoltSpeedDisable
+            _SpeedTrail=""
+            _augmentOneElementType=/Lotus/Powersuits/Volt/SpeedAugmentElement
+            _ambientBeamEffectType=/Lotus/Fx/PowersuitAbilities/Volt/BeamSparkHitBurst
+            _ExcludedBoostTypes={
+                /Lotus/Types/Enemies/Duviri/VoidEclipse/EclipseDuviriDaxAvatar
+            }
+        }
+    }
+}
+NpcCooldownDuration=30
+AllowReactivate=1
+AllowOnZipLines=1
+ActivationXP=50
+PlayCastSound=0
+VideoTexture=/Lotus/Interface/AbilityVideos/VoltPower2.bk2
+PvpDescription=/Lotus/Language/Suits/SpeedAbilityPvPDesc

@@ -1,0 +1,7 @@
+/Lotus/Powersuits/Oraxia/Oraxia
+MarketMode=MM_VISIBLE
+PremiumPrice=370
+Icon=/Lotus/Interface/Icons/StoreIcons/Warframes/Oraxia.png
+RectangleIcon=0
+ExcludeFromCodex=0
+RecipeHelpText=/Lotus/Language/Recipes/OraxiaRecipeHelpText

@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Melee/Beginner/WeaponCritFireRateBonusModBeginner
+patch not applied (yet)

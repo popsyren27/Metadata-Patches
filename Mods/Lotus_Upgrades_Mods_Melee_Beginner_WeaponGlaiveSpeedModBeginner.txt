@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Melee/Beginner/WeaponGlaiveSpeedModBeginner
+patch not applied (yet)

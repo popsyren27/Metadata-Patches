@@ -1,0 +1,78 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/AbilityStrengthOnSummonAttack
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/1999/AbilityStrengthOnSummonAttackName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/1999/AbilityStrengthOnSummonAttackBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionDP.png
+ExcludeFromCodex=0
+ExtraUpgrades={
+    {
+        UpgradeType=GAMEPLAY_FREE_REVIVE_COUNT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerBonusRevive
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+Script={
+    Script=GiveStatOnCondition.lua
+    Function=ApplyUpgrade
+    _giveStatIncreaseBase=0.0099999998
+    _giveStatIncreasePerLevel=0.0099999998
+    _giveStatType=AVATAR_ABILITY_STRENGTH
+    _giveStatOperation=STACKING_MULTIPLY
+    _maxStacks=10
+    _giveBonusStatLoc=""
+    _giveBonusStatIncrease=1000
+    _giveBonusStatType=AVATAR_MOVEMENT_SPEED
+    _giveBonusStatOperation=MULTIPLY
+}
+SubUpgrades={
+    AbilityStrengthOnSummonAttackSub,
+    AbilityStrengthOnSummonAttackSubSub
+}
+EnhancementTag=/Lotus/Language/1999/AbilityStrengthOnSummonAttackDesc
+EnhancementTagLocScript={
+    Script=GiveStatOnCondition.lua
+    Function=GetAbilityStrengthOnSummonAttacksDescriptionInfo
+    _giveStatIncreaseBase=0.0099999998
+    _giveStatIncreasePerLevel=0.0099999998
+    _giveStatType=AVATAR_ABILITY
+    _giveStatOperation=ADD
+    _maxStacks=10
+    _giveBonusStatLoc=/Lotus/Language/1999/AbilityStrengthOnSummonAttackBonusDesc
+    _giveBonusStatIncrease=0.2
+    _giveBonusStatType=AVATAR_ABILITY
+    _giveBonusStatOperation=ADD
+}
+UpgradeChance=1
+ConditionalUpgrades={
+    OnSummonHitCondition,
+    /Lotus/Powersuits/Pagemaster/OnPagemasterSummonHitCondition,
+    /Lotus/Powersuits/Infestation/OnInfestationSummonHitCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDPBuff.png
+BaseDistillPointValue=24

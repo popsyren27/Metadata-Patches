@@ -1,0 +1,103 @@
+/Lotus/Powersuits/PowersuitAbilities/EntratiMechTurretModeAbility
+LocalizeTag=/Lotus/Language/Necromech/EntratiMechTurretModeAbilityName
+LocalizeDescTag=/Lotus/Language/Necromech/EntratiMechTurretModeAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/Mech/NechramechArtillery.png
+UniquePowerIdentifier=BRAWLER_PUNCH
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=/Lotus/Powersuits/EntratiMech/EntratiMechTurretModeAbility.lua
+    Function=ActivateAbility
+    _useInputFilter=1
+    _inputFilter=/Lotus/Powersuits/EntratiMech/ArtilleryInputFilter
+    _powerMenuFilter=/Lotus/Powersuits/Cowgirl/GunFuPowerMenu
+    _buffEffectType=/Lotus/Fx/Gameplay/Thanomech/ArtilleryModeFX
+    _screenParticleEffectB=""
+    _disableSound=""
+    _enterAnim=/Lotus/Animations/Orokin/NechroTech/TurretStart_anim.fbx
+    _exitAnim=/Lotus/Animations/Orokin/NechroTech/TurretEnd_anim.fbx
+    _enterTurretAction=EnterTurretMode
+    _exitTurretAction=ExitTurretMode
+    _cameraOffset={0,2,-3}
+    _energyPerSecondConsumption=5
+    _highlightRadius=40
+    _projectorType=/Lotus/Fx/Weapons/Grineer/LaserAimRifle/ArgonakHighlight
+    _baseDamageMult=15
+}
+SecondaryScripts={
+    {
+        tag=GiveWeapon
+        executionMode=EM_HOST
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=/Lotus/Powersuits/EntratiMech/EntratiMechTurretModeAbility.lua
+            Function=GiveGuns
+            _useInputFilter=0
+            _inputFilter=""
+            _powerMenuFilter=""
+            _buffEffectType=""
+            _screenParticleEffectB=""
+            _disableSound=""
+            _enterAnim=""
+            _exitAnim=""
+            _enterTurretAction=EnterTurretMode
+            _exitTurretAction=ExitTurretMode
+            _cameraOffset={0,0,0}
+            _energyPerSecondConsumption=0
+            _highlightRadius=40
+            _projectorType=""
+            _baseDamageMult=15
+        }
+        },
+        {
+            tag=RemoveWeapon
+            executionMode=EM_HOST
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=/Lotus/Powersuits/EntratiMech/EntratiMechTurretModeAbility.lua
+                Function=RemoveGuns
+                _useInputFilter=0
+                _inputFilter=""
+                _powerMenuFilter=""
+                _buffEffectType=""
+                _screenParticleEffectB=""
+                _disableSound=""
+                _enterAnim=""
+                _exitAnim=""
+                _enterTurretAction=EnterTurretMode
+                _exitTurretAction=ExitTurretMode
+                _cameraOffset={0,0,0}
+                _energyPerSecondConsumption=0
+                _highlightRadius=40
+                _projectorType=""
+                _baseDamageMult=15
+            }
+        }
+    }
+    AbilityEvents={
+        {
+            tag=OnHit
+            eventType=ET_ON_HIT
+            scriptInstance={
+                Script=BrawlerPunch.lua
+                Function=OnHit
+                _activateAnims={}
+                _punchHands={}
+                _punchCastEffects={}
+                _castBurstEffect=""
+                _rockType=""
+                _invalidAvatarTypes={}
+                _augmentHelperType=""
+                _augmentTriggerType=""
+                _augmentEffect=""
+            }
+        }
+    }
+    NpcCooldownDuration=24
+    EnergyRequiredToActivate=50
+    PvpEnergyRequiredToActivate=0
+    AllowToggle=1
+    VideoTexture=/Lotus/Interface/AbilityVideos/Necramech/VoidrigPower4_s.bk2

@@ -1,0 +1,54 @@
+/Lotus/Powersuits/Jade/DaggerAugmentCard
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/PhysicDaggerAbilityAugment1Name
+Icon=/Lotus/Interface/Cards/Images/AbilityAugments/NyxPsychicBoltsAugment1.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_ABILITY_AUGMENT
+    OperationType=ADD
+    Value=1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=AUGMENT_ONE
+    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/DaggerAbility
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Suits/PhysicDaggerAbilityAugment1Desc
+    LocKeyWordScript={
+    Script=/Lotus/Powersuits/PowersuitAbilities/PsychicDagger.lua
+    Function=GetAugmentDescriptionInfo
+    _activateAnim=""
+    _projTypes={}
+    _pvpProjTypes={}
+    _fightingProjType=""
+    _launchSound=""
+    _animEventToWaitFor=""
+    _Hand=GAME_L1_ARM3
+    _minRange=150
+    _mindcontrolFx=""
+    _usethrow=0
+    _throwEvent=ThrowAbility
+    _throwDoneEvent=PreFireDone
+    _useCapsuleTargetingPvp=0
+    _castEffect=""
+    _castEffectBurst=""
+    _spawnOnDeath=""
+    _baseResistantSlow=0.80000001
+    _disabledEffect=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_POWER
+BaseDrain=QA_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=JadeBaseSuit
+IsAbilityAugment=1

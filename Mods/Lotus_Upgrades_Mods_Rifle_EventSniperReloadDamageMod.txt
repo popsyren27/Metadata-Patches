@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Rifle/EventSniperReloadDamageMod
+patch not applied (yet)

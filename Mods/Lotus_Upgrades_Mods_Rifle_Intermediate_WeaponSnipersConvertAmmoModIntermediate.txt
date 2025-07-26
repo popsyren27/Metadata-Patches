@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Rifle/Intermediate/WeaponSnipersConvertAmmoModIntermediate
+patch not applied (yet)

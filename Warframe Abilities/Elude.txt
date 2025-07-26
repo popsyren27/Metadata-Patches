@@ -1,0 +1,85 @@
+/Lotus/Powersuits/PowersuitAbilities/PacifistDodgeAbility
+LocalizeTag=/Lotus/Language/Suits/PacifistDodgeAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/PacifistDodgeAbilityDesc
+StatusDescTag=/Lotus/Language/Suits/PacifistDodgeAbilityAugment1StatusDesc
+Icon=/Lotus/Interface/Icons/Abilities/BaruukBulletDodger.png
+UniquePowerIdentifier=PACIFIST_DODGE
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=PacifistDodge.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Pacifist/BulletPhaseStart_anim.fbx
+    _deactivateAnim=/Lotus/Animations/Tenno/Powers/Pacifist/BulletPhaseEnd_anim.fbx
+    _dodgedEffect=""
+    _waistCloth=""
+    _angleDeco=/Lotus/Fx/PowersuitAbilities/Pacifist/DodgeCoverageDeco
+}
+SecondaryScripts={
+    {
+        tag=AddEdgePostMigrate
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=/Lotus/Powersuits/Pacifist/PacifistPassive.lua
+            Function=AddEdgePostMigrate
+            _primeMesh=""
+            _primeSymbolDeco=""
+        }
+    }
+}
+AbilityEvents={
+    {
+        tag=OnDodge
+        eventType=ET_ON_DODGE
+        scriptInstance={
+            Script=PacifistDodge.lua
+            Function=OnDodge
+            _activateAnim=""
+            _deactivateAnim=""
+            _dodgedEffect=/Lotus/Fx/PowersuitAbilities/Pacifist/Dodged
+            _waistCloth=""
+            _angleDeco=""
+        }
+    }
+}
+NpcCooldownDuration=50
+EnergyConsumptionOverTime=2.5
+AllowToggle=1
+ActivationXP=25
+CastSound=/Lotus/Sounds/Warframes/Pacifist/PacifistDodgeCast
+VideoTexture=/Lotus/Interface/AbilityVideos/BaruukPower1_s.bk2
+SoundEvents={
+    {
+        EventName=SFXPacifistDodgeCastEnd
+        Sound=/Lotus/Sounds/Warframes/Pacifist/PacifistDodgeCastEnd
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+    }
+}
+ResourceOverrides={
+    {
+        Tag=DodgeCast
+        Resource=/Lotus/Fx/PowersuitAbilities/Pacifist/DodgeCast
+        },
+        {
+            Tag=DodgeCastBurst
+            Resource=/Lotus/Fx/PowersuitAbilities/Pacifist/DodgeCastBurst
+            },
+            {
+                Tag=DodgeEndBurst
+                Resource=/Lotus/Fx/PowersuitAbilities/Pacifist/DodgeEndBurst
+                },
+                {
+                    Tag=DodgeAttach
+                    Resource=/Lotus/Fx/PowersuitAbilities/Pacifist/DodgeAttach
+                    },
+                    {
+                        Tag=DodgeExtraProjector
+                        Resource=/Lotus/Fx/PowersuitAbilities/Pacifist/DodgeSpotSkinProjector
+                    }
+                }

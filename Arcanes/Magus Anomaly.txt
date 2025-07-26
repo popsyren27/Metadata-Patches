@@ -1,0 +1,74 @@
+/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/PullOnTransferenceIn
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/PullOnTransferenceIn
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/SolarisMagusAnomaly.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Arcanes/PullOnTransferenceInDesc
+        LocKeyWordScript={
+            Script=PullOnTransferenceIn.lua
+            Function=GetDescription
+            _range={
+                5,
+                10,
+                15,
+                20,
+                25,
+                30
+            }
+            _pullEffect=""
+            _invalidTypes={}
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+Script={
+    Script=PullOnTransferenceIn.lua
+    Function=Pull
+    _range={
+        5,
+        10,
+        15,
+        20,
+        25,
+        30
+    }
+    _pullEffect=/Lotus/Fx/PowersuitAbilities/Operator/PullAttach
+    _invalidTypes={
+        /Lotus/Types/Game/DropshipAvatar,
+        /Lotus/Types/Game/VoidNegationTowerAvatar
+    }
+}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Events/OnTransferenceInCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnTransferenceInCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/SolarisMagusAnomaly.png
+TransferenceSupport=TS_PREVIOUS_AVATAR
+BaseDistillPointValue=12

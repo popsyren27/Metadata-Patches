@@ -1,0 +1,112 @@
+/Lotus/Powersuits/Archwing/ArchwingAbilities/GrappleHookAbility
+LocalizeTag=/Lotus/Language/Items/StealthArchwingRiplineName
+LocalizeDescTag=/Lotus/Language/Items/StealthArchwingRiplineDesc
+Icon=/Lotus/Interface/Icons/Abilities/ItzalRipline.png
+UniquePowerIdentifier=ITZAL_RIP_LINE
+AdditionalPowerIdentifiers={
+    EFFECT_MOBILITY
+}
+Script={
+    Script=/Lotus/Powersuits/PowersuitAbilities/AWGrappleHookPower.lua
+    Function=ActivateAbility
+    _activateSoundLocal=""
+    _activateSoundRemote=""
+    _sound=""
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Berserker/GrapplePullAW_anim.fbx
+    _beamType=/Lotus/Fx/PowersuitAbilities/Berserker/GrappleBeam
+    _primeBeamAddType=/Lotus/Fx/PowersuitAbilities/Berserker/GrappleBeamPrime
+    _isPrimeBeam=0
+    _animEventToWaitFor=Yank
+    _Hand=GAME_L1_ARM3
+    _endPointEffect=/Lotus/Fx/PowersuitAbilities/Berserker/GrappleHookEndPoint
+    _enemyEffect=/Lotus/Fx/PowersuitAbilities/Berserker/GrappleHookEnemyAttach
+    _endTriggerTag=ExtractionTrigger
+    _invalidTargetTypes={
+        /Lotus/Types/NeutralCreatures/CreatureAvatars/SandRayAvatar,
+        /Lotus/Types/Enemies/Grineer/Vip/Avatars/DoubleBossAvatar,
+        /Lotus/Types/Enemies/Grineer/Vip/Hek/HekDroneAvatar,
+        /Lotus/Types/Enemies/Grineer/Vip/Hek/HekBipedAvatar,
+        /Lotus/Types/Game/GolemFullAvatar,
+        /Lotus/Types/Game/GolemHeadAvatar
+    }
+    _avatarType=/Lotus/Types/Game/LotusAvatar
+}
+SecondaryScripts={
+    {
+        tag=PullTarget
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=/Lotus/Powersuits/PowersuitAbilities/AWGrappleHookPower.lua
+            Function=DoPull
+            _activateSoundLocal=""
+            _activateSoundRemote=""
+            _sound=""
+            _activateAnim=""
+            _beamType=/Lotus/Fx/PowersuitAbilities/Berserker/GrappleBeam
+            _primeBeamAddType=""
+            _isPrimeBeam=0
+            _animEventToWaitFor=""
+            _Hand=GAME_L1_ARM3
+            _endPointEffect=""
+            _enemyEffect=""
+            _endTriggerTag=ExtractionTrigger
+            _invalidTargetTypes={}
+            _avatarType=""
+        }
+        },
+        {
+            tag=GrappleTo
+            executionMode=EM_ALL
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=/Lotus/Powersuits/PowersuitAbilities/AWGrappleHookPower.lua
+                Function=GrappleToPos
+                _activateSoundLocal=""
+                _activateSoundRemote=""
+                _sound=""
+                _activateAnim=""
+                _beamType=""
+                _primeBeamAddType=""
+                _isPrimeBeam=0
+                _animEventToWaitFor=""
+                _Hand=GAME_L1_ARM3
+                _endPointEffect=""
+                _enemyEffect=""
+                _endTriggerTag=ExtractionTrigger
+                _invalidTargetTypes={}
+                _avatarType=""
+            }
+            },
+            {
+                tag=SetFreeCasts
+                executionMode=EM_HOST
+                inheritPrimary=0
+                functionName=""
+                scriptInstance={
+                    Script=/Lotus/Powersuits/PowersuitAbilities/AWGrappleHookPower.lua
+                    Function=SetNumFreeCasts
+                    _activateSoundLocal=""
+                    _activateSoundRemote=""
+                    _sound=""
+                    _activateAnim=""
+                    _beamType=""
+                    _primeBeamAddType=""
+                    _isPrimeBeam=0
+                    _animEventToWaitFor=""
+                    _Hand=GAME_L1_ARM3
+                    _endPointEffect=""
+                    _enemyEffect=""
+                    _endTriggerTag=ExtractionTrigger
+                    _invalidTargetTypes={}
+                    _avatarType=""
+                }
+            }
+        }
+        NpcCooldownDuration=14
+        AllowReactivate=1
+        ActivationXP=25
+        CastSound=/Lotus/Sounds/Weapons/Archwing/Powers/ArchwingZipline/ArchwingZiplineCast
+        VideoTexture=/Lotus/Interface/Cards/Images/ArchwingMods/Iztal/Ripline.png

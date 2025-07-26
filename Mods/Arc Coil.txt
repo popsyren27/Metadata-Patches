@@ -1,0 +1,55 @@
+/Lotus/Types/Sentinels/SentinelPrecepts/ArcTrap
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/ArcTrapStoreItemName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Pets/ArcDroneArcTrap.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Items/ArcTrapStoreItemDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Sentinels/SentinelAbilities/ArcTrap.lua
+    Function=GetDescriptionInfo
+    _beamType=""
+    _targetBone=""
+    _launchBone=""
+    _invalidTargetTypes={}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ItemCompatibility=/Lotus/Types/Sentinels/SentinelPowersuits/ArcDronePowerSuit
+Ability={
+Script={
+Script=/Lotus/Types/Sentinels/SentinelAbilities/ArcTrap.lua
+Function=NpcEvaluateAbility
+_beamType=/Lotus/Types/Sentinels/SentinelWeapons/ArcTrapBeam
+_targetBone=GAME_C1_SPINE1
+_launchBone=GAME_C1_COG
+_invalidTargetTypes={
+/Lotus/Types/Game/CreatureBaseAvatar
+}
+}
+CooldownDuration=1
+EnergyRequiredToActivate=0
+ActivationXP=0
+CastSound=/Lotus/Sounds/Weapons/Sentinel/ArcDrone/SentinelArcDroneLightningZap
+Blocking=0
+}

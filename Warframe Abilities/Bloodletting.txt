@@ -1,0 +1,17 @@
+/Lotus/Powersuits/PowersuitAbilities/GarudaBloodAbility
+LocalizeTag=/Lotus/Language/Suits/GarudaBloodAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/GarudaBloodAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/GarudaBloodSunder.png
+UniquePowerIdentifier=GARUDA_BLOOD
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=GarudaBlood.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Garuda/BloodSunder_anim.fbx
+}
+NpcCooldownDuration=28
+EnergyRequiredToActivate=0
+ActivationXP=0
+VideoTexture=/Lotus/Interface/AbilityVideos/GarudaPower3_s.bk2

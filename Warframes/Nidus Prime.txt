@@ -1,0 +1,44 @@
+/Lotus/Powersuits/Infestation/InfestationPrime
+MarketMode=MM_HIDDEN
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Infestation/NidusPrimeHelmet,
+    /Lotus/Types/Items/ShipFeatureItems/AlchemyRoomFeatureItem
+}
+LocalizeTag=/Lotus/Language/Primes/InfestationPrimeName
+LocalizeDescTag=/Lotus/Language/Primes/InfestationPrimeDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Primes/NidusPrime.png
+Diorama=/Lotus/Levels/Episodes/WarframesNidusPrime.level
+ExcludeFromCodex=0
+AvailableOnPvp=0
+ArtifactSlots={
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_TACTIC,
+    AP_DEFENSE,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_ATTACK,
+    AP_ATTACK,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
+}
+DefaultCustomization={
+    Helmet={
+        ItemType=/Lotus/Upgrades/Skins/Infestation/NidusPrimeHelmet
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Infestation/NidusPrimeSkin
+    }
+}
+VariantType=VT_PRIME
+Mesh=/Lotus/Characters/Tenno/Infestation/NidusPrime/NidusPrimeBody_skel.fbx
+MaxEnergy=140
+InitialEnergy=75
+MaxHealthOverride=550
+ArmourRatingOverride=425
+IsPrime=1
+AttachedFX={}
+MiniMapIcon=/Lotus/Interface/Icons/Markers/Powersuits/NidusPrimePortrait.png
+MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Powersuits/LargePortraits/NidusPrimeLargePortrait.png

@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Warframe/Expert/AvatarDamageToEnergyModExpert
+patch not applied (yet)

@@ -1,0 +1,74 @@
+/Lotus/Powersuits/PowersuitAbilities/PacifistWaveAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/PacifistWaveAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/PacifistWaveAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/BaruukCalmingWave.png
+UniquePowerIdentifier=PACIFIST_WAVE
+AdditionalPowerIdentifiers={
+    EFFECT_DEBUFF
+}
+Script={
+    Script=PacifistWave.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Pacifist/CalmingWave_anim.fbx
+    _areaPatch=/Lotus/Fx/PowersuitAbilities/Pacifist/WaveAreaPatch
+    _creatureSleepCaptureAction=""
+    _creatureMaxDistressDistance=5
+}
+SecondaryScripts={
+    {
+        tag=CalmEnemies
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=PacifistWave.lua
+            Function=CalmEnemies
+            _activateAnim=""
+            _areaPatch=/Lotus/Fx/PowersuitAbilities/Pacifist/WaveAreaPatch
+            _creatureSleepCaptureAction=/Lotus/Types/Gameplay/Conservation/ConservationCaptureAction
+            _creatureMaxDistressDistance=5
+        }
+    }
+}
+NpcCooldownDuration=30
+EnergyRequiredToActivate=50
+AllowDuringOverride=1
+ActivationXP=50
+VideoTexture=/Lotus/Interface/AbilityVideos/BaruukPower2_s.bk2
+SoundEvents={
+    {
+        EventName=SFXPacifistWaveCast
+        Sound=/Lotus/Sounds/Warframes/Pacifist/PacifistWaveCast
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=SFXPacifistWaveBurst
+            Sound=/Lotus/Sounds/Warframes/Pacifist/PacifistWaveBurst
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+        }
+    }
+    ResourceOverrides={
+        {
+            Tag=WaveCast
+            Resource=/Lotus/Fx/PowersuitAbilities/Pacifist/WaveCast
+            },
+            {
+                Tag=WaveCastBurst
+                Resource=/Lotus/Fx/PowersuitAbilities/Pacifist/WaveCastBurst
+                },
+                {
+                    Tag=WaveCalming
+                    Resource=/Lotus/Fx/PowersuitAbilities/Pacifist/WaveCalmBuildUpProj
+                    },
+                    {
+                        Tag=WaveCalmed
+                        Resource=/Lotus/Fx/PowersuitAbilities/Pacifist/WaveCalmed
+                    }
+                }

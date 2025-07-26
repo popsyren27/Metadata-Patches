@@ -1,0 +1,65 @@
+/Lotus/Upgrades/Mods/Melee/WeaponImpactDamageMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/ImpactDamageMeleeMod
+Icon=/Lotus/Interface/Cards/Images/Melee/ImpactDamageMeleeMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+    OperationType=STACKING_MULTIPLY
+    Value=0.15000001
+    DamageType=DT_IMPACT
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponImpactDamage
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+},
+{
+    UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+    OperationType=STACKING_MULTIPLY
+    Value=0.75
+    DamageType=DT_IMPACT
+    AutoType=0
+    ValidType=/Lotus/Weapons/Infested/InfestedLich/Melee/InfestedHammer/InfLichHammerWeapon
+    CheckTypeOnInstall=1
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=1
+}
+}
+ArtifactPolarity=AP_TACTIC
+ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
+IncludeInBoosterPack=1

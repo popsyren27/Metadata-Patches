@@ -1,0 +1,52 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/HeavyCritOnRegularMelee
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/HeavyCritOnRegularMeleeName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/HeavyCritOnRegularMeleeBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionCV.png
+ExcludeFromCodex=0
+IncompatibilityTags={
+    OPERATOR_SUIT,
+    POWER_WEAPON_LITE
+}
+Script={
+    Script=HeavyCritEachHit.lua
+    Function=HeavyCritLoop
+    _critPerHit=0.07
+    _critPerFusionLevel=0.07
+    _critStackLimit=0.69999999
+    _critStackLimitPerFusionLevel=0.69999999
+    _isServerAuthoritive=0
+    _waitForMeleeEndTimeout=5
+}
+UnappliedScript={
+    Script=HeavyCritEachHit.lua
+    Function=UnapplyUpgrades
+    _critPerHit=0.050000001
+    _critPerFusionLevel=0.050000001
+    _critStackLimit=4.5
+    _critStackLimitPerFusionLevel=0.5
+    _isServerAuthoritive=0
+    _waitForMeleeEndTimeout=5
+}
+SubUpgrades={
+    HeavyCritOnRegularMeleeHeavyTrackerSub,
+    HeavyCritOnRegularMeleeRegularTrackerSub
+}
+EnhancementTag=/Lotus/Language/Arcanes/HeavyCritOnRegularMeleeDesc
+EnhancementTagLocScript={
+    Script=HeavyCritEachHit.lua
+    Function=GetDescription
+    _critPerHit=0.07
+    _critPerFusionLevel=0.07
+    _critStackLimit=0.69999999
+    _critStackLimitPerFusionLevel=0.69999999
+    _isServerAuthoritive=0
+    _waitForMeleeEndTimeout=5
+}
+UpgradeChance=1
+DurationScalesWithRank=0
+ChanceScalesWithRank=0
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCVBuff.png
+BaseDistillPointValue=24

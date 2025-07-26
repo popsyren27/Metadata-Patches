@@ -1,0 +1,114 @@
+/Lotus/Powersuits/PowersuitAbilities/DagathHorseAbility
+LocalizeTag=/Lotus/Language/Suits/DagathHorseAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/DagathHorseAbilityDescription
+Icon=/Lotus/Interface/Icons/Abilities/DagathUndyingGallop.png
+UniquePowerIdentifier=DAGATH_HORSE
+AdditionalPowerIdentifiers={
+    EFFECT_MOBILITY
+}
+Script={
+    Script=DagathHorse.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Dagath/UndyingGallop_anim.fbx
+    _spawnHorsesAnimEvent=SpawnHorses
+    _chargeAnimEvent=AbilityCast
+    _spectreType=/Lotus/Fx/PowersuitAbilities/Dagath/DagathHorseCloneDeco
+    _spectreChargeAnim=/Lotus/Animations/Creatures/ErstazHorse/GallopCycleStationary_anim.fbx
+    _spectreFxProjType=/Lotus/Fx/PowersuitAbilities/Dagath/DagathHorseProj
+    _spectreSpeed=15
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Dagath/HorseCast
+    _castEffectBurst=/Lotus/Fx/PowersuitAbilities/Dagath/HorseCastBurst
+    _wallFxType=/Lotus/Fx/PowersuitAbilities/Dagath/HorseForwardCaster
+    _horseDissipateSound=/Lotus/Sounds/Warframes/Wisp/WispLight3D
+    _damageTrigger=/Lotus/Powersuits/Dagath/HorseElement
+    _horseDummyType=/Lotus/Fx/PowersuitAbilities/Dagath/DagathHorseDummyDeco
+}
+SecondaryScripts={
+    {
+        tag=DoHorseSpawn
+        executionMode=EM_ALL
+        inheritPrimary=1
+        functionName=DoHorseSpawn
+        scriptInstance={
+            Script=DagathHorse.lua
+            Function=DoHorseSpawn
+            _activateAnim=/Lotus/Animations/Tenno/Powers/Dagath/UndyingGallop_anim.fbx
+            _spawnHorsesAnimEvent=SpawnHorses
+            _chargeAnimEvent=AbilityCast
+            _spectreType=/Lotus/Fx/PowersuitAbilities/Dagath/DagathHorseCloneDeco
+            _spectreChargeAnim=/Lotus/Animations/Creatures/ErstazHorse/GallopCycleStationary_anim.fbx
+            _spectreFxProjType=/Lotus/Fx/PowersuitAbilities/Dagath/DagathHorseProj
+            _spectreSpeed=15
+            _castEffect=/Lotus/Fx/PowersuitAbilities/Dagath/HorseCast
+            _castEffectBurst=/Lotus/Fx/PowersuitAbilities/Dagath/HorseCastBurst
+            _wallFxType=/Lotus/Fx/PowersuitAbilities/Dagath/HorseForwardCaster
+            _horseDissipateSound=/Lotus/Sounds/Warframes/Wisp/WispLight3D
+            _damageTrigger=/Lotus/Powersuits/Dagath/HorseElement
+            _horseDummyType=/Lotus/Fx/PowersuitAbilities/Dagath/DagathHorseDummyDeco
+        }
+        },
+        {
+            tag=DoHorseCharge
+            executionMode=EM_ALL
+            inheritPrimary=1
+            functionName=DoHorseCharge
+            scriptInstance={
+                Script=DagathHorse.lua
+                Function=DoHorseCharge
+                _activateAnim=/Lotus/Animations/Tenno/Powers/Dagath/UndyingGallop_anim.fbx
+                _spawnHorsesAnimEvent=SpawnHorses
+                _chargeAnimEvent=AbilityCast
+                _spectreType=/Lotus/Fx/PowersuitAbilities/Dagath/DagathHorseCloneDeco
+                _spectreChargeAnim=/Lotus/Animations/Creatures/ErstazHorse/GallopCycleStationary_anim.fbx
+                _spectreFxProjType=/Lotus/Fx/PowersuitAbilities/Dagath/DagathHorseProj
+                _spectreSpeed=15
+                _castEffect=/Lotus/Fx/PowersuitAbilities/Dagath/HorseCast
+                _castEffectBurst=/Lotus/Fx/PowersuitAbilities/Dagath/HorseCastBurst
+                _wallFxType=/Lotus/Fx/PowersuitAbilities/Dagath/HorseForwardCaster
+                _horseDissipateSound=/Lotus/Sounds/Warframes/Wisp/WispLight3D
+                _damageTrigger=/Lotus/Powersuits/Dagath/HorseElement
+                _horseDummyType=/Lotus/Fx/PowersuitAbilities/Dagath/DagathHorseDummyDeco
+            }
+        }
+    }
+    NpcCooldownDuration=12
+    EnergyRequiredToActivate=100
+    PvpEnergyRequiredToActivate=100
+    AllowReactivate=1
+    AllowDuringOverride=1
+    ActivationXP=75
+    VideoTexture=/Lotus/Interface/AbilityVideos/DagathPower4_s.bk2
+    SoundEvents={
+        {
+            EventName=SFXDagathUnyieldingGallopCast
+            Sound=/Lotus/Sounds/Warframes/Dagath/DagathUnyieldingGallopCast
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+            },
+            {
+                EventName=SFXDagathUnyieldingGallopCastVocal
+                Sound=/Lotus/Sounds/Warframes/Dagath/DagathUnyieldingGallopCastVocal
+                Chance=1
+                Period=1
+                Context=PEC_ALL
+                CancelEventName=""
+                },
+                {
+                    EventName=SFXDagathUnyieldingGallopHoovesLand
+                    Sound=/Lotus/Sounds/Warframes/Dagath/DagathUnyieldingGallopHoovesLand
+                    Chance=1
+                    Period=1
+                    Context=PEC_ALL
+                    CancelEventName=""
+                    },
+                    {
+                        EventName=SFXDagathUnyieldingGallopImpact
+                        Sound=/Lotus/Sounds/Warframes/Dagath/DagathUnyieldingGallopImpact
+                        Chance=1
+                        Period=1
+                        Context=PEC_ALL
+                        CancelEventName=""
+                    }
+                }

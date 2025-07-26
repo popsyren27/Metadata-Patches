@@ -1,0 +1,84 @@
+/Lotus/Powersuits/PowersuitAbilities/FairyDustAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/FairyDustAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/FairyDustAbilityDesc
+StatusDescTag=/Lotus/Language/Buffs/StatusImmunityBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/FaerieDust.png
+UniquePowerIdentifier=FAIRY_DUST
+AdditionalPowerIdentifiers={
+    EFFECT_MOBILITY,
+    EFFECT_BUFF
+}
+Script={
+    Script=FairyDust.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Titania/FairyDust_anim.fbx
+    _pickUpType=""
+    _attachFxType=/Lotus/Fx/PowersuitAbilities/Fairy/DustAttach
+    _areaBurstEffect=/Lotus/Fx/PowersuitAbilities/Fairy/DustAreaBurst
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Fairy/DustCast
+    _castBurst=/Lotus/Fx/PowersuitAbilities/Fairy/DustCastBurst
+    _butterflyType=/Lotus/Fx/PowersuitAbilities/Fairy/FairyRandomButterflyOrbit
+    _procImmuneFx=""
+    _augmentOneSound=""
+}
+SecondaryScripts={
+    {
+        tag=DustEnemies
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=FairyDust.lua
+            Function=DustEnemies
+            _activateAnim=""
+            _pickUpType=/Lotus/Powersuits/Fairy/DustPickUp
+            _attachFxType=/Lotus/Fx/PowersuitAbilities/Fairy/DustAttach
+            _areaBurstEffect=""
+            _castEffect=""
+            _castBurst=""
+            _butterflyType=""
+            _procImmuneFx=/Lotus/Fx/PowersuitAbilities/Fairy/DustProcImmunity
+            _augmentOneSound=/Lotus/Sounds/Warframes/Fairy/Augments/FairyDustEnergyRestoreAugment
+        }
+    }
+}
+AbilityEvents={
+    {
+        tag=OnAbilityCast
+        eventType=ET_ON_ABILITY_ACTIVATE
+        scriptInstance={
+            Script=/Lotus/Powersuits/Fairy/FairyPassive.lua
+            Function=OnAbilityCast
+            _fairySeq=""
+        }
+    }
+}
+NpcCooldownDuration=20
+ActivationXP=25
+VideoTexture=/Lotus/Interface/AbilityVideos/TitaniaPower1_s.bk2
+SoundEvents={
+    {
+        EventName=SFXDustCast
+        Sound=/Lotus/Sounds/Warframes/Fairy/FairyDustCast
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=SFXDustCastImpact
+            Sound=/Lotus/Sounds/Warframes/Fairy/FairyDustImpact
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+        }
+    }
+    ForceFeedbackEffectEvents={
+        {
+            EventName=TitaniaImpactFeedback
+            ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerImpact
+        }
+    }
+    PvpDescription=/Lotus/Language/Suits/FairyDustAbilityPvPDesc

@@ -1,0 +1,63 @@
+/Lotus/Powersuits/PowersuitAbilities/EmberImmolationAbility
+LocalizeTag=/Lotus/Language/Suits/EmberImmolationAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/EmberImmolationAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/EmberImmolation.png
+UniquePowerIdentifier=EMBER_IMMOLATION
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF,
+    EFFECT_DAMAGE
+}
+Script={
+    Script=EmberImmolation.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Ember/Immolation_anim.fbx
+    _meterFullSound=/Lotus/Sounds/Warframes/Ember/EmberImmolationFull
+    _augmentDodgeEffect=/Lotus/Fx/PowersuitAbilities/Ember/ImmolationDodgeSpawner
+    _augmentDamageTrigger=/Lotus/Powersuits/Ember/AugmentDashElement
+    _augmentDodgeSubTree=/Lotus/Powersuits/Ember/EmberAugmentDodgeSubTree.animtree
+    _augmentProjectileType=/Lotus/Powersuits/Ember/Projectiles/DashFireballProjectile
+}
+SecondaryScripts={
+    {
+        tag=StartAugmentDash
+        executionMode=EM_ALL
+        inheritPrimary=1
+        functionName=StartAugmentDash
+        scriptInstance={
+            Script=EmberImmolation.lua
+            Function=StartAugmentDash
+            _activateAnim=/Lotus/Animations/Tenno/Powers/Ember/Immolation_anim.fbx
+            _meterFullSound=/Lotus/Sounds/Warframes/Ember/EmberImmolationFull
+            _augmentDodgeEffect=/Lotus/Fx/PowersuitAbilities/Ember/ImmolationDodgeSpawner
+            _augmentDamageTrigger=/Lotus/Powersuits/Ember/AugmentDashElement
+            _augmentDodgeSubTree=/Lotus/Powersuits/Ember/EmberAugmentDodgeSubTree.animtree
+            _augmentProjectileType=/Lotus/Powersuits/Ember/Projectiles/DashFireballProjectile
+        }
+        },
+        {
+            tag=EndAugmentDash
+            executionMode=EM_ALL
+            inheritPrimary=1
+            functionName=EndAugmentDash
+            scriptInstance={
+                Script=EmberImmolation.lua
+                Function=EndAugmentDash
+                _activateAnim=/Lotus/Animations/Tenno/Powers/Ember/Immolation_anim.fbx
+                _meterFullSound=/Lotus/Sounds/Warframes/Ember/EmberImmolationFull
+                _augmentDodgeEffect=/Lotus/Fx/PowersuitAbilities/Ember/ImmolationDodgeSpawner
+                _augmentDamageTrigger=/Lotus/Powersuits/Ember/AugmentDashElement
+                _augmentDodgeSubTree=/Lotus/Powersuits/Ember/EmberAugmentDodgeSubTree.animtree
+                _augmentProjectileType=/Lotus/Powersuits/Ember/Projectiles/DashFireballProjectile
+            }
+        }
+    }
+    EnergyRequiredToActivate=50
+    AllowToggle=1
+    ActivationXP=50
+    VideoTexture=/Lotus/Interface/AbilityVideos/EmberPower2_s.bk2
+    ForceFeedbackEffectEvents={
+        {
+            EventName=EmberBurstFeedback
+            ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerBurst
+        }
+    }

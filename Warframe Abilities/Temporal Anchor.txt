@@ -1,0 +1,84 @@
+/Lotus/Powersuits/PowersuitAbilities/OdaliskAnchorAbility
+LocalizeTag=/Lotus/Language/Suits/OdaliskAnchorAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/OdaliskAnchorAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/ProteaTemporalAnchor.png
+UniquePowerIdentifier=ODALISK_ANCHOR
+AdditionalPowerIdentifiers={
+    EFFECT_MOBILITY
+}
+Script={
+    Script=OdaliskAnchor.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Odalisk/TemporalAnchorStart_anim.fbx
+    _deactivateStartAnim=/Lotus/Animations/Tenno/Powers/Odalisk/TemporalAnchorRewind_anim.fbx
+    _cloneDecoType=/Lotus/Fx/PowersuitAbilities/Odalisk/AnchorCloneDeco
+    _anchorCloneAnim=/Lotus/Animations/Tenno/Powers/Odalisk/TemporalAnchorTimeLoop_anim.fbx
+    _activeSequencer=/Lotus/Sounds/Warframes/Protea/ProteaAnchorLoopSeq
+    _rewindStartSound=/Lotus/Sounds/Warframes/Protea/ProteaAnchorRewindStart
+    _rewindSequencer=/Lotus/Sounds/Warframes/Protea/ProteaAnchorRewindLoopSeq
+    _colorCorrection=/Lotus/Fx/ColorGradingData/LovecraftColorGrading
+    _warningSound=/Lotus/Sounds/Warframes/Protea/ProteaAnchorEndWarning
+}
+SecondaryScripts={
+    {
+        tag=ForceDeactivate
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=OdaliskAnchor.lua
+            Function=ForceDeactivate
+            _activateAnim=""
+            _deactivateStartAnim=""
+            _cloneDecoType=""
+            _anchorCloneAnim=""
+            _activeSequencer=""
+            _rewindStartSound=""
+            _rewindSequencer=""
+            _colorCorrection=""
+            _warningSound=""
+        }
+        },
+        {
+            tag=ArmourStrip
+            executionMode=EM_HOST
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=OdaliskAnchor.lua
+                Function=ArmourStrip
+                _activateAnim=""
+                _deactivateStartAnim=""
+                _cloneDecoType=""
+                _anchorCloneAnim=""
+                _activeSequencer=""
+                _rewindStartSound=""
+                _rewindSequencer=""
+                _colorCorrection=""
+                _warningSound=""
+            }
+        }
+    }
+    AbilityEvents={
+        {
+            tag=OnHit
+            eventType=ET_ON_HIT
+            scriptInstance={
+                Script=OdaliskAnchor.lua
+                Function=OnHit
+                _activateAnim=""
+                _deactivateStartAnim=""
+                _cloneDecoType=""
+                _anchorCloneAnim=""
+                _activeSequencer=""
+                _rewindStartSound=""
+                _rewindSequencer=""
+                _colorCorrection=""
+                _warningSound=""
+            }
+        }
+    }
+    NpcCooldownDuration=60
+    EnergyRequiredToActivate=100
+    CastSound=/Lotus/Sounds/Warframes/Protea/ProteaAnchorCast
+    VideoTexture=/Lotus/Interface/AbilityVideos/ProteaPower4_s.bk2

@@ -1,0 +1,62 @@
+/Lotus/Types/Friendly/Pets/KubrowPetPrecepts/KubrowCloakPrecept
+Rarity=RARE
+MarketMode=MM_HIDDEN
+RegularPrice=5000
+PremiumPrice=2
+LocalizeTag=/Lotus/Language/Items/KubrowCloakPreceptName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/CompanionInvisibilityBuffDesc
+Icon=/Lotus/Interface/Cards/Images/Kubrow/KubrowCloak.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Items/KubrowCloakPreceptDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowStealthAbility.lua
+    Function=GetDescriptionInfo
+    _maxDistance=12
+    _distanceBuffer=4
+    _minTimeSinceAttack=1
+    _minTimeSinceCreatorInvisible=10
+    _ghostCastFX=""
+    _castAnim=""
+    _creatorBurstEffect=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+BaseDrain=QA_NONE
+ItemCompatibility=/Lotus/Types/Game/KubrowPet/FurtiveKubrowPetPowerSuit
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/StealthBuffIcon.png
+Ability={
+Script={
+Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowStealthAbility.lua
+Function=NpcEvaluateAbility
+_maxDistance=12
+_distanceBuffer=2
+_minTimeSinceAttack=6
+_minTimeSinceCreatorInvisible=6
+_ghostCastFX=/Lotus/Fx/Sentinels/Precepts/Shade/GhostCast
+_castAnim=/Lotus/Animations/Creatures/KubrowFeral/Bite2_anim.fbx
+_creatorBurstEffect=/Lotus/Fx/Sentinels/Precepts/Shade/GhostSmoke
+}
+CooldownDuration=1
+EnergyRequiredToActivate=0
+ActivationXP=25
+}

@@ -1,0 +1,52 @@
+/Lotus/Types/Game/CatbrowPet/VampireCatbrowPetPowerSuit
+MarketMode=MM_HIDDEN
+AdditionalItems={
+    /Lotus/Types/Friendly/Pets/BeastWeapons/VascaPetWeapon
+}
+LocalizeTag=/Lotus/Language/Pets/VampireKavatName
+LocalizeDescTag=/Lotus/Language/Pets/VampireKavatDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Companions/Pets/Kavat/Breeds/KavatBreedVasca.png
+RectangleIcon=0
+Diorama=/Lotus/Levels/Episodes/KavatVampire.level
+ExcludeFromCodex=0
+DefaultSlottedUpgrades={
+    {
+        ItemType=/Lotus/Types/Friendly/Pets/CatbrowPetPrecepts/CatbrowVampireBitePrecept
+        Slot=3
+        RandomUpgradeBuffTags={}
+        },
+        {
+            ItemType=/Lotus/Types/Friendly/Pets/CatbrowPetPrecepts/CatbrowTransfusionPrecept
+            Slot=4
+            RandomUpgradeBuffTags={}
+            },
+            {
+                ItemType=/Lotus/Types/Sentinels/SentinelPrecepts/BeastUniversalVacuum
+                Slot=0
+                RandomUpgradeBuffTags={}
+            }
+        }
+        MaxHealthOverride=310
+        MaxShieldOverride=270
+        MiniMapIcon=/Lotus/Interface/Icons/Markers/Companions/KavatVascaPortrait.png
+        MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Companions/LargePortraits/KavatVascaLargePortrait.png
+        ExtraDependencies={
+            /Lotus/Types/Friendly/Pets/BeastWeapons/VascaPetWeapon
+        }
+        SpecialSlotItem={
+            SPECIAL_B_SLOT={
+                ItemType=/Lotus/Types/Friendly/Pets/BeastWeapons/VascaPetWeapon
+            }
+        }
+        DefaultTraits={
+            BaseColor=Colors/CatbrowPetColorBaseVampire
+            SecondaryColor=Colors/CatbrowPetColorSecondaryVampire
+            TertiaryColor=Colors/CatbrowPetColorTertiaryVampire
+            AccentColor=Colors/CatbrowPetColorAccentsVampire
+            EyeColor=Colors/CatbrowPetColorBaseA
+            FurPattern=Patterns/CatbrowPetPatternVampire
+            Personality=VampireCatbrowPetPowerSuit
+            BodyType=BodyTypes/CatbrowPetVampireBodyType
+            Head=Heads/CatbrowHeadVampire
+            Tail=Tails/CatbrowTailVampire
+        }

@@ -1,0 +1,104 @@
+/Lotus/Powersuits/PowersuitAbilities/PoisonAbility
+LocalizeTag=/Lotus/Language/Suits/PoisonAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/PoisonAbilityReworkDesc
+Icon=/Lotus/Interface/Icons/Abilities/SarynVenom.png
+UniquePowerIdentifier=SARYN_VENOM
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=Poison.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Asp/Infection_anim.fbx
+    _PoisonFx=/Lotus/Fx/PowersuitAbilities/Asp/ExplosiveGrowthMeshDeco
+    _PoisonFxPvp=/Lotus/Fx/PowersuitAbilities/Asp/ExplosiveGrowthMeshDecoPvP
+    _enemyHitSound=/Lotus/Sounds/Warframes/Saryn/SarynVenomGrowth
+    _PoisonFxCast=/Lotus/Fx/PowersuitAbilities/Asp/PoisonCast
+    _damageAugmentEffect=/Lotus/Fx/PowersuitAbilities/Asp/PoisonDamageAugmentAttach
+    _augmentRangeDecoType=/Lotus/Fx/PowersuitAbilities/Asp/VenomDoseRangeDeco
+    _damageTickSound=/Lotus/Sounds/Warframes/Saryn/SarynVenomTickPvE
+    _poisonSpawnEffect=""
+    _miasmaType=/Lotus/Fx/PowersuitAbilities/Asp/DissolveDeath
+    _pvpSoftTargetRadius=1.5
+    _fightingGameActiveTime=2
+    _augmentTwoMarker=/Lotus/Powersuits/Saryn/PoisonAugmentTwoMarker
+}
+SecondaryScripts={
+    {
+        tag=ClientEnd
+        executionMode=EM_CLIENT
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=Poison.lua
+            Function=ClientEnd
+            _activateAnim=""
+            _PoisonFx=""
+            _PoisonFxPvp=""
+            _enemyHitSound=""
+            _PoisonFxCast=""
+            _damageAugmentEffect=""
+            _augmentRangeDecoType=""
+            _damageTickSound=""
+            _poisonSpawnEffect=""
+            _miasmaType=""
+            _pvpSoftTargetRadius=1
+            _fightingGameActiveTime=2
+            _augmentTwoMarker=""
+        }
+        },
+        {
+            tag=ClientDrainStart
+            executionMode=EM_CLIENT
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=Poison.lua
+                Function=ClientDrainStart
+                _activateAnim=""
+                _PoisonFx=""
+                _PoisonFxPvp=""
+                _enemyHitSound=""
+                _PoisonFxCast=""
+                _damageAugmentEffect=""
+                _augmentRangeDecoType=""
+                _damageTickSound=""
+                _poisonSpawnEffect=""
+                _miasmaType=""
+                _pvpSoftTargetRadius=1
+                _fightingGameActiveTime=2
+                _augmentTwoMarker=""
+            }
+            },
+            {
+                tag=ClientDrainStop
+                executionMode=EM_CLIENT
+                inheritPrimary=0
+                functionName=""
+                scriptInstance={
+                    Script=Poison.lua
+                    Function=ClientDrainStop
+                    _activateAnim=""
+                    _PoisonFx=""
+                    _PoisonFxPvp=""
+                    _enemyHitSound=""
+                    _PoisonFxCast=""
+                    _damageAugmentEffect=""
+                    _augmentRangeDecoType=""
+                    _damageTickSound=""
+                    _poisonSpawnEffect=""
+                    _miasmaType=""
+                    _pvpSoftTargetRadius=1
+                    _fightingGameActiveTime=2
+                    _augmentTwoMarker=""
+                }
+            }
+        }
+        NpcCooldownDuration=24
+        EnergyRequiredToActivate=0
+        AllowReactivate=1
+        AllowOnZipLines=1
+        ActivationXP=25
+        CastSound=/Lotus/Sounds/Warframes/Saryn/SarynVenomCast
+        VideoTexture=/Lotus/Interface/AbilityVideos/SarynPower1_s.bk2
+        PvpDescription=/Lotus/Language/Suits/PoisonAbilityPvPDesc

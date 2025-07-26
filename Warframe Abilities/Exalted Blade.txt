@@ -1,0 +1,78 @@
+/Lotus/Powersuits/PowersuitAbilities/SwordOfDoomAbility
+LocalizeTag=/Lotus/Language/Suits/SwordOfDoomAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/SwordOfDoomAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/ExcaliburSwordOfDoom.png
+UniquePowerIdentifier=EXCALIBUR_EXALTED_BLADE
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=SwordOfDoom.lua
+    Function=ActivateAbility
+    _blindProjector=""
+    _swordSpawnEffect=""
+    _swordSpawnFlare=""
+    _swordSpawnLight=""
+    _localAttachEffect=/Lotus/Fx/PowersuitAbilities/Excalibur/DoomSwordLocalAttach
+    _hideWithAtten=0
+    _equipAnim=/Lotus/Animations/Tenno/Powers/Excalibur/EnergySwordEquip_anim.fbx
+    _scaleFactor=1
+    _isHeavySwing=0
+    _pvpBlindDuration=2
+    _blindSoundLocal=""
+    _augmentOneSwordAttach={}
+    _augmentOneProjectileAttach={}
+}
+SecondaryScripts={
+    {
+        tag=GiveWeapon
+        executionMode=EM_HOST
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=SwordOfDoom.lua
+            Function=GiveSword
+            _blindProjector=""
+            _swordSpawnEffect=""
+            _swordSpawnFlare=""
+            _swordSpawnLight=""
+            _localAttachEffect=""
+            _hideWithAtten=0
+            _equipAnim=""
+            _scaleFactor=1
+            _isHeavySwing=0
+            _pvpBlindDuration=2
+            _blindSoundLocal=""
+            _augmentOneSwordAttach={}
+            _augmentOneProjectileAttach={}
+        }
+        },
+        {
+            tag=RemoveWeapon
+            executionMode=EM_HOST
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=SwordOfDoom.lua
+                Function=RemoveSword
+                _blindProjector=""
+                _swordSpawnEffect=""
+                _swordSpawnFlare=""
+                _swordSpawnLight=""
+                _localAttachEffect=""
+                _hideWithAtten=0
+                _equipAnim=""
+                _scaleFactor=1
+                _isHeavySwing=0
+                _pvpBlindDuration=2
+                _blindSoundLocal=""
+                _augmentOneSwordAttach={}
+                _augmentOneProjectileAttach={}
+            }
+        }
+    }
+    EnergyConsumptionOverTime=2.5
+    AllowToggle=1
+    ActivationXP=50
+    CastSound=/Lotus/Sounds/Warframes/Excalibur/ExcaliburDoomSwordCast
+    VideoTexture=/Lotus/Interface/AbilityVideos/ExcaliburPower4.bk2

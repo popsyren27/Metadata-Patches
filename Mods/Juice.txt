@@ -1,0 +1,45 @@
+/Lotus/Upgrades/Mods/Hoverboard/HBEnergyTricksMod
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Hoverboards/HoverboardEnergyTrickMod
+Icon=/Lotus/Interface/Cards/Images/Hoverboard/HBEnergyTricksMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Hoverboards/HoverboardEnergyTrickModDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBEnergyTrick.lua
+    Function=GetDescriptionInfo
+    _effect=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_DEFENSE
+BaseDrain=QA_MEDIUM
+FusionLimit=QA_VERY_HIGH
+ItemCompatibility=/Lotus/Types/Vehicles/Hoverboard/HoverboardSuit
+Script={
+Script=/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBEnergyTrick.lua
+Function=AddUpgrades
+_effect=/Lotus/Fx/Gameplay/HoverBoard/HoverboardEnergyTrick
+}
+UnappliedScript={
+Script=/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBEnergyTrick.lua
+Function=RemoveUpgrades
+_effect=/Lotus/Fx/Gameplay/HoverBoard/HoverboardEnergyTrick
+}

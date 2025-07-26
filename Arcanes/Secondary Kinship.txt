@@ -1,0 +1,66 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryCritChancePerBuff
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/CritChancePerAllyBuffName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/SecondaryKinshipBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionCI.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=/Lotus/Weapons/Tenno/Pistol/LotusPistol
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Arcanes/CritChancePerAllyBuffDesc
+        LocKeyWordScript={
+            Script=UpgradePerAllyBuff.lua
+            Function=GetDescription
+            _upgradeType=NONE
+            _operationType=ADD
+            _baseValue=0.034000002
+            _rankValue=0.034000002
+            _isPercent=1
+        }
+        SmallerIsBetter=0
+        RoundTo=0.0099999998
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+FusionLimit=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol
+IncompatibilityTags={}
+Script={
+    Script=UpgradePerAllyBuff.lua
+    Function=ApplyUpgrade
+    _upgradeType=WEAPON_CRIT_CHANCE
+    _operationType=STACKING_MULTIPLY
+    _baseValue=0.033399999
+    _rankValue=0.033399999
+    _isPercent=1
+}
+UnappliedScript={
+    Script=UpgradePerAllyBuff.lua
+    Function=UnapplyUpgrade
+    _upgradeType=WEAPON_CRIT_CHANCE
+    _operationType=STACKING_MULTIPLY
+    _baseValue=0.034000002
+    _rankValue=0.034000002
+    _isPercent=0
+}
+UpgradeChance=0
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCIBuff.png
+HudBuffIconScaleWidth=1.35
+HudBuffIconScaleHeight=1.35
+BaseDistillPointValue=24

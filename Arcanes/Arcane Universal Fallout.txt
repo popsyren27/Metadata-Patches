@@ -1,0 +1,63 @@
+/Lotus/Upgrades/CosmeticEnhancers/Utility/AbilityRadiationProcsCreateUniversalOrbsOnKill
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/AbilityRadiationProcsCreateUniversalOrbsOnKillName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Arcanes/AbilityRadiationProcsCreateUniversalOrbsOnKillBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionDT.png
+ExcludeFromCodex=0
+ExtraUpgrades={
+    {
+        UpgradeType=GAMEPLAY_FREE_REVIVE_COUNT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerBonusRevive
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+Script={
+    Script=DropPickupsOnKillForStatusProcsFromAbilities.lua
+    Function=OnStatusProcApplied
+    _chanceToDropBase=0.0099999998
+    _chanceToDropPerLevel=0.0099999998
+    _canApplyMultipleStacks=1
+    _maxChanceToDrop=0.60000002
+    _pickupType=/Lotus/Types/PickUps/EnergyHealthIncreaseLarge
+}
+EnhancementTag=/Lotus/Language/Arcanes/AbilityRadiationProcsCreateUniversalOrbsOnKillDesc
+EnhancementTagLocScript={
+    Script=DropPickupsOnKillForStatusProcsFromAbilities.lua
+    Function=GetDescriptionInfo
+    _chanceToDropBase=0.0099999998
+    _chanceToDropPerLevel=0.0099999998
+    _canApplyMultipleStacks=0
+    _maxChanceToDrop=0
+    _pickupType=""
+}
+UpgradeChance=1
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Offensive/OnAbilityRadiationProcCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDTBuff.png

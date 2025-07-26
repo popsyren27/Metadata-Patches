@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Warframe/Expert/AvatarDamageResistanceFireExpert
+patch not applied (yet)

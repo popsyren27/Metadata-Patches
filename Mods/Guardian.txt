@@ -1,0 +1,52 @@
+/Lotus/Types/Sentinels/SentinelPrecepts/Guardian
+MarketMode=MM_HIDDEN
+RegularPrice=5000
+PremiumPrice=2
+LocalizeTag=/Lotus/Language/Items/GuardianStoreItemName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Pets/SentinelGaurdianMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Items/GuardianStoreItemDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Sentinels/SentinelAbilities/Guardian.lua
+    Function=GetDescriptionInfo
+    _boostWhenShieldPercentageAtOrBelow=0
+    _shieldUpFX=""
+    _castFX=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ItemCompatibility=/Lotus/Types/Game/Pets/RoboticPetPowerSuit
+Ability={
+Script={
+Script=/Lotus/Types/Sentinels/SentinelAbilities/Guardian.lua
+Function=NpcEvaluateAbility
+_boostWhenShieldPercentageAtOrBelow=0
+_shieldUpFX=/Lotus/Fx/Sentinels/Precepts/GuardianEffect
+_castFX=/Lotus/Fx/Sentinels/Precepts/GuardianCast
+}
+CooldownDuration=30
+EnergyRequiredToActivate=0
+ActivationXP=25
+Blocking=0
+}

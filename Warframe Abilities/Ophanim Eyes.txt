@@ -1,0 +1,39 @@
+/Lotus/Powersuits/PowersuitAbilities/ChoirEyesAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/ChoirEyesAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/ChoirEyesAbilityDesc
+StatusDescTag=/Lotus/Language/Buffs/BastilleBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/ChoirEyesOfLight.png
+UniquePowerIdentifier=CHOIR_EYES
+Script={
+    Script=ChoirEyes.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Choir/Ability3_anim.fbx
+    _inAirActivateAnim=/Lotus/Animations/Tenno/Powers/Choir/Ability3ForAbility4_anim.fbx
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Choir/EyesCast
+    _castBurst=/Lotus/Fx/PowersuitAbilities/Choir/EyesCastBurst
+    _eyesLightCone=/Lotus/Fx/PowersuitAbilities/Choir/EyesConeLight
+    _eyesFxSpawner=/Lotus/Fx/PowersuitAbilities/Choir/EyesFX
+    _enemyInConeFx=/Lotus/Fx/PowersuitAbilities/Choir/EyesGazeProj
+    _eyesConeFx=/Lotus/Fx/PowersuitAbilities/Choir/EyesConeDeco
+    _castSound=""
+    _abilityLoopSound=/Lotus/Sounds/Warframes/Choir/ChoirEyesLoop
+    _abilityEndSound=/Lotus/Sounds/Warframes/Choir/ChoirEyesEnd
+}
+NpcCooldownDuration=32
+EnergyRequiredToActivate=50
+AllowReactivate=1
+AllowOnZipLines=1
+CastSound=/Lotus/Sounds/Warframes/Choir/ChoirEyesCast
+VideoTexture=/Lotus/Interface/AbilityVideos/JadePower3_s.bk2
+HelminthOverrideDescTag=/Lotus/Language/Suits/ChoirEyesAbilityDesc_Helminth
+ResourceOverrides={
+    {
+        Tag=EyesSkelDeco
+        Resource=/Lotus/Fx/PowersuitAbilities/Choir/EyesDeco
+        },
+        {
+            Tag=EyeDeco
+            Resource=/Lotus/Fx/PowersuitAbilities/Choir/EyesDecoAttach
+        }
+    }

@@ -1,0 +1,55 @@
+/Lotus/Powersuits/PowersuitAbilities/MolecularPrimeAbility
+LocalizeTag=/Lotus/Language/Suits/MolecularPrimeAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/MolecularPrimeAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/NovaMolecularPrime.png
+UniquePowerIdentifier=NOVA_MOLECULAR_PRIME
+AdditionalPowerIdentifiers={
+    EFFECT_DEBUFF
+}
+Script={
+    Script=MolecularPrime.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/AntiMatter/MolecularPrime_anim.fbx
+    _rangeDeco=/Lotus/Fx/PowersuitAbilities/Anti/PrimeRangeDeco
+    _rangeBDeco=/Lotus/Fx/PowersuitAbilities/Anti/PrimeRangeBDeco
+    _impactFx=/Lotus/Fx/PowersuitAbilities/Anti/PrimeCastBurst
+    _enemyFx=/Lotus/Fx/PowersuitAbilities/Anti/PrimeEnemyAttach
+    _dissolveEffect=/Lotus/Fx/PowersuitAbilities/Anti/PrimeDissolveDeath
+    _enemyExplosion=/Lotus/Fx/PowersuitAbilities/Anti/PrimeExplode
+    _sound=/Lotus/Sounds/Warframes/Antimatter/AntimatterMolePrimeCast
+    _deluxeSkin=/Lotus/Upgrades/Skins/AntiMatter/NovaDeluxeSuit
+    _deluxeArmsDecoType=/Lotus/Fx/PowersuitAbilities/Anti/DeluxeArmsDecoMPrime
+}
+SecondaryScripts={
+    {
+        tag=ApplyPrime
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=MolecularPrime.lua
+            Function=ApplyPrime
+            _activateAnim=""
+            _rangeDeco=""
+            _rangeBDeco=""
+            _impactFx=""
+            _enemyFx=/Lotus/Fx/PowersuitAbilities/Anti/PrimeEnemyAttach
+            _dissolveEffect=/Lotus/Fx/PowersuitAbilities/Anti/PrimeDissolveDeath
+            _enemyExplosion=/Lotus/Fx/PowersuitAbilities/Anti/PrimeExplode
+            _sound=""
+            _deluxeSkin=""
+            _deluxeArmsDecoType=""
+        }
+    }
+}
+NpcCooldownDuration=50
+EnergyRequiredToActivate=100
+AllowReactivate=1
+AllowDuringOverride=1
+VideoTexture=/Lotus/Interface/AbilityVideos/NovaPower4_s.bk2
+ForceFeedbackEffectEvents={
+    {
+        EventName=Prime
+        ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerImpact
+    }
+}

@@ -1,0 +1,74 @@
+/Lotus/Upgrades/Mods/Sets/Tek/WarframeTekCollateralMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/WarframeTekCollateralMod
+LocalizeDescTag=/Lotus/Language/Items/PlayerPistolAmmoBuffDesc
+StatusDescTag=/Lotus/Language/Buffs/TekCollateralBuffDesc
+Icon=/Lotus/Interface/Cards/Images/Sets/Tek/WarframeTekCollateralMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/TekCollateralWarframeModDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Friendly/Pets/CatbrowPetBehaviors/CatbrowTekSetAbility.lua
+    Function=GetDescriptionCollateral
+    _zoneTriggerType=""
+    _radiusPerLevel={
+    3,
+    6,
+    9,
+    12
+}
+_cooldownPerLevel={
+60,
+45,
+30,
+15
+}
+_dpsPerLevel={
+50,
+100,
+150,
+200
+}
+_durationPerLevel={
+2,
+4,
+6,
+8
+}
+_collateralCritDmg={
+0.25,
+0.5,
+0.75,
+1
+}
+_collateralModWRes=""
+_collateralFx=""
+_gravityModWRes=""
+_damageFx=""
+_rangeDeco=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_TACTIC
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/IncreasedCritDamage.png
+ModSet=TekSetMod

@@ -1,0 +1,67 @@
+/Lotus/Upgrades/CosmeticEnhancers/Defensive/IncreaseMaxHealthOnHealthPickup
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/IncreaseMaxHealthOnHealthPickup
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionCA.png
+ExcludeFromCodex=0
+ExtraUpgrades={
+    {
+        UpgradeType=GAMEPLAY_FREE_REVIVE_COUNT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerBonusRevive
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+FusionLimit=QA_HIGH
+Script={
+    Script=IncreaseMaxHealthOnHealthPickup.lua
+    Function=ApplyUpgrade
+    _upgradeType=IncreaseMaxHealthOnHealthPickup
+}
+UnappliedScript={
+    Script=IncreaseMaxHealthOnHealthPickup.lua
+    Function=UnapplyUpgrade
+    _upgradeType=IncreaseMaxHealthOnHealthPickup
+}
+SubUpgrades={
+    IncreaseMaxHealthOnHealthPickupSubMod
+}
+MultiBonusLoc=1
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithSingleBonusAnd50Stacks
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+UpgradeDuration=1
+DurationScalesWithRank=0
+ChanceScalesWithRank=0
+MaxConditionalStacks=50
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Utility/OnHealthPickupCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnHealthPickupCondition_Description
+HudBuffIcon=""
+IsInfinite=1
+BaseDistillPointValue=22

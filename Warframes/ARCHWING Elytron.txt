@@ -1,0 +1,88 @@
+/Lotus/Powersuits/Archwing/DemolitionJetPack/DemolitionJetPack
+MarketMode=MM_VISIBLE
+PremiumPrice=275
+SellingPrice=10000
+LocalizeTag=/Lotus/Language/Items/DemolitionArchwingName
+LocalizeDescTag=/Lotus/Language/Items/DemolitionArchwingDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Archwing/Archwings/Elytron.png
+Diorama=/Lotus/Levels/Episodes/DemolitionArchwing.level
+ExcludeFromCodex=0
+ArtifactSlots={
+    AP_ATTACK,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_ATTACK
+}
+DefaultCustomization={
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Archwing/DemolitionDefaultArchwingSkin
+    }
+}
+DefaultEnergyColor={57,180,217,255}
+DefaultEnergyColor1={57,180,217,255}
+DefaultSlottedUpgrades={
+    {
+        ItemType=TnTAbilityCard
+        Slot=9
+        RandomUpgradeBuffTags={}
+        },
+        {
+            ItemType=ExhaustTrailAbilityCard
+            Slot=5
+            RandomUpgradeBuffTags={}
+            },
+            {
+                ItemType=ArtilleryBarrageAbilityCard
+                Slot=4
+                RandomUpgradeBuffTags={}
+                },
+                {
+                    ItemType=BigBoyAbilityCard
+                    Slot=0
+                    RandomUpgradeBuffTags={}
+                }
+            }
+            Mesh=/Lotus/Characters/Tenno/JetPacks/HarrierSystem/Harrier2_skel.fbx
+            AbilityTypes={
+                /Lotus/Powersuits/Archwing/ArchwingAbilities/TnTAbility,
+                /Lotus/Powersuits/Archwing/ArchwingAbilities/ExhaustTrailAbility,
+                /Lotus/Powersuits/Archwing/ArchwingAbilities/ArtilleryBarrageAbility,
+                /Lotus/Powersuits/Archwing/ArchwingAbilities/BigBoyAbility
+            }
+            MaxEnergy=120
+            MovementSpeedMultiplier=0.89999998
+            MaxHealthOverride=765
+            MaxShieldOverride=745
+            ArmourRatingOverride=145
+            MaxStaminaOverride=150
+            SoundEvents={
+                {
+                    EventName=SFXJetpackDodgeRollRight
+                    Sound=/Lotus/Sounds/Vehicles/Archwing/Movement/ArchWingDodgeRollRight
+                    Chance=1
+                    Period=1
+                    Context=PEC_ALL
+                    CancelEventName=""
+                    },
+                    {
+                        EventName=SFXJetpackDodgeRollLeft
+                        Sound=/Lotus/Sounds/Vehicles/Archwing/Movement/ArchWingDodgeRollLeft
+                        Chance=1
+                        Period=1
+                        Context=PEC_ALL
+                        CancelEventName=""
+                    }
+                }
+                JetPackAttachment={
+                    Type=DemolitionFlightJetPack
+                }
+                WaterJetPackAttachment={
+                    Type=WaterDemolitionFlightJetPack
+                }
+                SkyJetPackAttachment={
+                    Type=SkyDemolitionFlightJetPack
+                }

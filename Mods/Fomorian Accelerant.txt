@@ -1,0 +1,114 @@
+/Lotus/Upgrades/Mods/Shotgun/Event/ProjectNightwatch/DrakgoonNightwatchMod
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/DrakgoonNightwatchMod
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Shotgun/DrakgoonNightwatchMod.png
+ExcludeFromCodex=0
+TradeCapability=RO_ALWAYS
+Upgrades={
+{
+    UpgradeType=WEAPON_PROJECTILE_BOUNCES
+    OperationType=ADD
+    Value=1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/DrakgoonNightwatchModDesc
+    LocKeyWordScript={
+    Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
+    Function=GetDescriptionInfo
+    _displayAsPercent={
+    0,
+    1
+}
+_absoluteValue={
+0
+}
+_maxDecimals={
+-1
+}
+_addPlusses={
+0
+}
+_multiplyDown={
+0
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+},
+{
+UpgradeType=WEAPON_PROJECTILE_SPEED
+OperationType=STACKING_MULTIPLY
+Value=0.15000001
+DamageType=DT_ANY
+AutoType=1
+ValidType=""
+CheckTypeOnInstall=0
+SymbolFilter=""
+UpgradeObject=""
+ValidPostures={}
+ValidModifiers={}
+InvalidModifiers={}
+ValidProcTypes={}
+OverrideLocalization=1
+LocTag=""
+LocKeyWordScript={
+Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+},
+{
+UpgradeType=WEAPON_PROJECTILE_ELASTICITY
+OperationType=STACKING_MULTIPLY
+Value=0.15000001
+DamageType=DT_ANY
+AutoType=1
+ValidType=""
+CheckTypeOnInstall=0
+SymbolFilter=""
+UpgradeObject=""
+ValidPostures={}
+ValidModifiers={}
+InvalidModifiers={}
+ValidProcTypes={}
+OverrideLocalization=1
+LocTag=""
+LocKeyWordScript={
+Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_MEDIUM
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Weapons/Grineer/LongGuns/GrineerFlakCannon/FlakCannon
+IncompatibilityTags={
+POWER_WEAPON
+}
+IsUtility=1
+PlayEffect=0

@@ -1,0 +1,76 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/AmmoEfficiencyOnSliding
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/AmmoEfficiencyOnSlidingName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/AkimboSlipShotBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionCT.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Arcanes/AmmoEfficiencyOnSlidingDesc
+        LocKeyWordScript={
+            Script=AmmoEfficiencyOnSliding.lua
+            Function=GetDescription
+            _ammoEfficiencyIncreaseLevels={
+                0.15000001,
+                0.25,
+                0.34999999,
+                0.44999999,
+                0.55000001,
+                0.64999998
+            }
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+FusionLimit=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/Akimbo/LotusAkimbo
+IncompatibilityTags={}
+Script={
+    Script=AmmoEfficiencyOnSliding.lua
+    Function=OnApplied
+    _ammoEfficiencyIncreaseLevels={
+        0.15000001,
+        0.25,
+        0.34999999,
+        0.44999999,
+        0.55000001,
+        0.64999998
+    }
+}
+UnappliedScript={
+    Script=AmmoEfficiencyOnSliding.lua
+    Function=OnUnapplied
+    _ammoEfficiencyIncreaseLevels={
+        0.15000001,
+        0.25,
+        0.34999999,
+        0.44999999,
+        0.55000001,
+        0.64999998
+    }
+}
+UpgradeChance=1
+DurationScalesWithRank=0
+ChanceScalesWithRank=0
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCTBuff.png
+IsInfinite=1
+BaseDistillPointValue=24

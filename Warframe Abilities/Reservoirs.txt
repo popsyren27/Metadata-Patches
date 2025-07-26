@@ -1,0 +1,76 @@
+/Lotus/Powersuits/PowersuitAbilities/WispReservoirAbility
+LocalizeTag=/Lotus/Language/Suits/WispFrameReservoirAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/WispFrameReservoirAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/WispReservoir.png
+UniquePowerIdentifier=WISP_RESERVOIR
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=WispReservoir.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Wisp/ReserviorPullA_anim.fbx
+    _reservoirDecoStrongTypes={
+        /Lotus/Powersuits/Wisp/WispReservoirDecoRed,
+        /Lotus/Powersuits/Wisp/WispReservoirDecoYellow,
+        /Lotus/Powersuits/Wisp/WispReservoirDecoBlue,
+        /Lotus/Powersuits/Wisp/WispReservoirDecoAugment
+    }
+    _reservoirDecoWeakTypes={}
+    _reservoirIcons={
+        /Lotus/Interface/Icons/Abilities/WispReservoirRed.png,
+        /Lotus/Interface/Icons/Abilities/WispReservoirGreen.png,
+        /Lotus/Interface/Icons/Abilities/WispReservoirBlue.png
+    }
+    _scriptTriggerType=""
+    _reservoirAttachFxTypes={
+        /Lotus/Fx/PowersuitAbilities/Wisp/ReservoirAttachFire,
+        /Lotus/Fx/PowersuitAbilities/Wisp/ReservoirAttachCorrosive,
+        /Lotus/Fx/PowersuitAbilities/Wisp/ReservoirAttachElec
+    }
+    _buffType={}
+    _buffAcquiredSounds={}
+    _buffLostSounds={}
+    _cycleSounds={
+        /Lotus/Sounds/Warframes/Wisp/WispSwitchFire,
+        /Lotus/Sounds/Warframes/Wisp/WispSwitchCorrosive,
+        /Lotus/Sounds/Warframes/Wisp/WispSwitchElectricity,
+        /Lotus/Sounds/Warframes/Wisp/WispSwitchGeneric
+    }
+    _sunLaserType=""
+    _blueBeamType=""
+    _blueLeadUpEffect=""
+    _wispHeadDecos={}
+}
+SecondaryScripts={
+    {
+        tag=SetReservoirCount
+        executionMode=EM_LOCAL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=WispReservoir.lua
+            Function=SetReservoirCount
+            _activateAnim=""
+            _reservoirDecoStrongTypes={}
+            _reservoirDecoWeakTypes={}
+            _reservoirIcons={}
+            _scriptTriggerType=""
+            _reservoirAttachFxTypes={}
+            _buffType={}
+            _buffAcquiredSounds={}
+            _buffLostSounds={}
+            _cycleSounds={}
+            _sunLaserType=""
+            _blueBeamType=""
+            _blueLeadUpEffect=""
+            _wispHeadDecos={}
+        }
+    }
+}
+NpcCooldownDuration=18
+EnergyRequiredToActivate=0
+PvpEnergyRequiredToActivate=0
+ActivationXP=25
+CastSound=/Lotus/Sounds/Warframes/Wisp/WispResevoir3D
+VideoTexture=/Lotus/Interface/AbilityVideos/WispPower1_s.bk2

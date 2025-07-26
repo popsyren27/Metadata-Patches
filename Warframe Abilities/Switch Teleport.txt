@@ -1,0 +1,51 @@
+/Lotus/Powersuits/PowersuitAbilities/SwitchTeleportAbility
+LocalizeTag=/Lotus/Language/Suits/SwitchTeleportAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/SwitchTeleportAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/LokiSwitchTeleport.png
+UniquePowerIdentifier=LOKI_SWITCH_TELEPORT
+AdditionalPowerIdentifiers={
+    EFFECT_MOBILITY
+}
+Script={
+    Script=SwitchTeleportAbility.lua
+    Function=ActivateAbility
+    _teleportSound=/Lotus/Sounds/Warframes/Loki/LokiTeleport
+    _invulnEffect=/Lotus/Fx/PowersuitAbilities/Loki/SwitchTeleportInvulnAttach
+    _endTriggerTag=ExtractionTrigger
+    _DistanceIfFail=0.60000002
+    _deluxeBeam=""
+    _deluxeSkin=""
+    _deluxeProj=""
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Loki/Teleport_anim.fbx
+    _invalidTargetTypes={
+        /Lotus/Types/Enemies/Corpus/Turrets/TurretAvatars/AutoTurretAvatar,
+        /Lotus/Types/Enemies/Corpus/Turrets/TurretAvatars/SecurityCameraAvatar,
+        /Lotus/Types/Friendly/Agents/DefenseAvatar,
+        /Lotus/Types/Friendly/Agents/DefenseComputerAvatar,
+        /Lotus/Types/Friendly/Agents/EventDefenseAvatar,
+        /Lotus/Types/Friendly/Agents/OrokinDefenseAvatar,
+        /Lotus/Types/Friendly/Agents/DefenseAvatarMoving,
+        /Lotus/Types/Friendly/Agents/KuvaDefenseAvatar,
+        /Lotus/Types/Game/QuadRobotAvatar,
+        /Lotus/Types/Game/LotusSentinelAvatar,
+        /Lotus/Types/Enemies/Corpus/Spaceman/CivilianAvatar,
+        /Lotus/Types/NeutralCreatures/CreatureAvatars/SandRayAvatar,
+        /Lotus/Types/Enemies/Grineer/Vip/Avatars/DoubleBossAvatar,
+        /Lotus/Types/Game/GolemFullAvatar,
+        /Lotus/Types/Game/GolemHeadAvatar,
+        /Lotus/Types/Enemies/Corpus/Drones/Vip/DroneAttackAvatar,
+        /Lotus/Types/Enemies/Grineer/Vip/Hek/HekBipedAvatar,
+        /Lotus/Types/Enemies/Grineer/Vip/Hek/HekDroneAvatar,
+        /Lotus/Types/Friendly/Eidolon/DynamicGhoulHuntExcavatorAvatar,
+        /Lotus/Types/Friendly/Agents/ExcavatorAvatar,
+        /Lotus/Types/Friendly/InfestedMicroPlanet/DynamicExcavatorAvatar,
+        /Lotus/Types/Friendly/Venus/DynamicExcavatorAvatar,
+        /Lotus/Types/Enemies/Corpus/Vip/Arachnoid/ArachnoidWraithAvatar,
+        /Lotus/Types/Enemies/Corpus/Vip/Arachnoid/ArachnoidHungerAvatar
+    }
+    _npcEvaluationScore=0.5
+    _fightingGameDamage=20
+}
+NpcCooldownDuration=6
+ActivationXP=25
+VideoTexture=/Lotus/Interface/AbilityVideos/LokiPower3_s.bk2

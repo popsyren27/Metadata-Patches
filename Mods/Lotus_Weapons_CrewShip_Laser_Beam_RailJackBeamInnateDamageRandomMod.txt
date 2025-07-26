@@ -1,0 +1,2 @@
+/Lotus/Weapons/CrewShip/Laser/Beam/RailJackBeamInnateDamageRandomMod
+patch not applied (yet)

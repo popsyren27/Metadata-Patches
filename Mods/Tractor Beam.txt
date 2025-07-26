@@ -1,0 +1,100 @@
+/Lotus/Types/Friendly/Pets/MoaPets/MoaPetPrecept/MoaTractorBeamPrecept
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/MoaTractorBeamPrecept
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/TractorBeamBuffDesc
+Icon=/Lotus/Interface/Cards/Images/Moa/TractorBeamPrecept.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/MoaTractorBeamPreceptDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetComponents/MoaTractorBeam.lua
+    Function=GetDescriptionInfo
+    _castSound=""
+    _castAnimation=""
+    _activateAnimEvent=""
+    _maxDistanceFromOwner=25
+    _beamType=""
+    _beamStartMoaBone=GAME_C1_HEAD1
+    _beamEndOwnerBone=GAME_C1_SPINE1
+    _checkGlidePosture=1
+    _totalcharges=3
+    _durationIncreasePercentPerLevel={
+    20,
+    50,
+    75,
+    100
+}
+_gravityDecreasePercentPerLevel={
+12.5,
+25,
+37.5,
+50
+}
+_chargeIntervalPerLevel={
+20,
+15,
+10,
+5
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetPowerSuit
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/TransferenceDisruption.png
+Ability={
+Script={
+Script=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetComponents/MoaTractorBeam.lua
+Function=NpcEvaluateAbility
+_castSound=""
+_castAnimation=""
+_activateAnimEvent=""
+_maxDistanceFromOwner=20
+_beamType=/Lotus/Fx/Sentinels/Precepts/Moa/TractorBeam
+_beamStartMoaBone=GAME_C1_HEAD1
+_beamEndOwnerBone=GAME_C1_SPINE1
+_checkGlidePosture=1
+_totalcharges=3
+_durationIncreasePercentPerLevel={
+20,
+50,
+75,
+100
+}
+_gravityDecreasePercentPerLevel={
+12.5,
+25,
+37.5,
+50
+}
+_chargeIntervalPerLevel={
+20,
+15,
+10,
+5
+}
+}
+EnergyRequiredToActivate=0
+AllowReactivate=1
+ActivationXP=0
+IsPassive=1
+Blocking=0
+}

@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Rifle/Beginner/WeaponFactionDamageCorpusBeginner
+patch not applied (yet)

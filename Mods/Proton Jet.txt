@@ -1,0 +1,72 @@
+/Lotus/Upgrades/Mods/Sets/Spider/SpiderModB
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/SpiderModBName
+StatusDescTag=/Lotus/Language/Buffs/ProtonJetBuffDesc
+Icon=/Lotus/Interface/Cards/Images/Sets/Spider/SpiderVenom.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=WEAPON_CRIT_CHANCE
+    OperationType=STACKING_MULTIPLY
+    Value=0.30000001
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/SpiderModBDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=WEAPON_PROC_CHANCE
+    OperationType=STACKING_MULTIPLY
+    Value=0.30000001
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ApplyUpgradesByDefault=0
+ArtifactPolarity=AP_TACTIC
+BaseDrain=QA_MEDIUM
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Weapons/Tenno/Rifle/LotusRifle
+UpgradeChance=1
+UpgradeDuration=1
+ConditionalUpgrades={
+/Lotus/Upgrades/CosmeticEnhancers/Utility/WhileWallLatchingCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/IncreasedStatChance.png
+ModSet=SpiderSetMod
+IsInfinite=1

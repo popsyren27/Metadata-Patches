@@ -1,0 +1,62 @@
+/Lotus/Upgrades/CosmeticEnhancers/Zariman/SecondaryOnOvershieldCritChance
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/SecondaryOnOvershieldCritChance
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/CascadiaOverchargeBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionBL.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CritChanceOnOvershield
+        LocKeyWordScript={
+            Script=SecondaryOnOvershieldCritChance.lua
+            Function=GetDescription
+            _upgradeType=AVATAR_ABILITY_DURATION
+            _bonuses={
+                0.5,
+                1,
+                1.5,
+                2,
+                2.5,
+                3
+            }
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+FusionLimit=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol
+IncompatibilityTags={}
+Script={
+    Script=SecondaryOnOvershieldCritChance.lua
+    Function=MainLoop
+    _upgradeType=WEAPON_CRIT_CHANCE
+    _bonuses={
+        0.5,
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+    }
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionBL.png
+BaseDistillPointValue=22

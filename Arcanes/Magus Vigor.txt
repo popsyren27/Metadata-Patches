@@ -1,0 +1,44 @@
+/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/HealthOnOperatorMode
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/HealthOnOperatorMode
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/HealthOnOperatorMode.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=AVATAR_HEALTH_MAX
+        OperationType=ADD
+        Value=100
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/AvatarFlatHealthModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+FusionLimit=QA_HIGH
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+ConditionTag=/Lotus/Language/Upgrades/OnTransferenceOutCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/HealthOnOperatorMode.png
+BaseDistillPointValue=12

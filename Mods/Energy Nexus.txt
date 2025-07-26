@@ -1,0 +1,36 @@
+/Lotus/Upgrades/Mods/Warframe/AvatarEnergyRegenMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Upgrades/AvatarEnergyRegenMod
+Icon=/Lotus/Interface/Cards/Images/AvatarMods/AvatarEnergyRegenMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_POWER_RATE
+    OperationType=ADD
+    Value=0.5
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/AvatarEnergyRegenModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_TACTIC
+BaseDrain=QA_MEDIUM
+ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit

@@ -1,0 +1,45 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryCritOnHit
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/1999/SecondaryCritOnHitName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/1999/SecondaryCritOnHitBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionDL.png
+ExcludeFromCodex=0
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol
+Script={
+    Script=CritOnHit.lua
+    Function=OnHit
+    _critChanceBase=0.1
+    _critChancePerLevel=0
+    _resetCritTier=1
+    _numTieredCritsToResetBase=1
+    _numTieredCritToResetPerLevel=1
+    _ignoreAltFireWeapons={
+        /Lotus/Weapons/Tenno/Pistols/SundialGun/SundialPistol
+    }
+}
+SubUpgrades={
+    SecondaryCritOnHitSub
+}
+EnhancementTag=/Lotus/Language/1999/SecondaryCritOnHitDesc
+EnhancementTagLocScript={
+    Script=CritOnHit.lua
+    Function=GetDescriptionInfo
+    _critChanceBase=0.1
+    _critChancePerLevel=0
+    _resetCritTier=1
+    _numTieredCritsToResetBase=1
+    _numTieredCritToResetPerLevel=1
+    _ignoreAltFireWeapons={}
+}
+UpgradeChance=1
+ConditionalUpgrades={
+    OnHitCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDLBuff.png
+TransferenceSupport=TS_WARFRAME_ONLY
+RequiresSourceObject=1
+BaseDistillPointValue=24

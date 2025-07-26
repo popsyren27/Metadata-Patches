@@ -1,0 +1,13 @@
+/Lotus/Powersuits/PowersuitAbilities/ShieldRegenAbility
+Script={
+    Script=ShieldRegen.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Mag/ShieldRenew_anim.fbx
+    _protectAnim=/Lotus/Animations/Tenno/Powers/SkinShift_anim.fbx
+    _burstEffect=/Lotus/Fx/PowersuitAbilities/Mag/ShieldDamageBurst
+    _ShieldProjector=/Lotus/Fx/Projectors/ShieldUpProjector
+    _augmentOneBurst=/Lotus/Fx/PowersuitAbilities/Mag/ShieldRenewAugmentOneBurst
+    _shrapnelType=/Lotus/Powersuits/Mag/ShieldRegenShrapnelProjectile
+    _rangeDecoType=/Lotus/Fx/PowersuitAbilities/Mag/PolarizeRangeDeco
+}
+CanShowRangeFinder=1

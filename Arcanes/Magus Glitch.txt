@@ -1,0 +1,51 @@
+/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/NoPenaltyOnDeath
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/NoPenaltyOnDeath
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/SolarisMagusGlitch.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=AVATAR_NO_DEATH_PENALTY
+        OperationType=SET
+        Value=0.17
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Arcanes/NoPenaltyOnDeathDesc
+        LocKeyWordScript={
+            Script=/Lotus/Upgrades/CosmeticEnhancers/OperatorAmps/DamageConversion.lua
+            Function=GetNoDeathPenaltyDescription
+            _value={
+                0.17,
+                0.34,
+                0.50999999,
+                0.68000001,
+                0.85000002,
+                1.02
+            }
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+FusionLimit=QA_HIGH
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+ConditionTag=/Lotus/Language/Upgrades/OnTransferenceStatic_Description
+HudBuffIcon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/SolarisMagusGlitch.png
+BaseDistillPointValue=18

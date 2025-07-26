@@ -1,0 +1,53 @@
+/Lotus/Upgrades/Mods/Sets/Hunter/WarframeHunterAdrenalineMod
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/WarframeHunterAdrenalineModName
+Icon=/Lotus/Interface/Cards/Images/Sets/Hunter/HunterAdrenaline.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_DAMAGE_POWER_MULTIPLIER
+    OperationType=ADD
+    Value=0.075000003
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/DamageToEnergyDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_HIGH
+ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
+Script={
+Script=/Lotus/Scripts/Gameplay/OverguardDamageToEnergy.lua
+Function=UpgradeApplied
+_perLevel=0.075000003
+_upgradeWeak=WarframeHunterAdrenalineMod
+_upgradeID=HunterAdrenaline
+}
+UnappliedScript={
+Script=/Lotus/Scripts/Gameplay/OverguardDamageToEnergy.lua
+Function=UpgradeUnapplied
+_perLevel=0.037500001
+_upgradeWeak=WarframeHunterAdrenalineMod
+_upgradeID=HunterAdrenaline
+}
+ModSet=HunterSetMod
+TipTags={
+OVERGUARD
+}

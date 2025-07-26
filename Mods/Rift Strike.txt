@@ -1,0 +1,56 @@
+/Lotus/Upgrades/Mods/Melee/Event/ProjectNightwatch/TwinBasolkNightwatchMod
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/TwinBasolkNightwatchMod
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Melee/TwinBasolkNightwatchMod.png
+ExcludeFromCodex=0
+TradeCapability=RO_ALWAYS
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/TwinBasolkNightwatchModDesc
+    LocKeyWordScript={
+    Script=/Lotus/Scripts/Mods/MeleeChargeTeleport.lua
+    Function=GetLoc
+    _baseTeleportRange=5
+    _rangeScaling=4
+    _teleportEffect=""
+    _invalidTargetTypes={}
+    _powerSuitType=/Lotus/Types/Game/PowerSuit
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_TACTIC
+ItemCompatibility=/Lotus/Weapons/Grineer/Melee/GrnDualFireAxe/GrnDualFireAxe
+IncompatibilityTags={
+POWER_WEAPON
+}
+Script={
+Script=/Lotus/Scripts/Mods/MeleeChargeTeleport.lua
+Function=ApplyUpgrades
+_baseTeleportRange=5
+_rangeScaling=4
+_teleportEffect=/Lotus/Fx/Weapons/Grineer/DualFireAxe/DualFireAxeTeleportMod
+_invalidTargetTypes={
+/Lotus/Types/Enemies/Corpus/Turrets/TurretAvatars/AutoTurretAvatar,
+/Lotus/Types/Enemies/Corpus/Turrets/TurretAvatars/SecurityCameraAvatar
+}
+_powerSuitType=/Lotus/Types/Game/PowerSuit
+}
+PlayEffect=0

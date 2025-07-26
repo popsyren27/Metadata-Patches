@@ -1,0 +1,89 @@
+/Lotus/Upgrades/CosmeticEnhancers/Utility/AbilityStrengthAndCritDamageWhenInvisible
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/1999/AbilityStrengthAndCritDamageWhenInvisibleName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/1999/AbilityStrengthAndCritDamageWhenInvisibleBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionDQ.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=STACKING_MULTIPLY
+        Value=42
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={
+            PM_CLOAK
+        }
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ExtraUpgrades={
+    {
+        UpgradeType=GAMEPLAY_FREE_REVIVE_COUNT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerBonusRevive
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+FusionLimit=QA_HIGH
+Script={
+    Script=GiveStatsWhileInvisible.lua
+    Function=ApplyUpgrade
+    _giveStatOneIncreaseBase=0.050000001
+    _giveStatOneIncreasePerLevel=0.050000001
+    _giveStatOneType=AVATAR_ABILITY_STRENGTH
+    _giveStatOneOperation=STACKING_MULTIPLY
+    _giveStatTwoIncreaseBase=0.5
+    _giveStatTwoIncreasePerLevel=0.5
+    _giveStatTwoType=AVATAR_CRIT_DAMAGE
+    _giveStatTwoOperation=ADD
+}
+EnhancementTag=/Lotus/Language/1999/AbilityStrengthAndCritDamageWhenInvisibleDesc
+EnhancementTagLocScript={
+    Script=GiveStatsWhileInvisible.lua
+    Function=GetAbilityStrengthAndCritDamageWhenInvisibleDescriptionInfo
+    _giveStatOneIncreaseBase=0.050000001
+    _giveStatOneIncreasePerLevel=0.050000001
+    _giveStatOneType=AVATAR_ABILITY
+    _giveStatOneOperation=ADD
+    _giveStatTwoIncreaseBase=0.5
+    _giveStatTwoIncreasePerLevel=0.5
+    _giveStatTwoType=AVATAR_ABILITY
+    _giveStatTwoOperation=ADD
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDQBuff.png
+BaseDistillPointValue=24

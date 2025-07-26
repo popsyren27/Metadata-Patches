@@ -1,0 +1,7 @@
+/Lotus/Upgrades/Mods/Immortal/AntivirusOneMod
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/1999Coda/AntivirusOneModName
+LocalizeDescTag=/Lotus/Language/1999Coda/AntivirusOneModDesc
+Icon=/Lotus/Interface/Icons/Antivirus/McVirus.png
+ExcludeFromCodex=0
+ImmortalGroup=2

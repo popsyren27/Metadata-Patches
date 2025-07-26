@@ -1,0 +1,55 @@
+/Lotus/Powersuits/PowersuitAbilities/GyreEnergizedAbility
+LocalizeTag=/Lotus/Language/Suits/GyreEnergizedAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/GyreEnergizedAbilityDescription
+Icon=/Lotus/Interface/Icons/Abilities/GyreEnergised.png
+UniquePowerIdentifier=GYRE_ENERGIZED
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=GyreEnergized.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Gyre/Energized_anim.fbx
+    _attachFx=/Lotus/Fx/PowersuitAbilities/Gyre/EnergizedAttach
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Gyre/EnergizedCast
+}
+AbilityEvents={
+    {
+        tag=OnHit
+        eventType=ET_ON_HIT
+        scriptInstance={
+            Script=GyreEnergized.lua
+            Function=OnHit
+            _activateAnim=""
+            _attachFx=""
+            _castEffect=""
+        }
+        },
+        {
+            tag=OnKilled
+            eventType=ET_ON_KILL
+            scriptInstance={
+                Script=GyreEnergized.lua
+                Function=OnKill
+                _activateAnim=""
+                _attachFx=""
+                _castEffect=""
+            }
+        }
+    }
+    CooldownDuration=60
+    EnergyRequiredToActivate=75
+    AllowDuringOverride=1
+    ActivationXP=75
+    CastSound=/Lotus/Sounds/Warframes/Gyre/GyreEnergizedCast
+    VideoTexture=/Lotus/Interface/AbilityVideos/GyrePower3_s.bk2
+    SoundEvents={
+        {
+            EventName=SFXCalibanSummonCast
+            Sound=""
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+        }
+    }

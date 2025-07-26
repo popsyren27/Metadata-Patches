@@ -1,0 +1,3 @@
+/Lotus/Powersuits/Yareli/YareliBoardAugmentCard
+MarketMode=MM_HIDDEN
+ExcludeFromCodex=0

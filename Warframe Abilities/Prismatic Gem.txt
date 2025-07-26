@@ -1,0 +1,127 @@
+/Lotus/Powersuits/PowersuitAbilities/GeodeCrystalAbility
+LocalizeTag=/Lotus/Language/Suits/GeodeCrystalAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/GeodeCrystalAbilityDesc
+StatusDescTag=/Lotus/Language/Buffs/PrismaticGemBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/CitrineChromaticGeode.png
+UniquePowerIdentifier=GEODE_CRYSTAL
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE,
+    EFFECT_BUFF
+}
+Script={
+    Script=GeodeCrystal.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Citrine/Cast3_anim.fbx
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Geode/CrystalCast
+    _crystalDeco=/Lotus/Fx/PowersuitAbilities/Geode/CrystalDeco
+    _crystalSpawn=/Lotus/Fx/PowersuitAbilities/Geode/CrystalSpawn
+    _crystalProj=/Lotus/Fx/PowersuitAbilities/Geode/CrystalDecoPrismaticProj
+    _crystalTravelDeco=/Lotus/Fx/PowersuitAbilities/Geode/CrystalTravelDeco
+    _rangeDeco=/Lotus/Fx/PowersuitAbilities/Geode/CrystalRangeDeco
+    _beamType=/Lotus/Fx/PowersuitAbilities/Geode/CrystalAttackBeam
+    _buffedEffect=/Lotus/Fx/PowersuitAbilities/Geode/CrystalTerrainCaster
+    _geodeCrystalAbility=""
+}
+SecondaryScripts={
+    {
+        tag=ShardsHit
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=GeodeCrystal.lua
+            Function=ShardsHit
+            _activateAnim=""
+            _castEffect=""
+            _crystalDeco=""
+            _crystalSpawn=""
+            _crystalProj=""
+            _crystalTravelDeco=""
+            _rangeDeco=""
+            _beamType=""
+            _buffedEffect=""
+            _geodeCrystalAbility=""
+        }
+    }
+}
+AbilityEvents={
+    {
+        tag=OnHit
+        eventType=ET_ON_HIT
+        scriptInstance={
+            Script=GeodeCrystal.lua
+            Function=OnHit
+            _activateAnim=""
+            _castEffect=""
+            _crystalDeco=""
+            _crystalSpawn=""
+            _crystalProj=""
+            _crystalTravelDeco=""
+            _rangeDeco=""
+            _beamType=""
+            _buffedEffect=""
+            _geodeCrystalAbility=""
+        }
+        },
+        {
+            tag=OnHitCrewShip
+            eventType=ET_ON_HIT
+            scriptInstance={
+                Script=GeodeCrystal.lua
+                Function=OnHitCrewShip
+                _activateAnim=""
+                _castEffect=""
+                _crystalDeco=""
+                _crystalSpawn=""
+                _crystalProj=""
+                _crystalTravelDeco=""
+                _rangeDeco=""
+                _beamType=""
+                _buffedEffect=""
+                _geodeCrystalAbility=""
+            }
+            },
+            {
+                tag=OnHitInLevelDeco
+                eventType=ET_ON_HIT
+                scriptInstance={
+                    Script=GeodeCrystal.lua
+                    Function=OnHitInLevelDeco
+                    _activateAnim=""
+                    _castEffect=""
+                    _crystalDeco=""
+                    _crystalSpawn=""
+                    _crystalProj=""
+                    _crystalTravelDeco=""
+                    _rangeDeco=""
+                    _beamType=""
+                    _buffedEffect=""
+                    _geodeCrystalAbility=""
+                }
+            }
+        }
+        NpcCooldownDuration=60
+        EnergyRequiredToActivate=75
+        AllowReactivate=1
+        ActivationXP=75
+        VideoTexture=/Lotus/Interface/AbilityVideos/CitrinePower3_s.bk2
+        SoundEvents={
+            {
+                EventName=SFXCitrineEmpoweredGeodeCast
+                Sound=/Lotus/Sounds/Warframes/Citrine/CitrineEmpoweredGeodeCast
+                Chance=1
+                Period=1
+                Context=PEC_ALL
+                CancelEventName=""
+            }
+        }
+        ForceFeedbackEffectEvents={
+            {
+                EventName=CitrineEmpoweredGeodeCastFeedbackA
+                ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerCast
+                },
+                {
+                    EventName=CitrineEmpoweredGeodeCastFeedbackB
+                    ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerChargeLight
+                }
+            }

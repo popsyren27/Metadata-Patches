@@ -1,0 +1,99 @@
+/Lotus/Upgrades/Mods/Aura/WarframeAuraLoyalHerdMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/WarframeAuraLoyalHerdName
+LocalizeDescTag=""
+OverrideLocalizeDescTag=/Lotus/Language/Upgrades/LoyalHerdAuraModDesc
+Icon=/Lotus/Interface/Cards/Images/Auras/WarframeAuraLoyalHerdMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_HEALTH_MAX
+    OperationType=ADD
+    Value=50
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/LoyalHerdAuraModDesc
+    LocKeyWordScript={
+    Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
+    Function=GetDescriptionInfo
+    _displayAsPercent={
+    0,
+    0
+}
+_absoluteValue={
+0,
+0
+}
+_maxDecimals={
+0,
+0
+}
+_addPlusses={
+1,
+1
+}
+_multiplyDown={
+0,
+0
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+},
+{
+UpgradeType=AVATAR_ARMOUR
+OperationType=ADD
+Value=30
+DamageType=DT_ANY
+AutoType=0
+ValidType=""
+CheckTypeOnInstall=0
+SymbolFilter=""
+UpgradeObject=""
+ValidPostures={}
+ValidModifiers={}
+InvalidModifiers={}
+ValidProcTypes={}
+OverrideLocalization=1
+LocTag=""
+LocKeyWordScript={
+Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
+Function=GetEmptyDescriptionInfo
+_displayAsPercent={
+0
+}
+_absoluteValue={
+0
+}
+_maxDecimals={
+-1
+}
+_addPlusses={
+0
+}
+_multiplyDown={
+0
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_DEFENSE
+ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
+MultiBonusLoc=1
+TargetType=/Lotus/Types/Game/LotusSentinelAvatar

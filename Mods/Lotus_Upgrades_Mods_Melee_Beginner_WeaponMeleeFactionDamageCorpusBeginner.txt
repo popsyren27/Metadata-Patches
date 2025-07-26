@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Melee/Beginner/WeaponMeleeFactionDamageCorpusBeginner
+patch not applied (yet)

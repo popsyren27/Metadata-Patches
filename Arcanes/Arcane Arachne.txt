@@ -1,0 +1,83 @@
+/Lotus/Upgrades/CosmeticEnhancers/Utility/GolemArcaneBonusDamageOnWallLatch
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/BonusDamageOnWallLatchName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/ArcaneArachneBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneEnergise.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=WEAPON_DAMAGE_AMOUNT
+        OperationType=STACKING_MULTIPLY
+        Value=0.25
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/ArcaneArachneWeaponDamageModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ExtraUpgrades={
+    {
+        UpgradeType=GAMEPLAY_FREE_REVIVE_COUNT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerBonusRevive
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionBonusDamageAfterLatch
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+UpgradeDuration=30
+DurationScalesWithRank=0
+CanReproc=0
+StackMode=SM_GROUP
+ConditionalUpgrades={
+    OnWallLatchCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnWallLatch_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/EnergyRegeneration.png
+BaseDistillPointValue=28

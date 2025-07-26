@@ -1,0 +1,77 @@
+/Lotus/Powersuits/PowersuitAbilities/RhinoChargeAbility
+LocalizeTag=/Lotus/Language/Suits/RhinoChargeAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/RhinoChargeAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/RhinoDash.png
+UniquePowerIdentifier=RHINO_CHARGE
+AdditionalPowerIdentifiers={
+    EFFECT_MOBILITY,
+    EFFECT_DAMAGE
+}
+Script={
+    Script=RhinoChargeAbility.lua
+    Function=ActivateAbility
+    _sound=""
+    _pvpImpactSound=""
+    _pathDamage=100
+    _pathDamageRange=0.75
+    _ChargeStartAnim=/Lotus/Animations/Tenno/Powers/Rhino/RhinoStart_anim.fbx
+    _ChargeAnims={
+        /Lotus/Animations/Tenno/Powers/Rhino/RhinoCharge_anim.fbx,
+        /Lotus/Animations/Tenno/Powers/Rhino/RhinoChargeA_anim.fbx,
+        /Lotus/Animations/Tenno/Powers/Rhino/RhinoChargeB_anim.fbx,
+        /Lotus/Animations/Tenno/Powers/Rhino/RhinoChargeD_anim.fbx
+    }
+    _npcMinRange=5
+    _npcMaxRange=20
+    _npcAbilityLevel=5
+}
+SecondaryScripts={
+    {
+        tag=Augment
+        executionMode=EM_HOST
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=RhinoChargeAbility.lua
+            Function=SetupAugment
+            _sound=""
+            _pvpImpactSound=""
+            _pathDamage=100
+            _pathDamageRange=0.75
+            _ChargeStartAnim=""
+            _ChargeAnims={}
+            _npcMinRange=5
+            _npcMaxRange=20
+            _npcAbilityLevel=5
+        }
+        },
+        {
+            tag=PvPImpact
+            executionMode=EM_ALL
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=RhinoChargeAbility.lua
+                Function=PvpHitTarget
+                _sound=""
+                _pvpImpactSound=/Lotus/Sounds/Warframes/Rhino/RhinoGenericAbilityImpact
+                _pathDamage=100
+                _pathDamageRange=0.75
+                _ChargeStartAnim=""
+                _ChargeAnims={}
+                _npcMinRange=5
+                _npcMaxRange=20
+                _npcAbilityLevel=5
+            }
+        }
+    }
+    NpcCooldownDuration=16
+    ActivationXP=25
+    CastSound=/Lotus/Sounds/Warframes/Rhino/RhinoAbilityCast
+    VideoTexture=/Lotus/Interface/AbilityVideos/RhinoPower1_s.bk2
+    ForceFeedbackEffectEvents={
+        {
+            EventName=RhinoChargeFeedback
+            ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerCast
+        }
+    }

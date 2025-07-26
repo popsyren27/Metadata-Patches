@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Melee/Expert/WeaponFireDamageModExpert
+patch not applied (yet)

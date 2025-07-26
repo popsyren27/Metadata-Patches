@@ -1,0 +1,116 @@
+/Lotus/Powersuits/PowersuitAbilities/GeodeGrowthsAbility
+LocalizeTag=/Lotus/Language/Suits/GeodeGrowthsAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/GeodeGrowthsAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/CitrineCrystalGrowths.png
+UniquePowerIdentifier=GEODE_GROWTHS
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE,
+    EFFECT_DEBUFF
+}
+Script={
+    Script=GeodeGrowths.lua
+    Function=ActivateAbility
+    _activateStartAnim=/Lotus/Animations/Tenno/Powers/Citrine/Cast4Start_anim.fbx
+    _activateLoopAnim=/Lotus/Animations/Tenno/Powers/Citrine/Cast4StartLoop
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Citrine/Cast4Stop_anim.fbx
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Geode/GrowthCast
+    _castBurstEffect=/Lotus/Fx/PowersuitAbilities/Geode/GrowthCastBurst
+    _castDeco=/Lotus/Fx/PowersuitAbilities/Geode/GrowthCastGroundDeco
+    _travelDeco=/Lotus/Fx/PowersuitAbilities/Geode/GrowthTravelDeco
+    _attachDeco=/Lotus/Fx/PowersuitAbilities/Geode/GrowthAttachDeco
+    _attachEffect=/Lotus/Fx/PowersuitAbilities/Geode/GrowthDebuffAttach
+    _movingDeco=/Lotus/Fx/PowersuitAbilities/Geode/GrowthMovingDeco
+    _crystalProxyTypes={
+        /Lotus/Powersuits/Geode/GrowthHitProxy,
+        /Lotus/Powersuits/Geode/GrowthHitProxyHead,
+        /Lotus/Powersuits/Geode/GrowthHitProxyArmL,
+        /Lotus/Powersuits/Geode/GrowthHitProxyArmR,
+        /Lotus/Powersuits/Geode/GrowthHitProxyLegL,
+        /Lotus/Powersuits/Geode/GrowthHitProxyLegR
+    }
+    _augmentExplosionFx=""
+}
+SecondaryScripts={
+    {
+        tag=SetTargets
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=GeodeGrowths.lua
+            Function=SetTargets
+            _activateStartAnim=""
+            _activateLoopAnim=""
+            _activateAnim=""
+            _castEffect=""
+            _castBurstEffect=""
+            _castDeco=""
+            _travelDeco=""
+            _attachDeco=""
+            _attachEffect=""
+            _movingDeco=""
+            _crystalProxyTypes={}
+            _augmentExplosionFx=""
+        }
+    }
+}
+AbilityEvents={
+    {
+        tag=AugmentOnKill
+        eventType=ET_ON_KILL_OR_ASSIST
+        scriptInstance={
+            Script=GeodeGrowths.lua
+            Function=AugmentOnKill
+            _activateStartAnim=""
+            _activateLoopAnim=""
+            _activateAnim=""
+            _castEffect=""
+            _castBurstEffect=""
+            _castDeco=""
+            _travelDeco=""
+            _attachDeco=/Lotus/Fx/PowersuitAbilities/Geode/GrowthAttachDeco
+            _attachEffect=/Lotus/Fx/PowersuitAbilities/Geode/GrowthDebuffAttach
+            _movingDeco=""
+            _crystalProxyTypes={
+                /Lotus/Powersuits/Geode/GrowthHitProxy,
+                /Lotus/Powersuits/Geode/GrowthHitProxyHead,
+                /Lotus/Powersuits/Geode/GrowthHitProxyArmL,
+                /Lotus/Powersuits/Geode/GrowthHitProxyArmR,
+                /Lotus/Powersuits/Geode/GrowthHitProxyLegL,
+                /Lotus/Powersuits/Geode/GrowthHitProxyLegR
+            }
+            _augmentExplosionFx=""
+        }
+    }
+}
+NpcCooldownDuration=60
+EnergyRequiredToActivate=100
+VideoTexture=/Lotus/Interface/AbilityVideos/CitrinePower4_s.bk2
+SoundEvents={
+    {
+        EventName=SFXCitrineCrystalGrowthsCast
+        Sound=/Lotus/Sounds/Warframes/Citrine/CitrineCrystalGrowthsCast
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=SFXCitrineCrystalGrowthsImpact
+            Sound=/Lotus/Sounds/Warframes/Citrine/CitrineCrystalGrowthsImpact
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+        }
+    }
+    ForceFeedbackEffectEvents={
+        {
+            EventName=CitrineCrystalGrowthsCastFeedbackA
+            ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerCast
+            },
+            {
+                EventName=CitrineCrystalGrowthsCastFeedbackB
+                ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerCharge
+            }
+        }

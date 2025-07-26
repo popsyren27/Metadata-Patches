@@ -1,10 +1,10 @@
 /Lotus/Weapons/Corpus/Melee/CrpBriefcaseScythe/CrpBriefcaseScythe
 PickUpMesh=CrpBriefcaseScythe_skel.fbx
 THIRD_PERSON_ATTACHMENT={
-MAIN_HAND={
-BoneName=GAME_R1_WEAPON1
-Type=CrpBriefcaseScytheAttachment
-}
+    MAIN_HAND={
+        BoneName=GAME_R1_WEAPON1
+        Type=CrpBriefcaseScytheAttachment
+    }
 }
 MarketMode=MM_HIDDEN
 PremiumPrice=225
@@ -12,975 +12,987 @@ LocalizeTag=/Lotus/Language/Weapons/CrpBriefcaseScytheName
 LocalizeDescTag=/Lotus/Language/Weapons/CrpBriefcaseScytheDesc
 Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/MeleeWeapons/Weapons/CrpBriefcaseScythe.png
 ExcludeFromCodex=0
+SearchTags={
+    /Lotus/Language/Loadout/LoadoutCat_Scythe
+}
 GripRotationOffset={1,0,0,0}
 Behaviors={
-{
-fire:Type=/EE/Types/Game/WeaponMeleeSweepFireBehavior
-fire:WeaponMeleeSweepFireBehavior={
-AiUsageInfo={
-preferences={
-setAimTarget=1
-setAimSource=1
-ignoreNonVisible=0
-shootAtCover=1
-controlReload=1
-allowFireWhileBlocking=0
-reloadThreshold=0
-controlAim=0
-continuousAim=0
-minimumAimMask=0.89999998
-ShootOnStaggerProbability=0.1
-StaggerTimeOut=1
-minAngleToTurn=0
-onlyFireWithinRangeMultiplier=0
-onlyFireAboveMinRangeMultiplier=0
-aimAtPart=TORSO
-aimAtClosestPart=0
-firingPreferences={
-firingType=FT_NORMAL
-burstTime={0,0}
-burstPauseTime={0,0}
-fireRate={0,0}
-}
-}
-aimError={4,10}
-aimGraph=""
-desiredAttackState=AS_SHORT_RANGE
-attackWeight=1
-desiredAttackRange={5,25}
-hitSpreadMultiplier=0
-}
-IgnoreFireIterations=0
-IgnoreOwner=1
-IsSilenced=0
-ReportAttack=1
-UseExplicitNpcPerceptionSoundProperties=0
-ExplicitNpcPerceptionSoundAttenuationRadius={10,100}
-ExplicitNpcPerceptionSoundGain=0
-fireIterations=1
-UseAmmo=1
-ConsumeEntireClip=0
-ConsumePartialAmmo=0
-ammoRequirement=0
-ScaleAmmoRequirement=0
-RoundUpAmmoConsumption=0
-ammoType=""
-aimMode=AIM_MODE_IRON_SIGHTS
-IsMeleeBehavior=0
-ConsumesChargesForFire=0
-EnergyConsumedPerFire=0
-LockOnProperties={
-LockOnMaxTargets=0
-LockOnStyle=LS_ENEMY
-LockOnMaxAngle=45
-LockOnInitialAngle=0
-LockOnDistanceOverride=0
-LockOnPart=ANY_PART
-LockOnDistanceWeighting=0.1
-LockOnAngleWeighting=1
-LockOnIgnoreEndPointTarget=0
-}
-NotifyPotentialVictimsOfIncomingAttack=0
-HitVisibilityCheck=1
-HitVisibilityUsesVisibilityRay=1
-HitPunctureDepth=0
-MaxHitAvatarsPerAttack=3
-InterruptAttackOnMaxAvatarsHit=0
-DistanceBetweenHittingSameNonAvatar=2
-SweepRadius=0.2
-SweepCapsuleHalfHeight=0.25
-DefaultMeleeProxies={
-MAIN_HAND={
-WeaponBone=""
-BoneName=GAME_R1_WEAPON1
-LocalPosition={0,2.5,0}
-LocalRotation={0,0,0,1}
-UseOverrideAttachmentHand=0
-OverrideAttachmentHand=MAIN_HAND
-ExtraSweepDistance=0
-RadiusOverride=0
-}
-OFF_HAND={
-WeaponBone=""
-BoneName=GAME_L1_WEAPON1
-LocalPosition={0,1,0}
-LocalRotation={0,0,0,1}
-UseOverrideAttachmentHand=0
-OverrideAttachmentHand=MAIN_HAND
-ExtraSweepDistance=0
-RadiusOverride=0
-}
-EXTRA1={
-WeaponBone=""
-BoneName=GAME_R1_LEG2
-LocalPosition={-2,0,0}
-LocalRotation={0,0,0,1}
-UseOverrideAttachmentHand=0
-OverrideAttachmentHand=MAIN_HAND
-ExtraSweepDistance=0
-RadiusOverride=0
-}
-EXTRA2={
-WeaponBone=""
-BoneName=GAME_L1_LEG2
-LocalPosition={-2,0,0}
-LocalRotation={0,0,0,1}
-UseOverrideAttachmentHand=0
-OverrideAttachmentHand=MAIN_HAND
-ExtraSweepDistance=0
-RadiusOverride=0
-}
-HEAD={
-WeaponBone=""
-BoneName=GAME_C1_HEAD1
-LocalPosition={-1,0,0}
-LocalRotation={0,0,0,1}
-UseOverrideAttachmentHand=0
-OverrideAttachmentHand=MAIN_HAND
-ExtraSweepDistance=0
-RadiusOverride=0
-}
-}
-UseWeaponHandForHitEntitiesIndex=1
-RefinedSweep=0
-RequireHitSubEntity=1
-PerFrameSweepSampling=1
-}
-impact:Type=/Lotus/Types/Game/MeleeImpactBehavior
-impact:MeleeImpactBehavior={
-AttackData={
-UseNewFormat=0
-Type=DT_PHYSICAL
-DT_IMPACT=0.039999999
-DT_PUNCTURE=0.36000001
-DT_SLASH=0.60000002
-Amount=228
-ProcChance=0.38
-ForcedProcs={}
-ForcedDeathProcs={}
-ForcedProcCount=1
-HitType=DHT_MELEE
-ProcExtraTime=0
-}
-PvpForcedProcs={}
-PvpForcedDeathProcs={}
-DamageUpgradeTypes={
-WEAPON_MELEE_DAMAGE
-}
-damageFallOff={0,0}
-damageFallOffMinDamage=1
-PlayerDamageMultiplier=1
-PvpDamageMultiplier=1
-PlayerScaleDamageMultiplierByMissionLevel=0
-instantImpulse=250
-additionalForce={0,0,0}
-impulseFallOff={10,1000}
-minImpulseFallOff=1
-applyPushVelocity=0
-applyPushVelocityOnlyToBlockingTarget=0
-pushMagnitude={0.5,1}
-pushMagnitudeFallOff={10,100}
-hitEffect=/Lotus/Fx/Weapons/Melee/Clean/HitEffects/MeleeHitEffectAxe
-hitEffectAlt=/Lotus/Fx/Weapons/Melee/Clean/HitEffects/MeleeHitEffectAxe
-deflectHitEffects=0
-deflectRange={0,1}
-AltEffectHands={}
-ragdollChance=0
-criticalHitChance=0.23999999
-criticalHitDamageMultiplier=1.6
-ConsumeAmmoWhenDamageDealt=0
-AmmoConsumedWhenHitVulnerableTarget=0
-AmmoConsumedWhenHitInvulnerableTarget=0
-strength=0
-radius=0
-flash=0
-OnHitScriptEnabled=1
-OnHitScript={
-Script=""
-}
-UseNextShotDamageBonus=1
-IgnoreHeadshotBonus=0
-IgnoreHeadshotBonusPvp=0
-AlwaysOverrideFiringAvatar=0
-ComboHitsAlwaysEnabled=0
-InitialHitCounter=0
-InitialHitCounterRecoveryRate=40
-BaseHitCount=20
-BaseHitMultipler=1
-HitCounterCap=220
-HitReqNextTierOperator=20
-HitReqNextTierOperationType=HTO_ADDITIVE
-InfiniteTimeBetweenHits=0
-PauseHitTimerWhenHolstered=1
-TimeBetweenHits=5
-MinTimeBetweenHits=0.1
-TimeUpgrade=WEAPON_MELEE_COMBO_DURATION_BONUS
-ComboProcData={}
-ComboForcedProcHitCountWrap=0
-PerComboExtraProcs={
-CC_GROUND={}
-CC_GROUND_BRANCH_A={}
-CC_GROUND_BRANCH_B={}
-CC_GROUND_BRANCH_C={}
-CC_GROUND_HEAVY={}
-CC_SLIDING={}
-CC_AIR={}
-CC_AIR_RIGHT={}
-CC_AIR_LEFT={}
-CC_WALLRUN={}
-CC_DOWNED_ENEMY={}
-CC_COUNTER_ATTACK={}
-CC_ATTACK_BLOCKED={}
-CC_ATTACK_COUNTERED={}
-CC_GUARD_BROKEN={}
-CC_SLIDING_PVP={}
-CC_PARRY_HEAVY={}
-}
-AlternateAttackData={
-UseNewFormat=0
-Type=DT_PHYSICAL
-DT_IMPACT=0.33333299
-DT_PUNCTURE=0.33333299
-DT_SLASH=0.33333403
-Amount=0
-ProcChance=0.1
-ForcedProcs={}
-ForcedDeathProcs={}
-ForcedProcCount=1
-HitType=DHT_NONE
-ProcExtraTime=0
-}
-}
-state:Type=/Lotus/Types/Weapon/GunBladeStateBehavior
-state:GunBladeStateBehavior={
-reloadTime=2
-PerfectReloadRange={0,0}
-fireRate=65
-NeedsPassiveUpdate=0
-ApplyNumChargesToDamageMultiplier=1
-ModeSwitchTime=0
-FullClipModeSwitchTime=0
-IsToggleBehavior=0
-autoReloadEmptyTime=0
-AmmoTakenPerReload=-1
-DoPreFire=0
-PrefireTime=0
-ShareFireRateWithPrefire=0
-ShouldAutoPreFireToFire=0
-SkipRefireOnEmpty=0
-QueueReloadOnEmptyClip=0
-EnableReloadEmpty=0
-ReloadOnAdditionalEmptyFire=0
-ForceReloadFromEmpty=0
-ForceNoSwapOnEmpty=0
-ReloadDuringModeSwitch=0
-AnimWeaponType=WEAPONTYPE_NORMAL
-RunCausesReady=0
-CanFireWhileRunning=0
-CanChargeWhileRunning=1
-CanFireWhileInAir=1
-PreventRunWhileRecharging=0
-PreventRunDuringModeSwitch=1
-UseReloadTimeBetweenShots=0
-OnlyGiveAmmoOnReloadCompleteEvent=0
-CanInterruptModeSwitch=0
-IsAlternateFire=0
-LocTag=""
-BehaviorTag=""
-TrackProjectiles=0
-MaxNumProjectiles=0
-PvpMaxNumProjectiles=0
-OverheatStyle=OS_PLATEAU
-InstantOverheat=0
-OverheatTime=0
-ReduceOverheatAmount=0
-OverheatCooldownModifier=1
-AmmoOverheatSound=""
-OverheatEndedSound=""
-AmmoOverheatSoundResetThreshold=0.75
-ReplicateAmmoConsumption=0
-OnNewProjectileScript={
-Script=""
-}
-ContinueRunningWhenAttacking=0
-CanAttackDuringEquip=1
-ContinuousMelee=0
-CanDoFastMeleeCombos=0
-DefaultMeleeAction=MELEE_CHARGE
-DefaultOffhandMeleeAction=MELEE_CHARGE
-DefaultMeleeSwingAction=MELEE_CHARGE
-AttackSound=""
-AttackEffect={
-LocalPosition={0,0,0}
-LocalRotation={0,0,0,1}
-BoneName=""
-Type=""
-Chance=255
-RelativeToBounds=0
-Attach=1
-DestroyWithOwner=1
-DestroyParentOnDeath=0
-FadeOutOnDestruction=0
-Scale=1
-}
-SetToPreviousBehaviorWhenMeleeActionEnds=1
-RecordFireEvent=1
-ComboData={
-HeavyMeleeChargeTime=2
-UseCurrentContextAfterCharge=0
-}
-GroundHitLerpRate=0.25
-MeleeDisableTime=1
-CancelPostures={
-PM_STUN,
-PM_KNOCKDOWN,
-PM_STAGGER,
-PM_HELD,
-PM_GROUNDFIRE
-}
-ParryHeavyCoolDown=0
-NumShots=1
-BurstDelay=0
-BurstTracer={
-LocalPosition={0,0,0}
-LocalRotation={0,0,0,1}
-BoneName=""
-Type=""
-Chance=255
-RelativeToBounds=0
-Attach=1
-DestroyWithOwner=1
-DestroyParentOnDeath=0
-FadeOutOnDestruction=0
-Scale=1
-}
-}
-},
-{
-fire:Type=/Lotus/Types/Weapon/GunBladeProjectileFireBehavior
-fire:GunBladeProjectileFireBehavior={
-AiUsageInfo={
-preferences={
-setAimTarget=1
-setAimSource=1
-ignoreNonVisible=0
-shootAtCover=1
-controlReload=1
-allowFireWhileBlocking=0
-reloadThreshold=0
-controlAim=0
-continuousAim=0
-minimumAimMask=0.89999998
-ShootOnStaggerProbability=0.1
-StaggerTimeOut=1
-minAngleToTurn=0
-onlyFireWithinRangeMultiplier=0
-onlyFireAboveMinRangeMultiplier=0
-aimAtPart=TORSO
-aimAtClosestPart=0
-firingPreferences={
-firingType=FT_NORMAL
-burstTime={0,0}
-burstPauseTime={0,0}
-fireRate={0,0}
-}
-}
-aimError={4,10}
-aimGraph=""
-desiredAttackState=AS_SHORT_RANGE
-attackWeight=1
-desiredAttackRange={5,25}
-hitSpreadMultiplier=0
-}
-IgnoreFireIterations=0
-IgnoreOwner=1
-IsSilenced=0
-ReportAttack=1
-UseExplicitNpcPerceptionSoundProperties=0
-ExplicitNpcPerceptionSoundAttenuationRadius={10,100}
-ExplicitNpcPerceptionSoundGain=0
-fireIterations=1
-UseAmmo=1
-ConsumeEntireClip=0
-ConsumePartialAmmo=0
-ammoRequirement=0
-ScaleAmmoRequirement=0
-RoundUpAmmoConsumption=0
-ammoType=/EE/Types/Game/AmmoEx
-aimMode=AIM_MODE_IRON_SIGHTS
-IsMeleeBehavior=0
-ConsumesChargesForFire=0
-EnergyConsumedPerFire=0
-LockOnProperties={
-LockOnMaxTargets=0
-LockOnStyle=LS_ENEMY
-LockOnMaxAngle=15
-LockOnInitialAngle=0
-LockOnDistanceOverride=0
-LockOnPart=ANY_PART
-LockOnDistanceWeighting=0.1
-LockOnAngleWeighting=1
-LockOnIgnoreEndPointTarget=0
-}
-HIP_FIRE_ACCURACY=""
-AIMED_ACCURACY=""
-HIP_CAMERA_RECOIL=""
-AIMED_CAMERA_RECOIL=""
-spreadUniform=0
-SpreadRatioHorizontal=0.5
-SpreadInverse=0
-MultishotUseConeAngle=0
-AimProperties={
-EyeBasedAimSource=1
-ScopedPlayerUsesCameraPos=0
-OverrideLaunchDir=0
-UseWeaponAttachment=1
-AttenuateRecoilByChargeAmount=0
-PerfectChargeExtraRecoilAmount=0
-AttenuateRecoilBySpinUpAmount=0
-CameraRecoilStrength={0,1}
-CameraRecoilCurve=ET_LINEAR
-NpcEyeBasedAimSource=0
-}
-AutoTargetChance=0
-AimIgnoresProjectile=0
-projectileType=CrpBriefcaseScytheProjectile
-AimIgnoresChargedProjectile=0
-chargedProjectileType=""
-projectileLaunchOffset={0,0,0}
-SequentialProjectileLaunchDirectionOffsets={}
-UpdateFirePositionPerIteration=0
-projectileLaunchDirectionOffset={0,0,0}
-projectileImpulse={0,0}
-projectileUpImpulse={0,0}
-projectileTorque={0,0,0}
-chargeSpeedMult={1,1}
-playerDamageMultiplier=1
-projectileSequenceList={}
-chargedProjectileSequenceList={}
-advanceProjectileSequenceOnFire=1
-calculateLobAngle=0
-useLargerLobAngle=0
-lobVerticalOffset=0
-DesiredTimeForArc=0
-MaxPeakHeight=0
-horizontalDeviationAngle=0
-OwnProjectiles=0
-AlwaysUseAimEndPoint=0
-KeepOriginalVisuals=0
-ApplyWeaponMaterialsToProjectile=0
-ApplyFlightSpeedToLaunchImpulse=0
-FallbackAgentTargetting=1
-MultishotAmmoSpread=0
-ChargedProjectileMinSpeed=-1
-ChargedProjectileMaxSpeed=-1
-ProjectileChargeScale={0,1}
-SetProjectileTargetForLockOn=0
-MultiShotProjectileType=""
-MultiShotChargedProjectileType=""
-PvpProjectileType=""
-PvpChargedProjectileType=""
-PerfectChargedProjectileType=""
-PerfectChargeRange={0,0}
-UseFanSpread=0
-IgnoreSpreadOnFirstFireIteration=0
-SpreadRotationOffset=0
-DrawGrenadeArc=0
-FudgeAngle=0
-RaysPerMeter=0.5
-MaxRays=0
-DrawCondition=DC_AIMING
-SplineDrawType=""
-QuadDrawType=""
-ArcMaxEffectInstances=1
-ArcEffectType=""
-ArcEndEffectType=""
-SplineSpeed=1
-AttenuateForCharge=0
-ConsumeRemainingClip=0
-AttenuateSpreadForCharge=0
-MinChargeSpreadAtten=1
-MaxChargeSpreadAtten=1
-OverridePunctureDepthForCharge=0
-MinChargePunctureDepth=0
-MaxChargePunctureDepth=1
-SpreadExtraProjectiles=0
-AttenuateFireIterationsForCharge=0
-OverrideFiringHand=0
-}
-impact:Type=/Lotus/Types/Weapon/GunbladeMeleeImpactBehavior
-impact:GunbladeMeleeImpactBehavior={
-AttackData={
-UseNewFormat=0
-Type=DT_PHYSICAL
-DT_IMPACT=0.33333299
-DT_PUNCTURE=0.33333299
-DT_SLASH=0.33333403
-Amount=10
-ProcChance=0.1
-ForcedProcs={}
-ForcedDeathProcs={}
-ForcedProcCount=1
-HitType=DHT_MELEE
-ProcExtraTime=0
-}
-PvpForcedProcs={}
-PvpForcedDeathProcs={}
-DamageUpgradeTypes={
-WEAPON_MELEE_DAMAGE
-}
-damageFallOff={0,0}
-damageFallOffMinDamage=1
-PlayerDamageMultiplier=1
-PvpDamageMultiplier=1
-PlayerScaleDamageMultiplierByMissionLevel=0
-instantImpulse=250
-additionalForce={0,0,0}
-impulseFallOff={10,1000}
-minImpulseFallOff=1
-applyPushVelocity=0
-applyPushVelocityOnlyToBlockingTarget=0
-pushMagnitude={0.5,1}
-pushMagnitudeFallOff={10,100}
-hitEffect=""
-hitEffectAlt=""
-deflectHitEffects=0
-deflectRange={0,1}
-AltEffectHands={}
-ragdollChance=0
-criticalHitChance=0
-criticalHitDamageMultiplier=2
-ConsumeAmmoWhenDamageDealt=0
-AmmoConsumedWhenHitVulnerableTarget=0
-AmmoConsumedWhenHitInvulnerableTarget=0
-strength=0
-radius=0
-flash=0
-OnHitScriptEnabled=1
-OnHitScript={
-Script=""
-}
-UseNextShotDamageBonus=1
-IgnoreHeadshotBonus=0
-IgnoreHeadshotBonusPvp=0
-AlwaysOverrideFiringAvatar=0
-ComboHitsAlwaysEnabled=0
-InitialHitCounter=0
-InitialHitCounterRecoveryRate=40
-BaseHitCount=20
-BaseHitMultipler=1
-HitCounterCap=220
-HitReqNextTierOperator=20
-HitReqNextTierOperationType=HTO_ADDITIVE
-InfiniteTimeBetweenHits=0
-PauseHitTimerWhenHolstered=1
-TimeBetweenHits=5
-MinTimeBetweenHits=0.1
-TimeUpgrade=WEAPON_MELEE_COMBO_DURATION_BONUS
-ComboProcData={}
-ComboForcedProcHitCountWrap=0
-PerComboExtraProcs={
-CC_GROUND={}
-CC_GROUND_BRANCH_A={}
-CC_GROUND_BRANCH_B={}
-CC_GROUND_BRANCH_C={}
-CC_GROUND_HEAVY={}
-CC_SLIDING={}
-CC_AIR={}
-CC_AIR_RIGHT={}
-CC_AIR_LEFT={}
-CC_WALLRUN={}
-CC_DOWNED_ENEMY={}
-CC_COUNTER_ATTACK={}
-CC_ATTACK_BLOCKED={}
-CC_ATTACK_COUNTERED={}
-CC_GUARD_BROKEN={}
-CC_SLIDING_PVP={}
-CC_PARRY_HEAVY={}
-}
-AlternateAttackData={
-UseNewFormat=0
-Type=DT_PHYSICAL
-DT_IMPACT=0.33333299
-DT_PUNCTURE=0.33333299
-DT_SLASH=0.33333403
-Amount=0
-ProcChance=0.1
-ForcedProcs={}
-ForcedDeathProcs={}
-ForcedProcCount=1
-HitType=DHT_NONE
-ProcExtraTime=0
-}
-ComboHitsMultiplier=1
-}
-state:Type=/Lotus/Types/Weapon/GunBladeProxyStateBehavior
-state:GunBladeProxyStateBehavior={
-reloadTime=2
-PerfectReloadRange={0,0}
-fireRate=60
-NeedsPassiveUpdate=0
-ApplyNumChargesToDamageMultiplier=1
-ModeSwitchTime=0
-FullClipModeSwitchTime=0
-IsToggleBehavior=0
-autoReloadEmptyTime=0
-AmmoTakenPerReload=-1
-DoPreFire=0
-PrefireTime=0
-ShareFireRateWithPrefire=0
-ShouldAutoPreFireToFire=0
-SkipRefireOnEmpty=0
-QueueReloadOnEmptyClip=0
-EnableReloadEmpty=0
-ReloadOnAdditionalEmptyFire=0
-ForceReloadFromEmpty=0
-ForceNoSwapOnEmpty=0
-ReloadDuringModeSwitch=0
-AnimWeaponType=WEAPONTYPE_NORMAL
-RunCausesReady=0
-CanFireWhileRunning=0
-CanChargeWhileRunning=1
-CanFireWhileInAir=1
-PreventRunWhileRecharging=0
-PreventRunDuringModeSwitch=1
-UseReloadTimeBetweenShots=0
-OnlyGiveAmmoOnReloadCompleteEvent=0
-CanInterruptModeSwitch=0
-IsAlternateFire=0
-LocTag=""
-BehaviorTag=""
-TrackProjectiles=0
-MaxNumProjectiles=0
-PvpMaxNumProjectiles=0
-OverheatStyle=OS_PLATEAU
-InstantOverheat=0
-OverheatTime=0
-ReduceOverheatAmount=0
-OverheatCooldownModifier=1
-AmmoOverheatSound=""
-OverheatEndedSound=""
-AmmoOverheatSoundResetThreshold=0.75
-ReplicateAmmoConsumption=0
-OnNewProjectileScript={
-Script=""
-}
-}
-}
-}
-DefaultUpgrades={
-TenetGrigoriPassiveDescUpgrade
-}
-AmmoClipSize=0
-LevelCap=40
-LevelUpType=""
-BulletAttractorType=""
-RequiredLevel=14
-ArtifactSlots={
-AP_UNIVERSAL,
-AP_UNIVERSAL,
-AP_UNIVERSAL,
-AP_UNIVERSAL,
-AP_UNIVERSAL,
-AP_UNIVERSAL,
-AP_ATTACK,
-AP_UNIVERSAL,
-AP_POWER,
-AP_UNIVERSAL,
-AP_UNIVERSAL
-}
-DefaultCustomization={
-Neckwear={
-MAIN_HAND={
-{
-BoneOverride=""
-PosOffset={0.0099999998,0.2,0}
-PosOffsetSecondary={0,0,0}
-RotOffset={0,0,0.70710677,0.70710677}
-RotOffsetSecondary={0,0,0,1}
-UseSecondaryOffset=1
-Scale=1
-}
-}
-}
-}
-DefaultEnergyColor={85,227,255,255}
-DefaultEnergyColor1={0,145,148,255}
-DefaultSlottedUpgrades={
-{
-ItemType=/Lotus/Weapons/Grineer/KuvaLich/Upgrades/InnateDamageRandomMod
-Slot=-1
-RandomUpgradeBuffTags={
-InnateElectricityDamage,
-InnateFreezeDamage,
-InnateHeatDamage,
-InnateImpactDamage,
-InnateMagDamage,
-InnateRadDamage,
-InnateToxinDamage
-}
-}
-}
-OmegaAttenuation=0.89999998
-ArcaneApertureType=/Lotus/Types/Items/MiscItems/WeaponMeleeArcaneUnlocker
-ElementalEffectsWhenHolstered=0
-DefaultModTemplate=/Lotus/Types/ModLists/Melee/HybridSlash
-DefaultModOverrides={
-Stance=/Lotus/Weapons/Tenno/Melee/MeleeTrees/ScytheCmbTwoMeleeTree
-}
-Slams={
-{
-TriggeringAnimEvent=MeleeSlam
-RadiusMin=0
-Radius=8
-FallOff=1
-FallOffMax=0.5
-CanCrit=0
-CanUseComboMultiplier=0
-UseImpactBehaviorAttackDataAmount=1
-UseWeaponProcChance=1
-UseModifiedRadius=1
-BaseDamageAttenuation=1
-AttackData={
-UseNewFormat=0
-Type=DT_IMPACT
-Amount=25
-ProcChance=0.1
-ForcedProcs={
-PT_KNOCKBACK
-}
-ForcedDeathProcs={}
-ForcedProcCount=1
-HitType=DHT_NONE
-ProcExtraTime=0
-}
-UseCurrentMeleeAttackForDamage=0
-MeleeAttack=""
-MainHandOnly=0
-Effect={
-LocalPosition={0,0,1}
-LocalRotation={0,0,0,1}
-BoneName=GAME_R1_WEAPON1
-Type=/Lotus/Fx/Weapons/Melee/Clean/Slams/MeleeSlamMediumFx
-Chance=255
-RelativeToBounds=0
-Attach=1
-DestroyWithOwner=1
-DestroyParentOnDeath=0
-FadeOutOnDestruction=0
-Scale=1
-}
-Bone=GAME_R1_WEAPON1
-Offset={0,0,0}
-FXOffset={0,0,1}
-UseWeaponAttachment=0
-WeaponAttachmentHand=MAIN_HAND
-IsAerialSlam=1
-HitAirborneTargets=1
-VerticalImpulse=1000
-HorizontalImpulse=600
-},
-{
-TriggeringAnimEvent=HeavySlam
-RadiusMin=0
-Radius=8
-FallOff=1
-FallOffMax=0.69999999
-CanCrit=0
-CanUseComboMultiplier=1
-UseImpactBehaviorAttackDataAmount=1
-UseWeaponProcChance=1
-UseModifiedRadius=1
-BaseDamageAttenuation=5
-AttackData={
-UseNewFormat=0
-Type=DT_EXPLOSION
-Amount=50
-ProcChance=0.1
-ForcedProcs={
-PT_LIFT_HIT
-}
-ForcedDeathProcs={}
-ForcedProcCount=1
-HitType=DHT_NONE
-ProcExtraTime=0
-}
-UseCurrentMeleeAttackForDamage=0
-MeleeAttack=""
-MainHandOnly=0
-Effect={
-LocalPosition={0,0,0}
-LocalRotation={0,0,0,1}
-BoneName=""
-Type=/Lotus/Fx/Weapons/Melee/Clean/Channeling/MeleeSlamSuspendLargeFX
-Chance=255
-RelativeToBounds=0
-Attach=1
-DestroyWithOwner=0
-DestroyParentOnDeath=0
-FadeOutOnDestruction=0
-Scale=1
-}
-Bone=GAME_R1_WEAPON1
-Offset={0,0,0}
-FXOffset={0,0,0}
-UseWeaponAttachment=0
-WeaponAttachmentHand=MAIN_HAND
-IsAerialSlam=1
-HitAirborneTargets=1
-VerticalImpulse=1200
-HorizontalImpulse=800
-},
-{
-TriggeringAnimEvent=GroundAttackEffect
-RadiusMin=0
-Radius=1
-FallOff=1
-FallOffMax=0
-CanCrit=0
-CanUseComboMultiplier=0
-UseImpactBehaviorAttackDataAmount=1
-UseWeaponProcChance=0
-UseModifiedRadius=1
-BaseDamageAttenuation=1
-AttackData={
-UseNewFormat=0
-Type=DT_EXPLOSION
-Amount=0
-ProcChance=0.1
-ForcedProcs={}
-ForcedDeathProcs={}
-ForcedProcCount=1
-HitType=DHT_NONE
-ProcExtraTime=0
-}
-UseCurrentMeleeAttackForDamage=0
-MeleeAttack=""
-MainHandOnly=0
-Effect={
-LocalPosition={0,0,0}
-LocalRotation={0,0,0,1}
-BoneName=GAME_R1_WEAPON1
-Type=/Lotus/Fx/Weapons/Melee/Clean/Slams/MeleeSlamSmallSharpFX
-Chance=255
-RelativeToBounds=0
-Attach=1
-DestroyWithOwner=1
-DestroyParentOnDeath=0
-FadeOutOnDestruction=0
-Scale=1
-}
-Bone=""
-Offset={0,0,0}
-FXOffset={0,0,0}
-UseWeaponAttachment=0
-WeaponAttachmentHand=MAIN_HAND
-IsAerialSlam=0
-HitAirborneTargets=1
-VerticalImpulse=0.15000001
-HorizontalImpulse=0.1
-}
-}
-PvpSlams={
-{
-TriggeringAnimEvent=MeleeSlam
-RadiusMin=0
-Radius=3
-FallOff=1
-FallOffMax=0.5
-CanCrit=0
-CanUseComboMultiplier=0
-UseImpactBehaviorAttackDataAmount=1
-UseWeaponProcChance=0
-UseModifiedRadius=1
-BaseDamageAttenuation=1
-AttackData={
-UseNewFormat=0
-Type=DT_IMPACT
-Amount=25
-ProcChance=0.1
-ForcedProcs={
-PT_RAGDOLL
-}
-ForcedDeathProcs={}
-ForcedProcCount=1
-HitType=DHT_NONE
-ProcExtraTime=0
-}
-UseCurrentMeleeAttackForDamage=0
-MeleeAttack=""
-MainHandOnly=0
-Effect={
-LocalPosition={0,0,1}
-LocalRotation={0,0,0,1}
-BoneName=GAME_R1_WEAPON1
-Type=/Lotus/Fx/Weapons/Melee/Clean/Slams/MeleeSlamMediumFx
-Chance=255
-RelativeToBounds=0
-Attach=1
-DestroyWithOwner=1
-DestroyParentOnDeath=0
-FadeOutOnDestruction=0
-Scale=1
-}
-Bone=GAME_R1_WEAPON1
-Offset={0,0,0}
-FXOffset={0,0,1}
-UseWeaponAttachment=0
-WeaponAttachmentHand=MAIN_HAND
-IsAerialSlam=1
-HitAirborneTargets=0
-VerticalImpulse=0.15000001
-HorizontalImpulse=0.1
-},
-{
-TriggeringAnimEvent=GroundAttackEffect
-RadiusMin=0
-Radius=1
-FallOff=1
-FallOffMax=0
-CanCrit=0
-CanUseComboMultiplier=0
-UseImpactBehaviorAttackDataAmount=1
-UseWeaponProcChance=0
-UseModifiedRadius=1
-BaseDamageAttenuation=1
-AttackData={
-UseNewFormat=0
-Type=DT_EXPLOSION
-Amount=0
-ProcChance=0.1
-ForcedProcs={}
-ForcedDeathProcs={}
-ForcedProcCount=1
-HitType=DHT_NONE
-ProcExtraTime=0
-}
-UseCurrentMeleeAttackForDamage=0
-MeleeAttack=""
-MainHandOnly=0
-Effect={
-LocalPosition={0,0,0}
-LocalRotation={0,0,0,1}
-BoneName=GAME_R1_WEAPON1
-Type=/Lotus/Fx/Weapons/Melee/GroundAttackEffect
-Chance=255
-RelativeToBounds=0
-Attach=1
-DestroyWithOwner=1
-DestroyParentOnDeath=0
-FadeOutOnDestruction=0
-Scale=1
-}
-Bone=""
-Offset={0,0,0}
-FXOffset={0,0,0}
-UseWeaponAttachment=0
-WeaponAttachmentHand=MAIN_HAND
-IsAerialSlam=0
-HitAirborneTargets=1
-VerticalImpulse=0.15000001
-HorizontalImpulse=0.1
-}
-}
-ChannelingReflectAmountPvp=0.2
+    {
+        fire:Type=/EE/Types/Game/WeaponMeleeSweepFireBehavior
+        fire:WeaponMeleeSweepFireBehavior={
+            AiUsageInfo={
+                preferences={
+                    setAimTarget=1
+                    setAimSource=1
+                    ignoreNonVisible=0
+                    shootAtCover=1
+                    controlReload=1
+                    allowFireWhileBlocking=0
+                    reloadThreshold=0
+                    controlAim=0
+                    continuousAim=0
+                    minimumAimMask=0.89999998
+                    ShootOnStaggerProbability=0.1
+                    StaggerTimeOut=1
+                    minAngleToTurn=0
+                    onlyFireWithinRangeMultiplier=0
+                    onlyFireAboveMinRangeMultiplier=0
+                    aimAtPart=TORSO
+                    aimAtClosestPart=0
+                    lockAimOnFullCharge=0
+                    firingPreferences={
+                        firingType=FT_NORMAL
+                        burstTime={0,0}
+                        burstPauseTime={0,0}
+                        fireRate={0,0}
+                    }
+                }
+                aimError={4,10}
+                aimGraph=""
+                desiredAttackState=AS_SHORT_RANGE
+                attackWeight=1
+                desiredAttackRange={5,25}
+                hitSpreadMultiplier=0
+            }
+            IgnoreFireIterations=0
+            IgnoreOwner=1
+            IsSilenced=0
+            ReportAttack=1
+            UseExplicitNpcPerceptionSoundProperties=0
+            ExplicitNpcPerceptionSoundAttenuationRadius={10,100}
+            ExplicitNpcPerceptionSoundGain=0
+            fireIterations=1
+            UseAmmo=1
+            ConsumeEntireClip=0
+            ConsumePartialAmmo=0
+            ammoRequirement=0
+            ScaleAmmoRequirement=0
+            RoundUpAmmoConsumption=0
+            ammoType=""
+            aimMode=AIM_MODE_IRON_SIGHTS
+            IsMeleeBehavior=0
+            ConsumesChargesForFire=0
+            EnergyConsumedPerFire=0
+            LockOnProperties={
+                LockOnMaxTargets=0
+                LockOnStyle=LS_ENEMY
+                LockOnMaxAngle=45
+                LockOnInitialAngle=0
+                LockOnDistanceOverride=0
+                LockOnPart=ANY_PART
+                LockOnDistanceWeighting=0.1
+                LockOnAngleWeighting=1
+                LockOnIgnoreEndPointTarget=0
+                LockOnIgnoreTags={}
+            }
+            NotifyPotentialVictimsOfIncomingAttack=0
+            HitVisibilityCheck=1
+            HitVisibilityUsesVisibilityRay=1
+            HitPunctureDepth=0
+            MaxHitAvatarsPerAttack=3
+            InterruptAttackOnMaxAvatarsHit=0
+            DistanceBetweenHittingSameNonAvatar=2
+            SweepRadius=0.2
+            SweepCapsuleHalfHeight=0.25
+            DefaultMeleeProxies={
+                MAIN_HAND={
+                    WeaponBone=""
+                    BoneName=GAME_R1_WEAPON1
+                    LocalPosition={0,2.5,0}
+                    LocalRotation={0,0,0,1}
+                    UseOverrideAttachmentHand=0
+                    OverrideAttachmentHand=MAIN_HAND
+                    ExtraSweepDistance=0
+                    RadiusOverride=0
+                }
+                OFF_HAND={
+                    WeaponBone=""
+                    BoneName=GAME_L1_WEAPON1
+                    LocalPosition={0,1,0}
+                    LocalRotation={0,0,0,1}
+                    UseOverrideAttachmentHand=0
+                    OverrideAttachmentHand=MAIN_HAND
+                    ExtraSweepDistance=0
+                    RadiusOverride=0
+                }
+                EXTRA1={
+                    WeaponBone=""
+                    BoneName=GAME_R1_LEG2
+                    LocalPosition={-2,0,0}
+                    LocalRotation={0,0,0,1}
+                    UseOverrideAttachmentHand=0
+                    OverrideAttachmentHand=MAIN_HAND
+                    ExtraSweepDistance=0
+                    RadiusOverride=0
+                }
+                EXTRA2={
+                    WeaponBone=""
+                    BoneName=GAME_L1_LEG2
+                    LocalPosition={-2,0,0}
+                    LocalRotation={0,0,0,1}
+                    UseOverrideAttachmentHand=0
+                    OverrideAttachmentHand=MAIN_HAND
+                    ExtraSweepDistance=0
+                    RadiusOverride=0
+                }
+                HEAD={
+                    WeaponBone=""
+                    BoneName=GAME_C1_HEAD1
+                    LocalPosition={-1,0,0}
+                    LocalRotation={0,0,0,1}
+                    UseOverrideAttachmentHand=0
+                    OverrideAttachmentHand=MAIN_HAND
+                    ExtraSweepDistance=0
+                    RadiusOverride=0
+                }
+            }
+            UseWeaponHandForHitEntitiesIndex=1
+            RefinedSweep=0
+            RequireHitSubEntity=1
+            PerFrameSweepSampling=1
+        }
+        impact:Type=/Lotus/Types/Game/MeleeImpactBehavior
+        impact:MeleeImpactBehavior={
+            AttackData={
+                UseNewFormat=0
+                Type=DT_PHYSICAL
+                DT_IMPACT=0.039999999
+                DT_PUNCTURE=0.36000001
+                DT_SLASH=0.60000002
+                Amount=228
+                ProcChance=0.38
+                ForcedProcs={}
+                ForcedDeathProcs={}
+                ForcedProcCount=1
+                HitType=DHT_MELEE
+                ProcExtraTime=0
+            }
+            PvpForcedProcs={}
+            PvpForcedDeathProcs={}
+            DamageUpgradeTypes={
+                WEAPON_MELEE_DAMAGE
+            }
+            damageFallOff={0,0}
+            damageFallOffMinDamage=1
+            PlayerDamageMultiplier=1
+            PvpDamageMultiplier=1
+            PlayerScaleDamageMultiplierByMissionLevel=0
+            instantImpulse=250
+            additionalForce={0,0,0}
+            impulseFallOff={10,1000}
+            minImpulseFallOff=1
+            applyPushVelocity=0
+            applyPushVelocityOnlyToBlockingTarget=0
+            pushMagnitude={0.5,1}
+            pushMagnitudeFallOff={10,100}
+            hitEffect=/Lotus/Fx/Weapons/Melee/Clean/HitEffects/MeleeHitEffectAxe
+            hitEffectAlt=/Lotus/Fx/Weapons/Melee/Clean/HitEffects/MeleeHitEffectAxe
+            deflectHitEffects=0
+            deflectRange={0,1}
+            AltEffectHands={}
+            ragdollChance=0
+            criticalHitChance=0.23999999
+            criticalHitDamageMultiplier=1.6
+            ConsumeAmmoWhenDamageDealt=0
+            AmmoConsumedWhenHitVulnerableTarget=0
+            AmmoConsumedWhenHitInvulnerableTarget=0
+            strength=0
+            radius=0
+            flash=0
+            OnHitScriptEnabled=1
+            OnHitScript={
+                Script=""
+            }
+            UseNextShotDamageBonus=1
+            IgnoreHeadshotBonus=0
+            IgnoreHeadshotBonusPvp=0
+            AlwaysOverrideFiringAvatar=0
+            ComboHitsAlwaysEnabled=0
+            InitialHitCounter=0
+            InitialHitCounterRecoveryRate=40
+            BaseHitCount=20
+            BaseHitMultipler=1
+            HitCounterCap=220
+            HitReqNextTierOperator=20
+            HitReqNextTierOperationType=HTO_ADDITIVE
+            InfiniteTimeBetweenHits=0
+            PauseHitTimerWhenHolstered=1
+            TimeBetweenHits=5
+            MinTimeBetweenHits=0.1
+            TimeUpgrade=WEAPON_MELEE_COMBO_DURATION_BONUS
+            ComboProcData={}
+            ComboForcedProcHitCountWrap=0
+            PerComboExtraProcs={
+                CC_GROUND={}
+                CC_GROUND_BRANCH_A={}
+                CC_GROUND_BRANCH_B={}
+                CC_GROUND_BRANCH_C={}
+                CC_GROUND_HEAVY={}
+                CC_SLIDING={}
+                CC_AIR={}
+                CC_AIR_RIGHT={}
+                CC_AIR_LEFT={}
+                CC_WALLRUN={}
+                CC_DOWNED_ENEMY={}
+                CC_COUNTER_ATTACK={}
+                CC_ATTACK_BLOCKED={}
+                CC_ATTACK_COUNTERED={}
+                CC_GUARD_BROKEN={}
+                CC_SLIDING_PVP={}
+                CC_PARRY_HEAVY={}
+            }
+            AlternateAttackData={
+                UseNewFormat=0
+                Type=DT_PHYSICAL
+                DT_IMPACT=0.33333299
+                DT_PUNCTURE=0.33333299
+                DT_SLASH=0.33333403
+                Amount=0
+                ProcChance=0.1
+                ForcedProcs={}
+                ForcedDeathProcs={}
+                ForcedProcCount=1
+                HitType=DHT_NONE
+                ProcExtraTime=0
+            }
+        }
+        state:Type=/Lotus/Types/Weapon/GunBladeStateBehavior
+        state:GunBladeStateBehavior={
+            reloadTime=2
+            PerfectReloadRange={0,0}
+            fireRate=65
+            NeedsPassiveUpdate=0
+            ApplyNumChargesToDamageMultiplier=1
+            ModeSwitchTime=0
+            FullClipModeSwitchTime=0
+            IsToggleBehavior=0
+            autoReloadEmptyTime=0
+            AmmoTakenPerReload=-1
+            DoPreFire=0
+            PrefireTime=0
+            ShareFireRateWithPrefire=0
+            ShouldAutoPreFireToFire=0
+            SkipRefireOnEmpty=0
+            QueueReloadOnEmptyClip=0
+            EnableReloadEmpty=0
+            ReloadOnAdditionalEmptyFire=0
+            ForceReloadFromEmpty=0
+            ForceNoSwapOnEmpty=0
+            ReloadDuringModeSwitch=0
+            AnimWeaponType=WEAPONTYPE_NORMAL
+            RunCausesReady=0
+            CanFireWhileRunning=0
+            CanChargeWhileRunning=1
+            CanFireWhileInAir=1
+            PreventRunWhileRecharging=0
+            PreventRunDuringModeSwitch=1
+            UseReloadTimeBetweenShots=0
+            OnlyGiveAmmoOnReloadCompleteEvent=0
+            CanInterruptModeSwitch=0
+            NeedsLockOnTargets=0
+            IsAlternateFire=0
+            LocTag=""
+            BehaviorTag=""
+            TrackProjectiles=0
+            MaxNumProjectiles=0
+            PvpMaxNumProjectiles=0
+            OverheatStyle=OS_PLATEAU
+            InstantOverheat=0
+            OverheatTime=0
+            ReduceOverheatAmount=0
+            OverheatCooldownModifier=1
+            AmmoOverheatSound=""
+            OverheatEndedSound=""
+            AmmoOverheatSoundResetThreshold=0.75
+            ReplicateAmmoConsumption=0
+            OnNewProjectileScript={
+                Script=""
+            }
+            ContinueRunningWhenAttacking=0
+            CanAttackDuringEquip=1
+            ContinuousMelee=0
+            CanDoFastMeleeCombos=0
+            DefaultMeleeAction=MELEE_CHARGE
+            DefaultOffhandMeleeAction=MELEE_CHARGE
+            DefaultMeleeSwingAction=MELEE_CHARGE
+            AttackSound=""
+            AttackEffect={
+                LocalPosition={0,0,0}
+                LocalRotation={0,0,0,1}
+                BoneName=""
+                Type=""
+                Chance=255
+                RelativeToBounds=0
+                Attach=1
+                DestroyWithOwner=1
+                DestroyParentOnDeath=0
+                FadeOutOnDestruction=0
+                Scale=1
+            }
+            SetToPreviousBehaviorWhenMeleeActionEnds=1
+            RecordFireEvent=1
+            ComboData={
+                HeavyMeleeChargeTime=2
+                UseCurrentContextAfterCharge=0
+            }
+            GroundHitLerpRate=0.25
+            MeleeDisableTime=1
+            CancelPostures={
+                PM_STUN,
+                PM_KNOCKDOWN,
+                PM_STAGGER,
+                PM_HELD,
+                PM_GROUNDFIRE
+            }
+            ParryHeavyCoolDown=0
+            NumShots=1
+            BurstDelay=0
+            BurstTracer={
+                LocalPosition={0,0,0}
+                LocalRotation={0,0,0,1}
+                BoneName=""
+                Type=""
+                Chance=255
+                RelativeToBounds=0
+                Attach=1
+                DestroyWithOwner=1
+                DestroyParentOnDeath=0
+                FadeOutOnDestruction=0
+                Scale=1
+            }
+        }
+        },
+        {
+            fire:Type=/Lotus/Types/Weapon/GunBladeProjectileFireBehavior
+            fire:GunBladeProjectileFireBehavior={
+                AiUsageInfo={
+                    preferences={
+                        setAimTarget=1
+                        setAimSource=1
+                        ignoreNonVisible=0
+                        shootAtCover=1
+                        controlReload=1
+                        allowFireWhileBlocking=0
+                        reloadThreshold=0
+                        controlAim=0
+                        continuousAim=0
+                        minimumAimMask=0.89999998
+                        ShootOnStaggerProbability=0.1
+                        StaggerTimeOut=1
+                        minAngleToTurn=0
+                        onlyFireWithinRangeMultiplier=0
+                        onlyFireAboveMinRangeMultiplier=0
+                        aimAtPart=TORSO
+                        aimAtClosestPart=0
+                        lockAimOnFullCharge=0
+                        firingPreferences={
+                            firingType=FT_NORMAL
+                            burstTime={0,0}
+                            burstPauseTime={0,0}
+                            fireRate={0,0}
+                        }
+                    }
+                    aimError={4,10}
+                    aimGraph=""
+                    desiredAttackState=AS_SHORT_RANGE
+                    attackWeight=1
+                    desiredAttackRange={5,25}
+                    hitSpreadMultiplier=0
+                }
+                IgnoreFireIterations=0
+                IgnoreOwner=1
+                IsSilenced=0
+                ReportAttack=1
+                UseExplicitNpcPerceptionSoundProperties=0
+                ExplicitNpcPerceptionSoundAttenuationRadius={10,100}
+                ExplicitNpcPerceptionSoundGain=0
+                fireIterations=1
+                UseAmmo=1
+                ConsumeEntireClip=0
+                ConsumePartialAmmo=0
+                ammoRequirement=0
+                ScaleAmmoRequirement=0
+                RoundUpAmmoConsumption=0
+                ammoType=/EE/Types/Game/AmmoEx
+                aimMode=AIM_MODE_IRON_SIGHTS
+                IsMeleeBehavior=0
+                ConsumesChargesForFire=0
+                EnergyConsumedPerFire=0
+                LockOnProperties={
+                    LockOnMaxTargets=0
+                    LockOnStyle=LS_ENEMY
+                    LockOnMaxAngle=15
+                    LockOnInitialAngle=0
+                    LockOnDistanceOverride=0
+                    LockOnPart=ANY_PART
+                    LockOnDistanceWeighting=0.1
+                    LockOnAngleWeighting=1
+                    LockOnIgnoreEndPointTarget=0
+                    LockOnIgnoreTags={}
+                }
+                HIP_FIRE_ACCURACY=""
+                AIMED_ACCURACY=""
+                HIP_CAMERA_RECOIL=""
+                AIMED_CAMERA_RECOIL=""
+                spreadUniform=0
+                SpreadRatioHorizontal=0.5
+                SpreadInverse=0
+                MultishotUseConeAngle=0
+                AimProperties={
+                    EyeBasedAimSource=1
+                    ScopedPlayerUsesCameraPos=0
+                    OverrideLaunchDir=0
+                    UseWeaponAttachment=1
+                    AttenuateRecoilByChargeAmount=0
+                    PerfectChargeExtraRecoilAmount=0
+                    AttenuateRecoilBySpinUpAmount=0
+                    CameraRecoilStrength={0,1}
+                    CameraRecoilCurve=ET_LINEAR
+                    NpcEyeBasedAimSource=0
+                }
+                AutoTargetChance=0
+                AimIgnoresProjectile=0
+                projectileType=CrpBriefcaseScytheProjectile
+                AimIgnoresChargedProjectile=0
+                chargedProjectileType=""
+                projectileLaunchOffset={0,0,0}
+                SequentialProjectileLaunchDirectionOffsets={}
+                UpdateFirePositionPerIteration=0
+                projectileLaunchDirectionOffset={0,0,0}
+                projectileImpulse={0,0}
+                projectileUpImpulse={0,0}
+                projectileTorque={0,0,0}
+                chargeSpeedMult={1,1}
+                playerDamageMultiplier=1
+                projectileSequenceList={}
+                chargedProjectileSequenceList={}
+                advanceProjectileSequenceOnFire=1
+                calculateLobAngle=0
+                useLargerLobAngle=0
+                lobVerticalOffset=0
+                DesiredTimeForArc=0
+                MaxPeakHeight=0
+                horizontalDeviationAngle=0
+                OwnProjectiles=0
+                AlwaysUseAimEndPoint=0
+                KeepOriginalVisuals=0
+                ApplyWeaponMaterialsToProjectile=0
+                ApplyFlightSpeedToLaunchImpulse=0
+                FallbackAgentTargetting=1
+                MultishotAmmoSpread=0
+                UseMultishotLineSpread=0
+                ChargedProjectileMinSpeed=-1
+                ChargedProjectileMaxSpeed=-1
+                ProjectileChargeScale={0,1}
+                SetProjectileTargetForLockOn=0
+                MultiTargetLock=0
+                MultiShotProjectileType=""
+                MultiShotChargedProjectileType=""
+                PvpProjectileType=""
+                PvpChargedProjectileType=""
+                PerfectChargedProjectileType=""
+                PerfectChargeRange={0,0}
+                UseFanSpread=0
+                IgnoreSpreadOnFirstFireIteration=0
+                SpreadRotationOffset=0
+                DrawGrenadeArc=0
+                FudgeAngle=0
+                RaysPerMeter=0.5
+                MaxRays=0
+                DrawCondition=DC_AIMING
+                SplineDrawType=""
+                QuadDrawType=""
+                ArcMaxEffectInstances=1
+                ArcEffectType=""
+                ArcEndEffectType=""
+                SplineSpeed=1
+                AttenuateForCharge=0
+                ConsumeRemainingClip=0
+                AttenuateSpreadForCharge=0
+                MinChargeSpreadAtten=1
+                MaxChargeSpreadAtten=1
+                OverridePunctureDepthForCharge=0
+                MinChargePunctureDepth=0
+                MaxChargePunctureDepth=1
+                SpreadExtraProjectiles=0
+                AttenuateFireIterationsForCharge=0
+                OverrideFiringHand=0
+            }
+            impact:Type=/Lotus/Types/Weapon/GunbladeMeleeImpactBehavior
+            impact:GunbladeMeleeImpactBehavior={
+                AttackData={
+                    UseNewFormat=0
+                    Type=DT_PHYSICAL
+                    DT_IMPACT=0.33333299
+                    DT_PUNCTURE=0.33333299
+                    DT_SLASH=0.33333403
+                    Amount=10
+                    ProcChance=0.1
+                    ForcedProcs={}
+                    ForcedDeathProcs={}
+                    ForcedProcCount=1
+                    HitType=DHT_MELEE
+                    ProcExtraTime=0
+                }
+                PvpForcedProcs={}
+                PvpForcedDeathProcs={}
+                DamageUpgradeTypes={
+                    WEAPON_MELEE_DAMAGE
+                }
+                damageFallOff={0,0}
+                damageFallOffMinDamage=1
+                PlayerDamageMultiplier=1
+                PvpDamageMultiplier=1
+                PlayerScaleDamageMultiplierByMissionLevel=0
+                instantImpulse=250
+                additionalForce={0,0,0}
+                impulseFallOff={10,1000}
+                minImpulseFallOff=1
+                applyPushVelocity=0
+                applyPushVelocityOnlyToBlockingTarget=0
+                pushMagnitude={0.5,1}
+                pushMagnitudeFallOff={10,100}
+                hitEffect=""
+                hitEffectAlt=""
+                deflectHitEffects=0
+                deflectRange={0,1}
+                AltEffectHands={}
+                ragdollChance=0
+                criticalHitChance=0
+                criticalHitDamageMultiplier=2
+                ConsumeAmmoWhenDamageDealt=0
+                AmmoConsumedWhenHitVulnerableTarget=0
+                AmmoConsumedWhenHitInvulnerableTarget=0
+                strength=0
+                radius=0
+                flash=0
+                OnHitScriptEnabled=1
+                OnHitScript={
+                    Script=""
+                }
+                UseNextShotDamageBonus=1
+                IgnoreHeadshotBonus=0
+                IgnoreHeadshotBonusPvp=0
+                AlwaysOverrideFiringAvatar=0
+                ComboHitsAlwaysEnabled=0
+                InitialHitCounter=0
+                InitialHitCounterRecoveryRate=40
+                BaseHitCount=20
+                BaseHitMultipler=1
+                HitCounterCap=220
+                HitReqNextTierOperator=20
+                HitReqNextTierOperationType=HTO_ADDITIVE
+                InfiniteTimeBetweenHits=0
+                PauseHitTimerWhenHolstered=1
+                TimeBetweenHits=5
+                MinTimeBetweenHits=0.1
+                TimeUpgrade=WEAPON_MELEE_COMBO_DURATION_BONUS
+                ComboProcData={}
+                ComboForcedProcHitCountWrap=0
+                PerComboExtraProcs={
+                    CC_GROUND={}
+                    CC_GROUND_BRANCH_A={}
+                    CC_GROUND_BRANCH_B={}
+                    CC_GROUND_BRANCH_C={}
+                    CC_GROUND_HEAVY={}
+                    CC_SLIDING={}
+                    CC_AIR={}
+                    CC_AIR_RIGHT={}
+                    CC_AIR_LEFT={}
+                    CC_WALLRUN={}
+                    CC_DOWNED_ENEMY={}
+                    CC_COUNTER_ATTACK={}
+                    CC_ATTACK_BLOCKED={}
+                    CC_ATTACK_COUNTERED={}
+                    CC_GUARD_BROKEN={}
+                    CC_SLIDING_PVP={}
+                    CC_PARRY_HEAVY={}
+                }
+                AlternateAttackData={
+                    UseNewFormat=0
+                    Type=DT_PHYSICAL
+                    DT_IMPACT=0.33333299
+                    DT_PUNCTURE=0.33333299
+                    DT_SLASH=0.33333403
+                    Amount=0
+                    ProcChance=0.1
+                    ForcedProcs={}
+                    ForcedDeathProcs={}
+                    ForcedProcCount=1
+                    HitType=DHT_NONE
+                    ProcExtraTime=0
+                }
+                ComboHitsMultiplier=1
+            }
+            state:Type=/Lotus/Types/Weapon/GunBladeProxyStateBehavior
+            state:GunBladeProxyStateBehavior={
+                reloadTime=2
+                PerfectReloadRange={0,0}
+                fireRate=60
+                NeedsPassiveUpdate=0
+                ApplyNumChargesToDamageMultiplier=1
+                ModeSwitchTime=0
+                FullClipModeSwitchTime=0
+                IsToggleBehavior=0
+                autoReloadEmptyTime=0
+                AmmoTakenPerReload=-1
+                DoPreFire=0
+                PrefireTime=0
+                ShareFireRateWithPrefire=0
+                ShouldAutoPreFireToFire=0
+                SkipRefireOnEmpty=0
+                QueueReloadOnEmptyClip=0
+                EnableReloadEmpty=0
+                ReloadOnAdditionalEmptyFire=0
+                ForceReloadFromEmpty=0
+                ForceNoSwapOnEmpty=0
+                ReloadDuringModeSwitch=0
+                AnimWeaponType=WEAPONTYPE_NORMAL
+                RunCausesReady=0
+                CanFireWhileRunning=0
+                CanChargeWhileRunning=1
+                CanFireWhileInAir=1
+                PreventRunWhileRecharging=0
+                PreventRunDuringModeSwitch=1
+                UseReloadTimeBetweenShots=0
+                OnlyGiveAmmoOnReloadCompleteEvent=0
+                CanInterruptModeSwitch=0
+                NeedsLockOnTargets=0
+                IsAlternateFire=0
+                LocTag=""
+                BehaviorTag=""
+                TrackProjectiles=0
+                MaxNumProjectiles=0
+                PvpMaxNumProjectiles=0
+                OverheatStyle=OS_PLATEAU
+                InstantOverheat=0
+                OverheatTime=0
+                ReduceOverheatAmount=0
+                OverheatCooldownModifier=1
+                AmmoOverheatSound=""
+                OverheatEndedSound=""
+                AmmoOverheatSoundResetThreshold=0.75
+                ReplicateAmmoConsumption=0
+                OnNewProjectileScript={
+                    Script=""
+                }
+            }
+        }
+    }
+    DefaultUpgrades={
+        TenetGrigoriPassiveDescUpgrade
+    }
+    AmmoClipSize=0
+    LevelCap=40
+    LevelUpType=""
+    BulletAttractorType=""
+    RequiredLevel=14
+    ArtifactSlots={
+        AP_UNIVERSAL,
+        AP_UNIVERSAL,
+        AP_UNIVERSAL,
+        AP_UNIVERSAL,
+        AP_UNIVERSAL,
+        AP_UNIVERSAL,
+        AP_ATTACK,
+        AP_UNIVERSAL,
+        AP_POWER,
+        AP_UNIVERSAL,
+        AP_UNIVERSAL
+    }
+    DefaultCustomization={
+        Neckwear={
+            MAIN_HAND={
+                {
+                    BoneOverride=""
+                    PosOffset={0.0099999998,0.2,0}
+                    PosOffsetSecondary={0,0,0}
+                    RotOffset={0,0,0.70710677,0.70710677}
+                    RotOffsetSecondary={0,0,0,1}
+                    UseSecondaryOffset=1
+                    Scale=1
+                }
+            }
+        }
+    }
+    DefaultEnergyColor={85,227,255,255}
+    DefaultEnergyColor1={0,145,148,255}
+    DefaultSlottedUpgrades={
+        {
+            ItemType=/Lotus/Weapons/Grineer/KuvaLich/Upgrades/InnateDamageRandomMod
+            Slot=-1
+            RandomUpgradeBuffTags={
+                InnateElectricityDamage,
+                InnateFreezeDamage,
+                InnateHeatDamage,
+                InnateImpactDamage,
+                InnateMagDamage,
+                InnateRadDamage,
+                InnateToxinDamage
+            }
+        }
+    }
+    OmegaAttenuation=0.89999998
+    ArcaneApertureType=/Lotus/Types/Items/MiscItems/WeaponMeleeArcaneUnlocker
+    ElementalEffectsWhenHolstered=0
+    DefaultModTemplate=/Lotus/Types/ModLists/Melee/HybridSlash
+    DefaultModOverrides={
+        Stance=/Lotus/Weapons/Tenno/Melee/MeleeTrees/ScytheCmbTwoMeleeTree
+    }
+    Slams={
+        {
+            TriggeringAnimEvent=MeleeSlam
+            RadiusMin=0
+            Radius=8
+            FallOff=1
+            FallOffMax=0.5
+            CanCrit=0
+            CanUseComboMultiplier=0
+            UseImpactBehaviorAttackDataAmount=1
+            UseWeaponProcChance=1
+            UseModifiedRadius=1
+            BaseDamageAttenuation=1
+            AttackData={
+                UseNewFormat=0
+                Type=DT_IMPACT
+                Amount=25
+                ProcChance=0.1
+                ForcedProcs={
+                    PT_KNOCKBACK
+                }
+                ForcedDeathProcs={}
+                ForcedProcCount=1
+                HitType=DHT_NONE
+                ProcExtraTime=0
+            }
+            UseCurrentMeleeAttackForDamage=0
+            MeleeAttack=""
+            MainHandOnly=0
+            Effect={
+                LocalPosition={0,0,1}
+                LocalRotation={0,0,0,1}
+                BoneName=GAME_R1_WEAPON1
+                Type=/Lotus/Fx/Weapons/Melee/Clean/Slams/ScaledSlam/MeleeSlamScaled
+                Chance=255
+                RelativeToBounds=0
+                Attach=1
+                DestroyWithOwner=1
+                DestroyParentOnDeath=0
+                FadeOutOnDestruction=0
+                Scale=1
+            }
+            Bone=GAME_R1_WEAPON1
+            Offset={0,0,0}
+            FXOffset={0,0,1}
+            UseWeaponAttachment=0
+            WeaponAttachmentHand=MAIN_HAND
+            IsAerialSlam=1
+            HitAirborneTargets=1
+            VerticalImpulse=1000
+            HorizontalImpulse=600
+            },
+            {
+                TriggeringAnimEvent=HeavySlam
+                RadiusMin=0
+                Radius=8
+                FallOff=1
+                FallOffMax=0.69999999
+                CanCrit=0
+                CanUseComboMultiplier=1
+                UseImpactBehaviorAttackDataAmount=1
+                UseWeaponProcChance=1
+                UseModifiedRadius=1
+                BaseDamageAttenuation=5
+                AttackData={
+                    UseNewFormat=0
+                    Type=DT_EXPLOSION
+                    Amount=50
+                    ProcChance=0.1
+                    ForcedProcs={
+                        PT_LIFT_HIT
+                    }
+                    ForcedDeathProcs={}
+                    ForcedProcCount=1
+                    HitType=DHT_NONE
+                    ProcExtraTime=0
+                }
+                UseCurrentMeleeAttackForDamage=0
+                MeleeAttack=""
+                MainHandOnly=0
+                Effect={
+                    LocalPosition={0,0,0}
+                    LocalRotation={0,0,0,1}
+                    BoneName=""
+                    Type=/Lotus/Fx/Weapons/Melee/Clean/Slams/ScaledSlam/MeleeSlamSuspendFX
+                    Chance=255
+                    RelativeToBounds=0
+                    Attach=1
+                    DestroyWithOwner=0
+                    DestroyParentOnDeath=0
+                    FadeOutOnDestruction=0
+                    Scale=1
+                }
+                Bone=GAME_R1_WEAPON1
+                Offset={0,0,0}
+                FXOffset={0,0,0}
+                UseWeaponAttachment=0
+                WeaponAttachmentHand=MAIN_HAND
+                IsAerialSlam=1
+                HitAirborneTargets=1
+                VerticalImpulse=1200
+                HorizontalImpulse=800
+                },
+                {
+                    TriggeringAnimEvent=GroundAttackEffect
+                    RadiusMin=0
+                    Radius=1
+                    FallOff=1
+                    FallOffMax=0
+                    CanCrit=0
+                    CanUseComboMultiplier=0
+                    UseImpactBehaviorAttackDataAmount=1
+                    UseWeaponProcChance=0
+                    UseModifiedRadius=1
+                    BaseDamageAttenuation=1
+                    AttackData={
+                        UseNewFormat=0
+                        Type=DT_EXPLOSION
+                        Amount=0
+                        ProcChance=0.1
+                        ForcedProcs={}
+                        ForcedDeathProcs={}
+                        ForcedProcCount=1
+                        HitType=DHT_NONE
+                        ProcExtraTime=0
+                    }
+                    UseCurrentMeleeAttackForDamage=0
+                    MeleeAttack=""
+                    MainHandOnly=0
+                    Effect={
+                        LocalPosition={0,0,0}
+                        LocalRotation={0,0,0,1}
+                        BoneName=GAME_R1_WEAPON1
+                        Type=/Lotus/Fx/Weapons/Melee/Clean/Slams/MeleeSlamSmallSharpFX
+                        Chance=255
+                        RelativeToBounds=0
+                        Attach=1
+                        DestroyWithOwner=1
+                        DestroyParentOnDeath=0
+                        FadeOutOnDestruction=0
+                        Scale=1
+                    }
+                    Bone=""
+                    Offset={0,0,0}
+                    FXOffset={0,0,0}
+                    UseWeaponAttachment=0
+                    WeaponAttachmentHand=MAIN_HAND
+                    IsAerialSlam=0
+                    HitAirborneTargets=1
+                    VerticalImpulse=0.15000001
+                    HorizontalImpulse=0.1
+                }
+            }
+            PvpSlams={
+                {
+                    TriggeringAnimEvent=MeleeSlam
+                    RadiusMin=0
+                    Radius=3
+                    FallOff=1
+                    FallOffMax=0.5
+                    CanCrit=0
+                    CanUseComboMultiplier=0
+                    UseImpactBehaviorAttackDataAmount=1
+                    UseWeaponProcChance=0
+                    UseModifiedRadius=1
+                    BaseDamageAttenuation=1
+                    AttackData={
+                        UseNewFormat=0
+                        Type=DT_IMPACT
+                        Amount=25
+                        ProcChance=0.1
+                        ForcedProcs={
+                            PT_RAGDOLL
+                        }
+                        ForcedDeathProcs={}
+                        ForcedProcCount=1
+                        HitType=DHT_NONE
+                        ProcExtraTime=0
+                    }
+                    UseCurrentMeleeAttackForDamage=0
+                    MeleeAttack=""
+                    MainHandOnly=0
+                    Effect={
+                        LocalPosition={0,0,1}
+                        LocalRotation={0,0,0,1}
+                        BoneName=GAME_R1_WEAPON1
+                        Type=/Lotus/Fx/Weapons/Melee/Clean/Slams/ScaledSlam/MeleeSlamScaled
+                        Chance=255
+                        RelativeToBounds=0
+                        Attach=1
+                        DestroyWithOwner=1
+                        DestroyParentOnDeath=0
+                        FadeOutOnDestruction=0
+                        Scale=1
+                    }
+                    Bone=GAME_R1_WEAPON1
+                    Offset={0,0,0}
+                    FXOffset={0,0,1}
+                    UseWeaponAttachment=0
+                    WeaponAttachmentHand=MAIN_HAND
+                    IsAerialSlam=1
+                    HitAirborneTargets=0
+                    VerticalImpulse=0.15000001
+                    HorizontalImpulse=0.1
+                    },
+                    {
+                        TriggeringAnimEvent=GroundAttackEffect
+                        RadiusMin=0
+                        Radius=1
+                        FallOff=1
+                        FallOffMax=0
+                        CanCrit=0
+                        CanUseComboMultiplier=0
+                        UseImpactBehaviorAttackDataAmount=1
+                        UseWeaponProcChance=0
+                        UseModifiedRadius=1
+                        BaseDamageAttenuation=1
+                        AttackData={
+                            UseNewFormat=0
+                            Type=DT_EXPLOSION
+                            Amount=0
+                            ProcChance=0.1
+                            ForcedProcs={}
+                            ForcedDeathProcs={}
+                            ForcedProcCount=1
+                            HitType=DHT_NONE
+                            ProcExtraTime=0
+                        }
+                        UseCurrentMeleeAttackForDamage=0
+                        MeleeAttack=""
+                        MainHandOnly=0
+                        Effect={
+                            LocalPosition={0,0,0}
+                            LocalRotation={0,0,0,1}
+                            BoneName=GAME_R1_WEAPON1
+                            Type=/Lotus/Fx/Weapons/Melee/GroundAttackEffect
+                            Chance=255
+                            RelativeToBounds=0
+                            Attach=1
+                            DestroyWithOwner=1
+                            DestroyParentOnDeath=0
+                            FadeOutOnDestruction=0
+                            Scale=1
+                        }
+                        Bone=""
+                        Offset={0,0,0}
+                        FXOffset={0,0,0}
+                        UseWeaponAttachment=0
+                        WeaponAttachmentHand=MAIN_HAND
+                        IsAerialSlam=0
+                        HitAirborneTargets=1
+                        VerticalImpulse=0.15000001
+                        HorizontalImpulse=0.1
+                    }
+                }
+                SlamRadiusPercentageClamps={0.3125,1.5}
+                ChannelingReflectAmountPvp=0.2

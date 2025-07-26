@@ -1,0 +1,35 @@
+/Lotus/Powersuits/Archwing/ArchwingAbilities/SupportDronesAbility
+LocalizeTag=/Lotus/Language/Items/SupportDronesAbilityName
+LocalizeDescTag=/Lotus/Language/Items/SupportDronesAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/Archwing/ArchwingFourSecurity.png
+Script={
+    Script=SupportDrones.lua
+    Function=ActivateAbility
+    _activeParticleEffect=/Lotus/Fx/SpaceBattle/Abilities/Support/SupportDronesActive
+    _activeDecoEffect=/Lotus/Fx/SpaceBattle/Abilities/Support/SupportDronesActiveDeco
+    _droneDecoType=/Lotus/Fx/SpaceBattle/Abilities/Support/SupportDroneDeco
+    _blockedEffect=""
+    _castEffect=/Lotus/Fx/SpaceBattle/Abilities/Support/DronesCast
+    _sequencerType=""
+}
+SecondaryScripts={
+    {
+        tag=BlockAttack
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=SupportDrones.lua
+            Function=BlockAttack
+            _activeParticleEffect=/Lotus/Fx/SpaceBattle/Abilities/Support/SupportDronesActive
+            _activeDecoEffect=""
+            _droneDecoType=""
+            _blockedEffect=/Lotus/Fx/SpaceBattle/Abilities/Support/SupportDronesBlocked
+            _castEffect=""
+            _sequencerType=""
+        }
+    }
+}
+ActivationXP=25
+CastSound=/Lotus/Sounds/Weapons/Archwing/Powers/ArchwingHealer/ArchwingHealerPersonnelSecurityCast
+VideoTexture=/Lotus/Interface/Cards/Images/ArchwingMods/SupportArchwing/SupportPersonalSecurityAbility.png

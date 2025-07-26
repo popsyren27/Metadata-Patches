@@ -1,0 +1,86 @@
+/Lotus/Powersuits/Archwing/StandardJetPack/StandardJetPack
+MarketMode=MM_HIDDEN
+SellingPrice=10000
+LocalizeTag=/Lotus/Language/Items/StandardArchwingName
+LocalizeDescTag=/Lotus/Language/Items/StandardArchwingDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Archwing/Archwings/Odonata.png
+Diorama=/Lotus/Levels/Episodes/ArchWing.level
+ExcludeFromCodex=0
+ArtifactSlots={
+    AP_ATTACK,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_TACTIC,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_DEFENSE
+}
+DefaultCustomization={
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Archwing/StandardDefaultArchwingSkin
+    }
+}
+DefaultEnergyColor={57,180,217,255}
+DefaultEnergyColor1={57,180,217,255}
+DefaultSlottedUpgrades={
+    {
+        ItemType=FireShieldAbilityCard
+        Slot=9
+        RandomUpgradeBuffTags={}
+        },
+        {
+            ItemType=FlareCounterMeasureAbilityCard
+            Slot=5
+            RandomUpgradeBuffTags={}
+            },
+            {
+                ItemType=MissileVolleyAbilityCard
+                Slot=4
+                RandomUpgradeBuffTags={}
+                },
+                {
+                    ItemType=EMPPushAbilityCard
+                    Slot=0
+                    RandomUpgradeBuffTags={}
+                }
+            }
+            Mesh=/Lotus/Characters/Tenno/JetPacks/HarrierSystem/Harrier_skel.fbx
+            AbilityTypes={
+                /Lotus/Powersuits/Archwing/ArchwingAbilities/FireShieldAbility,
+                /Lotus/Powersuits/Archwing/ArchwingAbilities/FlareCounterMeasureAbility,
+                /Lotus/Powersuits/Archwing/ArchwingAbilities/MissileVolleyAbility,
+                /Lotus/Powersuits/Archwing/ArchwingAbilities/EMPPushAbility
+            }
+            MaxEnergy=85
+            MaxHealthOverride=425
+            MaxShieldOverride=430
+            ArmourRatingOverride=100
+            MaxStaminaOverride=200
+            SoundEvents={
+                {
+                    EventName=SFXJetpackDodgeRollRight
+                    Sound=/Lotus/Sounds/Vehicles/Archwing/Movement/ArchWingDodgeRollRight
+                    Chance=1
+                    Period=1
+                    Context=PEC_ALL
+                    CancelEventName=""
+                    },
+                    {
+                        EventName=SFXJetpackDodgeRollLeft
+                        Sound=/Lotus/Sounds/Vehicles/Archwing/Movement/ArchWingDodgeRollLeft
+                        Chance=1
+                        Period=1
+                        Context=PEC_ALL
+                        CancelEventName=""
+                    }
+                }
+                JetPackAttachment={
+                    Type=StandardFlightJetPack
+                }
+                WaterJetPackAttachment={
+                    Type=WaterStandardFlightJetPack
+                }
+                SkyJetPackAttachment={
+                    Type=SkyStandardFlightJetPack
+                }

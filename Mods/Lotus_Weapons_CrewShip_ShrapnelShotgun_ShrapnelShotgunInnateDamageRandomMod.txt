@@ -1,0 +1,2 @@
+/Lotus/Weapons/CrewShip/ShrapnelShotgun/ShrapnelShotgunInnateDamageRandomMod
+patch not applied (yet)

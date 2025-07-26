@@ -1,0 +1,65 @@
+/Lotus/Upgrades/Mods/Sets/Gladiator/GladiatorSetMod
+Rarity=RARE
+LocalizeTag=/Lotus/Language/Mods/MeleeGladiatorSetModName
+StatusDescTag=/Lotus/Language/Buffs/BloodRushBuffDesc
+CodexSecret=1
+Upgrades={
+    {
+        UpgradeType=WEAPON_CRIT_CHANCE
+        OperationType=STACKING_MULTIPLY
+        Value=0.1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WarframeGladiatorSetDesc
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
+            Function=GetDescriptionInfo
+            _displayAsPercent={
+                1
+            }
+            _absoluteValue={
+                0
+            }
+            _maxDecimals={
+                1,
+                0
+            }
+            _addPlusses={
+                0
+            }
+            _multiplyDown={
+                0
+            }
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_VERY_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
+UpgradeChance=1
+UpgradeDuration=1
+StackMode=SM_DECAY
+MaxConditionalStacks=11
+PlayEffect=0
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Offensive/OnComboTierCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/CritChanceModifier.png
+ModSetIcon=/Lotus/Interface/Cards/Images/Sets/Gladiator/GladiatorHeader.png
+InstallSound=/Lotus/Sounds/UI/NewUI/Common/UICommonAccent
+InstallEffect=/Lotus/Fx/Interface/ModSets/GladiatorInstall
+NumUpgradesInSet=6
+TransferenceSupport=TS_WARFRAME_ONLY
+IsInfinite=1

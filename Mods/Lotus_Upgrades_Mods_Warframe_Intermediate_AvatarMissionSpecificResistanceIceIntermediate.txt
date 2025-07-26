@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Warframe/Intermediate/AvatarMissionSpecificResistanceIceIntermediate
+patch not applied (yet)

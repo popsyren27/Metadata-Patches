@@ -1,0 +1,100 @@
+/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedCatbrowVampireShieldPrecept
+Rarity=RARE
+MarketMode=MM_HIDDEN
+RegularPrice=5000
+PremiumPrice=2
+LocalizeTag=/Lotus/Language/Pets/VampireShield
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Pets/Deimos/InfestedKavtVampireShieldPrecept.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Pets/VampireShieldDesc
+    LocKeyWordScript={
+    Script=InfestedCatbrowVampireShield.lua
+    Function=GetDescriptionInfo
+    _range={
+    10,
+    15,
+    20,
+    25
+}
+_maxHealthPoolPct={
+10,
+20,
+30,
+40
+}
+_healthPoolIncrement={
+5,
+10,
+15,
+20
+}
+_activationThreshold=10
+_invulnerabilityDuration=1
+_corpseType=/EE/Types/Physics/Ragdoll
+_hudBuffType=""
+_drainFx=""
+_fxLifetime=1
+_DRAINED_SYM=VulpaphylaDrained
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+BaseDrain=QA_NONE
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Types/Friendly/Pets/CreaturePets/BaseInfestedCatbrowPetPowerSuit
+HudBuffIcon=/Lotus/Interface/Icons/Abilities/Helminth/HelmintShieldAbility.png
+Ability={
+Script={
+Script=InfestedCatbrowVampireShield.lua
+Function=ActivateAbility
+_range={
+10,
+15,
+20,
+25
+}
+_maxHealthPoolPct={
+10,
+20,
+30,
+40
+}
+_healthPoolIncrement={
+5,
+10,
+15,
+20
+}
+_activationThreshold=10
+_invulnerabilityDuration=1
+_corpseType=/EE/Types/Physics/Ragdoll
+_hudBuffType=VampireShieldBuff
+_drainFx=VampireShieldBeam
+_fxLifetime=1
+_DRAINED_SYM=VulpaphylaDrained
+}
+CooldownDuration=-1
+EnergyRequiredToActivate=0
+ActivationXP=15
+IsPassive=1
+}

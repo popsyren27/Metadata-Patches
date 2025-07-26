@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Melee/Beginner/WeaponToxinDamageModBeginner
+patch not applied (yet)

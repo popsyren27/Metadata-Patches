@@ -1,0 +1,52 @@
+/Lotus/Powersuits/Tengu/TornadoAugmentCard
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/ZephyrTornadoAbilityAugment1Name
+Icon=/Lotus/Interface/Cards/Images/AbilityAugments/ZephyrTornadoAugment.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_ABILITY_AUGMENT
+    OperationType=ADD
+    Value=1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=AUGMENT_ONE
+    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/TornadoAbility
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Suits/ZephyrTornadoAbilityAugment1Desc
+    LocKeyWordScript={
+    Script=/Lotus/Powersuits/PowersuitAbilities/Tornado.lua
+    Function=GetAugmentDescriptionInfo
+    _baseRange=20
+    _activateAnim=""
+    _castFx=""
+    _castBurstFx=""
+    _vortexType=""
+    _vortexAugmentType=""
+    _tornadoDeco=""
+    _augmentOneTornadoDeco=""
+    _decoAttachTypes={}
+    _postFxAttach=""
+    _tornadoMeshScale=1.5
+    _decoAttachedDeco=""
+    _decoFireMats={}
+    _turbDecoFireMats={}
+    _tornadoDeathSound=""
+    _tornadoDeathSoundTime=4
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_POWER
+BaseDrain=QA_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=TenguBaseSuit
+IsAbilityAugment=1

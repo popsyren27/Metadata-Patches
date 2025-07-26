@@ -1,0 +1,107 @@
+/Lotus/Types/Sentinels/SentinelPowersuits/PrimeShadePowerSuit
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Primes/PrimeShadeName
+LocalizeDescTag=/Lotus/Language/Primes/PrimeShadeDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Companions/Sentinels/Types/ShadePrime.png
+ArtifactSlots={
+    AP_PRECEPT,
+    AP_TACTIC,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_PRECEPT,
+    AP_PRECEPT,
+    AP_PRECEPT,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_PRECEPT
+}
+DefaultCustomization={
+    Helmet={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0,0,-0.015}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,0,0,1}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+    }
+    ArmLeft={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0,0,0}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={-0.043246001,-0.0056929998,-0.130402,0.99050099}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+    }
+    LegLeft={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0,0,-0.045000002}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,0,0,1}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+    }
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0.07,0,-0.025}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.097074002,0.0068239998,0.377352,0.92094302}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={-0.07,0,0.025}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.097074002,0.0068239998,0.377352,0.92094302}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Sentinels/Skins/Defaults/DefaultShadePrimeSkin
+    }
+    ArmRight={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0,0,0}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={-0.043246001,0.0056929998,0.130402,0.99050099}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+    }
+}
+MaxHealthOverride=700
+MaxShieldOverride=300
+ArmourRatingOverride=100
+MiniMapIcon=/Lotus/Interface/Icons/Markers/Companions/SentinelShadePrimePortrait.png
+MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Companions/LargePortraits/SentinelShadePrimeLargePortrait.png
+UiName=/Lotus/Language/Primes/PrimeShadeName
+DefaultWeapon=/Lotus/Types/Sentinels/SentinelWeapons/PrimeBurstLaserPistol

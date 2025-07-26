@@ -1,0 +1,73 @@
+/Lotus/Types/Friendly/Pets/MoaPets/MoaPetPrecept/MoaChargePrecept
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/MoaChargePrecept
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Pets/MoaChargePrecept.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/MoaChargePreceptDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetComponents/MoaChargeAbility.lua
+    Function=GetDescriptionInfo
+    _ChargeStartAnim=""
+    _ChargeAnim=""
+    _ChargeFinishAnim=""
+    _slamEffect=""
+    _attackAirTime=0.5
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ItemCompatibility=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetPowerSuit
+Script={
+Script=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetComponents/MoaChargeAbility.lua
+Function=AddUpgrades
+_ChargeStartAnim=""
+_ChargeAnim=""
+_ChargeFinishAnim=""
+_slamEffect=""
+_attackAirTime=0.5
+}
+UnappliedScript={
+Script=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetComponents/MoaChargeAbility.lua
+Function=RemoveUpgrades
+_ChargeStartAnim=""
+_ChargeAnim=""
+_ChargeFinishAnim=""
+_slamEffect=""
+_attackAirTime=0.5
+}
+TipTags={
+OVERSHIELD
+}
+Ability={
+Script={
+Script=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetComponents/MoaChargeAbility.lua
+Function=NpcEvaluateAbility
+_ChargeStartAnim=/Lotus/Animations/Creatures/MOA/JumpSlamStart_anim.fbx
+_ChargeAnim=/Lotus/Animations/Creatures/MOA/JumpSlamLoop_anim.fbx
+_ChargeFinishAnim=/Lotus/Animations/Creatures/MOA/JumpSlamEnd_anim.fbx
+_slamEffect=MoaChargePreceptShockwaveEntity
+_attackAirTime=0.5
+}
+EnergyRequiredToActivate=0
+AllowReactivate=1
+ActivationXP=0
+TurnToTarget=1
+}

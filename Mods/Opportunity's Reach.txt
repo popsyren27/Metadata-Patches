@@ -1,0 +1,78 @@
+/Lotus/Upgrades/EmpoweredHeavyMelee/PerfectReach
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/PerfectReach
+Icon=/Lotus/Interface/Cards/Images/Melee/Tennokai/PerfectReach.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Mods/PerfectReachDesc
+    LocKeyWordScript={
+    Script=PerfectReach.lua
+    Function=GetDescription
+    _perfectHeavyAttackWindowIncreasePerLevel={
+    0.80000001,
+    1.2,
+    1.6,
+    2
+}
+_perfectHeavyAttackRangePerLevel=0.75
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ApplyUpgradesByDefault=1
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_MEDIUM
+FusionLimit=QA_MEDIUM
+IncompatibilityTags={
+POWER_WEAPON_LITE,
+NO_HEAVY_ATTACK
+}
+Script={
+Script=PerfectReach.lua
+Function=ApplyUpgrade
+_perfectHeavyAttackWindowIncreasePerLevel={
+0.80000001,
+1.2,
+1.6,
+2
+}
+_perfectHeavyAttackRangePerLevel=0.75
+}
+UnappliedScript={
+Script=PerfectReach.lua
+Function=RemoveUpgrade
+_perfectHeavyAttackWindowIncreasePerLevel={
+0.80000001,
+1.2,
+1.6,
+2
+}
+_perfectHeavyAttackRangePerLevel=0.75
+}
+SubUpgrades={
+PerfectReachSubMod
+}
+ConditionalUpgrades={}
+HudBuffIcon=""
+IsInfinite=0
+TipTags={
+PERFECT_HEAVY_MELEE
+}

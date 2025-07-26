@@ -1,0 +1,23 @@
+/Lotus/Powersuits/PowersuitAbilities/OdaliskBFGAbility
+LocalizeTag=/Lotus/Language/Suits/OdaliskBFGAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/OdaliskBFGAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/ProteaBFG.png
+UniquePowerIdentifier=ODALISK_BFG
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=OdaliskBFG.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Odalisk/BFG_anim.fbx
+    _decoType=/Lotus/Characters/Tenno/Odalisk/OdaliskGearTurretDeco
+    _decoAnim=/Lotus/Animations/Tenno/Powers/Odalisk/BFGWEP_anim.fbx
+    _progressMovie=/Lotus/Interface/PowerSuitCustomHuds/ProteaTurretStatus.swf
+    _emptyAttachmentType=/Lotus/Fx/PowersuitAbilities/Odalisk/PlaceholderDeco
+    _npcOverrideDamage=0
+}
+NpcCooldownDuration=12
+EnergyRequiredToActivate=50
+ActivationXP=50
+CastSound=/Lotus/Sounds/Warframes/Protea/ProteaBFGCast
+VideoTexture=/Lotus/Interface/AbilityVideos/ProteaPower2_s.bk2

@@ -1,0 +1,43 @@
+/Lotus/Powersuits/Ember/FireBallAugmentCard
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/FireBallAbilityAugment1Name
+Icon=/Lotus/Interface/Cards/Images/AbilityAugments/EmberFireballAugment2.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_ABILITY_AUGMENT
+    OperationType=ADD
+    Value=1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=AUGMENT_ONE
+    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/FireBallAbility
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Suits/FireBallAbilityAugment1Desc
+    LocKeyWordScript={
+    Script=/Lotus/Powersuits/PowersuitAbilities/FireBall.lua
+    Function=GetAugmentDescriptionInfo
+    _pveProjType=""
+    _pvpProjType=""
+    _fightingGameProjType=""
+    _pvpImpactSound=""
+    _damageAugmentEffect=""
+    _augmentRangeDecoType=""
+    _fireballHitDeco=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_POWER
+BaseDrain=QA_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=EmberBaseSuit
+IsAbilityAugment=1

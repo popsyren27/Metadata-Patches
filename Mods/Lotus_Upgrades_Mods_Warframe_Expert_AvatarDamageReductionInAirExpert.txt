@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Warframe/Expert/AvatarDamageReductionInAirExpert
+patch not applied (yet)

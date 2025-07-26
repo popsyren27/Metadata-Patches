@@ -1,7 +1,0 @@
-/Lotus/Upgrades/Mods/Immortal/AntivirusSevenMod
-MarketMode=MM_HIDDEN
-LocalizeTag=/Lotus/Language/1999Coda/AntivirusSevenModName
-LocalizeDescTag=/Lotus/Language/1999Coda/AntivirusSevenModDesc
-Icon=/Lotus/Interface/Icons/Antivirus/AntiV.png
-ExcludeFromCodex=0
-ImmortalGroup=2

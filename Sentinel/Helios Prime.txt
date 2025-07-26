@@ -1,0 +1,98 @@
+/Lotus/Types/Sentinels/SentinelPowersuits/PrimeHeliosPowerSuit
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Primes/PrimeHeliosName
+LocalizeDescTag=/Lotus/Language/Primes/PrimeHeliosDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Companions/Sentinels/Types/HeliosPrime.png
+DefaultCustomization={
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=OFFSET_R1_WING
+                PosOffset={0.2,-0.050000001,0}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={-0.5,-0.5,0.5,0.5}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=OFFSET_L1_WING
+                PosOffset={-0.2,0.050000001,0}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={-0.5,-0.5,0.5,0.5}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Sentinels/Skins/Defaults/DefaultHeliosPrimeSkin
+    }
+}
+Mesh=/Lotus/Characters/Pets/PrimeHelios/HeliosPrime_skel.fbx
+MaxHealthOverride=700
+MaxShieldOverride=300
+ArmourRatingOverride=100
+AttachedFX={
+    {
+        LocalPosition={0,0,0}
+        LocalRotation={0,0,0,1}
+        BoneName=GAME_C1_ROOT
+        Type=/Lotus/Types/Sentinels/SentinelWeapons/DeconstructorPrime/PrimeGlaivePartDecoMid
+        Chance=255
+        RelativeToBounds=0
+        Attach=1
+        DestroyWithOwner=1
+        DestroyParentOnDeath=0
+        FadeOutOnDestruction=0
+        Scale=1
+        },
+        {
+            LocalPosition={0,0,0}
+            LocalRotation={0,0,0,1}
+            BoneName=GAME_C1_ROOT
+            Type=/Lotus/Types/Sentinels/SentinelWeapons/DeconstructorPrime/PrimeGlaivePartDecoFront
+            Chance=255
+            RelativeToBounds=0
+            Attach=1
+            DestroyWithOwner=1
+            DestroyParentOnDeath=0
+            FadeOutOnDestruction=0
+            Scale=1
+            },
+            {
+                LocalPosition={0,0,0}
+                LocalRotation={0,0,0,1}
+                BoneName=GAME_C1_ROOT
+                Type=/Lotus/Types/Sentinels/SentinelWeapons/DeconstructorPrime/PrimeGlaivePartDecoRear
+                Chance=255
+                RelativeToBounds=0
+                Attach=1
+                DestroyWithOwner=1
+                DestroyParentOnDeath=0
+                FadeOutOnDestruction=0
+                Scale=1
+                },
+                {
+                    LocalPosition={0,0.5,0}
+                    LocalRotation={0,0,0,1}
+                    BoneName=""
+                    Type=/Lotus/Fx/Sentinels/HeliosAttach
+                    Chance=255
+                    RelativeToBounds=0
+                    Attach=1
+                    DestroyWithOwner=1
+                    DestroyParentOnDeath=0
+                    FadeOutOnDestruction=0
+                    Scale=1
+                }
+            }
+            MiniMapIcon=/Lotus/Interface/Icons/Markers/Companions/SentinelHeliosPrimePortrait.png
+            MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Companions/LargePortraits/SentinelHeliosPrimeLargePortrait.png
+            UiName=/Lotus/Language/Primes/PrimeHeliosName
+            DefaultWeapon=/Lotus/Types/Sentinels/SentinelWeapons/DeconstructorPrime/PrimeHeliosGlaiveWeapon

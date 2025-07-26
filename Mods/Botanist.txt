@@ -1,0 +1,79 @@
+/Lotus/Types/Sentinels/SentinelPrecepts/PlantScannerPrecept
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Consumables/PlantScannerPreceptName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Pets/PlantScannerPrecept.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Consumables/PlantScannerPreceptDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Sentinels/SentinelAbilities/CodexScannerAbility.lua
+    Function=GetDescriptionInfo
+    _scannerConsumableType=""
+    _alternativeScannerConsumableType=""
+    _pulseFX=""
+    _scannedFX=""
+    _pulseSound=""
+    _scannedSound=""
+    _allowQuotaRescannable=0
+    _validTargets={}
+    _restrictedTargets={}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+BaseDrain=QA_MEDIUM
+ItemCompatibility=/Lotus/Types/Sentinels/SentinelPowersuits/RadarBasePowerSuit
+Ability={
+Rarity=RARE
+Script={
+Script=/Lotus/Types/Sentinels/SentinelAbilities/PlantScannerAbility.lua
+Function=ActivateAbility
+_scanRanges={
+20,
+26,
+32,
+38,
+44,
+50
+}
+_scanDurations={
+5,
+4.4000001,
+3.8,
+3.2,
+2.5999999,
+2
+}
+_rescanInterval=1
+_plantDecoType=/Lotus/Types/Items/Plants/PlantDeco
+_plantPickupType=/Lotus/Types/Gameplay/Plants/PlantPickup
+_pulseFX=/Lotus/Fx/Projectors/ScanProjector
+_scannedFX=/Lotus/Fx/Projectors/ScannedProjector
+_pulseSound=/Lotus/Sounds/UI/LibraryScanner/LibraryScannerScanAvailable
+_scannedSound=/Lotus/Sounds/UI/LibraryScanner/LibraryScannerScanFinished
+_vacuumEffect=/Lotus/Fx/Enemies/Drones/VacuumPickUpTrail
+}
+CooldownDuration=10
+IsPassive=1
+Blocking=0
+}

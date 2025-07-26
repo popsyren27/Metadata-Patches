@@ -1,0 +1,94 @@
+/Lotus/Powersuits/PowersuitAbilities/RadialJavelinAbility
+LocalizeTag=/Lotus/Language/Suits/RadialJavelinAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/RadialJavelinAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/Power03.png
+UniquePowerIdentifier=EXCALIBUR_RADIAL_JAVELIN
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=RadialJavelinAbility.lua
+    Function=ActivateAbility
+    _energySwordDeco=/Lotus/Fx/PowersuitAbilities/Excalibur/ExcaliburEnergySwordDeco
+    _javelinSpawnType=""
+    _javelinProjectileType=/Lotus/Types/Weapons/JavelinProjectile
+    _javelinPvpProjectileType=/Lotus/Types/Weapons/JavelinProjectilePvp
+    _javelinProjectilePrimeType=/Lotus/Types/Weapons/JavelinProjectilePrime
+    _javelinProjectileDarkType=/Lotus/Types/Weapons/JavelinProjectileDark
+    _javelinPvpProjectilePrimeType=/Lotus/Types/Weapons/JavelinProjectilePvpPrime
+    _javelinPvpProjectileDarkType=/Lotus/Types/Weapons/JavelinProjectilePvpDark
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Excalibur/SwordPlant_anim.fbx
+    _range=30
+    _baseDamage=500
+    _furiousAugmentAttachType=/Lotus/Fx/PowersuitAbilities/Excalibur/FuriousJavelinAttach
+    _doomSwordType=/Lotus/Powersuits/Excalibur/DoomSword
+    _energySwordPrimeMesh=/Lotus/Characters/Tenno/Excalibur/EnergySword/ExcaliburEnergySwordPrime.fbx
+    _energySwordDarkMesh=/Lotus/Characters/Tenno/Excalibur/Umbra/EnergySword/UmbraEnergySword.fbx
+    _energySwordCYDarkMesh=/Lotus/Characters/Tenno/Excalibur/EnergySword/ExcaliburEnergySwordDark.fbx
+    _cyUmbraType=/Lotus/Powersuits/Excalibur/DarkExcalibur
+    _animTimeout=0.80000001
+}
+SecondaryScripts={
+    {
+        tag=CreateJavs
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=RadialJavelinAbility.lua
+            Function=CreateJavs
+            _energySwordDeco=""
+            _javelinSpawnType=""
+            _javelinProjectileType=/Lotus/Types/Weapons/JavelinProjectile
+            _javelinPvpProjectileType=/Lotus/Types/Weapons/JavelinProjectilePvp
+            _javelinProjectilePrimeType=/Lotus/Types/Weapons/JavelinProjectilePrime
+            _javelinProjectileDarkType=/Lotus/Types/Weapons/JavelinProjectileDark
+            _javelinPvpProjectilePrimeType=/Lotus/Types/Weapons/JavelinProjectilePvpPrime
+            _javelinPvpProjectileDarkType=/Lotus/Types/Weapons/JavelinProjectilePvpDark
+            _activateAnim=""
+            _range=15
+            _baseDamage=500
+            _furiousAugmentAttachType=/Lotus/Fx/PowersuitAbilities/Excalibur/FuriousJavelinAttach
+            _doomSwordType=""
+            _energySwordPrimeMesh=""
+            _energySwordDarkMesh=""
+            _energySwordCYDarkMesh=""
+            _cyUmbraType=""
+            _animTimeout=0.80000001
+        }
+        },
+        {
+            tag=LaunchJavs
+            executionMode=EM_ALL
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=RadialJavelinAbility.lua
+                Function=LaunchJavs
+                _energySwordDeco=""
+                _javelinSpawnType=""
+                _javelinProjectileType=""
+                _javelinPvpProjectileType=""
+                _javelinProjectilePrimeType=""
+                _javelinProjectileDarkType=""
+                _javelinPvpProjectilePrimeType=""
+                _javelinPvpProjectileDarkType=""
+                _activateAnim=""
+                _range=15
+                _baseDamage=500
+                _furiousAugmentAttachType=/Lotus/Fx/PowersuitAbilities/Excalibur/FuriousJavelinAttach
+                _doomSwordType=""
+                _energySwordPrimeMesh=""
+                _energySwordDarkMesh=""
+                _energySwordCYDarkMesh=""
+                _cyUmbraType=""
+                _animTimeout=0.80000001
+            }
+        }
+    }
+    NpcCooldownDuration=60
+    EnergyRequiredToActivate=75
+    ActivationXP=75
+    CastSound=/Lotus/Sounds/Warframes/Excalibur/ExcaliburAbility
+    VideoTexture=/Lotus/Interface/AbilityVideos/ExcaliburPower3.bk2
+    CanShowRangeFinder=1

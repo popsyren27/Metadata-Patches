@@ -1,0 +1,135 @@
+/Lotus/Upgrades/Mods/Warframe/ImpactParkourTwoMod
+LocalizeTag=/Lotus/Language/Items/WarframeModParkourImpact
+Icon=/Lotus/Interface/Cards/Images/Parkour/ImpactParkourTwoMod.png
+Upgrades={
+{
+    UpgradeType=AVATAR_PARKOUR_BOOST
+    OperationType=STACKING_MULTIPLY
+    Value=0.029999999
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Mods/ParkourVelocity
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+},
+{
+    UpgradeType=AVATAR_PARKOUR_GLIDE
+    OperationType=STACKING_MULTIPLY
+    Value=0.029999999
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/AvatarParkourGlideModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+},
+{
+    UpgradeType=AVATAR_PARKOUR_DAMAGE_ADDED
+    OperationType=ADD
+    Value=0.1
+    DamageType=DT_IMPACT
+    AutoType=0
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Mods/ParkourImpact
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_DEFENSE
+BaseDrain=QA_MEDIUM
+FusionLimit=QA_HIGH
+ParticleEvents={
+{
+EventName=BulletJumpStart
+ParticleSys=/Lotus/Fx/Gameplay/Movement/Mods/BulletJumpImpact
+Attached=1
+OwnedByAvatar=0
+UseOtherEntity=0
+Bone=""
+LocalPosition={0,0,0}
+LocalRotation={0,0,0,1}
+Context=PEC_ALL
+},
+{
+EventName=WallHopRightEffect
+ParticleSys=/Lotus/Fx/Gameplay/Movement/Mods/WallHopImpact
+Attached=1
+OwnedByAvatar=0
+UseOtherEntity=0
+Bone=GAME_R1_LEG5
+LocalPosition={0,0,0}
+LocalRotation={0,1,0,0}
+Context=PEC_ALL
+},
+{
+    EventName=WallHopLeftEffect
+    ParticleSys=/Lotus/Fx/Gameplay/Movement/Mods/WallHopImpact
+    Attached=1
+    OwnedByAvatar=0
+    UseOtherEntity=0
+    Bone=GAME_L1_LEG5
+    LocalPosition={0,0,0}
+    LocalRotation={0,0,0,1}
+    Context=PEC_ALL
+    },
+    {
+        EventName=WallUpJumpEffect
+        ParticleSys=/Lotus/Fx/Gameplay/Movement/Mods/WallHopImpact
+        Attached=1
+        OwnedByAvatar=0
+        UseOtherEntity=0
+        Bone=GAME_R1_LEG5
+        LocalPosition={0,0,0}
+        LocalRotation={0,0.70710677,0,0.70710677}
+        Context=PEC_ALL
+    }
+}

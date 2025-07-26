@@ -1,0 +1,6 @@
+/Lotus/Powersuits/Fairy/Fairy
+MarketMode=MM_VISIBLE
+ExcludeFromCodex=0
+RecipeHelpText=/Lotus/Language/Suits/RecipeHelpTitania
+MaxHealthOverride=270
+MaxShieldOverride=270

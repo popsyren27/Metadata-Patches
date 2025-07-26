@@ -1,0 +1,38 @@
+/Lotus/Powersuits/PowersuitAbilities/SmiteAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/SmiteAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/SmiteAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/PaladinSmite.png
+UniquePowerIdentifier=OBERON_SMITE
+AdditionalPowerIdentifiers={
+    EFFECT_DEBUFF,
+    EFFECT_DAMAGE
+}
+Script={
+    Script=Smite.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Necro/SoulPunch_anim.fbx
+    _activateAnimEvent=SoulPunchCast
+    _projectileType=/Lotus/Powersuits/Paladin/Projectiles/SmiteProjectile
+    _pvpProjectileType=/Lotus/Powersuits/Paladin/Projectiles/SmiteProjectilePvP
+    _fightingProjectileType=/Lotus/Powersuits/Paladin/Projectiles/SmiteProjectileFighting
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Paladin/SmiteCast
+    _firstTargetEffect=/Lotus/Fx/PowersuitAbilities/Paladin/SmiteFirstTarget
+    _localSound=/Lotus/Sounds/Warframes/Paladin/PaladinSmite
+    _remoteSound=/Lotus/Sounds/Warframes/Paladin/PaladinSmite3D
+    _damageAugmentEffect=/Lotus/Fx/PowersuitAbilities/Paladin/SmiteDamageAugmentAttach
+    _augmentRangeDecoType=/Lotus/Fx/PowersuitAbilities/Paladin/SmiteInfusionRangeDeco
+    _pvpImpactSound=/Lotus/Sounds/Warframes/Paladin/PaladinGenericAbilityImpact
+    _pvpSoftTargetRadius=1.5
+}
+NpcCooldownDuration=30
+AllowOnZipLines=1
+ActivationXP=25
+CastSound=/Lotus/Sounds/Warframes/Paladin/PaladinCast
+VideoTexture=/Lotus/Interface/AbilityVideos/OberonPower1_s.bk2
+ForceFeedbackEffectEvents={
+    {
+        EventName=OberonBurstFeedback
+        ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerBurst
+    }
+}

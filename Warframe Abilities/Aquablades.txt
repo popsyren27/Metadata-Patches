@@ -1,0 +1,141 @@
+/Lotus/Powersuits/PowersuitAbilities/YareliDisksAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/YareliDisksAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/YareliDisksAbilityDescription
+Icon=/Lotus/Interface/Icons/Abilities/YareliAqueousDisks.png
+UniquePowerIdentifier=YARELI_DISKS
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=YareliDisks.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Yareli/AqueousDiscs_anim.fbx
+    _boardActivateAnim=/Lotus/Animations/Tenno/Powers/Yareli/AquaBoardAqueousDiscs_anim.fbx
+    _triggerType=/Lotus/Powersuits/Yareli/DisksElement
+    _discType=/Lotus/Fx/PowersuitAbilities/Yareli/YareliDiscDeco
+    _discDecoAttach=/Lotus/Fx/PowersuitAbilities/Yareli/DiscDecoAttach
+    _discRangeAttach=/Lotus/Fx/PowersuitAbilities/Yareli/DiscAugmentRangeDeco
+    _discAugmentAttach=/Lotus/Fx/PowersuitAbilities/Yareli/DiscAugmentAttach
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Yareli/DiscCast
+    _castLaunchEffect=/Lotus/Fx/PowersuitAbilities/Yareli/DiscLaunchCast
+    _avatarAttach=/Lotus/Fx/PowersuitAbilities/Yareli/DiscAttach
+    _augmentProjectileType=/Lotus/Powersuits/Yareli/DisksAugmentProjectile
+    _augmentAnim=/Lotus/Animations/Tenno/Powers/Yareli/AqueousDiscsThrowingForward_anim.fbx
+    _boardAugmentAnim=/Lotus/Animations/Tenno/Powers/Yareli/AquaBoardAqueousDiscsThrowingForward_anim.fbx
+    _isNPCAbility=0
+}
+SecondaryScripts={
+    {
+        tag=LaunchDisk
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=YareliDisks.lua
+            Function=LaunchDisk
+            _activateAnim=""
+            _boardActivateAnim=""
+            _triggerType=""
+            _discType=""
+            _discDecoAttach=""
+            _discRangeAttach=""
+            _discAugmentAttach=""
+            _castEffect=""
+            _castLaunchEffect=""
+            _avatarAttach=""
+            _augmentProjectileType=""
+            _augmentAnim=""
+            _boardAugmentAnim=""
+            _isNPCAbility=0
+        }
+    }
+}
+InputEvents={
+    {
+        tag=AugmentLaunch
+        inputCode=ACTIVATE_ABILITY_2
+        onDown=1
+        scriptInstance={
+            Script=YareliDisks.lua
+            Function=AugmentLaunch
+            _activateAnim=""
+            _boardActivateAnim=""
+            _triggerType=""
+            _discType=""
+            _discDecoAttach=""
+            _discRangeAttach=""
+            _discAugmentAttach=""
+            _castEffect=""
+            _castLaunchEffect=""
+            _avatarAttach=""
+            _augmentProjectileType=""
+            _augmentAnim=""
+            _boardAugmentAnim=""
+            _isNPCAbility=0
+        }
+        },
+        {
+            tag=AugmentLaunch
+            inputCode=POWER_MODIFIER
+            onDown=1
+            scriptInstance={
+                Script=YareliDisks.lua
+                Function=AugmentLaunchPM
+                _activateAnim=""
+                _boardActivateAnim=""
+                _triggerType=""
+                _discType=""
+                _discDecoAttach=""
+                _discRangeAttach=""
+                _discAugmentAttach=""
+                _castEffect=""
+                _castLaunchEffect=""
+                _avatarAttach=""
+                _augmentProjectileType=""
+                _augmentAnim=""
+                _boardAugmentAnim=""
+                _isNPCAbility=0
+            }
+        }
+    }
+    NpcCooldownDuration=30
+    EnergyRequiredToActivate=75
+    AllowOnZipLines=1
+    AllowDuringOverride=1
+    ActivationXP=75
+    VideoTexture=/Lotus/Interface/AbilityVideos/YareliPower3_s.bk2
+    SoundEvents={
+        {
+            EventName=SFXYareliDiscsCast
+            Sound=/Lotus/Sounds/Warframes/Yareli/YareliAqueousDiscsCast
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+            },
+            {
+                EventName=SFXYareliDiscsRelease
+                Sound=/Lotus/Sounds/Warframes/Yareli/YareliAqueousDiscsRelease
+                Chance=1
+                Period=1
+                Context=PEC_ALL
+                CancelEventName=""
+                },
+                {
+                    EventName=SFXYareliDiscsThrow
+                    Sound=/Lotus/Sounds/Warframes/Yareli/YareliAqueousDiscsAugmentThrow
+                    Chance=1
+                    Period=1
+                    Context=PEC_ALL
+                    CancelEventName=""
+                    },
+                    {
+                        EventName=SFXYareliDiscsThrowCast
+                        Sound=/Lotus/Sounds/Warframes/Yareli/YareliAqueousDiscsAugmentCast
+                        Chance=1
+                        Period=1
+                        Context=PEC_ALL
+                        CancelEventName=""
+                    }
+                }

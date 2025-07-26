@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Rifle/Intermediate/WeaponDamageAmountModIntermediate
+patch not applied (yet)

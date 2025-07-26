@@ -1,0 +1,81 @@
+/Lotus/Upgrades/CosmeticEnhancers/Utility/EnergyEfficiencyOnHeadshot
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/EnergyEfficiency
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/PaxBoltBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/SolarisEnergyEfficiency.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=AVATAR_ABILITY_EFFICIENCY
+        OperationType=STACKING_MULTIPLY
+        Value=0.075000003
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/AvatarAbilityEfficiencyModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+        },
+        {
+            UpgradeType=AVATAR_ABILITY_STRENGTH
+            OperationType=STACKING_MULTIPLY
+            Value=0.075000003
+            DamageType=DT_ANY
+            AutoType=0
+            ValidType=""
+            CheckTypeOnInstall=0
+            SymbolFilter=""
+            UpgradeObject=""
+            ValidPostures={}
+            ValidModifiers={}
+            InvalidModifiers={}
+            ValidProcTypes={}
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/AvatarAbilityStrengthModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+            DisplayAsMultiplier=0
+            DisplayAsPercent=1
+            ReverseValueSymbol=0
+            SmallerIsBetter=0
+            RoundTo=0.1
+            RoundingMode=RM_ROUND
+            AllowConditionalLocMerge=0
+        }
+    }
+    ApplyUpgradesByDefault=0
+    MultiBonusLoc=1
+    EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerEfficiencyOnHeadshotDescriptionWithDuration
+    EnhancementTagLocScript={
+        Script=""
+    }
+    UpgradeChance=1
+    UpgradeDuration=4
+    DurationScalesWithRank=0
+    ChanceScalesWithRank=0
+    CanReproc=0
+    ConditionalUpgrades={
+        EnergyEfficiencyOnHeadshotCondition
+    }
+    ConditionTag=/Lotus/Language/Upgrades/OnHeadshotKillCondition_Description
+    HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/SolarisEnergyEfficiency.png
+    BaseDistillPointValue=24

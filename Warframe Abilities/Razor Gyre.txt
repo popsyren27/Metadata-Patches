@@ -1,0 +1,127 @@
+/Lotus/Powersuits/PowersuitAbilities/SentientWhirlwindAbility
+LocalizeTag=/Lotus/Language/Suits/SentientWhirlwindAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/SentientWhirlwindAbilityDescription
+StatusDescTag=/Lotus/Language/Buffs/RazorGyreBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/CalibanWhirlwind.png
+UniquePowerIdentifier=SENTIENT_WHIRLWIND
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE,
+    EFFECT_MOBILITY
+}
+Script={
+    Script=SentientWhirlwind.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Caliban/WhirlwindStart_anim.fbx
+    _loopAnim=/Lotus/Animations/Tenno/Powers/Caliban/WhirlwindLoop_anim.fbx
+    _deactivateAnim=/Lotus/Animations/Tenno/Powers/Caliban/WhirlwindEnd_anim.fbx
+    _inputFilter=/Lotus/Powersuits/Sentient/WhirlWindInputFilter
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Caliban/WhirlwindCast
+    _attachEffect=/Lotus/Fx/PowersuitAbilities/Caliban/WhirlwindAttach
+    _rangeDeco=/Lotus/Fx/PowersuitAbilities/Caliban/WhirlWindRangeDeco
+    _dashEffect=/Lotus/Fx/PowersuitAbilities/Caliban/WhirlWindDashAttach
+    _impactSound=/Lotus/Sounds/Warframes/Caliban/CalibanWhirlwindDashImpact
+    _impactAoeSound=""
+    _impactExplosionType=/Lotus/Fx/PowersuitAbilities/Caliban/SentientLiftedEnemyExplosion
+    _augmentTornadoType=/Lotus/Powersuits/Sentient/WhirlwindAugmentBlackHole
+    _augmentTeleportFx=/Lotus/Fx/PowersuitAbilities/Caliban/WhirlwindAugmentAttach
+}
+SecondaryScripts={
+    {
+        tag=NotifyImpact
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=SentientWhirlwind.lua
+            Function=NotifyImpact
+            _activateAnim=""
+            _loopAnim=""
+            _deactivateAnim=""
+            _inputFilter=""
+            _castEffect=""
+            _attachEffect=""
+            _rangeDeco=""
+            _dashEffect=""
+            _impactSound=/Lotus/Sounds/Warframes/Caliban/CalibanWhirlwindDashImpact
+            _impactAoeSound=/Lotus/Sounds/Warframes/Caliban/CalibanWhirlwindDashEmpoweredImpact
+            _impactExplosionType=/Lotus/Fx/PowersuitAbilities/Caliban/SentientLiftedEnemyExplosion
+            _augmentTornadoType=""
+            _augmentTeleportFx=""
+        }
+        },
+        {
+            tag=HealOnHit
+            executionMode=EM_HOST
+            inheritPrimary=0
+            functionName=HealOnHit
+            scriptInstance={
+                Script=SentientWhirlwind.lua
+                Function=HealOnHit
+                _activateAnim=/Lotus/Animations/Tenno/Powers/Caliban/WhirlwindStart_anim.fbx
+                _loopAnim=/Lotus/Animations/Tenno/Powers/Caliban/WhirlwindLoop_anim.fbx
+                _deactivateAnim=/Lotus/Animations/Tenno/Powers/Caliban/WhirlwindEnd_anim.fbx
+                _inputFilter=/Lotus/Powersuits/Sentient/WhirlWindInputFilter
+                _castEffect=/Lotus/Fx/PowersuitAbilities/Caliban/WhirlwindCast
+                _attachEffect=/Lotus/Fx/PowersuitAbilities/Caliban/WhirlwindAttach
+                _rangeDeco=/Lotus/Fx/PowersuitAbilities/Caliban/WhirlWindRangeDeco
+                _dashEffect=/Lotus/Fx/PowersuitAbilities/Caliban/WhirlWindDashAttach
+                _impactSound=""
+                _impactAoeSound=""
+                _impactExplosionType=/Lotus/Fx/PowersuitAbilities/Concrete/LaserExplosion
+                _augmentTornadoType=""
+                _augmentTeleportFx=""
+            }
+        }
+    }
+    AbilityEvents={
+        {
+            tag=OnJump
+            eventType=ET_ON_JUMP
+            scriptInstance={
+                Script=SentientWhirlwind.lua
+                Function=OnJump
+                _activateAnim=""
+                _loopAnim=""
+                _deactivateAnim=/Lotus/Animations/Tenno/Powers/Caliban/WhirlwindEnd_anim.fbx
+                _inputFilter=/Lotus/Powersuits/Sentient/WhirlWindInputFilter
+                _castEffect=""
+                _attachEffect=/Lotus/Fx/PowersuitAbilities/Caliban/WhirlwindAttach
+                _rangeDeco=/Lotus/Fx/PowersuitAbilities/Caliban/WhirlWindRangeDeco
+                _dashEffect=/Lotus/Fx/PowersuitAbilities/Caliban/WhirlWindDashAttach
+                _impactSound=""
+                _impactAoeSound=""
+                _impactExplosionType=""
+                _augmentTornadoType=""
+                _augmentTeleportFx=""
+            }
+        }
+    }
+    ActivationXP=25
+    VideoTexture=/Lotus/Interface/AbilityVideos/CalibanPower1_s.bk2
+    IsJoinInProgressAbility=1
+    SoundEvents={
+        {
+            EventName=SFXCalibanWhirlwindCastStart
+            Sound=/Lotus/Sounds/Warframes/Caliban/CalibanWhirlwindCastStart
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+            },
+            {
+                EventName=SFXCalibanWhirlwindCastStop
+                Sound=/Lotus/Sounds/Warframes/Caliban/CalibanWhirlwindCastStop
+                Chance=1
+                Period=1
+                Context=PEC_ALL
+                CancelEventName=""
+                },
+                {
+                    EventName=SFXCalibanWhirlwindLoopStart
+                    Sound=/Lotus/Sounds/Warframes/Caliban/CalibanWhirlwindFastLoop
+                    Chance=1
+                    Period=1
+                    Context=PEC_ALL
+                    CancelEventName=SFXCalibanWhirlwindLoopStop
+                }
+            }

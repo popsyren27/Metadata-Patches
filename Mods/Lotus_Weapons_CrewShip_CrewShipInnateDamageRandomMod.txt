@@ -1,0 +1,2 @@
+/Lotus/Weapons/CrewShip/CrewShipInnateDamageRandomMod
+patch not applied (yet)

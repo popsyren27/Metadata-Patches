@@ -1,0 +1,2 @@
+/Lotus/Weapons/Tenno/LongGuns/Gunbrella/ShrineMaidenGunbrellaAugment
+patch not applied (yet)

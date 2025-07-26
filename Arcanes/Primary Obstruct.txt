@@ -1,0 +1,73 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/PrimaryJamEnemyWeaponsOnMagneticProc
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/PrimaryJamEnemyWeaponsOnMagneticProc
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionCM.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/JamNearbyEnemiesOnMagneticProcDesc
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/JamNearbyEnemies.lua
+            Function=GetLocValues
+            _jamBurstEffectSpawner=""
+            _jamSound=""
+            _jammerSound=""
+            _jamRange=15
+            _cooldownTimes={
+                60,
+                50,
+                40,
+                30,
+                20,
+                10
+            }
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/LotusLongGun
+IncompatibilityTags={}
+Script={
+    Script=/Lotus/Scripts/JamNearbyEnemies.lua
+    Function=JamNearbyEnemies
+    _jamBurstEffectSpawner=/Lotus/Fx/PowersuitAbilities/Loki/DisarmCastBurst
+    _jamSound=/Lotus/Sounds/Warframes/Cowgirl/CowgirlRouletteJamBurst
+    _jammerSound=/Lotus/Sounds/Warframes/Cowgirl/CowgirlRouletteProjectileJam
+    _jamRange=15
+    _cooldownTimes={
+        60,
+        50,
+        40,
+        30,
+        20,
+        10
+    }
+}
+UpgradeChance=1
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Peculiars/OnAnyWeaponMagneticProcCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCMBuff.png
+UseDebuffIcon=1
+BaseDistillPointValue=24

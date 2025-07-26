@@ -1,0 +1,65 @@
+/Lotus/Upgrades/Mods/Nightwave/NightwaveCephPrimaryAugmentMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/NightwaveCephPrimaryAugmentModName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Nightwave/NightwaveCephPrimaryAugmentMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Mods/NightwaveCephPrimaryAugmentModDesc
+    LocKeyWordScript={
+    Script=NightwaveCephPrimaryAugmentMod.lua
+    Function=GetDescription
+    _giveStatBase=0.15000001
+    _giveStatPerLevel=0.15000001
+    _giveStatType=WEAPON_DAMAGE_AMOUNT
+    _giveStatOperation=MULTIPLY
+    _singularityChanceBase=0.029999999
+    _singularityChancePerLevel=0.029999999
+    _singularityResource=""
+}
+SmallerIsBetter=0
+RoundTo=0.0099999998
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_ATTACK
+ItemCompatibility=/Lotus/Weapons/Cephalon/Primary/CephPrimary/CephPrimary
+Script={
+Script=NightwaveCephPrimaryAugmentMod.lua
+Function=ApplyUpgrade
+_giveStatBase=0.15000001
+_giveStatPerLevel=0.15000001
+_giveStatType=WEAPON_DAMAGE_AMOUNT
+_giveStatOperation=MULTIPLY
+_singularityChanceBase=0.029999999
+_singularityChancePerLevel=0.029999999
+_singularityResource=""
+}
+UnappliedScript={
+Script=/Lotus/Scripts/Mods/ChangeProjectileType.lua
+Function=ApplyUpgrades
+_frameType=""
+_behaviorIndex=0
+_embedMeshOverride=""
+}
+SubUpgrades={
+NightwaveCephPrimaryAugmentSubMod
+}
+UpgradeChance=1

@@ -1,0 +1,42 @@
+/Lotus/Upgrades/Mods/Pistol/Event/ShootPickUpPistolMod
+LocalizeTag=/Lotus/Language/Mods/ShootPickupPistolModName
+Icon=/Lotus/Interface/Cards/Images/Pistol/ShootPickupPistolMod.png
+CompatibilityTags={}
+Upgrades={
+{
+    UpgradeType=WEAPON_PICKUP_SHOOT_BONUS
+    OperationType=ADD
+    Value=0.1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=/Lotus/Types/PickUps/EnergyIncreaseSmall
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/EnergyPickUpShootBonus
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+BaseDrain=QA_NONE
+FusionLimit=QA_VERY_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol
+IncompatibilityTags={
+AOE
+}
+ItemCompatibilityLocOverride=/Lotus/Language/Items/PistolNoAoe_Compatibility
+IncludeInBoosterPack=0
+IsUtility=1

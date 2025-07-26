@@ -1,0 +1,83 @@
+/Lotus/Types/Sentinels/SentinelPrecepts/HealBot
+Rarity=RARE
+MarketMode=MM_HIDDEN
+RegularPrice=5000
+PremiumPrice=2
+LocalizeTag=/Lotus/Language/Mods/HealBotName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/OdomedicBuffDesc
+Icon=/Lotus/Interface/Cards/Images/Pets/Healbot.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/HealBotDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Sentinels/SentinelAbilities/Healbot.lua
+    Function=GetDescriptionInfo
+    _wallRunDistance={
+    12,
+    9,
+    6,
+    3
+}
+_regenTime={
+1,
+2,
+3,
+4
+}
+_regenAmount=10
+_maxStacks=3
+_healBuffType=/Lotus/Powersuits/Fairy/PassiveAbilityBuff
+_healBeamFx=""
+_healProj=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Types/Game/Pets/RoboticPetPowerSuit
+Ability={
+Script={
+Script=/Lotus/Types/Sentinels/SentinelAbilities/Healbot.lua
+Function=NpcEvaluateAbility
+_wallRunDistance={
+12,
+9,
+6,
+3
+}
+_regenTime={
+1,
+2,
+3,
+4
+}
+_regenAmount=10
+_maxStacks=3
+_healBuffType=/Lotus/Interface/PlayerBuffNotificationType/HealBotBuffNotification
+_healBeamFx=/Lotus/Types/Enemies/GrineerChampions/ChampionDrones/HealBeam
+_healProj=/Lotus/Fx/HighlightGlow/HealProjectorRepl
+}
+CooldownDuration=30
+EnergyRequiredToActivate=0
+ActivationXP=25
+IsPassive=1
+PlayCastSound=0
+Blocking=0
+}

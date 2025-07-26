@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Rifle/Expert/WeaponFactionDamageCorpusExpert
+patch not applied (yet)

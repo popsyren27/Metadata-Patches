@@ -1,0 +1,58 @@
+/Lotus/Powersuits/PowersuitAbilities/IronFrameStripAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/IronFrameStripAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/IronFrameStripAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/HildrynShieldPillage.png
+UniquePowerIdentifier=IRONFRAME_STRIP
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=IronFrameStrip.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Shield/ArmourStrip_anim.fbx
+    _rangeDeco=/Lotus/Fx/PowersuitAbilities/IronFrame/StripRangeDeco
+}
+NpcCooldownDuration=20
+EnergyRequiredToActivate=0
+PvpEnergyRequiredToActivate=0
+AllowToggle=1
+AllowDuringOverride=1
+ActivationXP=75
+VideoTexture=/Lotus/Interface/AbilityVideos/HildrynPower2_s.bk2
+SoundEvents={
+    {
+        EventName=SFXIronShieldStripCast
+        Sound=/Lotus/Sounds/Warframes/Iron/IronShieldStripCast
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+    }
+}
+ResourceOverrides={
+    {
+        Tag=StripCast
+        Resource=/Lotus/Fx/PowersuitAbilities/IronFrame/StripCast
+        },
+        {
+            Tag=StripCastBurst
+            Resource=/Lotus/Fx/PowersuitAbilities/IronFrame/StripCastBurst
+            },
+            {
+                Tag=StripAttach
+                Resource=/Lotus/Fx/PowersuitAbilities/IronFrame/StripAttach
+                },
+                {
+                    Tag=StripReturn
+                    Resource=/Lotus/Fx/PowersuitAbilities/IronFrame/StripReturn
+                    },
+                    {
+                        Tag=StripGainBurst
+                        Resource=/Lotus/Fx/PowersuitAbilities/IronFrame/StripGainBurst
+                        },
+                        {
+                            Tag=StrippedAttach
+                            Resource=/Lotus/Fx/PowersuitAbilities/IronFrame/StrippedAttach
+                        }
+                    }

@@ -1,0 +1,63 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/StatusChannelingDamage
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/StatusChannelingDamage
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/MeleeArcaneD.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=WEAPON_MELEE_COMBO_GAIN_EXTRA_CHANCE
+        OperationType=STACKING_MULTIPLY
+        Value=0.125
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/MeleeComboGainExtraChance
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+IncompatibilityTags={
+    OPERATOR_SUIT,
+    POWER_WEAPON
+}
+UpgradeChance=1
+CanReproc=0
+PlayEffect=0
+HudBuffIcon=""
+ModularReplacements={
+    {
+        Original=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageAttachment
+        Replacement=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageGemRoundAttachment
+        },
+        {
+            Original=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceCritAttachment
+            Replacement=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceCritGemRoundAttachment
+            },
+            {
+                Original=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceStatusAttachment
+                Replacement=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceStatusGemLongAttachment
+                },
+                {
+                    Original=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedAttachment
+                    Replacement=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedGemRoundAttachment
+                }
+            }
+            BaseDistillPointValue=18

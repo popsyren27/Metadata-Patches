@@ -1,0 +1,118 @@
+/Lotus/Upgrades/Mods/Aura/PlayerCompanionSummonDamageAuraMod
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/PlayerCompanionSummonDamageAuraModName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/PlayerCompanionSummonDamageAuraModBuffDesc
+Icon=/Lotus/Interface/Cards/Images/Auras/PlayerCompanionSummonDamageAuraMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Mods/PlayerCompanionSummonDamageAuraModDesc
+    LocKeyWordScript={
+    Script=/Lotus/Scripts/Mods/AuraCompanionSummonDamage.lua
+    Function=GetLocValues
+    _upgradeTypes={
+    WEAPON_DAMAGE_AMOUNT
+}
+_upgradeValues={
+0.125,
+0.25,
+0.375,
+0.5,
+0.625,
+0.75
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_ATTACK
+ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/SummonersWraithIcon.png
+TipTags={
+SUMMON
+}
+TargetMode=TM_OWNER_FACTION
+TargetType=/Lotus/Types/Player/TennoAvatar
+ExcludedAvatars={
+/Lotus/Types/Player/LotusOperatorAvatar,
+/Lotus/Types/Friendly/Agents/ExcavatorAvatar
+}
+OnAuraEnabledScript={
+Script=/Lotus/Scripts/Mods/AuraCompanionSummonDamage.lua
+Function=OnAuraEnabled
+_upgradeTypes={
+GAMEPLAY_FACTION_DAMAGE
+}
+_upgradeValues={
+0.125,
+0.25,
+0.375,
+0.5,
+0.625,
+0.75
+}
+}
+OnAuraDisabledScript={
+Script=/Lotus/Scripts/Mods/AuraCompanionSummonDamage.lua
+Function=OnAuraDisabled
+_upgradeTypes={
+GAMEPLAY_FACTION_DAMAGE
+}
+_upgradeValues={
+0.125,
+0.25,
+0.375,
+0.5,
+0.625,
+0.75
+}
+}
+OnEnterAuraScript={
+Script=/Lotus/Scripts/Mods/AuraCompanionSummonDamage.lua
+Function=EnterAura
+_upgradeTypes={
+GAMEPLAY_FACTION_DAMAGE
+}
+_upgradeValues={
+0.125,
+0.25,
+0.375,
+0.5,
+0.625,
+0.75
+}
+}
+OnExitAuraScript={
+Script=/Lotus/Scripts/Mods/AuraCompanionSummonDamage.lua
+Function=ExitAura
+_upgradeTypes={
+GAMEPLAY_FACTION_DAMAGE
+}
+_upgradeValues={
+0.125,
+0.25,
+0.375,
+0.5,
+0.625,
+0.75
+}
+}

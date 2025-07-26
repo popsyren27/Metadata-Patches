@@ -1,0 +1,76 @@
+/Lotus/Powersuits/PowersuitAbilities/HopliteRallyAbility
+LocalizeTag=/Lotus/Language/Suits/HopliteRallyAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/HopliteRallyAbilityDesc
+StatusDescTag=/Lotus/Language/Buffs/RallyPointBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/StyanaxRallyTroops.png
+UniquePowerIdentifier=HOPLITE_RALLY
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=HopliteRally.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Hoplite/Rally_anim.fbx
+    _castImpactEffect=/Lotus/Fx/PowersuitAbilities/Hoplite/RallyCastImpact
+    _attachEffect=/Lotus/Fx/PowersuitAbilities/Hoplite/RallyAttach
+    _flyerDeco=/Lotus/Fx/PowersuitAbilities/Hoplite/RallyFlyerDeco
+    _allyFlyerDeco=/Lotus/Fx/PowersuitAbilities/Hoplite/RallyAllyFlyerDeco
+    _deactivateAbilitySound=/Lotus/Sounds/Warframes/Hoplite/HopliteRallyEnd
+    _rjRangeDeco=/Lotus/Fx/PowersuitAbilities/Hoplite/RallyRailjackRangeDeco
+}
+AbilityEvents={
+    {
+        tag=RallyOnHit
+        eventType=ET_ON_HIT
+        scriptInstance={
+            Script=HopliteRally.lua
+            Function=OnHit
+            _activateAnim=""
+            _castImpactEffect=""
+            _attachEffect=""
+            _flyerDeco=""
+            _allyFlyerDeco=""
+            _deactivateAbilitySound=""
+            _rjRangeDeco=""
+        }
+    }
+}
+NpcCooldownDuration=36
+EnergyRequiredToActivate=75
+AllowReactivate=1
+ActivationXP=75
+VideoTexture=/Lotus/Interface/AbilityVideos/StyanaxPower3_s.bk2
+SoundEvents={
+    {
+        EventName=SFXHopliteRallyCast
+        Sound=/Lotus/Sounds/Warframes/Hoplite/HopliteRallyCast
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=SFXHopliteRallyCastRelease
+            Sound=/Lotus/Sounds/Warframes/Hoplite/HopliteRallyCastRelease
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+            },
+            {
+                EventName=SFXHopliteRallyVocal
+                Sound=/Lotus/Sounds/Warframes/Hoplite/HopliteRallyCastVocal
+                Chance=1
+                Period=1
+                Context=PEC_ALL
+                CancelEventName=""
+                },
+                {
+                    EventName=SFXHopliteRallyPeak
+                    Sound=/Lotus/Sounds/Warframes/Hoplite/HopliteRallyCastPeak
+                    Chance=1
+                    Period=1
+                    Context=PEC_ALL
+                    CancelEventName=""
+                }
+            }

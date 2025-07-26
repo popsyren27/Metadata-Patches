@@ -1,0 +1,124 @@
+/Lotus/Powersuits/IronFrame/IronFrame
+MarketMode=MM_VISIBLE
+PremiumPrice=325
+AdditionalItems={
+    /Lotus/Upgrades/Skins/IronFrame/IronFrameHelmet,
+    BlastWeapon
+}
+Icon=/Lotus/Interface/Icons/StoreIcons/Warframes/IronFrame.png
+ExcludeFromCodex=0
+RecipeHelpText=/Lotus/Language/Suits/DetailedPurchase_HildrynRecipeHelpText
+DefaultCustomization={
+    Helmet={
+        ItemType=/Lotus/Upgrades/Skins/IronFrame/IronFrameHelmet
+    }
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0.02,0,-0.145}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,-0.043618999,0,0.99904799}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={-0.02,0,0.145}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,-0.043618999,0,0.99904799}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/IronFrame/IronFrameSkin
+    }
+}
+PassiveAbilityLocTag=/Lotus/Language/Suits/IronFramePassiveAbilityDesc
+SoundEvents={
+    {
+        EventName=SFXIronBlastCast
+        Sound=""
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=SFXIronBlastCastChargeComplete
+            Sound=/Lotus/Sounds/Warframes/Iron/IronBlastChargeComplete
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+            },
+            {
+                EventName=SFXIronEruptionCast
+                Sound=/Lotus/Sounds/Warframes/Iron/IronEruptionCast
+                Chance=1
+                Period=1
+                Context=PEC_ALL
+                CancelEventName=""
+                },
+                {
+                    EventName=SFXIronEruptionReturn
+                    Sound=/Lotus/Sounds/Warframes/Iron/IronEruptionReturn
+                    Chance=1
+                    Period=1
+                    Context=PEC_ALL
+                    CancelEventName=""
+                    },
+                    {
+                        EventName=SFXIronBlastEquip
+                        Sound=/Lotus/Sounds/Warframes/Iron/IronBlastEquip
+                        Chance=1
+                        Period=1
+                        Context=PEC_ALL
+                        CancelEventName=""
+                        },
+                        {
+                            EventName=SFXIronBlastUnequip
+                            Sound=/Lotus/Sounds/Warframes/Iron/IronBlastUnequip
+                            Chance=1
+                            Period=1
+                            Context=PEC_ALL
+                            CancelEventName=""
+                            },
+                            {
+                                EventName=SFXIronDodgeBurst
+                                Sound=/Lotus/Sounds/Warframes/Iron/IronDodgeBurst
+                                Chance=1
+                                Period=1
+                                Context=PEC_ALL
+                                CancelEventName=""
+                            }
+                        }
+                        ParticleEvents={
+                            {
+                                EventName=ShieldDodge
+                                ParticleSys=/Lotus/Fx/PowersuitAbilities/IronFrame/DodgeAttach
+                                Attached=1
+                                OwnedByAvatar=0
+                                UseOtherEntity=0
+                                Bone=GAME_C1_SPINE2
+                                LocalPosition={0,0,0}
+                                LocalRotation={0,0,0,1}
+                                Context=PEC_ALL
+                            }
+                        }
+                        MiniMapIcon=/Lotus/Interface/Icons/Markers/Powersuits/HildrynPortrait.png
+                        MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Powersuits/LargePortraits/HildrynLargePortrait.png
+                        SpecialSlotItem={
+                            SPECIAL_A_SLOT={
+                                ItemType=BlastWeapon
+                                AbilityIndex=0
+                            }
+                        }

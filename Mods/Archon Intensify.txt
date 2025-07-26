@@ -1,0 +1,50 @@
+/Lotus/Upgrades/Mods/Warframe/Kahl/KahlAvatarAbilityStrengthSubMod
+LocalizeTag=/Lotus/Language/Mods/KahlAvatarAbilityStrength
+StatusDescTag=/Lotus/Language/Buffs/ArchonIntensifyBuffDesc
+ExcludeFromCodex=1
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/AvatarProcAbilityHeal
+    LocKeyWordScript={
+    Script=AddTimedUpgrade.lua
+    Function=GetDescriptionInfo
+    _upgradeType=AVATAR_ABILITY_STRENGTH
+    _upgradeOperationType=STACKING_MULTIPLY
+    _upgradeAmount=30
+    _upgradeDuration=10
+    _upgradeIsPercent=1
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ApplyUpgradesByDefault=0
+Script={
+Script=AddTimedUpgrade.lua
+Function=OnProc
+_upgradeType=AVATAR_ABILITY_STRENGTH
+_upgradeOperationType=STACKING_MULTIPLY
+_upgradeAmount=0.30000001
+_upgradeDuration=10
+_upgradeIsPercent=1
+}
+UpgradeChance=1
+ConditionalUpgrades={
+OnHealAbilityCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/IntensiveCareBuff.png
+TransferenceSupport=TS_WARFRAME_ONLY

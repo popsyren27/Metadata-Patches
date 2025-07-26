@@ -1,0 +1,25 @@
+/Lotus/Powersuits/PowersuitAbilities/EntratiMechRepulseAbility
+LocalizeTag=/Lotus/Language/Necromech/EntratiMechRepulseAbilityName
+LocalizeDescTag=/Lotus/Language/Necromech/EntratiMechRepulseAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/Mech/ThanomechRepulse.png
+UniquePowerIdentifier=REPULSE
+Script={
+    Script=/Lotus/Powersuits/EntratiMech/RepulseAbility.lua
+    Function=ActivateAbility
+    _damageVolumeType=/Lotus/Fx/Enemies/Orokin/EntratiTech/RepulseDangerousLaser
+    _damageAttachType=/Lotus/Fx/Gameplay/Thanomech/ThanomechRepulseAttachFX
+    _damageFlareOffset={0,0,0}
+    _boneOffset={0,5,0}
+    _speedMultiplier=10
+    _startAnimation=/Lotus/Animations/Orokin/NechroTech/Thano/Shield/FocusAbilityShield_anim.fbx
+    _startAnimationNoShield=/Lotus/Animations/Orokin/NechroTech/Thano/Shield/FocusAbility_anim.fbx
+    _startAnimEvent=CreateWall
+    _enemyFx=/Lotus/Powersuits/EntratiMech/RepulseEnemyAttach
+}
+NpcCooldownDuration=50
+EnergyRequiredToActivate=50
+PvpEnergyRequiredToActivate=50
+ActivationXP=75
+IsBlockable=0
+HideMeleeWeapon=0
+VideoTexture=/Lotus/Interface/AbilityVideos/Necramech/BonewidowPower3_s.bk2

@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Rifle/DualStat/PrimedShredMod
+patch not applied (yet)

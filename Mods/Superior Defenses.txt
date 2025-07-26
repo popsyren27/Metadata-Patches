@@ -1,0 +1,63 @@
+/Lotus/Upgrades/Mods/Archwing/Suit/ArchwingSuitShieldRechargeRateMod
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/ArchwingSuitShieldRechargeRateMod
+Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingSuit/ArchwingSuitShieldRechargeRateMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_SHIELD_RECHARGE_RATE
+    OperationType=STACKING_MULTIPLY
+    Value=0.25
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/AvatarShieldRechargeRateModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=AVATAR_SHIELD_RECHARGE_DELAY
+    OperationType=STACKING_MULTIPLY
+    Value=-0.125
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/AvatarShieldRechargeDelayModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=1
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_DEFENSE
+BaseDrain=QA_MEDIUM
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Types/Game/FlightJetPackItems/PlayerFlightJetPackItem
+IncludeInBoosterPack=1

@@ -1,0 +1,47 @@
+/Lotus/Powersuits/PowersuitAbilities/TempleSpeakersAbility
+LocalizeTag=/Lotus/Language/Suits/TempleSpeakersAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/TempleSpeakersAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/TempleSpeakers.png
+UniquePowerIdentifier=TEMPLE_SHRED
+Script={
+    Script=TempleSpeakers.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Glamrock/SubwooferV2_anim.fbx
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Temple/TempleSpeakerCast
+    _speakerCastEffect=/Lotus/Fx/PowersuitAbilities/Temple/TempleSpeakersConeFX
+    _decoType=/Lotus/Characters/Tenno/Temple/SpeakerDeco
+    _debuffEnemyEffect=/Lotus/Fx/PowersuitAbilities/Temple/TempleSoloDebuffFX
+}
+SecondaryScripts={
+    {
+        tag=UseDebuffAbility
+        executionMode=EM_ALL
+        inheritPrimary=1
+        functionName=UseDebuffAbility
+        scriptInstance={
+            Script=TempleSpeakers.lua
+            Function=UseDebuffAbility
+            _activateAnim=/Lotus/Animations/Tenno/Powers/Glamrock/SubwooferV2_anim.fbx
+            _castEffect=/Lotus/Fx/PowersuitAbilities/Temple/TempleSpeakerCast
+            _speakerCastEffect=/Lotus/Fx/PowersuitAbilities/Temple/TempleSpeakersConeFX
+            _decoType=/Lotus/Characters/Tenno/Temple/SpeakerDeco
+            _debuffEnemyEffect=/Lotus/Fx/PowersuitAbilities/Temple/TempleSoloDebuffFX
+        }
+    }
+}
+NpcCooldownDuration=10
+AllowReactivate=1
+AllowOnZipLines=1
+ActivationXP=10
+CastSound=/Lotus/Sounds/Warframes/Temple/TempleSubwoofersCast
+VideoTexture=/Lotus/Interface/AbilityVideos/TemplePower2.bk2
+SoundEvents={
+    {
+        EventName=SFXTempleSubwoofersSpawn
+        Sound=/Lotus/Sounds/Warframes/Temple/TempleSubwoofersSpawn
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+    }
+}

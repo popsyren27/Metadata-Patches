@@ -1,0 +1,178 @@
+/Lotus/Upgrades/CosmeticEnhancers/Zariman/EnergyOnGhostDissipate
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/OperatorEnergyOnGhostDissipate
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionBR.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Arcanes/OperatorEnergyOnGhostDissipateDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Friendly/Tenno/OperatorGrappleGlaive.lua
+            Function=GetGhostDissipateEnergyArcaneDesc
+            _grappleSound=""
+            _grappleAttachEffect=""
+            _GrappleEndFxType=""
+            _transferPhysics=""
+            _beamEndDecoType=""
+            _ghostDissipateFx=""
+            _cloakProjType=""
+            _dissipateEnergyPickupType=""
+            _dissipateEnergyFxType=""
+            _slingRobotStunnedEffect=""
+            _slingRobotStunExplosion=""
+            _voidMoteSpawnedTargetFxREP=""
+            _dissipateArcaneRadius={
+                10,
+                10,
+                10,
+                10,
+                10,
+                10
+            }
+            _dissipateArcaneChance={
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            }
+            _dissipateArcaneEnergy={
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+            }
+            _dissipateArcaneEnergyCost={
+                10,
+                10,
+                10,
+                10,
+                10,
+                10
+            }
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+FusionLimit=QA_HIGH
+Script={
+    Script=/Lotus/Types/Friendly/Tenno/OperatorGrappleGlaive.lua
+    Function=ApplyGhostDissipateEnergyArcane
+    _grappleSound=""
+    _grappleAttachEffect=""
+    _GrappleEndFxType=""
+    _transferPhysics=""
+    _beamEndDecoType=""
+    _ghostDissipateFx=""
+    _cloakProjType=""
+    _dissipateEnergyPickupType=""
+    _dissipateEnergyFxType=""
+    _slingRobotStunnedEffect=""
+    _slingRobotStunExplosion=""
+    _voidMoteSpawnedTargetFxREP=""
+    _dissipateArcaneRadius={
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+    }
+    _dissipateArcaneChance={
+        0.1,
+        0.2,
+        0.30000001,
+        0.40000001,
+        0.5,
+        0.60000002
+    }
+    _dissipateArcaneEnergy={
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+    }
+    _dissipateArcaneEnergyCost={
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+    }
+}
+UnappliedScript={
+    Script=/Lotus/Types/Friendly/Tenno/OperatorGrappleGlaive.lua
+    Function=UnapplyGhostDissipateEnergyArcane
+    _grappleSound=""
+    _grappleAttachEffect=""
+    _GrappleEndFxType=""
+    _transferPhysics=""
+    _beamEndDecoType=""
+    _ghostDissipateFx=""
+    _cloakProjType=""
+    _dissipateEnergyPickupType=""
+    _dissipateEnergyFxType=""
+    _slingRobotStunnedEffect=""
+    _slingRobotStunExplosion=""
+    _voidMoteSpawnedTargetFxREP=""
+    _dissipateArcaneRadius={
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+    }
+    _dissipateArcaneChance={
+        0.1,
+        0.2,
+        0.30000001,
+        0.40000001,
+        0.5,
+        0.60000002
+    }
+    _dissipateArcaneEnergy={
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+    }
+    _dissipateArcaneEnergyCost={
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+    }
+}
+DurationScalesWithRank=0
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionBR.png
+BaseDistillPointValue=22

@@ -1,0 +1,54 @@
+/Lotus/Upgrades/CosmeticEnhancers/Zariman/SecondaryOnRollCritChanceOnHeadshot
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/SecondaryOnRollCritChanceOnHeadshot
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/CascadiaAccuracyBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionBU.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=WEAPON_CRIT_CHANCE_BODY_PART
+        OperationType=STACKING_MULTIPLY
+        Value=0.5
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=HEAD
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CritChanceOnHeadshots
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol
+IncompatibilityTags={}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDuration
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+UpgradeDuration=4
+DurationScalesWithRank=0
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Offensive/OnRollEndedCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnRollCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionBU.png
+BaseDistillPointValue=22

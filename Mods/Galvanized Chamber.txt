@@ -1,0 +1,41 @@
+/Lotus/Upgrades/Mods/Rifle/WeaponFireIterationsSPMod
+LocalizeTag=/Lotus/Language/Mods/WeaponRifleFireIterationsSPMod
+Icon=/Lotus/Interface/Cards/Images/Rifle/Galvanized/WeaponFireIterationsSPMod.png
+Upgrades={
+{
+    UpgradeType=WEAPON_FIRE_ITERATIONS
+    OperationType=STACKING_MULTIPLY
+    Value=0.072729997
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponMultishotModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+BaseDrain=QA_HIGH
+FusionLimit=QA_VERY_HIGH
+SubUpgrades={
+WeaponFireIterationsSPSubMod
+}
+IncludeInBoosterPack=0
+IsGalvanized=1
+InstallSound=/Lotus/Sounds/UI/NewUI/Mods/UIGalvanizedModInstall
+InstallEffect=/Lotus/Fx/Interface/ModSets/SteelInstall

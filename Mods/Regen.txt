@@ -1,0 +1,66 @@
+/Lotus/Types/Sentinels/SentinelPrecepts/Regen
+MarketMode=MM_HIDDEN
+RegularPrice=5000
+PremiumPrice=2
+LocalizeTag=/Lotus/Language/Items/RegenStoreItemName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Pets/SentinelRegenMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Items/RegenStoreItemDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Sentinels/SentinelAbilities/RegenAbility.lua
+    Function=GetDescriptionInfo
+    _reviveTimeImmunity=10
+    _reviveTimerReductionBase=5
+    _reviveTimerReductionPerRank=3
+}
+SmallerIsBetter=0
+RoundTo=1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ItemCompatibility=/Lotus/Types/Sentinels/SentinelPowerSuit
+Script={
+Script=/Lotus/Types/Sentinels/SentinelAbilities/RegenAbility.lua
+Function=AddUpgrade
+_reviveTimeImmunity=10
+_reviveTimerReductionBase=5
+_reviveTimerReductionPerRank=3
+}
+UnappliedScript={
+Script=/Lotus/Types/Sentinels/SentinelAbilities/RegenAbility.lua
+Function=RemoveUpgrade
+_reviveTimeImmunity=6
+_reviveTimerReductionBase=5
+_reviveTimerReductionPerRank=3
+}
+Ability={
+Script={
+Script=/Lotus/Types/Sentinels/SentinelAbilities/RegenAbility.lua
+Function=ActivateAbility
+_reviveTimeImmunity=10
+_reviveTimerReductionBase=5
+_reviveTimerReductionPerRank=3
+}
+EnergyRequiredToActivate=0
+ActivateOnlyWhenAlive=0
+IsPassive=1
+Blocking=0
+}

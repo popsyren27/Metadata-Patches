@@ -1,0 +1,59 @@
+/Lotus/Upgrades/Mods/Sets/Amar/AmarSetMod
+Rarity=RARE
+LocalizeTag=/Lotus/Language/Mods/AmarSetMod
+CodexSecret=1
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/AmarSetBonus
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/MeleeChargeTeleport.lua
+            Function=GetLoc
+            _baseTeleportRange=10
+            _rangeScaling=10
+            _teleportEffect=""
+            _invalidTargetTypes={}
+            _powerSuitType=/Lotus/Types/Game/PowerSuit
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+    }
+}
+FusionLimit=QA_MEDIUM
+IncompatibilityTags={
+    POWER_WEAPON
+}
+Script={
+    Script=/Lotus/Scripts/Mods/MeleeChargeTeleport.lua
+    Function=ApplyUpgrades
+    _baseTeleportRange=10
+    _rangeScaling=10
+    _teleportEffect=/Lotus/Fx/Weapons/Grineer/DualFireAxe/DualFireAxeTeleportMod
+    _invalidTargetTypes={
+        /Lotus/Types/Enemies/Corpus/Turrets/TurretAvatars/AutoTurretAvatar,
+        /Lotus/Types/Enemies/Corpus/Turrets/TurretAvatars/SecurityCameraAvatar
+    }
+    _powerSuitType=/Lotus/Types/Game/PowerSuit
+}
+UpgradeChance=1
+UpgradeDuration=2
+CanReproc=0
+CanReprocPvp=0
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/BorealSpeedBuff.png
+ModSetIcon=/Lotus/Interface/Cards/Images/Sets/Amar/AmarHeader.png
+InstallSound=/Lotus/Sounds/UI/NewUI/Common/UICommonAccent
+InstallEffect=/Lotus/Fx/Interface/ModSets/ArchonInstall
+NumUpgradesInSet=3

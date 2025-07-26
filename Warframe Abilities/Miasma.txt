@@ -1,0 +1,33 @@
+/Lotus/Powersuits/PowersuitAbilities/ExplosiveDissolveAbility
+LocalizeTag=/Lotus/Language/Suits/ExplosiveDissolveAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/ExplosiveDissolveAbilityReworkDesc
+Icon=/Lotus/Interface/Icons/Abilities/SarynMiasma.png
+UniquePowerIdentifier=SARYN_MIASMA
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=ExplosiveDissolve.lua
+    Function=ActivateAbility
+    _particleEffect=/Lotus/Fx/PowersuitAbilities/Asp/DissolveDeath
+    _projectorEffect=/Lotus/Fx/PowersuitAbilities/Asp/DissolveDeathProj
+    _impactSound=""
+    _baseRange=20
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Asp/Dissolve_anim.fbx
+    _leadUpPrimeEffect=/Lotus/Fx/PowersuitAbilities/Asp/DissolvePrimeLeadUp
+    _castFx=/Lotus/Fx/PowersuitAbilities/Asp/DissolveCast
+    _primeCastFx=/Lotus/Fx/PowersuitAbilities/Asp/DissolvePrimeCast
+    _maxNumBlindReactionAnims=3
+    _ScreamSound=""
+    _sentDamage={
+        25,
+        50,
+        75,
+        100
+    }
+    _respectAbilityImmunity=1
+}
+NpcCooldownDuration=50
+EnergyRequiredToActivate=75
+CastSound=/Lotus/Sounds/Warframes/Saryn/SarynMiasmaCast
+VideoTexture=/Lotus/Interface/AbilityVideos/SarynPower4_s.bk2

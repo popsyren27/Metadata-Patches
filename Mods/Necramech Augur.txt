@@ -1,0 +1,50 @@
+/Lotus/Upgrades/Mods/Necromech/NecromechEnergyToOvershieldsMod
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Necromech/NecromechEnergyToOvershieldsMod
+Icon=/Lotus/Interface/Cards/Images/Necramech/NecromechAvatarRevengeDamageMelee.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_ABILITY_ENERGY_TO_OVERSHIELD
+    OperationType=STACKING_MULTIPLY
+    Value=0.40000001
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WarframeAugurSetDesc
+    LocKeyWordScript={
+    Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
+    Function=GetDescriptionInfo
+    _displayAsPercent={
+    1
+}
+_absoluteValue={
+0
+}
+_maxDecimals={
+1,
+0
+}
+_addPlusses={
+0
+}
+_multiplyDown={
+0
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_MEDIUM
+ItemCompatibility=/Lotus/Powersuits/EntratiMech/BaseMechSuit

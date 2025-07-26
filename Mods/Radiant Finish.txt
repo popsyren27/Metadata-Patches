@@ -1,0 +1,46 @@
+/Lotus/Powersuits/Excalibur/RadialBlindAugmentCard
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/RadialBlindAbilityAugment1Name
+Icon=/Lotus/Interface/Cards/Images/AbilityAugments/ExcaliburRadialBlindAugment.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_ABILITY_AUGMENT
+    OperationType=ADD
+    Value=1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=AUGMENT_ONE
+    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/RadialBlindAbility
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Suits/RadialBlindAbilityAugment1Desc
+    LocKeyWordScript={
+    Script=/Lotus/Powersuits/PowersuitAbilities/RadialBlindAbility.lua
+    Function=GetAugmentDescriptionInfo
+    _energySwordDeco=""
+    _duration=7
+    _maxNumBlindReactionAnims=3
+    _baseRange=10
+    _activateAnim=""
+    _blindProjector=""
+    _blindSoundLocal=""
+    _doomSwordType=""
+    _pvpBlindDurationScale=0.25
+    _energySwordPrimeMesh=""
+    _energySwordDarkMesh=""
+    _energySwordCYDarkMesh=""
+    _cyUmbraType=""
+    _doVoid=0
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_POWER

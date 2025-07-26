@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Rifle/Expert/WeaponZoomFovModExpert
+patch not applied (yet)

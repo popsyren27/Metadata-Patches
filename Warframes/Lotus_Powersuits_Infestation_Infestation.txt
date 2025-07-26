@@ -1,0 +1,7 @@
+/Lotus/Powersuits/Infestation/Infestation
+MarketMode=MM_VISIBLE
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Infestation/InfestationHelmet,
+    /Lotus/Types/Items/ShipFeatureItems/AlchemyRoomFeatureItem
+}
+ExcludeFromCodex=0

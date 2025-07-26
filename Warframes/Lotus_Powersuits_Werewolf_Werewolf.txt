@@ -1,0 +1,97 @@
+/Lotus/Powersuits/Werewolf/Werewolf
+MarketMode=MM_VISIBLE
+PremiumPrice=325
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Werewolf/WerewolfHelmet
+}
+Icon=/Lotus/Interface/Icons/StoreIcons/Warframes/Voruna.png
+ExcludeFromCodex=0
+RecipeHelpText=/Lotus/Language/Suits/WerewolfRecipeHelpText
+ArtifactSlots={
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_DEFENSE,
+    AP_ATTACK,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_DEFENSE,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
+}
+DefaultCustomization={
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0.0099999998,0.02,-0.029999999}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.17101,0.17101,-0.030153001,0.96984601}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={-0.0099999998,-0.02,0.029999999}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.17101,0.17101,-0.030153001,0.96984601}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+}
+DefaultEnergyColor={220,82,40,255}
+MaxShieldOverride=270
+MiniMapIcon=/Lotus/Interface/Icons/Markers/Powersuits/WerewolfPortrait.png
+MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Powersuits/LargePortraits/WerewolfLargePortrait.png
+ResourceOverrides={
+    {
+        Tag=PassiveOneAttach
+        Resource=/Lotus/Fx/PowersuitAbilities/Werewolf/GuardAttachMezzik
+        },
+        {
+            Tag=PassiveTwoAttach
+            Resource=/Lotus/Fx/PowersuitAbilities/Werewolf/GuardAttachShyur
+            },
+            {
+                Tag=PassiveThreeAttach
+                Resource=/Lotus/Fx/PowersuitAbilities/Werewolf/GuardAttachVonell
+                },
+                {
+                    Tag=PassiveFourAttach
+                    Resource=/Lotus/Fx/PowersuitAbilities/Werewolf/GuardAttachFenrus
+                    },
+                    {
+                        Tag=PassiveOneDeco
+                        Resource=/Lotus/Characters/Tenno/Lycath/LycathHeadMezzikArmLDeco
+                        },
+                        {
+                            Tag=PassiveTwoDeco
+                            Resource=/Lotus/Characters/Tenno/Lycath/LycathHeadShyurArmRDeco
+                            },
+                            {
+                                Tag=PassiveThreeDeco
+                                Resource=/Lotus/Characters/Tenno/Lycath/LycathHeadVonellLegLDeco
+                                },
+                                {
+                                    Tag=PassiveFourDeco
+                                    Resource=/Lotus/Characters/Tenno/Lycath/LycathHeadFenrusLegRDeco
+                                    },
+                                    {
+                                        Tag=PassiveHeadActiveEffect
+                                        Resource=/Lotus/Fx/PowersuitAbilities/Werewolf/WolfHeadActiveAttach
+                                        },
+                                        {
+                                            Tag=HowlDamageAttach
+                                            Resource=/Lotus/Fx/PowersuitAbilities/Werewolf/HowlDamageAttach
+                                        }
+                                    }

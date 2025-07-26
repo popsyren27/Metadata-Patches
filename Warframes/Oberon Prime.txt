@@ -1,0 +1,127 @@
+/Lotus/Powersuits/Paladin/PaladinPrime
+MarketMode=MM_HIDDEN
+PremiumPrice=0
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Paladin/PaladinPrimeHelmet
+}
+LocalizeTag=/Lotus/Language/Primes/OberonPrimeName
+LocalizeDescTag=/Lotus/Language/Primes/OberonPrimeDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Primes/OberonPrime.png
+RectangleIcon=0
+Diorama=/Lotus/Levels/Episodes/WarframesOberonPrime.level
+ExcludeFromCodex=0
+ArtifactSlots={
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_ATTACK,
+    AP_TACTIC,
+    AP_TACTIC,
+    AP_UNIVERSAL,
+    AP_ATTACK,
+    AP_ATTACK,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
+}
+DefaultCustomization={
+    Helmet={
+        ItemType=/Lotus/Upgrades/Skins/Paladin/PaladinPrimeHelmet
+    }
+    ArmLeft={
+        ItemType=/Lotus/Upgrades/Skins/Armor/WarframeDefaults/OberonPrimeArmArmor
+        OFF_HAND={
+            {
+                BoneOverride=GAME_L1_ARM1
+                PosOffset={0,0,0}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,0,0,1}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0.1,0,-0.055}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.087155998,0,0,0.99619502}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={-0.1,0,0.055}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.087155998,0,0,0.99619502}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Paladin/PaladinPrimeSkin
+    }
+    ArmRight={
+        ItemType=/Lotus/Upgrades/Skins/Armor/WarframeDefaults/OberonPrimeArmArmor
+        MAIN_HAND={
+            {
+                BoneOverride=GAME_R1_ARM1
+                PosOffset={0,0,0}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.087155998,0,0,0.99619502}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+}
+VariantType=VT_PRIME
+Mesh=/Lotus/Characters/Tenno/Paladin/PaladinPrimeBody_skel.fbx
+MaxEnergy=215
+InitialEnergy=100
+PvpBulletJumpSpeedMultiplier=0.80000001
+MaxShieldOverride=270
+ArmourRatingOverride=240
+IsPrime=1
+AttachedFX={
+    {
+        LocalPosition={0,0,0}
+        LocalRotation={0,0,0,1}
+        BoneName=GAME_C1_HIP1
+        Type=/Lotus/Characters/Tenno/Paladin/Cloth/PaladinPrimeFrontClothSkeletalCloth
+        Chance=255
+        RelativeToBounds=0
+        Attach=1
+        DestroyWithOwner=1
+        DestroyParentOnDeath=0
+        FadeOutOnDestruction=0
+        Scale=1
+        },
+        {
+            LocalPosition={0,0,0}
+            LocalRotation={0,0,0,1}
+            BoneName=GAME_C1_HIP1
+            Type=/Lotus/Characters/Tenno/Paladin/Cloth/PaladinPrimeRearClothSkeletalCloth
+            Chance=255
+            RelativeToBounds=0
+            Attach=1
+            DestroyWithOwner=1
+            DestroyParentOnDeath=0
+            FadeOutOnDestruction=0
+            Scale=1
+        }
+    }
+    SimCollision=PaladinPrimePowerSuitSimCollision
+    MiniMapIcon=/Lotus/Interface/Icons/Markers/Powersuits/OberonPrimePortrait.png
+    MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Powersuits/LargePortraits/OberonPrimeLargePortrait.png

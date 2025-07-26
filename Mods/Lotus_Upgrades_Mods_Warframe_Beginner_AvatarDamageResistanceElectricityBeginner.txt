@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Warframe/Beginner/AvatarDamageResistanceElectricityBeginner
+patch not applied (yet)

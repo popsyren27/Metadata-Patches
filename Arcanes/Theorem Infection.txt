@@ -1,0 +1,152 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/CompanionDamageOnResidualContact
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/CompanionDamageOnResidualContact
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/TheoremInfectionBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/TheoremInfection.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Arcanes/CompanionDamageOnResidualContactDesc
+        LocKeyWordScript={
+            Script=/Lotus/Upgrades/CosmeticEnhancers/Utility/ResidualTrigger.lua
+            Function=GetBuffDescription
+            _duration=3
+            _baseDamage=10
+            _maxStacks=15
+            _upgradePct={
+                0.039999999,
+                0.079999998,
+                0.12,
+                0.16,
+                0.2,
+                0.23999999
+            }
+            _weaponDamageUpgrade=""
+            _damageType=DT_POISON
+            _outsideTriggerDuration=20
+            _petDamageUpgrade=""
+            _petDamageTrigger=""
+            _petDamageTriggerRadius={
+                90,
+                90,
+                90,
+                90,
+                90,
+                90
+            }
+            _diminishedPetBuffTypes={}
+            _diminishPct=0.1
+            _orbsUpgrade=""
+            _orbSpawnTime=2
+            _orbDamage={
+                25,
+                50,
+                75,
+                100,
+                125,
+                150
+            }
+            _orbDuration={
+                2,
+                4,
+                6,
+                8,
+                10,
+                12
+            }
+            _orbDebuffDuration={
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            }
+            _orbDebuffPct={
+                1,
+                1.2,
+                1.4,
+                1.6,
+                1.8,
+                2
+            }
+            _orbType=""
+            _orbProjectileType=""
+            _orbAttachDeco=""
+            _orbRange=15
+            _orbSound=""
+            _invalidTargetTypes={}
+            _growCysts=0
+            _cystSpawnTime=3
+            _cystDamage=20
+            _cystRadius=2.5
+            _cystDeco=""
+            _cystExplodeFx=""
+            _lightningStrikes=0
+            _lightningRange=2.5
+            _lightningDamage=50
+            _lightningInterval=2
+            _lightningBeam=""
+            _lightningBoneSym=GAME_C1_SPINE1
+            _lightningSpikeSpawner=""
+            _petBuffFxType=""
+            _weapBuffFxType=""
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ExtraUpgrades={
+    {
+        UpgradeType=GAMEPLAY_FREE_REVIVE_COUNT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerBonusRevive
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+FusionLimit=QA_HIGH
+IncompatibilityTags={
+    OPERATOR_SUIT,
+    TNJETTURBINEPISTOL
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionBJ.png
+BaseDistillPointValue=24

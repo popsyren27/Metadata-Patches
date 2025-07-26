@@ -1,0 +1,95 @@
+/Lotus/Powersuits/PowersuitAbilities/PacifistFistAbility
+LocalizeTag=/Lotus/Language/Suits/PacifistFistAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/PacifistFistAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/BaruukOverTheEdge.png
+UniquePowerIdentifier=PACIFIST_FIST
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=PacifistFist.lua
+    Function=ActivateAbility
+    _equipAnim=/Lotus/Animations/Tenno/Powers/Pacifist/ExaltedEquip_anim.fbx
+    _idleAnim=/Lotus/Animations/Tenno/Powers/Pacifist/ExaltedIdle_anim.fbx
+    _disarmAgentType=""
+    _disarmWeaponType=""
+    _slowTriggerType=/Lotus/Powersuits/Pacifist/FistScriptTrigger
+    _fistPushSoundSmall=""
+    _fistPushSoundMedium=""
+    _fistPushSoundLarge=""
+    _slamEffect=""
+    _slamPullEffect=""
+    _deactivateSound=/Lotus/Sounds/Warframes/Pacifist/PacifistEdgeCastEnd
+}
+SecondaryScripts={
+    {
+        tag=GiveWeapon
+        executionMode=EM_HOST
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=PacifistFist.lua
+            Function=GiveFists
+            _equipAnim=""
+            _idleAnim=""
+            _disarmAgentType=""
+            _disarmWeaponType=""
+            _slowTriggerType=""
+            _fistPushSoundSmall=""
+            _fistPushSoundMedium=""
+            _fistPushSoundLarge=""
+            _slamEffect=""
+            _slamPullEffect=""
+            _deactivateSound=""
+        }
+        },
+        {
+            tag=RemoveWeapon
+            executionMode=EM_HOST
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=PacifistFist.lua
+                Function=RemoveFists
+                _equipAnim=""
+                _idleAnim=""
+                _disarmAgentType=""
+                _disarmWeaponType=""
+                _slowTriggerType=""
+                _fistPushSoundSmall=""
+                _fistPushSoundMedium=""
+                _fistPushSoundLarge=""
+                _slamEffect=""
+                _slamPullEffect=""
+                _deactivateSound=""
+            }
+        }
+    }
+    AbilityEvents={
+        {
+            tag=OnMeleeHit
+            eventType=ET_ON_HIT
+            scriptInstance={
+                Script=PacifistFist.lua
+                Function=OnMeleeHit
+                _equipAnim=""
+                _idleAnim=""
+                _disarmAgentType=/Lotus/Types/Enemies/GenericDisarmedAgent
+                _disarmWeaponType=/Lotus/Weapons/Tenno/Melee/DisarmBasicMeleeWeapon
+                _slowTriggerType=""
+                _fistPushSoundSmall=""
+                _fistPushSoundMedium=""
+                _fistPushSoundLarge=""
+                _slamEffect=""
+                _slamPullEffect=""
+                _deactivateSound=""
+            }
+        }
+    }
+    NpcCooldownDuration=40
+    EnergyRequiredToActivate=0
+    PvpEnergyRequiredToActivate=0
+    AllowToggle=1
+    ActivationXP=50
+    CastSound=/Lotus/Sounds/Warframes/Pacifist/PacifistEdgeCast
+    VideoTexture=/Lotus/Interface/AbilityVideos/BaruukPower4_s.bk2

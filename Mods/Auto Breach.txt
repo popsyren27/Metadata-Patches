@@ -1,0 +1,35 @@
+/Lotus/Upgrades/Mods/DataSpike/Cipher/AutoHackMod
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/AutoHackModName
+Icon=/Lotus/Interface/Cards/Images/DataSpike/AutoHackMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_HACK_CHANCE
+    OperationType=ADD
+    Value=0.30000001
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/DataSpikeAutoHack
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ItemCompatibility=/Lotus/Weapons/Tenno/HackingDevices/TnHackingDevice/TnHackingDeviceWeapon
+IncludeInBoosterPack=1

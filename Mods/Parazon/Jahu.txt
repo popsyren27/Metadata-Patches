@@ -1,7 +1,0 @@
-/Lotus/Upgrades/Mods/Immortal/ImmortalThreeMod
-MarketMode=MM_HIDDEN
-LocalizeTag=/Lotus/Language/Mods/ImmortalThreeModName
-LocalizeDescTag=/Lotus/Language/Mods/ImmortalThreeModDesc
-Icon=/Lotus/Interface/Icons/ImmortalRunes/ImmortalRuneForm.png
-ExcludeFromCodex=0
-ImmortalGroup=1

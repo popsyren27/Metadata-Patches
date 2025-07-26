@@ -1,0 +1,58 @@
+/Lotus/Powersuits/PowersuitAbilities/DragonLuckAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/LuckyDragonAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/LuckyDragonAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/DragonLuckyDragon.png
+UniquePowerIdentifier=CHROMA_ELEMENTAL_WARD
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=DragonLuck.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Dragon/LuckyDragon_anim.fbx
+    _fireElementType=/Lotus/Powersuits/Dragon/DragonLuckFireElement
+    _castEffectsType={
+        /Lotus/Fx/PowersuitAbilities/Dragon/LuckyDragonCastFire,
+        /Lotus/Fx/PowersuitAbilities/Dragon/LuckyDragonCastPoison,
+        /Lotus/Fx/PowersuitAbilities/Dragon/LuckyDragonCastIce,
+        /Lotus/Fx/PowersuitAbilities/Dragon/LuckyDragonCastLightning
+    }
+    _castBurstType={
+        /Lotus/Fx/PowersuitAbilities/Dragon/LuckyDragonCastBurstFire,
+        /Lotus/Fx/PowersuitAbilities/Dragon/LuckyDragonCastBurstPoison,
+        /Lotus/Fx/PowersuitAbilities/Dragon/LuckyDragonCastBurstIce,
+        /Lotus/Fx/PowersuitAbilities/Dragon/LuckyDragonCastBurstLightning
+    }
+    _attachEffects={
+        /Lotus/Fx/PowersuitAbilities/Dragon/LuckyDragonAttachFire,
+        /Lotus/Fx/PowersuitAbilities/Dragon/LuckyDragonAttachPoison,
+        /Lotus/Fx/PowersuitAbilities/Dragon/LuckyDragonAttachIce,
+        /Lotus/Fx/PowersuitAbilities/Dragon/LuckyDragonAttachLightning
+    }
+    _attachEffectsLocal={
+        /Lotus/Fx/PowersuitAbilities/Dragon/LuckyDragonAttachLocalFire,
+        /Lotus/Fx/PowersuitAbilities/Dragon/LuckyDragonAttachLocalPoison,
+        /Lotus/Fx/PowersuitAbilities/Dragon/LuckyDragonAttachLocalIce,
+        /Lotus/Fx/PowersuitAbilities/Dragon/LuckyDragonAttachLocalLightning
+    }
+    _localDeactivateSound=/Lotus/Sounds/Warframes/Dragon/DragonLuckDeactivateLocal
+    _shockBeamType=/Lotus/Fx/PowersuitAbilities/Dragon/LuckyDragonLightningShockBeam
+}
+NpcCooldownDuration=32
+EnergyRequiredToActivate=50
+AllowDuringOverride=1
+ActivationXP=50
+CastSound=/Lotus/Sounds/Warframes/Dragon/DragonAbilityCast
+VideoTexture=/Lotus/Interface/AbilityVideos/ChromaPower2_s.bk2
+IsJoinInProgressAbility=1
+SoundEvents={
+    {
+        EventName=SFXDragonLuckActivate
+        Sound=/Lotus/Sounds/Warframes/Dragon/DragonLuckActivate
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+    }
+}

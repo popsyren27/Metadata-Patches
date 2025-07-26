@@ -1,7 +1,0 @@
-/Lotus/Upgrades/Mods/PvPMods/Pistol/FasterMovementWhileAimingPistolMod
-LocalizeTag=/Lotus/Language/Mods/FasterMovementWhileAimingPistolMod
-Icon=/Lotus/Interface/Cards/Images/PvP/Pistol/FasterMovementWhileAimingPistol.png
-ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol
-IncompatibilityTags={
-NO_AIM
-}

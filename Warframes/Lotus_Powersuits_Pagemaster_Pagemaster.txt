@@ -1,0 +1,113 @@
+/Lotus/Powersuits/Pagemaster/Pagemaster
+MarketMode=MM_VISIBLE
+PremiumPrice=350
+AdditionalItems={
+    ExaltedBook,
+    /Lotus/Upgrades/Skins/Pagemaster/PagemasterHelmet
+}
+Icon=/Lotus/Interface/Icons/StoreIcons/Warframes/Pagemaster.png
+ExcludeFromCodex=0
+RecipeHelpText=/Lotus/Language/Suits/PagemasterRecipeHelpText
+DefaultCustomization={
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0.2,0,-0.045000002}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,-0.13052601,0,0.991445}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={-0.2,0,0.043000001}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,-0.13052601,0,0.991445}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Pagemaster/PagemasterSkin
+    }
+}
+DefaultEnergyColor={37,168,253,255}
+DefaultEnergyColor1={57,138,252,0}
+InitialEnergy=50
+AttachedFX={
+    {
+        LocalPosition={0,0,0}
+        LocalRotation={0,0,0,1}
+        BoneName=GAME_C1_SPINE5
+        Type=/Lotus/Characters/Tenno/BrokenWarframe/Cloth/BrokenFrameEnergyFingersSkelCloth
+        Chance=255
+        RelativeToBounds=0
+        Attach=1
+        DestroyWithOwner=1
+        DestroyParentOnDeath=0
+        FadeOutOnDestruction=0
+        Scale=1
+        },
+        {
+            LocalPosition={0,0,0}
+            LocalRotation={0,0,0,1}
+            BoneName=""
+            Type=/Lotus/Sounds/Warframes/Dante/DanteMoveLoop3DSeq
+            Chance=255
+            RelativeToBounds=0
+            Attach=1
+            DestroyWithOwner=1
+            DestroyParentOnDeath=0
+            FadeOutOnDestruction=0
+            Scale=1
+        }
+    }
+    SoundEvents={
+        {
+            EventName=SFXDanteDodgeForward
+            Sound=/Lotus/Sounds/Warframes/Dante/DanteDashStinger
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+            },
+            {
+                EventName=SFXDanteDodgeBackward
+                Sound=/Lotus/Sounds/Warframes/Dante/DanteDashStinger
+                Chance=1
+                Period=1
+                Context=PEC_ALL
+                CancelEventName=""
+                },
+                {
+                    EventName=SFXDanteDodgeLeft
+                    Sound=/Lotus/Sounds/Warframes/Dante/DanteDashStinger
+                    Chance=1
+                    Period=1
+                    Context=PEC_ALL
+                    CancelEventName=""
+                    },
+                    {
+                        EventName=SFXDanteDodgeRight
+                        Sound=/Lotus/Sounds/Warframes/Dante/DanteDashStinger
+                        Chance=1
+                        Period=1
+                        Context=PEC_ALL
+                        CancelEventName=""
+                    }
+                }
+                SimCollision=PagemasterPowerSuitSimCollision
+                SpecialSlotItem={
+                    SPECIAL_A_SLOT={
+                        ItemType=ExaltedBook
+                        AbilityIndex=0
+                    }
+                }

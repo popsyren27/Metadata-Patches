@@ -1,0 +1,72 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/LongbowDamageOnHeadshot
+Rarity=LEGENDARY
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/LongbowDamageOnHeadshot
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/LongbowSharpshotBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionCL.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/DamageForNextShotDesc
+        LocKeyWordScript={
+            Script=BonusDamageForNextShot.lua
+            Function=GetLocValues
+            _damageBonuses={
+                0.5,
+                1,
+                1.5,
+                2,
+                2.5,
+                3
+            }
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/Bows/LotusLongBow
+IncompatibilityTags={}
+Script={
+    Script=BonusDamageForNextShot.lua
+    Function=ApplyUpgrade
+    _damageBonuses={
+        0.5,
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+    }
+}
+EnhancementTag=/Lotus/Language/Upgrades/ConditionWithBonusDescription
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+DurationScalesWithRank=0
+ChanceScalesWithRank=0
+ConditionalUpgrades={
+    OnBowHeadshotCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnHeadshotCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCLBuff.png
+BaseDistillPointValue=84

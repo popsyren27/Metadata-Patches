@@ -1,0 +1,44 @@
+/Lotus/Powersuits/Geode/Geode
+MarketMode=MM_VISIBLE
+PremiumPrice=325
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Geode/GeodeHelmet
+}
+Icon=/Lotus/Interface/Icons/StoreIcons/Warframes/Citrine.png
+ExcludeFromCodex=0
+RecipeHelpText=/Lotus/Language/Suits/DetailedPurchase_CitrineRecipeHelpText
+DefaultCustomization={
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=GAME_R1_ARMFLAPS2
+                PosOffset={0.02,-0.085000001,0}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,0.70710677,0.70710677,0}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=GAME_L1_ARMFLAPS2
+                PosOffset={-0.02,0.085000001,0}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,0.70710677,0.70710677,0}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+}
+MaxShieldOverride=270
+NamedSubTrees={
+    {
+        name=Kneel
+        tree=/Lotus/Types/Friendly/Tenno/GeodeKneelSubTree.animtree
+    }
+}

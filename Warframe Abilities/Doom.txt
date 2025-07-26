@@ -1,0 +1,106 @@
+/Lotus/Powersuits/PowersuitAbilities/DagathCurseAbility
+LocalizeTag=/Lotus/Language/Suits/DagathCurseAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/DagathCurseAbilityDescription
+Icon=/Lotus/Interface/Icons/Abilities/DagathUnhallowed.png
+UniquePowerIdentifier=DAGATH_CURSE
+AdditionalPowerIdentifiers={
+    EFFECT_MOBILITY
+}
+Script={
+    Script=DagathCurse.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Dagath/Unhallowed_anim.fbx
+    _debuffEffect=/Lotus/Fx/PowersuitAbilities/Dagath/DagathCurseFX
+    _curseProj=/Lotus/Fx/PowersuitAbilities/Dagath/DagathCurseProj
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Dagath/CurseCast
+    _castEffectBurst=/Lotus/Fx/PowersuitAbilities/Dagath/DagathSpectralEndFX
+    _eventToWaitOn=AbilityCast
+    _curseConeFx=/Lotus/Fx/PowersuitAbilities/Dagath/DagathCurseConeFX
+    _debuffEndEffect=/Lotus/Fx/PowersuitAbilities/Dagath/DagathCurseEndFX
+    _spreadBeamEffect=""
+    _spreadFxBurstType=""
+    _sickleAnim=""
+    _sickleHitEffect=""
+    _sickleBank=""
+    _sickleType=""
+    _sickleSliceEffect=""
+}
+SecondaryScripts={
+    {
+        tag=ApplyCurse
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=ApplyCurse
+        scriptInstance={
+            Script=DagathCurse.lua
+            Function=ApplyCurse
+            _activateAnim=/Lotus/Animations/Tenno/Powers/Magician/TearInSpace_anim.fbx
+            _debuffEffect=/Lotus/Fx/PowersuitAbilities/Dagath/DagathCurseFX
+            _curseProj=/Lotus/Fx/PowersuitAbilities/Dagath/DagathCurseProj
+            _castEffect=/Lotus/Fx/PowersuitAbilities/Dagath/CurseCast
+            _castEffectBurst=/Lotus/Fx/PowersuitAbilities/Dagath/CurseCastBurst
+            _eventToWaitOn=""
+            _curseConeFx=""
+            _debuffEndEffect=""
+            _spreadBeamEffect=/Lotus/Fx/PowersuitAbilities/Dagath/DagathCurseSpreadBeam
+            _spreadFxBurstType=/Lotus/Fx/PowersuitAbilities/Dagath/DagathCurseSpreadFX
+            _sickleAnim=""
+            _sickleHitEffect=""
+            _sickleBank=""
+            _sickleType=""
+            _sickleSliceEffect=""
+        }
+    }
+}
+AbilityEvents={
+    {
+        tag=OnHit
+        eventType=ET_ON_HIT
+        scriptInstance={
+            Script=DagathCurse.lua
+            Function=OnHit
+            _activateAnim=""
+            _debuffEffect=""
+            _curseProj=""
+            _castEffect=""
+            _castEffectBurst=""
+            _eventToWaitOn=""
+            _curseConeFx=""
+            _debuffEndEffect=""
+            _spreadBeamEffect=""
+            _spreadFxBurstType=""
+            _sickleAnim=/Lotus/Animations/Tenno/Powers/Dagath/DagathSickle_anim.fbx
+            _sickleHitEffect=/Lotus/Sounds/Warframes/Dagath/DagathPassiveSickleHitEffect
+            _sickleBank=/Lotus/Sounds/Warframes/Dagath/DagathPassiveSickleSpin
+            _sickleType=/Lotus/Fx/PowersuitAbilities/Dagath/DagathCurseSickleDeco
+            _sickleSliceEffect=/Lotus/Fx/PowersuitAbilities/Dagath/DagathSickleHitFX
+        }
+    }
+}
+CooldownDuration=1
+NpcCooldownDuration=12
+EnergyRequiredToActivate=50
+PvpEnergyRequiredToActivate=50
+AllowReactivate=1
+AllowOnZipLines=1
+AllowDuringOverride=1
+ActivationXP=75
+VideoTexture=/Lotus/Interface/AbilityVideos/DagathPower2_s.bk2
+SoundEvents={
+    {
+        EventName=SFXDagathUnhallowedCast
+        Sound=/Lotus/Sounds/Warframes/Dagath/DagathUnhallowedCast
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=SFXDagathUnhallowedImpact
+            Sound=/Lotus/Sounds/Warframes/Dagath/DagathUnhallowedImpact
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+        }
+    }

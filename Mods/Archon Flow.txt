@@ -1,0 +1,53 @@
+/Lotus/Upgrades/Mods/Warframe/Kahl/KahlAvatarDropEnergySubMod
+LocalizeTag=/Lotus/Language/Mods/KahlAvatarPowerMax
+StatusDescTag=/Lotus/Language/Buffs/ModCooldownDesc
+ExcludeFromCodex=1
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/AvatarProcStackConditionFreeze
+    LocKeyWordScript={
+    Script=SpawnGlobe.lua
+    Function=GetDescriptionInfo
+    _orbType=""
+    _dropChance={
+    0.1
+}
+_cooldownDuration={
+10
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ApplyUpgradesByDefault=0
+Script={
+Script=SpawnGlobe.lua
+Function=OnProc
+_orbType=/Lotus/Types/PickUps/EnergyIncreaseLarge
+_dropChance={
+0.1
+}
+_cooldownDuration={
+10
+}
+}
+UpgradeChance=1
+ConditionalUpgrades={
+OnFreezeKillAbilityCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/FrozenFlowBuff.png

@@ -1,0 +1,73 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/PrimaryDamagePerAmmoOnReload
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Upgrades/PrimaryDamagePerAmmoOnReload
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/PrimaryPlatedRoundBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionCH.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=/Lotus/Weapons/Tenno/LotusLongGun
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/PrimaryDamagePerAmmoOnReloadDesc
+        LocKeyWordScript={
+            Script=PrimaryDamagePerAmmoOnReload.lua
+            Function=GetDescription
+            _baselineClipSize=10
+            _powerAttenuation=2
+            _damagePerStack={
+                0.15000001
+            }
+            _durations={
+                3,
+                4,
+                5,
+                6,
+                8,
+                10
+            }
+        }
+        SmallerIsBetter=0
+        RoundTo=0.0099999998
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ExtraUpgradeFusionLevel=QA_HIGH
+FusionLimit=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/LotusLongGun
+IncompatibilityTags={
+    BATTERY
+}
+Script={
+    Script=PrimaryDamagePerAmmoOnReload.lua
+    Function=ApplyUpgrade
+    _baselineClipSize=5
+    _powerAttenuation=2
+    _damagePerStack={
+        0.15000001
+    }
+    _durations={
+        3,
+        4,
+        5,
+        6,
+        8,
+        10
+    }
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCHBuff.png
+BaseDistillPointValue=24

@@ -1,0 +1,87 @@
+/Lotus/Powersuits/PowersuitAbilities/SonarAbility
+LocalizeTag=/Lotus/Language/Suits/SonarAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/SonarAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/BansheeSonar.png
+UniquePowerIdentifier=BANSHEE_SONAR
+AdditionalPowerIdentifiers={
+    EFFECT_DEBUFF
+}
+Script={
+    Script=Sonar.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Temp/Sonar_anim.fbx
+    _weakPointFx=""
+    _burstFx=/Lotus/Fx/PowersuitAbilities/Decree/SonarBlast
+    _localBlastDecoType=/Lotus/Fx/PowersuitAbilities/Decree/SonarBlastDeco
+    _ignoredTypes={
+        /Lotus/Types/Enemies/Grineer/Vip/Hek/HekDroneAvatar,
+        /Lotus/Types/Enemies/Grineer/Vip/SargasRuk/Avatars/SargasRukAvatarNew,
+        /Lotus/Types/Game/SecurityCameraAvatar,
+        /Lotus/Types/Game/AutoTurretAvatar,
+        /Lotus/Types/Enemies/Corpus/Vip/Arachnoid/ArachnoidWraithAvatar,
+        /Lotus/Types/Enemies/Corpus/Vip/Arachnoid/ArachnoidHungerAvatar
+    }
+    _augmentOneBurst=/Lotus/Fx/PowersuitAbilities/Decree/SonarAugmentOneBurst
+    _augmentPvpHightlightFx=""
+    _primeBeam=/Lotus/Fx/PowersuitAbilities/Decree/SonarPrimeBeam
+    _markerInfoType=""
+}
+SecondaryScripts={
+    {
+        tag=SecondaryPing
+        executionMode=EM_HOST
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=Sonar.lua
+            Function=Ping
+            _activateAnim=""
+            _weakPointFx=/Lotus/Fx/PowersuitAbilities/Decree/WeakSpotSonar
+            _burstFx=""
+            _localBlastDecoType=""
+            _ignoredTypes={
+                /Lotus/Types/Enemies/Grineer/Vip/Hek/HekDroneAvatar,
+                /Lotus/Types/Enemies/Grineer/Vip/SargasRuk/Avatars/SargasRukAvatarNew,
+                /Lotus/Types/Game/SecurityCameraAvatar,
+                /Lotus/Types/Game/AutoTurretAvatar,
+                /Lotus/Types/Enemies/Corpus/Vip/Arachnoid/ArachnoidWraithAvatar,
+                /Lotus/Types/Enemies/Corpus/Vip/Arachnoid/ArachnoidHungerAvatar
+            }
+            _augmentOneBurst=/Lotus/Fx/PowersuitAbilities/Decree/SonarAugmentOneBurst
+            _augmentPvpHightlightFx=""
+            _primeBeam=""
+            _markerInfoType=""
+        }
+        },
+        {
+            tag=ApplySonar
+            executionMode=EM_ALL
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=Sonar.lua
+                Function=ApplySonar
+                _activateAnim=""
+                _weakPointFx=/Lotus/Fx/PowersuitAbilities/Decree/WeakSpotSonar
+                _burstFx=""
+                _localBlastDecoType=""
+                _ignoredTypes={}
+                _augmentOneBurst=""
+                _augmentPvpHightlightFx=/Lotus/Fx/PowersuitAbilities/Necro/EnemyVision
+                _primeBeam=""
+                _markerInfoType=""
+            }
+        }
+    }
+    NpcCooldownDuration=12
+    EnergyRequiredToActivate=50
+    AllowReactivate=1
+    AllowDuringOverride=1
+    ActivationXP=50
+    VideoTexture=/Lotus/Interface/AbilityVideos/BansheePower2_s.bk2
+    ForceFeedbackEffectEvents={
+        {
+            EventName=BansheeImpactMediumFeedback
+            ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerImpactMedium
+        }
+    }

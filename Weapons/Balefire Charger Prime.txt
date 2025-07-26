@@ -1,11 +1,11 @@
 /Lotus/Powersuits/IronFrame/BlastWeaponPrime
 THIRD_PERSON_ATTACHMENT={
-MAIN_HAND={
-Type=BlastWeaponPrimeAttachment
-}
-OFF_HAND={
-Type=BlastWeaponPrimeAttachment
-}
+    MAIN_HAND={
+        Type=BlastWeaponPrimeAttachment
+    }
+    OFF_HAND={
+        Type=BlastWeaponPrimeAttachment
+    }
 }
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Primes/BlastWeaponPrimeName

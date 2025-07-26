@@ -1,0 +1,95 @@
+/Lotus/Upgrades/CosmeticEnhancers/Utility/NoCostCastChanceOnCast
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Upgrades/NoCostCastChanceOnCast
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/ArcaneSteadfastBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionCF.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/NoCostCastChanceOnCastNoDurationDesc
+        LocKeyWordScript={
+            Script=/Lotus/Upgrades/Boons/Utility/NoCostCastChanceOnCast.lua
+            Function=GetDescriptionFreeCastOnCast
+            _procChances={
+                0.050000001,
+                0.079999998,
+                0.11,
+                0.14,
+                0.17,
+                0.2
+            }
+            _procsNum=1
+            _chargeType=""
+            _chargeGainedSound=""
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ExtraUpgrades={
+    {
+        UpgradeType=GAMEPLAY_FREE_REVIVE_COUNT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerBonusRevive
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+FusionLimit=QA_HIGH
+Script={
+    Script=/Lotus/Upgrades/Boons/Utility/NoCostCastChanceOnCast.lua
+    Function=FreeCastChargesOnCast
+    _procChances={
+        0.050000001,
+        0.079999998,
+        0.11,
+        0.14,
+        0.17,
+        0.2
+    }
+    _procsNum=3
+    _chargeType=NoCostCastChanceChargeDeco
+    _chargeGainedSound=/Lotus/Sounds/Focus/Misc/FocusGenericBuffIndicatorLocal
+}
+CanReproc=0
+CanReprocPvp=0
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCFBuff.png
+BaseDistillPointValue=24

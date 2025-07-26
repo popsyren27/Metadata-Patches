@@ -1,0 +1,63 @@
+/Lotus/Powersuits/Fairy/FairyFlightAugmentCard
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/FairyFlightAbilityAugment1Name
+Icon=/Lotus/Interface/Cards/Images/AbilityAugments/TitaniaFlightAugment.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_ABILITY_AUGMENT
+    OperationType=ADD
+    Value=1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=AUGMENT_ONE
+    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/FairyFlightAbility
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Suits/FairyFlightAbilityAugment1Desc
+    LocKeyWordScript={
+    Script=/Lotus/Powersuits/PowersuitAbilities/FairyFlight.lua
+    Function=GetAugmentDescriptionInfo
+    _activateAnim=""
+    _deactivateAnim=""
+    _airActivateAnim=""
+    _acType=""
+    _ccType=""
+    _mcType=""
+    _cloneType=""
+    _castEffect=""
+    _castEffectAir=""
+    _castEndEffect=""
+    _castBurst=""
+    _inputFilter=""
+    _meleeInputFilter=""
+    _jetpackType=""
+    _endSound=""
+    _trailEffect=""
+    _attachEffect=""
+    _deathEffect=""
+    _hiddenMat=""
+    _vacuumType=""
+    _soulTriggerType=""
+    _deluxeSkins={}
+    _deluxeWingCloths={}
+    _deluxeWingDeco=""
+    _baseMesh=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_POWER
+BaseDrain=QA_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=FairyBaseSuit
+IsAbilityAugment=1

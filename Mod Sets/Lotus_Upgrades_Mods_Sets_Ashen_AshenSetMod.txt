@@ -1,0 +1,89 @@
+/Lotus/Upgrades/Mods/Sets/Ashen/AshenSetMod
+Rarity=RARE
+LocalizeTag=/Lotus/Language/Mods/AshenSetModName
+StatusDescTag=/Lotus/Language/Buffs/CarnisSetBonusBuffDesc
+CodexSecret=1
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_IMPACT
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={
+            WALK,
+            JOG,
+            RUN,
+            STAND,
+            CROUCH,
+            SLIDE,
+            GROUND_FIRE
+        }
+        ValidModifiers={
+            PM_HEAVY_MELEE
+        }
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/HeavyAttackMovementBonusDesc
+        LocKeyWordScript={
+            Script=AshenModSetBonusAbility.lua
+            Function=GetDescriptionInfo
+            _coolDown={
+                2,
+                4,
+                6
+            }
+            _statusImmunity={
+                2,
+                4,
+                6
+            }
+            _evasionPct={
+                0.1,
+                0.2,
+                0.30000001
+            }
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_VERY_HIGH
+ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
+Script={
+    Script=AshenModSetBonusAbility.lua
+    Function=ActivateAbility
+    _coolDown={
+        2,
+        4,
+        6
+    }
+    _statusImmunity={
+        2,
+        4,
+        6
+    }
+    _evasionPct={
+        0.1,
+        0.2,
+        0.30000001
+    }
+}
+UpgradeChance=1
+UpgradeDuration=2
+PlayEffect=0
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Offensive/OnMeleeHeavyAttackKillCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/AshenModSet.png
+ModSetIcon=/Lotus/Interface/Cards/Images/Sets/Ashen/AshenHeader.png
+InstallSound=/Lotus/Sounds/UI/NewUI/Common/UICommonAccent
+InstallEffect=/Lotus/Fx/Interface/ModSets/AshenInstall
+NumUpgradesInSet=3

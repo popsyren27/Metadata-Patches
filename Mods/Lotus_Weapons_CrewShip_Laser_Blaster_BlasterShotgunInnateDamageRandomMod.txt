@@ -1,0 +1,2 @@
+/Lotus/Weapons/CrewShip/Laser/Blaster/BlasterShotgunInnateDamageRandomMod
+patch not applied (yet)

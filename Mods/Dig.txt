@@ -1,0 +1,74 @@
+/Lotus/Types/Friendly/Pets/KubrowPetPrecepts/KubrowDigPrecept
+Rarity=RARE
+MarketMode=MM_HIDDEN
+RegularPrice=5000
+PremiumPrice=2
+LocalizeTag=/Lotus/Language/Items/KubrowDigPreceptName
+LocalizeDescTag=/Lotus/Language/Items/KubrowDigPreceptDesc
+Icon=/Lotus/Interface/Cards/Images/Kubrow/KubrowDig.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_SUCCESS_CHANCE
+    OperationType=STACKING_MULTIPLY
+    Value=0.44999999
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/AvatarSuccessChanceModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+BaseDrain=QA_NONE
+ItemCompatibility=/Lotus/Types/Game/KubrowPet/AdventurerKubrowPetPowerSuit
+Ability={
+Script={
+Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowDigAbility.lua
+Function=NpcEvaluateAbility
+_minEnemyDistance=8
+_minTimeSinceAttack=5
+_maxTimeSinceAttack=50
+_lowHealthPct=0.80000001
+_lowEnergyPct=0.80000001
+_maxDistanceFromPlayer=6
+_disallowedPosture=RUN
+_baseGuaranteedDropPct=0
+_increasingGuaranteedDropPct=0.44999999
+_dropTable=/Lotus/Types/DropTables/KubrowDigLootDropTable
+_nightmareModeDropTable=/Lotus/Types/DropTables/KubrowDigLootDropTable
+_healthOrbSpawner=/Lotus/Types/PickUps/HealthIncrease
+_energyOrbSpawner=/Lotus/Types/PickUps/EnergyIncreaseSmall
+_ammoDropTypes={
+/Lotus/Weapons/Ammo/PistolAmmoEx,
+/Lotus/Weapons/Ammo/RifleAmmoEx,
+/Lotus/Weapons/Ammo/HeavyAmmoEx
+}
+_ammoDropSpawners={
+/Lotus/Types/Items/PistolAmmoSpawner,
+/Lotus/Types/Items/RifleAmmoSpawner,
+/Lotus/Types/Items/HeavyAmmoSpawner
+}
+_dropPlacement={0,0,0}
+_dropDelay=0
+_digAnim=/Lotus/Animations/Creatures/KubrowTame/Tracking/Dig01_anim.fbx
+}
+CooldownDuration=14
+EnergyRequiredToActivate=0
+ActivationXP=20
+}

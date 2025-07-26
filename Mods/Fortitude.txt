@@ -1,0 +1,137 @@
+/Lotus/Upgrades/Mods/Warframe/DualStat/FortitudeMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/WarframeModFortitude
+Icon=/Lotus/Interface/Cards/Images/DoubleMods/WarframeFortitudeMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_INJURY_BLOCK_CHANCE
+    OperationType=ADD
+    Value=0.1
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=PT_STAGGERED
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/ResistanceKnockdownChanceDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=AVATAR_INJURY_BLOCK_CHANCE
+    OperationType=ADD
+    Value=0.1
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=PT_BIG_STAGGER
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=AVATAR_INJURY_BLOCK_CHANCE
+    OperationType=ADD
+    Value=0.1
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=PT_STUNNED
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=AVATAR_INJURY_BLOCK_CHANCE
+    OperationType=ADD
+    Value=0.1
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=PT_KNOCKED_DOWN
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=AVATAR_SHIELD_RECHARGE_RATE
+    OperationType=STACKING_MULTIPLY
+    Value=0.25
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/AvatarShieldRechargeRateModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_TACTIC
+BaseDrain=QA_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit

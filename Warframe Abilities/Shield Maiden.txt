@@ -1,0 +1,90 @@
+/Lotus/Powersuits/PowersuitAbilities/EntratiMechRiotShieldAbility
+LocalizeTag=/Lotus/Language/Necromech/EntratiMechRiotShieldAbilityName
+LocalizeDescTag=/Lotus/Language/Necromech/EntratiMechRiotShieldAbilityDesc
+StatusDescTag=/Lotus/Language/Buffs/ShieldMaidenBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/Mech/ThanomechShield.png
+UniquePowerIdentifier=RIOT_SHIELD
+Script={
+    Script=/Lotus/Powersuits/EntratiMech/RiotShieldAbility.lua
+    Function=ActivateAbility
+    _shieldRespawnTime=10
+    _shieldDeployAnimation=/Lotus/Animations/Orokin/NechroTech/Thano/ShieldDeploy_anim.fbx
+    _shieldRecallAnimation=/Lotus/Animations/Orokin/NechroTech/Thano/ShieldRecall_anim.fbx
+    _shieldSwordDeployAnimation=/Lotus/Animations/Orokin/NechroTech/Thano/ShieldDeploySword_anim.fbx
+    _shieldSwordRecallAnimation=/Lotus/Animations/Orokin/NechroTech/Thano/ShieldRecallSword_anim.fbx
+    _hitProxyType=/Lotus/Powersuits/EntratiMech/RiotShieldDirectionalHitProxy
+    _shieldFxType=/Lotus/Fx/Gameplay/Thanomech/ThanoMechShieldDeco
+    _blockFxType=""
+    _shieldBreakFx=/Lotus/Fx/Explosions/OMCunningEyeLaserExplosion
+    _shieldSpawnFx=/Lotus/Fx/Explosions/OMCunningPillarExplosionStreakers
+    _shieldDamageFxType=""
+    _shieldSpawnSound=""
+    _shieldDamageSoundThresholds={
+        0
+    }
+    _shieldDamageSounds={}
+    _shieldBreakAnim=""
+    _bashAbilityType=EntratiMechShieldBashAbility
+    _abilityIndex=1
+    _proxyAttachmentOffset={0.2,1.6,0}
+    _proxyAttachmentRotation={0,0,0}
+    _proxyAttachmentBone=GAME_C1_ROOT
+    _meleeTreeTypes={
+        /Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/Thanotech/ThanoTechMeleeTree,
+        /Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/Thanotech/ThanoTechMeleeTree,
+        /Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/NechroTech/AbilitySword/AbilitySwordMeleeTree,
+        /Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/NechroTech/AbilitySword/AbilitySwordAndShieldMeleeTree
+    }
+    _swordType=/Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/NechroTech/AbilitySword/NechroTechSwordWeapon
+    _shieldActivateSounds={}
+    _regularShieldAngle=160
+    _blockingShieldAngle=150
+    _shieldBlockExceptionAnimations={}
+    _isAiAbility=0
+}
+SecondaryScripts={
+    {
+        tag=ForceDeactivate
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=/Lotus/Powersuits/EntratiMech/RiotShieldAbility.lua
+            Function=ForceDeactivate
+            _shieldRespawnTime=10
+            _shieldDeployAnimation=""
+            _shieldRecallAnimation=""
+            _shieldSwordDeployAnimation=""
+            _shieldSwordRecallAnimation=""
+            _hitProxyType=""
+            _shieldFxType=""
+            _blockFxType=""
+            _shieldBreakFx=""
+            _shieldSpawnFx=""
+            _shieldDamageFxType=""
+            _shieldSpawnSound=""
+            _shieldDamageSoundThresholds={
+                0
+            }
+            _shieldDamageSounds={}
+            _shieldBreakAnim=""
+            _bashAbilityType=""
+            _abilityIndex=1
+            _proxyAttachmentOffset={0,1.8,0}
+            _proxyAttachmentRotation={0,0,0}
+            _proxyAttachmentBone=GAME_C1_ROOT
+            _meleeTreeTypes={}
+            _swordType=""
+            _shieldActivateSounds={}
+            _regularShieldAngle=160
+            _blockingShieldAngle=150
+            _shieldBlockExceptionAnimations={}
+            _isAiAbility=0
+        }
+    }
+}
+NpcCooldownDuration=50
+AllowToggle=1
+ActivationXP=75
+HideMeleeWeapon=0
+VideoTexture=/Lotus/Interface/AbilityVideos/Necramech/BonewidowPower2_s.bk2

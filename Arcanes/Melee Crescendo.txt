@@ -1,0 +1,36 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/PermaComboOnFinisher
+Rarity=LEGENDARY
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/PermaComboOnFinisherName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionDB.png
+ExcludeFromCodex=0
+IncompatibilityTags={
+    OPERATOR_SUIT,
+    NO_FINISHER
+}
+Script={
+    Script=PermaComboUpgrade.lua
+    Function=TrackUpgrade
+    _initialComboUpgrade=1
+    _initialComboUpgradePerFusionLevel=1
+    _doNotExceedCap=240
+}
+SubUpgrades={
+    PermaComboOnFinisherSub
+}
+EnhancementTag=/Lotus/Language/Arcanes/PermaComboOnFinisherDesc
+EnhancementTagLocScript={
+    Script=PermaComboUpgrade.lua
+    Function=GetDescription
+    _initialComboUpgrade=1
+    _initialComboUpgradePerFusionLevel=1
+    _doNotExceedCap=220
+}
+UpgradeChance=1
+DurationScalesWithRank=0
+ChanceScalesWithRank=0
+ConditionTag=/Lotus/Language/Upgrades/OnFinisherCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDBBuff.png
+UpgradeDifferentWeapon=1
+BaseDistillPointValue=84

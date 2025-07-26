@@ -1,0 +1,119 @@
+/Lotus/Powersuits/PowersuitAbilities/ChoirChorusAbility
+LocalizeTag=/Lotus/Language/Suits/ChoirChorusAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/ChoirChorusAbilityDesc
+StatusDescTag=/Lotus/Language/Buffs/BastilleBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/ChoirChorus.png
+UniquePowerIdentifier=CHOIR_CHORUS
+AdditionalPowerIdentifiers={
+    EFFECT_MOBILITY
+}
+Script={
+    Script=ChoirChorus.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Choir/Ability2_anim.fbx
+    _inAirActivateAnim=/Lotus/Animations/Tenno/Powers/Choir/Ability2ForAbility4_anim.fbx
+    _powerAuraHudBuff=/Lotus/Powersuits/Choir/PowerAuraHudBuff
+    _damageAuraHudBuff=/Lotus/Powersuits/Choir/DamageAuraHudBuff
+    _lifeAuraHudBuff=/Lotus/Powersuits/Choir/LifeAuraHudBuff
+    _auraCastEffects={
+        /Lotus/Fx/PowersuitAbilities/Choir/ChorusPowerFX,
+        /Lotus/Fx/PowersuitAbilities/Choir/ChorusDamageFX,
+        /Lotus/Fx/PowersuitAbilities/Choir/ChorusLifeFX
+    }
+    _auraCycleSounds={
+        /Lotus/Sounds/Warframes/Choir/ChoirChorusAuraPower,
+        /Lotus/Sounds/Warframes/Choir/ChoirChorusAuraDamage,
+        /Lotus/Sounds/Warframes/Choir/ChoirChorusAuraLife
+    }
+    _auraCastSounds={
+        /Lotus/Sounds/Warframes/Choir/ChoirChorusCastPower,
+        /Lotus/Sounds/Warframes/Choir/ChoirChorusCastDamage,
+        /Lotus/Sounds/Warframes/Choir/ChoirChorusCastLife
+    }
+    _auraEndSound=/Lotus/Sounds/Warframes/Choir/ChoirChorusEnd
+    _castBurst=/Lotus/Fx/PowersuitAbilities/Choir/ChorusCastBurst
+    _auraEndFx=/Lotus/Fx/PowersuitAbilities/Choir/ChorusEndFX
+}
+SecondaryScripts={
+    {
+        tag=ActivateChoirAura
+        executionMode=EM_ALL
+        inheritPrimary=1
+        functionName=ActivateChoirAura
+        scriptInstance={
+            Script=ChoirChorus.lua
+            Function=ActivateChoirAura
+            _activateAnim=/Lotus/Animations/Tenno/Powers/Choir/Ability2_anim.fbx
+            _inAirActivateAnim=/Lotus/Animations/Tenno/Powers/Choir/Ability2ForAbility4_anim.fbx
+            _powerAuraHudBuff=/Lotus/Powersuits/Choir/PowerAuraHudBuff
+            _damageAuraHudBuff=/Lotus/Powersuits/Choir/DamageAuraHudBuff
+            _lifeAuraHudBuff=/Lotus/Powersuits/Choir/LifeAuraHudBuff
+            _auraCastEffects={
+                /Lotus/Fx/PowersuitAbilities/Choir/ChorusPowerFX,
+                /Lotus/Fx/PowersuitAbilities/Choir/ChorusDamageFX,
+                /Lotus/Fx/PowersuitAbilities/Choir/ChorusLifeFX
+            }
+            _auraCycleSounds={
+                /Lotus/Sounds/Warframes/Choir/ChoirChorusAuraPower,
+                /Lotus/Sounds/Warframes/Choir/ChoirChorusAuraDamage,
+                /Lotus/Sounds/Warframes/Choir/ChoirChorusAuraLife
+            }
+            _auraCastSounds={
+                /Lotus/Sounds/Warframes/Choir/ChoirChorusCastPower,
+                /Lotus/Sounds/Warframes/Choir/ChoirChorusCastDamage,
+                /Lotus/Sounds/Warframes/Choir/ChoirChorusCastLife
+            }
+            _auraEndSound=/Lotus/Sounds/Warframes/Choir/ChoirChorusEnd
+            _castBurst=/Lotus/Fx/PowersuitAbilities/Choir/ChorusCastBurst
+            _auraEndFx=/Lotus/Fx/PowersuitAbilities/Choir/ChorusEndFX
+        }
+        },
+        {
+            tag=SendSetAuraDuration
+            executionMode=EM_ALL
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=ChoirChorus.lua
+                Function=SendSetAuraDuration
+                _activateAnim=""
+                _inAirActivateAnim=""
+                _powerAuraHudBuff=""
+                _damageAuraHudBuff=""
+                _lifeAuraHudBuff=""
+                _auraCastEffects={}
+                _auraCycleSounds={}
+                _auraCastSounds={}
+                _auraEndSound=""
+                _castBurst=""
+                _auraEndFx=""
+            }
+        }
+    }
+    AbilityEvents={
+        {
+            tag=OnKill
+            eventType=ET_ON_KILL_OR_ASSIST
+            scriptInstance={
+                Script=ChoirChorus.lua
+                Function=OnKill
+                _activateAnim=""
+                _inAirActivateAnim=""
+                _powerAuraHudBuff=""
+                _damageAuraHudBuff=""
+                _lifeAuraHudBuff=""
+                _auraCastEffects={}
+                _auraCycleSounds={}
+                _auraCastSounds={}
+                _auraEndSound=""
+                _castBurst=""
+                _auraEndFx=""
+            }
+        }
+    }
+    NpcCooldownDuration=32
+    EnergyRequiredToActivate=0
+    PvpEnergyRequiredToActivate=50
+    AllowReactivate=1
+    AllowOnZipLines=1
+    VideoTexture=/Lotus/Interface/AbilityVideos/JadePower2_s.bk2

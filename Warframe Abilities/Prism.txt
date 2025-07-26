@@ -1,0 +1,74 @@
+/Lotus/Powersuits/PowersuitAbilities/Prism
+LocalizeTag=/Lotus/Language/Suits/GrandFinaleName
+LocalizeDescTag=/Lotus/Language/Suits/GrandFinaleDesc
+Icon=/Lotus/Interface/Icons/Abilities/HarlequinPrism.png
+UniquePowerIdentifier=MIRAGE_PRISM
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=Prism.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Harlequin/Prism_anim.fbx
+    _activateAnimEvent=LaunchPrism
+    _projectileTypes={}
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Harlequin/PrismCast
+    _castDeco=/Lotus/Fx/PowersuitAbilities/Harlequin/PrismCastDeco
+    _castDecoAnim=/Lotus/Fx/PowersuitAbilities/Harlequin/PrismCastEffect_anim.fbx
+    _localSound=""
+    _remoteSound=""
+    _laserType=""
+    _laserDeco=""
+    _blinderHelper=/Lotus/Powersuits/Harlequin/PrismBlindHelper
+    _primeShell=/Lotus/Fx/PowersuitAbilities/Harlequin/PrismPrimeShellDeco
+    _minTargetsForNpcEval=1
+    _maxNumBlindReactionAnims=3
+    _blindProjector=/Lotus/Fx/PowersuitAbilities/Excalibur/BlindedSpawner
+    _pvpBlindDurationScale=0.25
+}
+SecondaryScripts={
+    {
+        tag=Launch
+        executionMode=EM_HOST
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=Prism.lua
+            Function=LaunchPrism
+            _activateAnim=""
+            _activateAnimEvent=""
+            _projectileTypes={
+                /Lotus/Powersuits/Harlequin/PrismOne,
+                /Lotus/Powersuits/Harlequin/PrismOne,
+                /Lotus/Powersuits/Harlequin/PrismOne,
+                /Lotus/Powersuits/Harlequin/PrismOne
+            }
+            _castEffect=""
+            _castDeco=""
+            _castDecoAnim=""
+            _localSound=""
+            _remoteSound=""
+            _laserType=""
+            _laserDeco=""
+            _blinderHelper=""
+            _primeShell=""
+            _minTargetsForNpcEval=1
+            _maxNumBlindReactionAnims=3
+            _blindProjector=""
+            _pvpBlindDurationScale=0.25
+        }
+    }
+}
+NpcCooldownDuration=70
+EnergyRequiredToActivate=50
+EnergyConsumptionOverTime=10
+AllowToggle=1
+ActivationXP=50
+PlayCastSound=0
+VideoTexture=/Lotus/Interface/AbilityVideos/MiragePower4_s.bk2
+ForceFeedbackEffectEvents={
+    {
+        EventName=HarlequinThrowFeedback
+        ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerImpact
+    }
+}

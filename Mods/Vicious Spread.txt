@@ -1,0 +1,112 @@
+/Lotus/Upgrades/Mods/Shotgun/DualStat/CorruptedDamageAccuracyShotgun
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/ShotgunModCorruptedDamageSpread
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Shotgun/CorruptedDamageForSpreadShotgunMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=WEAPON_DAMAGE_AMOUNT
+    OperationType=STACKING_MULTIPLY
+    Value=0.15000001
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponDamageModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=WEAPON_SPREAD
+    OperationType=STACKING_MULTIPLY
+    Value=0.1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponAccuracy
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=1
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=WEAPON_SPREAD
+    OperationType=ADD
+    Value=5
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=/Lotus/Weapons/Corpus/LongGuns/CrpShotgun/CrpShotgun
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=WEAPON_SPREAD
+    OperationType=ADD
+    Value=5
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=/Lotus/Weapons/Tenno/LongGuns/RevenantShotgun/RevenantShotgun
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_MEDIUM
+ItemCompatibility=/Lotus/Weapons/Tenno/Shotgun/LotusShotgun

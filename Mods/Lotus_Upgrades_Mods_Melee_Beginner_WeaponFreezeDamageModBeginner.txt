@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Melee/Beginner/WeaponFreezeDamageModBeginner
+patch not applied (yet)

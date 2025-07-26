@@ -1,0 +1,80 @@
+/Lotus/Types/Friendly/Pets/CatbrowPetPrecepts/CatbrowTremorSensePrecept
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/CatbrowTremorSensePreceptName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Kavat/CatbrowTremorSensePrecept.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Items/CatbrowTremorSensePreceptDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Friendly/Pets/CatbrowPetBehaviors/CatbrowTremorSenseAbility.lua
+    Function=GetDescriptionInfo
+    _scanFX=""
+    _burstFx=""
+    _activationSound=""
+    _ignoredTypes={}
+    _duration={
+    10,
+    15,
+    20,
+    25
+}
+_damage={
+50,
+100,
+150,
+200
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Types/Game/CatbrowPet/CatbrowPetPowerSuit
+Ability={
+Script={
+Script=/Lotus/Types/Friendly/Pets/CatbrowPetBehaviors/CatbrowTremorSenseAbility.lua
+Function=NpcEvaluateAbility
+_scanFX=/Lotus/Fx/Projectors/ScanProjectorCatbrow
+_burstFx=/Lotus/Fx/Catbrow/CatbrowTremorSenseSonar
+_activationSound=""
+_ignoredTypes={
+/Lotus/Types/Enemies/Grineer/Vip/Hek/HekDroneAvatar,
+/Lotus/Types/Enemies/Grineer/Vip/SargasRuk/Avatars/SargasRukAvatarNew,
+/Lotus/Types/Game/SecurityCameraAvatar,
+/Lotus/Types/Game/AutoTurretAvatar
+}
+_duration={
+10,
+15,
+20,
+25
+}
+_damage={
+50,
+100,
+150,
+200
+}
+}
+CooldownDuration=10
+EnergyRequiredToActivate=0
+}

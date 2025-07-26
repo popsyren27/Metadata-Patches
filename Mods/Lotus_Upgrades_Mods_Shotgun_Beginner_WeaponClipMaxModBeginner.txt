@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Shotgun/Beginner/WeaponClipMaxModBeginner
+patch not applied (yet)

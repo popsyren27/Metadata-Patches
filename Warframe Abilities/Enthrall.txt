@@ -1,0 +1,45 @@
+/Lotus/Powersuits/PowersuitAbilities/RevenantMarkAbility
+LocalizeTag=/Lotus/Language/Suits/RevenantMarkAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/RevenantMarkAbilityDesc
+StatusDescTag=/Lotus/Language/Buffs/EnthrallBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/RevenantEnthrall.png
+UniquePowerIdentifier=REVENANT_MARK
+AdditionalPowerIdentifiers={
+    EFFECT_PERCEPTION
+}
+Script={
+    Script=RevenantMark.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Revenant/MarkOfTheRevenant_anim.fbx
+    _enragedDeathElement=/Lotus/Powersuits/Revenant/AfflictionElement
+    _projType=/Lotus/Powersuits/Revenant/MarkProjectile
+    _elementBurstEffect=/Lotus/Fx/PowersuitAbilities/Revenant/RevenantElementBurst
+    _hitProxyType=/Lotus/Powersuits/Revenant/MarkHitProxy
+}
+SecondaryScripts={
+    {
+        tag=ProjectileMark
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=RevenantMark.lua
+            Function=ProjectileMark
+            _activateAnim=""
+            _enragedDeathElement=""
+            _projType=""
+            _elementBurstEffect=""
+            _hitProxyType=""
+        }
+    }
+}
+EnergyRequiredToActivate=0
+AllowOnZipLines=1
+ActivationXP=25
+VideoTexture=/Lotus/Interface/AbilityVideos/RevenantPower1_s.bk2
+ForceFeedbackEffectEvents={
+    {
+        EventName=RevenantBurstFeedback
+        ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerImpact
+    }
+}

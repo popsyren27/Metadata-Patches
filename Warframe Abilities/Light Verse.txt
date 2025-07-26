@@ -1,0 +1,52 @@
+/Lotus/Powersuits/PowersuitAbilities/PagemasterLifeAbility
+LocalizeTag=/Lotus/Language/Suits/PagemasterLifeAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/PagemasterLifeAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/DanteLightVerse.png
+UniquePowerIdentifier=PAGEMASTER_LIFE
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=PagemasterLife.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Pagemaster/Life_anim.fbx
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Pagemaster/LifeCast
+    _castEffectForward=""
+    _castBurstEffect=/Lotus/Fx/PowersuitAbilities/Pagemaster/LifeCastBurst
+    _healEffect=/Lotus/Fx/PowersuitAbilities/Pagemaster/LifeHeal
+    _rangeDeco=""
+    _dummyType=/Lotus/Fx/PowersuitAbilities/Pagemaster/CastDummyDeco
+    _bookCastAnim=/Lotus/Animations/Tenno/Powers/Pagemaster/LifeWEP_anim.fbx
+}
+NpcCooldownDuration=12
+AllowOnZipLines=1
+AllowDuringOverride=1
+ActivationXP=75
+HideMeleeWeapon=0
+VideoTexture=/Lotus/Interface/AbilityVideos/DantePower2_s.bk2
+SoundEvents={
+    {
+        EventName=SFXLifeCast
+        Sound=/Lotus/Sounds/Warframes/Dante/DanteLifeCast
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=SFXLifeImpact
+            Sound=/Lotus/Sounds/Warframes/Dante/DanteLifeImpact
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+            },
+            {
+                EventName=SFXLifeScreams
+                Sound=/Lotus/Sounds/Warframes/Dante/DanteLifeScreams
+                Chance=1
+                Period=1
+                Context=PEC_ALL
+                CancelEventName=""
+            }
+        }

@@ -1,0 +1,75 @@
+/Lotus/Upgrades/Mods/Sentinel/SentinelExplosionMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/SentinelModExplosion
+Icon=/Lotus/Interface/Cards/Images/Pets/SentinelSelfDestructMod.png
+ExcludeFromCodex=0
+ReferalBonusTier=2
+Upgrades={
+{
+    UpgradeType=AVATAR_EXPLOSION_DAMAGE
+    OperationType=ADD
+    Value=100
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/AvatarExplosionKnockdownModDesc
+    LocKeyWordScript={
+    Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
+    Function=GetDescriptionInfo
+    _displayAsPercent={
+    0
+}
+_absoluteValue={
+0
+}
+_maxDecimals={
+-1
+}
+_addPlusses={
+0
+}
+_multiplyDown={
+0
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
+{
+UpgradeType=AVATAR_EXPLOSION_RADIUS
+OperationType=ADD
+Value=3
+DamageType=DT_ANY
+AutoType=0
+ValidType=""
+SymbolFilter=""
+UpgradeObject=""
+ValidPostures={}
+ValidModifiers={}
+InvalidModifiers={}
+ValidProcTypes={}
+OverrideLocalization=1
+LocTag=""
+LocKeyWordScript={
+Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_ATTACK
+ItemCompatibility=/Lotus/Types/Sentinels/SentinelPowerSuit
+IncludeInBoosterPack=1

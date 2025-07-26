@@ -1,0 +1,53 @@
+/Lotus/Types/Sentinels/SentinelPrecepts/TaserStun
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/TaserStunStoreItemName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Pets/ArcDroneTaserStun.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Items/TaserStunStoreItemDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Sentinels/SentinelAbilities/TaserStun.lua
+    Function=GetDescriptionInfo
+    _targetBone=""
+    _launchBone=""
+    _launchBeamType=""
+    _shockBeamType=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ItemCompatibility=/Lotus/Types/Sentinels/SentinelPowersuits/ArcDronePowerSuit
+Ability={
+Script={
+Script=/Lotus/Types/Sentinels/SentinelAbilities/TaserStun.lua
+Function=NpcEvaluateAbility
+_targetBone=GAME_C1_SPINE1
+_launchBone=GAME_C1_COG
+_launchBeamType=/Lotus/Types/Sentinels/SentinelWeapons/TaserStunBeam
+_shockBeamType=/Lotus/Types/Sentinels/SentinelWeapons/TaserStunElectricityBeam
+}
+CooldownDuration=10
+EnergyRequiredToActivate=0
+AllowReactivate=1
+ActivationXP=0
+Blocking=0
+}

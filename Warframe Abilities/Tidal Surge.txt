@@ -1,0 +1,116 @@
+/Lotus/Powersuits/PowersuitAbilities/TidalWaveAbility
+Rarity=UNCOMMON
+LocalizeTag=/Lotus/Language/Suits/TidalWaveAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/TidalWaveAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/PirateTidalWave.png
+UniquePowerIdentifier=HYDROID_TIDAL_SURGE
+AdditionalPowerIdentifiers={
+    EFFECT_MOBILITY,
+    EFFECT_DAMAGE
+}
+Script={
+    Script=TidalWaveNew.lua
+    Function=ActivateAbility
+    _leadUpEffect=/Lotus/Fx/PowersuitAbilities/Pirate/TidalWaveAvatarAttach
+    _sound=/Lotus/Sounds/Warframes/Pirate/PirateTidalWaveCast
+    _liquifySound=/Lotus/Sounds/Warframes/Pirate/PirateTidalWaveCastInUndertow
+    _waveEndSound=/Lotus/Sounds/Warframes/Pirate/PirateTidalWaveEnd
+    _waveDeco=/Lotus/Fx/PowersuitAbilities/Pirate/TidalWaveADeco
+    _waveTurnDeco=/Lotus/Fx/PowersuitAbilities/Pirate/TidalWaveTurnDeco
+    _endEffect=/Lotus/Fx/PowersuitAbilities/Pirate/TidalWaveEnd
+    _jointType=/Lotus/Powersuits/Khora/CageJointObject
+    _wetDeferedDecalType=/Lotus/Fx/PowersuitAbilities/Pirate/WetnessGroundFX
+    _decalDistance=3.75
+    _pathDamage=100
+    _pathDamageRange=0.75
+    _startJumpAnim=/Lotus/Animations/Tenno/Powers/Water/WaterDashStart_anim.fbx
+    _finishAnim=/Lotus/Animations/Tenno/Powers/Water/WaterDashEnd_anim.fbx
+    _finishAnimDuration=0.2
+    _maxVel=500
+    _speed=30
+    _turnTime=0.40000001
+    _augmentOneAttach=/Lotus/Fx/PowersuitAbilities/Pirate/HydroidProjImmunityAttach
+    _augmentOneEnd=/Lotus/Fx/PowersuitAbilities/Pirate/TidalWaveAugmentAttachEnd
+    _waveMotionController=/Lotus/Powersuits/Pirate/TidalWaveMotionController
+    _chanceToPlayPickupBark=0.60000002
+    _wavePickupBark=VoiceBox_PAIN
+    _chanceToPlayEndBark=0.60000002
+    _waveEndBark=VoiceBox_PAIN
+}
+SecondaryScripts={
+    {
+        tag=DealDamage
+        executionMode=EM_ALL
+        inheritPrimary=1
+        functionName=DealDamage
+        scriptInstance={
+            Script=TidalWaveNew.lua
+            Function=DealDamage
+            _leadUpEffect=/Lotus/Fx/PowersuitAbilities/Pirate/TidalWaveAvatarAttach
+            _sound=/Lotus/Sounds/Warframes/Pirate/PirateTidalWaveCast
+            _liquifySound=/Lotus/Sounds/Warframes/Pirate/PirateTidalWaveCastInUndertow
+            _waveEndSound=/Lotus/Sounds/Warframes/Pirate/PirateTidalWaveEnd
+            _waveDeco=/Lotus/Fx/PowersuitAbilities/Pirate/TidalWaveADeco
+            _waveTurnDeco=/Lotus/Fx/PowersuitAbilities/Pirate/TidalWaveTurnDeco
+            _endEffect=/Lotus/Fx/PowersuitAbilities/Pirate/TidalWaveEnd
+            _jointType=/Lotus/Powersuits/Khora/CageJointObject
+            _wetDeferedDecalType=/Lotus/Fx/PowersuitAbilities/Pirate/WetnessGroundFX
+            _decalDistance=3.75
+            _pathDamage=100
+            _pathDamageRange=0.75
+            _startJumpAnim=/Lotus/Animations/Tenno/Powers/Water/WaterDashStart_anim.fbx
+            _finishAnim=/Lotus/Animations/Tenno/Powers/Water/WaterDashEnd_anim.fbx
+            _finishAnimDuration=0.2
+            _maxVel=500
+            _speed=30
+            _turnTime=0.40000001
+            _augmentOneAttach=/Lotus/Fx/PowersuitAbilities/Pirate/HydroidProjImmunityAttach
+            _augmentOneEnd=/Lotus/Fx/PowersuitAbilities/Pirate/TidalWaveAugmentAttachEnd
+            _waveMotionController=/Lotus/Powersuits/Pirate/TidalWaveMotionController
+            _chanceToPlayPickupBark=0.60000002
+            _wavePickupBark=VoiceBox_PAIN
+            _chanceToPlayEndBark=0.60000002
+            _waveEndBark=VoiceBox_PAIN
+        }
+    }
+}
+AbilityEvents={
+    {
+        tag=OnJump
+        eventType=ET_ON_JUMP
+        scriptInstance={
+            Script=TidalWaveNew.lua
+            Function=OnJump
+            _leadUpEffect=""
+            _sound=""
+            _liquifySound=""
+            _waveEndSound=""
+            _waveDeco=""
+            _waveTurnDeco=""
+            _endEffect=""
+            _jointType=""
+            _wetDeferedDecalType=""
+            _decalDistance=5
+            _pathDamage=100
+            _pathDamageRange=0.75
+            _startJumpAnim=""
+            _finishAnim=""
+            _finishAnimDuration=0.2
+            _maxVel=500
+            _speed=30
+            _turnTime=0.40000001
+            _augmentOneAttach=""
+            _augmentOneEnd=""
+            _waveMotionController=""
+            _chanceToPlayPickupBark=0.25
+            _wavePickupBark=VoiceBox_PAIN
+            _chanceToPlayEndBark=0.25
+            _waveEndBark=VoiceBox_DEATH
+        }
+    }
+}
+NpcCooldownDuration=24
+EnergyRequiredToActivate=50
+AllowReactivate=1
+ActivationXP=50
+VideoTexture=/Lotus/Interface/AbilityVideos/HydroidPower2_s.bk2

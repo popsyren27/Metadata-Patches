@@ -1,0 +1,63 @@
+/Lotus/Upgrades/Mods/Sentinel/Kubrow/KubrowPackLeaderMod
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/KubrowPackLeaderMod
+LocalizeDescTag=/Lotus/Language/Items/KubrowPackLeaderModDesc
+Icon=/Lotus/Interface/Cards/Images/Kubrow/KubrowPackLeader.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_SENTINEL_PACK_LEADER
+    OperationType=ADD
+    Value=16.66
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/AvatarSentinelLifestealLinkModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+},
+{
+    UpgradeType=AVATAR_SENTINEL_PACK_LEADER_OVERGUARD_CAP
+    OperationType=ADD
+    Value=200
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_MEDIUM
+ItemCompatibility=/Lotus/Types/Game/SentinelPowerSuit
+IncompatibilityTags={
+SENTINEL_MOD
+}
+IncludeInBoosterPack=1
+TipTags={
+OVERGUARD
+}

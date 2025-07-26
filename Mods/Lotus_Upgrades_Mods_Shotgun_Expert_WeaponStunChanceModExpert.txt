@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Shotgun/Expert/WeaponStunChanceModExpert
+patch not applied (yet)

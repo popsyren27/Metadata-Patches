@@ -1,0 +1,105 @@
+/Lotus/Powersuits/PowersuitAbilities/AlchemistVialAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/AlchemistVial_AbilityName
+LocalizeDescTag=/Lotus/Language/Suits/AlchemistVial_AbilityDescription
+Icon=/Lotus/Interface/Icons/Abilities/AlchemistRush.png
+UniquePowerIdentifier=ALCHEMIST_VIAL
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE,
+    EFFECT_MOBILITY
+}
+Script={
+    Script=AlchemistVial.lua
+    Function=ActivateAbility
+    _startAnim=/Lotus/Animations/Tenno/Powers/Alchemist/VialRushStart_anim.fbx
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Alchemist/VialRushLoop_anim.fbx
+    _inputFilter=/Lotus/Powersuits/Alchemist/VialInputFilter
+    _projectileType=/Lotus/Powersuits/Alchemist/VialProjectile
+    _triggerType=""
+    _pushTriggerType=/Lotus/Powersuits/Alchemist/VialPushTrigger
+    _attachEffect=/Lotus/Fx/PowersuitAbilities/Alchemist/VialAttach
+    _areaElementalEffects={}
+    _endBurstElementalEffects={
+        /Lotus/Fx/PowersuitAbilities/Alchemist/VialBurstFire,
+        /Lotus/Fx/PowersuitAbilities/Alchemist/VialBurstFreeze,
+        /Lotus/Fx/PowersuitAbilities/Alchemist/VialBurstElectricity,
+        /Lotus/Fx/PowersuitAbilities/Alchemist/VialBurstPoison,
+        /Lotus/Fx/PowersuitAbilities/Alchemist/VialBurstExplosion,
+        /Lotus/Fx/PowersuitAbilities/Alchemist/VialBurstRadiation,
+        /Lotus/Fx/PowersuitAbilities/Alchemist/VialBurstGas,
+        /Lotus/Fx/PowersuitAbilities/Alchemist/VialBurstMagnetic,
+        /Lotus/Fx/PowersuitAbilities/Alchemist/VialBurstViral,
+        /Lotus/Fx/PowersuitAbilities/Alchemist/VialBurstCorrosive
+    }
+    _snakeLeftType=/Lotus/Fx/PowersuitAbilities/Alchemist/VialSnakesLeftDeco
+    _snakeRightType=/Lotus/Fx/PowersuitAbilities/Alchemist/VialSnakesRightDeco
+}
+InputEvents={
+    {
+        tag=CheckHold
+        inputCode=ACTIVATE_ABILITY_1
+        onDown=1
+        scriptInstance={
+            Script=AlchemistVial.lua
+            Function=CheckHold
+            _startAnim=""
+            _activateAnim=""
+            _inputFilter=""
+            _projectileType=""
+            _triggerType=""
+            _pushTriggerType=""
+            _attachEffect=""
+            _areaElementalEffects={}
+            _endBurstElementalEffects={}
+            _snakeLeftType=""
+            _snakeRightType=""
+        }
+        },
+        {
+            tag=CheckHold
+            inputCode=POWER_MODIFIER
+            onDown=1
+            scriptInstance={
+                Script=AlchemistVial.lua
+                Function=CheckHoldPM
+                _startAnim=""
+                _activateAnim=""
+                _inputFilter=""
+                _projectileType=""
+                _triggerType=""
+                _pushTriggerType=""
+                _attachEffect=""
+                _areaElementalEffects={}
+                _endBurstElementalEffects={}
+                _snakeLeftType=""
+                _snakeRightType=""
+            }
+            },
+            {
+                tag=OnJump
+                inputCode=JUMP
+                onDown=1
+                scriptInstance={
+                    Script=AlchemistVial.lua
+                    Function=OnJump
+                    _startAnim=""
+                    _activateAnim=""
+                    _inputFilter=""
+                    _projectileType=""
+                    _triggerType=""
+                    _pushTriggerType=""
+                    _attachEffect=""
+                    _areaElementalEffects={}
+                    _endBurstElementalEffects={}
+                    _snakeLeftType=""
+                    _snakeRightType=""
+                }
+            }
+        }
+        CooldownDuration=5
+        EnergyRequiredToActivate=0
+        AllowToggle=1
+        ActivationXP=50
+        CastSound=/Lotus/Sounds/Warframes/Alchemist/AlchemistVialAbilityCast3D
+        VideoTexture=/Lotus/Interface/AbilityVideos/LavosPower2_s.bk2
+        HelminthOverrideDescTag=/Lotus/Language/Suits/AlchemistVial_AbilityDescription_Helminth

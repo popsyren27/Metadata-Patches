@@ -1,0 +1,97 @@
+/Lotus/Upgrades/Mods/Aura/WarframeAuraBladedRestraintMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/WarframeAuraBladedRestraintName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Auras/WarframeAuraBladedRestraintMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Mods/AuraBladedRestraint
+    LocKeyWordScript={
+    Script=/Lotus/Scripts/Mods/AuraBladedRestraint.lua
+    Function=GetDescription
+    _selfReduceAmount={
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+}
+_teamAmount={
+2,
+4,
+6,
+8,
+10,
+12
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_ATTACK
+ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
+TargetMode=TM_OWNER_FACTION
+TargetType=/Lotus/Types/Player/TennoAvatar
+ExcludedAvatars={
+/Lotus/Types/Player/LotusOperatorAvatar
+}
+OnEnterAuraScript={
+Script=/Lotus/Scripts/Mods/AuraBladedRestraint.lua
+Function=OnEnter
+_selfReduceAmount={
+1,
+2,
+3,
+4,
+5,
+6
+}
+_teamAmount={
+2,
+4,
+6,
+8,
+10,
+12
+}
+}
+OnExitAuraScript={
+Script=/Lotus/Scripts/Mods/AuraBladedRestraint.lua
+Function=OnExit
+_selfReduceAmount={
+1,
+2,
+3,
+4,
+5,
+6
+}
+_teamAmount={
+2,
+4,
+6,
+8,
+10,
+12
+}
+}

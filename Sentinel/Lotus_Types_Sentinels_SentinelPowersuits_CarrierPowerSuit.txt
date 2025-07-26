@@ -1,0 +1,30 @@
+/Lotus/Types/Sentinels/SentinelPowersuits/CarrierPowerSuit
+MarketMode=MM_VISIBLE
+Icon=/Lotus/Interface/Icons/StoreIcons/Companions/Sentinels/Types/Carrier.png
+RectangleIcon=0
+ExcludeFromCodex=0
+DefaultCustomization={
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Sentinels/Skins/Defaults/DefaultCarrierSkin
+    }
+}
+DefaultSlottedUpgrades={
+    {
+        ItemType=/Lotus/Types/Sentinels/SentinelPrecepts/SentinelAttack
+        Slot=9
+        RandomUpgradeBuffTags={}
+        },
+        {
+            ItemType=/Lotus/Types/Sentinels/SentinelPrecepts/ItemVacum
+            Slot=-1
+            RandomUpgradeBuffTags={}
+            },
+            {
+                ItemType=/Lotus/Types/Sentinels/SentinelPrecepts/UniversalVacuum
+                Slot=5
+                RandomUpgradeBuffTags={}
+            }
+        }
+        MiniMapIcon=/Lotus/Interface/Icons/Markers/Companions/SentinelCarrierPortrait.png
+        MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Companions/LargePortraits/SentinelCarrierLargePortrait.png
+        DefaultWeapon=/Lotus/Types/Sentinels/SentinelWeapons/SentShotgun

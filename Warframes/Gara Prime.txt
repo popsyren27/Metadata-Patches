@@ -1,0 +1,139 @@
+/Lotus/Powersuits/Glass/GaraPrime
+MarketMode=MM_HIDDEN
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Glass/GaraPrimeHelmet,
+    GaraShankWeaponPrime
+}
+LocalizeTag=/Lotus/Language/Primes/GaraPrimeSuitName
+LocalizeDescTag=/Lotus/Language/Primes/GaraPrimeSuitDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Primes/GaraPrime.png
+Diorama=/Lotus/Levels/Episodes/WarframesGaraPrime.level
+ExcludeFromCodex=0
+ArtifactSlots={
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_ATTACK,
+    AP_TACTIC,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_ATTACK,
+    AP_DEFENSE,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
+}
+DefaultCustomization={
+    Helmet={
+        ItemType=/Lotus/Upgrades/Skins/Glass/GaraPrimeHelmet
+    }
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0.039999999,0.02,-0.12}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={-0.0094410004,0.216234,-0.042585,0.97536701}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=0.80000001
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={-0.039999999,-0.02,0.12}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.0094410004,0.216234,0.042585,0.97536701}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=0.80000001
+            }
+        }
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Glass/GaraPrimeSkin
+    }
+}
+VariantType=VT_PRIME
+Mesh=/Lotus/Characters/Tenno/Glass/GaraPrimeBody_skel.fbx
+MaxHealthOverride=345
+MaxShieldOverride=270
+ArmourRatingOverride=200
+IsPrime=1
+AttachedFX={
+    {
+        LocalPosition={0,-0.1,0}
+        LocalRotation={0,0,0,1}
+        BoneName=GAME_L1_WEAPON1
+        Type=/Lotus/Fx/PowersuitAbilities/Glass/GlassCastTrail
+        Chance=255
+        RelativeToBounds=0
+        Attach=1
+        DestroyWithOwner=1
+        DestroyParentOnDeath=0
+        FadeOutOnDestruction=0
+        Scale=1
+        },
+        {
+            LocalPosition={0,0,0}
+            LocalRotation={0,0,0,1}
+            BoneName=GAME_C1_HIP1
+            Type=/Lotus/Characters/Tenno/Glass/Cloth/GaraPrimeSkirtClothSkeletalCloth
+            Chance=255
+            RelativeToBounds=0
+            Attach=1
+            DestroyWithOwner=1
+            DestroyParentOnDeath=0
+            FadeOutOnDestruction=0
+            Scale=1
+            },
+            {
+                LocalPosition={0,0,0}
+                LocalRotation={0,0,0,1}
+                BoneName=GAME_C1_HIP1
+                Type=/Lotus/Characters/Tenno/Glass/Cloth/GaraPrimeSkirtGlassClothSkeletalCloth
+                Chance=255
+                RelativeToBounds=0
+                Attach=1
+                DestroyWithOwner=1
+                DestroyParentOnDeath=0
+                FadeOutOnDestruction=0
+                Scale=1
+                },
+                {
+                    LocalPosition={0,0,0}
+                    LocalRotation={0,0,0,1}
+                    BoneName=""
+                    Type=/Lotus/Characters/Tenno/Glass/GaraPrimeBodyExtDeco
+                    Chance=255
+                    RelativeToBounds=0
+                    Attach=1
+                    DestroyWithOwner=1
+                    DestroyParentOnDeath=0
+                    FadeOutOnDestruction=0
+                    Scale=1
+                    },
+                    {
+                        LocalPosition={0,0,0}
+                        LocalRotation={0,0,0,1}
+                        BoneName=""
+                        Type=/Lotus/Characters/Tenno/Glass/GaraPrimeBodyGlassExtDeco
+                        Chance=255
+                        RelativeToBounds=0
+                        Attach=1
+                        DestroyWithOwner=1
+                        DestroyParentOnDeath=0
+                        FadeOutOnDestruction=0
+                        Scale=1
+                    }
+                }
+                MiniMapIcon=/Lotus/Interface/Icons/Markers/Powersuits/GaraPrimePortrait.png
+                MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Powersuits/LargePortraits/GaraPrimeLargePortrait.png
+                SpecialSlotItem={
+                    SPECIAL_A_SLOT={
+                        ItemType=GaraShankWeaponPrime
+                    }
+                }

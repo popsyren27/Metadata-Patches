@@ -1,0 +1,62 @@
+/Lotus/Powersuits/PowersuitAbilities/SentientStompAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/SentientStompAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/SentientStompAbilityDescription
+Icon=/Lotus/Interface/Icons/Abilities/CalibanShockwave.png
+UniquePowerIdentifier=SENTIENT_STOMP
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE,
+    EFFECT_DEBUFF
+}
+Script={
+    Script=SentientStomp.lua
+    Function=ActivateAbility
+    _activateStartAnim=/Lotus/Animations/Tenno/Powers/Caliban/ShockWaveStart
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Caliban/ShockWaveEnd
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Caliban/ShockWaveCast
+    _castEffectBurst=/Lotus/Fx/PowersuitAbilities/Caliban/ShockWaveCastBurst
+    _travelDeco=/Lotus/Powersuits/Sentient/SentientShockwaveEntity
+    _travelDecoConic=/Lotus/Powersuits/Sentient/SentientShockwaveEntityConic
+    _shockStasisAttach=""
+}
+SecondaryScripts={
+    {
+        tag=ApplyStasis
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=SentientStomp.lua
+            Function=ApplyStasis
+            _activateStartAnim=""
+            _activateAnim=""
+            _castEffect=""
+            _castEffectBurst=""
+            _travelDeco=""
+            _travelDecoConic=""
+            _shockStasisAttach=/Lotus/Fx/PowersuitAbilities/Caliban/SentientLiftedEnemyIdle
+        }
+    }
+}
+EnergyRequiredToActivate=50
+ActivationXP=50
+VideoTexture=/Lotus/Interface/AbilityVideos/CalibanPower2_s.bk2
+SoundEvents={
+    {
+        EventName=SFXCalibanStompCast
+        Sound=/Lotus/Sounds/Warframes/Caliban/CalibanStompCast
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=SFXCalibanStompImpact
+            Sound=/Lotus/Sounds/Warframes/Caliban/CalibanStompImpact
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+        }
+    }
+    HelminthOverrideDescTag=/Lotus/Language/Suits/SentientStompAbilityDescription_Helminth

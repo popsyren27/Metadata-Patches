@@ -1,0 +1,70 @@
+/Lotus/Types/Friendly/Pets/BeastWeapons/Stances/BeastNeutralStance
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Pets/BeastNeutralStanceName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Kubrow/BeastNeutralStance.png
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Pets/BeastNeutralStanceDesc
+    LocKeyWordScript={
+    Script=PostureMods.lua
+    Function=GetNeutralDescription
+    _factor=2
+    _range=15
+    _amountPerLevel=0.5
+    _protectorTrainingWeak=""
+    _magneticImpactWeak=""
+    _lifestealWeak=""
+    _reelingImpactWeak=""
+    _chancePerLevel=0.25
+    _healPerLevel=25
+    _neutralPostureDamageTriggerType=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+Script={
+Script=PostureMods.lua
+Function=NeutralPosture
+_factor=2
+_range=15
+_amountPerLevel=0.5
+_protectorTrainingWeak=""
+_magneticImpactWeak=""
+_lifestealWeak=""
+_reelingImpactWeak=""
+_chancePerLevel=0.25
+_healPerLevel=25
+_neutralPostureDamageTriggerType=NeutralStanceStaggerDamageTrigger
+}
+UnappliedScript={
+Script=PostureMods.lua
+Function=UnapplyNeutralPosture
+_factor=2
+_range=15
+_amountPerLevel=0
+_protectorTrainingWeak=""
+_magneticImpactWeak=""
+_lifestealWeak=""
+_reelingImpactWeak=""
+_chancePerLevel=0.25
+_healPerLevel=25
+_neutralPostureDamageTriggerType=NeutralStanceStaggerDamageTrigger
+}

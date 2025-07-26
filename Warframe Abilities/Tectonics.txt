@@ -1,0 +1,38 @@
+/Lotus/Powersuits/PowersuitAbilities/BrawlerBarrierAbility
+LocalizeTag=/Lotus/Language/Suits/BrawlerBarrierAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/BrawlerBarrierAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/AtlasBarrier.png
+UniquePowerIdentifier=BRAWLER_BARRIER
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=BrawlerBarrier.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Brawler/BarrierStart_anim.fbx
+    _deactivateAnim=/Lotus/Animations/Tenno/Powers/Brawler/BarrierEnd_anim.fbx
+    _barrierDeco=/Lotus/Powersuits/Brawler/BarrierDeco
+    _barrierDecoNpc=/Lotus/Powersuits/Brawler/BarrierDecoNpc
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Brawler/BarrierCast
+    _castBurstEffect=/Lotus/Fx/PowersuitAbilities/Brawler/BarrierCastBurst
+    _forceEndEffect=/Lotus/Fx/PowersuitAbilities/Brawler/BarrierEnd
+    _forceEndBurstEffect=/Lotus/Fx/PowersuitAbilities/Brawler/BarrierEndBurst
+    _barrierMoveAttach=/Lotus/Sounds/Warframes/Brawler/BrawlerBarrierMoveLoopSeq
+    _travelStartAnim=/Lotus/Fx/PowersuitAbilities/Brawler/BarrierTravelStart_anim.fbx
+    _travelLoopAnim=/Lotus/Fx/PowersuitAbilities/Brawler/BarrierTravelLoop_anim.fbx
+    _travelEndAnim=/Lotus/Fx/PowersuitAbilities/Brawler/BarrierEnd_anim.fbx
+    _travelEffect=/Lotus/Fx/PowersuitAbilities/Brawler/BarrierTravelAttach
+    _travelEffectEnergy=/Lotus/Fx/PowersuitAbilities/Brawler/BarrierTravelAttachEnergyColored
+    _rollingChunkDeco=/Lotus/Fx/PowersuitAbilities/Brawler/BarrierRollingDebrisDeco
+    _travelEndBurst=/Lotus/Fx/PowersuitAbilities/Brawler/BarrierTravelEndBurst
+    _wallDestroyEffect=/Lotus/Fx/PowersuitAbilities/Brawler/BarrierDestroyed
+    _collapseTrigger=/Lotus/Powersuits/Brawler/BarrierCollapseTrigger
+    _primeMaterial=""
+    _aoeEffect=/Lotus/Fx/PowersuitAbilities/Brawler/BarrierRadialEffect
+}
+NpcCooldownDuration=30
+EnergyRequiredToActivate=50
+AllowToggle=1
+AllowDuringOverride=1
+ActivationXP=50
+VideoTexture=/Lotus/Interface/AbilityVideos/AtlasPower2_s.bk2

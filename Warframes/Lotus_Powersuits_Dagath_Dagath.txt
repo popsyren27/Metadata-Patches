@@ -1,0 +1,86 @@
+/Lotus/Powersuits/Dagath/Dagath
+MarketMode=MM_VISIBLE
+PremiumPrice=325
+SellingPrice=25000
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Dagath/DagathHelmet,
+    /Lotus/Upgrades/Skins/Armor/WarframeDefaults/DagathArmArmor
+}
+Icon=/Lotus/Interface/Icons/StoreIcons/Warframes/Dagath.png
+RectangleIcon=0
+ExcludeFromCodex=0
+RecipeHelpText=/Lotus/Language/WarframeCrafting/DagathRecipeHelp
+DefaultCustomization={
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0.16500001,-0.0099999998,-0.015}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.043577999,-0.043577999,0.0019030001,0.998097}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={-0.16500001,-0.0099999998,0.015}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.043577999,-0.043577999,0.0019030001,0.998097}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    ArmRight={
+        ItemType=/Lotus/Upgrades/Skins/Armor/WarframeDefaults/DagathArmArmor
+    }
+}
+InitialEnergy=50
+SoundEvents={
+    {
+        EventName=StepL
+        Sound=/Lotus/Sounds/Warframes/Dagath/DagathGenericFootstep
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=StepR
+            Sound=/Lotus/Sounds/Warframes/Dagath/DagathGenericFootstep
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+            },
+            {
+                EventName=SFXWarframeGenericFoley
+                Sound=/Lotus/Sounds/Warframes/Dagath/DagathGenericFoley
+                Chance=1
+                Period=1
+                Context=PEC_ALL
+                CancelEventName=""
+                },
+                {
+                    EventName=LandSoft
+                    Sound=/Lotus/Sounds/Warframes/Dagath/DagathGenericLandSoft
+                    Chance=1
+                    Period=1
+                    Context=PEC_ALL
+                    CancelEventName=""
+                    },
+                    {
+                        EventName=LandHeavy
+                        Sound=/Lotus/Sounds/Warframes/Dagath/DagathGenericLandHeavy
+                        Chance=1
+                        Period=1
+                        Context=PEC_ALL
+                        CancelEventName=""
+                    }
+                }

@@ -1,0 +1,139 @@
+/Lotus/Upgrades/CosmeticEnhancers/Utility/LightningStrikeOnKill
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/LightningStrikeOnKill
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ResidualShock.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Arcanes/LightningStrikeOnKillDesc
+        LocKeyWordScript={
+            Script=ResidualTrigger.lua
+            Function=GetElectricDescription
+            _duration=3
+            _baseDamage=10
+            _maxStacks=15
+            _upgradePct={
+                0.0099999998,
+                0.02,
+                0.029999999,
+                0.039999999,
+                0.050000001,
+                0.059999999
+            }
+            _weaponDamageUpgrade=""
+            _damageType=DT_POISON
+            _outsideTriggerDuration=5
+            _petDamageUpgrade=""
+            _petDamageTrigger=""
+            _petDamageTriggerRadius={
+                15,
+                30,
+                45,
+                60,
+                75,
+                90
+            }
+            _diminishedPetBuffTypes={}
+            _diminishPct=0.1
+            _orbsUpgrade=""
+            _orbSpawnTime=2
+            _orbDamage={
+                25,
+                50,
+                75,
+                100,
+                125,
+                150
+            }
+            _orbDuration={
+                2,
+                4,
+                6,
+                8,
+                10,
+                12
+            }
+            _orbDebuffDuration={
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            }
+            _orbDebuffPct={
+                1,
+                1.2,
+                1.4,
+                1.6,
+                1.8,
+                2
+            }
+            _orbType=""
+            _orbProjectileType=""
+            _orbAttachDeco=""
+            _orbRange=15
+            _orbSound=""
+            _invalidTargetTypes={}
+            _growCysts=0
+            _cystSpawnTime=3
+            _cystDamage=20
+            _cystRadius=2.5
+            _cystDeco=""
+            _cystExplodeFx=""
+            _lightningStrikes=0
+            _lightningRange=10
+            _lightningDamage=200
+            _lightningInterval=2
+            _lightningBeam=""
+            _lightningBoneSym=GAME_C1_SPINE1
+            _lightningSpikeSpawner=""
+            _petBuffFxType=""
+            _weapBuffFxType=""
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+Script={
+    Script=ToxicBloodOnKill.lua
+    Function=ApplyUpgrade
+    _damageTriggerTypes={
+        LightningStrikeDamageTrigger,
+        LightningStrikeDamageTriggerTwo,
+        LightningStrikeDamageTriggerThree,
+        LightningStrikeDamageTriggerFour
+    }
+    _baseTriggerWRes=BaseResidualDamageTrigger
+}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionAlt
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=0.2
+ChanceScalesWithRank=0
+CanReproc=0
+ConditionalUpgrades={
+    OnResidualKillCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnKitgunKillCondition_Description
+BaseDistillPointValue=24

@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Rifle/Expert/WeaponSnipersConvertAmmoModExpert
+patch not applied (yet)

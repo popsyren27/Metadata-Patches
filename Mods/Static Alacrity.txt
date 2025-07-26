@@ -1,0 +1,61 @@
+/Lotus/Upgrades/Mods/PvPMods/Pistol/StaticorFasterProjLessAoE
+LocalizeTag=/Lotus/Language/Mods/StaticorFasterProjLessAoE
+Icon=/Lotus/Interface/Cards/Images/PvP/Pistol/StaticorFasterProj.png
+Upgrades={
+{
+    UpgradeType=WEAPON_PROJECTILE_SPEED
+    OperationType=STACKING_MULTIPLY
+    Value=0.125
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponProjectileSpeedModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+},
+{
+    UpgradeType=WEAPON_EXPLOSION_RADIUS
+    OperationType=STACKING_MULTIPLY
+    Value=-0.125
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponExplosionRadiusModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ItemCompatibility=/Lotus/Weapons/Corpus/Pistols/CrpElectroMag/CrpElectroMag
+IncompatibilityTags={
+SECONDARYSHOTGUN
+}

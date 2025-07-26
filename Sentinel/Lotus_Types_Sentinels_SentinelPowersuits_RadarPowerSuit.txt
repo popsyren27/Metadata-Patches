@@ -1,0 +1,87 @@
+/Lotus/Types/Sentinels/SentinelPowersuits/RadarPowerSuit
+MarketMode=MM_VISIBLE
+ExcludeFromCodex=0
+RecipeHelpText=/Lotus/Language/SolarisVenus/DetailedPurchase_RadarSentRecipeHelpText
+DefaultCustomization={
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=GAME_C1_MASKATTACH
+                PosOffset={0.078000002,-0.02,-0.37}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.45451999,-0.54167497,-0.54167497,0.454519}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+        OFF_HAND={
+            {
+                BoneOverride=Invalid
+                PosOffset={0,0,0}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,0,0,1}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=Invalid
+                PosOffset={0,0,0}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,0,0,1}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+        OFF_HAND={
+            {
+                BoneOverride=GAME_C1_MASKATTACH
+                PosOffset={-0.078000002,-0.02,-0.37}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={-0.45451999,-0.54167497,0.54167497,0.454519}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Sentinels/Skins/Defaults/DefaultOxylusSkin
+    }
+}
+DefaultSlottedUpgrades={
+    {
+        ItemType=/Lotus/Types/Sentinels/SentinelPrecepts/SentinelAttack
+        Slot=9
+        RandomUpgradeBuffTags={}
+        },
+        {
+            ItemType=/Lotus/Types/Sentinels/SentinelPrecepts/LocateCreatures
+            Slot=-1
+            RandomUpgradeBuffTags={}
+            },
+            {
+                ItemType=/Lotus/Types/Sentinels/SentinelPrecepts/LocateResources
+                Slot=-1
+                RandomUpgradeBuffTags={}
+                },
+                {
+                    ItemType=/Lotus/Types/Sentinels/SentinelPrecepts/UniversalVacuum
+                    Slot=5
+                    RandomUpgradeBuffTags={}
+                }
+            }
+            NamedSubTrees={
+                {
+                    name=SentinelPreDeath
+                    tree=SentinelSubtrees/RadarSentinelPreDeathTree.animtree
+                }
+            }
+            IdleAnim=/Lotus/Animations/Pets/RadarSentinel/IdleFolded_anim.fbx
+            DefaultWeapon=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetComponents/HextraWeapon

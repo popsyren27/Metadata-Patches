@@ -1,0 +1,56 @@
+/Lotus/Upgrades/Mods/Shotgun/Event/AccuracyWhileAimingShotgunMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/AccuracyWhileAimingShotgunMod
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/AccuracyWhileAimingBuffDesc
+Icon=/Lotus/Interface/Cards/Images/Shotgun/AccuracyWhileAiming.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=WEAPON_SPREAD
+    OperationType=STACKING_MULTIPLY
+    Value=-0.050000001
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={
+    PM_AIM
+}
+InvalidModifiers={}
+ValidProcTypes={}
+OverrideLocalization=1
+LocTag=/Lotus/Language/Upgrades/AccuracyWhileAimingModDesc
+LocKeyWordScript={
+Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=1
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ApplyUpgradesByDefault=0
+ArtifactPolarity=AP_ATTACK
+ItemCompatibility=/Lotus/Weapons/Tenno/Shotgun/LotusShotgun
+IncompatibilityTags={
+POWER_WEAPON
+}
+IsUtility=1
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDuration
+EnhancementTagLocScript={
+Script=""
+}
+UpgradeChance=1
+UpgradeDuration=1.5
+PlayEffect=0
+ConditionalUpgrades={
+/Lotus/Upgrades/CosmeticEnhancers/Events/OnHitShotgunCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnHitCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/Empowered.png

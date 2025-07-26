@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Melee/Expert/WeaponStunChanceModExpert
+patch not applied (yet)

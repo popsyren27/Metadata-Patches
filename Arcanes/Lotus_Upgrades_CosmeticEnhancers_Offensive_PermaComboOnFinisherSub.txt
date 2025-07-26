@@ -1,0 +1,25 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/PermaComboOnFinisherSub
+MarketMode=MM_HIDDEN
+ExcludeFromCodex=0
+ApplyUpgradesByDefault=0
+IncompatibilityTags={
+    OPERATOR_SUIT,
+    NO_FINISHER
+}
+Script={
+    Script=PermaComboUpgrade.lua
+    Function=ApplyUpgrade
+    _initialComboUpgrade=1
+    _initialComboUpgradePerFusionLevel=1
+    _doNotExceedCap=240
+}
+UpgradeChance=1
+DurationScalesWithRank=0
+ChanceScalesWithRank=0
+ConditionalUpgrades={
+    OnFinisherCondition,
+    OnFinisherWorkaroundCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnFinisherCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDBBuff.png
+UpgradeDifferentWeapon=1

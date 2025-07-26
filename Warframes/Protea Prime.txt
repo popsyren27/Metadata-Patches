@@ -1,0 +1,243 @@
+/Lotus/Powersuits/Odalisk/ProteaPrime
+MarketMode=MM_HIDDEN
+PremiumPrice=325
+SellingPrice=10000
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Odalisk/ProteaPrimeHelmet
+}
+LocalizeTag=/Lotus/Language/Primes/ProteaPrimeName
+LocalizeDescTag=/Lotus/Language/Primes/ProteaPrimeDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Primes/ProteaPrime.png
+Diorama=/Lotus/Levels/Episodes/WarframesProteaPrime.level
+ExcludeFromCodex=0
+ArtifactSlots={
+    AP_TACTIC,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_TACTIC,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_ATTACK,
+    AP_ANY,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
+}
+DefaultCustomization={
+    Helmet={
+        ItemType=/Lotus/Upgrades/Skins/Odalisk/ProteaPrimeHelmet
+    }
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0.02,0,-0.035}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,0.017452,0,0.99984801}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={-0.02,0,0.035}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,0.017452,0,0.99984801}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Odalisk/ProteaPrimeSkin
+    }
+    FxSet={
+        ItemType=/Lotus/Upgrades/Skins/Odalisk/OdaliskEffectsSetDefault
+    }
+}
+VariantType=VT_PRIME
+Mesh=/Lotus/Characters/Tenno/Odalisk/ProteaPrime/ProteaPrimeBody_skel.fbx
+MaxEnergy=200
+InitialEnergy=75
+MaxHealthOverride=270
+ArmourRatingOverride=185
+IsPrime=1
+AttachedFX={
+    {
+        LocalPosition={0,0,0}
+        LocalRotation={0.043618999,0,0,0.99904799}
+        BoneName=GAME_C1_HIP1
+        Type=/Lotus/Characters/Tenno/Odalisk/ProteaPrime/ProteaPrimeDispensaryDeco
+        Chance=255
+        RelativeToBounds=0
+        Attach=1
+        DestroyWithOwner=1
+        DestroyParentOnDeath=0
+        FadeOutOnDestruction=0
+        Scale=1
+        },
+        {
+            LocalPosition={0,0.028999999,0}
+            LocalRotation={-0.078459002,0,0,0.99691701}
+            BoneName=GAME_C1_HIP1
+            Type=/Lotus/Characters/Tenno/Odalisk/ProteaPrime/ProteaPrimeTurretDeco
+            Chance=255
+            RelativeToBounds=0
+            Attach=1
+            DestroyWithOwner=1
+            DestroyParentOnDeath=0
+            FadeOutOnDestruction=0
+            Scale=1
+            },
+            {
+                LocalPosition={0,0,0}
+                LocalRotation={0,0,0,1}
+                BoneName=""
+                Type=/Lotus/Characters/Tenno/Odalisk/ProteaPrime/ProteaPrimeBodyExtraDeco
+                Chance=255
+                RelativeToBounds=0
+                Attach=1
+                DestroyWithOwner=1
+                DestroyParentOnDeath=0
+                FadeOutOnDestruction=0
+                Scale=1
+                },
+                {
+                    LocalPosition={0,0,0}
+                    LocalRotation={0,0,0,1}
+                    BoneName=GAME_L1_GRENADE1
+                    Type=/Lotus/Characters/Tenno/Odalisk/ProteaPrime/ProteaPrimeGrenadeL1Deco
+                    Chance=255
+                    RelativeToBounds=0
+                    Attach=1
+                    DestroyWithOwner=1
+                    DestroyParentOnDeath=0
+                    FadeOutOnDestruction=0
+                    Scale=1
+                    },
+                    {
+                        LocalPosition={0,0,0}
+                        LocalRotation={0,0,0,1}
+                        BoneName=GAME_L1_GRENADE2
+                        Type=/Lotus/Characters/Tenno/Odalisk/ProteaPrime/ProteaPrimeGrenadeL1Deco
+                        Chance=255
+                        RelativeToBounds=0
+                        Attach=1
+                        DestroyWithOwner=1
+                        DestroyParentOnDeath=0
+                        FadeOutOnDestruction=0
+                        Scale=1
+                        },
+                        {
+                            LocalPosition={0,0,0}
+                            LocalRotation={0,0,0,1}
+                            BoneName=GAME_L1_GRENADE3
+                            Type=/Lotus/Characters/Tenno/Odalisk/ProteaPrime/ProteaPrimeGrenadeL1Deco
+                            Chance=255
+                            RelativeToBounds=0
+                            Attach=1
+                            DestroyWithOwner=1
+                            DestroyParentOnDeath=0
+                            FadeOutOnDestruction=0
+                            Scale=1
+                            },
+                            {
+                                LocalPosition={0,0,0}
+                                LocalRotation={0,0,0,1}
+                                BoneName=GAME_L1_GRENADE4
+                                Type=/Lotus/Characters/Tenno/Odalisk/ProteaPrime/ProteaPrimeGrenadeL1Deco
+                                Chance=255
+                                RelativeToBounds=0
+                                Attach=1
+                                DestroyWithOwner=1
+                                DestroyParentOnDeath=0
+                                FadeOutOnDestruction=0
+                                Scale=1
+                                },
+                                {
+                                    LocalPosition={0,0,0}
+                                    LocalRotation={0,0,0,1}
+                                    BoneName=GAME_L1_GRENADE5
+                                    Type=/Lotus/Characters/Tenno/Odalisk/ProteaPrime/ProteaPrimeGrenadeL1Deco
+                                    Chance=255
+                                    RelativeToBounds=0
+                                    Attach=1
+                                    DestroyWithOwner=1
+                                    DestroyParentOnDeath=0
+                                    FadeOutOnDestruction=0
+                                    Scale=1
+                                    },
+                                    {
+                                        LocalPosition={0,0,0}
+                                        LocalRotation={0,0,0,1}
+                                        BoneName=GAME_R1_GRENADE1
+                                        Type=/Lotus/Characters/Tenno/Odalisk/ProteaPrime/ProteaPrimeGrenadeR1Deco
+                                        Chance=255
+                                        RelativeToBounds=0
+                                        Attach=1
+                                        DestroyWithOwner=1
+                                        DestroyParentOnDeath=0
+                                        FadeOutOnDestruction=0
+                                        Scale=1
+                                        },
+                                        {
+                                            LocalPosition={0,0,0}
+                                            LocalRotation={0,0,0,1}
+                                            BoneName=GAME_R1_GRENADE2
+                                            Type=/Lotus/Characters/Tenno/Odalisk/ProteaPrime/ProteaPrimeGrenadeR1Deco
+                                            Chance=255
+                                            RelativeToBounds=0
+                                            Attach=1
+                                            DestroyWithOwner=1
+                                            DestroyParentOnDeath=0
+                                            FadeOutOnDestruction=0
+                                            Scale=1
+                                            },
+                                            {
+                                                LocalPosition={0,0,0}
+                                                LocalRotation={0,0,0.70710677,0.70710677}
+                                                BoneName=GAME_R1_GRENADE3
+                                                Type=/Lotus/Characters/Tenno/Odalisk/ProteaPrime/ProteaPrimeGrenadeR1Deco
+                                                Chance=255
+                                                RelativeToBounds=0
+                                                Attach=1
+                                                DestroyWithOwner=1
+                                                DestroyParentOnDeath=0
+                                                FadeOutOnDestruction=0
+                                                Scale=1
+                                                },
+                                                {
+                                                    LocalPosition={0,0,0}
+                                                    LocalRotation={0,0,0.70710677,0.70710677}
+                                                    BoneName=GAME_R1_GRENADE4
+                                                    Type=/Lotus/Characters/Tenno/Odalisk/ProteaPrime/ProteaPrimeGrenadeR1Deco
+                                                    Chance=255
+                                                    RelativeToBounds=0
+                                                    Attach=1
+                                                    DestroyWithOwner=1
+                                                    DestroyParentOnDeath=0
+                                                    FadeOutOnDestruction=0
+                                                    Scale=1
+                                                    },
+                                                    {
+                                                        LocalPosition={0,0,0}
+                                                        LocalRotation={0,0,0.70710677,0.70710677}
+                                                        BoneName=GAME_R1_GRENADE5
+                                                        Type=/Lotus/Characters/Tenno/Odalisk/ProteaPrime/ProteaPrimeGrenadeR1Deco
+                                                        Chance=255
+                                                        RelativeToBounds=0
+                                                        Attach=1
+                                                        DestroyWithOwner=1
+                                                        DestroyParentOnDeath=0
+                                                        FadeOutOnDestruction=0
+                                                        Scale=1
+                                                    }
+                                                }
+                                                MiniMapIcon=/Lotus/Interface/Icons/Markers/Powersuits/ProteaPrimePortrait.png
+                                                MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Powersuits/LargePortraits/ProteaPrimeLargePortrait.png

@@ -1,0 +1,109 @@
+/Lotus/Types/Sentinels/SentinelPrecepts/VoidBond/CompoundingLaceration
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/VoidBondCompoundingLacerationMod
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Pets/SentinelCompoundingLaceration.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/VoidBondCompoundingLacerationModDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Sentinels/SentinelAbilities/CompoundingLaceration.lua
+    Function=GetDescription
+    _uniqueStatusEffectsBase=6
+    _uniqueStatusEffectsBasePerRank=-0.5
+    _cooldownReductionPerRank=0.5
+    _damageSourcesBlackList={
+    /EE/Types/Game/WeaponEx
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ApplyUpgradesByDefault=0
+ArtifactPolarity=AP_DEFENSE
+BaseDrain=QA_MEDIUM
+ItemCompatibility=/Lotus/Types/Game/Pets/RoboticPetPowerSuit
+Script={
+Script=/Lotus/Types/Sentinels/SentinelAbilities/CompoundingLaceration.lua
+Function=EnemyKilled
+_uniqueStatusEffectsBase=6
+_uniqueStatusEffectsBasePerRank=-0.5
+_cooldownReductionPerRank=0.5
+_damageSourcesBlackList={
+/EE/Types/Game/WeaponEx
+}
+}
+UpgradeChance=1
+ConditionalUpgrades={
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/OnKillCondition
+}
+Ability={
+ExcludeFromCodex=0
+Script={
+Script=/Lotus/Types/Sentinels/SentinelAbilities/CompoundingLaceration.lua
+Function=ActivateAbility
+_uniqueStatusEffectsBase=6
+_uniqueStatusEffectsBasePerRank=-0.5
+_cooldownReductionPerRank=0.5
+_damageSourcesBlackList={
+/EE/Types/Game/WeaponEx
+}
+}
+SecondaryScripts={
+{
+tag=ApplyCooldown
+executionMode=EM_HOST
+inheritPrimary=0
+functionName=""
+scriptInstance={
+Script=/Lotus/Types/Sentinels/SentinelAbilities/CompoundingLaceration.lua
+Function=ApplyCooldown
+_uniqueStatusEffectsBase=6
+_uniqueStatusEffectsBasePerRank=-0.5
+_cooldownReductionPerRank=0.5
+_damageSourcesBlackList={
+/EE/Types/Game/WeaponEx
+}
+}
+}
+}
+AbilityEvents={
+{
+tag=OnHit
+eventType=ET_ON_HIT
+scriptInstance={
+Script=/Lotus/Types/Sentinels/SentinelAbilities/CompoundingLaceration.lua
+Function=OnHit
+_uniqueStatusEffectsBase=6
+_uniqueStatusEffectsBasePerRank=-0.5
+_cooldownReductionPerRank=0.5
+_damageSourcesBlackList={
+/EE/Types/Game/WeaponEx
+}
+}
+}
+}
+EnergyRequiredToActivate=0
+ActivationXP=0
+IsPassive=1
+IsBlockable=0
+Blocking=0
+}

@@ -1,0 +1,135 @@
+/Lotus/Powersuits/Bard/OctaviaPrime
+MarketMode=MM_HIDDEN
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Bard/OctaviaPrimeHelmet,
+    /Lotus/Types/Game/NotePacks/BardHipHopPackA
+}
+LocalizeTag=/Lotus/Language/Primes/OctaviaPrimeSuitName
+LocalizeDescTag=/Lotus/Language/Primes/OctaviaPrimeSuitDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Primes/OctaviaPrime.png
+Diorama=/Lotus/Levels/Episodes/WarframesOctaviaPrime.level
+ExcludeFromCodex=0
+RecipeHelpText=""
+ArtifactSlots={
+    AP_UNIVERSAL,
+    AP_TACTIC,
+    AP_TACTIC,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_DEFENSE,
+    AP_TACTIC,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
+}
+DefaultCustomization={
+    Helmet={
+        ItemType=/Lotus/Upgrades/Skins/Bard/OctaviaPrimeHelmet
+    }
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0.13,0.02,-0.039999999}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,-0.087155998,0,0.99619502}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={-0.13,-0.02,0.039999999}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,-0.087155998,0,0.99619502}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Bard/OctaviaPrimeSkin
+    }
+}
+VariantType=VT_PRIME
+Mesh=/Lotus/Characters/Tenno/Bard/OctaviaPrimeBody_skel.fbx
+MaxEnergy=215
+MaxHealthOverride=270
+MaxShieldOverride=270
+IsPrime=1
+AttachedFX={
+    {
+        LocalPosition={0,-0.11,0}
+        LocalRotation={0,0,0,1}
+        BoneName=GAME_R1_WEAPON1
+        Type=/Lotus/Fx/PowersuitAbilities/Bard/BardCastTrail
+        Chance=255
+        RelativeToBounds=0
+        Attach=1
+        DestroyWithOwner=1
+        DestroyParentOnDeath=0
+        FadeOutOnDestruction=0
+        Scale=1
+        },
+        {
+            LocalPosition={0,-0.11,0}
+            LocalRotation={0,0,0,1}
+            BoneName=GAME_L1_WEAPON1
+            Type=/Lotus/Fx/PowersuitAbilities/Bard/BardCastTrail
+            Chance=255
+            RelativeToBounds=0
+            Attach=1
+            DestroyWithOwner=1
+            DestroyParentOnDeath=0
+            FadeOutOnDestruction=0
+            Scale=1
+            },
+            {
+                LocalPosition={0,0,0}
+                LocalRotation={0,0,0,1}
+                BoneName=GAME_C1_SPINE2
+                Type=/Lotus/Characters/Tenno/Bard/Cloth/OctaviaPrimeBackSkirtSkeletalCloth
+                Chance=255
+                RelativeToBounds=0
+                Attach=1
+                DestroyWithOwner=1
+                DestroyParentOnDeath=0
+                FadeOutOnDestruction=0
+                Scale=1
+                },
+                {
+                    LocalPosition={0,0,0}
+                    LocalRotation={0,0,0,1}
+                    BoneName=GAME_C1_SPINE3
+                    Type=/Lotus/Characters/Tenno/Bard/Cloth/OctaviaPrimeLeftSkirtSkeletalCloth
+                    Chance=255
+                    RelativeToBounds=0
+                    Attach=1
+                    DestroyWithOwner=1
+                    DestroyParentOnDeath=0
+                    FadeOutOnDestruction=0
+                    Scale=1
+                    },
+                    {
+                        LocalPosition={0,0,0}
+                        LocalRotation={0,0,0,1}
+                        BoneName=GAME_C1_SPINE3
+                        Type=/Lotus/Characters/Tenno/Bard/Cloth/OctaviaPrimeRightSkirtSkeletalCloth
+                        Chance=255
+                        RelativeToBounds=0
+                        Attach=1
+                        DestroyWithOwner=1
+                        DestroyParentOnDeath=0
+                        FadeOutOnDestruction=0
+                        Scale=1
+                    }
+                }
+                MiniMapIcon=/Lotus/Interface/Icons/Markers/Powersuits/OctaviaPrimePortrait.png
+                MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Powersuits/LargePortraits/OctaviaPrimeLargePortrait.png

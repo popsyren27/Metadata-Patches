@@ -1,0 +1,80 @@
+/Lotus/Upgrades/CosmeticEnhancers/Zariman/OperatorOnDeathInvulnerability
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/OperatorOnDeathInvulnerability
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/EmergenceSaviorBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionBS.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/InvulnerabilityWithCooldown
+        LocKeyWordScript={
+            Script=OperatorOnDeathInvulnerability.lua
+            Function=GetDescription
+            _immunityDuration=5
+            _parentUpgrade=""
+            _subUpgradeType=""
+            _showInvulnTimer=1
+            _showImpactMessage=1
+            _healPct={
+                10,
+                20,
+                30,
+                40,
+                50,
+                60
+            }
+            _cooldown=90
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+FusionLimit=QA_HIGH
+Script={
+    Script=OperatorOnDeathInvulnerability.lua
+    Function=SimpleImmortalLoopCheck
+    _immunityDuration=5
+    _parentUpgrade=""
+    _subUpgradeType=OperatorOnDeathInvulnerabilitySubUpgrade
+    _showInvulnTimer=1
+    _showImpactMessage=1
+    _healPct={
+        0.1,
+        0.2,
+        0.30000001,
+        0.40000001,
+        0.5,
+        0.60000002
+    }
+    _cooldown=90
+}
+SubUpgrades={
+    OperatorOnDeathInvulnerabilitySubUpgrade
+}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeDuration=5
+DurationScalesWithRank=0
+ConditionTag=/Lotus/Language/Upgrades/OnLethalDamage_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionBS.png
+BaseDistillPointValue=22

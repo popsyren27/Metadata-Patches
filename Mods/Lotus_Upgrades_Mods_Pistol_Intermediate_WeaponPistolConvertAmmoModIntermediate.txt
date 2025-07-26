@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Pistol/Intermediate/WeaponPistolConvertAmmoModIntermediate
+patch not applied (yet)

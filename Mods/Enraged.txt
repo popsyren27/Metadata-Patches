@@ -1,0 +1,80 @@
+/Lotus/Powersuits/Berserker/LastStandAugmentTwoCard
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/LastStandAbilityAugment2Name
+Icon=/Lotus/Interface/Cards/Images/AbilityAugments/ValkyrHysteriaTwoAugment.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_ABILITY_AUGMENT
+    OperationType=ADD
+    Value=1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=AUGMENT_TWO
+    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/LastStandAbility
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Suits/LastStandAbilityAugment2Desc
+    LocKeyWordScript={
+    Script=/Lotus/Powersuits/PowersuitAbilities/LastStand.lua
+    Function=GetAugmentDescriptionInfo
+    _beginEffect=""
+    _activateAnim=""
+    _clawType=""
+    _deluxeClawMesh=""
+    _primeClawMesh=""
+    _colorCorrection=""
+    _endEffect=""
+    _localSequencer=""
+    _deluxeSkin=""
+    _augmentOneAnim=""
+    _augmentOneSound=""
+    _augmentOneHitSound=""
+    _showClaws=0
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_POWER
+Script={
+Script=/Lotus/Powersuits/PowersuitAbilities/LastStand.lua
+Function=AugmentTwoAdded
+_beginEffect=""
+_activateAnim=""
+_clawType=""
+_deluxeClawMesh=""
+_primeClawMesh=""
+_colorCorrection=""
+_endEffect=""
+_localSequencer=""
+_deluxeSkin=""
+_augmentOneAnim=""
+_augmentOneSound=""
+_augmentOneHitSound=""
+_showClaws=0
+}
+UnappliedScript={
+Script=/Lotus/Powersuits/PowersuitAbilities/LastStand.lua
+Function=AugmentTwoRemoved
+_beginEffect=""
+_activateAnim=""
+_clawType=""
+_deluxeClawMesh=""
+_primeClawMesh=""
+_colorCorrection=""
+_endEffect=""
+_localSequencer=""
+_deluxeSkin=""
+_augmentOneAnim=""
+_augmentOneSound=""
+_augmentOneHitSound=""
+_showClaws=0
+}

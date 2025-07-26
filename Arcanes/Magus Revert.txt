@@ -1,0 +1,72 @@
+/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/ReverseOnDash
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/ReverseOnDash
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/MagusRevertBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/SolarisMagusRevert.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Arcanes/ReverseOnDashDesc
+        LocKeyWordScript={
+            Script=ReverseVoidDash.lua
+            Function=GetDescription
+            _healAmount={
+                10,
+                20,
+                30,
+                40,
+                50,
+                60
+            }
+            _duration=3
+            _cooldown=3
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+Script={
+    Script=ReverseVoidDash.lua
+    Function=ReverseDash
+    _healAmount={
+        10,
+        20,
+        30,
+        40,
+        50,
+        60
+    }
+    _duration=3
+    _cooldown=3
+}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Events/OnVoidDashCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnVoidDashCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/SolarisMagusRevert.png
+BaseDistillPointValue=24

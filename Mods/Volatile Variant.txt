@@ -1,0 +1,69 @@
+/Lotus/Upgrades/Mods/Rifle/Event/Nightwave/NightwaveSporothrixAugmentMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/NightwaveSporothrixAugmentModName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Nightwave/NightwaveSporothrixAugmentMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=WEAPON_EXPLOSION_RADIUS
+    OperationType=SET
+    Value=4
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=SPOROTHRIX_EXPLOSIVE_BARBS
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Mods/NightwaveSporothrixAugmentModDesc
+    LocKeyWordScript={
+    Script=/Lotus/Scripts/Mods/SporothrixExplosiveBarbMod.lua
+    Function=GetLocValues
+    _punchThrough=3
+    _barbsRadius=4
+    _statusChanceLevels={
+    0.25,
+    0.30000001,
+    0.34999999,
+    0.40000001,
+    0.44999999,
+    0.5
+}
+_modProjectileType=""
+_kuvaVariant=""
+_kuvaProjectileType=""
+_shouldSpawnFxOnHit=1
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_ATTACK
+FusionPowerCurve=QC_NONE
+ItemCompatibility=/Lotus/Weapons/Infested/LongGuns/InfSniperRifle/InfSniperRifle
+Script={
+Script=/Lotus/Scripts/Mods/SporothrixExplosiveBarbMod.lua
+Function=OnApplyUpgrade
+_punchThrough=3
+_barbsRadius=4
+_statusChanceLevels={
+0.25,
+0.30000001,
+0.34999999,
+0.40000001,
+0.44999999,
+0.5
+}
+_modProjectileType=InfSniperRifleProjectileNightwaveModVariant
+_kuvaVariant=/Lotus/Weapons/Infested/InfestedLich/LongGuns/CodaSporothrix
+_kuvaProjectileType=CodaSporothrixProjectileNightwaveModVariant
+_shouldSpawnFxOnHit=1
+}
+UpgradeChance=1

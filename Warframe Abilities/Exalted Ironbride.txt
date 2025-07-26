@@ -1,0 +1,90 @@
+/Lotus/Powersuits/PowersuitAbilities/EntratiMechSwordAbility
+LocalizeTag=/Lotus/Language/Necromech/EntratiMechSwordAbilityName
+LocalizeDescTag=/Lotus/Language/Necromech/EntratiMechSwordAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/Mech/ThanomechSword.png
+UniquePowerIdentifier=MECH_SWORD
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE,
+    ""
+}
+Script={
+    Script=/Lotus/Powersuits/EntratiMech/SwordAbility.lua
+    Function=ActivateAbility
+    _buffEffectType=""
+    _enterAnim=/Lotus/Animations/Orokin/NechroTech/SwordEquip_anim.fbx
+    _deactivateSound=/Lotus/Sounds/Vehicles/NechroMech/Abilities/ThanoMechSwordSheath
+    _localAttachEffect=""
+    _bashAbilityType=EntratiMechShieldBashAbility
+    _exaltedSlot=SLOT_8
+    _meleeSlot=SLOT_6
+    _heavyWeaponSlot=SLOT_11
+    _energyPerSecondConsumption=2.5
+    _isAiAbility=0
+    _meleeTreeTypes={
+        /Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/Thanotech/ThanoTechMeleeTree,
+        /Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/Thanotech/ThanoTechMeleeTree,
+        /Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/NechroTech/AbilitySword/AbilitySwordMeleeTree,
+        /Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/NechroTech/AbilitySword/AbilitySwordAndShieldMeleeTree
+    }
+    _npcMeleeActivationDelay={20,20}
+    _npcMeleeDeactivationDelay={20,20}
+    _useCameraOffset=0
+    _cameraOffset={0,0,0}
+}
+SecondaryScripts={
+    {
+        tag=GiveWeapon
+        executionMode=EM_HOST
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=/Lotus/Powersuits/EntratiMech/SwordAbility.lua
+            Function=GiveSword
+            _buffEffectType=""
+            _enterAnim=/Lotus/Animations/Orokin/NechroTech/SwordEquip_anim.fbx
+            _deactivateSound=""
+            _localAttachEffect=""
+            _bashAbilityType=EntratiMechShieldBashAbility
+            _exaltedSlot=SLOT_8
+            _meleeSlot=SLOT_6
+            _heavyWeaponSlot=SLOT_11
+            _energyPerSecondConsumption=0
+            _isAiAbility=0
+            _meleeTreeTypes={}
+            _npcMeleeActivationDelay={20,20}
+            _npcMeleeDeactivationDelay={20,20}
+            _useCameraOffset=0
+            _cameraOffset={0,0,0}
+        }
+        },
+        {
+            tag=RemoveWeapon
+            executionMode=EM_HOST
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=/Lotus/Powersuits/EntratiMech/SwordAbility.lua
+                Function=RemoveSword
+                _buffEffectType=""
+                _enterAnim=""
+                _deactivateSound=""
+                _localAttachEffect=""
+                _bashAbilityType=EntratiMechShieldBashAbility
+                _exaltedSlot=SLOT_8
+                _meleeSlot=SLOT_6
+                _heavyWeaponSlot=SLOT_11
+                _energyPerSecondConsumption=0
+                _isAiAbility=0
+                _meleeTreeTypes={}
+                _npcMeleeActivationDelay={20,20}
+                _npcMeleeDeactivationDelay={20,20}
+                _useCameraOffset=0
+                _cameraOffset={0,0,0}
+            }
+        }
+    }
+    EnergyConsumptionOverTime=2.5
+    AllowToggle=1
+    CastSound=/Lotus/Sounds/Vehicles/NechroMech/Abilities/ThanoMechSwordUnsheath
+    HideMeleeWeapon=0
+    VideoTexture=/Lotus/Interface/AbilityVideos/Necramech/BonewidowPower4_s.bk2

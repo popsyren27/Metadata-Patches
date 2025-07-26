@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Melee/Expert/WeaponCritChanceModExpert
+patch not applied (yet)

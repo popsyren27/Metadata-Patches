@@ -1,0 +1,39 @@
+/Lotus/Upgrades/Mods/Shotgun/WeaponStunChanceMod
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/ShotgunModStunChance
+Icon=/Lotus/Interface/Cards/Images/Shotgun/StatusChanceShotgunMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=WEAPON_PROC_CHANCE
+    OperationType=STACKING_MULTIPLY
+    Value=0.15000001
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/StatusChance
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_DEFENSE
+BaseDrain=QA_MEDIUM
+ItemCompatibility=/Lotus/Weapons/Tenno/Shotgun/LotusShotgun
+IncludeInBoosterPack=1

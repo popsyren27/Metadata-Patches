@@ -1,0 +1,46 @@
+/Lotus/Upgrades/Mods/Hoverboard/HBColdLeakMod
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Hoverboards/HoverboardColdLeakMod
+Icon=/Lotus/Interface/Cards/Images/Hoverboard/HoverboardModR.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Hoverboards/HoverboardColdLeakModDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBColdLeak.lua
+    Function=GetDescriptionInfo
+    _ColdLeakFX=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_MEDIUM
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Types/Vehicles/Hoverboard/HoverboardSuit
+Script={
+Script=/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBColdLeak.lua
+Function=AddUpgrades
+_ColdLeakFX=/Lotus/Fx/Gameplay/HoverBoard/Abilities/ColdLeakBlast
+}
+UnappliedScript={
+Script=/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBColdLeak.lua
+Function=RemoveUpgrades
+_ColdLeakFX=""
+}

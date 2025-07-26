@@ -1,0 +1,65 @@
+/Lotus/Powersuits/PowersuitAbilities/DragonScalesAbility
+LocalizeTag=/Lotus/Language/Suits/DragonScalesAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/DragonScalesAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/DragonDragonScales.png
+UniquePowerIdentifier=CHROMA_VEX_ARMOR
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=DragonScales.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Dragon/DragonScales_anim.fbx
+    _attachEffectsType=/Lotus/Fx/PowersuitAbilities/Dragon/DragonScalesAttach
+    _attachIndicator=/Lotus/Fx/PowersuitAbilities/Dragon/DragonScalesFlowSparks
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Dragon/ScalesCast
+    _deactivateSound=/Lotus/Sounds/Warframes/Dragon/DragonScalesDeactivate
+    _augmentOneBlastEffect=/Lotus/Fx/PowersuitAbilities/Dragon/VexArmorAugmentOneBlast
+    _augmentOnePunctureEffect=/Lotus/Fx/PowersuitAbilities/Dragon/VexArmorAugmentOnePuncture
+    _healthAbilityBuffType=/Lotus/Powersuits/Dragon/DragonScalesHealthAbilityBuff
+    _shieldAbilityBuffType=/Lotus/Powersuits/Dragon/DragonScalesShieldAbilityBuff
+}
+AbilityEvents={
+    {
+        tag=AugmentTwoOnKill
+        eventType=ET_ON_KILL
+        scriptInstance={
+            Script=DragonScales.lua
+            Function=AugmentTwoOnKill
+            _activateAnim=""
+            _attachEffectsType=""
+            _attachIndicator=""
+            _castEffect=""
+            _deactivateSound=""
+            _augmentOneBlastEffect=""
+            _augmentOnePunctureEffect=""
+            _healthAbilityBuffType=""
+            _shieldAbilityBuffType=""
+        }
+        },
+        {
+            tag=OnKill
+            eventType=ET_ON_KILL
+            scriptInstance={
+                Script=DragonScales.lua
+                Function=OnKill
+                _activateAnim=""
+                _attachEffectsType=""
+                _attachIndicator=""
+                _castEffect=""
+                _deactivateSound=""
+                _augmentOneBlastEffect=""
+                _augmentOnePunctureEffect=""
+                _healthAbilityBuffType=""
+                _shieldAbilityBuffType=""
+            }
+        }
+    }
+    NpcCooldownDuration=30
+    EnergyRequiredToActivate=75
+    AllowReactivate=1
+    AllowOnZipLines=1
+    AllowDuringOverride=1
+    ActivationXP=75
+    CastSound=/Lotus/Sounds/Warframes/Dragon/DragonAbilityCast
+    VideoTexture=/Lotus/Interface/AbilityVideos/ChromaPower3_s.bk2

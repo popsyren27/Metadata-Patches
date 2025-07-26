@@ -1,7 +1,0 @@
-/Lotus/Upgrades/Mods/Immortal/AntivirusFiveMod
-MarketMode=MM_HIDDEN
-LocalizeTag=/Lotus/Language/1999Coda/AntivirusFiveModName
-LocalizeDescTag=/Lotus/Language/1999Coda/AntivirusFiveModDesc
-Icon=/Lotus/Interface/Icons/Antivirus/DriveDuster.png
-ExcludeFromCodex=0
-ImmortalGroup=2

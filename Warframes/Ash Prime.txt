@@ -1,0 +1,133 @@
+/Lotus/Powersuits/Ninja/AshPrime
+MarketMode=MM_HIDDEN
+SellingPrice=25000
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Ninja/AshPrimeHelmet,
+    NinjaStormWeaponPrime
+}
+LocalizeTag=/Lotus/Language/Primes/AshPrimeName
+LocalizeDescTag=/Lotus/Language/Primes/AshPrimeDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Primes/AshPrime.png
+Diorama=/Lotus/Levels/Episodes/WarframesAshPrime.level
+ExcludeFromCodex=0
+AvailableOnPvp=1
+ArtifactSlots={
+    AP_UNIVERSAL,
+    AP_TACTIC,
+    AP_UNIVERSAL,
+    AP_ATTACK,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_ATTACK,
+    AP_ATTACK,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
+}
+DefaultCustomization={
+    Helmet={
+        ItemType=/Lotus/Upgrades/Skins/Ninja/AshPrimeHelmet
+    }
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0.050000001,0.0099999998,-0.125}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.087155998,0,0,0.99619502}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={-0.050000001,-0.0099999998,0.125}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.087155998,0,0,0.99619502}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Ninja/AshPrimeSkin
+    }
+}
+VariantType=VT_PRIME
+Mesh=/Lotus/Characters/Tenno/Ninja/AshPrimeBody_skel.fbx
+OverrideMaterials={
+    /Lotus/Characters/Tenno/Ninja/AshPrimeBody
+}
+PassiveAbilityLocTag=/Lotus/Language/Primes/AshPrimePassiveAbility
+MovementSpeedMultiplier=1.2
+PvpBulletJumpSpeedMultiplier=0.80000001
+MaxShieldOverride=365
+ArmourRatingOverride=185
+IsPrime=1
+AttachedFX={
+    {
+        LocalPosition={0,0,0}
+        LocalRotation={0,0,0,1}
+        BoneName=GAME_C1_ROOT
+        Type=/Lotus/Fx/PowersuitAbilities/Ninja/NinjaAttach
+        Chance=255
+        RelativeToBounds=0
+        Attach=1
+        DestroyWithOwner=1
+        DestroyParentOnDeath=0
+        FadeOutOnDestruction=0
+        Scale=1
+        },
+        {
+            LocalPosition={0,0,0}
+            LocalRotation={0,0,0,1}
+            BoneName=GAME_L1_TWIST2
+            Type=/Lotus/Characters/Tenno/Ninja/LeftBladeDeco
+            Chance=255
+            RelativeToBounds=0
+            Attach=1
+            DestroyWithOwner=1
+            DestroyParentOnDeath=0
+            FadeOutOnDestruction=0
+            Scale=1
+            },
+            {
+                LocalPosition={0,0,0}
+                LocalRotation={0,0,0,1}
+                BoneName=GAME_R1_TWIST2
+                Type=/Lotus/Characters/Tenno/Ninja/RightBladeDeco
+                Chance=255
+                RelativeToBounds=0
+                Attach=1
+                DestroyWithOwner=1
+                DestroyParentOnDeath=0
+                FadeOutOnDestruction=0
+                Scale=1
+                },
+                {
+                    LocalPosition={0,0,0}
+                    LocalRotation={0,0,0,1}
+                    BoneName=""
+                    Type=/Lotus/Characters/Tenno/Ninja/AshPrimeExtrasDeco
+                    Chance=255
+                    RelativeToBounds=0
+                    Attach=1
+                    DestroyWithOwner=1
+                    DestroyParentOnDeath=0
+                    FadeOutOnDestruction=0
+                    Scale=1
+                }
+            }
+            MiniMapIcon=/Lotus/Interface/Icons/Markers/Powersuits/AshPrimePortrait.png
+            MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Powersuits/LargePortraits/AshPrimeLargePortrait.png
+            SpecialSlotItem={
+                SPECIAL_A_SLOT={
+                    ItemType=NinjaStormWeaponPrime
+                }
+            }

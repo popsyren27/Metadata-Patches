@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Warframe/Intermediate/AvatarDamageResistanceKnockdownIntermediate
+patch not applied (yet)

@@ -1,0 +1,2 @@
+/Lotus/Powersuits/Harlequin/Harlequin
+MarketMode=MM_VISIBLE

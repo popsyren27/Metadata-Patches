@@ -1,0 +1,37 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/DuplicateStatusOnKnock
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/DuplicateStatusName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionDH.png
+ExcludeFromCodex=0
+ApplyUpgradesByDefault=0
+Script={
+    Script=DuplicateStatus.lua
+    Function=DuplicateStatusEffects
+    _duplicateNum=1
+    _duplciateNumPerFusionLevel=1
+    _failOnActiveProcs={
+        PT_KNOCKED_DOWN
+    }
+}
+EnhancementTag=/Lotus/Language/Arcanes/DuplicateStatusDesc
+EnhancementTagLocScript={
+    Script=DuplicateStatus.lua
+    Function=GetDescription
+    _duplicateNum=1
+    _duplciateNumPerFusionLevel=1
+    _failOnActiveProcs={
+        PT_KNOCKED_DOWN
+    }
+}
+UpgradeChance=1
+UpgradeChanceScalePerRank=0.1
+ConditionalUpgrades={
+    OnMeleeKnockdownCondition,
+    OnRagdollCondition,
+    OnLiftedCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDABuff.png
+RequiresSourceObject=1
+BaseDistillPointValue=24

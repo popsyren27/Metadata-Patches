@@ -1,0 +1,55 @@
+/Lotus/Powersuits/PowersuitAbilities/BrokenDestructAbility
+LocalizeTag=/Lotus/Language/Suits/BrokenDestructAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/BrokenDestructAbilityDesc
+StatusDescTag=/Lotus/Language/Buffs/DodgeChanceBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/BrokenFrameSelfDestruct.png
+UniquePowerIdentifier=BROKEN_DESTRUCT
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE,
+    EFFECT_DEBUFF,
+    EFFECT_BUFF
+}
+Script={
+    Script=BrokenDestruct.lua
+    Function=ActivateAbility
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Broken/DestructCast
+    _attachEffect=/Lotus/Fx/PowersuitAbilities/Broken/DestructAttach
+    _burstEffect=/Lotus/Fx/PowersuitAbilities/Broken/SelfDestructBurst
+    _rangeDeco=/Lotus/Fx/PowersuitAbilities/Broken/DestructRangeDeco
+    _rangeAttach=/Lotus/Fx/PowersuitAbilities/Broken/DestructRangeAttach
+    _deactivateSound=/Lotus/Sounds/Warframes/BrokenFrame/BrokenFrameDestructEnd
+    _brokenPrimeActivateAnim=/Lotus/Animations/Tenno/Powers/Broken/SelfDestructPrimeGold_anim.fbx
+}
+NpcCooldownDuration=15
+EnergyRequiredToActivate=100
+AllowReactivate=1
+AllowDuringOverride=1
+VideoTexture=/Lotus/Interface/AbilityVideos/XakuPower4_s.bk2
+SoundEvents={
+    {
+        EventName=SFXBrokenFrameDestructCast
+        Sound=/Lotus/Sounds/Warframes/BrokenFrame/BrokenFrameDestructCast
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=SFXBrokenFrameDestructRelease
+            Sound=/Lotus/Sounds/Warframes/BrokenFrame/BrokenFrameDestructRelease
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+        }
+    }
+    ResourceOverrides={
+        {
+            Tag=DestructEnemyAttach
+            Resource=/Lotus/Fx/PowersuitAbilities/Broken/DestructEnemyAttach
+            },
+            {
+                Tag=BrokenDestructAnim
+                Resource=/Lotus/Animations/Tenno/Powers/Broken/SelfDestruct_anim.fbx
+            }
+        }

@@ -1,0 +1,88 @@
+/Lotus/Upgrades/Mods/DualSource/Pistol/MultishotDodgeMod
+LocalizeTag=/Lotus/Language/Mods/TacticalDiffusionMod
+Icon=/Lotus/Interface/Cards/Images/DualSource/TacticalDiffusion.png
+TradeCapability=RO_NEVER
+Upgrades={
+{
+    UpgradeType=WEAPON_FIRE_ITERATIONS
+    OperationType=STACKING_MULTIPLY
+    Value=0.1825
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponMultishotModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=AVATAR_ACROBATIC_SPEED
+    OperationType=STACKING_MULTIPLY
+    Value=0.1
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/DodgeSpeedModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=AVATAR_DODGE_SPEED
+    OperationType=STACKING_MULTIPLY
+    Value=0.1
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+BaseDrain=QA_VERY_HIGH
+IncompatibilityTags={
+SENTINEL_WEAPON
+}
+IncludeInBoosterPack=0
+IsAmalgam=1
+IsUnsellable=1

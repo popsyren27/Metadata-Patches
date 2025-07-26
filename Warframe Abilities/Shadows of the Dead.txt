@@ -1,0 +1,74 @@
+/Lotus/Powersuits/PowersuitAbilities/CloneTheDeadAbility
+LocalizeTag=/Lotus/Language/Suits/CloneTheDeadAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/CloneTheDeadAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/NecroCloneTheDead.png
+UniquePowerIdentifier=NEKROS_SHADOWS_OF_THE_DEAD
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=CloneTheDead.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Necro/CloneTheDead_anim.fbx
+    _healAnim=/Lotus/Animations/Tenno/Powers/Necro/CloneTheDeadHeal_anim.fbx
+    _attachFx=/Lotus/Fx/PowersuitAbilities/Necro/CloneTheDeadTeleportIn
+    _castFx=/Lotus/Fx/PowersuitAbilities/Necro/CloneTheDeadCast
+    _overrideMaterial=/Lotus/Fx/PowersuitAbilities/Necro/ShadowsOfTheDeadAvatarMat
+    _powerSuitsToDisable={}
+    _helperType=/Lotus/Powersuits/Necro/CloneTheDeadHelper
+    _augmentLinkBeamFx=/Lotus/Fx/PowersuitAbilities/Necro/CloneTheDeadAugmentOneBeam
+    _augmentOneAttachType=/Lotus/Fx/PowersuitAbilities/Necro/CloneTheDeadAugmentOneProj
+    _defaultEnergyColor={157,100,230,255}
+}
+SecondaryScripts={
+    {
+        tag=SpawnOrHeal
+        executionMode=EM_HOST
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=CloneTheDead.lua
+            Function=SpawnOrHeal
+            _activateAnim=""
+            _healAnim=""
+            _attachFx=/Lotus/Fx/PowersuitAbilities/Necro/CloneTheDeadTeleportIn
+            _castFx=""
+            _overrideMaterial=""
+            _powerSuitsToDisable={}
+            _helperType=""
+            _augmentLinkBeamFx=""
+            _augmentOneAttachType=""
+            _defaultEnergyColor={157,100,230,255}
+        }
+        },
+        {
+            tag=NewSpawn
+            executionMode=EM_ALL
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=CloneTheDead.lua
+                Function=NewSpawn
+                _activateAnim=""
+                _healAnim=""
+                _attachFx=""
+                _castFx=""
+                _overrideMaterial=""
+                _powerSuitsToDisable={}
+                _helperType=/Lotus/Powersuits/Necro/CloneTheDeadHelper
+                _augmentLinkBeamFx=/Lotus/Fx/PowersuitAbilities/Necro/CloneTheDeadAugmentOneBeam
+                _augmentOneAttachType=/Lotus/Fx/PowersuitAbilities/Necro/CloneTheDeadAugmentOneProj
+                _defaultEnergyColor={157,100,230,255}
+            }
+        }
+    }
+    NpcCooldownDuration=40
+    EnergyRequiredToActivate=100
+    VideoTexture=/Lotus/Interface/AbilityVideos/NekrosPower4_s.bk2
+    ForceFeedbackEffectEvents={
+        {
+            EventName=NecroImpactFeedback
+            ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerChargeLight
+        }
+    }
+    PvpDescription=/Lotus/Language/Suits/CloneTheDeadAbilityPvPDesc

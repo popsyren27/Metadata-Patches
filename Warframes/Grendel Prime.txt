@@ -1,0 +1,79 @@
+/Lotus/Powersuits/Devourer/GrendelPrime
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Primes/GrendelPrimeName
+LocalizeDescTag=/Lotus/Language/Primes/GrendelPrimeDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Primes/GrendelPrime.png
+Diorama=/Lotus/Levels/Episodes/WarframesGrendelPrime.level
+ExcludeFromCodex=0
+ArtifactSlots={
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_ATTACK,
+    AP_UNIVERSAL,
+    AP_DEFENSE,
+    AP_DEFENSE,
+    AP_TACTIC,
+    AP_TACTIC,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
+}
+DefaultCustomization={
+    Helmet={
+        ItemType=/Lotus/Upgrades/Skins/Devourer/GrendelPrimeHelmet
+    }
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0.090000004,0.025,-0.17}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.095352001,-0.25391701,-0.019437,0.962318}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={-0.090000004,-0.025,0.17}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.084186003,-0.25783399,0.022557,0.96224999}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Devourer/GrendelPrimeSkin
+    }
+}
+VariantType=VT_PRIME
+Mesh=/Lotus/Characters/Tenno/Devourer/GrendelPrime/GrendelPrimeBody_skel.fbx
+MaxEnergy=200
+InitialEnergy=115
+ArmourRatingOverride=400
+IsPrime=1
+AttachedFX={
+    {
+        LocalPosition={0,0,0}
+        LocalRotation={0,0,0,1}
+        BoneName=""
+        Type=/Lotus/Characters/Tenno/Devourer/GrendelPrime/GrendelPrimeBodyExtrasDeco
+        Chance=255
+        RelativeToBounds=0
+        Attach=1
+        DestroyWithOwner=1
+        DestroyParentOnDeath=0
+        FadeOutOnDestruction=0
+        Scale=1
+    }
+}
+SimCollision=GrendelPrimeSimCollision
+MiniMapIcon=/Lotus/Interface/Icons/Markers/Powersuits/GrendelPrimePortrait.png
+MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Powersuits/LargePortraits/GrendelPrimeLargePortrait.png

@@ -1,0 +1,4 @@
+/Lotus/Powersuits/Priest/Priest
+MarketMode=MM_VISIBLE
+ExcludeFromCodex=0
+MaxHealthOverride=270

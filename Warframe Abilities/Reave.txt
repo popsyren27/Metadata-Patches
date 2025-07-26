@@ -1,0 +1,121 @@
+/Lotus/Powersuits/PowersuitAbilities/RevenantAfflictionAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/RevenantAfflictionAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/RevenantAfflictionAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/RevenantReave.png
+UniquePowerIdentifier=REVENANT_AFFLICTION
+AdditionalPowerIdentifiers={
+    EFFECT_MOBILITY
+}
+Script={
+    Script=RevenantAffliction.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Revenant/FinalAfflictionV2_anim.fbx
+    _activateFreezeAnim=/Lotus/Animations/Tenno/Powers/Revenant/FinalAfflictionV2End
+    _triggerType=/Lotus/Powersuits/Revenant/AfflictionScriptTrigger
+    _fightingTriggerType=/Lotus/Powersuits/Revenant/AfflictionFightingScriptTrigger
+    _rebornActiveCastSound=/Lotus/Sounds/Warframes/Revenant/RevenantAfflictionImpact
+    _augmentBlindEffect=""
+}
+SecondaryScripts={
+    {
+        tag=DoAugmentBlind
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=RevenantAffliction.lua
+            Function=DoAugmentBlind
+            _activateAnim=""
+            _activateFreezeAnim=""
+            _triggerType=""
+            _fightingTriggerType=""
+            _rebornActiveCastSound=""
+            _augmentBlindEffect=/Lotus/Fx/PowersuitAbilities/Excalibur/BlindedSpawner
+        }
+    }
+}
+InputEvents={
+    {
+        tag=OnJump
+        inputCode=JUMP
+        onDown=1
+        scriptInstance={
+            Script=RevenantAffliction.lua
+            Function=OnJump
+            _activateAnim=""
+            _activateFreezeAnim=""
+            _triggerType=""
+            _fightingTriggerType=""
+            _rebornActiveCastSound=""
+            _augmentBlindEffect=""
+        }
+    }
+}
+EnergyRequiredToActivate=50
+AllowToggle=1
+ActivationXP=50
+VideoTexture=/Lotus/Interface/AbilityVideos/RevenantPower3_s.bk2
+SoundEvents={
+    {
+        EventName=SFXRevenantAfflictionCast
+        Sound=/Lotus/Sounds/Warframes/Revenant/RevenantAfflictionCast
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=SFXRevenantAfflictionImpact
+            Sound=/Lotus/Sounds/Warframes/Revenant/RevenantAfflictionImpact
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+        }
+    }
+    ForceFeedbackEffectEvents={
+        {
+            EventName=RevenantImpactFeedback
+            ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerImpact
+        }
+    }
+    ParticleEvents={
+        {
+            EventName=AfflictionCastLeft
+            ParticleSys=/Lotus/Fx/PowersuitAbilities/Revenant/AfflictionCastLeft
+            Attached=1
+            OwnedByAvatar=0
+            UseOtherEntity=0
+            Bone=GAME_L1_WEAPON1
+            LocalPosition={0,0,0}
+            LocalRotation={0,0,0,1}
+            Context=PEC_ALL
+        }
+    }
+    ResourceOverrides={
+        {
+            Tag=AfflictionCast
+            Resource=/Lotus/Fx/PowersuitAbilities/Revenant/AfflictionCast
+            },
+            {
+                Tag=AfflictionCastBurst
+                Resource=/Lotus/Fx/PowersuitAbilities/Revenant/AfflictionCastBurst
+                },
+                {
+                    Tag=AfflictionAttach
+                    Resource=/Lotus/Fx/PowersuitAbilities/Revenant/AfflictionAttach
+                    },
+                    {
+                        Tag=AfflictionDeco
+                        Resource=/Lotus/Fx/PowersuitAbilities/Revenant/AfflictionSmokeWallDeco
+                        },
+                        {
+                            Tag=AfflictionBeam
+                            Resource=/Lotus/Fx/PowersuitAbilities/Revenant/AfflictionMarkBeam
+                            },
+                            {
+                                Tag=AfflictionExplode
+                                Resource=/Lotus/Fx/PowersuitAbilities/Revenant/AfflictionExplode
+                            }
+                        }

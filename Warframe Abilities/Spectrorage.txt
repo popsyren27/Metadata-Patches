@@ -1,0 +1,49 @@
+/Lotus/Powersuits/PowersuitAbilities/GlassFragmentAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/GlassFragmentAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/GlassFragmentAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/GlassFragmentedReality.png
+UniquePowerIdentifier=GLASS_FRAGMENT
+AdditionalPowerIdentifiers={
+    EFFECT_PERCEPTION,
+    EFFECT_DAMAGE
+}
+Script={
+    Script=GlassFragment.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Glass/FragmentedReality_anim.fbx
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Glass/FragmentCast
+    _castBurstEffect=/Lotus/Fx/PowersuitAbilities/Glass/FragmentCastBurst
+    _mirrorDecoType=/Lotus/Powersuits/Glass/FragmentDeco
+    _mirrorPrimeDecoType=/Lotus/Powersuits/Glass/FragmentPrimeDeco
+    _spawnEffect=/Lotus/Fx/PowersuitAbilities/Glass/FragmentSpawn
+    _fragmentDeath=/Lotus/Fx/PowersuitAbilities/Glass/FragmentDeath
+    _fragmentDeathSimple=/Lotus/Fx/PowersuitAbilities/Glass/FragmentDeathSimple
+    _burstEffect=/Lotus/Fx/PowersuitAbilities/Glass/FragmentAreaBurst
+    _fragmentAttach=""
+    _augmentOrbType=/Lotus/Types/PickUps/EnergyIncreaseSmall
+}
+NpcCooldownDuration=70
+EnergyRequiredToActivate=75
+AllowReactivate=1
+AllowDuringOverride=1
+ActivationXP=75
+VideoTexture=/Lotus/Interface/AbilityVideos/GaraPower3_s.bk2
+SoundEvents={
+    {
+        EventName=SFXFragmentedCast
+        Sound=/Lotus/Sounds/Warframes/Glass/GlassFragmentedCast
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=SFXFragmentedImpact
+            Sound=/Lotus/Sounds/Warframes/Glass/GlassFragmentedImpact
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+        }
+    }

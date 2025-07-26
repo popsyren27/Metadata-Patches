@@ -1,0 +1,77 @@
+/Lotus/Upgrades/Mods/Rifle/Event/Arbitration/GrnAssaultRifleArbitrationMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/GrakataArbitrationMod
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Rifle/GrnAssaultRifleArbitrationMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Mods/GrakataArbitrationModDesc
+    LocKeyWordScript={
+    Script=/Lotus/Scripts/Mods/GrakataAltFire.lua
+    Function=GetLocValues
+    _burstDelays={
+    0.025,
+    0.022500001,
+    0.02,
+    0.0175,
+    0.015,
+    0.0125
+}
+_reloadPercent={
+0.25,
+0.40000001,
+0.55000001,
+0.69999999,
+0.85000002,
+1
+}
+_modType=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_TACTIC
+BaseDrain=QA_MEDIUM
+ItemCompatibility=/Lotus/Weapons/Grineer/LongGuns/GrineerAssaultRifle/GrnAssaultRifle
+IncompatibilityTags={
+POWER_WEAPON
+}
+Script={
+Script=/Lotus/Scripts/Mods/GrakataAltFire.lua
+Function=ActivateAlternateFire
+_burstDelays={
+0.025,
+0.022500001,
+0.02,
+0.0175,
+0.015,
+0.0125
+}
+_reloadPercent={
+0.25,
+0.40000001,
+0.55000001,
+0.69999999,
+0.85000002,
+1
+}
+_modType=""
+}
+PlayEffect=0

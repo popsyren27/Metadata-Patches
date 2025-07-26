@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Warframe/Intermediate/AvatarChanceToLootIntermediate
+patch not applied (yet)

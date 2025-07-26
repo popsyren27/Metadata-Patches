@@ -1,0 +1,49 @@
+/Lotus/Upgrades/Mods/PvPMods/Rifle/MoreDamageonTripleTapRifleMod
+LocalizeTag=/Lotus/Language/Mods/MoreDamageonTripleTapRifleMod
+Icon=/Lotus/Interface/Cards/Images/PvP/Rifle/LatronThree.png
+AvailableOnPve=1
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/BonusDamageOnNextHit
+    LocKeyWordScript={
+    Script=/Lotus/Upgrades/CosmeticEnhancers/Offensive/BonusDamageOnNextHit.lua
+    Function=GetModDescriptionInfo
+    _bonusDamagePercent=0.050000001
+    _multTimeWindow=0.5
+    _hudBuffType=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_VERY_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/Rifle/SemiAutoRifle
+Script={
+Script=/Lotus/Upgrades/CosmeticEnhancers/Offensive/BonusDamageOnNextHit.lua
+Function=ApplyUpgrade
+_bonusDamagePercent=0.050000001
+_multTimeWindow=0.5
+_hudBuffType=/Lotus/Upgrades/CosmeticEnhancers/Offensive/BonusDamageOnNextHitHudBuff
+}
+UnappliedScript={
+Script=/Lotus/Upgrades/CosmeticEnhancers/Offensive/BonusDamageOnNextHit.lua
+Function=UnApplyUpgrade
+_bonusDamagePercent=0.050000001
+_multTimeWindow=1
+_hudBuffType=""
+}

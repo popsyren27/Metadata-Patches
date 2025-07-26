@@ -1,0 +1,152 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/OrbsOnResidualContact
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/StatusProjectilesOnResidualContact
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/TheoremContagionBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/TheoremContagion.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Arcanes/StatusProjectilesOnResidualContactDesc
+        LocKeyWordScript={
+            Script=/Lotus/Upgrades/CosmeticEnhancers/Utility/ResidualTrigger.lua
+            Function=GetOrbDescription
+            _duration=3
+            _baseDamage=10
+            _maxStacks=15
+            _upgradePct={
+                0.0099999998,
+                0.02,
+                0.029999999,
+                0.039999999,
+                0.050000001,
+                0.059999999
+            }
+            _weaponDamageUpgrade=""
+            _damageType=DT_POISON
+            _outsideTriggerDuration=5
+            _petDamageUpgrade=""
+            _petDamageTrigger=""
+            _petDamageTriggerRadius={
+                15,
+                30,
+                45,
+                60,
+                75,
+                90
+            }
+            _diminishedPetBuffTypes={}
+            _diminishPct=0.1
+            _orbsUpgrade=""
+            _orbSpawnTime=2
+            _orbDamage={
+                150,
+                150,
+                150,
+                150,
+                150,
+                150
+            }
+            _orbDuration={
+                30,
+                30,
+                30,
+                30,
+                30,
+                30
+            }
+            _orbDebuffDuration={
+                6,
+                6,
+                6,
+                6,
+                6,
+                6
+            }
+            _orbDebuffPct={
+                0.25,
+                0.5,
+                0.75,
+                1,
+                1.5,
+                2
+            }
+            _orbType=""
+            _orbProjectileType=""
+            _orbAttachDeco=""
+            _orbRange=15
+            _orbSound=""
+            _invalidTargetTypes={}
+            _growCysts=0
+            _cystSpawnTime=3
+            _cystDamage=20
+            _cystRadius=2.5
+            _cystDeco=""
+            _cystExplodeFx=""
+            _lightningStrikes=0
+            _lightningRange=2.5
+            _lightningDamage=50
+            _lightningInterval=2
+            _lightningBeam=""
+            _lightningBoneSym=GAME_C1_SPINE1
+            _lightningSpikeSpawner=""
+            _petBuffFxType=""
+            _weapBuffFxType=""
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ExtraUpgrades={
+    {
+        UpgradeType=GAMEPLAY_FREE_REVIVE_COUNT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerBonusRevive
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+FusionLimit=QA_HIGH
+IncompatibilityTags={
+    OPERATOR_SUIT,
+    TNJETTURBINEPISTOL
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/TheoremContagionStatusEffect.png
+BaseDistillPointValue=24

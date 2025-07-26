@@ -1,0 +1,7 @@
+/Lotus/Upgrades/Mods/Immortal/ImmortalEightMod
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/ImmortalEightModName
+LocalizeDescTag=/Lotus/Language/Mods/ImmortalEightModDesc
+Icon=/Lotus/Interface/Icons/ImmortalRunes/ImmortalRuneTime.png
+ExcludeFromCodex=0
+ImmortalGroup=1

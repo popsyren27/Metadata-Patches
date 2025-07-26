@@ -1,7 +1,0 @@
-/Lotus/Upgrades/Mods/Immortal/AntivirusFourMod
-MarketMode=MM_HIDDEN
-LocalizeTag=/Lotus/Language/1999Coda/AntivirusFourModName
-LocalizeDescTag=/Lotus/Language/1999Coda/AntivirusFourModDesc
-Icon=/Lotus/Interface/Icons/Antivirus/KeepClean.png
-ExcludeFromCodex=0
-ImmortalGroup=2

@@ -1,0 +1,57 @@
+/Lotus/Powersuits/PowersuitAbilities/TempleSoloAbility
+LocalizeTag=/Lotus/Language/Suits/TempleSoloAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/TempleSoloAbilityDesc
+StatusDescTag=/Lotus/Language/Suits/TempleSoloAbilityBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/TempleSolo.png
+UniquePowerIdentifier=TEMPLE_SOLO
+Script={
+    Script=TempleSolo.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Glamrock/Solo_anim.fbx
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Temple/TempleSoloCast
+}
+SecondaryScripts={
+    {
+        tag=UpdateSoloAbilityStack
+        executionMode=EM_ALL
+        inheritPrimary=1
+        functionName=UpdateSoloAbilityStack
+        scriptInstance={
+            Script=TempleSolo.lua
+            Function=UpdateSoloAbilityStack
+            _activateAnim=/Lotus/Animations/Tenno/Powers/Glamrock/Solo_anim.fbx
+            _castEffect=/Lotus/Fx/PowersuitAbilities/Temple/TempleSoloCast
+        }
+        },
+        {
+            tag=RunDecayPostMigration
+            executionMode=EM_ALL
+            inheritPrimary=1
+            functionName=RunDecayPostMigration
+            scriptInstance={
+                Script=TempleSolo.lua
+                Function=RunDecayPostMigration
+                _activateAnim=/Lotus/Animations/Tenno/Powers/Glamrock/Solo_anim.fbx
+                _castEffect=/Lotus/Fx/PowersuitAbilities/Temple/TempleSoloCast
+            }
+        }
+    }
+    AbilityEvents={
+        {
+            tag=OnAbilityActivate
+            eventType=ET_ON_ABILITY_ACTIVATE
+            scriptInstance={
+                Script=TempleSolo.lua
+                Function=OnAbilityActivate
+                _activateAnim=""
+                _castEffect=""
+            }
+        }
+    }
+    NpcCooldownDuration=10
+    EnergyRequiredToActivate=50
+    PvpEnergyRequiredToActivate=50
+    AllowReactivate=1
+    ActivationXP=10
+    CastSound=/Lotus/Sounds/Warframes/Temple/TempleSoloCast
+    VideoTexture=/Lotus/Interface/AbilityVideos/TemplePower3.bk2

@@ -1,0 +1,101 @@
+/Lotus/Powersuits/PowersuitAbilities/LightAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/EclipseAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/EclipseAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/HarlequinLightDark.png
+UniquePowerIdentifier=MIRAGE_ECLIPSE
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=Light.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Loki/Decoy_anim.fbx
+    _lightPowerEffect=/Lotus/Fx/PowersuitAbilities/Harlequin/LightDarkLightAttach
+    _darkPowerEffect=/Lotus/Fx/PowersuitAbilities/Harlequin/LightDarkDarkAttach
+    _lightMaterials={
+        /Lotus/Fx/PowersuitAbilities/Harlequin/LightAvatarMat,
+        /Lotus/Fx/PowersuitAbilities/Harlequin/LightAvatarMatB
+    }
+    _lightMaterialsPacked={
+        /Lotus/Fx/PowersuitAbilities/Harlequin/LightAvatarMatPacked,
+        /Lotus/Fx/PowersuitAbilities/Harlequin/LightAvatarMatPackedB
+    }
+    _darkMaterials={
+        /Lotus/Fx/PowersuitAbilities/Harlequin/DarkAvatarMat,
+        /Lotus/Fx/PowersuitAbilities/Harlequin/DarkAvatarMatB
+    }
+    _darkMaterialsPacked={
+        /Lotus/Fx/PowersuitAbilities/Harlequin/DarkAvatarMatPacked,
+        /Lotus/Fx/PowersuitAbilities/Harlequin/DarkAvatarMatPackedB
+    }
+    _ignoredMaterials={
+        /Lotus/Fx/ShaderDefaults/Snow,
+        /Lotus/Characters/Tenno/Accessory/Scarves/TennoCon2025Scarf/TennoCon2025ScarfEffectsPbrMat
+    }
+    _lightHudBuff=/Lotus/Powersuits/Harlequin/MirageLightBuff
+    _darkHudBuff=/Lotus/Powersuits/Harlequin/MirageDarkBuff
+    _dummy=/Lotus/Fx/Common/SpotsB_d.png
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Loki/DecoyCast
+}
+SecondaryScripts={
+    {
+        tag=HandleFXChange
+        executionMode=EM_ALL
+        inheritPrimary=1
+        functionName=HandleFXChange
+        scriptInstance={
+            Script=Light.lua
+            Function=HandleFXChange
+            _activateAnim=/Lotus/Animations/Tenno/Powers/Loki/Decoy_anim.fbx
+            _lightPowerEffect=/Lotus/Fx/PowersuitAbilities/Harlequin/LightDarkLightAttach
+            _darkPowerEffect=/Lotus/Fx/PowersuitAbilities/Harlequin/LightDarkDarkAttach
+            _lightMaterials={
+                /Lotus/Fx/PowersuitAbilities/Harlequin/LightAvatarMat,
+                /Lotus/Fx/PowersuitAbilities/Harlequin/LightAvatarMatB
+            }
+            _lightMaterialsPacked={
+                /Lotus/Fx/PowersuitAbilities/Harlequin/LightAvatarMatPacked,
+                /Lotus/Fx/PowersuitAbilities/Harlequin/LightAvatarMatPackedB
+            }
+            _darkMaterials={
+                /Lotus/Fx/PowersuitAbilities/Harlequin/DarkAvatarMat,
+                /Lotus/Fx/PowersuitAbilities/Harlequin/DarkAvatarMatB
+            }
+            _darkMaterialsPacked={
+                /Lotus/Fx/PowersuitAbilities/Harlequin/DarkAvatarMatPacked,
+                /Lotus/Fx/PowersuitAbilities/Harlequin/DarkAvatarMatPackedB
+            }
+            _ignoredMaterials={
+                /Lotus/Fx/ShaderDefaults/Snow,
+                /Lotus/Characters/Tenno/Accessory/Scarves/TennoCon2025Scarf/TennoCon2025ScarfEffectsPbrMat
+            }
+            _lightHudBuff=/Lotus/Powersuits/Harlequin/MirageLightBuff
+            _darkHudBuff=/Lotus/Powersuits/Harlequin/MirageDarkBuff
+            _dummy=/Lotus/Fx/Common/SpotsB_d.png
+            _castEffect=/Lotus/Fx/PowersuitAbilities/Loki/DecoyCast
+        }
+    }
+}
+NpcCooldownDuration=40
+AllowReactivate=1
+AllowDuringOverride=1
+ActivationXP=25
+VideoTexture=/Lotus/Interface/AbilityVideos/MiragePower3_s.bk2
+SoundEvents={
+    {
+        EventName=SFXHarlequinLightAbility
+        Sound=/Lotus/Sounds/Warframes/Harlequin/HarlequinLightAbility
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+    }
+}
+ForceFeedbackEffectEvents={
+    {
+        EventName=HarlequinImpactFeedback
+        ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerBurst
+    }
+}
+HelminthOverrideDescTag=/Lotus/Language/Suits/EclipseAbilityDesc_Helminth

@@ -1,0 +1,5 @@
+/Lotus/Powersuits/Brawler/Brawler
+MarketMode=MM_VISIBLE
+ExcludeFromCodex=0
+MaxHealthOverride=270
+MaxShieldOverride=270

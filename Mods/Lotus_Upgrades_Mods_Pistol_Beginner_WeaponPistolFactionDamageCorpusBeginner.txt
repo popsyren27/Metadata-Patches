@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Pistol/Beginner/WeaponPistolFactionDamageCorpusBeginner
+patch not applied (yet)

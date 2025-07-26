@@ -1,0 +1,66 @@
+/Lotus/Types/Friendly/Pets/CreaturePets/PharaohPredatorKubrowPetPowerSuit
+MarketMode=MM_HIDDEN
+RegularPrice=5000
+AdditionalItems={
+    /Lotus/Types/Friendly/Pets/BeastWeapons/PharaohPredasitePetWeapon
+}
+LocalizeTag=/Lotus/Language/InfestedMicroplanet/InfestedPredatorUncommonName
+Icon=/Lotus/Interface/Icons/StoreIcons/Companions/Pets/Kubrow/Breed/KubrowBreedPredasitePharaoh.png
+RectangleIcon=0
+Diorama=/Lotus/Levels/Episodes/InfestedPredatorUncommon.level
+ExcludeFromCodex=0
+ArtifactSlots={
+    AP_PRECEPT,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
+}
+DefaultCustomization={
+    Neckwear={
+        ItemType=""
+    }
+}
+DefaultSlottedUpgrades={
+    {
+        ItemType=CreaturePrecepts/InfestedPredatorBuffSporesPrecept
+        Slot=3
+        RandomUpgradeBuffTags={}
+        },
+        {
+            ItemType=CreaturePrecepts/InfestedPredatorSpitParasitePrecept
+            Slot=2
+            RandomUpgradeBuffTags={}
+            },
+            {
+                ItemType=/Lotus/Types/Sentinels/SentinelPrecepts/BeastUniversalVacuum
+                Slot=0
+                RandomUpgradeBuffTags={}
+            }
+        }
+        MiniMapIcon=/Lotus/Interface/Icons/Markers/Companions/InfKubrowPharaohPortrait.png
+        MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Companions/LargePortraits/InfKubrowPharaohLargePortrait.png
+        ExtraDependencies={
+            /Lotus/Types/Friendly/Pets/BeastWeapons/PharaohPredasitePetWeapon
+        }
+        SpecialSlotItem={
+            SPECIAL_B_SLOT={
+                ItemType=/Lotus/Types/Friendly/Pets/BeastWeapons/PharaohPredasitePetWeapon
+            }
+        }
+        DefaultTraits={
+            BaseColor=/Lotus/Types/Game/InfestedPredatorPet/Colors/InfestedPredatorColorUncommonBase
+            SecondaryColor=/Lotus/Types/Game/InfestedPredatorPet/Colors/InfestedPredatorColorUncommonSecondary
+            TertiaryColor=/Lotus/Types/Game/InfestedPredatorPet/Colors/InfestedPredatorColorUncommonTertiary
+            AccentColor=/Lotus/Types/Game/InfestedPredatorPet/Colors/InfestedPredatorColorUncommonAccent
+            EyeColor=/Lotus/Types/Game/InfestedPredatorPet/Colors/InfestedPredatorColorUncommonEyes
+            FurPattern=/Lotus/Types/Game/InfestedPredatorPet/Patterns/InfestedPredatorPatternDefault
+            Personality=PharaohPredatorKubrowPetPowerSuit
+            BodyType=/Lotus/Types/Game/KubrowPet/BodyTypes/InfestedKubrowPetBodyType
+            Head=/Lotus/Types/Game/InfestedPredatorPet/Heads/InfestedPredatorHeadB
+        }

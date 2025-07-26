@@ -1,0 +1,95 @@
+/Lotus/Powersuits/PowersuitAbilities/BardAmplifyAbility
+LocalizeTag=/Lotus/Language/Suits/BardAmplifyAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/BardAmplifyAbilityDesc
+StatusDescTag=/Lotus/Language/Buffs/AmpBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/BardAmplifier.png
+UniquePowerIdentifier=BARD_AMPLIFY
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=BardAmplify.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Bard/Amplifier_anim.fbx
+    _animsToWaitFor={
+        /Lotus/Animations/Tenno/Powers/Bard/MusicBox_anim.fbx,
+        /Lotus/Animations/Tenno/Powers/Bard/PiedPiper_anim.fbx,
+        /Lotus/Animations/Tenno/Powers/Bard/PumpUpTheJam_anim.fbx,
+        /Lotus/Animations/Tenno/Powers/Bard/Amplifier_anim.fbx
+    }
+    _projectileType=/Lotus/Powersuits/Bard/Projectiles/AmplifyProjectile
+    _amplifierDecoType=""
+    _rangeDecoType=/Lotus/Fx/PowersuitAbilities/Bard/AmpRangeDeco
+    _patchType=""
+    _patchTypeNonLocal=""
+    _newPeakEffect=""
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Bard/AmplifyCast
+    _inputFilter=/Lotus/Powersuits/Bard/InputFilter
+}
+SecondaryScripts={
+    {
+        tag=SpawnAmplifier
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=BardAmplify.lua
+            Function=SpawnAmplifier
+            _activateAnim=""
+            _animsToWaitFor={}
+            _projectileType=""
+            _amplifierDecoType=/Lotus/Powersuits/Bard/AmplifyDeco
+            _rangeDecoType=/Lotus/Fx/PowersuitAbilities/Bard/AmpRangeDeco
+            _patchType=/Lotus/Fx/PowersuitAbilities/Bard/AmplifyPatch
+            _patchTypeNonLocal=/Lotus/Fx/PowersuitAbilities/Bard/AmplifyNonLocalPatch
+            _newPeakEffect=/Lotus/Fx/PowersuitAbilities/Bard/AmplifyNewPeak
+            _castEffect=""
+            _inputFilter=""
+        }
+        },
+        {
+            tag=SetPeak
+            executionMode=EM_ALL
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=BardAmplify.lua
+                Function=SetPeak
+                _activateAnim=""
+                _animsToWaitFor={}
+                _projectileType=""
+                _amplifierDecoType=""
+                _rangeDecoType=""
+                _patchType=""
+                _patchTypeNonLocal=""
+                _newPeakEffect=""
+                _castEffect=""
+                _inputFilter=""
+            }
+            },
+            {
+                tag=SetLead
+                executionMode=EM_ALL
+                inheritPrimary=0
+                functionName=""
+                scriptInstance={
+                    Script=BardAmplify.lua
+                    Function=SetLead
+                    _activateAnim=""
+                    _animsToWaitFor={}
+                    _projectileType=""
+                    _amplifierDecoType=""
+                    _rangeDecoType=""
+                    _patchType=""
+                    _patchTypeNonLocal=""
+                    _newPeakEffect=""
+                    _castEffect=""
+                    _inputFilter=""
+                }
+            }
+        }
+        NpcCooldownDuration=16
+        EnergyRequiredToActivate=100
+        AllowReactivate=1
+        AllowOnZipLines=1
+        VideoTexture=/Lotus/Interface/AbilityVideos/OctaviaPower4_s.bk2

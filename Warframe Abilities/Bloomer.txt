@@ -1,0 +1,16 @@
+/Lotus/Powersuits/Archwing/ArchwingAbilities/TnTAbility
+LocalizeTag=/Lotus/Language/Items/TnTAbility
+LocalizeDescTag=/Lotus/Language/Items/TnTAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/Archwing/ArchwingTwoTNT.png
+Script={
+    Script=TnT.lua
+    Function=ActivateAbility
+    _projectileType=/Lotus/Powersuits/Archwing/DemolitionJetPack/Projectiles/TnTProjectile
+    _missileMarker=""
+    _explosionFx=/Lotus/Fx/SpaceBattle/Abilities/Demolition/TnTExplosion
+    _explosionWater=/Lotus/Fx/SpaceBattle/Abilities/Demolition/TnTWaterExplosion
+}
+AllowToggle=1
+ActivationXP=25
+CastSound=/Lotus/Sounds/Weapons/Archwing/Powers/ArchwingTnT/ArchwingTnT3DShot
+VideoTexture=/Lotus/Interface/Cards/Images/ArchwingMods/Elytron/TNT.png

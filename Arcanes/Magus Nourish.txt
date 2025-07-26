@@ -1,0 +1,84 @@
+/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/HealOnTransferenceOut
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/HealOnTransferenceOut
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/HealOnTransferenceOut.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/TransferenceOutHealDesc
+        LocKeyWordScript={
+            Script=TransferenceHeal.lua
+            Function=GetDescriptionTransferenceOut
+            _chance={
+                0.30000001,
+                0.40000001,
+                0.5,
+                0.75,
+                0.85000002,
+                0.94999999
+            }
+            _healAmount={
+                10,
+                15,
+                20,
+                25,
+                30,
+                35
+            }
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+Script={
+    Script=TransferenceHeal.lua
+    Function=HealTransferenceOut
+    _chance={
+        0.30000001,
+        0.40000001,
+        0.5,
+        0.75,
+        0.85000002,
+        0.94999999
+    }
+    _healAmount={
+        10,
+        15,
+        20,
+        25,
+        30,
+        35
+    }
+}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Events/OnTransferenceOutCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/WhileOperatorCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/HealOnTransferenceOut.png
+TransferenceSupport=TS_PREVIOUS_AVATAR
+BaseDistillPointValue=24

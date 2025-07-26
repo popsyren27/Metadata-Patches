@@ -1,0 +1,47 @@
+/Lotus/Upgrades/Mods/PvPMods/Rifle/FasterChargeInAirBowMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/FasterChargeInAirBowMod
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/PvP/Rifle/FasterChargeinAirBowMod.png
+ExcludeFromCodex=0
+AvailableOnPve=0
+AvailableOnPvp=1
+Upgrades={
+{
+    UpgradeType=WEAPON_FIRE_RATE
+    OperationType=STACKING_MULTIPLY
+    Value=0.125
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={
+    PM_IN_AIR
+}
+InvalidModifiers={}
+ValidProcTypes={}
+OverrideLocalization=1
+LocTag=/Lotus/Language/Mods/FasterChargeInAirBowMod_desc
+LocKeyWordScript={
+Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_VERY_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Weapons/Tenno/Bows/LotusBow
+IncompatibilityTags={
+DAIKYU,
+ATTICA,
+ZHUGE
+}

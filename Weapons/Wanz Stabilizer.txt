@@ -1,0 +1,16 @@
+/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartTailA
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Pets/ZanukaPetTailA
+LocalizeDescTag=/Lotus/Language/Pets/ZanukaPetTailADesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Companions/Zanukas/ZanukaPetTailA.png
+ExcludeFromCodex=0
+Attachment=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetComponents/ZanukaPetTailA
+UngildedMaterial=/Lotus/Characters/Guild/ZanukaCompanion/ZanukaCompanionTailsAUntint
+DefaultSlottedUpgrades={
+    {
+        ItemType=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPrecepts/ZanukaPetPhotonStrikePrecept
+        Slot=7
+    }
+}
+EnemyAbility=/Lotus/Powersuits/NpcPowersuits/Lawyers/Powers/PetPhotonStrikeAbility
+OverridePolarity=AP_TACTIC

@@ -1,0 +1,47 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/ReplayLightCritHits
+Rarity=LEGENDARY
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/ReplayLightCritHitsName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionCW.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+Script={
+    Script=ReplayLightCritHits.lua
+    Function=OnCritHit
+}
+EnhancementTag=/Lotus/Language/Arcanes/ReplayLightCritHitsDesc
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=0.25
+DurationScalesWithRank=0
+UpgradeChanceScalePerRank=0.15000001
+ConditionalUpgrades={
+    OnMeleeCritConditionNoIntermediates
+}
+ConditionTag=/Lotus/Language/Upgrades/OnCritCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCWBuff.png
+BaseDistillPointValue=84

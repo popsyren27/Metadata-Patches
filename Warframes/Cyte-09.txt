@@ -1,0 +1,113 @@
+/Lotus/Powersuits/Frumentarius/Frumentarius
+MarketMode=MM_VISIBLE
+PremiumPrice=370
+AdditionalItems={
+    ExaltedSniper,
+    /Lotus/Upgrades/Skins/Frumentarius/FrumentariusHelmet
+}
+LocalizeTag=/Lotus/Language/Suits/FrumentariusSuitName
+LocalizeDescTag=/Lotus/Language/Suits/FrumentariusSuitDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Warframes/Frumentarius.png
+ExcludeFromCodex=0
+RecipeHelpText=/Lotus/Language/Suits/FrumentariusRecipeHelpText
+DefaultCustomization={
+    Helmet={
+        ItemType=/Lotus/Upgrades/Skins/Frumentarius/FrumentariusHelmet
+    }
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0.039999999,-0.02,-0.12}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,0,0,1}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+        OFF_HAND={}
+    }
+    EventEmblem={
+        MAIN_HAND={}
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={-0.039999999,0.02,0.12}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0,0,0,1}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=0
+                Scale=1
+            }
+        }
+    }
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Frumentarius/FrumentariusSkin
+    }
+}
+Mesh=/Lotus/Characters/Tenno/Frumentarius/FrumentariusBody_skel.fbx
+SoundEvents={
+    {
+        EventName=StepL
+        Sound=/Lotus/Sounds/Warframes/Frumentarius/Foley/FrumentariusGenericFootstep
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=StepR
+            Sound=/Lotus/Sounds/Warframes/Frumentarius/Foley/FrumentariusGenericFootstep
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+            },
+            {
+                EventName=SFXWarframeGenericFoley
+                Sound=/Lotus/Sounds/Warframes/Frumentarius/Foley/FrumentariusGenericFoley
+                Chance=1
+                Period=1
+                Context=PEC_ALL
+                CancelEventName=""
+                },
+                {
+                    EventName=LandSoft
+                    Sound=/Lotus/Sounds/Warframes/Frumentarius/Foley/FrumentariusGenericLandSoft
+                    Chance=1
+                    Period=1
+                    Context=PEC_ALL
+                    CancelEventName=""
+                    },
+                    {
+                        EventName=LandHeavy
+                        Sound=/Lotus/Sounds/Warframes/Frumentarius/Foley/FrumentariusGenericLandHeavy
+                        Chance=1
+                        Period=1
+                        Context=PEC_ALL
+                        CancelEventName=""
+                        },
+                        {
+                            EventName=JumpStart
+                            Sound=/Lotus/Sounds/Characters/GenericFoley/GenericJump
+                            Chance=1
+                            Period=1
+                            Context=PEC_ALL
+                            CancelEventName=""
+                            },
+                            {
+                                EventName=JumpStart
+                                Sound=/Lotus/Sounds/Warframes/Frumentarius/Foley/FrumentariusGenericFoley
+                                Chance=1
+                                Period=1
+                                Context=PEC_ALL
+                                CancelEventName=""
+                            }
+                        }
+                        SpecialSlotItem={
+                            SPECIAL_A_SLOT={
+                                ItemType=ExaltedSniper
+                                AbilityIndex=3
+                            }
+                        }

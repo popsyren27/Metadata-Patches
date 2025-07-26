@@ -1,0 +1,9 @@
+/Lotus/Types/Sentinels/SentinelPowersuits/EmpyreanSentinelPowerSuit
+MarketMode=MM_VISIBLE
+ExcludeFromCodex=0
+RecipeHelpText=/Lotus/Language/Pets/EmpyreanSentinelRecipeHelpText
+DefaultCustomization={
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Sentinels/Skins/Defaults/DefaultEmpyreanSentinelSkin
+    }
+}

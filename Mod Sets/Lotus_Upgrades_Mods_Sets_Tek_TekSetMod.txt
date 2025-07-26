@@ -1,0 +1,118 @@
+/Lotus/Upgrades/Mods/Sets/Tek/TekSetMod
+Rarity=RARE
+CodexSecret=1
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/TekModSetBonus
+        LocKeyWordScript={
+            Script=/Lotus/Types/Friendly/Pets/CatbrowPetBehaviors/CatbrowTekSetAbility.lua
+            Function=GetDescription
+            _zoneTriggerType=""
+            _radiusPerLevel={
+                3,
+                6,
+                9,
+                12
+            }
+            _cooldownPerLevel={
+                60,
+                45,
+                30,
+                15
+            }
+            _dpsPerLevel={
+                50,
+                100,
+                150,
+                200
+            }
+            _durationPerLevel={
+                2,
+                4,
+                6,
+                8
+            }
+            _collateralCritDmg={
+                0.25,
+                0.5,
+                0.75,
+                1
+            }
+            _collateralModWRes=""
+            _collateralFx=""
+            _gravityModWRes=""
+            _damageFx=""
+            _rangeDeco=""
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+    }
+}
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_MEDIUM
+FusionLimit=QA_VERY_HIGH
+ItemCompatibility=/Lotus/Types/Game/CatbrowPet/CatbrowPetPowerSuit
+ModSetIcon=/Lotus/Interface/Cards/Images/Sets/Tek/TekHeader.png
+InstallSound=/Lotus/Sounds/UI/NewUI/Common/UICommonAccent
+InstallEffect=/Lotus/Fx/Interface/ModSets/HunterInstall
+NumUpgradesInSet=4
+Ability={
+    Script={
+        Script=/Lotus/Types/Friendly/Pets/CatbrowPetBehaviors/CatbrowTekSetAbility.lua
+        Function=ActivateAbility
+        _zoneTriggerType=TekZoneTrigger
+        _radiusPerLevel={
+            2,
+            3,
+            4,
+            5
+        }
+        _cooldownPerLevel={
+            60,
+            45,
+            30,
+            15
+        }
+        _dpsPerLevel={
+            50,
+            100,
+            150,
+            200
+        }
+        _durationPerLevel={
+            2,
+            4,
+            6,
+            8
+        }
+        _collateralCritDmg={
+            0.25,
+            0.5,
+            0.75,
+            1
+        }
+        _collateralModWRes=""
+        _collateralFx=""
+        _gravityModWRes=""
+        _damageFx=""
+        _rangeDeco=""
+    }
+    EnergyRequiredToActivate=0
+    ActivationXP=0
+    Blocking=0
+    EvaluateScript=0
+}

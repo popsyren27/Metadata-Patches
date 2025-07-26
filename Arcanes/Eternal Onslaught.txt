@@ -1,0 +1,75 @@
+/Lotus/Upgrades/CosmeticEnhancers/Zariman/AmpOnEnergyDepletedCritChance
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/AmpOnEnergyDepletedCritChance
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/EternalOnslaughtBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionBV.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponCritChance
+        LocKeyWordScript={
+            Script=AmpOnEnergyDepletedCritChance.lua
+            Function=GetDescription
+            _regenThreshold=15
+            _critBuff={
+                0.30000001,
+                0.60000002,
+                0.89999998,
+                1.2,
+                1.5,
+                1.8
+            }
+            _duration=8
+            _showCooldown=1
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+FusionLimit=QA_HIGH
+Script={
+    Script=AmpOnEnergyDepletedCritChance.lua
+    Function=MainLoop
+    _regenThreshold=25
+    _critBuff={
+        0.30000001,
+        0.60000002,
+        0.89999998,
+        1.2,
+        1.5,
+        1.8
+    }
+    _duration=8
+    _showCooldown=1
+}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDuration
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+UpgradeDuration=8
+DurationScalesWithRank=0
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Events/OnOperatorEnergyDepletedCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnEnergyDepletedCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionBV.png
+BaseDistillPointValue=22

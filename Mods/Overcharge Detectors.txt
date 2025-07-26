@@ -1,0 +1,57 @@
+/Lotus/Upgrades/Mods/PvPMods/Warframe/EffectOnFullEnergyMod
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/EffectOnFullEnergyMod
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/PvP/Warframe/EffectOnFullEnergyMod.png
+ExcludeFromCodex=0
+AvailableOnPve=0
+AvailableOnPvp=1
+Upgrades={
+{
+    UpgradeType=AVATAR_FULL_ENERGY_EFFECT_RANGE
+    OperationType=ADD
+    Value=5
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Mods/EffectOnFullEnergyModDesc
+    LocKeyWordScript={
+    Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
+    Function=GetDescriptionInfo
+    _displayAsPercent={
+    0
+}
+_absoluteValue={
+0
+}
+_maxDecimals={
+-1
+}
+_addPlusses={
+0
+}
+_multiplyDown={
+0
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_TACTIC
+ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
+Script={
+Script=/Lotus/Scripts/FullEnergyEffectMod.lua
+Function=StartMod
+_effectType=/Lotus/Fx/PowersuitAbilities/Berserker/ScreamBuffAttach
+}
+IsUtility=1

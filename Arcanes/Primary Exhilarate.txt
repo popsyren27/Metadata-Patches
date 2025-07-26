@@ -1,0 +1,58 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/PrimaryEnergyRegenOnImpactProc
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/PrimaryEnergyRegenOnImpactProc
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/PrimaryExhilarateBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionCN.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=AVATAR_POWER_RATE
+        OperationType=ADD
+        Value=0.2
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/EnergyRegen
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+ClearPlayingAnims=0
+FusionLimit=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/LotusLongGun
+IncompatibilityTags={}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDurationAndStacks
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+UpgradeDuration=10
+DurationScalesWithRank=0
+ChanceScalesWithRank=0
+StackMode=SM_DECAY
+MaxConditionalStacks=3
+ConditionalUpgrades={
+    OnImpactProcCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnWeaponImpactProcCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCNBuff.png
+BaseDistillPointValue=24

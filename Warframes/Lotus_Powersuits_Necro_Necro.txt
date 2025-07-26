@@ -1,0 +1,40 @@
+/Lotus/Powersuits/Necro/Necro
+MarketMode=MM_VISIBLE
+PremiumPrice=375
+SellingPrice=10000
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Necro/NecroHelmet
+}
+Icon=/Lotus/Interface/Icons/StoreIcons/Warframes/Nekros.png
+RectangleIcon=0
+ExcludeFromCodex=0
+RecipeHelpText=/Lotus/Language/WarframeCrafting/NekrosRecipeHelp
+DefaultCustomization={
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Necro/NekrosSkin
+    }
+}
+DefaultSlottedUpgrades={
+    {
+        ItemType=SoulPunchAbilityCard
+        Slot=9
+        RandomUpgradeBuffTags={}
+        },
+        {
+            ItemType=TerrorTotemAbilityCard
+            Slot=5
+            RandomUpgradeBuffTags={}
+            },
+            {
+                ItemType=SearchTheDeadAbilityCard
+                Slot=4
+                RandomUpgradeBuffTags={}
+                },
+                {
+                    ItemType=CloneTheDeadAbilityCard
+                    Slot=0
+                    RandomUpgradeBuffTags={}
+                }
+            }
+            MaxHealthOverride=270
+            SimCollision=NecroPowerSuitSimCollision

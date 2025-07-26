@@ -1,0 +1,113 @@
+/Lotus/Types/Friendly/Pets/CatbrowPetPrecepts/CatbrowLuckPrecept
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/CatbrowLuckPreceptName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Kavat/CatbrowLuckPrecept.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Items/CatbrowLuckPreceptDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Friendly/Pets/CatbrowPetBehaviors/CatbrowLuckAbility.lua
+    Function=GetDescriptionInfo
+    _activateSound=""
+    _activateAnim=""
+    _shieldRefillSound=""
+    _burstEffect=""
+    _critsDuration=30
+    _energyRechargeDuration=10
+    _doubleAffinityDuration=120
+    _shieldRefillRatio=1.5
+    _critChance=2
+    _reloadSpeedMultiplier=100
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+BaseDrain=QA_NONE
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Types/Game/CatbrowPet/CheshireCatbrowPetPowerSuit
+HudBuffIcon=/Lotus/Interface/Icons/GeneticLab/TemperamentCheshire.png
+Ability={
+IsDroppable=0
+GiveToTeammateOnMigration=0
+Giftable=0
+Script={
+Script=/Lotus/Types/Friendly/Pets/CatbrowPetBehaviors/CatbrowLuckAbility.lua
+Function=NpcEvaluateAbility
+_activateSound=/Lotus/Sounds/Enemies/Catbrow/Mods/Omen/CatbrowOmenActivateLocal
+_activateAnim=/Lotus/Animations/Creatures/Catbrow/LungeMeleeLuck
+_shieldRefillSound=""
+_burstEffect=/Lotus/Fx/Kavats/LuckBurst
+_critsDuration=30
+_energyRechargeDuration=10
+_doubleAffinityDuration=120
+_shieldRefillRatio=1.5
+_critChance=2
+_reloadSpeedMultiplier=100
+}
+SecondaryScripts={
+{
+tag=NotifyReward
+executionMode=EM_LOCAL
+inheritPrimary=1
+functionName=NotifyReward
+scriptInstance={
+Script=/Lotus/Types/Friendly/Pets/CatbrowPetBehaviors/CatbrowLuckAbility.lua
+Function=NotifyReward
+_activateSound=/Lotus/Sounds/Enemies/Catbrow/Mods/Omen/CatbrowOmenActivateLocal
+_activateAnim=/Lotus/Animations/Creatures/Catbrow/LungeMeleeLuck
+_shieldRefillSound=""
+_burstEffect=/Lotus/Fx/Kavats/LuckBurst
+_critsDuration=30
+_energyRechargeDuration=10
+_doubleAffinityDuration=120
+_shieldRefillRatio=1.5
+_critChance=2
+_reloadSpeedMultiplier=100
+}
+},
+{
+tag=InstantReload
+executionMode=EM_ALL
+inheritPrimary=1
+functionName=InstantReload
+scriptInstance={
+Script=/Lotus/Types/Friendly/Pets/CatbrowPetBehaviors/CatbrowLuckAbility.lua
+Function=InstantReload
+_activateSound=/Lotus/Sounds/Enemies/Catbrow/Mods/Omen/CatbrowOmenActivateLocal
+_activateAnim=/Lotus/Animations/Creatures/Catbrow/LungeMeleeLuck
+_shieldRefillSound=""
+_burstEffect=/Lotus/Fx/Kavats/LuckBurst
+_critsDuration=30
+_energyRechargeDuration=10
+_doubleAffinityDuration=120
+_shieldRefillRatio=1.5
+_critChance=2
+_reloadSpeedMultiplier=100
+}
+}
+}
+EnergyRequiredToActivate=0
+IsBlockable=0
+PlayCastSound=0
+HideMeleeWeapon=0
+Blocking=0
+}

@@ -3,16 +3,16 @@ LocalizeTag=/Lotus/Language/Primes/SevagothShadowPrimeClawsName
 LocalizeDescTag=/Lotus/Language/Primes/SevagothShadowPrimeClawsDesc
 Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/ExaltedWeapons/SevagothShadowPrimeClaws.png
 ArtifactSlots={
-AP_UNIVERSAL,
-AP_UNIVERSAL,
-AP_ATTACK,
-AP_ATTACK,
-AP_UNIVERSAL,
-AP_UNIVERSAL,
-AP_UNIVERSAL,
-AP_ATTACK,
-AP_POWER,
-AP_UNIVERSAL,
-AP_UNIVERSAL
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_ATTACK,
+    AP_ATTACK,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_ATTACK,
+    AP_POWER,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
 }
 VariantType=VT_PRIME

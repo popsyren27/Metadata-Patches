@@ -1,0 +1,82 @@
+/Lotus/Powersuits/PowersuitAbilities/GarudaSiphonAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/GarudaSiphonAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/GarudaSiphonAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/GarudaSanguineSiphon.png
+UniquePowerIdentifier=GARUDA_SIPHON
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE,
+    EFFECT_BUFF
+}
+Script={
+    Script=GarudaSiphon.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Garuda/SanguineSiphon_anim.fbx
+    _siphonDecoType=/Lotus/Fx/PowersuitAbilities/Garuda/SiphonSpearDeco
+    _siphonDecoTwoType=/Lotus/Fx/PowersuitAbilities/Garuda/SiphonSpearDecoB
+    _siphonDecoTwoTypeRobot=/Lotus/Fx/PowersuitAbilities/Garuda/SiphonSpearDecoBRobot
+    _linkFxType=/Lotus/Fx/PowersuitAbilities/Garuda/SiphonBeam
+    _windAttach=/Lotus/Fx/PowersuitAbilities/Garuda/SiphonEnemyAttachWind
+    _letGoSound=""
+}
+SecondaryScripts={
+    {
+        tag=LetGo
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=GarudaSiphon.lua
+            Function=LetGo
+            _activateAnim=""
+            _siphonDecoType=""
+            _siphonDecoTwoType=""
+            _siphonDecoTwoTypeRobot=""
+            _linkFxType=""
+            _windAttach=""
+            _letGoSound=/Lotus/Sounds/Warframes/Garuda/GarudaSiphonEnd
+        }
+    }
+}
+EnergyRequiredToActivate=50
+AllowReactivate=1
+ActivationXP=50
+VideoTexture=/Lotus/Interface/AbilityVideos/GarudaPower2_s.bk2
+SoundEvents={
+    {
+        EventName=SFXGarudaSiphonCast
+        Sound=/Lotus/Sounds/Warframes/Garuda/GarudaSiphonCast
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+    }
+}
+ForceFeedbackEffectEvents={
+    {
+        EventName=GarudaImpactFeedback
+        ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerImpact
+    }
+}
+ResourceOverrides={
+    {
+        Tag=SiphonCast
+        Resource=/Lotus/Fx/PowersuitAbilities/Garuda/SiphonCast
+        },
+        {
+            Tag=SiphonCastBurst
+            Resource=/Lotus/Fx/PowersuitAbilities/Garuda/SiphonCastBurst
+            },
+            {
+                Tag=SiphonRangeDeco
+                Resource=/Lotus/Fx/PowersuitAbilities/Garuda/SiphonRangeDeco
+                },
+                {
+                    Tag=SiphonEnemyAttach
+                    Resource=/Lotus/Fx/PowersuitAbilities/Garuda/SiphonEnemyAttach
+                    },
+                    {
+                        Tag=SiphonEnemyAttachRobot
+                        Resource=/Lotus/Fx/PowersuitAbilities/Garuda/SiphonEnemyAttachRobot
+                    }
+                }

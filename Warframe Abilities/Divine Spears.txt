@@ -1,0 +1,56 @@
+/Lotus/Powersuits/PowersuitAbilities/NezhaSpearAbility
+LocalizeTag=/Lotus/Language/Suits/NezhaSpearAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/NezhaSpearAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/NezhaSpear.png
+UniquePowerIdentifier=NEZHA_SPEAR
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=NezhaSpear.lua
+    Function=ActivateAbility
+    _enemyAttach=/Lotus/Fx/PowersuitAbilities/Nezha/SpearEnemyAttach
+    _enemyBurst=/Lotus/Fx/PowersuitAbilities/Nezha/SpearEnemyBurst
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Nezha/FireSpear_anim.fbx
+    _deactivateAnim=/Lotus/Animations/Tenno/Powers/Nezha/FireSpearToggleOff_anim.fbx
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Nezha/SpearCast
+    _castBurstEffect=/Lotus/Fx/PowersuitAbilities/Nezha/SpearCastBurst
+    _endCastEffect=/Lotus/Fx/PowersuitAbilities/Nezha/SpearEndCast
+    _endCastBurstEffect=/Lotus/Fx/PowersuitAbilities/Nezha/SpearEndCastBurst
+    _spearDecoType=/Lotus/Fx/PowersuitAbilities/Nezha/SpearDecoA
+    _spearDecoPrimeType=/Lotus/Fx/PowersuitAbilities/Nezha/SpearDecoPrime
+}
+SecondaryScripts={
+    {
+        tag=ImpaleEnemies
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=NezhaSpear.lua
+            Function=ImpaleEnemies
+            _enemyAttach=/Lotus/Fx/PowersuitAbilities/Nezha/SpearEnemyAttach
+            _enemyBurst=""
+            _activateAnim=""
+            _deactivateAnim=""
+            _castEffect=""
+            _castBurstEffect=""
+            _endCastEffect=""
+            _endCastBurstEffect=""
+            _spearDecoType=/Lotus/Fx/PowersuitAbilities/Nezha/SpearDecoA
+            _spearDecoPrimeType=/Lotus/Fx/PowersuitAbilities/Nezha/SpearDecoPrime
+        }
+    }
+}
+NpcCooldownDuration=30
+EnergyRequiredToActivate=100
+AllowToggle=1
+AllowDuringOverride=1
+CastSound=/Lotus/Sounds/Warframes/Nezha/NezhaFireSpearCast
+VideoTexture=/Lotus/Interface/AbilityVideos/NezhaPower4_s.bk2
+ForceFeedbackEffectEvents={
+    {
+        EventName=NezhaImpactFeedback
+        ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerImpact
+    }
+}

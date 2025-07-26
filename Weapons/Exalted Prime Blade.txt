@@ -1,8 +1,8 @@
 /Lotus/Powersuits/Excalibur/DoomSwordPrime
 THIRD_PERSON_ATTACHMENT={
-MAIN_HAND={
-Type=DoomSwordPrimeAttachment
-}
+    MAIN_HAND={
+        Type=DoomSwordPrimeAttachment
+    }
 }
 LocalizeTag=/Lotus/Language/Suits/DoomSwordPrimeName
 LocalizeDescTag=/Lotus/Language/Suits/DoomSwordPrimeDesc

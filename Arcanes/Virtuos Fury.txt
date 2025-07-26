@@ -1,0 +1,52 @@
+/Lotus/Upgrades/CosmeticEnhancers/OperatorAmps/IncreasedDamageOnStatusProc
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/IncreasedDamageOnStatusProc
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/VirtuosFuryBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/IncreasedDamageOnStatusProc.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=WEAPON_DAMAGE_AMOUNT
+        OperationType=STACKING_MULTIPLY
+        Value=0.075000003
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponDamage
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionWithDuration
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=0.2
+UpgradeDuration=4
+DurationScalesWithRank=0
+ChanceScalesWithRank=0
+ConditionalUpgrades={
+    /Lotus/Upgrades/Mods/Aura/FairyQuest/OnProcCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnProcCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/IncreasedDamage.png
+BaseDistillPointValue=18

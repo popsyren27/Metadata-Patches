@@ -1,0 +1,38 @@
+/Lotus/Upgrades/Mods/Melee/WeaponMeleeFactionDamageMurmurs
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/MeleeModFactionDamageMurmurs
+Icon=/Lotus/Interface/Cards/Images/Melee/WeaponMeleeFactionDamageMurmurs.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=GAMEPLAY_FACTION_DAMAGE
+    OperationType=STACKING_MULTIPLY
+    Value=0.050000001
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=MITW
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Mods/WeaponFactionDamageMurmursDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=1
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.0099999998
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_MEDIUM
+ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon

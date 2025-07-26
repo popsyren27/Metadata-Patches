@@ -1,6 +1,0 @@
-/Lotus/Upgrades/Mods/Rifle/Expert/PrimedWeaponFactionDamageCorpus
-Rarity=LEGENDARY
-LocalizeTag=/Lotus/Language/Items/PrimedRifleModFactionDamageCorpus
-CodexSecret=1
-FusionLimit=QA_VERY_HIGH
-IncludeInBoosterPack=0

@@ -1,0 +1,6 @@
+/Lotus/Powersuits/Dragon/Dragon
+MarketMode=MM_VISIBLE
+ExcludeFromCodex=0
+MaxEnergy=175
+MaxHealthOverride=270
+MaxShieldOverride=270

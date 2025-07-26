@@ -1,0 +1,117 @@
+/Lotus/Powersuits/PowersuitAbilities/KhoraKavatAbility
+LocalizeTag=/Lotus/Language/Suits/KhoraKavatAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/KhoraKavatAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/KhoraSummon.png
+UniquePowerIdentifier=KHORA_KAVAT
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=KhoraKavat.lua
+    Function=ActivateAbility
+    _cycleSound=/Lotus/Sounds/Warframes/Khora/KhoraMorphCycle
+    _morphAnim=""
+    _morphSounds={}
+    _activateKavatSound=/Lotus/Sounds/Warframes/Khora/KhoraKavatCommand
+    _deathEffect=""
+    _targetEffects={
+        /Lotus/Fx/PowersuitAbilities/Khora/KavatTarget,
+        /Lotus/Fx/PowersuitAbilities/Khora/KavatTargetDefense,
+        /Lotus/Fx/PowersuitAbilities/Khora/KavatTargetHeal
+    }
+}
+SecondaryScripts={
+    {
+        tag=SetMode
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=KhoraKavat.lua
+            Function=SetMode
+            _cycleSound=""
+            _morphAnim=/Lotus/Animations/Tenno/Powers/Quill/Morph_anim.fbx
+            _morphSounds={
+                /Lotus/Sounds/Warframes/Khora/KhoraMorphImpact,
+                /Lotus/Sounds/Warframes/Khora/KhoraMorphPuncture,
+                /Lotus/Sounds/Warframes/Khora/KhoraMorphSlash
+            }
+            _activateKavatSound=""
+            _deathEffect=""
+            _targetEffects={}
+        }
+        },
+        {
+            tag=DecreaseTimer
+            executionMode=EM_ALL
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=/Lotus/Powersuits/Khora/KhoraPassive.lua
+                Function=DecreaseTimer
+                _tailDestroyFx=""
+                _hudBuffType=""
+                _kavatAgentType=""
+                _kavatSuitType=""
+                _kavatSpawnAnim=""
+                _deathEffect=""
+                _idleAnims={}
+                _whipAnims={}
+                _whipBones={}
+                _whipDecoType=""
+                _whipDespawnEffect=""
+                _whipAttachments={}
+                _whipSpawnEffect=""
+            }
+            },
+            {
+                tag=SavedByAugment
+                executionMode=EM_LOCAL
+                inheritPrimary=0
+                functionName=""
+                scriptInstance={
+                    Script=/Lotus/Powersuits/Khora/KhoraPassive.lua
+                    Function=SavedByAugment
+                    _tailDestroyFx=""
+                    _hudBuffType=""
+                    _kavatAgentType=""
+                    _kavatSuitType=""
+                    _kavatSpawnAnim=""
+                    _deathEffect=""
+                    _idleAnims={}
+                    _whipAnims={}
+                    _whipBones={}
+                    _whipDecoType=""
+                    _whipDespawnEffect=""
+                    _whipAttachments={}
+                    _whipSpawnEffect=""
+                }
+            }
+        }
+        AbilityEvents={
+            {
+                tag=OnKill
+                eventType=ET_ON_KILL
+                scriptInstance={
+                    Script=/Lotus/Powersuits/Khora/KhoraPassive.lua
+                    Function=OnKill
+                    _tailDestroyFx=""
+                    _hudBuffType=""
+                    _kavatAgentType=""
+                    _kavatSuitType=""
+                    _kavatSpawnAnim=""
+                    _deathEffect=""
+                    _idleAnims={}
+                    _whipAnims={}
+                    _whipBones={}
+                    _whipDecoType=""
+                    _whipDespawnEffect=""
+                    _whipAttachments={}
+                    _whipSpawnEffect=""
+                }
+            }
+        }
+        EnergyRequiredToActivate=0
+        AllowReactivate=1
+        ActivationXP=75
+        VideoTexture=/Lotus/Interface/AbilityVideos/KhoraPower3_s.bk2

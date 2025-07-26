@@ -1,0 +1,2 @@
+/Lotus/Types/Sentinels/SentinelPrecepts/PrimedRegen
+patch not applied (yet)

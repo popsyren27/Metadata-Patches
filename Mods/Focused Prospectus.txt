@@ -1,0 +1,122 @@
+/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPrecepts/ZanukaPetMegaLaserPrecept
+Rarity=RARE
+MarketMode=MM_HIDDEN
+RegularPrice=5000
+PremiumPrice=2
+LocalizeTag=/Lotus/Language/Pets/ZanukaPetMegaLaserPreceptName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Zanukas/ZanukaPetMegaLaserPrecept.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Pets/ZanukaPetMegaLaserPreceptDesc
+    LocKeyWordScript={
+    Script=/Lotus/Powersuits/NpcPowersuits/NpcPowersuitAbilities/Lich/PetMegaLaserAbility.lua
+    Function=GetDescriptionInfo
+    _activateAnim=""
+    _firingAnim=""
+    _deActivateAnim=""
+    _launchBone=GAME_C1_WEAPONATTACH1
+    _castSound=""
+    _chargeType=""
+    _jumpEffect=""
+    _flyingEffect=""
+    _beamType=""
+    _maxBeamTurnRate=30
+    _sound=""
+    _minRange=5
+    _maxRange=30
+    _damagePerLevel={
+    150,
+    300,
+    450,
+    600,
+    750,
+    900
+}
+_durationPerLevel={
+2,
+2.5,
+3,
+3.5,
+4,
+4.5
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+BaseDrain=QA_NONE
+ItemCompatibility=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPowerSuit
+SoundEvents={
+{
+EventName=SFXZanukaCompanionLaserBeamCast
+Sound=/Lotus/Sounds/Characters/Pets/Zanuka/ZanukaCompanionA/Abilities/ZanukaCompanionLaserBeamCast
+Chance=1
+Period=1
+Context=PEC_ALL
+CancelEventName=""
+}
+}
+Ability={
+Script={
+Script=/Lotus/Powersuits/NpcPowersuits/NpcPowersuitAbilities/Lich/PetMegaLaserAbility.lua
+Function=ActivateAbility
+_activateAnim=/Lotus/Animations/Corpus/ParvosLich/Kubrow/CastLaser01Start_anim.fbx
+_firingAnim=/Lotus/Animations/Corpus/ParvosLich/Kubrow/CastLaser01Loop_anim.fbx
+_deActivateAnim=/Lotus/Animations/Corpus/ParvosLich/Kubrow/CastLaser01End_anim.fbx
+_launchBone=GAME_C1_HEAD1
+_castSound=""
+_chargeType=""
+_jumpEffect=""
+_flyingEffect=""
+_beamType=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPreceptComponents/ZanukaPlayerPetLaserBeam
+_maxBeamTurnRate=45
+_sound=""
+_minRange=0
+_maxRange=40
+_damagePerLevel={
+150,
+300,
+450,
+600,
+750,
+900
+}
+_durationPerLevel={
+2,
+2.5,
+3,
+3.5,
+4,
+4.5
+}
+}
+CooldownDuration=10
+EnergyRequiredToActivate=0
+EvaluateScript=0
+Evaluator:Evaluators={
+/Lotus/Types/Game/AbilityEvaluators/TargetsInFrontAndInRangeEvaluator
+}
+Evaluator:TargetsInFrontAndInRangeEvaluator={
+TargetRange={0,30}
+MaxHeightDiff=2.5
+DirectionAngle=28.139721
+SetFirstValidTarget=1
+}
+}

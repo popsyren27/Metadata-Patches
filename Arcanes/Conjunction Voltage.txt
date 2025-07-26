@@ -1,0 +1,84 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryReloadSpeedAndMultishotOnElectricProc
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/SecondaryReloadSpeedAndMultishotOnElectricProc
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/ConjunctionVoltageBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionCD.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=WEAPON_RELOAD_SPEED
+        OperationType=STACKING_MULTIPLY
+        Value=0.0024999999
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=/Lotus/Weapons/Tenno/Pistol/LotusPistol
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponReloadSpeedModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=9.9999997e-06
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+        },
+        {
+            UpgradeType=WEAPON_FIRE_ITERATIONS
+            OperationType=STACKING_MULTIPLY
+            Value=0.0049999999
+            DamageType=DT_ANY
+            AutoType=1
+            ValidType=/Lotus/Weapons/Tenno/Pistol/LotusPistol
+            CheckTypeOnInstall=0
+            SymbolFilter=""
+            UpgradeObject=""
+            ValidPostures={}
+            ValidModifiers={}
+            InvalidModifiers={}
+            ValidProcTypes={}
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponMultishotModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+            DisplayAsMultiplier=0
+            DisplayAsPercent=1
+            ReverseValueSymbol=0
+            SmallerIsBetter=0
+            RoundTo=9.9999997e-05
+            RoundingMode=RM_ROUND
+            AllowConditionalLocMerge=0
+        }
+    }
+    ApplyUpgradesByDefault=0
+    FusionLimit=QA_HIGH
+    ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol
+    MultiBonusLoc=1
+    EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceTwoBonusesWithDurationAndStacks
+    EnhancementTagLocScript={
+        Script=""
+    }
+    UpgradeChance=1
+    UpgradeDuration=12
+    DurationScalesWithRank=0
+    StackMode=SM_GROUP
+    MaxConditionalStacks=40
+    ConditionalUpgrades={
+        OnElectricityProcCondition
+    }
+    ConditionTag=/Lotus/Language/Upgrades/OnElectricityProcCondition_Description
+    HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCD.png
+    UpgradeDifferentWeapon=1
+    BaseDistillPointValue=22

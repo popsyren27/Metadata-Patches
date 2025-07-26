@@ -1,0 +1,90 @@
+/Lotus/Powersuits/PowersuitAbilities/VolatileAbility
+LocalizeTag=/Lotus/Language/Suits/VolatileAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/VolatileAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/LimboVolatile.png
+UniquePowerIdentifier=LIMBO_RIFT_SURGE
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=Volatile.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Magician/Volatile_anim.fbx
+    _activateAnimEvent=VolatileActivate
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Magician/VolatileCast
+    _attachEffect=/Lotus/Fx/PowersuitAbilities/Magician/VolatileAmbientEffect_skelDeco
+    _beamEffect=/Lotus/Fx/PowersuitAbilities/Magician/VolatileBeam
+    _trailEffect=/Lotus/Fx/PowersuitAbilities/Magician/VolatileDecoWTrail
+    _ignoreTypeList={}
+    _helperType=""
+}
+SecondaryScripts={
+    {
+        tag=Surge
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=Volatile.lua
+            Function=Surge
+            _activateAnim=""
+            _activateAnimEvent=""
+            _castEffect=""
+            _attachEffect=/Lotus/Fx/PowersuitAbilities/Magician/VolatileAmbientEffect_skelDeco
+            _beamEffect=/Lotus/Fx/PowersuitAbilities/Magician/VolatileBeam
+            _trailEffect=/Lotus/Fx/PowersuitAbilities/Magician/VolatileDecoWTrail
+            _ignoreTypeList={
+                /Lotus/Types/Friendly/Agents/DefenseAvatar,
+                /Lotus/Types/Friendly/Agents/SectorDefenseBaseAvatar,
+                /Lotus/Types/Friendly/Agents/SectorGeneratorAvatar,
+                /Lotus/Types/Friendly/Agents/ExcavatorAvatar,
+                /Lotus/Types/Friendly/Agents/PayloadAvatar,
+                /Lotus/Types/Friendly/Agents/DefenseComputerAvatar,
+                /Lotus/Types/Friendly/Agents/EventDefenseAvatar,
+                /Lotus/Types/Friendly/Agents/OrokinDefenseAvatar,
+                /Lotus/Types/Friendly/Agents/KuvaDefenseAvatar,
+                /Lotus/Types/Friendly/Agents/DefenseAvatarMoving
+            }
+            _helperType=/Lotus/Powersuits/Magician/RiftHelper
+        }
+        },
+        {
+            tag=UnSurge
+            executionMode=EM_ALL
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=Volatile.lua
+                Function=UnSurge
+                _activateAnim=""
+                _activateAnimEvent=""
+                _castEffect=""
+                _attachEffect=""
+                _beamEffect=""
+                _trailEffect=""
+                _ignoreTypeList={}
+                _helperType=""
+            }
+            },
+            {
+                tag=RefundEnergy
+                executionMode=EM_HOST
+                inheritPrimary=0
+                functionName=""
+                scriptInstance={
+                    Script=Volatile.lua
+                    Function=RefundEnergy
+                    _activateAnim=""
+                    _activateAnimEvent=""
+                    _castEffect=""
+                    _attachEffect=""
+                    _beamEffect=""
+                    _trailEffect=""
+                    _ignoreTypeList={}
+                    _helperType=""
+                }
+            }
+        }
+        EnergyRequiredToActivate=50
+        ActivationXP=50
+        VideoTexture=/Lotus/Interface/AbilityVideos/LimboPower3_s.bk2

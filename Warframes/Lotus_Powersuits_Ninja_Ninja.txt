@@ -1,0 +1,32 @@
+/Lotus/Powersuits/Ninja/Ninja
+MarketMode=MM_VISIBLE
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Ninja/NinjaHelmet,
+    NinjaStormWeapon
+}
+ExcludeFromCodex=0
+RecipeHelpText=/Lotus/Language/WarframeCrafting/AshRecipeHelp
+AvailableOnPvp=1
+DefaultSlottedUpgrades={
+    {
+        ItemType=GlaiveAbilityCard
+        Slot=9
+        RandomUpgradeBuffTags={}
+        },
+        {
+            ItemType=SmokeScreenAbilityCard
+            Slot=5
+            RandomUpgradeBuffTags={}
+            },
+            {
+                ItemType=TelelportToAbilityCard
+                Slot=4
+                RandomUpgradeBuffTags={}
+                },
+                {
+                    ItemType=NinjaStormAbilityCard
+                    Slot=0
+                    RandomUpgradeBuffTags={}
+                }
+            }
+            PvpBulletJumpSpeedMultiplier=0.89999998

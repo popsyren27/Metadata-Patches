@@ -1,0 +1,62 @@
+/Lotus/Powersuits/PowersuitAbilities/GyreSphereAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/GyreSphereAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/GyreSphereAbilityDescription
+StatusDescTag=/Lotus/Language/Buffs/GyreSphereAugmentBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/GyreSphere.png
+UniquePowerIdentifier=GYRE_SPHERE
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=GyreSphere.lua
+    Function=ActivateAbility
+    _sphereDeco=/Lotus/Powersuits/Gyre/SphereDeco
+    _augmentSphereDeco=/Lotus/Powersuits/Gyre/SphereDecoAugment
+    _augmentRangeDeco=/Lotus/Fx/PowersuitAbilities/Gyre/OverchargedRangeDeco
+    _augmentPullAnim=/Lotus/Animations/Tenno/Powers/Mag/Pull_anim.fbx
+    _sphereElement=/Lotus/Powersuits/Gyre/SphereElement
+    _vortexType=""
+    _vortexEffect=""
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Gyre/SphereCast
+    _castBurstEffect=/Lotus/Fx/PowersuitAbilities/Gyre/SphereLaunch
+    _dischargeBeam=/Lotus/Fx/PowersuitAbilities/Gyre/OverchargedDischargeBeam
+    _dischargeBurst=/Lotus/Fx/PowersuitAbilities/Gyre/OverchargeDischargeBurst
+    _dischargeCritSound=/Lotus/Sounds/Warframes/Gyre/GyreOverchargedCritDischarge
+}
+SecondaryScripts={
+    {
+        tag=SpawnVortex
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=GyreSphere.lua
+            Function=SpawnVortex
+            _sphereDeco=""
+            _augmentSphereDeco=""
+            _augmentRangeDeco=""
+            _augmentPullAnim=""
+            _sphereElement=""
+            _vortexType=/Lotus/Powersuits/Gyre/SphereBlackHole
+            _vortexEffect=/Lotus/Fx/PowersuitAbilities/Gyre/SphereVortex
+            _castEffect=""
+            _castBurstEffect=""
+            _dischargeBeam=""
+            _dischargeBurst=""
+            _dischargeCritSound=""
+        }
+    }
+}
+NpcCooldownDuration=32
+EnergyRequiredToActivate=50
+AllowReactivate=1
+ActivationXP=50
+CastSound=/Lotus/Sounds/Warframes/Gyre/GyreSphereCast
+VideoTexture=/Lotus/Interface/AbilityVideos/GyrePower2_s.bk2
+ResourceOverrides={
+    {
+        Tag=SphereShellDeco
+        Resource=/Lotus/Fx/PowersuitAbilities/Gyre/SphereShellDeco
+    }
+}

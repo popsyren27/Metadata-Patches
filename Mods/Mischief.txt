@@ -1,0 +1,82 @@
+/Lotus/Types/Friendly/Pets/CatbrowPetPrecepts/CatbrowDistractPrecept
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Items/CatbrowDistractPreceptName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Kavat/CatbrowDistractPrecept.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Items/CatbrowDistractPreceptDesc
+    LocKeyWordScript={
+    Script=/Lotus/Types/Friendly/Pets/CatbrowPetBehaviors/CatbrowDistractAbility.lua
+    Function=GetDescriptionInfo
+    _spawnEffect=""
+    _decoyAvatarType=""
+    _decoyAgentType=""
+    _maxDecoyRange=30
+    _decoyHealthAsPercentCatHealth=0.5
+    _decoyRespawnImmunityDuration=1
+    _critChanceValue=2
+    _blindFx=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+BaseDrain=QA_NONE
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Types/Game/CatbrowPet/CheshireCatbrowPetPowerSuit
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/CritChanceModifier.png
+Ability={
+Script={
+Script=/Lotus/Types/Friendly/Pets/CatbrowPetBehaviors/CatbrowDistractAbility.lua
+Function=NpcEvaluateAbility
+_spawnEffect=/Lotus/Fx/Kavats/DistractSpawnIn
+_decoyAvatarType=/Lotus/Types/Friendly/Pets/DecoyCatbrowNPCAvatar
+_decoyAgentType=/Lotus/Types/Friendly/Pets/CatbrowPetAgent
+_maxDecoyRange=30
+_decoyHealthAsPercentCatHealth=0.5
+_decoyRespawnImmunityDuration=1
+_critChanceValue=1
+_blindFx=/Lotus/Fx/PowersuitAbilities/Excalibur/BlindedSpawner
+}
+SecondaryScripts={
+{
+tag=BlindEffeectOnClient
+executionMode=EM_CLIENT
+inheritPrimary=0
+functionName=""
+scriptInstance={
+Script=/Lotus/Types/Friendly/Pets/CatbrowPetBehaviors/CatbrowDistractAbility.lua
+Function=BlindEffeectOnClient
+_spawnEffect=""
+_decoyAvatarType=""
+_decoyAgentType=""
+_maxDecoyRange=30
+_decoyHealthAsPercentCatHealth=0.5
+_decoyRespawnImmunityDuration=1
+_critChanceValue=2
+_blindFx=/Lotus/Fx/PowersuitAbilities/Excalibur/BlindedSpawner
+}
+}
+}
+EnergyRequiredToActivate=0
+ActivationXP=25
+CastSound=/Lotus/Sounds/Mods/PetMods/MischiefReworkExplosionMod
+}

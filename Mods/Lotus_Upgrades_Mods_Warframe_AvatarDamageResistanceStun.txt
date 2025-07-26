@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Warframe/AvatarDamageResistanceStun
+patch not applied (yet)

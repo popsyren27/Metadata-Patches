@@ -1,0 +1,101 @@
+/Lotus/Powersuits/Archwing/StealthJetPack/StealthJetPack
+MarketMode=MM_VISIBLE
+PremiumPrice=325
+SellingPrice=10000
+LocalizeTag=/Lotus/Language/Items/StealthArchwingName
+LocalizeDescTag=/Lotus/Language/Items/StealthArchwingDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Archwing/Archwings/Itzal.png
+Diorama=/Lotus/Levels/Episodes/StealthArchwing.level
+ExcludeFromCodex=0
+ArtifactSlots={
+    AP_ATTACK,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_TACTIC,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_DEFENSE
+}
+DefaultCustomization={
+    BodySkin={
+        ItemType=/Lotus/Upgrades/Skins/Archwing/StealthDefaultArchwingSkin
+    }
+}
+DefaultEnergyColor={57,180,217,255}
+DefaultEnergyColor1={57,180,217,255}
+Mesh=/Lotus/Characters/Tenno/JetPacks/HarrierSystem/Harrier3_skel.fbx
+AbilityTypes={
+    /Lotus/Powersuits/Archwing/ArchwingAbilities/GrappleHookAbility,
+    /Lotus/Powersuits/Archwing/ArchwingAbilities/CloakingAbility,
+    /Lotus/Powersuits/Archwing/ArchwingAbilities/GravitationalInstabilityAbility,
+    /Lotus/Powersuits/Archwing/ArchwingAbilities/DistractionDronesAbility
+}
+MaxEnergy=220
+InitialEnergy=100
+MovementSpeedMultiplier=1.2
+MaxHealthOverride=200
+MaxShieldOverride=220
+MaxStaminaOverride=500
+SoundEvents={
+    {
+        EventName=SFXJetpackDodgeRollRight
+        Sound=/Lotus/Sounds/Vehicles/Archwing/Movement/ArchWingDodgeRollRight
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=SFXJetpackDodgeRollLeft
+            Sound=/Lotus/Sounds/Vehicles/Archwing/Movement/ArchWingDodgeRollLeft
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+            },
+            {
+                EventName=BerserkerGrapplePull2D
+                Sound=/Lotus/Sounds/Weapons/Archwing/Powers/ArchwingZipline/ArchwingZiplinePull2D
+                Chance=1
+                Period=1
+                Context=PEC_LOCAL_ONLY
+                CancelEventName=""
+                },
+                {
+                    EventName=BerserkerGrapplePull3D
+                    Sound=/Lotus/Sounds/Weapons/Archwing/Powers/ArchwingZipline/ArchwingZiplinePull
+                    Chance=1
+                    Period=1
+                    Context=PEC_REMOTE_ONLY
+                    CancelEventName=""
+                    },
+                    {
+                        EventName=BerserkerGrappleThrow2D
+                        Sound=/Lotus/Sounds/Weapons/Archwing/Powers/ArchwingZipline/ArchwingZiplineThrow2D
+                        Chance=1
+                        Period=1
+                        Context=PEC_LOCAL_ONLY
+                        CancelEventName=""
+                        },
+                        {
+                            EventName=BerserkerGrappleThrow3D
+                            Sound=/Lotus/Sounds/Weapons/Archwing/Powers/ArchwingZipline/ArchwingZiplineThrow
+                            Chance=1
+                            Period=1
+                            Context=PEC_REMOTE_ONLY
+                            CancelEventName=""
+                        }
+                    }
+                    JetPackAttachment={
+                        Type=StealthFlightJetPack
+                    }
+                    FlightClimbController=SpaceTennoClimbController
+                    WaterJetPackAttachment={
+                        Type=WaterStealthFlightJetPack
+                    }
+                    SwimClimbController=SkyTennoClimbController
+                    SkyJetPackAttachment={
+                        Type=SkyStealthFlightJetPack
+                    }
+                    SkyClimbController=SkyTennoClimbController

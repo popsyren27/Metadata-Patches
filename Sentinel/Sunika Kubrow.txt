@@ -1,0 +1,62 @@
+/Lotus/Types/Game/KubrowPet/HunterKubrowPetPowerSuit
+MarketMode=MM_HIDDEN
+AdditionalItems={
+    /Lotus/Types/Friendly/Pets/BeastWeapons/SunikaPetWeapon
+}
+LocalizeTag=/Lotus/Language/Items/HunterKubrowName
+LocalizeDescTag=/Lotus/Language/Items/HunterKubrowDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Companions/Pets/Kubrow/Breed/KubrowBreedSunika.png
+RectangleIcon=0
+Diorama=/Lotus/Levels/Episodes/KubrowHunter.level
+ExcludeFromCodex=0
+ArtifactSlots={
+    AP_PRECEPT,
+    AP_ATTACK,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_PRECEPT,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
+}
+DefaultSlottedUpgrades={
+    {
+        ItemType=/Lotus/Types/Friendly/Pets/KubrowPetPrecepts/KubrowVipChasePrecept
+        Slot=3
+        RandomUpgradeBuffTags={}
+        },
+        {
+            ItemType=/Lotus/Upgrades/Mods/Sentinel/Kubrow/KubrowClonedFinisherMod
+            Slot=4
+            RandomUpgradeBuffTags={}
+            },
+            {
+                ItemType=/Lotus/Types/Sentinels/SentinelPrecepts/BeastUniversalVacuum
+                Slot=0
+                RandomUpgradeBuffTags={}
+            }
+        }
+        MaxHealthOverride=830
+        MaxShieldOverride=350
+        MiniMapIcon=/Lotus/Interface/Icons/Markers/Companions/KubrowSunikaPortrait.png
+        MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Companions/LargePortraits/KubrowSunikaLargePortrait.png
+        ExtraDependencies={
+            /Lotus/Types/Friendly/Pets/BeastWeapons/SunikaPetWeapon
+        }
+        SpecialSlotItem={
+            SPECIAL_B_SLOT={
+                ItemType=/Lotus/Types/Friendly/Pets/BeastWeapons/SunikaPetWeapon
+            }
+        }
+        DefaultTraits={
+            BaseColor=Colors/KubrowPetColorMundaneD
+            SecondaryColor=Colors/KubrowPetColorMundaneD
+            TertiaryColor=Colors/KubrowPetColorMundaneD
+            AccentColor=Colors/KubrowPetColorMundaneD
+            EyeColor=Colors/KubrowPetColorEyesA
+            FurPattern=Patterns/KubrowPetPatternD
+            Personality=HunterKubrowPetPowerSuit
+            BodyType=BodyTypes/KubrowPetRegularBodyType
+        }

@@ -1,0 +1,37 @@
+/Lotus/Powersuits/Paladin/Paladin
+MarketMode=MM_VISIBLE
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Paladin/PaladinHelmet
+}
+Icon=/Lotus/Interface/Icons/StoreIcons/Warframes/Oberon.png
+RectangleIcon=0
+ExcludeFromCodex=0
+RecipeHelpText=/Lotus/Language/WarframeCrafting/OberonRecipeHelp
+DefaultCustomization={
+    CustomEmblem={
+        OFF_HAND={}
+    }
+}
+DefaultSlottedUpgrades={
+    {
+        ItemType=SmiteAbilityCard
+        Slot=9
+        RandomUpgradeBuffTags={}
+        },
+        {
+            ItemType=StairwayToHeavenAbilityCard
+            Slot=5
+            RandomUpgradeBuffTags={}
+            },
+            {
+                ItemType=RegenerationAbilityCard
+                Slot=4
+                RandomUpgradeBuffTags={}
+                },
+                {
+                    ItemType=ReckoningAbilityCard
+                    Slot=0
+                    RandomUpgradeBuffTags={}
+                }
+            }
+            MaxShieldOverride=270

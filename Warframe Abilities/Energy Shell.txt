@@ -1,0 +1,13 @@
+/Lotus/Powersuits/Archwing/ArchwingAbilities/FireShieldAbility
+LocalizeTag=/Lotus/Language/Items/FireShieldAbility
+LocalizeDescTag=/Lotus/Language/Items/FireShieldAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/Archwing/ArchwingOneShield.png
+Script={
+    Script=FireShield.lua
+    Function=ActivateAbility
+    _shieldProxyType=/Lotus/Powersuits/Archwing/StandardJetPack/FireShieldHitProxy
+    _shieldEffectType=/Lotus/Fx/SpaceBattle/Abilities/FireShieldDeco
+}
+ActivationXP=25
+CastSound=/Lotus/Sounds/Weapons/Archwing/Powers/ArchwingShield/ArchwingShieldCast3D
+VideoTexture=/Lotus/Interface/Cards/Images/ArchwingMods/Odonata/FireShield.png

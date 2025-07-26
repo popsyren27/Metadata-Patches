@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Nemesis/AvatarSentientArmourMod
+patch not applied (yet)

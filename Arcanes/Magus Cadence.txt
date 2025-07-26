@@ -1,0 +1,53 @@
+/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/SpeedOnVoidDash
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/SpeedOnVoidDash
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/MagusCadenceBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/SpeedOnVoidDash.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=AVATAR_SPRINT_SPEED
+        OperationType=STACKING_MULTIPLY
+        Value=0.15000001
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/AvatarSprintSpeedPercentModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDuration
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+UpgradeDuration=12
+DurationScalesWithRank=0
+ChanceScalesWithRank=0
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Events/OnVoidDashCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnVoidDashCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/SpeedIcon.png
+BaseDistillPointValue=18

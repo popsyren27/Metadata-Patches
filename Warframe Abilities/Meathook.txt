@@ -1,0 +1,45 @@
+/Lotus/Powersuits/PowersuitAbilities/EntratiMechGrabAbility
+LocalizeTag=/Lotus/Language/Necromech/EntratiMechGrabAbilityName
+LocalizeDescTag=/Lotus/Language/Necromech/EntratiMechGrabAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/Mech/ThanomechGrab.png
+Script={
+    Script=/Lotus/Powersuits/EntratiMech/GrapplerAbility.lua
+    Function=ActivateAbility
+    _grabTriggerType=/Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/NechroTech/NechroTechGrabTrigger
+    _grabBone=GAME_L1_FINGER2
+    _grabAnim=/Lotus/Animations/Orokin/NechroTech/Grab_anim.fbx
+    _slideSpeed=14
+    _slideTurnRate=1080
+    _timeFromStartToLockAngle=0.30000001
+    _throwAnim=/Lotus/Animations/Orokin/NechroTech/GrabThrowForward_anim.fbx
+    _projectileType=Projectiles/EntratiMechGrabProjectile
+    _meleeDamageMultiplier=2
+    _damageTickTime=1
+    _lifeLeechCap=4000
+}
+SecondaryScripts={
+    {
+        tag=GrabAvatar
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=/Lotus/Powersuits/EntratiMech/GrapplerAbility.lua
+            Function=GrabAvatar
+            _grabTriggerType=""
+            _grabBone=""
+            _grabAnim=""
+            _slideSpeed=15
+            _slideTurnRate=1080
+            _timeFromStartToLockAngle=0.30000001
+            _throwAnim=""
+            _projectileType=""
+            _meleeDamageMultiplier=2
+            _damageTickTime=1
+            _lifeLeechCap=4000
+        }
+    }
+}
+ActivationXP=0
+HideMeleeWeapon=0
+VideoTexture=/Lotus/Interface/AbilityVideos/Necramech/BonewidowPower1_s.bk2

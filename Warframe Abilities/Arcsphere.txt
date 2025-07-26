@@ -1,0 +1,51 @@
+/Lotus/Powersuits/PowersuitAbilities/GyrePulseAbility
+LocalizeTag=/Lotus/Language/Suits/GyrePulseAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/GyrePulseAbilityDescription
+Icon=/Lotus/Interface/Icons/Abilities/GyrePulse.png
+UniquePowerIdentifier=GYRE_PULSE
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=GyrePulse.lua
+    Function=ActivateAbility
+    _projectileType=/Lotus/Powersuits/Gyre/PulseProjectile
+    _rangeDecoType=""
+    _rangeEnhancedMat=""
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Gyre/PulseCast
+    _landEffect=""
+    _randomBeam=""
+    _randomBeamParent=""
+    _staticAttach=""
+    _staticEnhancedAttach=""
+    _staticEnhancedShell=""
+    _augmentHitProxy=""
+}
+SecondaryScripts={
+    {
+        tag=StartPulse
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=StartPulse
+        scriptInstance={
+            Script=GyrePulse.lua
+            Function=StartPulse
+            _projectileType=""
+            _rangeDecoType=/Lotus/Fx/PowersuitAbilities/Gyre/PulseRangeDeco
+            _rangeEnhancedMat=/Lotus/Fx/PowersuitAbilities/Gyre/PulseRangeDecoMatEnhanced
+            _castEffect=""
+            _landEffect=/Lotus/Fx/PowersuitAbilities/Gyre/PulseLand
+            _randomBeam=/Lotus/Fx/PowersuitAbilities/Gyre/PulseAreaBeam
+            _randomBeamParent=/Lotus/Fx/PowersuitAbilities/Gyre/PulseAreaBeamDeco
+            _staticAttach=/Lotus/Fx/PowersuitAbilities/Gyre/PulseStaticAttach
+            _staticEnhancedAttach=/Lotus/Fx/PowersuitAbilities/Gyre/PulseStaticEnhancedAttach
+            _staticEnhancedShell=/Lotus/Fx/PowersuitAbilities/Gyre/PulseStaticEnhancedShellDecoB
+            _augmentHitProxy=/Lotus/Powersuits/Gyre/GyrePulseAugmentHitProxy
+        }
+    }
+}
+NpcCooldownDuration=20
+AllowToggle=1
+ActivationXP=25
+CastSound=/Lotus/Sounds/Warframes/Gyre/GyrePulseCast
+VideoTexture=/Lotus/Interface/AbilityVideos/GyrePower1_s.bk2

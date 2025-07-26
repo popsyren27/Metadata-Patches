@@ -1,0 +1,88 @@
+/Lotus/Powersuits/PowersuitAbilities/PriestCondemnAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/PriestCondemnAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/PriestCondemnAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/PriestCondemn.png
+UniquePowerIdentifier=PRIEST_CONDEMN
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF,
+    EFFECT_DEBUFF
+}
+Script={
+    Script=PriestCondemn.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Priest/CondemnV2_anim.fbx
+    _discType=/Lotus/Powersuits/Priest/CondemnDeco
+    _scriptTriggerType=/Lotus/Powersuits/Priest/CondemnTrigger
+    _spectreType=/Lotus/Powersuits/Priest/RavageDeco
+    _spectreAnim=/Lotus/Animations/Tenno/Powers/Priest/CondemnSpectreLoop_anim.fbx
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Priest/CondemnCast
+    _castBurstEffect=/Lotus/Fx/PowersuitAbilities/Priest/CondemnCastBurst
+    _lingerDecoType=/Lotus/Fx/PowersuitAbilities/Priest/CondemnLingerDeco
+    _trailType=/Lotus/Fx/PowersuitAbilities/Priest/CondemnSmokeTrail
+    _enemyAttachEffect=/Lotus/Fx/PowersuitAbilities/Priest/CondemnEnemyAttach
+    _enemyBeamEffect=/Lotus/Fx/PowersuitAbilities/Priest/CondemnBeam
+    _thuribleDeco=/Lotus/Fx/PowersuitAbilities/Priest/ThuribleDeco
+    _thuribleSpectreAnim=/Lotus/Animations/Tenno/Powers/Priest/CondemnSpectreLoopThuribleWEP_anim.fbx
+    _ambientChainBeam=/Lotus/Fx/PowersuitAbilities/Priest/CondemnTravelAmbientBeam
+    _ambientChainSpawn=/Lotus/Fx/PowersuitAbilities/Priest/CondemnTravelChainsBurst
+    _chainBreakFx=""
+    _attachedLight=/Lotus/Fx/PowersuitAbilities/Priest/CondemnDecoLight
+}
+SecondaryScripts={
+    {
+        tag=FreezeEnemies
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=PriestCondemn.lua
+            Function=FreezeEnemies
+            _activateAnim=""
+            _discType=""
+            _scriptTriggerType=""
+            _spectreType=""
+            _spectreAnim=""
+            _castEffect=""
+            _castBurstEffect=""
+            _lingerDecoType=""
+            _trailType=""
+            _enemyAttachEffect=/Lotus/Fx/PowersuitAbilities/Priest/CondemnEnemyAttach
+            _enemyBeamEffect=/Lotus/Fx/PowersuitAbilities/Priest/CondemnBeam
+            _thuribleDeco=""
+            _thuribleSpectreAnim=""
+            _ambientChainBeam=""
+            _ambientChainSpawn=""
+            _chainBreakFx=/Lotus/Fx/PowersuitAbilities/Priest/CondemnChainsBreak
+            _attachedLight=""
+        }
+    }
+}
+NpcCooldownDuration=14
+AllowOnZipLines=1
+ActivationXP=25
+VideoTexture=/Lotus/Interface/AbilityVideos/HarrowPower1_s.bk2
+SoundEvents={
+    {
+        EventName=SFXCondemnCast
+        Sound=/Lotus/Sounds/Warframes/Priest/PriestCondemndCast
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=SFXCondemnImpact
+            Sound=/Lotus/Sounds/Warframes/Priest/PriestCondemndImpact
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+        }
+    }
+    ForceFeedbackEffectEvents={
+        {
+            EventName=PriestBurstFeedback
+            ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerBurst
+        }
+    }

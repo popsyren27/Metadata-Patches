@@ -1,0 +1,51 @@
+/Lotus/Upgrades/Mods/PvPMods/Melee/ChannelingEfficiencyOnLowHealth
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/ChannelingEfficiencyOnLowHealth
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/PvP/Melee/IncreasedEfficiencyatLowHealth.png
+ExcludeFromCodex=0
+AvailableOnPve=0
+AvailableOnPvp=1
+Upgrades={
+{
+    UpgradeType=WEAPON_PARRY_DAMAGE_REFLECTED
+    OperationType=STACKING_MULTIPLY
+    Value=0.15000001
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+}
+}
+ApplyUpgradesByDefault=0
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_VERY_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
+Script={
+Script=/Lotus/Scripts/Mods/RequireWeaponEquipped.lua
+Function=StartMod
+}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDuration
+EnhancementTagLocScript={
+Script=""
+}
+UpgradeChance=1
+UpgradeDuration=2
+CanReproc=0
+CanReprocPvp=0
+ConditionalUpgrades={
+/Lotus/Upgrades/Mods/PvPMods/Conditions/OnLowHealthMeleeCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnLowHealth_Desc
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/Berserker.png

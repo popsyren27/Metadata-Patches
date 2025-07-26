@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Warframe/Intermediate/AvatarDamageToEnergyModIntermediate
+patch not applied (yet)

@@ -1,0 +1,4 @@
+/Lotus/Powersuits/Bard/Bard
+MarketMode=MM_VISIBLE
+ExcludeFromCodex=0
+MaxHealthOverride=270

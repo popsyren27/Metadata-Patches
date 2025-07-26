@@ -1,0 +1,45 @@
+/Lotus/Upgrades/EmpoweredHeavyMelee/PerfectCondition
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/PerfectCondition
+Icon=/Lotus/Interface/Cards/Images/Melee/Tennokai/PerfectCondition.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=WEAPON_PROC_CHANCE
+    OperationType=STACKING_MULTIPLY
+    Value=0.25
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=CC_GROUND_HEAVY
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Mods/PerfectConditionDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_DEFENSE
+BaseDrain=QA_MEDIUM
+FusionLimit=QA_MEDIUM
+IncompatibilityTags={
+POWER_WEAPON_LITE,
+NO_HEAVY_ATTACK
+}
+HudBuffIcon=""
+TipTags={
+PERFECT_HEAVY_MELEE
+}

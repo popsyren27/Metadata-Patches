@@ -1,0 +1,93 @@
+/Lotus/Powersuits/PowersuitAbilities/MonkeyStaffAbility
+LocalizeTag=/Lotus/Language/Suits/MonkeyStaffAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/MonkeyStaffAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/WukongPrimalFury.png
+UniquePowerIdentifier=MONKEY_STAFF
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE,
+    EFFECT_BUFF
+}
+Script={
+    Script=MonkeyStaff.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/MonkeyKing/GoldenBandStaff/Equip_anim.fbx
+    _cloneSpawnAnim=/Lotus/Animations/Tenno/Powers/MonkeyKing/HairOfTheKingCLONE_anim.fbx
+    _castEffect=/Lotus/Fx/PowersuitAbilities/MonkeyKing/MonkeyStaffCast
+    _endCastEffect=/Lotus/Fx/PowersuitAbilities/MonkeyKing/MonkeyStaffEndCast
+    _castBurstEffect=/Lotus/Fx/PowersuitAbilities/MonkeyKing/MonkeyStaffCastBurst
+    _attachEffect=/Lotus/Fx/PowersuitAbilities/MonkeyKing/MonkeyStaffBuffAttach
+    _staffRangeDeco=""
+    _vortexType=""
+    _vortexEffect=""
+}
+SecondaryScripts={
+    {
+        tag=GiveWeapon
+        executionMode=EM_HOST
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=MonkeyStaff.lua
+            Function=GiveStaff
+            _activateAnim=""
+            _cloneSpawnAnim=""
+            _castEffect=""
+            _endCastEffect=""
+            _castBurstEffect=""
+            _attachEffect=""
+            _staffRangeDeco=""
+            _vortexType=""
+            _vortexEffect=""
+        }
+        },
+        {
+            tag=RemoveWeapon
+            executionMode=EM_HOST
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=MonkeyStaff.lua
+                Function=RemoveStaff
+                _activateAnim=""
+                _cloneSpawnAnim=""
+                _castEffect=""
+                _endCastEffect=""
+                _castBurstEffect=""
+                _attachEffect=""
+                _staffRangeDeco=""
+                _vortexType=""
+                _vortexEffect=""
+            }
+        }
+    }
+    AbilityEvents={
+        {
+            tag=AugmentOnKill
+            eventType=ET_ON_KILL
+            scriptInstance={
+                Script=MonkeyStaff.lua
+                Function=AugmentOnKill
+                _activateAnim=""
+                _cloneSpawnAnim=""
+                _castEffect=""
+                _endCastEffect=""
+                _castBurstEffect=""
+                _attachEffect=""
+                _staffRangeDeco=""
+                _vortexType=""
+                _vortexEffect=""
+            }
+        }
+    }
+    NpcCooldownDuration=8
+    EnergyRequiredToActivate=10
+    EnergyConsumptionOverTime=5
+    AllowToggle=1
+    ActivationXP=25
+    VideoTexture=/Lotus/Interface/AbilityVideos/WukongPower4_s.bk2
+    ForceFeedbackEffectEvents={
+        {
+            EventName=WukongImpactFeedback
+            ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerImpact
+        }
+    }

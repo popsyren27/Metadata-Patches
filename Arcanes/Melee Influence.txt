@@ -1,0 +1,38 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/MeleeProcsSpread
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/MeleeProcsSpreadName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/MeleeProcsSpreadBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionCZ.png
+ExcludeFromCodex=0
+ApplyUpgradesByDefault=0
+Script={
+    Script=ApplyUpgrade.lua
+    Function=AddUpgrade
+    _upgradeToGive=SpreadStatusOnStatusProc
+}
+UnappliedScript={
+    Script=ApplyUpgrade.lua
+    Function=RemoveUpgrade
+    _upgradeToGive=SpreadStatusOnStatusProc
+}
+EnhancementTag=/Lotus/Language/Arcanes/MeleeProcsSpreadDesc
+EnhancementTagLocScript={
+    Script=SpreadStatusOnCondition.lua
+    Function=GetDescription
+    _radius=10
+    _radiusPerFusionLevel=2
+    _procsToSpread={
+        PT_CAUSTIC_BURN
+    }
+}
+UpgradeChance=0.2
+UpgradeDuration=3
+ChanceScalesWithRank=0
+CanReproc=0
+ConditionalUpgrades={
+    OnElectricityProcCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCZBuff.png
+BaseDistillPointValue=24

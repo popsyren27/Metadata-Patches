@@ -1,0 +1,84 @@
+/Lotus/Powersuits/PowersuitAbilities/ChoirPoolAbility
+LocalizeTag=/Lotus/Language/Suits/ChoirPoolAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/ChoirPoolAbilityDesc
+StatusDescTag=/Lotus/Language/Suits/ChoirPassiveBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/ChoirAbsolution.png
+UniquePowerIdentifier=CHOIR_POOL
+AdditionalPowerIdentifiers={
+    EFFECT_MOBILITY
+}
+Script={
+    Script=ChoirPool.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Choir/Ability1_anim.fbx
+    _inAirActivateAnim=/Lotus/Animations/Tenno/Powers/Choir/Ability4FireAbility1_anim.fbx
+    _projType=/Lotus/Powersuits/Choir/ChoirPoolProjectile
+    _healEffect=""
+    _rangeDeco=/Lotus/Fx/PowersuitAbilities/PaxDuviricus/FieldRangeDeco
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Choir/AbsolutionCast
+    _castSound=""
+    _elementType=""
+    _poolTriggerType=""
+    _leadUpVfxType=""
+    _endVfxType=""
+    _leadUpTime=1.5
+    _helperType=""
+    _damageVfxType=""
+    _damageBeamType=""
+}
+SecondaryScripts={
+    {
+        tag=SendApplyPoolBuff
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=ChoirPool.lua
+            Function=SendApplyPoolBuff
+            _activateAnim=""
+            _inAirActivateAnim=""
+            _projType=""
+            _healEffect=/Lotus/Fx/PowersuitAbilities/Choir/AbsolutionHealAttach
+            _rangeDeco=""
+            _castEffect=""
+            _castSound=""
+            _elementType=""
+            _poolTriggerType=""
+            _leadUpVfxType=""
+            _endVfxType=""
+            _leadUpTime=1.5
+            _helperType=""
+            _damageVfxType=""
+            _damageBeamType=""
+        }
+        },
+        {
+            tag=AddPassiveDebuffStack
+            executionMode=EM_ALL
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=ChoirPool.lua
+                Function=AddPassiveDebuffStack
+                _activateAnim=""
+                _inAirActivateAnim=""
+                _projType=""
+                _healEffect=""
+                _rangeDeco=""
+                _castEffect=""
+                _castSound=""
+                _elementType=""
+                _poolTriggerType=""
+                _leadUpVfxType=""
+                _endVfxType=""
+                _leadUpTime=1.5
+                _helperType=""
+                _damageVfxType=""
+                _damageBeamType=""
+            }
+        }
+    }
+    NpcCooldownDuration=10
+    AllowOnZipLines=1
+    CastSound=/Lotus/Sounds/Warframes/Choir/ChoirPoolCast
+    VideoTexture=/Lotus/Interface/AbilityVideos/JadePower1_s.bk2

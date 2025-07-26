@@ -1,0 +1,70 @@
+/Lotus/Powersuits/PowersuitAbilities/RunnerPlatingAbility
+LocalizeTag=/Lotus/Language/Suits/RunnerPlatingAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/RunnerPlatingAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/RunnerKineticPlating.png
+UniquePowerIdentifier=RUNNER_PLATING
+AdditionalPowerIdentifiers={
+    EFFECT_MOBILITY,
+    EFFECT_BUFF
+}
+Script={
+    Script=RunnerPlating.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Runner/KineticPlating_anim.fbx
+    _platingFxType=/Lotus/Fx/PowersuitAbilities/Runner/PlatingAttach
+    _shieldDecoType=/Lotus/Fx/PowersuitAbilities/Runner/PlatingShieldMeshDeco
+    _shieldHitType=/Lotus/Fx/PowersuitAbilities/Runner/PlatingShieldHitSpawn
+}
+AbilityEvents={
+    {
+        tag=OnMeleeHit
+        eventType=ET_ON_MELEE_HIT
+        scriptInstance={
+            Script=RunnerPlating.lua
+            Function=OnMeleeHit
+            _activateAnim=""
+            _platingFxType=""
+            _shieldDecoType=""
+            _shieldHitType=""
+        }
+    }
+}
+NpcCooldownDuration=32
+EnergyRequiredToActivate=50
+AllowToggle=1
+AllowOnZipLines=1
+ActivationXP=50
+HideMeleeWeapon=0
+VideoTexture=/Lotus/Interface/AbilityVideos/GaussPower2_s.bk2
+SoundEvents={
+    {
+        EventName=SFXKineticPlatingCast
+        Sound=/Lotus/Sounds/Warframes/Runner/RunnerKineticPlatingCast
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=SFXKineticPlatingHit
+            Sound=/Lotus/Sounds/Warframes/Runner/RunnerKineticPlatingHit
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+        }
+    }
+    ResourceOverrides={
+        {
+            Tag=PlatingCast
+            Resource=/Lotus/Fx/PowersuitAbilities/Runner/PlatingCast
+            },
+            {
+                Tag=PlatingCastBurst
+                Resource=/Lotus/Fx/PowersuitAbilities/Runner/PlatingCastBurst
+                },
+                {
+                    Tag=PlatingEnd
+                    Resource=/Lotus/Fx/PowersuitAbilities/Runner/PlatingEnd
+                }
+            }

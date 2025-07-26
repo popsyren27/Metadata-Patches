@@ -1,0 +1,47 @@
+/Lotus/Powersuits/PowersuitAbilities/KhoraCrackAbility
+LocalizeTag=/Lotus/Language/Suits/KhoraCrackAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/KhoraCrackAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/KhoraCrack.png
+UniquePowerIdentifier=KHORA_CRACK
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=KhoraCrack.lua
+    Function=ActivateAbility
+    _whipAnim=/Lotus/Animations/Tenno/Powers/Quill/CrackStrikeForwardWhipWEP_anim.fbx
+    _whipDecoType=/Lotus/Characters/Tenno/Quill/KhoraExaltedWhip/ExaltedWhipDeco
+    _whipDespawnEffect=/Lotus/Fx/PowersuitAbilities/Khora/WhipDespawn
+    _whipDespawnAnim=""
+    _crackDamageBurst=/Lotus/Fx/PowersuitAbilities/Khora/CrackBurstImpact
+    _augmentSound=""
+}
+SecondaryScripts={
+    {
+        tag=Cracked
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=KhoraCrack.lua
+            Function=Cracked
+            _whipAnim=""
+            _whipDecoType=""
+            _whipDespawnEffect=""
+            _whipDespawnAnim=""
+            _crackDamageBurst=""
+            _augmentSound=/Lotus/Sounds/Warframes/Khora/KhoraWhipclawAugment
+        }
+    }
+}
+NpcCooldownDuration=8
+AllowOnZipLines=1
+ActivationXP=25
+HideMeleeWeapon=0
+VideoTexture=/Lotus/Interface/AbilityVideos/KhoraPower1_s.bk2
+ForceFeedbackEffectEvents={
+    {
+        EventName=KhoraBurstFeedback
+        ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerBurst
+    }
+}

@@ -1,0 +1,62 @@
+/Lotus/Powersuits/PowersuitAbilities/FairyLightAbility
+LocalizeTag=/Lotus/Language/Suits/FairyLightAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/FairyLightAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/FaerieLamp.png
+UniquePowerIdentifier=FAIRY_LIGHT
+AdditionalPowerIdentifiers={
+    EFFECT_MOBILITY,
+    EFFECT_DAMAGE
+}
+Script={
+    Script=FairyLight.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Titania/LampLighter_anim.fbx
+    _elementType=/Lotus/Powersuits/Fairy/LightElement
+    _enemyAttachEffect=/Lotus/Fx/PowersuitAbilities/Fairy/LightAttach
+    _explosionEffect=/Lotus/Fx/PowersuitAbilities/Fairy/LightExplosion
+    _orbitAttachFX={}
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Fairy/LightCast
+    _castBurst=/Lotus/Fx/PowersuitAbilities/Fairy/LightCastBurst
+    _attractAttachEffect=/Lotus/Fx/PowersuitAbilities/Fairy/LightMesmerizedAttach
+    _randomAnims={}
+    _jointType=/Lotus/Powersuits/Fairy/LightJointObject
+    _pvpStartAnim=/Lotus/Animations/Tenno/HitReacts/LevitateStart_anim.fbx
+    _pvpLoopAnim=/Lotus/Animations/Tenno/HitReacts/LevitateLoop_anim.fbx
+    _pvpEndAnim=/Lotus/Animations/Tenno/HitReacts/LevitateEnd_anim.fbx
+}
+SecondaryScripts={
+    {
+        tag=TerminateEarly
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=FairyLight.lua
+            Function=TerminateEarly
+            _activateAnim=""
+            _elementType=""
+            _enemyAttachEffect=""
+            _explosionEffect=""
+            _orbitAttachFX={}
+            _castEffect=""
+            _castBurst=""
+            _attractAttachEffect=""
+            _randomAnims={}
+            _jointType=""
+            _pvpStartAnim=""
+            _pvpLoopAnim=""
+            _pvpEndAnim=""
+        }
+    }
+}
+NpcCooldownDuration=30
+EnergyRequiredToActivate=0
+ActivationXP=75
+VideoTexture=/Lotus/Interface/AbilityVideos/TitaniaPower3_s.bk2
+ForceFeedbackEffectEvents={
+    {
+        EventName=TitaniaImpactFeedback
+        ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerImpact
+    }
+}
+PvpDescription=/Lotus/Language/Suits/FairyLightAbilityPvPDesc

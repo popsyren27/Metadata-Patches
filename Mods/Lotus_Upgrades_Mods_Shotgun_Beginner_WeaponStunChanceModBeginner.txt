@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Shotgun/Beginner/WeaponStunChanceModBeginner
+patch not applied (yet)

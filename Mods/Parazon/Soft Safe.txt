@@ -1,7 +1,0 @@
-/Lotus/Upgrades/Mods/Immortal/AntivirusSixMod
-MarketMode=MM_HIDDEN
-LocalizeTag=/Lotus/Language/1999Coda/AntivirusSixModName
-LocalizeDescTag=/Lotus/Language/1999Coda/AntivirusSixModDesc
-Icon=/Lotus/Interface/Icons/Antivirus/CompuPal.png
-ExcludeFromCodex=0
-ImmortalGroup=2

@@ -1,0 +1,58 @@
+/Lotus/Upgrades/Mods/PvPMods/Rifle/LessRecoilSmallerMagRifleMod
+Rarity=RARE
+LocalizeTag=/Lotus/Language/Mods/LessRecoilSmallerMagRifleMod
+Icon=/Lotus/Interface/Cards/Images/PvP/Rifle/LessRecoilSmallerMagRifleMod.png
+Upgrades={
+{
+    UpgradeType=WEAPON_RECOIL
+    OperationType=STACKING_MULTIPLY
+    Value=-0.15000001
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponRecoilModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=WEAPON_CLIP_MAX
+    OperationType=STACKING_MULTIPLY
+    Value=-0.025
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponClipMaxModDesc
+    LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+BaseDrain=QA_HIGH
+FusionLimit=QA_MEDIUM

@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Rifle/Expert/WeaponElectricityDamageModExpert
+patch not applied (yet)

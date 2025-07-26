@@ -4,15 +4,15 @@ LocalizeTag=/Lotus/Language/Weapons/ChoirEruptWeaponName
 LocalizeDescTag=/Lotus/Language/Weapons/ChoirEruptWeaponDesc
 Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/ExaltedWeapons/ChoirEruptWeapon.png
 ArtifactSlots={
-AP_UNIVERSAL,
-AP_UNIVERSAL,
-AP_UNIVERSAL,
-AP_ATTACK,
-AP_UNIVERSAL,
-AP_UNIVERSAL,
-AP_UNIVERSAL,
-AP_ATTACK,
-AP_UNIVERSAL,
-AP_UNIVERSAL
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_ATTACK,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_ATTACK,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
 }
 DefaultModTemplate=/Lotus/Types/ModLists/Pistol/HybridHeat

@@ -1,0 +1,53 @@
+/Lotus/Upgrades/Mods/Aura/FairyQuest/FairyQuestCritToAbilityAuraMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/CritToAbilityAuraName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Auras/FairyQuestCritToAbilityAura.png
+ExcludeFromCodex=0
+TradeCapability=RO_DEFAULT
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Mods/CritToAbilityAuraDesc
+    LocKeyWordScript={
+    Script=/Lotus/Scripts/Mods/FairyQuestCritToAbility.lua
+    Function=GetDescription
+    _baseVal=0.042498998
+    _baseDuration=1
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_ATTACK
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/IncreasedAbilityStrength.png
+OnEnterAuraScript={
+Script=/Lotus/Scripts/Mods/AuraAddModsToWeapon.lua
+Function=EnterAura
+_auraMods={
+FairyQuestCritToAbilityMod
+}
+_weaponSlot=SLOT_4
+}
+OnExitAuraScript={
+Script=/Lotus/Scripts/Mods/AuraAddModsToWeapon.lua
+Function=ExitAura
+_auraMods={
+FairyQuestCritToAbilityMod
+}
+_weaponSlot=SLOT_4
+}

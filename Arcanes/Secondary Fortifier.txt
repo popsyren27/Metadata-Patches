@@ -1,0 +1,61 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/OverguardSteal
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/OverguardStealName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionDG.png
+ExcludeFromCodex=0
+ExtraUpgrades={
+    {
+        UpgradeType=WEAPON_DAMAGE_AMOUNT_TO_OVERGUARD
+        OperationType=MULTIPLY
+        Value=3
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Arcanes/OverguardDamageDesc
+        LocKeyWordScript={
+            Script=""
+        }
+        DisplayAsMultiplier=1
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ExtraUpgradeFusionLevel=QA_LOW
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+ExtraFusionPowerCurve=QC_LINEAR
+ExtraFusionPowerStep=1
+ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol
+Script={
+    Script=OverguardLifesteal.lua
+    Function=ApplyUpgrade
+    _overguardSteal=0.0099999998
+    _overguardLimit=15000
+}
+EnhancementTag=/Lotus/Language/Arcanes/OverguardStealDesc
+EnhancementTagLocScript={
+    Script=OverguardLifesteal.lua
+    Function=GetDescription
+    _overguardSteal=0.0099999998
+    _overguardLimit=600
+}
+UpgradeChance=1
+ConditionalUpgrades={
+    OnOverguardHitCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDGBuff.png
+BaseDistillPointValue=24

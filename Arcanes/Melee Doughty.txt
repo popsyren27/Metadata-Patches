@@ -1,0 +1,53 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/CritDamageForPunctureStatus
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/1999/CritDamageForPunctureStatusName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/1999/CritDamageForPunctureStatusBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionDM.png
+ExcludeFromCodex=0
+Script={
+    Script=GiveStatForDamageType.lua
+    Function=ApplyUpgrade
+    _giveStatIncreaseBase=0.5
+    _giveStatIncreasePerLevel=0.1
+    _giveStatType=WEAPON_CRIT_DAMAGE
+    _giveStatOperation=ADD
+    _haveStatThresholdBase=0.1
+    _haveStatThresholdPerLevel=0
+    _haveStatType=DT_PUNCTURE
+    _discreteBuffTiers=0
+    _maxStacks=50
+}
+UnappliedScript={
+    Script=GiveStatForDamageType.lua
+    Function=UnapplyUpgrade
+    _giveStatIncreaseBase=0.5
+    _giveStatIncreasePerLevel=0.1
+    _giveStatType=AVATAR_ABILITY
+    _giveStatOperation=ADD
+    _haveStatThresholdBase=0.2
+    _haveStatThresholdPerLevel=0
+    _haveStatType=DT_PUNCTURE
+    _discreteBuffTiers=1
+    _maxStacks=0
+}
+SubUpgrades={
+    CritDamageForPunctureStatusSub
+}
+EnhancementTag=/Lotus/Language/1999/CritDamageForPunctureStatusDesc
+EnhancementTagLocScript={
+    Script=GiveStatForDamageType.lua
+    Function=GetDescriptionInfo
+    _giveStatIncreaseBase=0.5
+    _giveStatIncreasePerLevel=0.1
+    _giveStatType=AVATAR_ABILITY
+    _giveStatOperation=ADD
+    _haveStatThresholdBase=0.1
+    _haveStatThresholdPerLevel=0
+    _haveStatType=DT_PUNCTURE
+    _discreteBuffTiers=1
+    _maxStacks=0
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDMBuff.png
+BaseDistillPointValue=24

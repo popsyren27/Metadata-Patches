@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Shotgun/Beginner/WeaponFreezeDamageModBeginner
+patch not applied (yet)

@@ -1,0 +1,72 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/MultishotForCombo
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/CriticalChanceForComboName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/SecondaryOutburstBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionCU.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Arcanes/CriticalChanceForComboDesc
+        LocKeyWordScript={
+            Script=MultishotForCombo.lua
+            Function=GetDescription
+            _upgradeType=WEAPON_FIRE_ITERATIONS
+            _secondaryUpgradeType=WEAPON_CRIT_CHANCE
+            _operationType=STACKING_MULTIPLY
+            _valuesPerCombo={
+                0.050000001,
+                0.07,
+                0.090000004,
+                0.12,
+                0.16,
+                0.2
+            }
+            _duration=30
+        }
+        SmallerIsBetter=0
+        RoundTo=9.9999997e-05
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+FusionLimit=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol
+IncompatibilityTags={}
+Script={
+    Script=MultishotForCombo.lua
+    Function=OnApplied
+    _upgradeType=WEAPON_CRIT_DAMAGE
+    _secondaryUpgradeType=WEAPON_CRIT_CHANCE
+    _operationType=STACKING_MULTIPLY
+    _valuesPerCombo={
+        0.050000001,
+        0.07,
+        0.090000004,
+        0.12,
+        0.16,
+        0.2
+    }
+    _duration=30
+}
+UpgradeChance=1
+UpgradeDuration=10
+DurationScalesWithRank=0
+ChanceScalesWithRank=0
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCUBuff.png
+BaseDistillPointValue=24

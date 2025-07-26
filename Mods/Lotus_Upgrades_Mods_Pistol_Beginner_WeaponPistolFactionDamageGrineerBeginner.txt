@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Pistol/Beginner/WeaponPistolFactionDamageGrineerBeginner
+patch not applied (yet)

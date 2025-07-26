@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Warframe/Beginner/AvatarDamageResistanceIceBeginner
+patch not applied (yet)

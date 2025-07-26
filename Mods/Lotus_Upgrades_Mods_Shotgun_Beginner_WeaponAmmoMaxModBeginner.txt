@@ -1,0 +1,2 @@
+/Lotus/Upgrades/Mods/Shotgun/Beginner/WeaponAmmoMaxModBeginner
+patch not applied (yet)

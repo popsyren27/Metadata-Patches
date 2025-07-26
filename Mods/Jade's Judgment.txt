@@ -1,0 +1,54 @@
+/Lotus/Powersuits/Choir/ChoirPoolAugmentCard
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/ChoirPoolAbilityAugment1Name
+Icon=/Lotus/Interface/Cards/Images/AbilityAugments/ChoirPoolAugmentCard.png
+RectangleIcon=0
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_ABILITY_AUGMENT
+    OperationType=ADD
+    Value=1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=AUGMENT_ONE
+    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/ChoirPoolAbility
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Suits/ChoirPoolAbilityAugment1Desc
+    LocKeyWordScript={
+    Script=/Lotus/Powersuits/PowersuitAbilities/ChoirPool.lua
+    Function=GetAugmentDescriptionInfo
+    _activateAnim=""
+    _inAirActivateAnim=""
+    _projType=""
+    _healEffect=""
+    _rangeDeco=""
+    _castEffect=""
+    _castSound=""
+    _elementType=""
+    _poolTriggerType=""
+    _leadUpVfxType=""
+    _endVfxType=""
+    _leadUpTime=1.5
+    _helperType=""
+    _damageVfxType=""
+    _damageBeamType=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_POWER
+BaseDrain=QA_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=ChoirBaseSuit
+IsAbilityAugment=1

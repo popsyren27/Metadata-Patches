@@ -1,0 +1,26 @@
+/Lotus/Powersuits/PowersuitAbilities/MagicianStasisAbility
+LocalizeTag=/Lotus/Language/Suits/StatisAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/StatisAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/LimboRiftWalk.png
+UniquePowerIdentifier=LIMBO_RIFT_WALK
+AdditionalPowerIdentifiers={
+    EFFECT_DEBUFF
+}
+Script={
+    Script=MagicianStasis.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Magician/RiftWalk_anim.fbx
+    _activateAnimEvent=RiftWalk
+    _deactivateAnim=/Lotus/Animations/Tenno/Powers/Magician/StasisEnd_anim.fbx
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Magician/EnterTheRiftCast
+    _burstEffect=/Lotus/Fx/PowersuitAbilities/Magician/EnterTheRiftCastBurst
+    _endBurstEffect=/Lotus/Fx/PowersuitAbilities/Magician/StasisEndCastBurst
+    _castDeco=/Lotus/Fx/PowersuitAbilities/Magician/RiftWalkCastDeco
+    _riftDecoType=/Lotus/Fx/PowersuitAbilities/Magician/EnterTheRiftAttachDeco
+}
+NpcCooldownDuration=24
+EnergyRequiredToActivate=50
+AllowToggle=1
+AllowDuringOverride=1
+ActivationXP=50
+VideoTexture=/Lotus/Interface/AbilityVideos/LimboPower2_s.bk2

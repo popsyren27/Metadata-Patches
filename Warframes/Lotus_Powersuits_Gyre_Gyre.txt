@@ -1,0 +1,39 @@
+/Lotus/Powersuits/Gyre/Gyre
+MarketMode=MM_VISIBLE
+PremiumPrice=325
+AdditionalItems={
+    /Lotus/Upgrades/Skins/Gyre/GyreHelmet
+}
+Icon=/Lotus/Interface/Icons/StoreIcons/Warframes/Gyre.png
+ExcludeFromCodex=0
+RecipeHelpText=/Lotus/Language/Suits/GyreRecipeHelpText
+DefaultCustomization={
+    CustomEmblem={
+        MAIN_HAND={
+            {
+                BoneOverride=""
+                PosOffset={0.17,0.029999999,-0.1}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.17101,-0.17101,0.030153999,0.96984601}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+    EventEmblem={
+        OFF_HAND={
+            {
+                BoneOverride=""
+                PosOffset={-0.17,-0.02,0.1}
+                PosOffsetSecondary={0,0,0}
+                RotOffset={0.17101,-0.17101,0.030153999,0.96984601}
+                RotOffsetSecondary={0,0,0,1}
+                UseSecondaryOffset=1
+                Scale=1
+            }
+        }
+    }
+}
+MaxHealthOverride=270
+AttachedFX={}

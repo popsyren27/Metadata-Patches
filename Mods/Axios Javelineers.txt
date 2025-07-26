@@ -1,0 +1,49 @@
+/Lotus/Powersuits/Hoplite/HopliteImpaleAugmentCard
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/HopliteImpaleAbilityAugment1Name
+Icon=/Lotus/Interface/Cards/Images/AbilityAugments/StyanaxImpaleAugment.png
+RectangleIcon=0
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_ABILITY_AUGMENT
+    OperationType=ADD
+    Value=1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=AUGMENT_ONE
+    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/HopliteImpaleAbility
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Suits/HopliteImpaleAbilityAugment1Desc
+    LocKeyWordScript={
+    Script=/Lotus/Powersuits/PowersuitAbilities/HopliteImpale.lua
+    Function=GetAugmentDescriptionInfo
+    _activateAnim=""
+    _activateAirAnim=""
+    _projectileType=""
+    _castEffect=""
+    _explosionEffect=""
+    _spearDecoType=""
+    _vortexType=""
+    _vortexEffect=""
+    _projDieEffect=""
+    _ghostDecoType=""
+    _cloneAttach=""
+    _hiddenMat=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_POWER
+BaseDrain=QA_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=HopliteBaseSuit
+IsAbilityAugment=1

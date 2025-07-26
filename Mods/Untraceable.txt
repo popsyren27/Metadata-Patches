@@ -1,0 +1,58 @@
+/Lotus/Upgrades/Mods/DataSpike/Cipher/OnHackInvisMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/OnHackInvisModName
+StatusDescTag=/Lotus/Language/Buffs/UntraceableBuffDesc
+Icon=/Lotus/Interface/Cards/Images/DataSpike/OnHackInvisMod.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/DataSpikeOnHackInvis
+    LocKeyWordScript={
+    Script=InvisWhileHacking.lua
+    Function=GetDescription
+    _cloakProjector=""
+    _cloakBurst=""
+    _cloakSound=""
+    _cloakOutSound=""
+    _duration={
+    15
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ApplyUpgradesByDefault=0
+ItemCompatibility=/Lotus/Weapons/Tenno/HackingDevices/TnHackingDevice/TnHackingDeviceWeapon
+Script={
+Script=InvisAfterHacking.lua
+Function=ModApplied
+_cloakProjector=/Lotus/Fx/PowersuitAbilities/Loki/CloakAttach
+_cloakBurst=/Lotus/Fx/PowersuitAbilities/Loki/CloakBurst
+_cloakSound=/Lotus/Sounds/Warframes/ExcaliburUmbra/ExcaliburUmbraKatanaInvisibilityActivate
+_cloakOutSound=/Lotus/Sounds/Warframes/ExcaliburUmbra/ExcaliburUmbraKatanaInvisibilityDeactivate
+_durations={
+15
+}
+}
+IncludeInBoosterPack=1
+UpgradeChance=1
+ConditionalUpgrades={
+HackSolved
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/InvisibilityBuffIcon.png

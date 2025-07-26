@@ -1,0 +1,52 @@
+/Lotus/Types/Game/CatbrowPet/CheshireCatbrowPetPowerSuit
+MarketMode=MM_HIDDEN
+AdditionalItems={
+    /Lotus/Types/Friendly/Pets/BeastWeapons/SmeetaPetWeapon
+}
+LocalizeTag=/Lotus/Language/Items/CheshireCatbrowName
+LocalizeDescTag=/Lotus/Language/Items/CheshireCatbrowDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Companions/Pets/Kavat/Breeds/KavatBreedSmeeta.png
+RectangleIcon=0
+Diorama=/Lotus/Levels/Episodes/KavatCheshire.level
+ExcludeFromCodex=0
+DefaultSlottedUpgrades={
+    {
+        ItemType=/Lotus/Types/Friendly/Pets/CatbrowPetPrecepts/CatbrowDistractPrecept
+        Slot=3
+        RandomUpgradeBuffTags={}
+        },
+        {
+            ItemType=/Lotus/Types/Friendly/Pets/CatbrowPetPrecepts/CatbrowLuckPrecept
+            Slot=4
+            RandomUpgradeBuffTags={}
+            },
+            {
+                ItemType=/Lotus/Types/Sentinels/SentinelPrecepts/BeastUniversalVacuum
+                Slot=0
+                RandomUpgradeBuffTags={}
+            }
+        }
+        MaxHealthOverride=390
+        MaxShieldOverride=230
+        MiniMapIcon=/Lotus/Interface/Icons/Markers/Companions/KavatSmeetaPortrait.png
+        MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Companions/LargePortraits/KavatSmeetaLargePortrait.png
+        ExtraDependencies={
+            /Lotus/Types/Friendly/Pets/BeastWeapons/SmeetaPetWeapon
+        }
+        SpecialSlotItem={
+            SPECIAL_B_SLOT={
+                ItemType=/Lotus/Types/Friendly/Pets/BeastWeapons/SmeetaPetWeapon
+            }
+        }
+        DefaultTraits={
+            BaseColor=Colors/CatbrowPetColorBaseA
+            SecondaryColor=Colors/CatbrowPetColorSecondaryA
+            TertiaryColor=Colors/CatbrowPetColorTertiaryA
+            AccentColor=Colors/CatbrowPetColorAccentsA
+            EyeColor=Colors/CatbrowPetColorBaseA
+            FurPattern=Patterns/CatbrowPetPatternA
+            Personality=CheshireCatbrowPetPowerSuit
+            BodyType=BodyTypes/CatbrowPetRegularBodyType
+            Head=Heads/CatbrowHeadA
+            Tail=Tails/CatbrowTailA
+        }

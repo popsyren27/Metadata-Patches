@@ -1,0 +1,42 @@
+/Lotus/Upgrades/Grimoire/XataStrikeMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/XataStrike
+StatusDescTag=/Lotus/Language/Buffs/XataStrikeBuffDesc
+Icon=/Lotus/Interface/Icons/ImmortalRunes/ImmortalRuneTruth.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_POWER_RATE
+    OperationType=ADD
+    Value=0.25
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Mods/XataStrikeDesc
+    LocKeyWordScript={
+    Script=GrimoireStrike.lua
+    Function=GetDescription
+}
+SmallerIsBetter=0
+RoundTo=0.0099999998
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_TACTIC
+BaseDrain=QA_VERY_HIGH
+UpgradeDuration=20
+StackMode=SM_GROUP
+MaxConditionalStacks=10
+ConditionalUpgrades={
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/OnAltHitIgnoreDOTCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/Grimoire/ImmortalRuneTruthBuff.png
+IsInfinite=0

@@ -1,0 +1,44 @@
+/Lotus/Powersuits/PowersuitAbilities/NezhaRingAbility
+LocalizeTag=/Lotus/Language/Suits/NezhaRingAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/NezhaRingAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/NezhaRing.png
+UniquePowerIdentifier=NEZHA_RING
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE,
+    EFFECT_MOBILITY
+}
+Script={
+    Script=NezhaRing.lua
+    Function=ActivateAbility
+    _projectileType=/Lotus/Powersuits/Nezha/RingProjectile
+    _bouncingProjectileType=/Lotus/Powersuits/Nezha/RingProjectileBounce
+    _secondaryProjectileType=""
+    _pvpProjectileType=/Lotus/Powersuits/Nezha/RingProjectilePvP
+    _fightingProjectileType=/Lotus/Powersuits/Nezha/RingProjectileFighting
+    _projetileMarkerType=""
+    _helperType=""
+    _lotusMarkType=""
+    _teleportEffect=/Lotus/Fx/PowersuitAbilities/Nezha/GlaiveTeleport
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Nezha/UniverseRing_anim.fbx
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Nezha/RingCast
+    _castBurstEffect=/Lotus/Fx/PowersuitAbilities/Nezha/RingCastBurst
+    _ringRespawnEffect=/Lotus/Fx/PowersuitAbilities/Nezha/RingRespawnOnBack
+    _deluxeFlames=/Lotus/Characters/Tenno/Nezha/NezhaDeluxeFx/NezhaDeluxeBodyFlamesDeco
+    _dropType=""
+    _dropEnergyType=""
+    _primaryRing=1
+    _chargeSound=/Lotus/Sounds/Warframes/Nezha/NezhaUniverseRingChargePreCast
+    _throwSound=/Lotus/Sounds/Warframes/Nezha/NezhaUniverseRingCastBurst
+    _throwChargedSound=/Lotus/Sounds/Warframes/Nezha/NezhaUniverseRingChargedCastBurst
+}
+NpcCooldownDuration=20
+AllowReactivate=1
+ActivationXP=25
+CastSound=/Lotus/Sounds/Warframes/Nezha/NezhaUniverseRingCast
+VideoTexture=/Lotus/Interface/AbilityVideos/NezhaPower2_s.bk2
+ForceFeedbackEffectEvents={
+    {
+        EventName=NezhaBurstFeedback
+        ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerImpact
+    }
+}

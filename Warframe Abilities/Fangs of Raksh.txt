@@ -1,0 +1,53 @@
+/Lotus/Powersuits/PowersuitAbilities/WerewolfBiteAbility
+LocalizeTag=/Lotus/Language/Suits/WerewolfBiteAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/WerewolfBiteAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/WerewolfBite.png
+UniquePowerIdentifier=WEREWOLF_BITE
+AdditionalPowerIdentifiers={
+    EFFECT_DEBUFF
+}
+Script={
+    Script=WerewolfBite.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Wolf/SHYUR_anim.fbx
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Werewolf/BiteCast
+    _castEffectBurst=/Lotus/Fx/PowersuitAbilities/Werewolf/BiteCastBurst
+    _castSound=/Lotus/Sounds/Warframes/Voruna/VorunaBiteCast
+    _castBurstSound=/Lotus/Sounds/Warframes/Voruna/VorunaBiteCastBurst
+    _stalkingEffect=/Lotus/Fx/PowersuitAbilities/Werewolf/HowlStalkingAttach
+    _markFx=/Lotus/Fx/PowersuitAbilities/Werewolf/WerewolfBiteMark
+}
+InputEvents={
+    {
+        tag=CheckHold
+        inputCode=ACTIVATE_ABILITY_2
+        onDown=1
+        scriptInstance={
+            Script=WerewolfLeap.lua
+            Function=CheckHold
+            _activateAnim=""
+            _healthPickupType=""
+            _energyPickupType=""
+            _castEffect=""
+            _attachEffect=""
+        }
+        },
+        {
+            tag=CheckHold
+            inputCode=POWER_MODIFIER
+            onDown=1
+            scriptInstance={
+                Script=WerewolfLeap.lua
+                Function=CheckHoldPM
+                _activateAnim=""
+                _healthPickupType=""
+                _energyPickupType=""
+                _castEffect=""
+                _attachEffect=""
+            }
+        }
+    }
+    NpcCooldownDuration=24
+    EnergyRequiredToActivate=50
+    ActivationXP=50
+    VideoTexture=/Lotus/Interface/AbilityVideos/VorunaPower2_s.bk2

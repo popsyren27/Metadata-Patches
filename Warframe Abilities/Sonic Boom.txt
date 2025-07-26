@@ -1,0 +1,46 @@
+/Lotus/Powersuits/PowersuitAbilities/PushAbility
+LocalizeTag=/Lotus/Language/Suits/PushAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/PushAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/BansheeSonicBoom.png
+UniquePowerIdentifier=BANSHEE_SONIC_BOOM
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=Push.lua
+    Function=ActivateAbility
+    _expfx=/Lotus/Fx/PowersuitAbilities/Decree/PushSpawner
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Temp/SoundWave_anim.fbx
+    _augmentOneArmorDamageProj=""
+    _invalidTargetTypes={
+        /Lotus/Types/NeutralCreatures/CreatureAvatars/SandRayAvatar
+    }
+}
+SecondaryScripts={
+    {
+        tag=DoPush
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=Push.lua
+            Function=DoPush
+            _expfx=""
+            _activateAnim=""
+            _augmentOneArmorDamageProj=/Lotus/Fx/PowersuitAbilities/Decree/PushAugmentArmorDamageProj
+            _invalidTargetTypes={
+                /Lotus/Types/NeutralCreatures/CreatureAvatars/SandRayAvatar
+            }
+        }
+    }
+}
+NpcCooldownDuration=12
+ActivationXP=25
+VideoTexture=/Lotus/Interface/AbilityVideos/BansheePower1_s.bk2
+ForceFeedbackEffectEvents={
+    {
+        EventName=BansheeImpactMediumFeedback
+        ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerImpactMedium
+    }
+}
+PvpDescription=/Lotus/Language/Suits/PushAbilityPvPDesc

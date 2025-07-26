@@ -1,0 +1,88 @@
+/Lotus/Powersuits/PowersuitAbilities/BrokenGraspAbility
+LocalizeTag=/Lotus/Language/Suits/BrokenGraspAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/BrokenGraspAbilityDesc
+StatusDescTag=/Lotus/Language/Buffs/GraspofLohkBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/BrokenFrameTendrilGrasp.png
+UniquePowerIdentifier=BROKEN_GRASP
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE,
+    EFFECT_DEBUFF
+}
+Script={
+    Script=BrokenGrasp.lua
+    Function=ActivateAbility
+    _agentType=/Lotus/Types/Enemies/GenericDisarmedAgent
+    _meleeWeapon=/Lotus/Weapons/Tenno/Melee/DisarmBasicMeleeWeapon
+    _turretType=/Lotus/Fx/PowersuitAbilities/Broken/GraspChargeDeco
+    _turretAttachType=""
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Broken/GraspCast
+    _burstEffect=/Lotus/Fx/PowersuitAbilities/Broken/GraspBurst
+    _beamAttackEffect=/Lotus/Fx/PowersuitAbilities/Broken/GraspAttackBeam
+    _armorTypes={
+        /Lotus/Characters/Tenno/BrokenWarframe/StaticAttachments/BrokenWarframeShoulderRArmorDeco,
+        /Lotus/Characters/Tenno/BrokenWarframe/StaticAttachments/BrokenWarframeBicepRArmorDeco,
+        /Lotus/Characters/Tenno/BrokenWarframe/StaticAttachments/BrokenWarframeForearmRArmorDeco,
+        /Lotus/Characters/Tenno/BrokenWarframe/StaticAttachments/BrokenWarframeShoulderLArmorDeco,
+        /Lotus/Characters/Tenno/BrokenWarframe/XakuDeluxes/StaticAttachments/XakuDeluxeShoulderRShard5Deco,
+        /Lotus/Characters/Tenno/BrokenWarframe/XakuDeluxes/StaticAttachments/XakuDeluxeTorsoShard10Deco,
+        /Lotus/Characters/Tenno/BrokenWarframe/XakuDeluxes/StaticAttachments/XakuDeluxeShoulderRShard6Deco,
+        /Lotus/Characters/Tenno/BrokenWarframe/XakuDeluxes/StaticAttachments/XakuDeluxeShoulderRShard1Deco,
+        /Lotus/Characters/Tenno/BrokenWarframe/XakuDeluxes/StaticAttachments/XakuDeluxeLegLShard7Deco
+    }
+    _armorProj=/Lotus/Fx/PowersuitAbilities/Broken/RotCastArmorProj
+    _weaponFireEffect=/Lotus/Fx/PowersuitAbilities/Broken/GraspFireWeaponProj
+    _abilityProbabilityScaling=0.40000001
+}
+SecondaryScripts={
+    {
+        tag=SpawnTurrets
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=BrokenGrasp.lua
+            Function=SpawnTurrets
+            _agentType=/Lotus/Types/Enemies/GenericDisarmedAgent
+            _meleeWeapon=/Lotus/Weapons/Tenno/Melee/DisarmBasicMeleeWeapon
+            _turretType=/Lotus/Fx/PowersuitAbilities/Broken/GraspChargeDeco
+            _turretAttachType=/Lotus/Fx/PowersuitAbilities/Broken/GraspChargeWeaponDeco
+            _castEffect=""
+            _burstEffect=""
+            _beamAttackEffect=""
+            _armorTypes={}
+            _armorProj=""
+            _weaponFireEffect=""
+            _abilityProbabilityScaling=0.40000001
+        }
+    }
+}
+NpcCooldownDuration=15
+EnergyRequiredToActivate=50
+AllowReactivate=1
+AllowDuringOverride=1
+ActivationXP=50
+VideoTexture=/Lotus/Interface/AbilityVideos/XakuPower2_s.bk2
+SoundEvents={
+    {
+        EventName=SFXBrokenFrameTendrilGraspCast
+        Sound=/Lotus/Sounds/Warframes/BrokenFrame/BrokenFrameTendrilGraspCast
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+        },
+        {
+            EventName=SFXBrokenFrameTendrilGraspRelease
+            Sound=/Lotus/Sounds/Warframes/BrokenFrame/BrokenFrameTendrilGraspRelease
+            Chance=1
+            Period=1
+            Context=PEC_ALL
+            CancelEventName=""
+        }
+    }
+    ResourceOverrides={
+        {
+            Tag=BrokenGraspAnim
+            Resource=/Lotus/Animations/Tenno/Powers/Broken/TendrilGrasp_anim.fbx
+        }
+    }

@@ -1,0 +1,42 @@
+/Lotus/Powersuits/Trinity/LinkAugmentCard
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/LinkAbilityAugment1Name
+Icon=/Lotus/Interface/Cards/Images/AbilityAugments/TrinityLinkAugment.png
+ExcludeFromCodex=0
+Upgrades={
+{
+    UpgradeType=AVATAR_ABILITY_AUGMENT
+    OperationType=ADD
+    Value=1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=AUGMENT_ONE
+    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/LinkAbility
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Suits/LinkAbilityAugment1Desc
+    LocKeyWordScript={
+    Script=/Lotus/Powersuits/PowersuitAbilities/LinkAbility.lua
+    Function=GetAugmentDescriptionInfo
+    _linkableType=""
+    _linkablePvpType=""
+    _unlinkableTypes={}
+    _activateAnim=""
+    _sound=""
+    _ignoreAvatarTypesWithoutHeldPosture={}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_POWER
+BaseDrain=QA_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=TrinityBaseSuit
+IsAbilityAugment=1

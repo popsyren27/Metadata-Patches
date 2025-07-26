@@ -1,0 +1,31 @@
+/Lotus/Powersuits/PowersuitAbilities/EntratiMechShockingIronAbility
+LocalizeTag=/Lotus/Language/Necromech/EntratiMechShockingIronAbilityName
+LocalizeDescTag=/Lotus/Language/Necromech/EntratiMechShockingIronAbilityDesc
+StatusDescTag=/Lotus/Language/Buffs/StormShroudBuffDesc
+Icon=/Lotus/Interface/Icons/Abilities/Mech/NechramechShock.png
+UniquePowerIdentifier=SHOCKING_IRON
+AdditionalPowerIdentifiers={
+    EFFECT_BUFF
+}
+Script={
+    Script=/Lotus/Powersuits/EntratiMech/ShockingIronAbility.lua
+    Function=ActivateAbility
+    _buffFxType=/Lotus/Fx/Gameplay/Thanomech/ShockingIronFX
+    _buffFxBone=GAME_C1_HELMET
+    _npcPreviewFXType=""
+    _startAnimEvent=beginHeadSpin
+    _endAnimEvent=endHeadSpin
+    _npcMinRange=0
+    _npcMaxRange=15
+    _npcDamageMultiplier=0.25
+    _npcDuration=10
+    _npcTickRate=0.5
+    _isAiAbility=0
+    _npcElectricDamage=15
+}
+NpcCooldownDuration=45
+EnergyRequiredToActivate=50
+AllowToggle=1
+ActivationXP=50
+VideoTexture=/Lotus/Interface/AbilityVideos/Necramech/VoidrigPower2_s.bk2
+IsJoinInProgressAbility=1

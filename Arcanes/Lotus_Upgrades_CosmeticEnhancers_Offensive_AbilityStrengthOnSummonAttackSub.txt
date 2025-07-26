@@ -1,0 +1,25 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/AbilityStrengthOnSummonAttackSub
+Rarity=RARE
+MarketMode=MM_HIDDEN
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+Script={
+    Script=GiveStatOnCondition.lua
+    Function=UnapplyUpgrade
+    _giveStatIncreaseBase=0
+    _giveStatIncreasePerLevel=0.0099999998
+    _giveStatType=AVATAR_ABILITY_STRENGTH
+    _giveStatOperation=STACKING_MULTIPLY
+    _maxStacks=5
+    _giveBonusStatLoc=""
+    _giveBonusStatIncrease=0
+    _giveBonusStatType=AVATAR_ABILITY
+    _giveBonusStatOperation=ADD
+}
+UpgradeChance=1
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Utility/OnAbility1Condition,
+    /Lotus/Upgrades/CosmeticEnhancers/Utility/OnAbility2Condition,
+    /Lotus/Upgrades/CosmeticEnhancers/Utility/OnAbility3Condition,
+    /Lotus/Upgrades/CosmeticEnhancers/Utility/OnAbility4Condition
+}

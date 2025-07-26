@@ -1,0 +1,107 @@
+/Lotus/Powersuits/PowersuitAbilities/IceSpikeAbility
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/IceWaveAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/IceWaveAbilityDesc
+Icon=/Lotus/Interface/Icons/Abilities/FrostIceWave.png
+UniquePowerIdentifier=FROST_ICE_WAVE
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=IceSpike.lua
+    Function=ActivateAbility
+    _sound=""
+    _spikeSound=/Lotus/Sounds/Warframes/Frost/FrostIceWaveSpikesSeq
+    _ice=/Lotus/Fx/PowersuitAbilities/Frost/IceSpike_skelDeco
+    _icePathEffect=/Lotus/Fx/PowersuitAbilities/Frost/IceSpikePathEffect
+    _decoAnims={
+        /Lotus/Fx/PowersuitAbilities/Frost/IceSpikeA_anim.fbx,
+        /Lotus/Fx/PowersuitAbilities/Frost/IceSpikeB_anim.fbx,
+        /Lotus/Fx/PowersuitAbilities/Frost/IceSpikeC_anim.fbx,
+        /Lotus/Fx/PowersuitAbilities/Frost/IceSpikeD_anim.fbx
+    }
+    _pathDamage=100
+    _pathDamageRange=0.75
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Frost/FreezeWave_anim.fbx
+    _primeSpikeDeco=/Lotus/Fx/PowersuitAbilities/Frost/IceSpikePrimeDeco
+    _pvpImpactSound=""
+    _animEventToWaitFor=IceWave
+    _animEventCastToWaitFor=IceWaveSFX
+    _raycastIgnoreTypes={
+        /EE/Types/Game/Avatar,
+        /EE/Types/Game/PickUp,
+        /EE/Types/Physics/Ragdoll,
+        /EE/Types/Engine/HitProxy,
+        /Lotus/Powersuits/Frost/IceShieldDeco
+    }
+    _maxAnimRateMultiplier=1.75
+    _augmentSlowTrigger=/Lotus/Powersuits/Frost/IceSpikeSlowTrigger
+    _augmentSlowAttachEffect=""
+    _augmentSlowDecoType=/Lotus/Fx/PowersuitAbilities/Frost/IceSpikeAugmentSlowDeco
+    _augmentSlowFogType=/Lotus/Fx/PowersuitAbilities/Frost/IceSpikeAugmentSlowFog
+}
+SecondaryScripts={
+    {
+        tag=PvPImpact
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=IceSpike.lua
+            Function=PvpHitTarget
+            _sound=""
+            _spikeSound=""
+            _ice=""
+            _icePathEffect=""
+            _decoAnims={}
+            _pathDamage=100
+            _pathDamageRange=0.75
+            _activateAnim=""
+            _primeSpikeDeco=""
+            _pvpImpactSound=""
+            _animEventToWaitFor=""
+            _animEventCastToWaitFor=""
+            _raycastIgnoreTypes={}
+            _maxAnimRateMultiplier=1.75
+            _augmentSlowTrigger=""
+            _augmentSlowAttachEffect=""
+            _augmentSlowDecoType=""
+            _augmentSlowFogType=""
+        }
+    }
+}
+NpcCooldownDuration=24
+EnergyRequiredToActivate=50
+ActivationXP=50
+CastSound=/Lotus/Sounds/Warframes/Frost/FrostCast
+VideoTexture=/Lotus/Interface/AbilityVideos/FrostPower2_s.bk2
+SoundEvents={
+    {
+        EventName=IceWaveSFX
+        Sound=/Lotus/Sounds/Warframes/Frost/FrostIceWave
+        Chance=1
+        Period=1
+        Context=PEC_LOCAL_ONLY
+        CancelEventName=""
+        },
+        {
+            EventName=IceWaveSFX
+            Sound=/Lotus/Sounds/Warframes/Frost/FrostIceWave3D
+            Chance=1
+            Period=1
+            Context=PEC_REMOTE_ONLY
+            CancelEventName=""
+        }
+    }
+    ForceFeedbackEffectEvents={
+        {
+            EventName=FrostBurstFeedback
+            ForceFeedbackEffect=/Lotus/Sounds/Weapons/ForceFeedbackSettings/Powers/ForceFeedbackPowerBurst
+        }
+    }
+    ResourceOverrides={
+        {
+            Tag=IceSpikeCast
+            Resource=/Lotus/Fx/PowersuitAbilities/Frost/IceWaveCastSpawner
+        }
+    }

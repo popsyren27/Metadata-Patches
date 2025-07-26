@@ -1,0 +1,56 @@
+/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/ProcResistOnBlast
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/ProcResistOnBlast
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/SolarisMagusDestruct.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Arcanes/ProcResistOnBlastDesc
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/WeaponAttachments/OperatorMeleeWeapon.lua
+            Function=GetBlastPunctureResistDescription
+            _fireballProjType=""
+            _handBone=GAME_L1_ARM3
+            _launchSound=""
+            _selfShieldSpawner=""
+            _bulletAttractorType=""
+            _damagePickupType=""
+            _disarmAgentType=""
+            _disarmMeleeWeapon=""
+            _blastBurstType=""
+            _blastAllyShieldEffect=""
+            _blastAllyShieldAvatarEffect=""
+            _blastRobotStunnedEffect=""
+            _blastRobotStunExplosion=""
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+FusionLimit=QA_HIGH
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+ConditionTag=/Lotus/Language/Upgrades/OnVoidDashCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/SolarisMagusDestruct.png
+BaseDistillPointValue=24

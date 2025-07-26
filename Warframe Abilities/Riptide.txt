@@ -1,0 +1,50 @@
+/Lotus/Powersuits/PowersuitAbilities/YareliSpoutAbility
+LocalizeTag=/Lotus/Language/Suits/YareliSpoutAbilityName
+LocalizeDescTag=/Lotus/Language/Suits/YareliSpoutAbilityDescription
+Icon=/Lotus/Interface/Icons/Abilities/YareliCrushingWaters.png
+UniquePowerIdentifier=YARELI_SPOUT
+AdditionalPowerIdentifiers={
+    EFFECT_DAMAGE
+}
+Script={
+    Script=YareliSpout.lua
+    Function=ActivateAbility
+    _activateAnim=/Lotus/Animations/Tenno/Powers/Yareli/CrushingWaters_anim.fbx
+    _activateAnimStart=/Lotus/Animations/Tenno/Powers/Yareli/CrushingWatersStart
+    _activateAnimEnd=/Lotus/Animations/Tenno/Powers/Yareli/CrushingWatersEnd
+    _boardActivateAnim=/Lotus/Animations/Tenno/Powers/Yareli/AquaBoardCrushingWaters_anim.fbx
+    _boardActivateAnimStart=/Lotus/Animations/Tenno/Powers/Yareli/AquaBoardCrushingWatersStart
+    _boardActivateAnimEnd=/Lotus/Animations/Tenno/Powers/Yareli/AquaBoardCrushingWatersEnd
+    _spoutType=/Lotus/Fx/PowersuitAbilities/Yareli/SpoutDeco
+    _spoutInnerDeco=/Lotus/Fx/PowersuitAbilities/Yareli/SpoutInteriorDeco
+    _spoutSpawn=/Lotus/Fx/PowersuitAbilities/Yareli/SpoutSpawn
+    _castEffect=/Lotus/Fx/PowersuitAbilities/Yareli/SpoutCast
+}
+SecondaryScripts={
+    {
+        tag=SetActivatingArgs
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=YareliSpout.lua
+            Function=SetActivatingArgs
+            _activateAnim=""
+            _activateAnimStart=""
+            _activateAnimEnd=""
+            _boardActivateAnim=""
+            _boardActivateAnimStart=""
+            _boardActivateAnimEnd=""
+            _spoutType=""
+            _spoutInnerDeco=""
+            _spoutSpawn=""
+            _castEffect=""
+        }
+    }
+}
+NpcCooldownDuration=60
+EnergyRequiredToActivate=100
+AllowToggle=1
+AllowOnZipLines=1
+AllowDuringOverride=1
+VideoTexture=/Lotus/Interface/AbilityVideos/YareliPower4_s.bk2

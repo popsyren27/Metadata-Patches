@@ -1,0 +1,72 @@
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/OperatorHeavyMeleeDamageOnTransference
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/OperatorHeavyMeleeDamageOnTransference
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/MagusAggressBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionCQ.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Arcanes/OperatorHeavyMeleeDamageOnTransferenceDesc
+        LocKeyWordScript={
+            Script=UpgradeOnMeleeTransference.lua
+            Function=GetLocValues
+            _critBonuses={
+                0.5,
+                1,
+                1.5,
+                2,
+                2.5,
+                3
+            }
+            _numAttacks=4
+            _cooldownTime=20
+        }
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+Script={
+    Script=UpgradeOnMeleeTransference.lua
+    Function=OnMeleeAction
+    _critBonuses={
+        0.5,
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+    }
+    _numAttacks=4
+    _cooldownTime=20
+}
+SubUpgrades={
+    OperatorHeavyMeleeDamageOnTransferenceSubUpgrade
+}
+UpgradeChance=1
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Events/OnMeleeTransferenceInCondition,
+    OnMeleeHitCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCQBuff.png
+TransferenceSupport=TS_OPERATOR_ONLY
+BaseDistillPointValue=18

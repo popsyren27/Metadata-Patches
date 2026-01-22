@@ -1,0 +1,67 @@
+>/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Handle/SUModularSecondaryHandleDPart
+MarketMode=MM_HIDDEN
+PremiumPrice=80
+LocalizeTag=/Lotus/Language/SolarisVenus/SUModularSecondaryHandleD
+LocalizeDescTag=/Lotus/Language/SolarisVenus/SUModularSecondaryHandleDDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/SecondaryWeapons/Kitguns/SUModularSecondaryHandleD.png
+ExcludeFromCodex=0
+Attachment=SUModularSecondaryHandleDAttachment
+Upgrades={
+    {
+        UpgradeType=WEAPON_RECOIL
+        OperationType=ADD
+        Value=-0.5
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        ValidProcTypes={}
+    }
+}
+UngildedMaterial=Ungilded/SUModularSecondaryHandleDUngildedMat
+DonationStandingBonus=200
+EligibleForDailyWeaponSale=1
+DefaultOverride={
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Pistol/LotusSinglePistolGun
+}
+Overrides={
+    {
+        BarrelType=BT_SEMI_PROJECTILE
+        GunType=GT_SHOTGUN
+        Damage=-96
+        FireRate=190
+        TraceDistance=0
+        CompatibleSkinType=/Lotus/Weapons/Tenno/Pistol/LotusSinglePistolGun
+    },
+{
+    BarrelType=BT_SEMI_PROJECTILE
+    GunType=GT_RIFLE
+    Damage=-24
+    FireRate=270
+    TraceDistance=0
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Pistol/LotusSinglePistolGun
+},
+{
+    BarrelType=BT_AUTO_HITSCAN
+    GunType=GT_RIFLE
+    Damage=-12
+    FireRate=660
+    TraceDistance=0
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Pistol/LotusSinglePistolGun
+},
+{
+    BarrelType=BT_AUTO_HITSCAN
+    GunType=GT_BEAM
+    Damage=-2
+    FireRate=720
+    TraceDistance=40
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Pistol/LotusSinglePistolGun
+}
+}
+ReloadSlowAnim=/Lotus/Animations/Tenno/Movement/Pistol/ReloadSUModSecHandleASlow_anim.fbx
+ReloadFastAnim=/Lotus/Animations/Tenno/Movement/Pistol/ReloadSUModSecHandleAFast_anim.fbx
+DSReloadSlowAnim=/Lotus/Animations/Tenno/Movement/GlaiveAndSecondary/ReloadLong_anim.fbx
+DSReloadFastAnim=/Lotus/Animations/Tenno/Movement/GlaiveAndSecondary/Reload_anim.fbx

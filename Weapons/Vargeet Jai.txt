@@ -1,0 +1,76 @@
+>/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedICritI
+MarketMode=MM_HIDDEN
+PremiumPrice=10
+LocalizeTag=/Lotus/Language/OstronCrafting/MeleeBalanceSpeedOneCritOne
+LocalizeDescTag=/Lotus/Language/OstronCrafting/MeleeBalanceSpeedOneCritOneDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/MeleeWeapons/Zaws/BalanceSpeedICritI.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=WEAPON_FIRE_RATE
+        OperationType=ADD
+        Value=5
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        ValidProcTypes={}
+    },
+{
+    UpgradeType=WEAPON_MELEE_DAMAGE
+    OperationType=ADD
+    Value=-4
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    ValidProcTypes={}
+},
+{
+    UpgradeType=WEAPON_CRIT_CHANCE
+    OperationType=ADD
+    Value=0.07
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    ValidProcTypes={}
+},
+{
+    UpgradeType=WEAPON_PROC_CHANCE
+    OperationType=ADD
+    Value=-0.039999999
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    ValidProcTypes={}
+}
+}
+UngildedMaterial=TiredVersion/BalancesTiredVersionMat
+DonationStandingBonus=750
+EligibleForDailyWeaponSale=1
+AdditionalAttachments={
+    {
+        Type=BalanceSpeedAttachment
+        Bone=GAME_WEAPON_WEIGHT1
+        Target=LWPT_BLADE
+    },
+{
+    Type=BalanceCritAttachment
+    Bone=GAME_WEAPON_WEIGHT2
+    Target=LWPT_BLADE
+}
+}

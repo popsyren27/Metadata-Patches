@@ -1,0 +1,32 @@
+>/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleSix
+GripType=MELEE_TWO_HAND
+MarketMode=MM_HIDDEN
+PremiumPrice=125
+LocalizeTag=/Lotus/Language/OstronCrafting/MeleeHandleSix
+LocalizeDescTag=/Lotus/Language/OstronCrafting/MeleeHandleSixDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/MeleeWeapons/Zaws/HandleSix.png
+ExcludeFromCodex=0
+Attachment=HandleSixAttachment
+Upgrades={
+    {
+        UpgradeType=WEAPON_MELEE_DAMAGE
+        OperationType=ADD
+        Value=14
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        ValidProcTypes={}
+    }
+}
+UngildedMaterial=TiredVersion/HandleLong03TiredMat
+DonationStandingBonus=500
+EligibleForDailyWeaponSale=1
+BaseFireRate=51
+SugatraOffset={
+    PosOffset={0,-0.30000001,-0.037}
+    RotOffset={0.5,-0.5,-0.5,0.5}
+}

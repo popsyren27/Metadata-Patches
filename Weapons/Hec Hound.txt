@@ -1,0 +1,15 @@
+>/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartHeadC
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Pets/ZanukaPetHeadC
+LocalizeDescTag=/Lotus/Language/Pets/ZanukaPetHeadCDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Companions/Zanukas/ZanukaPetHeadC.png
+ExcludeFromCodex=0
+Attachment=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetComponents/ZanukaPetHeadC
+UngildedMaterial=/Lotus/Characters/Guild/ZanukaCompanion/ZanukaCompanionHeadCUntint
+DefaultSlottedUpgrades={
+    {
+        ItemType=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPrecepts/ZanukaPetAntiMeleePrecept
+        Slot=9
+    }
+}
+EnemyAbility=/Lotus/Powersuits/NpcPowersuits/Lawyers/Powers/PetStompAbility

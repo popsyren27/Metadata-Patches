@@ -1,0 +1,51 @@
+>/Lotus/Weapons/Infested/Pistols/InfKitGun/Handles/InfSecondaryHandle/InfModularSecondaryHandlePart
+MarketMode=MM_HIDDEN
+PremiumPrice=60
+LocalizeTag=/Lotus/Language/Weapons/InfModularSecondaryHandle
+LocalizeDescTag=/Lotus/Language/Weapons/InfModularSecondaryHandleDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/ModularWeapons/InfModular/InfSecondaryHandle.png
+ExcludeFromCodex=0
+Attachment=InfModularSecondaryHandleAttachment
+UngildedMaterial=Ungilded/InfHandleSecondaryUngildedMat
+DonationStandingBonus=200
+DefaultOverride={
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Pistol/LotusSinglePistolGun
+}
+Overrides={
+    {
+        BarrelType=BT_SEMI_PROJECTILE
+        GunType=GT_SHOTGUN
+        Damage=34
+        FireRate=110
+        TraceDistance=0
+        CompatibleSkinType=/Lotus/Weapons/Tenno/Pistol/LotusSinglePistolGun
+    },
+{
+    BarrelType=BT_SEMI_PROJECTILE
+    GunType=GT_RIFLE
+    Damage=8
+    FireRate=170
+    TraceDistance=0
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Pistol/LotusSinglePistolGun
+},
+{
+    BarrelType=BT_AUTO_HITSCAN
+    GunType=GT_RIFLE
+    Damage=6
+    FireRate=400
+    TraceDistance=0
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Pistol/LotusSinglePistolGun
+},
+{
+    BarrelType=BT_AUTO_HITSCAN
+    GunType=GT_BEAM
+    Damage=0
+    FireRate=720
+    TraceDistance=30
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Pistol/LotusSinglePistolGun
+}
+}
+ReloadSlowAnim=/Lotus/Animations/Tenno/Movement/Pistol/ReloadSUModSecHandleBSlow_anim.fbx
+ReloadFastAnim=/Lotus/Animations/Tenno/Movement/Pistol/ReloadSUModSecHandleBFast_anim.fbx
+DSReloadSlowAnim=/Lotus/Animations/Tenno/Movement/GlaiveAndSecondary/ReloadLong_anim.fbx
+DSReloadFastAnim=/Lotus/Animations/Tenno/Movement/GlaiveAndSecondary/Reload_anim.fbx

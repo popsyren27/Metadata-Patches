@@ -1,0 +1,7 @@
+>/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterAntigenA
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/InfestedMicroplanet/InfestedCritterAntigenA
+LocalizeDescTag=/Lotus/Language/InfestedMicroplanet/InfestedCritterAntigenADesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Companions/Deimos/AntigenInfestedCritterA.png
+Attachment=/Lotus/Characters/Wildlife/Catbrow/InfestedKavats/InfestedKavatChinDeco
+OverridePolarity=AP_ATTACK

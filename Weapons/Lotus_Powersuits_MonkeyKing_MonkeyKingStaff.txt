@@ -1,0 +1,2 @@
+>/Lotus/Powersuits/MonkeyKing/MonkeyKingStaff
+MarketMode=MM_HIDDEN

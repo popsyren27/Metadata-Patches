@@ -1,0 +1,427 @@
+>/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipFour
+MarketMode=MM_HIDDEN
+PremiumPrice=45
+LocalizeTag=/Lotus/Language/OstronCrafting/MeleeTipFour
+LocalizeDescTag=/Lotus/Language/OstronCrafting/MeleeTipFourDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/MeleeWeapons/Zaws/TipFour.png
+ExcludeFromCodex=0
+Attachment=TipFourAttachment
+Upgrades={}
+UngildedMaterial=TiredVersion/TipBlade03TiredMat
+DonationStandingBonus=900
+EligibleForDailyWeaponSale=1
+AttackData={
+    DT_PUNCTURE=0.050000001
+    DT_SLASH=0.75
+    Amount=230
+    ProcChance=0.18000001
+}
+BaseCritChance=0.18000001
+HitEffectOverride=/Lotus/Fx/Weapons/Melee/Clean/HitEffects/MeleeHitEffectSword
+OneHanded={
+    meleeTree=/Lotus/Weapons/Tenno/Melee/MeleeTrees/MacheteMeleeTree
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Melee/LotusMachete
+    pvpDamageAttenuation=0.81999999
+    holsterCustomization=/Lotus/Upgrades/Skins/HolsterCustomizations/SwordUpperBack
+    stancePolarity=AP_POWER
+    parryAngle=55
+    SweepInfo={
+        MAIN_HAND={
+            LocalPosition={0,2.5999999,0}
+        }
+    OFF_HAND={
+        LocalPosition={0,2.5999999,0}
+    }
+EXTRA1={
+    LocalPosition={-2,0,0}
+}
+EXTRA2={
+    LocalPosition={-2,0,0}
+}
+}
+slams={
+    {
+        TriggeringAnimEvent=MeleeSlam
+        RadiusMin=0
+        Radius=7
+        FallOff=1
+        FallOffMax=0
+        CanCrit=0
+        CanUseComboMultiplier=0
+        UseImpactBehaviorAttackDataAmount=1
+        UseWeaponProcChance=0
+        UseModifiedRadius=1
+        BaseDamageAttenuation=1
+        AttackData={
+            UseNewFormat=0
+            Type=DT_EXPLOSION
+            Amount=50
+            ProcChance=0.1
+            ForcedProcs={
+                PT_KNOCKBACK
+            }
+        ForcedDeathProcs={}
+        ForcedProcCount=1
+        HitType=DHT_NONE
+        ProcExtraTime=0
+    }
+UseCurrentMeleeAttackForDamage=0
+MeleeAttack=""
+MainHandOnly=0
+Effect={
+    LocalPosition={0,0,0}
+    LocalRotation={0,0,0,1}
+    BoneName=""
+    Type=/Lotus/Fx/Weapons/Melee/Clean/Slams/ScaledSlam/MeleeSlamScaled
+    Chance=255
+    RelativeToBounds=0
+    Attach=1
+    DestroyWithOwner=1
+    DestroyParentOnDeath=0
+    FadeOutOnDestruction=0
+    Scale=1
+}
+Bone=GAME_R1_WEAPON1
+Offset={0,0,0}
+FXOffset={-0.1,0,0.40000001}
+UseWeaponAttachment=0
+WeaponAttachmentHand=MAIN_HAND
+IsAerialSlam=1
+HitAirborneTargets=1
+VerticalImpulse=900
+HorizontalImpulse=500
+},
+{
+    TriggeringAnimEvent=HeavySlam
+    RadiusMin=0
+    Radius=8
+    FallOff=1
+    FallOffMax=0
+    CanCrit=0
+    CanUseComboMultiplier=1
+    UseImpactBehaviorAttackDataAmount=1
+    UseWeaponProcChance=0
+    UseModifiedRadius=1
+    BaseDamageAttenuation=4
+    AttackData={
+        UseNewFormat=0
+        Type=DT_EXPLOSION
+        Amount=50
+        ProcChance=0.1
+        ForcedProcs={
+            PT_LIFT_HIT
+        }
+    ForcedDeathProcs={}
+    ForcedProcCount=1
+    HitType=DHT_NONE
+    ProcExtraTime=0
+}
+UseCurrentMeleeAttackForDamage=0
+MeleeAttack=""
+MainHandOnly=0
+Effect={
+    LocalPosition={0,0,0}
+    LocalRotation={0,0,0,1}
+    BoneName=""
+    Type=/Lotus/Fx/Weapons/Melee/Clean/Slams/ScaledSlam/MeleeSlamSuspendFX
+    Chance=255
+    RelativeToBounds=0
+    Attach=1
+    DestroyWithOwner=0
+    DestroyParentOnDeath=0
+    FadeOutOnDestruction=0
+    Scale=1
+}
+Bone=GAME_R1_WEAPON1
+Offset={0,0,0}
+FXOffset={-0.1,0,0.40000001}
+UseWeaponAttachment=0
+WeaponAttachmentHand=MAIN_HAND
+IsAerialSlam=1
+HitAirborneTargets=1
+VerticalImpulse=900
+HorizontalImpulse=500
+},
+{
+    TriggeringAnimEvent=GroundHitEffect
+    RadiusMin=0
+    Radius=5
+    FallOff=1
+    FallOffMax=0
+    CanCrit=0
+    CanUseComboMultiplier=0
+    UseImpactBehaviorAttackDataAmount=1
+    UseWeaponProcChance=0
+    UseModifiedRadius=1
+    BaseDamageAttenuation=1
+    AttackData={
+        UseNewFormat=0
+        Type=DT_EXPLOSION
+        Amount=50
+        ProcChance=0.1
+        ForcedProcs={}
+        ForcedDeathProcs={}
+        ForcedProcCount=1
+        HitType=DHT_NONE
+        ProcExtraTime=0
+    }
+UseCurrentMeleeAttackForDamage=0
+MeleeAttack=""
+MainHandOnly=0
+Effect={
+    LocalPosition={0,0,0}
+    LocalRotation={0,0,0,1}
+    BoneName=""
+    Type=/Lotus/Fx/Weapons/Melee/Clean/Slams/MeleeGroundContactFX
+    Chance=255
+    RelativeToBounds=0
+    Attach=1
+    DestroyWithOwner=1
+    DestroyParentOnDeath=0
+    FadeOutOnDestruction=0
+    Scale=1
+}
+Bone=""
+Offset={0,0,0}
+FXOffset={0,0,0}
+UseWeaponAttachment=0
+WeaponAttachmentHand=MAIN_HAND
+IsAerialSlam=0
+HitAirborneTargets=1
+VerticalImpulse=0.15000001
+HorizontalImpulse=0.1
+}
+}
+}
+TwoHanded={
+    meleeTree=/Lotus/Weapons/Tenno/Melee/MeleeTrees/PolearmMeleeTree
+    meleeStyle=MS_BO_STAFF
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Melee/LotusPolearm
+    damageAttenuation=1.08
+    pvpDamageAttenuation=0.62
+    holsterCustomization=/Lotus/Upgrades/Skins/HolsterCustomizations/StaffCrossed
+    stancePolarity=AP_TACTIC
+    parryAngle=55
+    SweepInfo={
+        MAIN_HAND={
+            LocalPosition={0,3,0}
+        }
+    OFF_HAND={
+        LocalPosition={0,3,0}
+    }
+EXTRA1={
+    LocalPosition={-2,0,0}
+}
+EXTRA2={
+    LocalPosition={-2,0,0}
+}
+}
+slams={
+    {
+        TriggeringAnimEvent=MeleeSlam
+        RadiusMin=0
+        Radius=7
+        FallOff=1
+        FallOffMax=0
+        CanCrit=0
+        CanUseComboMultiplier=0
+        UseImpactBehaviorAttackDataAmount=1
+        UseWeaponProcChance=0
+        UseModifiedRadius=1
+        BaseDamageAttenuation=1
+        AttackData={
+            UseNewFormat=0
+            Type=DT_EXPLOSION
+            Amount=50
+            ProcChance=0.1
+            ForcedProcs={
+                PT_KNOCKBACK
+            }
+        ForcedDeathProcs={}
+        ForcedProcCount=1
+        HitType=DHT_NONE
+        ProcExtraTime=0
+    }
+UseCurrentMeleeAttackForDamage=0
+MeleeAttack=""
+MainHandOnly=0
+Effect={
+    LocalPosition={0,0,0}
+    LocalRotation={0,0,0,1}
+    BoneName=""
+    Type=/Lotus/Fx/Weapons/Melee/Clean/Slams/ScaledSlam/MeleeSlamScaled
+    Chance=255
+    RelativeToBounds=0
+    Attach=1
+    DestroyWithOwner=1
+    DestroyParentOnDeath=0
+    FadeOutOnDestruction=0
+    Scale=1
+}
+Bone=GAME_R1_WEAPON1
+Offset={0,0,0}
+FXOffset={0,0,1}
+UseWeaponAttachment=0
+WeaponAttachmentHand=MAIN_HAND
+IsAerialSlam=1
+HitAirborneTargets=1
+VerticalImpulse=900
+HorizontalImpulse=500
+},
+{
+    TriggeringAnimEvent=HeavySlam
+    RadiusMin=0
+    Radius=8
+    FallOff=0
+    FallOffMax=0
+    CanCrit=0
+    CanUseComboMultiplier=1
+    UseImpactBehaviorAttackDataAmount=1
+    UseWeaponProcChance=0
+    UseModifiedRadius=1
+    BaseDamageAttenuation=4
+    AttackData={
+        UseNewFormat=0
+        Type=DT_EXPLOSION
+        Amount=50
+        ProcChance=0.1
+        ForcedProcs={
+            PT_LIFT_HIT
+        }
+    ForcedDeathProcs={}
+    ForcedProcCount=1
+    HitType=DHT_NONE
+    ProcExtraTime=0
+}
+UseCurrentMeleeAttackForDamage=0
+MeleeAttack=""
+MainHandOnly=0
+Effect={
+    LocalPosition={0,0,0}
+    LocalRotation={0,0,0,1}
+    BoneName=""
+    Type=/Lotus/Fx/Weapons/Melee/Clean/Slams/ScaledSlam/MeleeSlamSuspendFX
+    Chance=255
+    RelativeToBounds=0
+    Attach=1
+    DestroyWithOwner=0
+    DestroyParentOnDeath=0
+    FadeOutOnDestruction=0
+    Scale=1
+}
+Bone=GAME_R1_WEAPON1
+Offset={0,0,0}
+FXOffset={0,0,1}
+UseWeaponAttachment=0
+WeaponAttachmentHand=MAIN_HAND
+IsAerialSlam=1
+HitAirborneTargets=1
+VerticalImpulse=900
+HorizontalImpulse=500
+},
+{
+    TriggeringAnimEvent=AxeSlam
+    RadiusMin=0
+    Radius=5
+    FallOff=1
+    FallOffMax=0
+    CanCrit=0
+    CanUseComboMultiplier=0
+    UseImpactBehaviorAttackDataAmount=1
+    UseWeaponProcChance=0
+    UseModifiedRadius=1
+    BaseDamageAttenuation=1
+    AttackData={
+        UseNewFormat=0
+        Type=DT_EXPLOSION
+        Amount=50
+        ProcChance=0.1
+        ForcedProcs={}
+        ForcedDeathProcs={}
+        ForcedProcCount=1
+        HitType=DHT_NONE
+        ProcExtraTime=0
+    }
+UseCurrentMeleeAttackForDamage=0
+MeleeAttack=""
+MainHandOnly=0
+Effect={
+    LocalPosition={0,0,0}
+    LocalRotation={0,0,0,1}
+    BoneName=""
+    Type=/Lotus/Fx/Weapons/Melee/Clean/Slams/MeleeSlamSmallSharpFX
+    Chance=255
+    RelativeToBounds=0
+    Attach=1
+    DestroyWithOwner=1
+    DestroyParentOnDeath=0
+    FadeOutOnDestruction=0
+    Scale=1
+}
+Bone=GAME_R1_WEAPON1
+Offset={0,0,0}
+FXOffset={0,0,0}
+UseWeaponAttachment=0
+WeaponAttachmentHand=MAIN_HAND
+IsAerialSlam=0
+HitAirborneTargets=1
+VerticalImpulse=0.15000001
+HorizontalImpulse=0.1
+},
+{
+    TriggeringAnimEvent=GroundHitEffect
+    RadiusMin=0
+    Radius=5
+    FallOff=1
+    FallOffMax=0
+    CanCrit=0
+    CanUseComboMultiplier=0
+    UseImpactBehaviorAttackDataAmount=1
+    UseWeaponProcChance=0
+    UseModifiedRadius=1
+    BaseDamageAttenuation=1
+    AttackData={
+        UseNewFormat=0
+        Type=DT_EXPLOSION
+        Amount=50
+        ProcChance=0.1
+        ForcedProcs={}
+        ForcedDeathProcs={}
+        ForcedProcCount=1
+        HitType=DHT_NONE
+        ProcExtraTime=0
+    }
+UseCurrentMeleeAttackForDamage=0
+MeleeAttack=""
+MainHandOnly=0
+Effect={
+    LocalPosition={0,0,0}
+    LocalRotation={0,0,0,1}
+    BoneName=""
+    Type=/Lotus/Fx/Weapons/Melee/Clean/Slams/MeleeGroundContactFX
+    Chance=255
+    RelativeToBounds=0
+    Attach=1
+    DestroyWithOwner=1
+    DestroyParentOnDeath=0
+    FadeOutOnDestruction=0
+    Scale=1
+}
+Bone=GAME_R1_WEAPON1
+Offset={0,0,0}
+FXOffset={0,0,0}
+UseWeaponAttachment=0
+WeaponAttachmentHand=MAIN_HAND
+IsAerialSlam=0
+HitAirborneTargets=1
+VerticalImpulse=0.15000001
+HorizontalImpulse=0.1
+}
+}
+}
+DualWield={
+    meleeTree=/Lotus/Weapons/Tenno/Melee/MeleeTrees/DualSwordMeleeTree
+    meleeStyle=MS_AKIMBO_SHORT_SWORD
+    holsterCustomization=/Lotus/Upgrades/Skins/HolsterCustomizations/DualSwordHips
+    stancePolarity=AP_ATTACK
+}

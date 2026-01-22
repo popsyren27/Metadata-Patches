@@ -1,0 +1,4 @@
+>/Lotus/Powersuits/Ninja/NinjaStormWeaponPrime
+LocalizeTag=/Lotus/Language/Suits/NinjaStormWeaponPrimeName
+LocalizeDescTag=/Lotus/Language/Suits/NinjaStormWeaponPrimeDesc
+VariantType=VT_PRIME

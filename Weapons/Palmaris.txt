@@ -1,0 +1,77 @@
+>/Lotus/Weapons/Infested/Pistols/InfKitGun/Handles/InfPrimaryHandle/InfModularPrimaryHandlePart
+MarketMode=MM_HIDDEN
+PremiumPrice=20
+LocalizeTag=/Lotus/Language/Weapons/InfModularPrimaryHandle
+LocalizeDescTag=/Lotus/Language/Weapons/InfModularPrimaryHandleDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/ModularWeapons/InfModular/InfPrimaryHandle.png
+ExcludeFromCodex=0
+Attachment=InfModularPrimaryHandleAttachment
+Upgrades={
+    {
+        UpgradeType=WEAPON_RECOIL
+        OperationType=ADD
+        Value=-0.2
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        ValidProcTypes={}
+    },
+{
+    UpgradeType=WEAPON_CHARGE_RATE
+    OperationType=ADD
+    Value=0.58999997
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    ValidProcTypes={}
+}
+}
+UngildedMaterial=Ungilded/InfHandlePrimaryUngildedMat
+DonationStandingBonus=200
+Overrides={
+    {
+        BarrelType=BT_SEMI_PROJECTILE
+        GunType=GT_SHOTGUN
+        Damage=-18
+        FireRate=310
+        TraceDistance=0
+        CompatibleSkinType=/Lotus/Weapons/Tenno/Shotgun/LotusStandardShotgun
+    },
+{
+    BarrelType=BT_SEMI_PROJECTILE
+    GunType=GT_RIFLE
+    Damage=-15
+    FireRate=207
+    TraceDistance=0
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Rifle/LotusAssaultStandardRifle
+},
+{
+    BarrelType=BT_AUTO_HITSCAN
+    GunType=GT_RIFLE
+    Damage=-1.5
+    FireRate=930
+    TraceDistance=0
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Rifle/LotusAssaultStandardRifle
+},
+{
+    BarrelType=BT_AUTO_HITSCAN
+    GunType=GT_BEAM
+    Damage=-3
+    FireRate=480
+    TraceDistance=28
+    CompatibleSkinType=""
+}
+}
+ReloadSlowAnim=/Lotus/Animations/Tenno/Movement/Rifle/PrimaryKitguns/ReloadSUModularPrimaryHandleASlow_anim.fbx
+ReloadFastAnim=/Lotus/Animations/Tenno/Movement/Rifle/PrimaryKitguns/ReloadSUModularPrimaryHandleAFast_anim.fbx
+UseGripOffset=1
+GripPositionOffset={-0.07,-0.02,0.17}
+GripRotationOffset={0,0.70710677,-0.70710677,0}

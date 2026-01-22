@@ -1,0 +1,23 @@
+>/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetHeadLambeo
+MarketMode=MM_HIDDEN
+PremiumPrice=55
+SellingPrice=2000
+LocalizeTag=/Lotus/Language/SolarisVenus/MoaPetHeadLambeo
+LocalizeDescTag=/Lotus/Language/SolarisVenus/MoaPetHeadLambeoDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Companions/Moas/MoaHeadB.png
+ExcludeFromCodex=0
+Attachment=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetComponents/LambeoHeadAttachment
+UngildedMaterial=/Lotus/Characters/Pets/PetMoa/PetMoaBUntint
+DonationStandingBonus=400
+EligibleForDailyWeaponSale=1
+DefaultSlottedUpgrades={
+    {
+        ItemType=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetPrecept/MoaStasisFieldPrecept
+        Slot=8
+    },
+{
+    ItemType=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetPrecept/MoaShockwavePrecept
+    Slot=9
+}
+}
+AttachPosition={0,-0.15000001,0}

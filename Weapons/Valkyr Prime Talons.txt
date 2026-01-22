@@ -1,0 +1,4 @@
+>/Lotus/Powersuits/Berserker/BerserkerMeleePrime
+LocalizeTag=/Lotus/Language/Suits/BerserkerMeleePrimeName
+LocalizeDescTag=/Lotus/Language/Suits/BerserkerMeleePrimeDesc
+VariantType=VT_PRIME

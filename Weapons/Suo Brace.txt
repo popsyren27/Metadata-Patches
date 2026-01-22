@@ -1,0 +1,42 @@
+>/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Grip/CorpAmpSet1GripPartA
+THIRD_PERSON_ATTACHMENT={
+    MAIN_HAND={
+        LocalRotation={0.5,0.5,-0.5,0.5}
+    }
+}
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/SolarisVenus/CorpAmpSet1GripA
+LocalizeDescTag=/Lotus/Language/SolarisVenus/CorpAmpSet1GripADesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Operator/Amps/CorpAmpSet1GripPartA.png
+ExcludeFromCodex=0
+Attachment=CorpAmpSet1GripAttachmentA
+Upgrades={
+    {
+        UpgradeType=WEAPON_AMMO_MAX
+        OperationType=ADD
+        Value=100
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=OperatorAmpAmmo
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        ValidProcTypes={}
+    },
+{
+    UpgradeType=WEAPON_CONVERT_AMMO_DELAY
+    OperationType=ADD
+    Value=2
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    ValidProcTypes={}
+}
+}
+UngildedMaterial=TiredVersion/CorpAmpSet1GripATiredMat
+DonationStandingBonus=500

@@ -1,0 +1,8 @@
+>/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorAntigenA
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/InfestedMicroplanet/InfestedPredatorAntigenA
+LocalizeDescTag=/Lotus/Language/InfestedMicroplanet/InfestedPredatorAntigenADesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Companions/Deimos/AntigenInfestedPredatorA.png
+Attachment=/Lotus/Characters/Wildlife/InfestedPredator/InfestedPredatorAttachmentHorn
+AttachBone=GAME_C1_HEAD1
+OverridePolarity=AP_ATTACK

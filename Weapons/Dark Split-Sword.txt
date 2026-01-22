@@ -1,0 +1,46 @@
+>/Lotus/Weapons/Tenno/Melee/Swords/DarkSword/DarkSwordDaggerHybridWeapon
+THIRD_PERSON_ATTACHMENT={
+    MAIN_HAND={
+        Type=DarkSwordDaggerPolearmAttachment
+    }
+}
+MarketMode=MM_VISIBLE
+PremiumPrice=225
+LocalizeTag=/Lotus/Language/Items/DarkSwordDaggerHybridName
+LocalizeDescTag=/Lotus/Language/Items/DarkSwordDaggerHybridDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/MeleeWeapons/Weapons/DarkSplitSwordHybrid.png
+FeaturedTexture=/Lotus/Interface/Graphics/Store/Banners/DarkSplitSword.png
+ExcludeFromCodex=0
+SearchTags={
+    /Lotus/Language/Loadout/LoadoutCat_LightBlade
+}
+CompatibilityTags={
+    DUAL_SWORDS_STANCE,
+    HEAVY_BLADE_STANCE
+}
+AvailableOnPvp=1
+UtilityReq=/Lotus/Types/Items/MiscItems/WeaponUtilityUnlocker
+ArtifactSlots={
+    AP_ATTACK,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_POWER,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
+}
+OmegaAttenuation=1.55
+ArcaneApertureType=/Lotus/Types/Items/MiscItems/WeaponMeleeArcaneUnlocker
+DefaultModTemplate=/Lotus/Types/ModLists/Melee/HybridRadiation
+DefaultModOverrides={
+    SlotType=ST_MELEE
+    Stance=/Lotus/Weapons/Tenno/Melee/MeleeTrees/DualSwordCmbOneMeleeTree
+}
+WeaponTypes={
+    DarkSwordDaggerSingle,
+    DarkSwordDaggerDuals
+}

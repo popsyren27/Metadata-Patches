@@ -1,0 +1,52 @@
+>/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Handle/SUModularSecondaryHandleAPart
+MarketMode=MM_HIDDEN
+PremiumPrice=60
+LocalizeTag=/Lotus/Language/SolarisVenus/SUModularSecondaryHandleA
+LocalizeDescTag=/Lotus/Language/SolarisVenus/SUModularSecondaryHandleADesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/SecondaryWeapons/Kitguns/SUModularSecondaryHandleA.png
+ExcludeFromCodex=0
+Attachment=SUModularSecondaryHandleAAttachment
+UngildedMaterial=Ungilded/SUModularSecondaryHandleAUngildedMat
+DonationStandingBonus=200
+EligibleForDailyWeaponSale=1
+DefaultOverride={
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Pistol/LotusSinglePistolGun
+}
+Overrides={
+    {
+        BarrelType=BT_SEMI_PROJECTILE
+        GunType=GT_SHOTGUN
+        Damage=-48
+        FireRate=150
+        TraceDistance=0
+        CompatibleSkinType=/Lotus/Weapons/Tenno/Pistol/LotusSinglePistolGun
+    },
+{
+    BarrelType=BT_SEMI_PROJECTILE
+    GunType=GT_RIFLE
+    Damage=-12
+    FireRate=220
+    TraceDistance=0
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Pistol/LotusSinglePistolGun
+},
+{
+    BarrelType=BT_AUTO_HITSCAN
+    GunType=GT_RIFLE
+    Damage=-6
+    FireRate=530
+    TraceDistance=0
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Pistol/LotusSinglePistolGun
+},
+{
+    BarrelType=BT_AUTO_HITSCAN
+    GunType=GT_BEAM
+    Damage=-1
+    FireRate=720
+    TraceDistance=37
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Pistol/LotusSinglePistolGun
+}
+}
+ReloadSlowAnim=/Lotus/Animations/Tenno/Movement/Pistol/ReloadSUModSecHandleASlow_anim.fbx
+ReloadFastAnim=/Lotus/Animations/Tenno/Movement/Pistol/ReloadSUModSecHandleAFast_anim.fbx
+DSReloadSlowAnim=/Lotus/Animations/Tenno/Movement/GlaiveAndSecondary/ReloadLong_anim.fbx
+DSReloadFastAnim=/Lotus/Animations/Tenno/Movement/GlaiveAndSecondary/Reload_anim.fbx

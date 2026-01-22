@@ -1,0 +1,78 @@
+>/Lotus/Weapons/SolarisUnited/Primary/SUModularPrimarySet1/Handles/SUModularPrimaryHandleDPart
+MarketMode=MM_HIDDEN
+PremiumPrice=20
+LocalizeTag=/Lotus/Language/SolarisVenus/SUModularPrimaryHandleD
+LocalizeDescTag=/Lotus/Language/SolarisVenus/SUModularPrimaryHandleDDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/ModularWeapons/Primary/SUModularPrimaryHandleDPart.png
+ExcludeFromCodex=0
+Attachment=SUModularPrimaryHandleDAttachment
+Upgrades={
+    {
+        UpgradeType=WEAPON_RECOIL
+        OperationType=ADD
+        Value=0.2
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        ValidProcTypes={}
+    },
+{
+    UpgradeType=WEAPON_CHARGE_RATE
+    OperationType=ADD
+    Value=-0.43000001
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    ValidProcTypes={}
+}
+}
+UngildedMaterial=Ungilded/SUModularPrimaryHandleDUn
+DonationStandingBonus=200
+EligibleForDailyWeaponSale=1
+Overrides={
+    {
+        BarrelType=BT_SEMI_PROJECTILE
+        GunType=GT_SHOTGUN
+        Damage=82
+        FireRate=180
+        TraceDistance=0
+        CompatibleSkinType=/Lotus/Weapons/Tenno/Shotgun/LotusStandardShotgun
+    },
+{
+    BarrelType=BT_SEMI_PROJECTILE
+    GunType=GT_RIFLE
+    Damage=58
+    FireRate=128
+    TraceDistance=0
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Rifle/LotusAssaultStandardRifle
+},
+{
+    BarrelType=BT_AUTO_HITSCAN
+    GunType=GT_RIFLE
+    Damage=18
+    FireRate=540
+    TraceDistance=0
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Rifle/LotusAssaultStandardRifle
+},
+{
+    BarrelType=BT_AUTO_HITSCAN
+    GunType=GT_BEAM
+    Damage=4
+    FireRate=480
+    TraceDistance=16
+    CompatibleSkinType=""
+}
+}
+ReloadSlowAnim=/Lotus/Animations/Tenno/Movement/Rifle/PrimaryKitguns/ReloadSUModularPrimaryHandleBDSlow_anim.fbx
+ReloadFastAnim=/Lotus/Animations/Tenno/Movement/Rifle/PrimaryKitguns/ReloadSUModularPrimaryHandleBDFast_anim.fbx
+UseGripOffset=1
+GripPositionOffset={-0.090000004,-0.02,0.17}
+GripRotationOffset={0,0.70710677,-0.70710677,0}

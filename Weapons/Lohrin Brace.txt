@@ -1,0 +1,43 @@
+>/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Grip/SentAmpSet1GripPartC
+THIRD_PERSON_ATTACHMENT={
+    MAIN_HAND={
+        LocalRotation={0.5,0.5,-0.5,0.5}
+    }
+}
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/OstronCrafting/AmpGripThree
+LocalizeDescTag=/Lotus/Language/OstronCrafting/AmpGripThreeDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Operator/Amps/SentAmpSet1GripPartC.png
+ExcludeFromCodex=0
+PremiumPrice=85
+Attachment=SentAmpSet1GripAttachmentC
+Upgrades={
+    {
+        UpgradeType=WEAPON_CRIT_CHANCE
+        OperationType=ADD
+        Value=0.12
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        ValidProcTypes={}
+    },
+{
+    UpgradeType=WEAPON_PROC_CHANCE
+    OperationType=ADD
+    Value=0.12
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    ValidProcTypes={}
+}
+}
+UngildedMaterial=TiredVersion/SentAmpSet1GripCTiredMat
+DonationStandingBonus=1000

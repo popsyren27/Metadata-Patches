@@ -1,0 +1,21 @@
+>/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartLegsB
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Pets/ZanukaPetLegsB
+LocalizeDescTag=/Lotus/Language/Pets/ZanukaPetLegsBDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Companions/Zanukas/ZanukaPetLegsB.png
+ExcludeFromCodex=0
+Attachment=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetComponents/ZanukaPetLegsB
+UngildedMaterial=/Lotus/Characters/Guild/ZanukaCompanion/ZanukaCompanionlegsBUntint
+DefaultSlottedUpgrades={
+    {
+        ItemType=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPrecepts/ZanukaPetClonePrecept
+        Slot=8
+    }
+}
+EnemyAbility=/Lotus/Powersuits/NpcPowersuits/Lawyers/Powers/PetCloneAbility
+MaxHealthModifier=0.30000001
+MaxShieldModifier=-0.1
+MaxArmourRatingModifier=0.2
+UngildedMaxHealthModifier=0.15000001
+UngildedMaxShieldModifier=-0.050000001
+UngildedMaxArmourModifier=0.1

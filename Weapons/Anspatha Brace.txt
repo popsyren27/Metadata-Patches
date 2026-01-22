@@ -1,0 +1,55 @@
+>/Lotus/Weapons/Sentients/OperatorAmplifiers/Set2/Grip/SentAmpSet2GripPartA
+THIRD_PERSON_ATTACHMENT={
+    MAIN_HAND={
+        LocalRotation={0.5,0.5,-0.5,0.5}
+    }
+}
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/OstronCrafting/AmpGripFour
+LocalizeDescTag=/Lotus/Language/OstronCrafting/AmpGripFourDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Operator/Amps/SentAmpSet2GripPartA.png
+ExcludeFromCodex=0
+Attachment=SentAmpSet2GripAttachmentA
+Upgrades={
+    {
+        UpgradeType=WEAPON_AMMO_MAX
+        OperationType=ADD
+        Value=20
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=OperatorAmpAmmo
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        ValidProcTypes={}
+    },
+{
+    UpgradeType=WEAPON_CONVERT_AMMO_DELAY
+    OperationType=ADD
+    Value=-0.5
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    ValidProcTypes={}
+},
+{
+    UpgradeType=AVATAR_POWER_RATE
+    OperationType=ADD
+    Value=15
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    ValidProcTypes={}
+}
+}
+UngildedMaterial=TiredVersion/SentAmpSet2GripATiredMat
+DonationStandingBonus=500

@@ -1,0 +1,320 @@
+>/Lotus/Weapons/Lasria/AK47/TC2024AK47Weapon
+PickUpMesh=AK47_skel.fbx
+DropSound=/Lotus/Sounds/Weapons/Grineer/WeaponDrops/GrineerWeaponDrop
+InventorySlot=SLOT_2
+THIRD_PERSON_ATTACHMENT={
+    MAIN_HAND={
+        LocalPosition={0,-0.024,0.0049999999}
+        LocalRotation={0,0,-0.043618999,0.99904799}
+        BoneName=GAME_R1_WEAPON1
+        Type=AK47Attachment
+    }
+}
+HolsterBone1Name=GAME_C1_RIFLEATTACH
+HolsterBone1Position={0.050000001,0.050000001,0.1}
+HolsterBone1Rotation={-0.70710677,-0.70710677,0,0}
+PickUpText=/Lotus/Language/Items/RiflePickup
+MarketMode=MM_HIDDEN
+PremiumPrice=240
+LocalizeTag=/Lotus/Language/Weapons/AK47WeaponName
+LocalizeDescTag=/Lotus/Language/Weapons/AK47WeaponDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/PrimaryWeapons/Weapons/AK47Weapon.png
+ExcludeFromCodex=0
+SearchTags={
+    /Lotus/Language/Loadout/LoadoutCat_Rifle
+}
+UseWeaponHandForAim=1
+WeaponHandAimOffset={0,0.050000001,0}
+UseGripOffset=1
+GripPositionOffset={-0.075000003,-0.015,0.22}
+GripRotationOffset={0.061627999,0.70441598,-0.70441598,0.061627999}
+ZoomLevels={
+    {
+        OverrideCameraShake=0
+        zoomShake={
+            ShakeFactorPos=0.039999999
+            ShakeFactorRot={0.079999998,0.079999998,0.079999998}
+            ShakeSpeed=2
+            ShakeAmbient=0
+            ShakeDampening=1.5
+            SwaySpeed=1
+            SwayAmplitude=0.1
+        }
+    aimFOVMultiplier=1.5
+    Upgrades={}
+    LocOverrides={}
+    Sound=""
+}
+}
+DM_HIP={
+    focalNearTransitionTime=0
+    focalFarTransitionTime=0
+}
+Behaviors={
+    {
+        fire:Type=/EE/Types/Game/WeaponTraceFireBehavior
+        fire:WeaponTraceFireBehavior={
+            AiUsageInfo={
+                preferences={
+                    setAimTarget=1
+                    setAimSource=1
+                    ignoreNonVisible=0
+                    shootAtCover=1
+                    controlReload=1
+                    allowFireWhileBlocking=0
+                    reloadThreshold=0
+                    controlAim=0
+                    continuousAim=0
+                    minimumAimMask=0.89999998
+                    ShootOnStaggerProbability=0.1
+                    StaggerTimeOut=1
+                    minAngleToTurn=0
+                    onlyFireWithinRangeMultiplier=0
+                    onlyFireAboveMinRangeMultiplier=0
+                    aimAtPart=TORSO
+                    aimAtClosestPart=0
+                    lockAimOnFullCharge=0
+                    firingPreferences={
+                        firingType=FT_BURST
+                        burstTime={1,2}
+                        burstPauseTime={0.5,1}
+                        fireRate={0,0}
+                    }
+            }
+        aimError={4,10}
+        aimGraph=/EE/Types/Npc/WeaponAimGraphs/MediumAimGraph
+        desiredAttackState=AS_LONG_RANGE
+        attackWeight=1
+        desiredAttackRange={10,80}
+        hitSpreadMultiplier=0
+    }
+IgnoreFireIterations=0
+IgnoreOwner=1
+IsSilenced=0
+ReportAttack=1
+UseExplicitNpcPerceptionSoundProperties=0
+ExplicitNpcPerceptionSoundAttenuationRadius={10,100}
+ExplicitNpcPerceptionSoundGain=0
+fireIterations=1
+UseAmmo=1
+ConsumeEntireClip=0
+ConsumePartialAmmo=0
+ammoRequirement=1
+ScaleAmmoRequirement=0
+RoundUpAmmoConsumption=0
+ammoType=/Lotus/Weapons/Ammo/RifleAmmoEx
+aimMode=AIM_MODE_IRON_SIGHTS
+IsMeleeBehavior=0
+ConsumesChargesForFire=0
+EnergyConsumedPerFire=0
+LockOnProperties={
+    LockOnMaxTargets=0
+    LockOnStyle=LS_ENEMY
+    LockOnMaxAngle=15
+    LockOnInitialAngle=0
+    LockOnDistanceOverride=0
+    LockOnPart=ANY_PART
+    LockOnDistanceWeighting=0.1
+    LockOnAngleWeighting=1
+    LockOnIgnoreEndPointTarget=0
+    LockOnIgnoreTags={}
+}
+HIP_FIRE_ACCURACY=/Lotus/Types/Game/WeaponProperties/Accuracy/Weapon/AK47WeaponHipAccuracyInfo
+AIMED_ACCURACY=/Lotus/Types/Game/WeaponProperties/Accuracy/Weapon/AK47WeaponAimAccuracyInfo
+HIP_CAMERA_RECOIL=/Lotus/Types/Game/WeaponProperties/Recoil/Weapon/AK47WeaponHipRecoilInfo
+AIMED_CAMERA_RECOIL=/Lotus/Types/Game/WeaponProperties/Recoil/Weapon/AK47WeaponAimRecoilInfo
+spreadUniform=0
+SpreadRatioHorizontal=0.5
+SpreadInverse=0
+MultishotUseConeAngle=0
+AimProperties={
+    EyeBasedAimSource=1
+    ScopedPlayerUsesCameraPos=0
+    OverrideLaunchDir=0
+    UseWeaponAttachment=1
+    AttenuateRecoilByChargeAmount=0
+    PerfectChargeExtraRecoilAmount=0
+    AttenuateRecoilBySpinUpAmount=0
+    CameraRecoilStrength={0,1}
+    CameraRecoilCurve=ET_LINEAR
+}
+AutoTargetChance=0
+traceDistance=300
+PvpTraceDistance=300
+punctureHitEffect=""
+InfinitePunctureDepth=0
+tracePunctureDepth=0
+PunchthroughIgnoresAvatars=0
+RicochetChance=0
+RicochetRange=15
+OnlyHitEnitiesOnce=1
+ForceCameraAimForLocalPlayer=1
+AimTranslationOffset={0,0,0}
+AimDirOverride={0,0,0}
+UseVisibilityRaycast=0
+IgnorePickups=1
+CollectorTargetTag=""
+CollectorWeaponType=""
+CollectorScanTargetType=""
+WhizSound=/Lotus/Sounds/Weapons/BulletImpacts/Whizzbys/BulletWhizzby
+WhizRadius={2,30}
+WhizDeviation=4
+WhizChance=0.30000001
+WhizzByRemoteMinDistance=15
+TraceRadius=0
+PvpTraceRadius=0
+AffectedByStasis=1
+AdjustAimWithAvatarUp=0
+RiftStasisWeight=1
+CloakShieldType=/Lotus/Upgrades/Focus/Defense/Objects/CloakShieldDeco
+}
+impact:Type=/Lotus/Types/Weapon/LotusWeaponImpactBehavior
+impact:LotusWeaponImpactBehavior={
+    AttackData={
+        UseNewFormat=0
+        Type=DT_PUNCTURE
+        Amount=40
+        ProcChance=0.18000001
+        ForcedProcs={}
+        ForcedDeathProcs={}
+        ForcedProcCount=1
+        HitType=DHT_NONE
+        ProcExtraTime=0
+    }
+PvpForcedProcs={}
+PvpForcedDeathProcs={}
+DamageUpgradeTypes={
+    WEAPON_DAMAGE_AMOUNT
+}
+damageFallOff={0,0}
+damageFallOffMinDamage=0
+PlayerDamageMultiplier=1
+PvpDamageMultiplier=1.72
+PlayerScaleDamageMultiplierByMissionLevel=0
+instantImpulse=250
+additionalForce={0,0,0}
+impulseFallOff={10,1000}
+minImpulseFallOff=1
+applyPushVelocity=0
+applyPushVelocityOnlyToBlockingTarget=0
+pushMagnitude={0.5,1}
+pushMagnitudeFallOff={10,100}
+hitEffect=/Lotus/Fx/Weapons/Basic/Ballistic/Impacts/BallisticHitEffectMedium
+hitEffectAlt=""
+deflectHitEffects=1
+deflectRange={0,1}
+AltEffectHands={}
+ragdollChance=0
+criticalHitChance=0.25999999
+criticalHitDamageMultiplier=2.4000001
+ConsumeAmmoWhenDamageDealt=0
+AmmoConsumedWhenHitVulnerableTarget=0
+AmmoConsumedWhenHitInvulnerableTarget=0
+strength=0
+radius=0
+flash=0
+OnHitScriptEnabled=1
+OnHitScript={
+    Script=""
+}
+UseNextShotDamageBonus=1
+IgnoreHeadshotBonus=0
+IgnoreHeadshotBonusPvp=0
+AlwaysOverrideFiringAvatar=0
+}
+state:Type=/EE/Types/Game/WeaponAutomaticStateBehavior
+state:WeaponAutomaticStateBehavior={
+    reloadTime=2
+    PerfectReloadRange={0,0}
+    fireRate=600
+    NeedsPassiveUpdate=0
+    ApplyNumChargesToDamageMultiplier=1
+    ModeSwitchTime=0
+    FullClipModeSwitchTime=0
+    IsToggleBehavior=0
+    autoReloadEmptyTime=0
+    AmmoTakenPerReload=-1
+    DoPreFire=0
+    PrefireTime=0
+    ShareFireRateWithPrefire=0
+    ShouldAutoPreFireToFire=0
+    SkipRefireOnEmpty=0
+    QueueReloadOnEmptyClip=0
+    EnableReloadEmpty=0
+    ReloadOnAdditionalEmptyFire=0
+    ForceReloadFromEmpty=0
+    ForceNoSwapOnEmpty=0
+    ReloadDuringModeSwitch=0
+    AnimWeaponType=WEAPONTYPE_NORMAL
+    RunCausesReady=0
+    CanFireWhileRunning=0
+    CanChargeWhileRunning=1
+    CanFireWhileInAir=1
+    PreventRunWhileRecharging=0
+    PreventRunDuringModeSwitch=1
+    UseReloadTimeBetweenShots=0
+    OnlyGiveAmmoOnReloadCompleteEvent=0
+    CanInterruptModeSwitch=0
+    NeedsLockOnTargets=0
+    IsAlternateFire=0
+    LocTag=/Lotus/Language/Menu/Loadout_TriggerAuto
+    BehaviorTag=/Lotus/Language/Menu/Loadout_TriggerAuto
+    TrackProjectiles=0
+    MaxNumProjectiles=0
+    PvpMaxNumProjectiles=0
+    OverheatStyle=OS_PLATEAU
+    InstantOverheat=0
+    OverheatTime=0
+    ReduceOverheatAmount=0
+    OverheatCooldownModifier=1
+    AmmoOverheatSound=""
+    OverheatEndedSound=""
+    AmmoOverheatSoundResetThreshold=0.75
+    ReplicateAmmoConsumption=0
+    OnNewProjectileScript={
+        Script=""
+    }
+ContinuousFireRateAtten={1,1}
+ContinuousMaxShots=0
+Overspin=0
+SpindownTime=0
+ReverseFireRateAtten=0
+RechargeAtten=1
+}
+}
+}
+DefaultUpgrades={
+    AK47WeaponInnateMod
+}
+InfiniteClipSizeForNpcs=1
+PVPAmmoCapacity=200
+AmmoClipSize=40
+PVPAmmoClipSize=50
+UIReticuleScale=0.5
+UIReticuleAim=0
+StateAnimations={
+    {
+        state=WS_RELOAD
+        behaviorIndex=0
+        animation=/Lotus/Animations/Tenno/Movement/Rifle/AK47/AK47Reload_anim.fbx
+        clearable=1
+    }
+}
+RequiredLevel=12
+ArtifactSlots={
+    AP_UNIVERSAL,
+    AP_ATTACK,
+    AP_ATTACK,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_ATTACK,
+    AP_UNIVERSAL
+}
+NumChargesToAdd=0
+MaxCharges=0
+NumChargesToConsume=0
+OmegaAttenuation=1.55
+DefaultModTemplate=/Lotus/Types/ModLists/Rifle/CritPuncture

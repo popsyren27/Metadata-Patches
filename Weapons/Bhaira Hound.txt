@@ -1,0 +1,15 @@
+>/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartHeadB
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Pets/ZanukaPetHeadB
+LocalizeDescTag=/Lotus/Language/Pets/ZanukaPetHeadBDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Companions/Zanukas/ZanukaPetHeadB.png
+ExcludeFromCodex=0
+Attachment=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetComponents/ZanukaPetHeadB
+UngildedMaterial=/Lotus/Characters/Guild/ZanukaCompanion/ZanukaCompanionHeadBUntint
+DefaultSlottedUpgrades={
+    {
+        ItemType=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPrecepts/ZanukaPetStealEximusPrecept
+        Slot=9
+    }
+}
+EnemyAbility=/Lotus/Powersuits/NpcPowersuits/Lawyers/Powers/PetPowerDenialAbility

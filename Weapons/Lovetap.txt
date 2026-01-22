@@ -1,0 +1,67 @@
+>/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Handle/SUModularSecondaryHandleBPart
+MarketMode=MM_HIDDEN
+PremiumPrice=60
+LocalizeTag=/Lotus/Language/SolarisVenus/SUModularSecondaryHandleB
+LocalizeDescTag=/Lotus/Language/SolarisVenus/SUModularSecondaryHandleBDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/SecondaryWeapons/Kitguns/SUModularSecondaryHandleB.png
+ExcludeFromCodex=0
+Attachment=SUModularSecondaryHandleBAttachment
+Upgrades={
+    {
+        UpgradeType=WEAPON_RECOIL
+        OperationType=ADD
+        Value=0.5
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        ValidProcTypes={}
+    }
+}
+UngildedMaterial=Ungilded/SUModularSecondaryHandleBUngildedMat
+DonationStandingBonus=200
+EligibleForDailyWeaponSale=1
+DefaultOverride={
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Pistol/LotusSinglePistolGun
+}
+Overrides={
+    {
+        BarrelType=BT_SEMI_PROJECTILE
+        GunType=GT_SHOTGUN
+        Damage=102
+        FireRate=90
+        TraceDistance=0
+        CompatibleSkinType=/Lotus/Weapons/Tenno/Pistol/LotusSinglePistolGun
+    },
+{
+    BarrelType=BT_SEMI_PROJECTILE
+    GunType=GT_RIFLE
+    Damage=24
+    FireRate=150
+    TraceDistance=0
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Pistol/LotusSinglePistolGun
+},
+{
+    BarrelType=BT_AUTO_HITSCAN
+    GunType=GT_RIFLE
+    Damage=19
+    FireRate=310
+    TraceDistance=0
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Pistol/LotusSinglePistolGun
+},
+{
+    BarrelType=BT_AUTO_HITSCAN
+    GunType=GT_BEAM
+    Damage=1
+    FireRate=720
+    TraceDistance=24
+    CompatibleSkinType=/Lotus/Weapons/Tenno/Pistol/LotusSinglePistolGun
+}
+}
+ReloadSlowAnim=/Lotus/Animations/Tenno/Movement/Pistol/ReloadSUModSecHandleBSlow_anim.fbx
+ReloadFastAnim=/Lotus/Animations/Tenno/Movement/Pistol/ReloadSUModSecHandleBFast_anim.fbx
+DSReloadSlowAnim=/Lotus/Animations/Tenno/Movement/GlaiveAndSecondary/ReloadBreakBarrel_anim.fbx
+DSReloadFastAnim=/Lotus/Animations/Tenno/Movement/GlaiveAndSecondary/ReloadBottomMag_anim.fbx

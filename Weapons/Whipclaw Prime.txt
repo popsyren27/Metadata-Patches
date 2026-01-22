@@ -1,0 +1,4 @@
+>/Lotus/Powersuits/Khora/KhoraWhipclawWeaponPrime
+LocalizeTag=/Lotus/Language/Suits/KhoraWhipclawWeaponPrimeName
+LocalizeDescTag=/Lotus/Language/Suits/KhoraWhipclawWeaponPrimeDesc
+VariantType=VT_PRIME

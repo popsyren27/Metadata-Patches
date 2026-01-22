@@ -1,0 +1,2 @@
+>/Lotus/Powersuits/Fairy/FlightPistols
+MarketMode=MM_HIDDEN

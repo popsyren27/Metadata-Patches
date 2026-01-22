@@ -1,0 +1,16 @@
+>/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleTwo
+MarketMode=MM_HIDDEN
+PremiumPrice=75
+LocalizeTag=/Lotus/Language/OstronCrafting/MeleeHandleTwo
+LocalizeDescTag=/Lotus/Language/OstronCrafting/MeleeHandleTwoDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/MeleeWeapons/Zaws/HandleTwo.png
+ExcludeFromCodex=0
+Attachment=HandleTwoAttachment
+Upgrades={}
+UngildedMaterial=TiredVersion/HandleSmall02TiredMat
+DonationStandingBonus=300
+EligibleForDailyWeaponSale=1
+BaseFireRate=55
+SugatraOffset={
+    PosOffset={0,-0.07,-0.0099999998}
+}

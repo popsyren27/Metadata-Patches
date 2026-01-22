@@ -1,0 +1,12 @@
+>/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetLegA
+MarketMode=MM_HIDDEN
+PremiumPrice=30
+SellingPrice=2000
+LocalizeTag=/Lotus/Language/SolarisVenus/MoaPetLegA
+LocalizeDescTag=/Lotus/Language/SolarisVenus/MoaPetLegADesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Companions/Moas/MoaLegsA.png
+ExcludeFromCodex=0
+Attachment=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetComponents/LegAttachmentA
+UngildedMaterial=/Lotus/Characters/Pets/PetMoa/PetMoaBodyUntint
+DonationStandingBonus=200
+EligibleForDailyWeaponSale=1

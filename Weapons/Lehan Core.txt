@@ -1,0 +1,15 @@
+>/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MeleeMoaPetEngine
+MarketMode=MM_HIDDEN
+PremiumPrice=55
+SellingPrice=2000
+LocalizeTag=/Lotus/Language/SolarisVenus/MoaPetEngineMelee
+LocalizeDescTag=/Lotus/Language/SolarisVenus/MoaPetEngineMeleeDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Companions/Moas/PetMoaMeleeBack.png
+ExcludeFromCodex=0
+Attachment=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetComponents/EngineMeleeAttachment
+UngildedMaterial=/Lotus/Characters/Pets/PetMoa/PetMoaDBack/PetMoaDBackUntint
+DonationStandingBonus=300
+MaxHealthModifier=0.15000001
+MaxArmourRatingModifier=0.15000001
+UngildedMaxHealthModifier=0.075000003
+UngildedMaxArmourModifier=0.075000003

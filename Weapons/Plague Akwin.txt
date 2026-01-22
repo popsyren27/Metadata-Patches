@@ -1,0 +1,29 @@
+>/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Handles/InfestedHandleOne
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/OstronCrafting/MeleeInfestedHandleOne
+LocalizeDescTag=/Lotus/Language/OstronCrafting/MeleeInfestedHandleOneDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/MeleeWeapons/Zaws/InfestedHandleOne.png
+ExcludeFromCodex=0
+Attachment=InfestedHandleOneAttachment
+Upgrades={
+    {
+        UpgradeType=WEAPON_MELEE_DAMAGE
+        OperationType=ADD
+        Value=-2
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        ValidProcTypes={}
+    }
+}
+UngildedMaterial=TiredVersion/HandleShortInfestedTired
+DonationStandingBonus=200
+BaseFireRate=57
+SugatraOffset={
+    PosOffset={0,-0.07,0.02}
+    RotOffset={-0.092295997,0.70105702,-0.092295997,0.70105702}
+}

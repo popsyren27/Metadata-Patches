@@ -1,0 +1,30 @@
+>/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleThree
+MarketMode=MM_HIDDEN
+PremiumPrice=75
+LocalizeTag=/Lotus/Language/OstronCrafting/MeleeHandleThree
+LocalizeDescTag=/Lotus/Language/OstronCrafting/MeleeHandleThreeDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/MeleeWeapons/Zaws/HandleThree.png
+ExcludeFromCodex=0
+Attachment=HandleThreeAttachment
+Upgrades={
+    {
+        UpgradeType=WEAPON_MELEE_DAMAGE
+        OperationType=ADD
+        Value=14
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        ValidProcTypes={}
+    }
+}
+UngildedMaterial=TiredVersion/HandleSmall03TiredMat
+DonationStandingBonus=400
+EligibleForDailyWeaponSale=1
+BaseFireRate=51
+SugatraOffset={
+    PosOffset={0,-0.185,0}
+}

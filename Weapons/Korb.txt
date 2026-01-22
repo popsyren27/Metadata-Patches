@@ -1,0 +1,31 @@
+>/Lotus/Weapons/Ostron/Melee/ModularMelee02/Handle/HandleNine
+MarketMode=MM_HIDDEN
+PremiumPrice=75
+LocalizeTag=/Lotus/Language/OstronCrafting/MeleeHandleNine
+LocalizeDescTag=/Lotus/Language/OstronCrafting/MeleeHandleNineDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/MeleeWeapons/Zaws/HandleNine.png
+ExcludeFromCodex=0
+Attachment=HandleNineAttachment
+Upgrades={
+    {
+        UpgradeType=WEAPON_MELEE_DAMAGE
+        OperationType=ADD
+        Value=28
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        ValidProcTypes={}
+    }
+}
+UngildedMaterial=TiredVersion/HandleSmall01TiredMat
+DonationStandingBonus=200
+EligibleForDailyWeaponSale=1
+BaseFireRate=47
+SugatraOffset={
+    PosOffset={0,-0.029999999,-0.0049999999}
+    RotOffset={0,0.70710677,0,0.70710677}
+}

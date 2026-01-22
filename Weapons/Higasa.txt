@@ -1,0 +1,821 @@
+>/Lotus/Weapons/Tenno/LongGuns/Gunbrella/ShrineMaidenGunbrellaWeapon
+PickUpMesh=Gunbrella_skel.fbx
+EquipTime=1.1
+InventorySlot=SLOT_2
+FIRST_PERSON_ATTACHMENT={
+    MAIN_HAND={
+        BoneName=GAME_C1_RIFLEATTACH
+    }
+}
+THIRD_PERSON_ATTACHMENT={
+    MAIN_HAND={
+        LocalRotation={-0.00076099997,0.017436,-0.043613002,0.998896}
+        BoneName=GAME_R1_WEAPON1
+        Type=ShrineMaidenGunbrellaAttachment
+    }
+}
+HolsterBone1Name=GAME_C1_RIFLEATTACH
+HolsterBone1Position={0.050000001,0.035,0}
+HolsterBone1Rotation={0.70710677,0.70710677,0,0}
+PickUpText=/Lotus/Language/Items/RiflePickup
+RemovedWithOwnerAfterDrop=0
+MarketMode=MM_VISIBLE
+PremiumPrice=245
+LocalizeTag=/Lotus/Language/Weapons/GunbrellaWeaponName
+LocalizeDescTag=/Lotus/Language/Weapons/GunbrellaWeaponDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/PrimaryWeapons/Weapons/GunbrellaWeapon.png
+ExcludeFromCodex=0
+SearchTags={
+    /Lotus/Language/Loadout/LoadoutCat_Rifle
+}
+RecipeHelpText=/Lotus/Language/Weapons/GunbrellaRecipeHelpText
+CompatibilityTags={
+    PROJECTILE,
+    ASSAULT_AMMO
+}
+HasAlternateFire=1
+UseWeaponHandForAim=1
+UseGripOffset=1
+GripPositionOffset={-0.064999998,-0.050000001,0.17}
+GripRotationOffset={0,0.70441598,-0.70710677,0.061627999}
+AimStartSound=""
+AimStopSound=/Lotus/Sounds/Weapons/Tenno/TnKoumeiGunbrella/TnKoumeiGunbrellaAimTransitionOut
+Behaviors={
+    {
+        fire:Type=/Lotus/Types/Game/LotusWeaponProjectileFireBehavior
+        fire:LotusWeaponProjectileFireBehavior={
+            AiUsageInfo={
+                preferences={
+                    setAimTarget=1
+                    setAimSource=1
+                    ignoreNonVisible=0
+                    shootAtCover=1
+                    controlReload=1
+                    allowFireWhileBlocking=0
+                    reloadThreshold=0
+                    controlAim=0
+                    continuousAim=0
+                    minimumAimMask=0.89999998
+                    ShootOnStaggerProbability=0.1
+                    StaggerTimeOut=1
+                    minAngleToTurn=0
+                    onlyFireWithinRangeMultiplier=0
+                    onlyFireAboveMinRangeMultiplier=0
+                    aimAtPart=TORSO
+                    aimAtClosestPart=0
+                    lockAimOnFullCharge=0
+                    firingPreferences={
+                        firingType=FT_NORMAL
+                        burstTime={0,0}
+                        burstPauseTime={0,0}
+                        fireRate={0,0}
+                    }
+            }
+        aimError={4,10}
+        aimGraph=/EE/Types/Npc/WeaponAimGraphs/MediumAimGraph
+        desiredAttackState=AS_SHORT_RANGE
+        attackWeight=1
+        desiredAttackRange={5,25}
+        hitSpreadMultiplier=0
+    }
+IgnoreFireIterations=0
+IgnoreOwner=1
+IsSilenced=0
+ReportAttack=1
+UseExplicitNpcPerceptionSoundProperties=0
+SlaveUsesMasterTargets=0
+ExplicitNpcPerceptionSoundAttenuationRadius={10,100}
+ExplicitNpcPerceptionSoundGain=0
+fireIterations=1
+UseAmmo=1
+ConsumeEntireClip=0
+ConsumePartialAmmo=0
+ammoRequirement=1
+ScaleAmmoRequirement=0
+RoundUpAmmoConsumption=0
+ammoType=/Lotus/Weapons/Ammo/RifleAmmoEx
+aimMode=AIM_MODE_IRON_SIGHTS
+IsMeleeBehavior=0
+ConsumesChargesForFire=0
+EnergyConsumedPerFire=0
+LockOnProperties={
+    LockOnMaxTargets=0
+    LockOnStyle=LS_ENEMY
+    LockOnMaxAngle=15
+    LockOnInitialAngle=0
+    LockOnDistanceOverride=0
+    LockOnPart=ANY_PART
+    LockOnDistanceWeighting=0.1
+    LockOnAngleWeighting=1
+    LockOnIgnoreEndPointTarget=0
+    LockOnIgnoreTags={}
+}
+HIP_FIRE_ACCURACY=/Lotus/Types/Game/WeaponProperties/Accuracy/Weapon/GunbrellaHipAccuracyInfo
+AIMED_ACCURACY=/Lotus/Types/Game/WeaponProperties/Accuracy/Weapon/GunbrellaAimAccuracyInfo
+HIP_CAMERA_RECOIL=/Lotus/Types/Game/WeaponProperties/Recoil/Weapon/GunbrellaHipRecoilInfo
+AIMED_CAMERA_RECOIL=/Lotus/Types/Game/WeaponProperties/Recoil/Weapon/GunbrellaAimRecoilInfo
+spreadUniform=0
+SpreadRatioHorizontal=0.5
+SpreadInverse=0
+MultishotUseConeAngle=0
+AimProperties={
+    EyeBasedAimSource=1
+    ScopedPlayerUsesCameraPos=0
+    OverrideLaunchDir=0
+    UseWeaponAttachment=1
+    AttenuateRecoilByChargeAmount=0
+    PerfectChargeExtraRecoilAmount=0
+    AttenuateRecoilBySpinUpAmount=0
+    CameraRecoilStrength={0,1}
+    CameraRecoilCurve=ET_LINEAR
+    NpcEyeBasedAimSource=0
+}
+AutoTargetChance=0
+AimIgnoresProjectile=0
+projectileType=ShrineMaidenGunbrellaProj
+AimIgnoresChargedProjectile=0
+chargedProjectileType=""
+projectileLaunchOffset={0,0,0}
+SequentialProjectileLaunchDirectionOffsets={}
+UpdateFirePositionPerIteration=0
+projectileLaunchDirectionOffset={0,0,0}
+projectileImpulse={0,0}
+projectileUpImpulse={0,0}
+projectileTorque={0,0,0}
+chargeSpeedMult={1,1}
+playerDamageMultiplier=1
+projectileSequenceList={}
+chargedProjectileSequenceList={}
+advanceProjectileSequenceOnFire=0
+calculateLobAngle=0
+useLargerLobAngle=0
+lobVerticalOffset=0
+DesiredTimeForArc=0
+MaxPeakHeight=0
+horizontalDeviationAngle=0
+OwnProjectiles=0
+AlwaysUseAimEndPoint=0
+KeepOriginalVisuals=0
+ApplyWeaponMaterialsToProjectile=0
+ApplyFlightSpeedToLaunchImpulse=0
+FallbackAgentTargetting=1
+MultishotAmmoSpread=0
+UseMultishotLineSpread=0
+ChargedProjectileMinSpeed=-1
+ChargedProjectileMaxSpeed=-1
+ProjectileChargeScale={0,1}
+SetProjectileTargetForLockOn=0
+MultiTargetLock=0
+MultiShotProjectileType=""
+MultiShotChargedProjectileType=""
+PvpProjectileType=""
+PvpChargedProjectileType=""
+PerfectChargedProjectileType=""
+PerfectChargeRange={0,0}
+UseFanSpread=0
+IgnoreSpreadOnFirstFireIteration=0
+SpreadRotationOffset=0
+DrawGrenadeArc=0
+FudgeAngle=0
+RaysPerMeter=0.5
+MaxRays=0
+DrawCondition=DC_AIMING
+SplineDrawType=""
+QuadDrawType=""
+ArcMaxEffectInstances=1
+ArcEffectType=""
+ArcEndEffectType=""
+SplineSpeed=1
+AttenuateForCharge=0
+ConsumeRemainingClip=0
+AttenuateSpreadForCharge=0
+MinChargeSpreadAtten=1
+MaxChargeSpreadAtten=1
+OverridePunctureDepthForCharge=0
+MinChargePunctureDepth=0
+MaxChargePunctureDepth=1
+SpreadExtraProjectiles=0
+AttenuateFireIterationsForCharge=0
+OverrideFiringHand=0
+}
+impact:Type=/Lotus/Types/Weapon/LotusWeaponImpactBehavior
+impact:LotusWeaponImpactBehavior={
+    AttackData={
+        UseNewFormat=0
+        Type=DT_PHYSICAL
+        DT_IMPACT=0.33329999
+        DT_PUNCTURE=0.33329999
+        DT_SLASH=0.33340001
+        Amount=25
+        ProcChance=0.1
+        ForcedProcs={}
+        ForcedDeathProcs={}
+        ForcedProcCount=1
+        HitType=DHT_NONE
+        ProcExtraTime=0
+    }
+PvpForcedProcs={}
+PvpForcedDeathProcs={}
+DamageUpgradeTypes={
+    WEAPON_DAMAGE_AMOUNT
+}
+damageFallOff={0,0}
+damageFallOffMinDamage=0
+PlayerDamageMultiplier=1
+PvpDamageMultiplier=1.46
+PlayerScaleDamageMultiplierByMissionLevel=0
+instantImpulse=250
+additionalForce={0,0,0}
+impulseFallOff={10,1000}
+minImpulseFallOff=1
+applyPushVelocity=0
+applyPushVelocityOnlyToBlockingTarget=0
+pushMagnitude={0.5,1}
+pushMagnitudeFallOff={10,100}
+hitEffect=/Lotus/Fx/Weapons/Basic/Ballistic/Impacts/BallisticHitEffectMedium
+hitEffectAlt=""
+deflectHitEffects=1
+deflectRange={0,1}
+AltEffectHands={}
+ragdollChance=0
+criticalHitChance=0.1
+criticalHitDamageMultiplier=2
+ConsumeAmmoWhenDamageDealt=0
+AmmoConsumedWhenHitVulnerableTarget=0
+AmmoConsumedWhenHitInvulnerableTarget=0
+strength=0
+radius=0
+flash=0
+OnHitScriptEnabled=1
+OnHitScript={
+    Script=""
+}
+UseNextShotDamageBonus=1
+IgnoreHeadshotBonus=0
+IgnoreHeadshotBonusPvp=0
+AlwaysOverrideFiringAvatar=0
+}
+state:Type=/EE/Types/Game/WeaponBurstStateBehavior
+state:WeaponBurstStateBehavior={
+    reloadTime=2.5
+    PerfectReloadRange={0,0}
+    fireRate=150
+    NeedsPassiveUpdate=0
+    ApplyNumChargesToDamageMultiplier=0
+    ModeSwitchTime=0
+    FullClipModeSwitchTime=0
+    IsToggleBehavior=0
+    autoReloadEmptyTime=0
+    AmmoTakenPerReload=-1
+    DoPreFire=0
+    PrefireTime=0
+    ShareFireRateWithPrefire=0
+    ShouldAutoPreFireToFire=0
+    SkipRefireOnEmpty=0
+    QueueReloadOnEmptyClip=0
+    EnableReloadEmpty=0
+    ReloadOnAdditionalEmptyFire=0
+    ForceReloadFromEmpty=0
+    ForceNoSwapOnEmpty=0
+    ReloadDuringModeSwitch=0
+    AnimWeaponType=WEAPONTYPE_NORMAL
+    RunCausesReady=0
+    CanFireWhileRunning=0
+    CanChargeWhileRunning=1
+    CanFireWhileInAir=1
+    PreventRunWhileRecharging=0
+    PreventRunDuringModeSwitch=1
+    UseReloadTimeBetweenShots=0
+    OnlyGiveAmmoOnReloadCompleteEvent=0
+    CanInterruptModeSwitch=0
+    NeedsLockOnTargets=0
+    IsAlternateFire=0
+    LocTag=/Lotus/Language/Menu/Loadout_TriggerBurst
+    BehaviorTag=""
+    TrackProjectiles=0
+    MaxNumProjectiles=0
+    PvpMaxNumProjectiles=0
+    OverheatStyle=OS_PLATEAU
+    InstantOverheat=0
+    OverheatTime=0
+    ReduceOverheatAmount=0
+    OverheatCooldownModifier=1
+    AmmoOverheatSound=""
+    OverheatEndedSound=""
+    AmmoOverheatSoundResetThreshold=0.75
+    ReplicateAmmoConsumption=0
+    OnNewProjectileScript={
+        Script=""
+    }
+IsAutomatic=0
+AccessibilityTrigger=1
+NumShots=5
+BurstDelay=0.1
+IgnoreFireRate=0
+EatAmmoOnUnequip=1
+QueueBursts=0
+BurstRemainingClip=0
+ConsumeAmmoOncePerBurst=0
+ForceBurstLogicOnClient=0
+PreFireDuringBurst=0
+}
+},
+{
+    fire:Type=/Lotus/Types/Weapon/RadialOnMissTraceFireBehavior
+    fire:RadialOnMissTraceFireBehavior={
+        AiUsageInfo={
+            preferences={
+                setAimTarget=1
+                setAimSource=1
+                ignoreNonVisible=0
+                shootAtCover=1
+                controlReload=1
+                allowFireWhileBlocking=0
+                reloadThreshold=0
+                controlAim=0
+                continuousAim=0
+                minimumAimMask=0.89999998
+                ShootOnStaggerProbability=0.1
+                StaggerTimeOut=1
+                minAngleToTurn=0
+                onlyFireWithinRangeMultiplier=0
+                onlyFireAboveMinRangeMultiplier=0
+                aimAtPart=TORSO
+                aimAtClosestPart=0
+                lockAimOnFullCharge=0
+                firingPreferences={
+                    firingType=FT_NORMAL
+                    burstTime={0,0}
+                    burstPauseTime={0,0}
+                    fireRate={0,0}
+                }
+        }
+    aimError={4,10}
+    aimGraph=/EE/Types/Npc/WeaponAimGraphs/MediumAimGraph
+    desiredAttackState=AS_SHORT_RANGE
+    attackWeight=1
+    desiredAttackRange={5,25}
+    hitSpreadMultiplier=0
+}
+IgnoreFireIterations=0
+IgnoreOwner=1
+IsSilenced=0
+ReportAttack=1
+UseExplicitNpcPerceptionSoundProperties=0
+SlaveUsesMasterTargets=0
+ExplicitNpcPerceptionSoundAttenuationRadius={10,100}
+ExplicitNpcPerceptionSoundGain=0
+fireIterations=1
+UseAmmo=0
+ConsumeEntireClip=0
+ConsumePartialAmmo=0
+ammoRequirement=0
+ScaleAmmoRequirement=0
+RoundUpAmmoConsumption=0
+ammoType=""
+aimMode=AIM_MODE_IRON_SIGHTS
+IsMeleeBehavior=0
+ConsumesChargesForFire=1
+EnergyConsumedPerFire=0
+LockOnProperties={
+    LockOnMaxTargets=0
+    LockOnStyle=LS_ENEMY
+    LockOnMaxAngle=15
+    LockOnInitialAngle=0
+    LockOnDistanceOverride=0
+    LockOnPart=ANY_PART
+    LockOnDistanceWeighting=0.1
+    LockOnAngleWeighting=1
+    LockOnIgnoreEndPointTarget=0
+    LockOnIgnoreTags={}
+}
+HIP_FIRE_ACCURACY=/Lotus/Types/Game/WeaponProperties/Accuracy/DefaultAccuracyInfo
+AIMED_ACCURACY=/Lotus/Types/Game/WeaponProperties/Accuracy/DefaultAccuracyInfo
+HIP_CAMERA_RECOIL=/Lotus/Types/Game/WeaponProperties/Recoil/Weapon/OpticorRecoilInfo
+AIMED_CAMERA_RECOIL=/Lotus/Types/Game/WeaponProperties/Recoil/Weapon/OpticorRecoilInfo
+spreadUniform=0
+SpreadRatioHorizontal=0.5
+SpreadInverse=0
+MultishotUseConeAngle=0
+AimProperties={
+    EyeBasedAimSource=1
+    ScopedPlayerUsesCameraPos=0
+    OverrideLaunchDir=0
+    UseWeaponAttachment=1
+    AttenuateRecoilByChargeAmount=0
+    PerfectChargeExtraRecoilAmount=0
+    AttenuateRecoilBySpinUpAmount=0
+    CameraRecoilStrength={0,1}
+    CameraRecoilCurve=ET_LINEAR
+}
+AutoTargetChance=0
+traceDistance=300
+PvpTraceDistance=50
+punctureHitEffect=""
+InfinitePunctureDepth=0
+tracePunctureDepth=2
+PunchthroughIgnoresAvatars=0
+RicochetChance=0
+RicochetRange=15
+OnlyHitEnitiesOnce=1
+ForceCameraAimForLocalPlayer=1
+AimTranslationOffset={0,0,0}
+AimDirOverride={0,0,0}
+UseVisibilityRaycast=0
+IgnorePickups=1
+CollectorTargetTag=""
+CollectorWeaponType=""
+CollectorScanTargetType=""
+WhizSound=""
+WhizRadius={3,50}
+WhizDeviation=1
+WhizChance=0
+WhizzByRemoteMinDistance=15
+TraceRadius=0.30000001
+PvpTraceRadius=0
+RefinedSweep=0
+AffectedByStasis=1
+AdjustAimWithAvatarUp=0
+RiftStasisWeight=1
+CloakShieldType=/Lotus/Upgrades/Focus/Defense/Objects/CloakShieldDeco
+MaxTraceDistanceTime=0.1
+RetractTime=0.2
+AttachToWeapon=1
+UseWeaponAttachmentFirePos=1
+AttachToTarget=0
+MultiBeam=1
+BeamChildren={
+    {
+        LocalPosition={0.02,0.059999999,0.22}
+        LocalRotation={0,0,0,1}
+        BoneName=""
+        Type=/Lotus/Fx/Weapons/Tenno/Gunbrella/GunbrellaBeam
+        Chance=255
+        RelativeToBounds=0
+        Attach=1
+        DestroyWithOwner=1
+        DestroyParentOnDeath=0
+        FadeOutOnDestruction=0
+        Scale=1
+    }
+}
+CentralBeam=1
+CentralBeamChild={
+    LocalPosition={0.02,0.059999999,0.22}
+    LocalRotation={0,0,0,1}
+    BoneName=""
+    Type=/Lotus/Fx/Weapons/Tenno/Gunbrella/GunbrellaBeam
+    Chance=255
+    RelativeToBounds=0
+    Attach=1
+    DestroyWithOwner=1
+    DestroyParentOnDeath=0
+    FadeOutOnDestruction=0
+    Scale=1
+}
+EndPointChild={
+    LocalPosition={0,0,0}
+    LocalRotation={0,0,0,1}
+    BoneName=""
+    Type=/Lotus/Fx/Weapons/Corpus/CrpSentExperimentPistol/CrpSentPistolHitFX
+    Chance=255
+    RelativeToBounds=0
+    Attach=1
+    DestroyWithOwner=1
+    DestroyParentOnDeath=0
+    FadeOutOnDestruction=0
+    Scale=1
+}
+Radius=0
+RadialMinCoverDistance=0
+AllowSelfDamage=0
+IgnoreInvisibleAvatars=1
+DestroyBeamOnFire=0
+BeamTime=0.5
+ApplyRadialDamageOnMiss=0
+ApplyRadialDamageOnHit=0
+}
+impact:Type=/Lotus/Types/Weapon/RadialOnMissImpactBehavior
+impact:RadialOnMissImpactBehavior={
+    AttackData={
+        UseNewFormat=0
+        Type=DT_EXPLOSION
+        Amount=390
+        ProcChance=0.18000001
+        ForcedProcs={}
+        ForcedDeathProcs={}
+        ForcedProcCount=1
+        HitType=DHT_NONE
+        ProcExtraTime=0
+    }
+PvpForcedProcs={}
+PvpForcedDeathProcs={}
+DamageUpgradeTypes={
+    WEAPON_DAMAGE_AMOUNT
+}
+damageFallOff={0,0}
+damageFallOffMinDamage=1
+PlayerDamageMultiplier=1
+PvpDamageMultiplier=1
+PlayerScaleDamageMultiplierByMissionLevel=0
+instantImpulse=250
+additionalForce={0,0,0}
+impulseFallOff={10,1000}
+minImpulseFallOff=1
+applyPushVelocity=0
+applyPushVelocityOnlyToBlockingTarget=0
+pushMagnitude={0.5,1}
+pushMagnitudeFallOff={10,100}
+hitEffect=""
+hitEffectAlt=""
+deflectHitEffects=0
+deflectRange={0,1}
+AltEffectHands={}
+ragdollChance=0
+criticalHitChance=0.23999999
+criticalHitDamageMultiplier=2
+ConsumeAmmoWhenDamageDealt=0
+AmmoConsumedWhenHitVulnerableTarget=0
+AmmoConsumedWhenHitInvulnerableTarget=0
+strength=0
+radius=0
+flash=0
+OnHitScriptEnabled=0
+OnHitScript={
+    Script=""
+}
+UseNextShotDamageBonus=1
+IgnoreHeadshotBonus=0
+IgnoreHeadshotBonusPvp=0
+AlwaysOverrideFiringAvatar=0
+ApplyRadialDamageOnMiss=0
+ApplyRadialDamageOnHit=0
+MultiShotBuffsRadialDamage=0
+RadialDamage={
+    baseAmount=0
+    baseProcChance=0
+    DamagePercent={
+        DT_IMPACT=0
+        DT_PUNCTURE=0
+        DT_SLASH=0
+        DT_FIRE=0
+        DT_FREEZE=0
+        DT_ELECTRICITY=0
+        DT_POISON=0
+        DT_EXPLOSION=0
+        DT_RADIATION=0
+        DT_GAS=0
+        DT_MAGNETIC=0
+        DT_VIRAL=0
+        DT_CORROSIVE=0
+        DT_RADIANT=0
+        DT_SENTIENT=0
+        DT_CINEMATIC=0
+        DT_SHIELD_DRAIN=0
+        DT_HEALTH_DRAIN=0
+        DT_ENERGY_DRAIN=0
+        DT_FINISHER=0
+    }
+radiusMin=0
+radius=0
+ignoreSource=0
+fallOff=0
+fallOffMax=0
+checkForCover=1
+hitAirborneTargets=1
+staticCoverOnly=0
+minCoverDistance=0
+hitEffect=""
+verticalImpulse=200
+horizontalImpulse=200
+hitType=DHT_RADIAL
+hostAuthoritative=0
+criticalChance=0.2
+criticalMultiplier=2
+procs={}
+deathProcs={}
+forcedSourceProcs={
+    PT_STAGGERED,
+    PT_BIG_STAGGER,
+    PT_KNOCKED_DOWN
+}
+selfAOEMultiplier={0.25,0.75}
+friendlyFire=0
+}
+PvpRadialDamage={
+    baseAmount=0
+    baseProcChance=0
+    DamagePercent={
+        DT_IMPACT=0
+        DT_PUNCTURE=0
+        DT_SLASH=0
+        DT_FIRE=0
+        DT_FREEZE=0
+        DT_ELECTRICITY=0
+        DT_POISON=0
+        DT_EXPLOSION=0
+        DT_RADIATION=0
+        DT_GAS=0
+        DT_MAGNETIC=0
+        DT_VIRAL=0
+        DT_CORROSIVE=0
+        DT_RADIANT=0
+        DT_SENTIENT=0
+        DT_CINEMATIC=0
+        DT_SHIELD_DRAIN=0
+        DT_HEALTH_DRAIN=0
+        DT_ENERGY_DRAIN=0
+        DT_FINISHER=0
+    }
+radiusMin=0
+radius=0
+ignoreSource=1
+fallOff=1
+fallOffMax=0
+checkForCover=1
+hitAirborneTargets=1
+staticCoverOnly=0
+minCoverDistance=0
+hitEffect=""
+verticalImpulse=0.15000001
+horizontalImpulse=0.1
+hitType=DHT_NONE
+hostAuthoritative=0
+criticalChance=0
+criticalMultiplier=1
+procs={}
+deathProcs={}
+forcedSourceProcs={}
+selfAOEMultiplier={0.25,0.75}
+friendlyFire=0
+}
+RadialDamageEffects={}
+RadialDamageUpgradeType=WEAPON_DAMAGE_AMOUNT
+}
+state:Type=/EE/Types/Game/WeaponChargeBeamStateBehavior
+state:WeaponChargeBeamStateBehavior={
+    reloadTime=2.5
+    PerfectReloadRange={0,0}
+    fireRate=72
+    NeedsPassiveUpdate=0
+    ApplyNumChargesToDamageMultiplier=0
+    ModeSwitchTime=0
+    FullClipModeSwitchTime=0
+    IsToggleBehavior=0
+    autoReloadEmptyTime=0
+    AmmoTakenPerReload=-1
+    DoPreFire=0
+    PrefireTime=0
+    ShareFireRateWithPrefire=0
+    ShouldAutoPreFireToFire=0
+    SkipRefireOnEmpty=0
+    QueueReloadOnEmptyClip=0
+    EnableReloadEmpty=0
+    ReloadOnAdditionalEmptyFire=0
+    ForceReloadFromEmpty=0
+    ForceNoSwapOnEmpty=0
+    ReloadDuringModeSwitch=0
+    AnimWeaponType=WEAPONTYPE_NORMAL
+    RunCausesReady=0
+    CanFireWhileRunning=0
+    CanChargeWhileRunning=0
+    CanFireWhileInAir=1
+    PreventRunWhileRecharging=0
+    PreventRunDuringModeSwitch=1
+    UseReloadTimeBetweenShots=0
+    OnlyGiveAmmoOnReloadCompleteEvent=0
+    CanInterruptModeSwitch=0
+    NeedsLockOnTargets=0
+    IsAlternateFire=1
+    LocTag=/Lotus/Language/Menu/Loadout_TriggerCharge
+    BehaviorTag=""
+    TrackProjectiles=0
+    MaxNumProjectiles=0
+    PvpMaxNumProjectiles=0
+    OverheatStyle=OS_PLATEAU
+    InstantOverheat=0
+    OverheatTime=0
+    ReduceOverheatAmount=0
+    OverheatCooldownModifier=1
+    AmmoOverheatSound=""
+    OverheatEndedSound=""
+    AmmoOverheatSoundResetThreshold=0.75
+    ReplicateAmmoConsumption=0
+    OnNewProjectileScript={
+        Script=""
+    }
+IsAutomatic=0
+AccessibilityTrigger=1
+ClipSizeAffectsChargeTime=0
+ChargeTime=1
+MinChargeRatio=1
+UseClipSizeAsDamageMultiplier=0
+DamageMultiplier=1
+AutoFireWhenChargeCompleted=1
+FullChargeTimeLimit=-1
+PVPFullChargeTimeLimit=-1
+FireWhenFullChargeTimeExceeded=0
+QueueFiring=1
+QueueAbortsWhenReleased=0
+ChargeModifier=WEAPON_FIRE_RATE
+AlwaysApplyChargeRateModifier=0
+ReloadCancelsCharge=1
+MinDamageMultiplier=1
+MaxDamageMultiplier=0
+AmmoConsumedPerSecondAtFullCharge=0
+ReplicateFireStop=0
+CanInterruptReload=0
+ChargeRequireFullClip=0
+ChargeCancelledScript={
+    Script=""
+}
+FullyChargedScript={
+    Script=""
+}
+BeamChild={
+    LocalPosition={0,0,0}
+    LocalRotation={0,0,0,1}
+    BoneName=GAME_C1_SHIELD
+    Type=/Lotus/Fx/Weapons/Tenno/Gunbrella/GunbrellaBeamCharge
+    Chance=255
+    RelativeToBounds=0
+    Attach=1
+    DestroyWithOwner=1
+    DestroyParentOnDeath=0
+    FadeOutOnDestruction=0
+    Scale=1
+}
+AttachToWeapon=1
+}
+}
+}
+DefaultUpgrades={
+    HigasaPassiveDescUpgrade,
+    InnateShrineMaidenAssistMod
+}
+InfiniteClipSizeForNpcs=1
+PVPAmmoCapacity=120
+AmmoClipSize=90
+PVPAmmoClipSize=30
+ReticleName=ReticleCustom
+UIReticuleAim=0
+ReticleMovie=/Lotus/Interface/SpecialReticles/GunbrellaReticle.swf
+StateAnimations={
+    {
+        state=WS_RELOAD
+        behaviorIndex=4294967295
+        animation=/Lotus/Animations/Tenno/Movement/Rifle/ReloadRifleGunbrellaShort_anim.fbx
+        clearable=1
+    },
+{
+    state=WS_FIRE
+    behaviorIndex=0
+    animation=/Lotus/Animations/Tenno/Movement/Rifle/FireRifleGunbrella_anim.fbx
+    clearable=1
+},
+{
+    state=WS_FIRE
+    behaviorIndex=1
+    animation=/Lotus/Animations/Tenno/Movement/Rifle/FireAltRifleGunbrella_anim.fbx
+    clearable=1
+}
+}
+RequiredLevel=2
+ArtifactSlots={
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_DEFENSE,
+    AP_TACTIC,
+    AP_UNIVERSAL
+}
+DefaultEnergyColor={232,177,12,255}
+DefaultEnergyColor1={249,101,15,255}
+NumChargesToAdd=7
+MaxCharges=100
+NumChargesToConsume=100
+RequireFullCharges=1
+ClearChargesOnBehaviorChange=1
+AddChargeConditions={
+    PRIMARY_KILL
+}
+ConsumeChargeConditions={
+    SECONDARY_FIRE
+}
+FireAimTime=4
+OmegaAttenuation=1.55
+FireModes={
+    {
+        localizedTag=/Lotus/Language/Menu/Loadout_TriggerAuto
+        behaviorIndex=0
+    },
+{
+    localizedTag=/Lotus/Language/Menu/Loadout_TriggerCharge
+    behaviorIndex=1
+}
+}
+DefaultModTemplate=/Lotus/Types/ModLists/Rifle/HybridBalanced

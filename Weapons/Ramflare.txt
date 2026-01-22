@@ -1,0 +1,51 @@
+>/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularStatIICapIClipPart
+MarketMode=MM_HIDDEN
+PremiumPrice=90
+LocalizeTag=/Lotus/Language/SolarisVenus/SUModularStatIICapIClipPart
+LocalizeDescTag=/Lotus/Language/SolarisVenus/SUModularStatIICapIClipPartDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/SecondaryWeapons/Kitguns/SUModularSecondaryClipAStatusII.png
+ExcludeFromCodex=0
+Attachment=CapIAttachment
+UngildedMaterial=Ungilded/SUModularSecondaryClipBUngildedMat
+DonationStandingBonus=200
+EligibleForDailyWeaponSale=1
+Overrides={
+    {
+        BarrelType=BT_SEMI_PROJECTILE
+        GunType=GT_SHOTGUN
+        CritChance=0.13
+        CritMultiplier=1.7
+        ProcChance=0.34999999
+        MagazineSize=11
+        ReloadTime=1.7
+    },
+{
+    BarrelType=BT_SEMI_PROJECTILE
+    GunType=GT_RIFLE
+    CritChance=0.16
+    CritMultiplier=1.7
+    ProcChance=0.38
+    MagazineSize=23
+    ReloadTime=1.7
+},
+{
+    BarrelType=BT_AUTO_HITSCAN
+    GunType=GT_RIFLE
+    CritChance=0.11
+    CritMultiplier=1.7
+    ProcChance=0.33000001
+    MagazineSize=67
+    ReloadTime=1.7
+},
+{
+    BarrelType=BT_AUTO_HITSCAN
+    GunType=GT_BEAM
+    CritChance=0.17
+    CritMultiplier=1.7
+    ProcChance=0.38999999
+    MagazineSize=43
+    ReloadTime=1.7
+}
+}
+ExtraAttachment=ClipAttachment/StatIIAttachment
+ExtraAttachmentUngildedMaterial=ClipAttachment/Ungilded/SUAttachClipUngildedMat

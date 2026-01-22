@@ -1,0 +1,29 @@
+>/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Grip/SentAmpSet1GripPartB
+THIRD_PERSON_ATTACHMENT={
+    MAIN_HAND={
+        LocalRotation={0.5,0.5,-0.5,0.5}
+    }
+}
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/OstronCrafting/AmpGripTwo
+LocalizeDescTag=/Lotus/Language/OstronCrafting/AmpGripTwoDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Operator/Amps/SentAmpSet1GripPartB.png
+ExcludeFromCodex=0
+Attachment=SentAmpSet1GripAttachmentB
+Upgrades={
+    {
+        UpgradeType=WEAPON_CONVERT_AMMO_DELAY
+        OperationType=ADD
+        Value=-1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        ValidProcTypes={}
+    }
+}
+UngildedMaterial=TiredVersion/SentAmpSet1GripBTiredMat
+DonationStandingBonus=750

@@ -1,0 +1,32 @@
+>/Lotus/Weapons/Ostron/Melee/ModularMelee02/Handle/HandleTen
+GripType=MELEE_TWO_HAND
+MarketMode=MM_HIDDEN
+PremiumPrice=125
+LocalizeTag=/Lotus/Language/OstronCrafting/MeleeHandleTen
+LocalizeDescTag=/Lotus/Language/OstronCrafting/MeleeHandleTenDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/MeleeWeapons/Zaws/HandleTen.png
+ExcludeFromCodex=0
+Attachment=HandleTenAttachment
+Upgrades={
+    {
+        UpgradeType=WEAPON_MELEE_DAMAGE
+        OperationType=ADD
+        Value=28
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        ValidProcTypes={}
+    }
+}
+UngildedMaterial=TiredVersion/HandleLong01TiredMat
+DonationStandingBonus=250
+EligibleForDailyWeaponSale=1
+BaseFireRate=47
+SugatraOffset={
+    PosOffset={0,-0.30000001,-0.015}
+    RotOffset={0.5,-0.5,-0.5,0.5}
+}

@@ -1,0 +1,48 @@
+>/Lotus/Weapons/Infested/Pistols/InfKitGun/Clips/InfClipBig/InfModularClipBigPart
+MarketMode=MM_HIDDEN
+PremiumPrice=45
+LocalizeTag=/Lotus/Language/Weapons/InfModularClipBig
+LocalizeDescTag=/Lotus/Language/Weapons/InfModularClipBigDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/ModularWeapons/InfModular/InfClipBig.png
+ExcludeFromCodex=0
+Attachment=InfModularClipBigAttachment
+UngildedMaterial=Ungilded/InfClipBigUngildedMat
+DonationStandingBonus=200
+Overrides={
+    {
+        BarrelType=BT_SEMI_PROJECTILE
+        GunType=GT_SHOTGUN
+        CritChance=0.20999999
+        CritMultiplier=2
+        ProcChance=0.20999999
+        MagazineSize=39
+        ReloadTime=3.0999999
+    },
+{
+    BarrelType=BT_SEMI_PROJECTILE
+    GunType=GT_RIFLE
+    CritChance=0.23999999
+    CritMultiplier=2
+    ProcChance=0.23999999
+    MagazineSize=49
+    ReloadTime=3.0999999
+},
+{
+    BarrelType=BT_AUTO_HITSCAN
+    GunType=GT_RIFLE
+    CritChance=0.19
+    CritMultiplier=2
+    ProcChance=0.19
+    MagazineSize=153
+    ReloadTime=3.0999999
+},
+{
+    BarrelType=BT_AUTO_HITSCAN
+    GunType=GT_BEAM
+    CritChance=0.25
+    CritMultiplier=2
+    ProcChance=0.25
+    MagazineSize=113
+    ReloadTime=3.0999999
+}
+}

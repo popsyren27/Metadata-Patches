@@ -1,0 +1,45 @@
+>/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedI
+MarketMode=MM_HIDDEN
+PremiumPrice=5
+LocalizeTag=/Lotus/Language/OstronCrafting/MeleeBalanceSpeed
+LocalizeDescTag=/Lotus/Language/OstronCrafting/MeleeBalanceSpeedOneDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/MeleeWeapons/Zaws/BalanceSpeedI.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=WEAPON_FIRE_RATE
+        OperationType=ADD
+        Value=5
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        ValidProcTypes={}
+    },
+{
+    UpgradeType=WEAPON_MELEE_DAMAGE
+    OperationType=ADD
+    Value=-4
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    ValidProcTypes={}
+}
+}
+UngildedMaterial=TiredVersion/BalancesTiredVersionMat
+DonationStandingBonus=500
+EligibleForDailyWeaponSale=1
+AdditionalAttachments={
+    {
+        Type=BalanceSpeedAttachment
+        Bone=GAME_WEAPON_WEIGHT1
+        Target=LWPT_BLADE
+    }
+}

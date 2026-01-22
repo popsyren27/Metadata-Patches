@@ -1,0 +1,18 @@
+>/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleFive
+GripType=MELEE_TWO_HAND
+MarketMode=MM_HIDDEN
+PremiumPrice=125
+LocalizeTag=/Lotus/Language/OstronCrafting/MeleeHandleFive
+LocalizeDescTag=/Lotus/Language/OstronCrafting/MeleeHandleFiveDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/MeleeWeapons/Zaws/HandleFive.png
+ExcludeFromCodex=0
+Attachment=HandleFiveAttachment
+Upgrades={}
+UngildedMaterial=TiredVersion/HandleLong02TiredMat
+DonationStandingBonus=350
+EligibleForDailyWeaponSale=1
+BaseFireRate=55
+SugatraOffset={
+    PosOffset={0,-0.30000001,-0.015}
+    RotOffset={0.5,-0.5,-0.5,0.5}
+}

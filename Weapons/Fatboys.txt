@@ -1,0 +1,10 @@
+>/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBJet
+MarketMode=MM_HIDDEN
+RegularPrice=0
+PremiumPrice=15
+LocalizeTag=/Lotus/Language/Hoverboards/HoverboardCorpusBJet
+LocalizeDescTag=/Lotus/Language/Hoverboards/HoverboardGenericJetDesc
+Icon=/Lotus/Interface/Icons/Store/Hoverboards/Theme/HoverboardCorpusBJet.png
+ExcludeFromCodex=0
+Attachment=/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HBJetCorpusBAttachment
+EligibleForDailyWeaponSale=1

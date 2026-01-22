@@ -1,0 +1,30 @@
+>/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleOne
+MarketMode=MM_HIDDEN
+PremiumPrice=75
+LocalizeTag=/Lotus/Language/OstronCrafting/MeleeHandleOne
+LocalizeDescTag=/Lotus/Language/OstronCrafting/MeleeHandleOneDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/MeleeWeapons/Zaws/HandleOne.png
+ExcludeFromCodex=0
+Attachment=HandleOneAttachment
+Upgrades={
+    {
+        UpgradeType=WEAPON_MELEE_DAMAGE
+        OperationType=ADD
+        Value=-4
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        ValidProcTypes={}
+    }
+}
+UngildedMaterial=TiredVersion/HandleSmall01TiredMat
+DonationStandingBonus=200
+EligibleForDailyWeaponSale=1
+SugatraOffset={
+    PosOffset={0,-0.02,0.085000001}
+    RotOffset={-0.37992799,0.59636801,-0.37992799,0.59636801}
+}

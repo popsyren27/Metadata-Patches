@@ -1,0 +1,50 @@
+>/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageII
+MarketMode=MM_HIDDEN
+PremiumPrice=10
+LocalizeTag=/Lotus/Language/OstronCrafting/MeleeBalanceDamageTwo
+LocalizeDescTag=/Lotus/Language/OstronCrafting/MeleeBalanceDamageTwoDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Weapons/MeleeWeapons/Zaws/BalanceDamageII.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=WEAPON_MELEE_DAMAGE
+        OperationType=ADD
+        Value=28
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        ValidProcTypes={}
+    },
+{
+    UpgradeType=WEAPON_FIRE_RATE
+    OperationType=ADD
+    Value=-8
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    ValidProcTypes={}
+}
+}
+UngildedMaterial=TiredVersion/BalancesTiredVersionMat
+DonationStandingBonus=500
+EligibleForDailyWeaponSale=1
+AdditionalAttachments={
+    {
+        Type=BalanceDamageAttachment
+        Bone=GAME_WEAPON_WEIGHT1
+        Target=LWPT_BLADE
+    },
+{
+    Type=BalanceDamageAttachment
+    Bone=GAME_WEAPON_WEIGHT2
+    Target=LWPT_BLADE
+}
+}

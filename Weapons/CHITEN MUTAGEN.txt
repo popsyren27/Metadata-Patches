@@ -1,0 +1,36 @@
+>/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorMutagenB
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/InfestedMicroplanet/InfestedPredatorMutagenB
+LocalizeDescTag=/Lotus/Language/InfestedMicroplanet/InfestedPredatorMutagenBDesc
+Icon=/Lotus/Interface/Icons/StoreIcons/Companions/Deimos/MutagenInfestedPredatorB.png
+Attachment=/Lotus/Characters/Wildlife/InfestedPredator/InfestedPredatorTailCDeco
+Upgrades={
+    {
+        UpgradeType=AVATAR_DAMAGE_TAKEN
+        OperationType=MULTIPLY
+        Value=0.5
+        DamageType=DT_ELECTRICITY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+    },
+{
+    UpgradeType=AVATAR_DAMAGE_TAKEN
+    OperationType=MULTIPLY
+    Value=0.5
+    DamageType=DT_SLASH
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+}
+}

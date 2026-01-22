@@ -1,0 +1,7 @@
+>/Lotus/Types/Items/Deimos/WoundedInfestedCritterRareRewardItem
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/InfestedMicroplanet/InfestedCritterRareName
+LocalizeDescTag=/Lotus/Language/InfestedMicroplanet/GenericWoundedAnimalDesc
+Icon=/Lotus/Interface/Icons/Pets/Theme/WoundedInfestedCritterRare.png
+UseAlternateItemDisplay=1
+PetPowerSuitType=/Lotus/Types/Friendly/Pets/CreaturePets/ArmoredInfestedCatbrowPetPowerSuit

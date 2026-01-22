@@ -1,36 +1,22 @@
 import os
 import json
 import requests
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DICT_PATH = os.path.join(SCRIPT_DIR, "dict.en.json")
+ERROR_LOG_PATH = os.path.join(SCRIPT_DIR, "errors.txt")
+FOLDER_PATH = os.path.join(SCRIPT_DIR, "Weapons")
 
-# -----------------------------
-# Paths
-# -----------------------------
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))  # folder where main3.py lives
-DICT_PATH = os.path.join(SCRIPT_DIR, "dict.en.json")     # dict next to script
-ERROR_LOG_PATH = os.path.join(SCRIPT_DIR, "errors.txt")  # errors next to script
-FOLDER_PATH = os.path.join(SCRIPT_DIR, "Weapons")       # Arcanes folder
-
-# -----------------------------
-# Safety checks
-# -----------------------------
 if not os.path.isfile(DICT_PATH):
     raise FileNotFoundError(f"Dictionary not found: {DICT_PATH}")
 if not os.path.isdir(FOLDER_PATH):
     raise FileNotFoundError(f"Folder not found: {FOLDER_PATH}")
 
-# Clear errors.txt
 with open(ERROR_LOG_PATH, "w", encoding="utf-8"):
     pass
 
-# -----------------------------
-# Load localization dictionary
-# -----------------------------
 with open(DICT_PATH, "r", encoding="utf-8") as dict_file:
     localization_dict = json.load(dict_file)
 
-# -----------------------------
-# Indent metadata function
-# -----------------------------
 def indent_metadata(text):
     result = []
     indent = 0
@@ -52,26 +38,16 @@ def indent_metadata(text):
 
     return "\n".join(result)
 
-# -----------------------------
-# Pick the single txt file
-# -----------------------------
 txt_files = [f for f in os.listdir(FOLDER_PATH) if f.endswith(".txt")]
 
 if not txt_files:
     raise FileNotFoundError(f"No .txt file found in {FOLDER_PATH}")
 
-# Take the first (and only) .txt file
 txt_file_path = os.path.join(FOLDER_PATH, txt_files[0])
 
-# -----------------------------
-# Read entries
-# -----------------------------
 with open(txt_file_path, "r", encoding="utf-8") as f:
     entries = [line.strip()[1:] for line in f if line.strip().startswith(">")]
 
-# -----------------------------
-# Process entries
-# -----------------------------
 for entry in entries:
     url = f"http://localhost:6155/get_effective_metadata?{entry}"
     try:
@@ -94,7 +70,6 @@ for entry in entries:
 
     filename = entry.replace("/", "_").strip("_") + ".txt"
 
-    # Check for localization tag
     for line in content.splitlines():
         if line.startswith("LocalizeTag="):
             tag = line.split("=", 1)[1].strip()

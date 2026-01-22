@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/OperatorAmps/OperatorAmmoRegenOnKill
+>/Lotus/Upgrades/CosmeticEnhancers/OperatorAmps/OperatorAmmoRegenOnKill
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/OperatorAmmoRegenOnKill
 LocalizeDescTag=""
@@ -25,14 +25,14 @@ Upgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=1
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 ApplyUpgradesByDefault=0
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDuration

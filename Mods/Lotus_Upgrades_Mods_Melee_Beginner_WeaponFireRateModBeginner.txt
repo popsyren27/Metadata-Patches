@@ -1,2 +1,4 @@
-/Lotus/Upgrades/Mods/Melee/Beginner/WeaponFireRateModBeginner
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Melee/Beginner/WeaponFireRateModBeginner
+FusionLimit=QA_MEDIUM
+IncludeInBoosterPack=0
+IsStarter=1

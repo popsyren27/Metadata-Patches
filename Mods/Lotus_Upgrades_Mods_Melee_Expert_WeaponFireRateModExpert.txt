@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Melee/Expert/WeaponFireRateModExpert
-patch not applied (yet)

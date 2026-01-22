@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Peculiars/FlowerPowerMod
+>/Lotus/Upgrades/CosmeticEnhancers/Peculiars/FlowerPowerMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/PerculiarFlowerPowerMod
@@ -10,14 +10,14 @@ ApplyUpgradesByDefault=0
 ArtifactPolarity=AP_TACTIC
 ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
 Script={
-Script=FlowerSpawn.lua
-Function=SpawnFlower
-_spawnArtifact=FlowerDeco
-_scalePerLevel=0.1
-_spawnSound=/Lotus/Sounds/Mods/Peculiar/FlowerPower/PeculiarModFlower
-_maximumFlowerOnTarget=5
+    Script=FlowerSpawn.lua
+    Function=SpawnFlower
+    _spawnArtifact=FlowerDeco
+    _scalePerLevel=0.1
+    _spawnSound=/Lotus/Sounds/Mods/Peculiar/FlowerPower/PeculiarModFlower
+    _maximumFlowerOnTarget=5
 }
 UpgradeChance=1
 ConditionalUpgrades={
-OnAnyWeaponCritCondition
+    OnAnyWeaponCritCondition
 }

@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Utility/RadialKnockdownOnEnergyPickup
+>/Lotus/Upgrades/CosmeticEnhancers/Utility/RadialKnockdownOnEnergyPickup
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/RadialKnockdownOnEnergyPickupName
@@ -25,14 +25,14 @@ ExtraUpgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=0
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 ApplyUpgradesByDefault=0
 FusionLimit=QA_HIGH
@@ -47,7 +47,7 @@ Script={
         25,
         30
     }
-    _burstEffect=/Lotus/Fx/Gameplay/Arcanes/RadialKnockdownOnEnergy
+_burstEffect=/Lotus/Fx/Gameplay/Arcanes/RadialKnockdownOnEnergy
 }
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionRadialKnockdown
 EnhancementTagLocScript={

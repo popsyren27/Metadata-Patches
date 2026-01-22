@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/LongGunSpeedOnCrit
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/LongGunSpeedOnCrit
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/LongGunSpeedOnCritName
@@ -26,14 +26,14 @@ Upgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=1
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 ExtraUpgrades={
     {
@@ -55,14 +55,14 @@ ExtraUpgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=0
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 ApplyUpgradesByDefault=0
 FusionLimit=QA_HIGH

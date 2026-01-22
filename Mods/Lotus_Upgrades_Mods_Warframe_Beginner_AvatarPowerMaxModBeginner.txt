@@ -1,2 +1,33 @@
-/Lotus/Upgrades/Mods/Warframe/Beginner/AvatarPowerMaxModBeginner
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Warframe/Beginner/AvatarPowerMaxModBeginner
+CodexSecret=1
+Upgrades={
+    {
+        UpgradeType=AVATAR_POWER_MAX
+        OperationType=STACKING_MULTIPLY
+        Value=0.125
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/AvatarPowerMaxModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=1
+    RoundingMode=RM_ROUND
+}
+}
+BaseDrain=QA_LOW
+FusionLimit=QA_MEDIUM
+IncludeInBoosterPack=0
+IsStarter=1

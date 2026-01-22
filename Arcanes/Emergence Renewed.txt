@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Zariman/OperatorOnEnergyDepletedRegenEnergy
+>/Lotus/Upgrades/CosmeticEnhancers/Zariman/OperatorOnEnergyDepletedRegenEnergy
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/OperatorOnEnergyDepletedRegenEnergy
@@ -35,15 +35,15 @@ Upgrades={
                 250,
                 300
             }
-            _duration=5
-            _cooldown=30
-            _showCooldown=1
-        }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
+        _duration=5
+        _cooldown=30
+        _showCooldown=1
     }
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 FusionLimit=QA_HIGH
 Script={
@@ -58,9 +58,9 @@ Script={
         2.5,
         3
     }
-    _duration=5
-    _cooldown=30
-    _showCooldown=1
+_duration=5
+_cooldown=30
+_showCooldown=1
 }
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
 EnhancementTagLocScript={

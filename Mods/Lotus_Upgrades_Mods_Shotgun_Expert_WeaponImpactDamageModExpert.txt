@@ -1,2 +1,5 @@
-/Lotus/Upgrades/Mods/Shotgun/Expert/WeaponImpactDamageModExpert
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Shotgun/Expert/WeaponImpactDamageModExpert
+CodexSecret=1
+TradeCapability=RO_NEVER
+FusionLimit=QA_VERY_HIGH
+IncludeInBoosterPack=0

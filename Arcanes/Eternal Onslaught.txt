@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Zariman/AmpOnEnergyDepletedCritChance
+>/Lotus/Upgrades/CosmeticEnhancers/Zariman/AmpOnEnergyDepletedCritChance
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/AmpOnEnergyDepletedCritChance
@@ -35,14 +35,14 @@ Upgrades={
                 1.5,
                 1.8
             }
-            _duration=8
-            _showCooldown=1
-        }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
+        _duration=8
+        _showCooldown=1
     }
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 FusionLimit=QA_HIGH
 Script={
@@ -57,8 +57,8 @@ Script={
         1.5,
         1.8
     }
-    _duration=8
-    _showCooldown=1
+_duration=8
+_showCooldown=1
 }
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDuration
 EnhancementTagLocScript={

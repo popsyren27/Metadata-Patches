@@ -1,4 +1,4 @@
-/Lotus/Types/Sentinels/SentinelPrecepts/CrowdDispersion
+>/Lotus/Types/Sentinels/SentinelPrecepts/CrowdDispersion
 MarketMode=MM_HIDDEN
 RegularPrice=5000
 PremiumPrice=2
@@ -7,45 +7,45 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Pets/SentinelCrowdDispersionMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Items/CrowdDispersionStoreItemDesc
-    LocKeyWordScript={
-    Script=/Lotus/Types/Sentinels/SentinelAbilities/CrowdDispersion.lua
-    Function=GetDescriptionInfo
-    _stunExplosionFX=""
-    _castAnim=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Items/CrowdDispersionStoreItemDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/CrowdDispersion.lua
+            Function=GetDescriptionInfo
+            _stunExplosionFX=""
+            _castAnim=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ItemCompatibility=/Lotus/Types/Sentinels/SentinelPowersuits/WyrmBasePowerSuit
 TipTags={
-KNOCKDOWN
+    KNOCKDOWN
 }
 Ability={
-Script={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/CrowdDispersion.lua
-Function=NpcEvaluateAbility
-_stunExplosionFX=/Lotus/Fx/Sentinels/Precepts/Wyrm/CrowdDispersion
-_castAnim=/Lotus/Animations/Pets/Wyrm/SpinCast_anim.fbx
-}
+    Script={
+        Script=/Lotus/Types/Sentinels/SentinelAbilities/CrowdDispersion.lua
+        Function=NpcEvaluateAbility
+        _stunExplosionFX=/Lotus/Fx/Sentinels/Precepts/Wyrm/CrowdDispersion
+        _castAnim=/Lotus/Animations/Pets/Wyrm/SpinCast_anim.fbx
+    }
 CooldownDuration=15
 EnergyRequiredToActivate=0
 ActivationXP=25

@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Stances/PvPScytheStanceOne
+>/Lotus/Upgrades/Mods/PvPMods/Stances/PvPScytheStanceOne
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/PvPScytheStanceOne
@@ -9,10 +9,10 @@ AvailableOnPve=0
 AvailableOnPvp=1
 ArtifactPolarity=AP_TACTIC
 UnequippedAttackSets={
-CC_GROUND=Combos/PvPScytheComboOneEquipped
+    CC_GROUND=Combos/PvPScytheComboOneEquipped
 }
 EquippedAttackSets={
-CC_GROUND=Combos/PvPScytheComboA
-CC_GROUND_BRANCH_A=Combos/PvPScytheComboOneEquipped
-CC_GROUND_BRANCH_B=Combos/PvPScytheComboB
+    CC_GROUND=Combos/PvPScytheComboA
+    CC_GROUND_BRANCH_A=Combos/PvPScytheComboOneEquipped
+    CC_GROUND_BRANCH_B=Combos/PvPScytheComboB
 }

@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Warframe/EnergyPickupGivesStrengthMod
+>/Lotus/Upgrades/Mods/Warframe/EnergyPickupGivesStrengthMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/EnergyPickupGivesStrengthMod
@@ -6,49 +6,49 @@ StatusDescTag=/Lotus/Language/Buffs/EnergyConversionBuffDesc
 Icon=/Lotus/Interface/Cards/Images/Simaris/EnergyPickupGivesStrengthMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Mods/EnergyPickupGivesStrengthModDesc
-    LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/StrengthForOneCast.lua
-    Function=GetStrengthForOneCastDesc
-    _activeEffect=""
-    _baseStrength=2
-    _strengthIncreasePerLevel=8
-    _chance=100
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Mods/EnergyPickupGivesStrengthModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/StrengthForOneCast.lua
+            Function=GetStrengthForOneCastDesc
+            _activeEffect=""
+            _baseStrength=2
+            _strengthIncreasePerLevel=8
+            _chance=100
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_ATTACK
 BaseDrain=QA_VERY_HIGH
 ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
 Script={
-Script=/Lotus/Scripts/Mods/StrengthForOneCast.lua
-Function=InitializeMod
-_activeEffect=/Lotus/Fx/Gameplay/Librarian/Mods/PickupPowerStrength
-_baseStrength=2
-_strengthIncreasePerLevel=8
-_chance=100
+    Script=/Lotus/Scripts/Mods/StrengthForOneCast.lua
+    Function=InitializeMod
+    _activeEffect=/Lotus/Fx/Gameplay/Librarian/Mods/PickupPowerStrength
+    _baseStrength=2
+    _strengthIncreasePerLevel=8
+    _chance=100
 }
 SubUpgrades={
-EnergyPickupGivesStrengthModSubUpgrade
+    EnergyPickupGivesStrengthModSubUpgrade
 }
 UpgradeChance=1
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/Empowered.png

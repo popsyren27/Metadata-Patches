@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Pistol/Event/AccuracyWhileAimingPistolMod
+>/Lotus/Upgrades/Mods/Pistol/Event/AccuracyWhileAimingPistolMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/AccuracyWhileAimingPistolMod
@@ -7,27 +7,27 @@ StatusDescTag=/Lotus/Language/Buffs/AccuracyWhileAimingBuffDesc
 Icon=/Lotus/Interface/Cards/Images/Pistol/AccuracyWhileAiming.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_SPREAD
-    OperationType=STACKING_MULTIPLY
-    Value=-0.050000001
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={
-    PM_AIM
-}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/AccuracyWhileAimingModDesc
-LocKeyWordScript={
-Script=""
-}
+    {
+        UpgradeType=WEAPON_SPREAD
+        OperationType=STACKING_MULTIPLY
+        Value=-0.050000001
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={
+            PM_AIM
+        }
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/AccuracyWhileAimingModDesc
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=1
@@ -41,18 +41,18 @@ ApplyUpgradesByDefault=0
 ArtifactPolarity=AP_ATTACK
 ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol
 IncompatibilityTags={
-NO_AIM
+    NO_AIM
 }
 IsUtility=1
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDuration
 EnhancementTagLocScript={
-Script=""
+    Script=""
 }
 UpgradeChance=1
 UpgradeDuration=1.5
 PlayEffect=0
 ConditionalUpgrades={
-/Lotus/Upgrades/CosmeticEnhancers/Events/OnHitPistolCondition
+    /Lotus/Upgrades/CosmeticEnhancers/Events/OnHitPistolCondition
 }
 ConditionTag=/Lotus/Language/Upgrades/OnHitCondition_Description
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/IncreasedAccuracy.png

@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Zariman/WarframeOnShieldUptimePowerDuration
+>/Lotus/Upgrades/CosmeticEnhancers/Zariman/WarframeOnShieldUptimePowerDuration
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/WarframeOnShieldUptimePowerDuration
@@ -35,20 +35,20 @@ Upgrades={
                 5,
                 6
             }
-            _maxCount={
-                6,
-                6,
-                6,
-                6,
-                6,
-                6
-            }
+        _maxCount={
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
         }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 ExtraUpgrades={
     {
@@ -70,14 +70,14 @@ ExtraUpgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=0
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 FusionLimit=QA_HIGH
 Script={
@@ -92,14 +92,14 @@ Script={
         0.050000001,
         0.059999999
     }
-    _maxCount={
-        6,
-        6,
-        6,
-        6,
-        6,
-        6
-    }
+_maxCount={
+    6,
+    6,
+    6,
+    6,
+    6,
+    6
+}
 }
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionBN.png
 BaseDistillPointValue=22

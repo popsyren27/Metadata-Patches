@@ -1,0 +1,44 @@
+>/Lotus/Powersuits/Hoplite/HopliteBashAugmentCard
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/HopliteBash_AbilityAugment1Name
+Icon=/Lotus/Interface/Cards/Images/AbilityAugments/HopliteBashAugmentCard.png
+RectangleIcon=0
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/HopliteBashAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/HopliteBash_AbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/HopliteBash.lua
+            Function=GetAugmentDescriptionInfo
+            _activateAnim=""
+            _castEffect=""
+            _shieldDeco=""
+            _impactSound=""
+            _augmentEnemyAttach=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_POWER
+BaseDrain=QA_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=HopliteBaseSuit
+IsAbilityAugment=1

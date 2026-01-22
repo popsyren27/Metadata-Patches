@@ -1,36 +1,36 @@
-/Lotus/Upgrades/Mods/Warframe/AvatarShieldRechargeRateMod
+>/Lotus/Upgrades/Mods/Warframe/AvatarShieldRechargeRateMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/WarframeModShieldRechargeRate
 Icon=/Lotus/Interface/Cards/Images/AvatarMods/ShieldRechargeRate.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_SHIELD_RECHARGE_RATE
-    OperationType=STACKING_MULTIPLY
-    Value=0.15000001
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/AvatarShieldRechargeRateModDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=AVATAR_SHIELD_RECHARGE_RATE
+        OperationType=STACKING_MULTIPLY
+        Value=0.15000001
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/AvatarShieldRechargeRateModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 },
 {
     UpgradeType=AVATAR_SHIELD_RECHARGE_DELAY
@@ -49,8 +49,8 @@ AllowConditionalLocMerge=0
     OverrideLocalization=1
     LocTag=/Lotus/Language/Upgrades/AvatarShieldRechargeDelayModDesc
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0

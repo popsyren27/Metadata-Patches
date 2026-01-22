@@ -1,4 +1,4 @@
-/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedCatbrowVampireShieldPrecept
+>/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedCatbrowVampireShieldPrecept
 Rarity=RARE
 MarketMode=MM_HIDDEN
 RegularPrice=5000
@@ -8,43 +8,43 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Pets/Deimos/InfestedKavtVampireShieldPrecept.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Pets/VampireShieldDesc
-    LocKeyWordScript={
-    Script=InfestedCatbrowVampireShield.lua
-    Function=GetDescriptionInfo
-    _range={
-    10,
-    15,
-    20,
-    25
-}
-_maxHealthPoolPct={
-10,
-20,
-30,
-40
-}
-_healthPoolIncrement={
-5,
-10,
-15,
-20
-}
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Pets/VampireShieldDesc
+        LocKeyWordScript={
+            Script=InfestedCatbrowVampireShield.lua
+            Function=GetDescriptionInfo
+            _range={
+                10,
+                15,
+                20,
+                25
+            }
+        _maxHealthPoolPct={
+            10,
+            20,
+            30,
+            40
+        }
+    _healthPoolIncrement={
+        5,
+        10,
+        15,
+        20
+    }
 _activationThreshold=10
 _invulnerabilityDuration=1
 _corpseType=/EE/Types/Physics/Ragdoll
@@ -64,26 +64,26 @@ FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Types/Friendly/Pets/CreaturePets/BaseInfestedCatbrowPetPowerSuit
 HudBuffIcon=/Lotus/Interface/Icons/Abilities/Helminth/HelmintShieldAbility.png
 Ability={
-Script={
-Script=InfestedCatbrowVampireShield.lua
-Function=ActivateAbility
-_range={
-10,
-15,
-20,
-25
-}
-_maxHealthPoolPct={
-10,
-20,
-30,
-40
-}
+    Script={
+        Script=InfestedCatbrowVampireShield.lua
+        Function=ActivateAbility
+        _range={
+            10,
+            15,
+            20,
+            25
+        }
+    _maxHealthPoolPct={
+        10,
+        20,
+        30,
+        40
+    }
 _healthPoolIncrement={
-5,
-10,
-15,
-20
+    5,
+    10,
+    15,
+    20
 }
 _activationThreshold=10
 _invulnerabilityDuration=1

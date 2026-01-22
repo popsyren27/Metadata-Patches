@@ -1,2 +1,5 @@
-/Lotus/Upgrades/Mods/Warframe/Expert/AvatarDamageResistanceIceExpert
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Warframe/Expert/AvatarDamageResistanceIceExpert
+CodexSecret=1
+TradeCapability=RO_NEVER
+FusionLimit=QA_VERY_HIGH
+IncludeInBoosterPack=0

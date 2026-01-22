@@ -1,35 +1,35 @@
-/Lotus/Upgrades/Mods/Sentinel/Kubrow/KubrowCritMod
+>/Lotus/Upgrades/Mods/Sentinel/Kubrow/KubrowCritMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/KubrowHunterAttackPreceptName
 Icon=/Lotus/Interface/Cards/Images/Kubrow/KubrowHunterAttack.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_CRIT_CHANCE
-    OperationType=STACKING_MULTIPLY
-    Value=0.30000001
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/WeaponCritChance
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=WEAPON_CRIT_CHANCE
+        OperationType=STACKING_MULTIPLY
+        Value=0.30000001
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponCritChance
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 },
 {
     UpgradeType=WEAPON_CRIT_DAMAGE
@@ -47,8 +47,8 @@ AllowConditionalLocMerge=0
     OverrideLocalization=1
     LocTag=/Lotus/Language/Upgrades/WeaponCritDamage
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -63,7 +63,7 @@ BaseDrain=QA_HIGH
 FusionLimit=QA_VERY_HIGH
 ItemCompatibility=/Lotus/Types/Friendly/Pets/BeastPetMeleeWeaponBase
 IncompatibilityTags={
-SENTINEL_MOD,
-MOA_MOD
+    SENTINEL_MOD,
+    MOA_MOD
 }
 IncludeInBoosterPack=1

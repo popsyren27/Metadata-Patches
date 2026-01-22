@@ -1,19 +1,2270 @@
-/Lotus/Upgrades/Mods/Randomized/RawShotgunRandomMod
+>/Lotus/Upgrades/Mods/Randomized/LotusShotgunRandomModRare
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Omega/OmegaShotgunMod
 LocalizeDescTag=""
-CodexSecret=0
 ExcludeFromCodex=0
 SearchTags={
-/Lotus/Language/Items/RifleCategoryName
+    /Lotus/Language/Items/ShotgunCategoryName
 }
 ItemCompatibility=/Lotus/Weapons/Tenno/Shotgun/LotusShotgun
-IncompatibilityTags={
-SENTINEL_WEAPON
+RawItemType=RawShotgunRandomMod
+AvailableChallenges={
+    {
+        Challenge=/Lotus/Types/Challenges/RandomizedKill
+        RequiredCountRange={50,70}
+        Complications={
+            {
+                Weight=1
+                Multiplier=1
+                Complication=/Lotus/Types/Challenges/Complications/Undetected
+            },
+        {
+            Weight=1
+            Multiplier=1
+            Complication=/Lotus/Types/Challenges/Complications/Sliding
+        },
+    {
+        Weight=1
+        Multiplier=0.5
+        Complication=/Lotus/Types/Challenges/Complications/AimGliding
+    },
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnDamageTaken
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnDowned
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnAlarmRaised
+},
+{
+    Weight=1
+    Multiplier=2
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnDisrupt
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnProc
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnAllyDowned
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedDamageDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedHealthDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedShieldDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedSpeedDebuffKey
+},
+{
+    Weight=0.15000001
+    Multiplier=2
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnGearHealthRestores
+},
+{
+    Weight=0.15000001
+    Multiplier=2
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnGearShieldRestores
+},
+{
+    Weight=0.15000001
+    Multiplier=2
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnGearAmmoRestores
+},
+{
+    Weight=0.15000001
+    Multiplier=2
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnGearEnergyRestores
+},
+{
+    Weight=1
+    Multiplier=5
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnNewDay
 }
-OmegaUpgradeTypes={
-LotusShotgunRandomModRare
 }
-OmegaUpgradeWeights={
-1
+ComplicationChance=1
+},
+{
+    Challenge=/Lotus/Types/Challenges/RandomizedHeadshot
+    RequiredCountRange={15,20}
+    Complications={
+        {
+            Weight=1
+            Multiplier=2
+            Complication=/Lotus/Types/Challenges/Complications/Undetected
+        },
+    {
+        Weight=1
+        Multiplier=1
+        Complication=/Lotus/Types/Challenges/Complications/Sliding
+    },
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/AimGliding
+},
+{
+    Weight=1
+    Multiplier=2
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnDamageTaken
+},
+{
+    Weight=1
+    Multiplier=3
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnDowned
+},
+{
+    Weight=1
+    Multiplier=2
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnAlarmRaised
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnProc
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedDamageDebuffKey
+},
+{
+    Weight=0.15000001
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnGearEnergyRestores
+},
+{
+    Weight=1
+    Multiplier=4
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnNewDay
+}
+}
+ComplicationChance=1
+},
+{
+    Challenge=/Lotus/Types/Challenges/RandomizedKillSentients
+    RequiredCountRange={4,6}
+    Complications={
+        {
+            Weight=1
+            Multiplier=0.5
+            Complication=/Lotus/Types/Challenges/Complications/Sliding
+        },
+    {
+        Weight=1
+        Multiplier=1
+        Complication=/Lotus/Types/Challenges/Complications/ResetOnDowned
+    },
+{
+    Weight=1
+    Multiplier=0.25
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnDamageTaken
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnMissionFailure
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/SoloPlayer
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnProc
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnAllyDowned
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/Invisible
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedDamageDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedHealthDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedShieldDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedSpeedDebuffKey
+},
+{
+    Weight=0.15000001
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnGearHealthRestores
+},
+{
+    Weight=0.15000001
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnGearEnergyRestores
+},
+{
+    Weight=1
+    Multiplier=2
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnNewDay
+}
+}
+ComplicationChance=0.40000001
+},
+{
+    Challenge=/Lotus/Types/Challenges/RandomizedFinisherKill
+    RequiredCountRange={15,25}
+    Complications={
+        {
+            Weight=1
+            Multiplier=1
+            Complication=/Lotus/Types/Challenges/Complications/ResetOnDamageTaken
+        },
+    {
+        Weight=1
+        Multiplier=2
+        Complication=/Lotus/Types/Challenges/Complications/ResetOnDowned
+    },
+{
+    Weight=1
+    Multiplier=4
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnMissionFailure
+},
+{
+    Weight=1
+    Multiplier=2
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnAlarmRaised
+},
+{
+    Weight=1
+    Multiplier=2
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnProc
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedDamageDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedSpeedDebuffKey
+},
+{
+    Weight=0.15000001
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnGearHealthRestores
+},
+{
+    Weight=1
+    Multiplier=3
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnNewDay
+}
+}
+ComplicationChance=1
+},
+{
+    Challenge=/Lotus/Types/Challenges/RandomizedStyleKill
+    RequiredCountRange={10,16}
+    Complications={
+        {
+            Weight=1
+            Multiplier=0.5
+            Complication=/Lotus/Types/Challenges/Complications/Undetected
+        },
+    {
+        Weight=1
+        Multiplier=1
+        Complication=/Lotus/Types/Challenges/Complications/ResetOnDamageTaken
+    },
+{
+    Weight=1
+    Multiplier=2
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnDowned
+},
+{
+    Weight=1
+    Multiplier=3
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnMissionFailure
+},
+{
+    Weight=1
+    Multiplier=2
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnAlarmRaised
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnProc
+},
+{
+    Weight=1
+    Multiplier=2
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnAllyDowned
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/Invisible
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedDamageDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedHealthDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedShieldDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedSpeedDebuffKey
+},
+{
+    Weight=1
+    Multiplier=4
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnNewDay
+}
+}
+ComplicationChance=1
+},
+{
+    Challenge=/Lotus/Types/Challenges/HighExterminationUndetected
+    RequiredCountRange={1,1}
+    Complications={
+        {
+            Weight=1
+            Multiplier=1
+            Complication=/Lotus/Types/Challenges/Complications/SoloPlayer
+        },
+    {
+        Weight=1
+        Multiplier=1
+        Complication=/Lotus/Types/Challenges/Complications/EquippedDamageDebuffKey
+    },
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedSpeedDebuffKey
+}
+}
+ComplicationChance=1
+},
+{
+    Challenge=/Lotus/Types/Challenges/HighPerfectDefense
+    RequiredCountRange={1,1}
+    Complications={
+        {
+            Weight=1
+            Multiplier=1
+            Complication=/Lotus/Types/Challenges/Complications/SoloPlayer
+        },
+    {
+        Weight=0.25
+        Multiplier=1
+        Complication=/Lotus/Types/Challenges/Complications/EquippedDamageDebuffKey
+    },
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedHealthDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedShieldDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedSpeedDebuffKey
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnGearEnergyRestores
+}
+}
+ComplicationChance=0.69999999
+},
+{
+    Challenge=/Lotus/Types/Challenges/HighSurvivalPacifist
+    RequiredCountRange={1,1}
+    Complications={
+        {
+            Weight=1
+            Multiplier=1
+            Complication=/Lotus/Types/Challenges/Complications/SoloPlayer
+        },
+    {
+        Weight=1
+        Multiplier=1
+        Complication=/Lotus/Types/Challenges/Complications/EquippedHealthDebuffKey
+    },
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedShieldDebuffKey
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedSpeedDebuffKey
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnGearEnergyRestores
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnGearHealthRestores
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnDowned
+}
+}
+ComplicationChance=0.5
+},
+{
+    Challenge=/Lotus/Types/Challenges/HighSoloInterceptionHobbled
+    RequiredCountRange={1,1}
+    Complications={
+        {
+            Weight=1
+            Multiplier=1
+            Complication=/Lotus/Types/Challenges/Complications/ResetOnDowned
+        }
+}
+ComplicationChance=0.5
+},
+{
+    Challenge=/Lotus/Types/Challenges/RandomizedFindRareMedallions
+    RequiredCountRange={8,12}
+    Complications={
+        {
+            Weight=1
+            Multiplier=1
+            Complication=/Lotus/Types/Challenges/Complications/SoloPlayer
+        }
+}
+ComplicationChance=1
+},
+{
+    Challenge=/Lotus/Types/Challenges/RandomizedFindCaches
+    RequiredCountRange={2,4}
+    Complications={
+        {
+            Weight=1
+            Multiplier=1
+            Complication=/Lotus/Types/Challenges/Complications/PetPresent
+        },
+    {
+        Weight=1
+        Multiplier=1
+        Complication=/Lotus/Types/Challenges/Complications/SentinelPresent
+    },
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/SoloPlayer
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnAlarmRaised
+},
+{
+    Weight=1
+    Multiplier=0.5
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnDamageTaken
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnDisrupt
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnDowned
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnMissionFailure
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnAllyDowned
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedDamageDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedHealthDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedShieldDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedSpeedDebuffKey
+},
+{
+    Weight=0.15000001
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnGearCipher
+},
+{
+    Weight=0.15000001
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnGearAirSupport
+},
+{
+    Weight=0.15000001
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnGearHealthRestores
+},
+{
+    Weight=0.15000001
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnGearShieldRestores
+},
+{
+    Weight=0.15000001
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnGearAmmoRestores
+},
+{
+    Weight=0.15000001
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnGearEnergyRestores
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnNewDay
+}
+}
+ComplicationChance=1
+},
+{
+    Challenge=/Lotus/Types/Challenges/RandomizedHeadshotGlide
+    RequiredCountRange={3,3}
+    Complications={
+        {
+            Weight=0.25
+            Multiplier=1
+            Complication=/Lotus/Types/Challenges/Complications/EquippedDamageDebuffKey
+        },
+    {
+        Weight=0.25
+        Multiplier=1
+        Complication=/Lotus/Types/Challenges/Complications/EquippedSpeedDebuffKey
+    }
+}
+ComplicationChance=0.2
+},
+{
+    Challenge=/Lotus/Types/Challenges/RandomizedWallClingKillstreak
+    RequiredCountRange={10,20}
+    Complications={
+        {
+            Weight=1
+            Multiplier=1
+            Complication=/Lotus/Types/Challenges/Complications/SoloPlayer
+        },
+    {
+        Weight=1
+        Multiplier=1
+        Complication=/Lotus/Types/Challenges/Complications/ResetOnAlarmRaised
+    },
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnDamageTaken
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/Invisible
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedDamageDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedSpeedDebuffKey
+}
+}
+ComplicationChance=0.25
+},
+{
+    Challenge=/Lotus/Types/Challenges/SustainMeleeComboThree
+    RequiredCountRange={1,1}
+    Complications={
+        {
+            Weight=1
+            Multiplier=1
+            Complication=/Lotus/Types/Challenges/Complications/SentinelPresent
+        },
+    {
+        Weight=1
+        Multiplier=1
+        Complication=/Lotus/Types/Challenges/Complications/PetPresent
+    },
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/SoloPlayer
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedDamageDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedHealthDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedShieldDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedSpeedDebuffKey
+}
+}
+ComplicationChance=1
+},
+{
+    Challenge=/Lotus/Types/Challenges/LimitedSynthesis
+    RequiredCountRange={1,1}
+    Complications={
+        {
+            Weight=1
+            Multiplier=1
+            Complication=/Lotus/Types/Challenges/Complications/SoloPlayer
+        },
+    {
+        Weight=1
+        Multiplier=1
+        Complication=/Lotus/Types/Challenges/Complications/ResetOnDamageTaken
+    }
+}
+ComplicationChance=0.5
+},
+{
+    Challenge=/Lotus/Types/Challenges/RandomizedKillFallingPilots
+    RequiredCountRange={3,6}
+    Complications={
+        {
+            Weight=1
+            Multiplier=0.69999999
+            Complication=/Lotus/Types/Challenges/Complications/AimGliding
+        },
+    {
+        Weight=1
+        Multiplier=0.80000001
+        Complication=/Lotus/Types/Challenges/Complications/Sliding
+    },
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/SoloPlayer
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnNewDay
+}
+}
+ComplicationChance=0.5
+},
+{
+    Challenge=/Lotus/Types/Challenges/RandomizedHeadshotUnawareBallistas
+    RequiredCountRange={4,8}
+    Complications={
+        {
+            Weight=1
+            Multiplier=1
+            Complication=/Lotus/Types/Challenges/Complications/Invisible
+        },
+    {
+        Weight=1
+        Multiplier=1
+        Complication=/Lotus/Types/Challenges/Complications/SoloPlayer
+    },
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/Undetected
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnDowned
+},
+{
+    Weight=1
+    Multiplier=0.80000001
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnAlarmRaised
+},
+{
+    Weight=1
+    Multiplier=0.80000001
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnNewDay
+}
+}
+ComplicationChance=0.5
+},
+{
+    Challenge=/Lotus/Types/Challenges/RandomizedLongRangeSniper
+    RequiredCountRange={8,12}
+    Complications={
+        {
+            Weight=1
+            Multiplier=1
+            Complication=/Lotus/Types/Challenges/Complications/Invisible
+        },
+    {
+        Weight=1
+        Multiplier=1
+        Complication=/Lotus/Types/Challenges/Complications/SoloPlayer
+    },
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/Undetected
+},
+{
+    Weight=1
+    Multiplier=0.89999998
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnNewDay
+}
+}
+ComplicationChance=0.5
+},
+{
+    Challenge=/Lotus/Types/Challenges/RandomizedFlyingHeadshotSeries
+    RequiredCountRange={6,9}
+    Complications={
+        {
+            Weight=1
+            Multiplier=1
+            Complication=/Lotus/Types/Challenges/Complications/SoloPlayer
+        },
+    {
+        Weight=1
+        Multiplier=1
+        Complication=/Lotus/Types/Challenges/Complications/ResetOnDisrupt
+    },
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnProc
+}
+}
+ComplicationChance=0.5
+},
+{
+    Challenge=/Lotus/Types/Challenges/RandomizedAntiAntiAir
+    RequiredCountRange={3,5}
+    Complications={
+        {
+            Weight=1
+            Multiplier=1
+            Complication=/Lotus/Types/Challenges/Complications/SoloPlayer
+        },
+    {
+        Weight=0.25
+        Multiplier=1
+        Complication=/Lotus/Types/Challenges/Complications/EquippedHealthDebuffKey
+    },
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedShieldDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedDamageDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedSpeedDebuffKey
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnProc
+}
+}
+ComplicationChance=0.69999999
+},
+{
+    Challenge=/Lotus/Types/Challenges/RandomizedFisherman
+    RequiredCountRange={4,6}
+    Complications={
+        {
+            Weight=1
+            Multiplier=1
+            Complication=/Lotus/Types/Challenges/Complications/Undetected
+        },
+    {
+        Weight=1
+        Multiplier=1
+        Complication=/Lotus/Types/Challenges/Complications/ResetOnDowned
+    },
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/SoloPlayer
+},
+{
+    Weight=1
+    Multiplier=0.80000001
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnDamageTaken
+}
+}
+ComplicationChance=0.5
+},
+{
+    Challenge=/Lotus/Types/Challenges/RandomizedKillPassengers
+    RequiredCountRange={12,20}
+    Complications={
+        {
+            Weight=1
+            Multiplier=1
+            Complication=/Lotus/Types/Challenges/Complications/AimGliding
+        },
+    {
+        Weight=1
+        Multiplier=1
+        Complication=/Lotus/Types/Challenges/Complications/Invisible
+    },
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/Sliding
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/SoloPlayer
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnNewDay
+}
+}
+ComplicationChance=0.5
+},
+{
+    Challenge=/Lotus/Types/Challenges/PlainsTimedVariety
+    RequiredCountRange={1,1}
+    Complications={
+        {
+            Weight=0.25
+            Multiplier=1
+            Complication=/Lotus/Types/Challenges/Complications/EquippedDamageDebuffKey
+        },
+    {
+        Weight=0.25
+        Multiplier=1
+        Complication=/Lotus/Types/Challenges/Complications/EquippedHealthDebuffKey
+    },
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedShieldDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedSpeedDebuffKey
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/SoloPlayer
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/Undetected
+}
+}
+ComplicationChance=0.5
+}
+}
+UpgradeEntries={
+    {
+        Tag=WeaponArmorPiercingDamageMod
+        Icon=/Lotus/Interface/Cards/Images/Shotgun/ShotgunPunctureDepthMod.png
+        Upgrades={
+            {
+                Upgrade={
+                    UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                    OperationType=STACKING_MULTIPLY
+                    Value=0.01333
+                    DamageType=DT_PUNCTURE
+                    AutoType=1
+                    ValidType=""
+                    CheckTypeOnInstall=0
+                    SymbolFilter=""
+                    UpgradeObject=""
+                    ValidPostures={}
+                    ValidModifiers={}
+                    InvalidModifiers={}
+                    ValidProcTypes={}
+                }
+            Schema={
+                OverrideLocalization=1
+                LocTag=/Lotus/Language/Upgrades/WeaponPunctureDamage
+                LocKeyWordScript={
+                    Script=""
+                }
+            DisplayAsMultiplier=0
+            DisplayAsPercent=1
+            ReverseValueSymbol=0
+            SmallerIsBetter=0
+            RoundTo=0.1
+            RoundingMode=RM_ROUND
+            AllowConditionalLocMerge=0
+        }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    DamageTypes
+}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/PuncturePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/PunctureSuffix
+},
+{
+    Tag=WeaponCritChanceMod
+    Icon=/Lotus/Interface/Cards/Images/Shotgun/ShotgunCriticalChanceMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_CRIT_CHANCE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0099999998
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponCritChance
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/CritChancePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/CritChanceSuffix
+},
+{
+    Tag=WeaponCritDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Shotgun/ShotgunCritDamageMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_CRIT_DAMAGE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0099999998
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponCritDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/CritDamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/CritDamageSuffix
+},
+{
+    Tag=WeaponElectricityDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Shotgun/ShotgunElectricityDamageMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.0099999998
+                DamageType=DT_ELECTRICITY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponElectricityDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/ElectricityPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ElectricitySuffix
+},
+{
+    Tag=WeaponFireDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Shotgun/ShotgunFireDamageMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.0099999998
+                DamageType=DT_FIRE
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFireDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/FirePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/FireSuffix
+},
+{
+    Tag=WeaponFireRateMod
+    Icon=/Lotus/Interface/Cards/Images/Shotgun/ShotgunFireRateMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_FIRE_RATE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0099999998
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFireRate
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+},
+{
+    Upgrade={
+        UpgradeType=WEAPON_FIRE_RATE
+        OperationType=STACKING_MULTIPLY
+        Value=0.0099999998
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=/Lotus/Weapons/Tenno/Bows/LotusBow
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+    }
+Schema={
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+        Script=""
+    }
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/FireRatePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/FireRateSuffix
+},
+{
+    Tag=WeaponFreezeDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Shotgun/ShotgunFreezeDamageMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.0099999998
+                DamageType=DT_FREEZE
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFreezeDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/FrostPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/FrostSuffix
+},
+{
+    Tag=WeaponImpactDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Shotgun/ImpactDamageShotgunMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=STACKING_MULTIPLY
+                Value=0.013333
+                DamageType=DT_IMPACT
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponImpactDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    DamageTypes
+}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ImpactPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ImpactSuffix
+},
+{
+    Tag=WeaponProcTimeMod
+    Icon=/Lotus/Interface/Cards/Images/Shotgun/WeaponProcTimeShotgunMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PROC_TIME
+                OperationType=STACKING_MULTIPLY
+                Value=0.01111
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponProcTimeModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ProcTimePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ProcTimeSuffix
+},
+{
+    Tag=WeaponSlashDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Shotgun/EventSlashDamageShotgunMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=STACKING_MULTIPLY
+                Value=0.013333
+                DamageType=DT_SLASH
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponSlashDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    DamageTypes
+}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/SlashPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/SlashSuffix
+},
+{
+    Tag=WeaponStunChanceMod
+    Icon=/Lotus/Interface/Cards/Images/Shotgun/ShotgunStunChanceMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PROC_CHANCE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0099999998
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/StatusChance
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/StatusChancePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/StatusChanceSuffix
+},
+{
+    Tag=WeaponToxinDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Shotgun/PoisonDamageShotgunMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.0099999998
+                DamageType=DT_POISON
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponPoisonDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/ToxinPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ToxinSuffix
+},
+{
+    Tag=WeaponAmmoMaxMod
+    Icon=/Lotus/Interface/Cards/Images/Shotgun/ShotgunAmmoMaxMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_AMMO_MAX
+                OperationType=STACKING_MULTIPLY
+                Value=0.0099999998
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponMaxAmmoModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    NotSentinel
+}
+CanBeBuff=1
+CurseRestrictions={
+    NotSentinel
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/MaxAmmoPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/MaxAmmoSuffix
+},
+{
+    Tag=WeaponClipMaxMod
+    Icon=/Lotus/Interface/Cards/Images/Shotgun/ShotgunClipMaxMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_CLIP_MAX
+                OperationType=STACKING_MULTIPLY
+                Value=0.0055550002
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponClipMaxModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ClipSizePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ClipSizeSuffix
+},
+{
+    Tag=WeaponDamageAmountMod
+    Icon=/Lotus/Interface/Cards/Images/Shotgun/ShotgunDamageAmountMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_DAMAGE_AMOUNT
+                OperationType=STACKING_MULTIPLY
+                Value=0.018300001
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponDamageModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/DamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/DamageSuffix
+},
+{
+    Tag=WeaponFireIterationsMod
+    Icon=/Lotus/Interface/Cards/Images/Shotgun/ShotgunFireIterationsMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_FIRE_ITERATIONS
+                OperationType=STACKING_MULTIPLY
+                Value=0.0133
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponMultishotModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/MultishotPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/MultishotSuffix
+},
+{
+    Tag=WeaponProjectileSpeedMod
+    Icon=/Lotus/Interface/Cards/Images/Shotgun/WeaponProjectileSpeedShotgunMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PROJECTILE_SPEED
+                OperationType=STACKING_MULTIPLY
+                Value=0.0099999998
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponProjectileSpeedModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={
+    PROJECTILE
+}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ProjectileSpeedPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ProjectileSpeedSuffix
+},
+{
+    Tag=WeaponPunctureDepthMod
+    Icon=/Lotus/Interface/Cards/Images/Shotgun/ShotgunPunctureDepthMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PUNCTURE_DEPTH
+                OperationType=ADD
+                Value=0.029999999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponPunctureDepthModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/PunchThroughPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/PunchThroughSuffix
+},
+{
+    Tag=WeaponRecoilReductionMod
+    Icon=/Lotus/Interface/Cards/Images/PvP/Shotgun/LessRecoilSmallerMagShotgunMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_RECOIL
+                OperationType=STACKING_MULTIPLY
+                Value=-0.0099999998
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponRecoilModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    NotSentinel
+}
+CanBeBuff=1
+CurseRestrictions={
+    NotSentinel
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/RecoilPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/RecoilSuffix
+},
+{
+    Tag=WeaponReloadSpeedMod
+    Icon=/Lotus/Interface/Cards/Images/Shotgun/ShotgunReloadSpeedMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_RELOAD_SPEED
+                OperationType=STACKING_MULTIPLY
+                Value=0.0055550002
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponReloadSpeedModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ReloadSpeedPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ReloadSpeedSuffix
+},
+{
+    Tag=WeaponFactionDamageCorpus
+    Icon=/Lotus/Interface/Cards/Images/Shotgun/ShotgunDamageCorpus.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=GAMEPLAY_FACTION_DAMAGE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0049999999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=Corpus
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFactionDamageCorpusDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=1
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.0099999998
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/CorpusDamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/CorpusDamageSuffix
+},
+{
+    Tag=WeaponFactionDamageGrineer
+    Icon=/Lotus/Interface/Cards/Images/Shotgun/ShotgunDamageGrineer.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=GAMEPLAY_FACTION_DAMAGE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0049999999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=Grineer
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFactionDamageGrineerDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=1
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.0099999998
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/GrineerDamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/GrineerDamageSuffix
+},
+{
+    Tag=WeaponFactionDamageInfested
+    Icon=/Lotus/Interface/Cards/Images/Shotgun/ShotgunDamageInfested.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=GAMEPLAY_FACTION_DAMAGE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0049999999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=Infestation
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFactionDamageInfestedDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=1
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.0099999998
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/InfestedDamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/InfestedDamageSuffix
+}
+}
+ItemCompatibilities={
+    {
+        ItemType=/Lotus/Types/Sentinels/SentinelWeapons/PrimeSentShotgun
+        Rarity=NONE
+        Attenuation=1
+    },
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/SentShotgun
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/BoardExec/Primary/CrpBEArcaPlasmor/CrpBEArcaPlasmor
+    Rarity=NONE
+    Attenuation=0.55000001
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/CrpShapeBlast/CrpShapeBlastShotgun
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/CrpShotgun/CrpShotgun
+    Rarity=COMMON
+    Attenuation=0.94999999
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/CrpSplitLaser/CrpSplitLaser
+    Rarity=COMMON
+    Attenuation=1.46
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Drakgoon/KuvaDrakgoon
+    Rarity=NONE
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Hek/KuvaHekWeapon
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Kohm/KuvaKohm
+    Rarity=NONE
+    Attenuation=0.89999998
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Sobek/KuvaSobek
+    Rarity=NONE
+    Attenuation=0.80000001
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/GrineerFlakCannon/FlakCannon
+    Rarity=COMMON
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/GrnSpark/GrnSparkRifle
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Infested/InfestedLich/LongGuns/1999InfShotgun/1999InfShotgunWeapon
+    Rarity=COMMON
+    Attenuation=0.60000002
+},
+{
+    ItemType=/Lotus/Weapons/Infested/LongGuns/InfArmCannon/InfArmCannon
+    Rarity=COMMON
+    Attenuation=0.75
+},
+{
+    ItemType=/Lotus/Weapons/Infested/LongGuns/Tentacluster/InfestedShotgun
+    Rarity=COMMON
+    Attenuation=1.46
+},
+{
+    ItemType=/Lotus/Weapons/MK1Series/MK1Strun
+    Rarity=NONE
+    Attenuation=1.45
+},
+{
+    ItemType=/Lotus/Weapons/Syndicates/NewLoka/LongGuns/NLTigris
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Syndicates/SteelMeridian/LongGuns/SMHek
+    Rarity=NONE
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/DoubleBarrelShotgun/TennoDoubleBarrelShotgun
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PaxDuviricusShotgun/PaxDuviricusShotgun
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeAstilla/AstillaPrimeWeapon
+    Rarity=NONE
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeCedo/PrimeCedoWeapon
+    Rarity=NONE
+    Attenuation=0.55000001
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeCorinth/PrimeCorinth
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimePhantasma/PhantasmaPrimeShotgun
+    Rarity=NONE
+    Attenuation=0.80000001
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeStrun/PrimeStrunWeapon
+    Rarity=NONE
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeTigris/PrimeTigris
+    Rarity=NONE
+    Attenuation=0.94999999
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/RevenantShotgun/RevenantShotgun
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/TnAlchemistShotgun/TnAlchemistShotgun
+    Rarity=COMMON
+    Attenuation=0.64999998
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/TnGlassShotgun/TnGlassShotgunGun
+    Rarity=COMMON
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/TnHeavyShotgun/TnHeavyShotgunGun
+    Rarity=COMMON
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/TnoLotusPodShotgun/TnoLotusPodShotgun
+    Rarity=COMMON
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Shotgun/DoubleBarrelShotgun
+    Rarity=COMMON
+    Attenuation=1.33
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Shotgun/FullAutoShotgun
+    Rarity=COMMON
+    Attenuation=1.45
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Shotgun/PrimeBoar
+    Rarity=NONE
+    Attenuation=1.34
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Shotgun/QuadShotgun
+    Rarity=NONE
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Shotgun/QuadShotgunBase
+    Rarity=COMMON
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Shotgun/Shotgun
+    Rarity=COMMON
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Shotgun/ShotgunVandal
+    Rarity=NONE
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Zariman/LongGuns/PumpShotgun/ZarimanPumpShotgun
+    Rarity=COMMON
+    Attenuation=0.60000002
+}
+}
+SentinelItemCompatibilities={
+    {
+        ItemType=/Lotus/Types/Sentinels/SentinelWeapons/PrimeSentShotgun
+        Rarity=NONE
+        Attenuation=1
+    },
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/SentShotgun
+    Rarity=COMMON
+    Attenuation=1
+}
 }

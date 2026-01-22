@@ -1,48 +1,48 @@
-/Lotus/Powersuits/Yareli/YareliDisksAugmentCard
+>/Lotus/Powersuits/Yareli/YareliDisksAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/YareliDisksAbilityAugment1Name
 Icon=/Lotus/Interface/Cards/Images/AbilityAugments/YareliDisksAugment.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/YareliDisksAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/YareliDisksAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/YareliDisks.lua
-    Function=GetAugmentDescriptionInfo
-    _activateAnim=""
-    _boardActivateAnim=""
-    _triggerType=""
-    _discType=""
-    _discDecoAttach=""
-    _discRangeAttach=""
-    _discAugmentAttach=""
-    _castEffect=""
-    _castLaunchEffect=""
-    _avatarAttach=""
-    _augmentProjectileType=""
-    _augmentAnim=""
-    _boardAugmentAnim=""
-    _isNPCAbility=0
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/YareliDisksAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/YareliDisksAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/YareliDisks.lua
+            Function=GetAugmentDescriptionInfo
+            _activateAnim=""
+            _boardActivateAnim=""
+            _triggerType=""
+            _discType=""
+            _discDecoAttach=""
+            _discRangeAttach=""
+            _discAugmentAttach=""
+            _castEffect=""
+            _castLaunchEffect=""
+            _avatarAttach=""
+            _augmentProjectileType=""
+            _augmentAnim=""
+            _boardAugmentAnim=""
+            _isNPCAbility=0
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_POWER

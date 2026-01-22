@@ -1,43 +1,43 @@
-/Lotus/Upgrades/Mods/Warframe/AvatarParryMeleeMod
+>/Lotus/Upgrades/Mods/Warframe/AvatarParryMeleeMod
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/WarframeModParryMelee
 Icon=/Lotus/Interface/Cards/Images/MeleeChanneling/ChannelingParryMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_PARRY_COUNTER_CHANCE
-    OperationType=ADD
-    Value=0.16
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/ParryMeleeDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=WEAPON_PARRY_COUNTER_CHANCE
+        OperationType=ADD
+        Value=0.16
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/ParryMeleeDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_DEFENSE
 ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
 IncompatibilityTags={
-SENTINEL_WEAPON,
-HOUND_WEAPON,
-POWER_WEAPON_LITE
+    SENTINEL_WEAPON,
+    HOUND_WEAPON,
+    POWER_WEAPON_LITE
 }
 IncludeInBoosterPack=1
 IsUtility=1

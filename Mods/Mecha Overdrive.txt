@@ -1,34 +1,34 @@
-/Lotus/Upgrades/Mods/Sets/Mecha/KubrowMechaOverdriveMod
+>/Lotus/Upgrades/Mods/Sets/Mecha/KubrowMechaOverdriveMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/KubrowMechaOverdriveMod
 Icon=/Lotus/Interface/Cards/Images/Sets/Mecha/KubrowMechaOverdriveMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_SENTINEL_STATUS_LINK
-    OperationType=ADD
-    Value=0.1
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/AvatarStatusLinkModDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_SENTINEL_STATUS_LINK
+        OperationType=ADD
+        Value=0.1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/AvatarStatusLinkModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 },
 {
     UpgradeType=WEAPON_PROC_TIME
@@ -46,8 +46,8 @@ RoundingMode=RM_ROUND
     OverrideLocalization=1
     LocTag=/Lotus/Language/Upgrades/WeaponProcTimeModDesc
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -60,6 +60,6 @@ ArtifactPolarity=AP_ATTACK
 BaseDrain=QA_HIGH
 ItemCompatibility=/Lotus/Types/Friendly/Pets/KubrowPetMeleeWeapon
 IncompatibilityTags={
-HELMINTH_WEAPON
+    HELMINTH_WEAPON
 }
 ModSet=MechaSetMod

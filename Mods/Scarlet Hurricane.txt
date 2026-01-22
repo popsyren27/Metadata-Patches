@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Stances/PvPClawStanceOne
+>/Lotus/Upgrades/Mods/PvPMods/Stances/PvPClawStanceOne
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/PvPClawStanceOne
@@ -9,11 +9,11 @@ AvailableOnPve=0
 AvailableOnPvp=1
 ArtifactPolarity=AP_ATTACK
 UnequippedAttackSets={
-CC_GROUND=Combos/PvPClawComboOneEquipped
+    CC_GROUND=Combos/PvPClawComboOneEquipped
 }
 EquippedAttackSets={
-CC_GROUND=Combos/PvPClawComboB
-CC_GROUND_BRANCH_A=Combos/PvPClawComboOneEquipped
-CC_GROUND_BRANCH_B=Combos/PvPClawComboA
+    CC_GROUND=Combos/PvPClawComboB
+    CC_GROUND_BRANCH_A=Combos/PvPClawComboOneEquipped
+    CC_GROUND_BRANCH_B=Combos/PvPClawComboA
 }
 AvatarDamageFalloff=0.75

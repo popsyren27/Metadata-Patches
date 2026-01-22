@@ -1,4 +1,4 @@
-/Lotus/Weapons/Tenno/Melee/MeleeTrees/HammerCmbTwoMeleeTree
+>/Lotus/Weapons/Tenno/Melee/MeleeTrees/HammerCmbTwoMeleeTree
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/HammerStanceB
@@ -8,8 +8,8 @@ ExcludeFromCodex=0
 ArtifactPolarity=AP_ATTACK
 IncludeInBoosterPack=1
 EquippedAttackSets={
-CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/HammerComboTwoBDefaults
-CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/JetHammerComboADefaults
-CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/JetHammerCmboOneMeleeTree
-CC_GROUND_BRANCH_C=/Lotus/Weapons/Tenno/Melee/AttackSets/HammerComboTwoCDefaults
+    CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/HammerComboTwoBDefaults
+    CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/JetHammerComboADefaults
+    CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/JetHammerCmboOneMeleeTree
+    CC_GROUND_BRANCH_C=/Lotus/Weapons/Tenno/Melee/AttackSets/HammerComboTwoCDefaults
 }

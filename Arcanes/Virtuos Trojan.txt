@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/OperatorAmps/VoidToViralDamage
+>/Lotus/Upgrades/CosmeticEnhancers/OperatorAmps/VoidToViralDamage
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/VoidToViralDamage
@@ -31,12 +31,12 @@ Upgrades={
                 0.72000003,
                 0.98000002
             }
-        }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
     }
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
 EnhancementTagLocScript={

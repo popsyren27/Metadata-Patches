@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Zariman/EnergyOnGhostDissipate
+>/Lotus/Upgrades/CosmeticEnhancers/Zariman/EnergyOnGhostDissipate
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/OperatorEnergyOnGhostDissipate
@@ -45,36 +45,36 @@ Upgrades={
                 10,
                 10
             }
-            _dissipateArcaneChance={
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-            }
-            _dissipateArcaneEnergy={
-                5,
-                6,
-                7,
-                8,
-                9,
-                10
-            }
-            _dissipateArcaneEnergyCost={
-                10,
-                10,
-                10,
-                10,
-                10,
-                10
-            }
+        _dissipateArcaneChance={
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
         }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
+    _dissipateArcaneEnergy={
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
     }
+_dissipateArcaneEnergyCost={
+    10,
+    10,
+    10,
+    10,
+    10,
+    10
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 FusionLimit=QA_HIGH
 Script={
@@ -100,30 +100,30 @@ Script={
         7,
         8
     }
-    _dissipateArcaneChance={
-        0.1,
-        0.2,
-        0.30000001,
-        0.40000001,
-        0.5,
-        0.60000002
-    }
-    _dissipateArcaneEnergy={
-        5,
-        5,
-        5,
-        5,
-        5,
-        5
-    }
-    _dissipateArcaneEnergyCost={
-        10,
-        10,
-        10,
-        10,
-        10,
-        10
-    }
+_dissipateArcaneChance={
+    0.1,
+    0.2,
+    0.30000001,
+    0.40000001,
+    0.5,
+    0.60000002
+}
+_dissipateArcaneEnergy={
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+}
+_dissipateArcaneEnergyCost={
+    10,
+    10,
+    10,
+    10,
+    10,
+    10
+}
 }
 UnappliedScript={
     Script=/Lotus/Types/Friendly/Tenno/OperatorGrappleGlaive.lua
@@ -148,30 +148,30 @@ UnappliedScript={
         7,
         8
     }
-    _dissipateArcaneChance={
-        0.1,
-        0.2,
-        0.30000001,
-        0.40000001,
-        0.5,
-        0.60000002
-    }
-    _dissipateArcaneEnergy={
-        5,
-        5,
-        5,
-        5,
-        5,
-        5
-    }
-    _dissipateArcaneEnergyCost={
-        10,
-        10,
-        10,
-        10,
-        10,
-        10
-    }
+_dissipateArcaneChance={
+    0.1,
+    0.2,
+    0.30000001,
+    0.40000001,
+    0.5,
+    0.60000002
+}
+_dissipateArcaneEnergy={
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+}
+_dissipateArcaneEnergyCost={
+    10,
+    10,
+    10,
+    10,
+    10,
+    10
+}
 }
 DurationScalesWithRank=0
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionBR.png

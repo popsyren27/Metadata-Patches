@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Rifle/Event/ProjectNightwatch/VulkarNightwatchMod
+>/Lotus/Upgrades/Mods/Rifle/Event/ProjectNightwatch/VulkarNightwatchMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/VulkarNightwatchMod
@@ -7,26 +7,26 @@ Icon=/Lotus/Interface/Cards/Images/Rifle/VulkarNightwatchMod.png
 ExcludeFromCodex=0
 TradeCapability=RO_ALWAYS
 Upgrades={
-{
-    UpgradeType=WEAPON_SNIPER_COMBO_DURATION_BONUS
-    OperationType=ADD
-    Value=2
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={
-    PM_AIM
-}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/VulkarNightwatchModDesc
-LocKeyWordScript={
-Script=""
-}
+    {
+        UpgradeType=WEAPON_SNIPER_COMBO_DURATION_BONUS
+        OperationType=ADD
+        Value=2
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={
+            PM_AIM
+        }
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/VulkarNightwatchModDesc
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
 ReverseValueSymbol=0

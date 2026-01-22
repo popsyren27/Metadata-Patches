@@ -1,52 +1,52 @@
-/Lotus/Powersuits/Nezha/NezhaRingAugmentCard
+>/Lotus/Powersuits/Nezha/NezhaRingAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/NezhaRingAbilityAugment1Name
 Icon=/Lotus/Interface/Cards/Images/AbilityAugments/NezhaBlazingChakramAugment.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/NezhaRingAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/NezhaRingAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/NezhaRing.lua
-    Function=GetAugmentDescriptionInfo
-    _projectileType=""
-    _bouncingProjectileType=""
-    _secondaryProjectileType=""
-    _pvpProjectileType=""
-    _fightingProjectileType=""
-    _projetileMarkerType=""
-    _helperType=""
-    _lotusMarkType=""
-    _teleportEffect=""
-    _activateAnim=""
-    _castEffect=""
-    _castBurstEffect=""
-    _ringRespawnEffect=""
-    _deluxeFlames=""
-    _dropType=""
-    _dropEnergyType=""
-    _primaryRing=1
-    _chargeSound=""
-    _throwSound=""
-    _throwChargedSound=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/NezhaRingAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/NezhaRingAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/NezhaRing.lua
+            Function=GetAugmentDescriptionInfo
+            _projectileType=""
+            _bouncingProjectileType=""
+            _secondaryProjectileType=""
+            _pvpProjectileType=""
+            _fightingProjectileType=""
+            _projetileMarkerType=""
+            _helperType=""
+            _lotusMarkType=""
+            _teleportEffect=""
+            _activateAnim=""
+            _castEffect=""
+            _castBurstEffect=""
+            _ringRespawnEffect=""
+            _deluxeFlames=""
+            _dropType=""
+            _dropEnergyType=""
+            _primaryRing=1
+            _chargeSound=""
+            _throwSound=""
+            _throwChargedSound=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_POWER

@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/MultishotForCombo
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/MultishotForCombo
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/CriticalChanceForComboName
@@ -37,13 +37,13 @@ Upgrades={
                 0.16,
                 0.2
             }
-            _duration=30
-        }
-        SmallerIsBetter=0
-        RoundTo=9.9999997e-05
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
+        _duration=30
     }
+SmallerIsBetter=0
+RoundTo=9.9999997e-05
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 FusionLimit=QA_HIGH
 ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol
@@ -62,7 +62,7 @@ Script={
         0.16,
         0.2
     }
-    _duration=30
+_duration=30
 }
 UpgradeChance=1
 UpgradeDuration=10

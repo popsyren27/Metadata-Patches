@@ -1,2 +1,5 @@
-/Lotus/Upgrades/Mods/Melee/Beginner/WeaponMeleeDamageModBeginner
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Melee/Beginner/WeaponMeleeDamageModBeginner
+CodexSecret=1
+FusionLimit=QA_MEDIUM
+IncludeInBoosterPack=0
+IsStarter=1

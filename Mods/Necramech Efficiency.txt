@@ -1,34 +1,34 @@
-/Lotus/Upgrades/Mods/Necromech/NecromechBoostEfficiencyMod
+>/Lotus/Upgrades/Mods/Necromech/NecromechBoostEfficiencyMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Necromech/NecromechBoostEfficiencyMod
 Icon=/Lotus/Interface/Cards/Images/Necramech/NecramechBoostEfficiencyMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_STAMINA_COST_MULTIPLIER
-    OperationType=STACKING_MULTIPLY
-    Value=-0.050000001
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/StaminaEfficiencyDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=1
-SmallerIsBetter=1
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_STAMINA_COST_MULTIPLIER
+        OperationType=STACKING_MULTIPLY
+        Value=-0.050000001
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/StaminaEfficiencyDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=1
+    SmallerIsBetter=1
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_DEFENSE

@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Pistol/Expert/WeaponPistolFactionDamageMurmursExpert
-patch not applied (yet)

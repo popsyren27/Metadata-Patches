@@ -1,2 +1,0 @@
-/Lotus/Powersuits/Ranger/ExaltedBow
-MarketMode=MM_HIDDEN

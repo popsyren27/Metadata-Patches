@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Stances/PvPDualDaggersStanceOne
+>/Lotus/Upgrades/Mods/PvPMods/Stances/PvPDualDaggersStanceOne
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/PvPDualDaggersStanceOne
@@ -6,7 +6,7 @@ LocalizeDescTag=/Lotus/Language/Items/PvPMeleeStanceDesc
 Icon=/Lotus/Interface/Cards/Images/PvP/Stance/DualDaggers.png
 ExcludeFromCodex=0
 CompatibilityTags={
-DUAL_DAGGERS_STANCE
+    DUAL_DAGGERS_STANCE
 }
 AvailableOnPve=0
 AvailableOnPvp=1
@@ -14,38 +14,38 @@ ArtifactPolarity=AP_WARD
 ItemCompatibility=/Lotus/Weapons/Tenno/Melee/LotusDualDagger
 ItemCompatibilityLocOverride=/Lotus/Language/Items/DualDaggersCategoryName
 UnequippedAttackSets={
-CC_GROUND=Combos/PvPDualDaggersComboOneEquipped
-CC_SLIDING=/Lotus/Weapons/Tenno/Melee/AttackSets/DualDaggerSlideDefaults
-CC_AIR=/Lotus/Weapons/Tenno/Melee/AttackSets/DualDaggerJumpDefaults
-CC_DOWNED_ENEMY=/Lotus/Weapons/Tenno/Melee/AttackSets/DualDaggerGroundHitsDefault
-CC_SLIDING_PVP=/Lotus/Weapons/Tenno/Melee/AttackSets/PVPDualDaggerSlideDefaults
+    CC_GROUND=Combos/PvPDualDaggersComboOneEquipped
+    CC_SLIDING=/Lotus/Weapons/Tenno/Melee/AttackSets/DualDaggerSlideDefaults
+    CC_AIR=/Lotus/Weapons/Tenno/Melee/AttackSets/DualDaggerJumpDefaults
+    CC_DOWNED_ENEMY=/Lotus/Weapons/Tenno/Melee/AttackSets/DualDaggerGroundHitsDefault
+    CC_SLIDING_PVP=/Lotus/Weapons/Tenno/Melee/AttackSets/PVPDualDaggerSlideDefaults
 }
 EquippedAttackSets={
-CC_GROUND=Combos/PvPDualDaggersComboA
-CC_GROUND_BRANCH_A=Combos/PvPDualDaggersComboOneEquipped
-CC_GROUND_BRANCH_B=Combos/PvPDualDaggersComboB
-CC_GROUND_HEAVY=/Lotus/Weapons/Tenno/Melee/AttackSets/DualDaggerMelee30ChargeA
-CC_SLIDING=/Lotus/Weapons/Tenno/Melee/AttackSets/DualDaggerSlideDefaults
-CC_AIR=/Lotus/Weapons/Tenno/Melee/AttackSets/DualDaggerJumpDefaults
-CC_DOWNED_ENEMY=/Lotus/Weapons/Tenno/Melee/AttackSets/DualDaggerGroundHitsDefault
-CC_SLIDING_PVP=/Lotus/Weapons/Tenno/Melee/AttackSets/DualDaggerMelee30ChargeB
+    CC_GROUND=Combos/PvPDualDaggersComboA
+    CC_GROUND_BRANCH_A=Combos/PvPDualDaggersComboOneEquipped
+    CC_GROUND_BRANCH_B=Combos/PvPDualDaggersComboB
+    CC_GROUND_HEAVY=/Lotus/Weapons/Tenno/Melee/AttackSets/DualDaggerMelee30ChargeA
+    CC_SLIDING=/Lotus/Weapons/Tenno/Melee/AttackSets/DualDaggerSlideDefaults
+    CC_AIR=/Lotus/Weapons/Tenno/Melee/AttackSets/DualDaggerJumpDefaults
+    CC_DOWNED_ENEMY=/Lotus/Weapons/Tenno/Melee/AttackSets/DualDaggerGroundHitsDefault
+    CC_SLIDING_PVP=/Lotus/Weapons/Tenno/Melee/AttackSets/DualDaggerMelee30ChargeB
 }
 AerialAttacks={
-BP_UP=/Lotus/Weapons/Tenno/Melee/Attacks/DualDaggerJumpForward
-BP_DOWN=/Lotus/Weapons/Tenno/Melee/Attacks/DualDaggerJumpForward
-BP_RIGHT=/Lotus/Weapons/Tenno/Melee/Attacks/DualDaggerJumpRight
-BP_LEFT=/Lotus/Weapons/Tenno/Melee/Attacks/DualDaggerJumpLeft
-BP_JUMP=/Lotus/Weapons/Tenno/Melee/Attacks/DualDaggerJumpForward
-BP_CROUCH=/Lotus/Weapons/Tenno/Melee/Attacks/DualDaggerJumpAttackA
+    BP_UP=/Lotus/Weapons/Tenno/Melee/Attacks/DualDaggerJumpForward
+    BP_DOWN=/Lotus/Weapons/Tenno/Melee/Attacks/DualDaggerJumpForward
+    BP_RIGHT=/Lotus/Weapons/Tenno/Melee/Attacks/DualDaggerJumpRight
+    BP_LEFT=/Lotus/Weapons/Tenno/Melee/Attacks/DualDaggerJumpLeft
+    BP_JUMP=/Lotus/Weapons/Tenno/Melee/Attacks/DualDaggerJumpForward
+    BP_CROUCH=/Lotus/Weapons/Tenno/Melee/Attacks/DualDaggerJumpAttackA
 }
 AerialDirectionThresholds={
-BP_JUMP=-45
+    BP_JUMP=-45
 }
 GroundEquivalent={}
 Finishers=/Lotus/Weapons/Tenno/Melee/DualDaggerFinishers
 ContextFallbacks={
-{
-context=CC_GROUND_BRANCH_C
-fallback=CC_GROUND_BRANCH_B
-}
+    {
+        context=CC_GROUND_BRANCH_C
+        fallback=CC_GROUND_BRANCH_B
+    }
 }

@@ -1,4 +1,4 @@
-/Lotus/Types/Sentinels/SentinelPrecepts/VoidBond/TenaciousPartner
+>/Lotus/Types/Sentinels/SentinelPrecepts/VoidBond/TenaciousPartner
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/VoidBondTenaciousPartnerMod
@@ -6,52 +6,52 @@ StatusDescTag=/Lotus/Language/Buffs/TenaciousBondBuffDesc
 Icon=/Lotus/Interface/Cards/Images/Pets/SentinelTenaciousPartner.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/VoidBondTenaciousPartnerModDesc
-    LocKeyWordScript={
-    Script=/Lotus/Types/Sentinels/SentinelAbilities/TenaciousPartner.lua
-    Function=GetDescription
-    _timerReductionOnHeadshotPerRank=0.5
-    _companionCritChanceThreshold=0.5
-    _ownerCritDamageStackingMultPerRank=0.2
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/VoidBondTenaciousPartnerModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/TenaciousPartner.lua
+            Function=GetDescription
+            _timerReductionOnHeadshotPerRank=0.5
+            _companionCritChanceThreshold=0.5
+            _ownerCritDamageStackingMultPerRank=0.2
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_DEFENSE
 ItemCompatibility=/Lotus/Types/Game/SentinelPowerSuit
 Script={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/TenaciousPartner.lua
-Function=AddUpgrades
-_timerReductionOnHeadshotPerRank=0.5
-_companionCritChanceThreshold=0.5
-_ownerCritDamageStackingMultPerRank=0.2
+    Script=/Lotus/Types/Sentinels/SentinelAbilities/TenaciousPartner.lua
+    Function=AddUpgrades
+    _timerReductionOnHeadshotPerRank=0.5
+    _companionCritChanceThreshold=0.5
+    _ownerCritDamageStackingMultPerRank=0.2
 }
 UnappliedScript={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/TenaciousPartner.lua
-Function=RemoveUpgrades
-_timerReductionOnHeadshotPerRank=0.5
-_companionCritChanceThreshold=0.5
-_ownerCritDamageStackingMultPerRank=0.2
+    Script=/Lotus/Types/Sentinels/SentinelAbilities/TenaciousPartner.lua
+    Function=RemoveUpgrades
+    _timerReductionOnHeadshotPerRank=0.5
+    _companionCritChanceThreshold=0.5
+    _ownerCritDamageStackingMultPerRank=0.2
 }
 SubUpgrades={
-TenaciousPartnerHeadshotSubmod
+    TenaciousPartnerHeadshotSubmod
 }
 PlayEffect=0
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/TenaciousPartner.png

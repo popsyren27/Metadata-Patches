@@ -1,2 +1,3 @@
-/Lotus/Upgrades/Mods/Warframe/Intermediate/AvatarHealthMaxModIntermediate
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Warframe/Intermediate/AvatarHealthMaxModIntermediate
+FusionLimit=QA_HIGH
+IncludeInBoosterPack=0

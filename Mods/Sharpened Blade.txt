@@ -1,41 +1,41 @@
-/Lotus/Upgrades/Mods/PvPMods/Melee/DamageBiasSlashMeleeMod
+>/Lotus/Upgrades/Mods/PvPMods/Melee/DamageBiasSlashMeleeMod
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/DamageBiasSlashMeleeMod
 Icon=/Lotus/Interface/Cards/Images/PvP/Melee/DamageBiasSlashMeleeMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_DAMAGE_TYPE_BIAS
-    OperationType=ADD
-    Value=0.050000001
-    DamageType=DT_SLASH
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/SlashBias
-    LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
-    Function=GetDescriptionInfo
-    _displayAsPercent={
-    1
-}
-_absoluteValue={
-0
-}
-_maxDecimals={
--1
-}
+    {
+        UpgradeType=WEAPON_DAMAGE_TYPE_BIAS
+        OperationType=ADD
+        Value=0.050000001
+        DamageType=DT_SLASH
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/SlashBias
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
+            Function=GetDescriptionInfo
+            _displayAsPercent={
+                1
+            }
+        _absoluteValue={
+            0
+        }
+    _maxDecimals={
+        -1
+    }
 _addPlusses={
-0
+    0
 }
 _multiplyDown={
-0
+    0
 }
 }
 SmallerIsBetter=0

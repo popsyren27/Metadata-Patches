@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Stances/PvPTonfaStanceOne
+>/Lotus/Upgrades/Mods/PvPMods/Stances/PvPTonfaStanceOne
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/PvPTonfaStanceOne
@@ -9,11 +9,11 @@ AvailableOnPve=0
 AvailableOnPvp=1
 ArtifactPolarity=AP_ATTACK
 UnequippedAttackSets={
-CC_GROUND=Combos/PvPTonfaComboOneEquipped
+    CC_GROUND=Combos/PvPTonfaComboOneEquipped
 }
 EquippedAttackSets={
-CC_GROUND=Combos/PvPTonfaComboA
-CC_GROUND_BRANCH_A=Combos/PvPTonfaComboOneEquipped
-CC_GROUND_BRANCH_B=Combos/PvPTonfaComboB
-CC_SLIDING=/Lotus/Weapons/Tenno/Melee/AttackSets/PVPTonfaSlideEquipped
+    CC_GROUND=Combos/PvPTonfaComboA
+    CC_GROUND_BRANCH_A=Combos/PvPTonfaComboOneEquipped
+    CC_GROUND_BRANCH_B=Combos/PvPTonfaComboB
+    CC_SLIDING=/Lotus/Weapons/Tenno/Melee/AttackSets/PVPTonfaSlideEquipped
 }

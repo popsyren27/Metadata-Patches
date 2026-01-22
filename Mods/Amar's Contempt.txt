@@ -1,56 +1,56 @@
-/Lotus/Upgrades/Mods/Sets/Amar/AmarMeleeMod
+>/Lotus/Upgrades/Mods/Sets/Amar/AmarMeleeMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/AmarMeleeMod
 Icon=/Lotus/Interface/Cards/Images/Sets/Amar/AmarMeleeMod.png
 ExcludeFromCodex=0
 CompatibilityTags={
-DUAL_DAGGERS_STANCE
+    DUAL_DAGGERS_STANCE
 }
 Upgrades={
-{
-UpgradeType=WEAPON_MELEE_DAMAGE
-OperationType=STACKING_MULTIPLY
-Value=0.15000001
-DamageType=DT_ANY
-AutoType=1
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/MeleeDamageBuffDesc
-LocKeyWordScript={
-Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=WEAPON_MELEE_DAMAGE
+        OperationType=STACKING_MULTIPLY
+        Value=0.15000001
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/MeleeDamageBuffDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 },
 {
-UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
-OperationType=STACKING_MULTIPLY
-Value=0.050000001
-DamageType=DT_SLASH
-AutoType=1
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/WeaponSlashDamage
-LocKeyWordScript={
-Script=""
-}
+    UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+    OperationType=STACKING_MULTIPLY
+    Value=0.050000001
+    DamageType=DT_SLASH
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponSlashDamage
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -63,7 +63,7 @@ ArtifactPolarity=AP_ATTACK
 BaseDrain=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
 IncompatibilityTags={
-POWER_WEAPON
+    POWER_WEAPON
 }
 ItemCompatibilityLocOverride=/Lotus/Language/Items/DualDaggersCategoryName
 ModSet=AmarSetMod

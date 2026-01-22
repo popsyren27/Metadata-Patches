@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Defensive/DamageResistanceStacksOverTime
+>/Lotus/Upgrades/CosmeticEnhancers/Defensive/DamageResistanceStacksOverTime
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Upgrades/DamageResistanceStacksOverTime
@@ -35,36 +35,36 @@ Upgrades={
                 0.20999999,
                 0.25
             }
-            _maxStacks={
-                3,
-                3,
-                3,
-                3,
-                3,
-                3
-            }
-            _durationWhenDamaged={
-                4,
-                4,
-                4,
-                4,
-                4,
-                4
-            }
-            _clearAllStacks=1
-            _parentUpgrade=""
-            _parkourStyle=0
-            _parkourDuration=10
-            _requiresNinjaCheese=1
-            _parkourUpgradeTypes={}
-            _parkourUpgrade=DOUBLE_JUMP
-            _parkourEffect=""
+        _maxStacks={
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
         }
-        SmallerIsBetter=0
-        RoundTo=0.0099999998
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
+    _durationWhenDamaged={
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
     }
+_clearAllStacks=1
+_parentUpgrade=""
+_parkourStyle=0
+_parkourDuration=10
+_requiresNinjaCheese=1
+_parkourUpgradeTypes={}
+_parkourUpgrade=DOUBLE_JUMP
+_parkourEffect=""
+}
+SmallerIsBetter=0
+RoundTo=0.0099999998
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 ExtraUpgrades={
     {
@@ -86,14 +86,14 @@ ExtraUpgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=0
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 FusionLimit=QA_HIGH
 Script={
@@ -108,29 +108,29 @@ Script={
         0.20999999,
         0.25
     }
-    _maxStacks={
-        3,
-        3,
-        3,
-        3,
-        3,
-        3
-    }
-    _durationWhenDamaged={
-        5
-    }
-    _clearAllStacks=1
-    _parentUpgrade=""
-    _parkourStyle=0
-    _parkourDuration=10
-    _requiresNinjaCheese=0
-    _parkourUpgradeTypes={
-        DamageResistanceStacksOverTimeDoubleJump,
-        DamageResistanceStacksOverTimeBulletJump,
-        DamageResistanceStacksOverTimeRoll
-    }
-    _parkourUpgrade=DOUBLE_JUMP
-    _parkourEffect=/Lotus/Fx/Gameplay/Arcanes/DamageReductionStackLost
+_maxStacks={
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+}
+_durationWhenDamaged={
+    5
+}
+_clearAllStacks=1
+_parentUpgrade=""
+_parkourStyle=0
+_parkourDuration=10
+_requiresNinjaCheese=0
+_parkourUpgradeTypes={
+    DamageResistanceStacksOverTimeDoubleJump,
+    DamageResistanceStacksOverTimeBulletJump,
+    DamageResistanceStacksOverTimeRoll
+}
+_parkourUpgrade=DOUBLE_JUMP
+_parkourEffect=/Lotus/Fx/Gameplay/Arcanes/DamageReductionStackLost
 }
 UnappliedScript={
     Script=DamageResistanceStacksOverTime.lua
@@ -139,18 +139,18 @@ UnappliedScript={
     _damageResistancePerStack={
         0.30000001
     }
-    _maxStacks={
-        3
-    }
-    _durationWhenDamaged={}
-    _clearAllStacks=1
-    _parentUpgrade=""
-    _parkourStyle=0
-    _parkourDuration=10
-    _requiresNinjaCheese=1
-    _parkourUpgradeTypes={}
-    _parkourUpgrade=DOUBLE_JUMP
-    _parkourEffect=""
+_maxStacks={
+    3
+}
+_durationWhenDamaged={}
+_clearAllStacks=1
+_parentUpgrade=""
+_parkourStyle=0
+_parkourDuration=10
+_requiresNinjaCheese=1
+_parkourUpgradeTypes={}
+_parkourUpgrade=DOUBLE_JUMP
+_parkourEffect=""
 }
 CanReproc=0
 CanReprocPvp=0

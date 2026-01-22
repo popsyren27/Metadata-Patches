@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryCritOnHit
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryCritOnHit
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/1999/SecondaryCritOnHitName

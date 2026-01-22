@@ -1,36 +1,36 @@
-/Lotus/Upgrades/Mods/Melee/WeaponGlaiveExplodingReflectionIncreaseMod
+>/Lotus/Upgrades/Mods/Melee/WeaponGlaiveExplodingReflectionIncreaseMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/GlaiveExplodingReflectionIncreaseModName
 Icon=/Lotus/Interface/Cards/Images/Melee/VolatileReboundMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_REFLECTION_EXPLOSION_CHANCE
-    OperationType=ADD
-    Value=0.25
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/WeaponExplodingReflectionModifierModDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=WEAPON_REFLECTION_EXPLOSION_CHANCE
+        OperationType=ADD
+        Value=0.25
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponExplodingReflectionModifierModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 },
 {
     UpgradeType=WEAPON_PUNCTURE_DEPTH
@@ -49,8 +49,8 @@ AllowConditionalLocMerge=0
     OverrideLocalization=1
     LocTag=""
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
 ReverseValueSymbol=0
@@ -65,6 +65,6 @@ BaseDrain=QA_VERY_HIGH
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Tenno/Melee/LotusGlaiveWeaponBase
 IncompatibilityTags={
-SENTINEL_WEAPON
+    SENTINEL_WEAPON
 }
 IncludeInBoosterPack=1

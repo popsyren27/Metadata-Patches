@@ -1,2 +1,0 @@
-/Lotus/Powersuits/PowersuitAbilities/UmbraSwordOfDoomAbility
-VideoTexture=/Lotus/Interface/AbilityVideos/ExcaliburUmbraPower4_s.bk2

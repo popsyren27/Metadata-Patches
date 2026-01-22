@@ -1,2 +1,0 @@
-/Lotus/Powersuits/Banshee/SonarPvPAugmentCard
-patch not applied (yet)

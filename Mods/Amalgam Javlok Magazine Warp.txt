@@ -1,33 +1,33 @@
-/Lotus/Upgrades/Mods/DualSource/Rifle/JavlokSwordShieldMod
+>/Lotus/Upgrades/Mods/DualSource/Rifle/JavlokSwordShieldMod
 Rarity=RARE
 LocalizeTag=/Lotus/Language/Mods/JavlokSwordShieldMod
 Icon=/Lotus/Interface/Cards/Images/DualSource/AmalgamJavlok.png
 TradeCapability=RO_NEVER
 Upgrades={
-{
-    UpgradeType=WEAPON_CLIP_MAX
-    OperationType=STACKING_MULTIPLY
-    Value=0.075000003
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=/Lotus/Weapons/Grineer/LongGuns/GrnFlameSpear/GrnFlameSpear
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/WeaponClipMaxModDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=WEAPON_CLIP_MAX
+        OperationType=STACKING_MULTIPLY
+        Value=0.075000003
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=/Lotus/Weapons/Grineer/LongGuns/GrnFlameSpear/GrnFlameSpear
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponClipMaxModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 },
 {
     UpgradeType=WEAPON_MELEE_COMBO_GAIN_EXTRA_CHANCE
@@ -40,14 +40,14 @@ RoundingMode=RM_ROUND
     UpgradeObject=""
     ValidPostures={}
     ValidModifiers={
-    PM_PARRY
-}
+        PM_PARRY
+    }
 InvalidModifiers={}
 ValidProcTypes={}
 OverrideLocalization=1
 LocTag=/Lotus/Language/Upgrades/MeleeComboPointMissChanceBlockingShield
 LocKeyWordScript={
-Script=""
+    Script=""
 }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
@@ -60,8 +60,8 @@ RoundingMode=RM_ROUND
 BaseDrain=QA_HIGH
 ItemCompatibility=/Lotus/Weapons/Grineer/LongGuns/GrnFlameSpear/GrnFlameSpear
 IncompatibilityTags={
-SENTINEL_WEAPON,
-POWER_WEAPON
+    SENTINEL_WEAPON,
+    POWER_WEAPON
 }
 IncludeInBoosterPack=0
 IsAmalgam=1

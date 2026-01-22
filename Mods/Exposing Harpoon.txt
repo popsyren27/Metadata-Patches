@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Rifle/Event/Arbitration/GrnHarpoonGunArbitrationMod
+>/Lotus/Upgrades/Mods/Rifle/Event/Arbitration/GrnHarpoonGunArbitrationMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/HarpakArbitrationMod
@@ -7,44 +7,44 @@ StatusDescTag=/Lotus/Language/Buffs/ExposingHarpoonBuffDesc
 Icon=/Lotus/Interface/Cards/Images/Rifle/GrnHarpoonGunArbitrationMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Mods/HarpakArbitrationModDesc
-    LocKeyWordScript={
-    Script=/Lotus/Scripts/GrnHarpoonGrapple.lua
-    Function=GetLocValues
-    _beamType=""
-    _beamAttachBone=GAME_C1_FX
-    _missEffect=""
-    _enemyEffect=""
-    _invalidTargetTypes={}
-    _avatarType=""
-    _pullForce=20
-    _maxRange=15
-    _avatarPullAnimation=""
-    _weaponPullAnimation=""
-    _arbitrationModType=""
-    _arbitrationDmgPct={
-    1,
-    1.3,
-    1.6,
-    2,
-    2.5,
-    3
-}
-}
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Mods/HarpakArbitrationModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/GrnHarpoonGrapple.lua
+            Function=GetLocValues
+            _beamType=""
+            _beamAttachBone=GAME_C1_FX
+            _missEffect=""
+            _enemyEffect=""
+            _invalidTargetTypes={}
+            _avatarType=""
+            _pullForce=20
+            _maxRange=15
+            _avatarPullAnimation=""
+            _weaponPullAnimation=""
+            _arbitrationModType=""
+            _arbitrationDmgPct={
+                1,
+                1.3,
+                1.6,
+                2,
+                2.5,
+                3
+            }
+    }
 SmallerIsBetter=0
 RoundTo=0.1
 RoundingMode=RM_ROUND
@@ -54,7 +54,7 @@ ArtifactPolarity=AP_TACTIC
 BaseDrain=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Grineer/LongGuns/GrnHarpoonGun/GrnHarpoonGun
 IncompatibilityTags={
-POWER_WEAPON
+    POWER_WEAPON
 }
 PlayEffect=0
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/IncreasedCritChance.png

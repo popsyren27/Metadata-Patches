@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Stances/PvPPunchKickStanceOne
+>/Lotus/Upgrades/Mods/PvPMods/Stances/PvPPunchKickStanceOne
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/PvPPunchKickStanceOne
@@ -9,10 +9,10 @@ AvailableOnPve=0
 AvailableOnPvp=1
 ArtifactPolarity=AP_TACTIC
 UnequippedAttackSets={
-CC_GROUND=Combos/PvPPunchKickComboOneEquipped
+    CC_GROUND=Combos/PvPPunchKickComboOneEquipped
 }
 EquippedAttackSets={
-CC_GROUND=Combos/PvPPunchKickComboA
-CC_GROUND_BRANCH_A=Combos/PvPPunchKickComboOneEquipped
-CC_GROUND_BRANCH_B=Combos/PvPPunchKickComboB
+    CC_GROUND=Combos/PvPPunchKickComboA
+    CC_GROUND_BRANCH_A=Combos/PvPPunchKickComboOneEquipped
+    CC_GROUND_BRANCH_B=Combos/PvPPunchKickComboB
 }

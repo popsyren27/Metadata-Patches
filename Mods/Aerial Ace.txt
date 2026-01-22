@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Rifle/Event/Arbitration/JumpRefreshOnKillRifleMod
+>/Lotus/Upgrades/Mods/Rifle/Event/Arbitration/JumpRefreshOnKillRifleMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/JumpRefreshOnKillModName
@@ -6,29 +6,29 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Rifle/JumpRefreshOnKillRifleMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/JumpRefresh
-    LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/JumpRefresh.lua
-    Function=GetDescription
-    _activatedEffect=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/JumpRefresh
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/JumpRefresh.lua
+            Function=GetDescription
+            _activatedEffect=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ApplyUpgradesByDefault=0
@@ -36,22 +36,22 @@ ArtifactPolarity=AP_TACTIC
 BaseDrain=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Tenno/Rifle/LotusRifle
 IncompatibilityTags={
-POWER_WEAPON
+    POWER_WEAPON
 }
 Script={
-Script=/Lotus/Scripts/Mods/JumpRefresh.lua
-Function=OnProc
-_activatedEffect=/Lotus/Fx/Weapons/UniqueMods/JumpRefresh
+    Script=/Lotus/Scripts/Mods/JumpRefresh.lua
+    Function=OnProc
+    _activatedEffect=/Lotus/Fx/Weapons/UniqueMods/JumpRefresh
 }
 IsUtility=1
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
 EnhancementTagLocScript={
-Script=""
+    Script=""
 }
 UpgradeChance=1
 CanReproc=0
 PlayEffect=0
 ConditionalUpgrades={
-/Lotus/Upgrades/CosmeticEnhancers/Events/OnKillRifleCondition
+    /Lotus/Upgrades/CosmeticEnhancers/Events/OnKillRifleCondition
 }
 ConditionTag=/Lotus/Language/Upgrades/OnKillCondition_Description

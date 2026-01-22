@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Aura/PlayerMeleeAuraMod
+>/Lotus/Upgrades/Mods/Aura/PlayerMeleeAuraMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/PlayerMeleeBuffName
@@ -6,32 +6,32 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/MissionBuffs/PlayerMeleeBuff.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_MELEE_DAMAGE
-    OperationType=STACKING_MULTIPLY
-    Value=0.1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=/Lotus/Types/Game/LotusMeleeWeapon
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/MeleeDamageAuraModDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=WEAPON_MELEE_DAMAGE
+        OperationType=STACKING_MULTIPLY
+        Value=0.1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=/Lotus/Types/Game/LotusMeleeWeapon
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/MeleeDamageAuraModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 },
 {
     UpgradeType=WEAPON_MELEE_DAMAGE
@@ -50,8 +50,8 @@ AllowConditionalLocMerge=0
     OverrideLocalization=1
     LocTag=""
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
 ReverseValueSymbol=0
@@ -66,5 +66,5 @@ BaseDrain=QA_MEDIUM
 ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
 TargetType=/Lotus/Types/Player/TennoAvatar
 ExcludedAvatars={
-/Lotus/Types/Player/LotusOperatorAvatar
+    /Lotus/Types/Player/LotusOperatorAvatar
 }

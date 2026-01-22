@@ -1,58 +1,58 @@
-/Lotus/Upgrades/Mods/Rifle/DualStat/WildfireMod
+>/Lotus/Upgrades/Mods/Rifle/DualStat/WildfireMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/RifleModWildfire
 Icon=/Lotus/Interface/Cards/Images/DoubleMods/RifleWildfireMod.png
 ExcludeFromCodex=0
 SearchTags={
-/Lotus/Language/Game/DT_EXPLOSION_NoIcon,
-/Lotus/Language/Game/DT_GAS_NoIcon,
-/Lotus/Language/Game/DT_RADIATION_NoIcon
+    /Lotus/Language/Game/DT_EXPLOSION_NoIcon,
+    /Lotus/Language/Game/DT_GAS_NoIcon,
+    /Lotus/Language/Game/DT_RADIATION_NoIcon
 }
 Upgrades={
-{
-UpgradeType=WEAPON_CLIP_MAX
-OperationType=STACKING_MULTIPLY
-Value=0.050000001
-DamageType=DT_ANY
-AutoType=1
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/WeaponClipMaxModDesc
-LocKeyWordScript={
-Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=WEAPON_CLIP_MAX
+        OperationType=STACKING_MULTIPLY
+        Value=0.050000001
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponClipMaxModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 },
 {
-UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
-OperationType=ADD
-Value=0.15000001
-DamageType=DT_FIRE
-AutoType=1
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/WeaponFireDamage
-LocKeyWordScript={
-Script=""
-}
+    UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+    OperationType=ADD
+    Value=0.15000001
+    DamageType=DT_FIRE
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponFireDamage
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0

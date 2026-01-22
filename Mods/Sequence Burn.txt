@@ -1,34 +1,34 @@
-/Lotus/Upgrades/Mods/Syndicate/SpectraMod
+>/Lotus/Upgrades/Mods/Syndicate/SpectraMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/SyndicateRewards/SpectraMod
 Icon=/Lotus/Interface/Cards/Images/Syndicate/Spectra.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_RANGE
-    OperationType=ADD
-    Value=5
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/WeaponBeamLengthModDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=0
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=WEAPON_RANGE
+        OperationType=ADD
+        Value=5
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponBeamLengthModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 },
 {
     UpgradeType=WEAPON_SYNDICATE_POWER
@@ -54,5 +54,5 @@ BaseDrain=QA_MEDIUM
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/ClanTech/Energy/CrpLaserPistol
 TipTags={
-SEQUENCE
+    SEQUENCE
 }

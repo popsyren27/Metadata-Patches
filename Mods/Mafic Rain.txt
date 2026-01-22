@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Stances/PvPNunchakuStanceOne
+>/Lotus/Upgrades/Mods/PvPMods/Stances/PvPNunchakuStanceOne
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/PvPNunchakuStanceOne
@@ -9,10 +9,10 @@ AvailableOnPve=0
 AvailableOnPvp=1
 ArtifactPolarity=AP_DEFENSE
 UnequippedAttackSets={
-CC_GROUND=Combos/PvPNunchakuComboOneEquipped
+    CC_GROUND=Combos/PvPNunchakuComboOneEquipped
 }
 EquippedAttackSets={
-CC_GROUND=Combos/PvPNunchakuComboA
-CC_GROUND_BRANCH_A=Combos/PvPNunchakuComboOneEquipped
-CC_GROUND_BRANCH_B=Combos/PvPNunchakuComboB
+    CC_GROUND=Combos/PvPNunchakuComboA
+    CC_GROUND_BRANCH_A=Combos/PvPNunchakuComboOneEquipped
+    CC_GROUND_BRANCH_B=Combos/PvPNunchakuComboB
 }

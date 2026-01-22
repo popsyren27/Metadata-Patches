@@ -1,34 +1,34 @@
-/Lotus/Upgrades/Mods/Syndicate/SilvaAegisMod
+>/Lotus/Upgrades/Mods/Syndicate/SilvaAegisMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/SyndicateRewards/SilvaAegisMod
 Icon=/Lotus/Interface/Cards/Images/Syndicate/SilvaAegis.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/WeaponBlockingStoreChargeDamage
-    LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/SilvaAegisStoreDamage.lua
-    Function=GetLoc
-    _baseStoragePct=20
-    _baseStoragePctScaling=10
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponBlockingStoreChargeDamage
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/SilvaAegisStoreDamage.lua
+            Function=GetLoc
+            _baseStoragePct=20
+            _baseStoragePctScaling=10
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 },
 {
     UpgradeType=WEAPON_SYNDICATE_POWER
@@ -54,11 +54,11 @@ BaseDrain=QA_MEDIUM
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/MeleeContestWinnerOne/TennoSwordShield
 Script={
-Script=/Lotus/Scripts/Mods/SilvaAegisStoreDamage.lua
-Function=ApplyUpgrades
-_baseStoragePct=20
-_baseStoragePctScaling=10
+    Script=/Lotus/Scripts/Mods/SilvaAegisStoreDamage.lua
+    Function=ApplyUpgrades
+    _baseStoragePct=20
+    _baseStoragePctScaling=10
 }
 TipTags={
-TRUTH
+    TRUTH
 }

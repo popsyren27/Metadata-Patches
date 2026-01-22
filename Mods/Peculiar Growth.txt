@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Peculiars/InflationMod
+>/Lotus/Upgrades/CosmeticEnhancers/Peculiars/InflationMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/PerculiarInflationMod
@@ -7,60 +7,62 @@ Icon=/Lotus/Interface/Cards/Images/Perculiars/InflationMod.png
 ExcludeFromCodex=0
 TradeCapability=RO_ALWAYS
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/PerculiarsInflationModDesc
-    LocKeyWordScript={
-    Script=InflationMode.lua
-    Function=GetDescription
-    _inflationDurationPerLevel={
-    1,
-    2,
-    3,
-    4,
-    5,
-    6
-}
-_maxInflationScale=2
-_perHitInflationScale=0.1
-_minTimeBetweenTwoProcs=0.1
-_inflationSound=""
-_deflationSound=""
-_minDeflationSoundPitch=0.80000001
-_maxDeflationSoundPitch=1.2
-_deflationParticleSys=""
-}
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/PerculiarsInflationModDesc
+        LocKeyWordScript={
+            Script=InflationMode.lua
+            Function=GetDescription
+            _inflationDurationPerLevel={
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            }
+        _maxInflationScale=2
+        _perHitInflationScale=0.1
+        _minTimeBetweenTwoProcs=0.1
+        _inflationSound=""
+        _deflationSound=""
+        _minDeflationSoundPitch=0.80000001
+        _maxDeflationSoundPitch=1.2
+        _deflationParticleSys=""
+    }
 SmallerIsBetter=0
 RoundTo=0.1
 RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
 }
 }
 ApplyUpgradesByDefault=0
 ArtifactPolarity=AP_TACTIC
 ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
 Script={
-Script=InflationMode.lua
-Function=InflateVictim
-_inflationDurationPerLevel={
-1,
-2,
-3,
-4,
-5,
-6
-}
+    Script=InflationMode.lua
+    Function=InflateVictim
+    _inflationDurationPerLevel={
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+    }
 _maxInflationScale=2
 _perHitInflationScale=0.2
 _minTimeBetweenTwoProcs=0.050000001
@@ -72,5 +74,5 @@ _deflationParticleSys=/Lotus/Fx/Gameplay/Mods/Peculiar/InflationAir
 }
 UpgradeChance=1
 ConditionalUpgrades={
-OnAnyWeaponHitCondition
+    OnAnyWeaponHitCondition
 }

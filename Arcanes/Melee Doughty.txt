@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/CritDamageForPunctureStatus
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/CritDamageForPunctureStatus
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/1999/CritDamageForPunctureStatusName

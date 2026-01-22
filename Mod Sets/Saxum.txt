@@ -1,0 +1,83 @@
+>/Lotus/Upgrades/Mods/Sets/Femur/FemurSetMod
+Rarity=RARE
+LocalizeTag=/Lotus/Language/Mods/FemurSetModName
+StatusDescTag=/Lotus/Language/Buffs/ModCooldownDesc
+CodexSecret=1
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/LiftedEnemiesExplodeImpactDamageDesc
+        LocKeyWordScript={
+            Script=FemurModSetBonusAbility.lua
+            Function=GetDescriptionInfo
+            _healthPct={
+                0.1,
+                0.2,
+                0.30000001
+            }
+        _damageRadius={
+            4,
+            8,
+            12
+        }
+    _knockbackRadius={
+        2,
+        4,
+        6
+    }
+_knockbackImpulse=50
+_explosionFx=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_VERY_HIGH
+Script={
+    Script=FemurModSetBonusAbility.lua
+    Function=ActivateAbility
+    _healthPct={
+        0.1,
+        0.2,
+        0.30000001
+    }
+_damageRadius={
+    4,
+    8,
+    12
+}
+_knockbackRadius={
+    2,
+    4,
+    6
+}
+_knockbackImpulse=50
+_explosionFx=/Lotus/Fx/Weapons/UniqueMods/BeamExplodeOnDeath
+}
+UpgradeChance=1
+UpgradeDuration=6
+DurationScalesWithRank=0
+CanReproc=0
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Offensive/OnLiftedKillCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/IncreasedDamage.png
+UseDebuffIcon=1
+ModSetIcon=/Lotus/Interface/Cards/Images/Sets/Femur/FemurHeader.png
+InstallSound=/Lotus/Sounds/UI/NewUI/Common/UICommonAccent
+NumUpgradesInSet=3

@@ -1,0 +1,60 @@
+>/Lotus/Upgrades/Mods/Antiques/EnterVoidModeOnKnockdown
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Upgrades/AntiqueEnterVoidModeOnKnockdown
+Icon=/Lotus/Interface/Cards/Images/AntiqueMods/OrokinImageF.png
+ExcludeFromCodex=0
+SearchTags={
+    /Lotus/Language/TennoWay/Unairu
+}
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0.5
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/AntiqueEnterVoidModeOnKnockdownDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=1
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
+}
+ExtraUpgradeFusionLevel=QA_NONE
+AssociatedSchool=AP_WARD
+Script={
+    Script=EnterVoidMode.lua
+    Function=ApplyUpgrade
+    _duration=3
+    _reapplicationDelay=10
+    _reapplicationDelayPerLevel=-0.5
+    _upgradeToGive=""
+}
+SubUpgrades={
+    EnterVoidModeOnKnockdownHackSub
+}
+EnhancementTag=/Lotus/Language/Upgrades/AntiqueEnterVoidModeOnKnockdownDesc
+EnhancementTagLocScript={
+    Script=EnterVoidMode.lua
+    Function=GetDescription
+    _duration=3
+    _reapplicationDelay=10
+    _reapplicationDelayPerLevel=-0.5
+    _upgradeToGive=""
+}
+UpgradeChance=1

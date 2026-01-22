@@ -1,2 +1,4 @@
-/Lotus/Upgrades/Mods/Rifle/Expert/WeaponCritChanceModExpert
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Rifle/Expert/WeaponCritChanceModExpert
+TradeCapability=RO_NEVER
+FusionLimit=QA_VERY_HIGH
+IncludeInBoosterPack=0

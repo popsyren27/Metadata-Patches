@@ -1,2 +1,2 @@
-/Lotus/Upgrades/Mods/Shotgun/Intermediate/WeaponShotgunConvertAmmoModIntermediate
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Shotgun/Intermediate/WeaponShotgunConvertAmmoModIntermediate
+IncludeInBoosterPack=0

@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Rifle/Event/CritChanceWhileAimingRifleMod
+>/Lotus/Upgrades/Mods/Rifle/Event/CritChanceWhileAimingRifleMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/CritChanceWhileAimingRifleMod
@@ -7,26 +7,26 @@ StatusDescTag=/Lotus/Language/Buffs/CritChanceWhileAimingBuffDesc
 Icon=/Lotus/Interface/Cards/Images/Rifle/CritChanceWhileAiming.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_CRIT_CHANCE
-    OperationType=STACKING_MULTIPLY
-    Value=0.22499999
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={
-    PM_AIM
-}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/CritChanceWhileAimingModDesc
-LocKeyWordScript={
-Script=""
-}
+    {
+        UpgradeType=WEAPON_CRIT_CHANCE
+        OperationType=STACKING_MULTIPLY
+        Value=0.22499999
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={
+            PM_AIM
+        }
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/CritChanceWhileAimingModDesc
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -40,13 +40,13 @@ ArtifactPolarity=AP_ATTACK
 ItemCompatibility=/Lotus/Weapons/Tenno/Rifle/LotusRifle
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDuration
 EnhancementTagLocScript={
-Script=""
+    Script=""
 }
 UpgradeChance=1
 UpgradeDuration=1.5
 PlayEffect=0
 ConditionalUpgrades={
-/Lotus/Upgrades/CosmeticEnhancers/Events/OnHeadshotRifleCondition
+    /Lotus/Upgrades/CosmeticEnhancers/Events/OnHeadshotRifleCondition
 }
 ConditionTag=/Lotus/Language/Upgrades/OnHeadshotCondition_Description
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/IncreasedCritChance.png

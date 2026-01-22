@@ -1,4 +1,4 @@
-/Lotus/Weapons/Tenno/Melee/MeleeTrees/DaggerCmbOneMeleeTree
+>/Lotus/Weapons/Tenno/Melee/MeleeTrees/DaggerCmbOneMeleeTree
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/DaggerStanceA
@@ -8,13 +8,13 @@ ExcludeFromCodex=0
 ArtifactPolarity=AP_TACTIC
 IncludeInBoosterPack=1
 EquippedAttackSets={
-CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/DaggerBranchADefaults
-CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/DaggerBranchABDefaults
-CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/DaggerEquippedAttacksDefaults
+    CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/DaggerBranchADefaults
+    CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/DaggerBranchABDefaults
+    CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/DaggerEquippedAttacksDefaults
 }
 ContextFallbacks={
-{
-context=CC_GROUND_BRANCH_C
-fallback=CC_GROUND
-}
+    {
+        context=CC_GROUND_BRANCH_C
+        fallback=CC_GROUND
+    }
 }

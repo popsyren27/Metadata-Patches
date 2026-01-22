@@ -1,2 +1,4 @@
-/Lotus/Upgrades/Mods/Melee/Beginner/WeaponElectricityDamageModBeginner
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Melee/Beginner/WeaponElectricityDamageModBeginner
+FusionLimit=QA_MEDIUM
+IncludeInBoosterPack=0
+IsStarter=1

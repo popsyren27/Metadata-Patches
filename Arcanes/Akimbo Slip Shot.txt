@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/AmmoEfficiencyOnSliding
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/AmmoEfficiencyOnSliding
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/AmmoEfficiencyOnSlidingName
@@ -34,15 +34,19 @@ Upgrades={
                 0.55000001,
                 0.64999998
             }
-        }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
+        _heavyWeaponCompatibility={}
     }
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 FusionLimit=QA_HIGH
 ItemCompatibility=/Lotus/Weapons/Tenno/Akimbo/LotusAkimbo
+ExtraItemCompatibility={
+    /Lotus/Weapons/Tenno/Archwing/Primary/ArchwingHeavyPistols/ArchHeavyPistols
+}
 IncompatibilityTags={}
 Script={
     Script=AmmoEfficiencyOnSliding.lua
@@ -55,6 +59,9 @@ Script={
         0.55000001,
         0.64999998
     }
+_heavyWeaponCompatibility={
+    /Lotus/Weapons/Tenno/Archwing/Primary/ArchwingHeavyPistols/ArchHeavyPistols
+}
 }
 UnappliedScript={
     Script=AmmoEfficiencyOnSliding.lua
@@ -67,6 +74,7 @@ UnappliedScript={
         0.55000001,
         0.64999998
     }
+_heavyWeaponCompatibility={}
 }
 UpgradeChance=1
 DurationScalesWithRank=0

@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Utility/NoCostCastChanceOnCast
+>/Lotus/Upgrades/CosmeticEnhancers/Utility/NoCostCastChanceOnCast
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Upgrades/NoCostCastChanceOnCast
@@ -34,15 +34,15 @@ Upgrades={
                 0.17,
                 0.2
             }
-            _procsNum=1
-            _chargeType=""
-            _chargeGainedSound=""
-        }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
+        _procsNum=1
+        _chargeType=""
+        _chargeGainedSound=""
     }
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 ExtraUpgrades={
     {
@@ -64,14 +64,14 @@ ExtraUpgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=0
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 FusionLimit=QA_HIGH
 Script={
@@ -85,9 +85,9 @@ Script={
         0.17,
         0.2
     }
-    _procsNum=3
-    _chargeType=NoCostCastChanceChargeDeco
-    _chargeGainedSound=/Lotus/Sounds/Focus/Misc/FocusGenericBuffIndicatorLocal
+_procsNum=3
+_chargeType=NoCostCastChanceChargeDeco
+_chargeGainedSound=/Lotus/Sounds/Focus/Misc/FocusGenericBuffIndicatorLocal
 }
 CanReproc=0
 CanReprocPvp=0

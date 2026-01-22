@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/SeekerProjOnHeadshotKill
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/SeekerProjOnHeadshotKill
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/SeekerProjOnHeadshotKillName
@@ -28,11 +28,11 @@ Upgrades={
             _projectileType=""
             _projectileCountPerLevel=1
         }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 ApplyUpgradesByDefault=0
 Script={

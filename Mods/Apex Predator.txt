@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Rifle/MarkTargetRifleMod
+>/Lotus/Upgrades/Mods/PvPMods/Rifle/MarkTargetRifleMod
 Rarity=UNCOMMON
 LocalizeTag=/Lotus/Language/Mods/MarkTargetRifleMod
 LocalizeDescTag=/Lotus/Language/Upgrades/OnHitConditionDesc
@@ -6,30 +6,30 @@ Icon=/Lotus/Interface/Cards/Images/PvP/Rifle/MarkTargetRifleMod.png
 AvailableOnPve=0
 AvailableOnPvp=1
 Upgrades={
-{
-    UpgradeType=WEAPON_MARK_TARGET
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/MarkedDuration
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=0
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=WEAPON_MARK_TARGET
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/MarkedDuration
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 IncludeInBoosterPack=0

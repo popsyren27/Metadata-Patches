@@ -1,34 +1,34 @@
-/Lotus/Upgrades/Mods/Archwing/Rifle/ArchwingRiflePunchthroughMod
+>/Lotus/Upgrades/Mods/Archwing/Rifle/ArchwingRiflePunchthroughMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/ArchwingPunchthrough
 Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingRifle/ArchwingRiflePunchthroughMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_DAMAGE_AMOUNT
-    OperationType=STACKING_MULTIPLY
-    Value=0.1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/WeaponDamageModDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=WEAPON_DAMAGE_AMOUNT
+        OperationType=STACKING_MULTIPLY
+        Value=0.1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponDamageModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 },
 {
     UpgradeType=WEAPON_PUNCTURE_DEPTH
@@ -46,8 +46,8 @@ RoundingMode=RM_ROUND
     OverrideLocalization=1
     LocTag=/Lotus/Language/Upgrades/WeaponPunctureDepthModDesc
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
 ReverseValueSymbol=0

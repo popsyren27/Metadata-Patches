@@ -1,4 +1,4 @@
-/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedPredatorBuffSporesPrecept
+>/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedPredatorBuffSporesPrecept
 Rarity=RARE
 MarketMode=MM_HIDDEN
 RegularPrice=5000
@@ -9,45 +9,45 @@ StatusDescTag=/Lotus/Language/Buffs/AnabolicPollinationBuffDesc
 Icon=/Lotus/Interface/Cards/Images/Pets/Deimos/InfestedPredatorBuffSporesPrecept.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Pets/InfestedPredatorBuffSporesPreceptDesc
-    LocKeyWordScript={
-    Script=InfestedPredatorBuffSpores.lua
-    Function=GetDescriptionInfo
-    _trailCreationDuration=2
-    _trailExistenceDuration=10
-    _dmgDuration=15
-    _dmgIncrease={
-    0.25,
-    0.5,
-    0.75,
-    1
-}
-_cooldownTime={
-25,
-20,
-15,
-10
-}
-_sporesAbilityType=""
-_distanceBetweenCreates=1
-_sporesAttachType=""
-_sporesType=""
-_castAnimation=""
-_castSound=""
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Pets/InfestedPredatorBuffSporesPreceptDesc
+        LocKeyWordScript={
+            Script=InfestedPredatorBuffSpores.lua
+            Function=GetDescriptionInfo
+            _trailCreationDuration=2
+            _trailExistenceDuration=10
+            _dmgDuration=15
+            _dmgIncrease={
+                0.25,
+                0.5,
+                0.75,
+                1
+            }
+        _cooldownTime={
+            25,
+            20,
+            15,
+            10
+        }
+    _sporesAbilityType=""
+    _distanceBetweenCreates=1
+    _sporesAttachType=""
+    _sporesType=""
+    _castAnimation=""
+    _castSound=""
 }
 SmallerIsBetter=0
 RoundTo=0.1
@@ -60,24 +60,24 @@ FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Types/Friendly/Pets/CreaturePets/PharaohPredatorKubrowPetPowerSuit
 HudBuffIcon=/Lotus/Interface/Icons/Pets/Deimos/PharaohPredasite.png
 Ability={
-Script={
-Script=InfestedPredatorBuffSpores.lua
-Function=ActivateAbility
-_trailCreationDuration=2
-_trailExistenceDuration=10
-_dmgDuration=15
-_dmgIncrease={
-0.25,
-0.5,
-0.75,
-1
-}
-_cooldownTime={
-25,
-20,
-15,
-10
-}
+    Script={
+        Script=InfestedPredatorBuffSpores.lua
+        Function=ActivateAbility
+        _trailCreationDuration=2
+        _trailExistenceDuration=10
+        _dmgDuration=15
+        _dmgIncrease={
+            0.25,
+            0.5,
+            0.75,
+            1
+        }
+    _cooldownTime={
+        25,
+        20,
+        15,
+        10
+    }
 _sporesAbilityType=InfestedPredatorBuffSporesPrecept
 _distanceBetweenCreates=2
 _sporesAttachType=/Lotus/Fx/Sentinels/Precepts/InfestedPredators/BuffSporeAttachFX

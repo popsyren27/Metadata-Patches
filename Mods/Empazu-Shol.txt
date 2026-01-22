@@ -1,0 +1,43 @@
+>/Lotus/Upgrades/Mods/Antiques/UltimateInitialChargeSchools
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Upgrades/AntiqueUltimateInitialChargeSchools
+Icon=/Lotus/Interface/Cards/Images/AntiqueMods/OrokinImageQ.png
+ExcludeFromCodex=0
+SearchTags={
+    /Lotus/Language/TennoWay/Zenurik
+}
+Upgrades={
+    {
+        UpgradeType=AVATAR_ABILITY_OPERATOR_ULTIMATE_INITIAL_CHARGE
+        OperationType=ADD
+        Value=1000
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/OperatorUltimateInitialChargeDesc
+        LocKeyWordScript={
+            Script=/Lotus/Upgrades/CosmeticEnhancers/Utility/UltimateInitialChargeLoc.lua
+            Function=GetDescription
+            _upgradeValue=1000
+            _upgradeValuePerFusionLevel=1000
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
+}
+AssociatedSchool=AP_POWER
+SubUpgrades={
+    BonusAntiqueUpgradeUltimateInitialChargeUnique
+}
+UpgradeChance=1

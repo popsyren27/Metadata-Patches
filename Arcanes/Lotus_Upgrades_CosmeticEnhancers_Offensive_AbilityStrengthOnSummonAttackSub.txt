@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/AbilityStrengthOnSummonAttackSub
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/AbilityStrengthOnSummonAttackSub
 Rarity=RARE
 MarketMode=MM_HIDDEN
 ApplyUpgradesByDefault=0

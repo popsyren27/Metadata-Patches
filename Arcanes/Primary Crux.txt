@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/StatusAndAmmoEfficiencyOnWeakpointHit
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/StatusAndAmmoEfficiencyOnWeakpointHit
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/1999/StatusAndAmmoEfficiencyOnWeakpointHitName
@@ -26,50 +26,50 @@ Upgrades={
         RoundTo=0.1
         RoundingMode=RM_ROUND
         AllowConditionalLocMerge=0
-        },
-        {
-            UpgradeType=WEAPON_AMMO_CONSUME_RATE
-            OperationType=STACKING_MULTIPLY
-            Value=-0.0099999998
-            DamageType=DT_ANY
-            AutoType=1
-            ValidType=""
-            CheckTypeOnInstall=0
-            SymbolFilter=""
-            UpgradeObject=""
-            ValidPostures={}
-            ValidModifiers={}
-            InvalidModifiers={}
-            ValidProcTypes={}
-            OverrideLocalization=0
-            SmallerIsBetter=0
-            RoundTo=0.1
-            RoundingMode=RM_ROUND
-            AllowConditionalLocMerge=0
-        }
-    }
-    ApplyUpgradesByDefault=0
-    FusionLimit=QA_HIGH
-    ItemCompatibility=/Lotus/Weapons/Tenno/LotusLongGun
-    EnhancementTag=/Lotus/Language/1999/StatusAndAmmoEfficiencyOnWeakpointHitDesc
-    EnhancementTagLocScript={
-        Script=StatusAndAmmoEfficiencyOnWeakpointHit.lua
-        Function=GetDescriptionInfo
-        _statusChanceBase=0.050000001
-        _statusChancePerLevel=0.050000001
-        _ammoEfficiencyBase=-0.0099999998
-        _ammoEfficiencyPerLevel=-0.0099999998
-        _duration=10
-        _maxStacks=10
-    }
-    UpgradeChance=1
-    UpgradeDuration=10
-    DurationScalesWithRank=0
-    StackMode=SM_GROUP
-    MaxConditionalStacks=10
-    ConditionalUpgrades={
-        OnWeakpointHitCondition
-    }
-    HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDKBuff.png
-    RequiresSourceObject=1
-    BaseDistillPointValue=24
+    },
+{
+    UpgradeType=WEAPON_AMMO_CONSUME_RATE
+    OperationType=STACKING_MULTIPLY
+    Value=-0.0099999998
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/LotusLongGun
+EnhancementTag=/Lotus/Language/1999/StatusAndAmmoEfficiencyOnWeakpointHitDesc
+EnhancementTagLocScript={
+    Script=StatusAndAmmoEfficiencyOnWeakpointHit.lua
+    Function=GetDescriptionInfo
+    _statusChanceBase=0.050000001
+    _statusChancePerLevel=0.050000001
+    _ammoEfficiencyBase=-0.0099999998
+    _ammoEfficiencyPerLevel=-0.0099999998
+    _duration=10
+    _maxStacks=10
+}
+UpgradeChance=1
+UpgradeDuration=10
+DurationScalesWithRank=0
+StackMode=SM_GROUP
+MaxConditionalStacks=10
+ConditionalUpgrades={
+    OnWeakpointHitCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDKBuff.png
+RequiresSourceObject=1
+BaseDistillPointValue=24

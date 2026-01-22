@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Melee/MeleeAutoTargetBonus
+>/Lotus/Upgrades/Mods/PvPMods/Melee/MeleeAutoTargetBonus
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/MeleeAutoTargetBonus
@@ -7,30 +7,30 @@ ExcludeFromCodex=0
 AvailableOnPve=0
 AvailableOnPvp=1
 Upgrades={
-{
-    UpgradeType=WEAPON_FIRE_RATE
-    OperationType=STACKING_MULTIPLY
-    Value=0.050000001
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/WeaponMeleeAttackSpeed
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=WEAPON_FIRE_RATE
+        OperationType=STACKING_MULTIPLY
+        Value=0.050000001
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponMeleeAttackSpeed
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 },
 {
     UpgradeType=AVATAR_POWER_RATE
@@ -48,22 +48,22 @@ RoundingMode=RM_ROUND
     OverrideLocalization=1
     LocTag=/Lotus/Language/Upgrades/AvatarPowerRatePercentModDesc
     LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
-    Function=GetDescriptionInfo
-    _displayAsPercent={
+        Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
+        Function=GetDescriptionInfo
+        _displayAsPercent={
+            1
+        }
+    _absoluteValue={
+        0
+    }
+_maxDecimals={
     1
 }
-_absoluteValue={
-0
-}
-_maxDecimals={
-1
-}
 _addPlusses={
-0
+    0
 }
 _multiplyDown={
-1
+    1
 }
 }
 SmallerIsBetter=0
@@ -76,8 +76,8 @@ BaseDrain=QA_VERY_HIGH
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
 UnappliedScript={
-Script=/Lotus/Scripts/Mods/MeleeAutoTarget.lua
-Function=RemoveUpgrade
+    Script=/Lotus/Scripts/Mods/MeleeAutoTarget.lua
+    Function=RemoveUpgrade
 }
 UpgradeChance=1
 UpgradeDuration=5

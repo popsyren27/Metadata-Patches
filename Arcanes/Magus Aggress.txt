@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/OperatorHeavyMeleeDamageOnTransference
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/OperatorHeavyMeleeDamageOnTransference
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/OperatorHeavyMeleeDamageOnTransference
@@ -34,14 +34,14 @@ Upgrades={
                 2.5,
                 3
             }
-            _numAttacks=4
-            _cooldownTime=20
-        }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
+        _numAttacks=4
+        _cooldownTime=20
     }
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 ApplyUpgradesByDefault=0
 FusionLimit=QA_HIGH
@@ -56,8 +56,8 @@ Script={
         2.5,
         3
     }
-    _numAttacks=4
-    _cooldownTime=20
+_numAttacks=4
+_cooldownTime=20
 }
 SubUpgrades={
     OperatorHeavyMeleeDamageOnTransferenceSubUpgrade
@@ -69,4 +69,3 @@ ConditionalUpgrades={
 }
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCQBuff.png
 TransferenceSupport=TS_OPERATOR_ONLY
-BaseDistillPointValue=18

@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Sets/Synth/SentinelSynthFibersMod
+>/Lotus/Upgrades/Mods/Sets/Synth/SentinelSynthFibersMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/SentinelSynthFibersMod
@@ -7,37 +7,37 @@ StatusDescTag=/Lotus/Language/Buffs/SynthFiberBuffDesc
 Icon=/Lotus/Interface/Cards/Images/Sets/Synth/SentinelSynthFibersMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/SynthFiberSentinelModDesc
-    LocKeyWordScript={
-    Script=/Lotus/Types/Sentinels/SentinelAbilities/SynthFibers.lua
-    Function=GetDescription
-    _armorIncreasePerLevel={
-    0.25,
-    0.5,
-    0.75,
-    1
-}
-_durationPerLevel={
-3,
-6,
-9,
-12
-}
-_armorFx=""
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/SynthFiberSentinelModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/SynthFibers.lua
+            Function=GetDescription
+            _armorIncreasePerLevel={
+                0.25,
+                0.5,
+                0.75,
+                1
+            }
+        _durationPerLevel={
+            3,
+            6,
+            9,
+            12
+        }
+    _armorFx=""
 }
 SmallerIsBetter=0
 RoundTo=0.1
@@ -50,43 +50,43 @@ FusionLimit=QA_MEDIUM
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/SynthFiberBuffIcon.png
 ModSet=SynthSetMod
 Ability={
-Script={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/SynthFibers.lua
-Function=ActivateAbility
-_armorIncreasePerLevel={
-0.25,
-0.5,
-0.75,
-1
-}
-_durationPerLevel={
-3,
-6,
-9,
-12
-}
+    Script={
+        Script=/Lotus/Types/Sentinels/SentinelAbilities/SynthFibers.lua
+        Function=ActivateAbility
+        _armorIncreasePerLevel={
+            0.25,
+            0.5,
+            0.75,
+            1
+        }
+    _durationPerLevel={
+        3,
+        6,
+        9,
+        12
+    }
 _armorFx=""
 }
 AbilityEvents={
-{
-tag=OwnerPickup
-eventType=ET_ON_PICKUP
-scriptInstance={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/SynthFibers.lua
-Function=OnPickup
-_armorIncreasePerLevel={
-0.25,
-0.5,
-0.75,
-1
-}
-_durationPerLevel={
-3,
-6,
-9,
-12
-}
-_armorFx=/Lotus/Objects/Gameplay/Resources/ResourcePickupGlow
+    {
+        tag=OwnerPickup
+        eventType=ET_ON_PICKUP
+        scriptInstance={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/SynthFibers.lua
+            Function=OnPickup
+            _armorIncreasePerLevel={
+                0.25,
+                0.5,
+                0.75,
+                1
+            }
+        _durationPerLevel={
+            3,
+            6,
+            9,
+            12
+        }
+    _armorFx=/Lotus/Objects/Gameplay/Resources/ResourcePickupGlow
 }
 }
 }

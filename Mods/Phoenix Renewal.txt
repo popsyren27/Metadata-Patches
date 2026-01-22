@@ -1,40 +1,41 @@
-/Lotus/Powersuits/Paladin/RegenerationAugmentCard
+>/Lotus/Powersuits/Paladin/RegenerationAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/RegenerationAbilityAugment1Name
 Icon=/Lotus/Interface/Cards/Images/AbilityAugments/OberonRenewalAugment1.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/RegenerationAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/RegenerationAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/Regeneration.lua
-    Function=GetAugmentDescriptionInfo
-    _activateAnim=""
-    _regenEffect=""
-    _castEffect=""
-    _augmentOneActivatedEffect=""
-    _augmentOneActivatedSound=""
-    _armourBuffType=""
-    _armourBuffTimerType=""
-    _rangeDeco=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/RegenerationAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/RegenerationAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/Regeneration.lua
+            Function=GetAugmentDescriptionInfo
+            _activateAnim=""
+            _regenEffect=""
+            _activeEffect=""
+            _castEffect=""
+            _augmentOneActivatedEffect=""
+            _augmentOneActivatedSound=""
+            _armourBuffType=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_POWER

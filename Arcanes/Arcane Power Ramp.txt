@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/AbilityStrengthOnCast
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/AbilityStrengthOnCast
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/AbilityStrengthOnCast
@@ -34,13 +34,13 @@ Upgrades={
                 0.075000003,
                 0.090000004
             }
-            _maxStacks=4
-        }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
+        _maxStacks=4
     }
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 ExtraUpgrades={
     {
@@ -62,14 +62,14 @@ ExtraUpgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=0
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 ApplyUpgradesByDefault=0
 FusionLimit=QA_HIGH
@@ -84,7 +84,7 @@ Script={
         0.075000003,
         0.090000004
     }
-    _maxStacks=4
+_maxStacks=4
 }
 UpgradeChance=1
 DurationScalesWithRank=0

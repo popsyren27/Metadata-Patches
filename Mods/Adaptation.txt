@@ -1,63 +1,60 @@
-/Lotus/Upgrades/Mods/Warframe/AvatarResistanceOnDamageMod
+>/Lotus/Upgrades/Mods/Nemesis/AvatarSentientArmourMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/AvatarResistanceOnDamageMod
-LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/AvatarMods/AvatarResistanceOnDamageMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Mods/ResistanceOnDamage
-    LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/ResistanceOnDamage.lua
-    Function=GetDescription
-    _resistancePerLevel={
-    0.050000001,
-    0.055,
-    0.059999999,
-    0.064999998,
-    0.07,
-    0.075000003,
-    0.079999998,
-    0.085000001,
-    0.090000004,
-    0.094999999,
-    0.1
-}
-_duration={
-10,
-11,
-12,
-13,
-14,
-15,
-16,
-17,
-18,
-19,
-20
-}
-_damageTypesForIcons={}
-_maxResistance=0.89999998
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Mods/ResistanceOnDamage
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/ResistanceOnDamage.lua
+            Function=GetDescription
+            _resistancePerLevel={
+                0.050000001,
+                0.055,
+                0.059999999,
+                0.064999998,
+                0.07,
+                0.075000003,
+                0.079999998,
+                0.085000001,
+                0.090000004,
+                0.094999999,
+                0.1
+            }
+        _duration={
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+        }
+    _damageTypesForIcons={}
+    _maxResistance=0.89999998
 }
 SmallerIsBetter=0
 RoundTo=0.1
 RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
 }
 }
 ApplyUpgradesByDefault=0
@@ -65,54 +62,55 @@ ArtifactPolarity=AP_DEFENSE
 FusionLimit=QA_VERY_HIGH
 ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
 Script={
-Script=/Lotus/Scripts/Mods/ResistanceOnDamage.lua
-Function=ApplyUpgrade
-_resistancePerLevel={
-0.050000001,
-0.055,
-0.059999999,
-0.064999998,
-0.07,
-0.075000003,
-0.079999998,
-0.085000001,
-0.090000004,
-0.094999999,
-0.1
-}
+    Script=/Lotus/Scripts/Mods/ResistanceOnDamage.lua
+    Function=ApplyUpgrade
+    _resistancePerLevel={
+        0.050000001,
+        0.055,
+        0.059999999,
+        0.064999998,
+        0.07,
+        0.075000003,
+        0.079999998,
+        0.085000001,
+        0.090000004,
+        0.094999999,
+        0.1
+    }
 _duration={
-10,
-11,
-12,
-13,
-14,
-15,
-16,
-17,
-18,
-19,
-20
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
 }
 _damageTypesForIcons={
-ImpactResistanceOnDamage,
-PunctureResistanceOnDamage,
-SlashResistanceOnDamage,
-FireResistanceOnDamage,
-FreezeResistanceOnDamage,
-ElectricityResistanceOnDamage,
-PoisonResistanceOnDamage,
-ExplosionResistanceOnDamage,
-RadiationResistanceOnDamage,
-GasResistanceOnDamage,
-MagneticResistanceOnDamage,
-ViralResistanceOnDamage,
-CorrosiveResistanceOnDamage,
-SentientResistanceOnDamage
+    /Lotus/Upgrades/Mods/Warframe/ImpactResistanceOnDamage,
+    /Lotus/Upgrades/Mods/Warframe/PunctureResistanceOnDamage,
+    /Lotus/Upgrades/Mods/Warframe/SlashResistanceOnDamage,
+    /Lotus/Upgrades/Mods/Warframe/FireResistanceOnDamage,
+    /Lotus/Upgrades/Mods/Warframe/FreezeResistanceOnDamage,
+    /Lotus/Upgrades/Mods/Warframe/ElectricityResistanceOnDamage,
+    /Lotus/Upgrades/Mods/Warframe/PoisonResistanceOnDamage,
+    /Lotus/Upgrades/Mods/Warframe/ExplosionResistanceOnDamage,
+    /Lotus/Upgrades/Mods/Warframe/RadiationResistanceOnDamage,
+    /Lotus/Upgrades/Mods/Warframe/GasResistanceOnDamage,
+    /Lotus/Upgrades/Mods/Warframe/MagneticResistanceOnDamage,
+    /Lotus/Upgrades/Mods/Warframe/ViralResistanceOnDamage,
+    /Lotus/Upgrades/Mods/Warframe/CorrosiveResistanceOnDamage,
+    /Lotus/Upgrades/Mods/Warframe/SentientResistanceOnDamage
 }
 _maxResistance=0.89999998
 }
 UpgradeChance=1
 PlayEffect=0
 ConditionalUpgrades={
-/Lotus/Upgrades/CosmeticEnhancers/Defensive/OnDamageCondition
+    /Lotus/Upgrades/CosmeticEnhancers/Defensive/OnDamageCondition
 }
+HudBuffIcon=/Lotus/Interface/Icons/SentientFactionIcon.png

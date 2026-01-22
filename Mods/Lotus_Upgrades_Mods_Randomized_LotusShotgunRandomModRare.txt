@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Randomized/LotusShotgunRandomModRare
-patch not applied (yet)

@@ -1,47 +1,47 @@
-/Lotus/Powersuits/Loki/DecoyAugmentTwoCard
+>/Lotus/Powersuits/Loki/DecoyAugmentTwoCard
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/DecoyAbilityAugment2Name
 Icon=/Lotus/Interface/Cards/Images/AbilityAugments/LokiDecoyTwoAugment.png
 RectangleIcon=0
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_TWO
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/DecoyAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/DecoyAbilityAugment2Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/DecoyAbility.lua
-    Function=GetAugmentDescriptionInfo
-    _activateAnim=""
-    _decoyAgentType=""
-    _decoyAvatarType=""
-    _decoyWeaponType=""
-    _decoyPrimeWeaponType=""
-    _enemyType=""
-    _tennoAvatarType=""
-    _decoyHelmDeco=""
-    _decoyMaterial=""
-    _deluxeSkin=""
-    _deluxeMaterial=""
-    _augmentCooldownBuff=""
-    _pvpAugmentOneBeam=""
-    _drainEffect=""
-    _materialProjectorType=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=AUGMENT_TWO
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/DecoyAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/DecoyAbilityAugment2Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/DecoyAbility.lua
+            Function=GetAugmentDescriptionInfo
+            _activateAnim=""
+            _decoyAgentType=""
+            _decoyAvatarType=""
+            _decoyWeaponType=""
+            _decoyPrimeWeaponType=""
+            _enemyType=""
+            _tennoAvatarType=""
+            _decoyHelmDeco=""
+            _decoyMaterial=""
+            _deluxeSkin=""
+            _deluxeMaterial=""
+            _augmentCooldownBuff=""
+            _pvpAugmentOneBeam=""
+            _drainEffect=""
+            _materialProjectorType=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_POWER

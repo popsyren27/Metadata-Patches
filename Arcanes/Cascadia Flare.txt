@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryDamageOnHeatProc
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryDamageOnHeatProc
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/SecondaryDamageOnHeatProc
@@ -12,7 +12,7 @@ Upgrades={
         OperationType=STACKING_MULTIPLY
         Value=0.02
         DamageType=DT_ANY
-        AutoType=0
+        AutoType=1
         ValidType=/Lotus/Weapons/Tenno/Pistol/LotusPistol
         CheckTypeOnInstall=0
         SymbolFilter=""
@@ -26,14 +26,14 @@ Upgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=1
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.0099999998
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.0099999998
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 ApplyUpgradesByDefault=0
 FusionLimit=QA_HIGH

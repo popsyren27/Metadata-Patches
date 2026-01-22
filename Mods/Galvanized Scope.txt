@@ -1,27 +1,27 @@
-/Lotus/Upgrades/Mods/Rifle/Event/CritChanceWhileAimingRifleSPMod
+>/Lotus/Upgrades/Mods/Rifle/Event/CritChanceWhileAimingRifleSPMod
 LocalizeTag=/Lotus/Language/Mods/CritChanceWhileAimingRifleSPMod
 Icon=/Lotus/Interface/Cards/Images/Rifle/Galvanized/CritChanceWhileAimingRifleSPMod.png
 Upgrades={
-{
-    UpgradeType=WEAPON_CRIT_CHANCE
-    OperationType=STACKING_MULTIPLY
-    Value=0.1091
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={
-    PM_AIM
-}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/CritChanceWhileAimingModDesc
-LocKeyWordScript={
-Script=""
-}
+    {
+        UpgradeType=WEAPON_CRIT_CHANCE
+        OperationType=STACKING_MULTIPLY
+        Value=0.1091
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={
+            PM_AIM
+        }
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/CritChanceWhileAimingModDesc
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -32,7 +32,7 @@ RoundingMode=RM_ROUND
 }
 FusionLimit=QA_VERY_HIGH
 SubUpgrades={
-CritChanceWhileAimingRifleSubMod
+    CritChanceWhileAimingRifleSubMod
 }
 MultiBonusLoc=1
 IsGalvanized=1

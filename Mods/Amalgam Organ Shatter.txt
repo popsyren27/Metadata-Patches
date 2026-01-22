@@ -1,34 +1,34 @@
-/Lotus/Upgrades/Mods/DualSource/Melee/CritDamageChargeSpeedMod
+>/Lotus/Upgrades/Mods/DualSource/Melee/CritDamageChargeSpeedMod
 Rarity=RARE
 LocalizeTag=/Lotus/Language/Mods/SwiftShatterMod
 Icon=/Lotus/Interface/Cards/Images/DualSource/SwiftShatter.png
 TradeCapability=RO_NEVER
 Upgrades={
-{
-    UpgradeType=WEAPON_CRIT_DAMAGE
-    OperationType=STACKING_MULTIPLY
-    Value=0.141
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/WeaponCritDamage
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=WEAPON_CRIT_DAMAGE
+        OperationType=STACKING_MULTIPLY
+        Value=0.141
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponCritDamage
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 },
 {
     UpgradeType=WEAPON_MELEE_HEAVY_CHARGE_SPEED
@@ -46,8 +46,8 @@ AllowConditionalLocMerge=0
     OverrideLocalization=1
     LocTag=/Lotus/Language/Upgrades/WeaponHeavyChargeSpeed
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -59,9 +59,9 @@ AllowConditionalLocMerge=0
 }
 BaseDrain=QA_HIGH
 IncompatibilityTags={
-SENTINEL_WEAPON,
-HOUND_WEAPON,
-POWER_WEAPON_LITE
+    SENTINEL_WEAPON,
+    HOUND_WEAPON,
+    POWER_WEAPON_LITE
 }
 IncludeInBoosterPack=0
 IsAmalgam=1

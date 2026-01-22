@@ -1,43 +1,43 @@
-/Lotus/Powersuits/Loki/SwitchAugmentCard
+>/Lotus/Powersuits/Loki/SwitchAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/SwitchTeleportAbilityAugment1Name
 Icon=/Lotus/Interface/Cards/Images/AbilityAugments/LokiSwitchAugment1.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/SwitchTeleportAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/SwitchTeleportAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/SwitchTeleportAbility.lua
-    Function=GetAugmentDescriptionInfo
-    _teleportSound=""
-    _invulnEffect=""
-    _endTriggerTag=ExtractionTrigger
-    _DistanceIfFail=0.60000002
-    _deluxeBeam=""
-    _deluxeSkin=""
-    _deluxeProj=""
-    _activateAnim=""
-    _invalidTargetTypes={}
-    _npcEvaluationScore=1
-    _fightingGameDamage=20
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/SwitchTeleportAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/SwitchTeleportAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/SwitchTeleportAbility.lua
+            Function=GetAugmentDescriptionInfo
+            _teleportSound=""
+            _invulnEffect=""
+            _endTriggerTag=ExtractionTrigger
+            _DistanceIfFail=0.60000002
+            _deluxeBeam=""
+            _deluxeSkin=""
+            _deluxeProj=""
+            _activateAnim=""
+            _invalidTargetTypes={}
+            _npcEvaluationScore=1
+            _fightingGameDamage=20
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_POWER

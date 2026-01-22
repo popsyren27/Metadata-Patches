@@ -1,19 +1,1218 @@
-/Lotus/Upgrades/Mods/Randomized/RawArchgunRandomMod
+>/Lotus/Upgrades/Mods/Randomized/LotusArchgunRandomModRare
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Omega/OmegaArchgunMod
 LocalizeDescTag=""
-CodexSecret=0
 ExcludeFromCodex=0
 SearchTags={
-/Lotus/Language/Items/RifleCategoryName
+    /Lotus/Language/Items/RifleCategoryName
 }
 ItemCompatibility=/Lotus/Weapons/Tenno/Archwing/Primary/ArchGun
-IncompatibilityTags={
-SENTINEL_WEAPON
+RawItemType=RawArchgunRandomMod
+AvailableChallenges={
+    {
+        Challenge=/Lotus/Types/Challenges/RandomizedKill
+        RequiredCountRange={50,70}
+        Complications={
+            {
+                Weight=1
+                Multiplier=1
+                Complication=/Lotus/Types/Challenges/Complications/ResetOnDamageTaken
+            },
+        {
+            Weight=1
+            Multiplier=1
+            Complication=/Lotus/Types/Challenges/Complications/ResetOnDowned
+        },
+    {
+        Weight=1
+        Multiplier=2
+        Complication=/Lotus/Types/Challenges/Complications/ResetOnDisrupt
+    },
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnProc
+},
+{
+    Weight=1
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnAllyDowned
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedDamageDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedHealthDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedShieldDebuffKey
+},
+{
+    Weight=0.25
+    Multiplier=1
+    Complication=/Lotus/Types/Challenges/Complications/EquippedSpeedDebuffKey
+},
+{
+    Weight=0.15000001
+    Multiplier=2
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnGearHealthRestores
+},
+{
+    Weight=0.15000001
+    Multiplier=2
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnGearShieldRestores
+},
+{
+    Weight=0.15000001
+    Multiplier=2
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnGearAmmoRestores
+},
+{
+    Weight=0.15000001
+    Multiplier=2
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnGearEnergyRestores
+},
+{
+    Weight=1
+    Multiplier=5
+    Complication=/Lotus/Types/Challenges/Complications/ResetOnNewDay
 }
-OmegaUpgradeTypes={
-LotusArchgunRandomModRare
 }
-OmegaUpgradeWeights={
-1
+ComplicationChance=1
+}
+}
+UpgradeEntries={
+    {
+        Tag=WeaponArmorPiercingDamageMod
+        Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingRifle/ArchwingDualStatPunctureStatusRifleMod.png
+        Upgrades={
+            {
+                Upgrade={
+                    UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                    OperationType=STACKING_MULTIPLY
+                    Value=0.0099999998
+                    DamageType=DT_PUNCTURE
+                    AutoType=1
+                    ValidType=""
+                    CheckTypeOnInstall=0
+                    SymbolFilter=""
+                    UpgradeObject=""
+                    ValidPostures={}
+                    ValidModifiers={}
+                    InvalidModifiers={}
+                    ValidProcTypes={}
+                }
+            Schema={
+                OverrideLocalization=1
+                LocTag=/Lotus/Language/Upgrades/WeaponPunctureDamage
+                LocKeyWordScript={
+                    Script=""
+                }
+            DisplayAsMultiplier=0
+            DisplayAsPercent=1
+            ReverseValueSymbol=0
+            SmallerIsBetter=0
+            RoundTo=0.1
+            RoundingMode=RM_ROUND
+            AllowConditionalLocMerge=0
+        }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    DamageTypes
+}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/PuncturePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/PunctureSuffix
+},
+{
+    Tag=WeaponCritChanceMod
+    Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingRifle/ArchwingRifleCritChanceMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_CRIT_CHANCE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0111
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponCritChance
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/CritChancePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/CritChanceSuffix
+},
+{
+    Tag=WeaponCritDamageMod
+    Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingRifle/ArchwingRifleCritDamageMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_CRIT_DAMAGE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0088999998
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponCritDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/CritDamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/CritDamageSuffix
+},
+{
+    Tag=WeaponElectricityDamageMod
+    Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingRifle/ArchwingWeaponElectricityDamageModRifle.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.0133
+                DamageType=DT_ELECTRICITY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponElectricityDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/ElectricityPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ElectricitySuffix
+},
+{
+    Tag=WeaponFireDamageMod
+    Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingRifle/ArchwingWeaponFireDamageModRifle.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.0133
+                DamageType=DT_FIRE
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFireDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/FirePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/FireSuffix
+},
+{
+    Tag=WeaponFireRateMod
+    Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingRifle/ArchwingRifleFireRateMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_FIRE_RATE
+                OperationType=STACKING_MULTIPLY
+                Value=0.00667
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFireRate
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/FireRatePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/FireRateSuffix
+},
+{
+    Tag=WeaponFreezeDamageMod
+    Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingRifle/ArchwingWeaponFreezeDamageModRifle.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.0133
+                DamageType=DT_FREEZE
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFreezeDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/FrostPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/FrostSuffix
+},
+{
+    Tag=WeaponImpactDamageMod
+    Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingRifle/ArchwingDualStatImpactStatusRifleMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=STACKING_MULTIPLY
+                Value=0.0099999998
+                DamageType=DT_IMPACT
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponImpactDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    DamageTypes
+}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ImpactPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ImpactSuffix
+},
+{
+    Tag=WeaponProcTimeMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/WeaponProcTimeRifleMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PROC_TIME
+                OperationType=STACKING_MULTIPLY
+                Value=0.01111
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponProcTimeModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ProcTimePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ProcTimeSuffix
+},
+{
+    Tag=WeaponSlashDamageMod
+    Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingRifle/ArchwingDualStatSlashStatusRifleMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=STACKING_MULTIPLY
+                Value=0.0099999998
+                DamageType=DT_SLASH
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponSlashDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    DamageTypes
+}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/SlashPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/SlashSuffix
+},
+{
+    Tag=WeaponStunChanceMod
+    Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingRifle/ArchwingStatusChanceModRifle.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PROC_CHANCE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0066999998
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/StatusChance
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/StatusChancePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/StatusChanceSuffix
+},
+{
+    Tag=WeaponToxinDamageMod
+    Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingRifle/ArchwingWeaponToxinDamageModRifle.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.0133
+                DamageType=DT_POISON
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponPoisonDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/ToxinPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ToxinSuffix
+},
+{
+    Tag=WeaponAmmoMaxMod
+    Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingRifle/ArchwingRifleAmmoMaxMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_AMMO_MAX
+                OperationType=STACKING_MULTIPLY
+                Value=0.0111
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponMaxAmmoModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/MaxAmmoPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/MaxAmmoSuffix
+},
+{
+    Tag=WeaponClipMaxMod
+    Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingRifle/ArchwingRifleClipMaxMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_CLIP_MAX
+                OperationType=STACKING_MULTIPLY
+                Value=0.0066999998
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponClipMaxModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ClipSizePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ClipSizeSuffix
+},
+{
+    Tag=WeaponDamageAmountMod
+    Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingRifle/ArchwingRifleDamageAmountMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_DAMAGE_AMOUNT
+                OperationType=STACKING_MULTIPLY
+                Value=0.0111
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponDamageModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/DamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/DamageSuffix
+},
+{
+    Tag=WeaponFireIterationsMod
+    Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingRifle/ArchwingRifleFireIterationsMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_FIRE_ITERATIONS
+                OperationType=STACKING_MULTIPLY
+                Value=0.0066999998
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponMultishotModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/MultishotPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/MultishotSuffix
+},
+{
+    Tag=WeaponPunctureDepthMod
+    Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingRifle/ArchwingRiflePunchthroughMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PUNCTURE_DEPTH
+                OperationType=ADD
+                Value=0.029999999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponPunctureDepthModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/PunchThroughPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/PunchThroughSuffix
+},
+{
+    Tag=WeaponRecoilReductionMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RifleRecoilReductionMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_RECOIL
+                OperationType=STACKING_MULTIPLY
+                Value=-0.0099999998
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponRecoilModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/RecoilPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/RecoilSuffix
+},
+{
+    Tag=WeaponReloadSpeedMod
+    Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingRifle/ArchwingRifleReloadSpeedMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_RELOAD_SPEED
+                OperationType=STACKING_MULTIPLY
+                Value=0.0111
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponReloadSpeedModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ReloadSpeedPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ReloadSpeedSuffix
+},
+{
+    Tag=WeaponFactionDamageCorpus
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RifleDamageCorpus.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=GAMEPLAY_FACTION_DAMAGE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0049999999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=Corpus
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFactionDamageCorpusDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=1
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.0099999998
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/CorpusDamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/CorpusDamageSuffix
+},
+{
+    Tag=WeaponFactionDamageGrineer
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RifleDamageGrineer.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=GAMEPLAY_FACTION_DAMAGE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0049999999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=Grineer
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFactionDamageGrineerDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=1
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.0099999998
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/GrineerDamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/GrineerDamageSuffix
+},
+{
+    Tag=WeaponZoomFovMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RifleZoomMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_ZOOM
+                OperationType=STACKING_MULTIPLY
+                Value=0.006666
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponZoomModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ZoomPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ZoomSuffix
+}
+}
+ItemCompatibilities={
+    {
+        ItemType=/Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/NechroTech/ExaltedArtilleryWeapon
+        Rarity=NONE
+        Attenuation=0.5
+    },
+{
+    ItemType=/Lotus/Weapons/Grineer/HeavyWeapons/GrnHeavyGrenadeLauncher
+    Rarity=COMMON
+    Attenuation=0.94999999
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/KuvaLich/HeavyWeapons/Grattler/AiKuvaGrattler
+    Rarity=NONE
+    Attenuation=0.69999999
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/KuvaLich/HeavyWeapons/Grattler/KuvaGrattler
+    Rarity=NONE
+    Attenuation=0.69999999
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Archwing/Primary/ArchBurstGun/ArchBurstGun
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Archwing/Primary/ArchLongRifle/ArchLongRifle
+    Rarity=COMMON
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Archwing/Primary/ArchwingHeavyPistols/Prisma/PrismaArchHeavyPistols
+    Rarity=NONE
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Archwing/Primary/ArchwingHeavyPistols/ArchHeavyPistols
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Archwing/Primary/FoldingMachineGun/ArchMachineGun
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Archwing/Primary/FoldingMachineGun/ArchMachineGunVandal
+    Rarity=NONE
+    Attenuation=0.94999999
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Archwing/Primary/LaunchGrenade/ArchCannon
+    Rarity=COMMON
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Archwing/Primary/NokkoArchGun/NokkoArchGun
+    Rarity=COMMON
+    Attenuation=0.60000002
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Archwing/Primary/PrimeCorvas/PrimeCorvasWeapon
+    Rarity=NONE
+    Attenuation=0.94999999
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Archwing/Primary/PrimeLarkspur/PrimeLarkspurWeapon
+    Rarity=NONE
+    Attenuation=0.80000001
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Archwing/Primary/Railgun/ArchRailgun
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Archwing/Primary/RepurposedGrineerAntiAircraftGun/ArchGRNAAGun
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Archwing/Primary/RocketArtillery/PrismaFluctus/PrismaFluctusWeapon
+    Rarity=NONE
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Archwing/Primary/RocketArtillery/ArchRocketCrossbow
+    Rarity=COMMON
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Archwing/Primary/ThanoTechArchGun/ThanoTechArchGun
+    Rarity=COMMON
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Archwing/Primary/ThanoTechArchLongGun/ThanoTechLongGun
+    Rarity=COMMON
+    Attenuation=0.5
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Archwing/Primary/ThanoTechGrenadeLaunch/ThanoTechGrenadeLauncher
+    Rarity=COMMON
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Archwing/Primary/TnConcreteArchgun/TnConcreteArchgunWeapon
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Archwing/Primary/TnShieldframeArchGun/TnShieldFrameArchGun
+    Rarity=COMMON
+    Attenuation=1.05
+}
 }

@@ -1,7 +1,0 @@
-/Lotus/Types/Items/Deimos/WoundedInfestedPredatorRareRewardItem
-MarketMode=MM_HIDDEN
-LocalizeTag=/Lotus/Language/InfestedMicroplanet/InfestedPredatorRareName
-LocalizeDescTag=/Lotus/Language/InfestedMicroplanet/GenericWoundedAnimalDesc
-Icon=/Lotus/Interface/Icons/Pets/Theme/WoundedInfestedPredatorRare.png
-UseAlternateItemDisplay=1
-PetPowerSuitType=/Lotus/Types/Friendly/Pets/CreaturePets/MedjayPredatorKubrowPetPowerSuit

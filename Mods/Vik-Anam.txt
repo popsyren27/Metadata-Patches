@@ -1,0 +1,43 @@
+>/Lotus/Upgrades/Mods/Antiques/AmmoSchool
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Upgrades/AntiqueAmmoSchool
+Icon=/Lotus/Interface/Cards/Images/AntiqueMods/OrokinImageA.png
+ExcludeFromCodex=0
+SearchTags={
+    /Lotus/Language/TennoWay/Zenurik
+}
+Upgrades={
+    {
+        UpgradeType=WEAPON_AMMO_MAX
+        OperationType=STACKING_MULTIPLY
+        Value=0.050000001
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=OperatorAmpAmmo
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/AntiqueAmmoSchoolDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
+}
+AssociatedSchool=AP_POWER
+SubUpgrades={
+    BonusAntiqueUpgradeEnergyRegenMadurai
+}
+UpgradeChance=1

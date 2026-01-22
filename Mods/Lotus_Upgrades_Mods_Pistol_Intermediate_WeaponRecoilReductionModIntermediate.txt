@@ -1,2 +1,3 @@
-/Lotus/Upgrades/Mods/Pistol/Intermediate/WeaponRecoilReductionModIntermediate
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Pistol/Intermediate/WeaponRecoilReductionModIntermediate
+FusionLimit=QA_HIGH
+IncludeInBoosterPack=0

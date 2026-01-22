@@ -1,35 +1,35 @@
-/Lotus/Types/Sentinels/SentinelPrecepts/GhostAugmentCard
+>/Lotus/Types/Sentinels/SentinelPrecepts/GhostAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/GhostAbilityAugment1Name
 Icon=/Lotus/Interface/Cards/Images/Pets/GhostAugmentCard.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=Ghost
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Items/GhostAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Types/Sentinels/SentinelAbilities/GhostAbility.lua
-    Function=GetAugmentDescriptionInfo
-    _ghostCastFX=""
-    _castAnim=""
-    _creatorBurstEffect=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=Ghost
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Items/GhostAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/GhostAbility.lua
+            Function=GetAugmentDescriptionInfo
+            _ghostCastFX=""
+            _castAnim=""
+            _creatorBurstEffect=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_PRECEPT

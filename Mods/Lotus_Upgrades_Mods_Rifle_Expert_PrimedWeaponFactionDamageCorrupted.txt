@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Rifle/Expert/PrimedWeaponFactionDamageCorrupted
-patch not applied (yet)

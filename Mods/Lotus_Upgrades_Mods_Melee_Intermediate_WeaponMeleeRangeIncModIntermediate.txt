@@ -1,2 +1,3 @@
-/Lotus/Upgrades/Mods/Melee/Intermediate/WeaponMeleeRangeIncModIntermediate
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Melee/Intermediate/WeaponMeleeRangeIncModIntermediate
+FusionLimit=QA_HIGH
+IncludeInBoosterPack=0

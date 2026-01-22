@@ -1,43 +1,43 @@
-/Lotus/Powersuits/Magician/BanishAugmentCard
+>/Lotus/Powersuits/Magician/BanishAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/BanishAbilityAugment1Name
 Icon=/Lotus/Interface/Cards/Images/AbilityAugments/LimboBanishAugment.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/BanishAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/BanishAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/Banish.lua
-    Function=GetAugmentDescriptionInfo
-    _castEffect=""
-    _burstEffect=""
-    _beamFlareType=""
-    _enemyBurstEffect=""
-    _targetHitDecoEffect=""
-    _ignoreTypeList={}
-    _helperType=""
-    _throwEvent=ThrowAbility
-    _throwDoneEvent=PreFireDone
-    _enterExitRiftDamageAmount=0
-    _enterExitRiftDamageType=DT_SLASH
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/BanishAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/BanishAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/Banish.lua
+            Function=GetAugmentDescriptionInfo
+            _castEffect=""
+            _burstEffect=""
+            _beamFlareType=""
+            _enemyBurstEffect=""
+            _targetHitDecoEffect=""
+            _ignoreTypeList={}
+            _helperType=""
+            _throwEvent=ThrowAbility
+            _throwDoneEvent=PreFireDone
+            _enterExitRiftDamageAmount=0
+            _enterExitRiftDamageType=DT_SLASH
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_POWER

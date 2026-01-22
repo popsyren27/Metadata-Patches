@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Rifle/Expert/WeaponIncreaseRadialExplosionModExpert
-patch not applied (yet)

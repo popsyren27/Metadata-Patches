@@ -1,34 +1,34 @@
-/Lotus/Upgrades/Mods/Warframe/DualStat/VigorMod
+>/Lotus/Upgrades/Mods/Warframe/DualStat/VigorMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/WarframeModVigor
 Icon=/Lotus/Interface/Cards/Images/AvatarMods/Vigor.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_SHIELD_MAX
-    OperationType=STACKING_MULTIPLY
-    Value=0.083329998
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/AvatarShieldMaxModDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_SHIELD_MAX
+        OperationType=STACKING_MULTIPLY
+        Value=0.083329998
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/AvatarShieldMaxModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=1
+    RoundingMode=RM_ROUND
 },
 {
     UpgradeType=AVATAR_HEALTH_MAX
@@ -46,8 +46,8 @@ RoundingMode=RM_ROUND
     OverrideLocalization=1
     LocTag=/Lotus/Language/Upgrades/AvatarHealthMax
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0

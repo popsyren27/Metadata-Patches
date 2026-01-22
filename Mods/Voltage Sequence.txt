@@ -1,35 +1,35 @@
-/Lotus/Upgrades/Mods/Syndicate/LankaMod
+>/Lotus/Upgrades/Mods/Syndicate/LankaMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/SyndicateRewards/LankaMod
 Icon=/Lotus/Interface/Cards/Images/Syndicate/Lanka.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/SyndicateRewards/LankaModDesc
-    LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/LankaCreateArcTrap.lua
-    Function=GetDesc
-    _trapType=""
-    _triggerType=""
-    _beamType=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/SyndicateRewards/LankaModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/LankaCreateArcTrap.lua
+            Function=GetDesc
+            _trapType=""
+            _triggerType=""
+            _beamType=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 },
 {
     UpgradeType=WEAPON_SYNDICATE_POWER
@@ -55,22 +55,22 @@ BaseDrain=QA_MEDIUM
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/ClanTech/Energy/Railgun
 IncompatibilityTags={
-POWER_WEAPON
+    POWER_WEAPON
 }
 Script={
-Script=/Lotus/Scripts/Mods/LankaCreateArcTrap.lua
-Function=Applied
-_trapType=Lanka/LankaArcTrapDeco
-_triggerType=""
-_beamType=""
+    Script=/Lotus/Scripts/Mods/LankaCreateArcTrap.lua
+    Function=Applied
+    _trapType=Lanka/LankaArcTrapDeco
+    _triggerType=""
+    _beamType=""
 }
 UnappliedScript={
-Script=/Lotus/Scripts/Mods/LankaCreateArcTrap.lua
-Function=Unapplied
-_trapType=""
-_triggerType=""
-_beamType=""
+    Script=/Lotus/Scripts/Mods/LankaCreateArcTrap.lua
+    Function=Unapplied
+    _trapType=""
+    _triggerType=""
+    _beamType=""
 }
 TipTags={
-SEQUENCE
+    SEQUENCE
 }

@@ -1,0 +1,66 @@
+>/Lotus/Upgrades/CosmeticEnhancers/Defensive/MaxDPSTakenForArmour
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/MaxDPSTakenForArmourName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Arcanes/MaxDPSTakenForArmourBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionEC.png
+ExcludeFromCodex=0
+ExtraUpgrades={
+    {
+        UpgradeType=GAMEPLAY_FREE_REVIVE_COUNT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerBonusRevive
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
+}
+FusionLimit=QA_HIGH
+Script={
+    Script=MaxDPSTakenForArmour.lua
+    Function=ApplyUpgrade
+    _dpsCapBase=750
+    _dpsCapPerLevel=-50
+    _armourThresholdMin=700
+}
+UnappliedScript={
+    Script=MaxDPSTakenForArmour.lua
+    Function=UnapplyUpgrade
+    _dpsCapBase=0
+    _dpsCapPerLevel=0
+    _armourThresholdMin=0
+}
+SubUpgrades={
+    MaxDPSTakenForArmourSub
+}
+EnhancementTag=/Lotus/Language/Arcanes/MaxDPSTakenForArmourDesc
+EnhancementTagLocScript={
+    Script=MaxDPSTakenForArmour.lua
+    Function=GetDescriptionInfo
+    _dpsCapBase=750
+    _dpsCapPerLevel=-50
+    _armourThresholdMin=700
+}
+UpgradeChance=1
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionECBuff.png
+BaseDistillPointValue=24

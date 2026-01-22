@@ -1,0 +1,27 @@
+>/Lotus/Upgrades/CosmeticEnhancers/Peculiars/DissolveEnemyMod
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/PerculiarDissolveEnemyMod
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Cards/Images/Perculiars/DissolveEnemyMod.png
+ExcludeFromCodex=0
+TradeCapability=RO_ALWAYS
+ApplyUpgradesByDefault=0
+ArtifactPolarity=AP_TACTIC
+ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
+Script={
+    Script=DissolveEnemyMod.lua
+    Function=OnFinisher
+    _dissolveFX=/Lotus/Fx/Gameplay/Mods/Peculiar/DissolveEnemy
+    _dissolveSound=/Lotus/Sounds/Mods/Peculiar/Dissolve/PeculiarModDissolve
+}
+EnhancementTag=/Lotus/Language/Upgrades/PerculiarDissolveEnemyModDesc
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=0.5
+UpgradeChanceScalePerRank=0.1
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Offensive/OnFinisherCondition
+}
+InstallSound=/Lotus/Sounds/Mods/Peculiar/Dissolve/PeculiarModDissolveInstallUI
+UpgradeDifferentWeapon=1

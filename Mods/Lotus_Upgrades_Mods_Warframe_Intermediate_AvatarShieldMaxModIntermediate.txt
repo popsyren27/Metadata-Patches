@@ -1,2 +1,4 @@
-/Lotus/Upgrades/Mods/Warframe/Intermediate/AvatarShieldMaxModIntermediate
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Warframe/Intermediate/AvatarShieldMaxModIntermediate
+StartingGear=0
+FusionLimit=QA_HIGH
+IncludeInBoosterPack=0

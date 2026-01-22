@@ -1,0 +1,96 @@
+>/Lotus/Upgrades/Mods/Rifle/Event/Nightwave/NightwaveHemaAugmentMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/NightwaveHemaAugmentModName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Mods/NightwaveHemaAugmentModStatusDesc
+Icon=/Lotus/Interface/Cards/Images/Nightwave/NightwaveHemaAugmentMod.png
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=WEAPON_HEALTH_PCT_FOR_FULL_CLIP
+        OperationType=SET
+        Value=0.5
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+ArtifactPolarity=AP_ATTACK
+FusionPowerCurve=QC_NONE
+ItemCompatibility=/Lotus/Weapons/Infested/LongGuns/InfWFAccompanyingPri/InfestedBurstRifle
+Script={
+    Script=/Lotus/Weapons/Infested/LongGuns/InfWFAccompanyingPri/NightwaveHemaAugmentModScript.lua
+    Function=ApplyUpgrade
+    _healthPercentToFullClipOverride=0.25
+    _hpAmountPerStatIncrease=20
+    _statUpgradeTypes={
+        WEAPON_CRIT_CHANCE,
+        WEAPON_CRIT_DAMAGE
+    }
+_operationType=STACKING_MULTIPLY
+_statModifierLevels={
+    0.1,
+    0.12,
+    0.14,
+    0.16,
+    0.18000001,
+    0.2
+}
+_buffCap=3.5999999
+}
+UnappliedScript={
+    Script=/Lotus/Weapons/Infested/LongGuns/InfWFAccompanyingPri/NightwaveHemaAugmentModScript.lua
+    Function=RemoveUpgrade
+    _healthPercentToFullClipOverride=0.25
+    _hpAmountPerStatIncrease=50
+    _statUpgradeTypes={
+        WEAPON_CRIT_CHANCE,
+        WEAPON_CRIT_DAMAGE
+    }
+_operationType=STACKING_MULTIPLY
+_statModifierLevels={
+    1,
+    1.25,
+    1.5,
+    1.75,
+    2,
+    2.25
+}
+_buffCap=3
+}
+EnhancementTag=/Lotus/Language/Mods/NightwaveHemaAugmentModDesc
+EnhancementTagLocScript={
+    Script=/Lotus/Weapons/Infested/LongGuns/InfWFAccompanyingPri/NightwaveHemaAugmentModScript.lua
+    Function=GetDescription
+    _healthPercentToFullClipOverride=0.5
+    _hpAmountPerStatIncrease=20
+    _statUpgradeTypes={
+        WEAPON_CRIT_CHANCE,
+        WEAPON_CRIT_DAMAGE
+    }
+_operationType=STACKING_MULTIPLY
+_statModifierLevels={
+    0.1,
+    0.12,
+    0.14,
+    0.16,
+    0.18000001,
+    0.2
+}
+_buffCap=3.5999999
+}
+UpgradeChance=1
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/IncreasedCritDamage.png

@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/TransmuteCores/TacticTransmuteCore
+>/Lotus/Upgrades/Mods/TransmuteCores/TacticTransmuteCore
 LocalizeTag=/Lotus/Language/Items/TransmutationCoreTacticName
 LocalizeDescTag=/Lotus/Language/Items/TransmutationCoreTacticDesc
 Icon=/Lotus/Interface/Cards/Images/TransmuteCoreNaramonMod.png

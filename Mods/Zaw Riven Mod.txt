@@ -1,19 +1,1270 @@
-/Lotus/Upgrades/Mods/Randomized/RawModularMeleeRandomMod
+>/Lotus/Upgrades/Mods/Randomized/LotusModularMeleeRandomModRare
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Omega/OmegaZawMod
 LocalizeDescTag=""
-CodexSecret=0
 ExcludeFromCodex=0
 SearchTags={
-/Lotus/Language/Items/RifleCategoryName
+    /Lotus/Language/OstronCrafting/Zaw_Singular
 }
 ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
-IncompatibilityTags={
-SENTINEL_WEAPON
+RawItemType=RawModularMeleeRandomMod
+UpgradeEntries={
+    {
+        Tag=WeaponMeleeDamageMod
+        Icon=/Lotus/Interface/Cards/Images/Melee/MeleeDamageMod.png
+        Upgrades={
+            {
+                Upgrade={
+                    UpgradeType=WEAPON_MELEE_DAMAGE
+                    OperationType=STACKING_MULTIPLY
+                    Value=0.018300001
+                    DamageType=DT_ANY
+                    AutoType=1
+                    ValidType=""
+                    CheckTypeOnInstall=0
+                    SymbolFilter=""
+                    UpgradeObject=""
+                    ValidPostures={}
+                    ValidModifiers={}
+                    InvalidModifiers={}
+                    ValidProcTypes={}
+                }
+            Schema={
+                OverrideLocalization=1
+                LocTag=/Lotus/Language/Upgrades/MeleeDamageBuffDesc
+                LocKeyWordScript={
+                    Script=""
+                }
+            DisplayAsMultiplier=0
+            DisplayAsPercent=1
+            ReverseValueSymbol=0
+            SmallerIsBetter=0
+            RoundTo=0.1
+            RoundingMode=RM_ROUND
+            AllowConditionalLocMerge=0
+        }
 }
-OmegaUpgradeTypes={
-LotusModularMeleeRandomModRare
 }
-OmegaUpgradeWeights={
-1
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/DamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/DamageSuffix
+},
+{
+    Tag=WeaponArmorPiercingDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeArmorPiercingDamageMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=STACKING_MULTIPLY
+                Value=0.0133
+                DamageType=DT_PUNCTURE
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponPunctureDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    DamageTypes
+}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/PuncturePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/PunctureSuffix
+},
+{
+    Tag=WeaponImpactDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/ImpactDamageMeleeMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=STACKING_MULTIPLY
+                Value=0.0133
+                DamageType=DT_IMPACT
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponImpactDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    DamageTypes
+}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ImpactPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ImpactSuffix
+},
+{
+    Tag=WeaponSlashDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/BleedDamageMeleeMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=STACKING_MULTIPLY
+                Value=0.0133
+                DamageType=DT_SLASH
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponSlashDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    DamageTypes
+}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/SlashPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/SlashSuffix
+},
+{
+    Tag=WeaponCritChanceMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeCritChanceMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_CRIT_CHANCE
+                OperationType=STACKING_MULTIPLY
+                Value=0.02
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponHeavyCritChance
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+},
+{
+    Upgrade={
+        UpgradeType=WEAPON_CRIT_CHANCE
+        OperationType=STACKING_MULTIPLY
+        Value=0.02
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={
+            PM_HEAVY_MELEE
+        }
+    InvalidModifiers={}
+    ValidProcTypes={}
+}
+Schema={
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+        Script=""
+    }
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/CritChancePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/CritChanceSuffix
+},
+{
+    Tag=WeaponCritDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeCritDamageMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_CRIT_DAMAGE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0099999998
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponCritDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/CritDamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/CritDamageSuffix
+},
+{
+    Tag=WeaponElectricityDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeElectricityDamageMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.0099999998
+                DamageType=DT_ELECTRICITY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponElectricityDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/ElectricityPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ElectricitySuffix
+},
+{
+    Tag=WeaponFireDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeFireDamageMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.0099999998
+                DamageType=DT_FIRE
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFireDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/FirePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/FireSuffix
+},
+{
+    Tag=WeaponFreezeDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeFreezeDamageMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.0099999998
+                DamageType=DT_FREEZE
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFreezeDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/FrostPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/FrostSuffix
+},
+{
+    Tag=WeaponToxinDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/PoisonDamageMeleeMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.0099999998
+                DamageType=DT_POISON
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponPoisonDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/ToxinPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ToxinSuffix
+},
+{
+    Tag=WeaponProcTimeMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/WeaponProcTimeMeleeMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PROC_TIME
+                OperationType=STACKING_MULTIPLY
+                Value=0.01111
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponProcTimeModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ProcTimePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ProcTimeSuffix
+},
+{
+    Tag=WeaponMeleeFactionDamageCorpus
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeDamageCorpus.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=GAMEPLAY_FACTION_DAMAGE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0049999999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=Corpus
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFactionDamageCorpusDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=1
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.0099999998
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/CorpusDamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/CorpusDamageSuffix
+},
+{
+    Tag=WeaponMeleeFactionDamageGrineer
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeDamageGrineer.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=GAMEPLAY_FACTION_DAMAGE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0049999999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=Grineer
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFactionDamageGrineerDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=1
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.0099999998
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/GrineerDamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/GrineerDamageSuffix
+},
+{
+    Tag=WeaponMeleeFactionDamageInfested
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeDamageInfested.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=GAMEPLAY_FACTION_DAMAGE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0049999999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=Infestation
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFactionDamageInfestedDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=1
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.0099999998
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/InfestedDamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/InfestedDamageSuffix
+},
+{
+    Tag=WeaponFireRateMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeFireRateMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_FIRE_RATE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0060999999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponMeleeAttackSpeed
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/FireRatePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/FireRateSuffix
+},
+{
+    Tag=WeaponStunChanceMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeStunChanceMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PROC_CHANCE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0099999998
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/StatusChance
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/StatusChancePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/StatusChanceSuffix
+},
+{
+    Tag=ComboDurationMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/ComboDurationMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_MELEE_COMBO_DURATION_BONUS
+                OperationType=ADD
+                Value=0.090000004
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/ComboDurationSimpleModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    NotSentinel
+}
+CanBeBuff=1
+CurseRestrictions={
+    NotSentinel
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ComboDurationPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ComboDurationSuffix
+},
+{
+    Tag=SlideAttackCritChanceMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/SlideAttackCritChanceMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_CRIT_CHANCE
+                OperationType=STACKING_MULTIPLY
+                Value=0.013334
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=CC_SLIDING
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/SlideAttackCritChanceModDesc
+            LocKeyWordScript={
+                Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
+                Function=GetDescriptionInfo
+                _displayAsPercent={
+                    1
+                }
+            _absoluteValue={
+                0
+            }
+        _maxDecimals={
+            1
+        }
+    _addPlusses={
+        1
+    }
+_multiplyDown={
+    0
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+},
+{
+    Upgrade={
+        UpgradeType=WEAPON_CRIT_CHANCE
+        OperationType=STACKING_MULTIPLY
+        Value=0.013334
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=CC_SLIDING_PVP
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+    }
+Schema={
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+        Script=""
+    }
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    NotSentinel
+}
+CanBeBuff=1
+CurseRestrictions={
+    NotSentinel
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/SlideCritChancePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/SlideCritChanceSuffix
+},
+{
+    Tag=WeaponMeleeRangeIncMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeRangeMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_RANGE
+                OperationType=ADD
+                Value=0.021579999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponRangeModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/AttackRangePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/AttackRangeSuffix
+},
+{
+    Tag=WeaponMeleeFinisherDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeFinishingTouchMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_MELEE_FINISHER_DAMAGE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0133
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponMeleeFinisherDmgModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    NotSentinel
+}
+CanBeBuff=1
+CurseRestrictions={
+    NotSentinel
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/MeleeFinisherDamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/MeleeFinisherDamageSuffix
+},
+{
+    Tag=WeaponMeleeComboEfficiencyMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeChargeRateMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_MELEE_COMBO_USAGE_EFFICIENCY
+                OperationType=ADD
+                Value=0.0081599997
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponMeleeComboUsageEfficiency
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    NotSentinel
+}
+CanBeBuff=1
+CurseRestrictions={
+    NotSentinel
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/MeleeComboHeavyEfficiencyPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/MeleeComboHeavyEfficiencySuffix
+},
+{
+    Tag=WeaponMeleeComboInitialBonusMod
+    Icon=/Lotus/Interface/Cards/Images/MeleeChanneling/ChannelingKillingBlow.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_MELEE_COMBO_INITIAL_BONUS
+                OperationType=ADD
+                Value=0.27224001
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/ComboInitialBonusModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_FLOOR
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    NotSentinel
+}
+CanBeBuff=1
+CurseRestrictions={
+    NotSentinel
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/MeleeComboInitialBonusPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/MeleeComboInitialBonusSuffix
+},
+{
+    Tag=WeaponMeleeComboPointsOnHitMod
+    Icon=/Lotus/Interface/Cards/Images/MeleeChanneling/ChannelingSecondWindMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_MELEE_COMBO_GAIN_MISS_CHANCE
+                OperationType=ADD
+                Value=-0.01165
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/ComboPointsMissOnHitMod
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=1
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    NotSentinel
+}
+CanBeBuff=0
+CurseRestrictions={
+    NotSentinel
+}
+CanBeCurse=1
+LocalizePrefixTag=""
+LocalizeSuffixTag=""
+},
+{
+    Tag=WeaponMeleeComboBonusOnHitMod
+    Icon=/Lotus/Interface/Cards/Images/MeleeChanneling/ChannelingSecondWindMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_MELEE_COMBO_GAIN_EXTRA_CHANCE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0065299999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/MeleeComboGainExtraChance
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/MeleeComboGainBonusPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/MeleeComboGainBonusSuffix
+}
+}
+ItemCompatibilities={
+    {
+        ItemType=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipFive
+        Rarity=COMMON
+        Attenuation=1.25
+    },
+{
+    ItemType=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipFour
+    Rarity=COMMON
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipOne
+    Rarity=COMMON
+    Attenuation=0.80000001
+},
+{
+    ItemType=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipSix
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipThree
+    Rarity=COMMON
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipTwo
+    Rarity=COMMON
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Ostron/Melee/ModularMelee02/Tip/TipEleven
+    Rarity=COMMON
+    Attenuation=0.75
+},
+{
+    ItemType=/Lotus/Weapons/Ostron/Melee/ModularMelee02/Tip/TipNine
+    Rarity=COMMON
+    Attenuation=0.69999999
+},
+{
+    ItemType=/Lotus/Weapons/Ostron/Melee/ModularMelee02/Tip/TipTen
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Tips/InfestedTipOne
+    Rarity=COMMON
+    Attenuation=0.60000002
+},
+{
+    ItemType=/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Tips/InfestedTipTwo
+    Rarity=COMMON
+    Attenuation=0.80000001
+}
 }

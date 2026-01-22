@@ -1,4 +1,4 @@
-/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPrecepts/ZanukaPetMagneticRepulsePrecept
+>/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPrecepts/ZanukaPetMagneticRepulsePrecept
 Rarity=RARE
 MarketMode=MM_HIDDEN
 RegularPrice=5000
@@ -8,55 +8,55 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Zanukas/ZanukaPetMagneticRepulsePrecept.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Pets/ZanukaPetMagneticRepulsePreceptDesc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/NpcPowersuits/NpcPowersuitAbilities/Lich/PetMagneticRepulseAbility.lua
-    Function=GetDescriptionInfo
-    _activateAnim=""
-    _abilityActiveProj=""
-    _animEventToWaitFor=Fire
-    _animRate=1
-    _resistDamageTakenPctPerLevel={
-    0.15000001,
-    0.30000001,
-    0.44999999,
-    0.60000002,
-    0.75,
-    0.89999998
-}
-_reflectPct=0.40000001
-_reflectMatchesAbsorbed=0
-_forceProc=0
-_durationPerLevel={
-5,
-6,
-7,
-8,
-9,
-10
-}
-_radiusPerLevel={
-2,
-4,
-6,
-8,
-10,
-12
-}
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Pets/ZanukaPetMagneticRepulsePreceptDesc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/NpcPowersuits/NpcPowersuitAbilities/Lich/PetMagneticRepulseAbility.lua
+            Function=GetDescriptionInfo
+            _activateAnim=""
+            _abilityActiveProj=""
+            _animEventToWaitFor=Fire
+            _animRate=1
+            _resistDamageTakenPctPerLevel={
+                0.15000001,
+                0.30000001,
+                0.44999999,
+                0.60000002,
+                0.75,
+                0.89999998
+            }
+        _reflectPct=0.40000001
+        _reflectMatchesAbsorbed=0
+        _forceProc=0
+        _durationPerLevel={
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        }
+    _radiusPerLevel={
+        2,
+        4,
+        6,
+        8,
+        10,
+        12
+    }
 _timeBetweenPulse=1
 _burstFx=""
 _burstSound=""
@@ -73,49 +73,49 @@ RoundingMode=RM_ROUND
 BaseDrain=QA_NONE
 ItemCompatibility=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPowerSuit
 SoundEvents={
-{
-EventName=SFXZanukaCompanionCast
-Sound=/Lotus/Sounds/Characters/Pets/Zanuka/ZanukaCompanionA/Abilities/ZanukaCompanionMagneticRepulseCastLich
-Chance=1
-Period=1
-Context=PEC_ALL
-CancelEventName=""
-}
+    {
+        EventName=SFXZanukaCompanionCast
+        Sound=/Lotus/Sounds/Characters/Pets/Zanuka/ZanukaCompanionA/Abilities/ZanukaCompanionMagneticRepulseCastLich
+        Chance=1
+        Period=1
+        Context=PEC_ALL
+        CancelEventName=""
+    }
 }
 Ability={
-Script={
-Script=/Lotus/Powersuits/NpcPowersuits/NpcPowersuitAbilities/Lich/PetMagneticRepulseAbility.lua
-Function=ActivateAbility
-_activateAnim=/Lotus/Animations/Corpus/ParvosLich/Kubrow/CastRadial01_anim.fbx
-_abilityActiveProj=/Lotus/Fx/Enemies/Corpus/Arachnoid/ArachnoidWraithShieldProjector
-_animEventToWaitFor=Fire
-_animRate=1
-_resistDamageTakenPctPerLevel={
-0.15000001,
-0.30000001,
-0.44999999,
-0.60000002,
-0.75,
-0.89999998
-}
-_reflectPct=1
-_reflectMatchesAbsorbed=0
-_forceProc=0
-_durationPerLevel={
-5,
-6,
-7,
-8,
-9,
-10
-}
+    Script={
+        Script=/Lotus/Powersuits/NpcPowersuits/NpcPowersuitAbilities/Lich/PetMagneticRepulseAbility.lua
+        Function=ActivateAbility
+        _activateAnim=/Lotus/Animations/Corpus/ParvosLich/Kubrow/CastRadial01_anim.fbx
+        _abilityActiveProj=/Lotus/Fx/Enemies/Corpus/Arachnoid/ArachnoidWraithShieldProjector
+        _animEventToWaitFor=Fire
+        _animRate=1
+        _resistDamageTakenPctPerLevel={
+            0.15000001,
+            0.30000001,
+            0.44999999,
+            0.60000002,
+            0.75,
+            0.89999998
+        }
+    _reflectPct=1
+    _reflectMatchesAbsorbed=0
+    _forceProc=0
+    _durationPerLevel={
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+    }
 _radiusPerLevel={
-2,
-4,
-6,
-8,
-10,
-12
+    2,
+    4,
+    6,
+    8,
+    10,
+    12
 }
 _timeBetweenPulse=1
 _burstFx=/Lotus/Fx/Explosions/Generic/ExplosionFXScifiLarge
@@ -129,11 +129,11 @@ CooldownDuration=20
 EnergyRequiredToActivate=0
 EvaluateScript=0
 Evaluator:Evaluators={
-/Lotus/Types/Game/AbilityEvaluators/TargetsInRangeEvaluator
+    /Lotus/Types/Game/AbilityEvaluators/TargetsInRangeEvaluator
 }
 Evaluator:TargetsInRangeEvaluator={
-TargetRange={0,5}
-MaxHeightDiff=0
-SetFirstValidTarget=0
+    TargetRange={0,5}
+    MaxHeightDiff=0
+    SetFirstValidTarget=0
 }
 }

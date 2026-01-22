@@ -1,5 +1,5 @@
-/Lotus/Upgrades/CosmeticEnhancers/Utility/AbilityRadiationProcsCreateUniversalOrbsOnKill
-Rarity=RARE
+>/Lotus/Upgrades/CosmeticEnhancers/Utility/AbilityRadiationProcsCreateUniversalOrbsOnKill
+Rarity=LEGENDARY
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/AbilityRadiationProcsCreateUniversalOrbsOnKillName
 LocalizeDescTag=""
@@ -26,14 +26,14 @@ ExtraUpgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=0
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 ApplyUpgradesByDefault=0
 FusionLimit=QA_HIGH
@@ -45,6 +45,7 @@ Script={
     _canApplyMultipleStacks=1
     _maxChanceToDrop=0.60000002
     _pickupType=/Lotus/Types/PickUps/EnergyHealthIncreaseLarge
+    _procType=PT_RAD_TOX
 }
 EnhancementTag=/Lotus/Language/Arcanes/AbilityRadiationProcsCreateUniversalOrbsOnKillDesc
 EnhancementTagLocScript={
@@ -55,9 +56,11 @@ EnhancementTagLocScript={
     _canApplyMultipleStacks=0
     _maxChanceToDrop=0
     _pickupType=""
+    _procType=PT_RAD_TOX
 }
 UpgradeChance=1
 ConditionalUpgrades={
     /Lotus/Upgrades/CosmeticEnhancers/Offensive/OnAbilityRadiationProcCondition
 }
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDTBuff.png
+BaseDistillPointValue=84

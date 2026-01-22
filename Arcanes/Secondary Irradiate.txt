@@ -1,0 +1,39 @@
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/RadialDamageOnMaxRadiationStackHit
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/RadialDamageOnMaxRadiationStackHitName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionDV.png
+ExcludeFromCodex=0
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol
+Script={
+    Script=RadialDamageOnMaxRadiationStackHit.lua
+    Function=ApplyUpgrade
+    _damageToSpreadBase=0.80000001
+    _damageToSpreadPerLevel=0.2
+    _radiusToSpreadBase=4.5
+    _radiusToSpreadPerLevel=0.5
+    _cooldownBase=0
+    _cooldownPerLevel=0
+    _shockwaveVfx=/Lotus/Fx/Gameplay/Pickups/DuviriMurmurPickupShockwave
+}
+EnhancementTag=/Lotus/Language/Arcanes/RadialDamageOnMaxRadiationStackHitDesc
+EnhancementTagLocScript={
+    Script=RadialDamageOnMaxRadiationStackHit.lua
+    Function=GetDescriptionInfo
+    _damageToSpreadBase=0.80000001
+    _damageToSpreadPerLevel=0.2
+    _radiusToSpreadBase=4.5
+    _radiusToSpreadPerLevel=0.5
+    _cooldownBase=0
+    _cooldownPerLevel=0
+    _shockwaveVfx=""
+}
+UpgradeChance=1
+ConditionalUpgrades={
+    OnMaxRadiationHitCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDVBuff.png
+BaseDistillPointValue=24

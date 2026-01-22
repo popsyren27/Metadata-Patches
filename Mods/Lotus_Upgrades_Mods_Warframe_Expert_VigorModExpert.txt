@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Warframe/Expert/VigorModExpert
-patch not applied (yet)

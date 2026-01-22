@@ -1,4 +1,4 @@
-/Lotus/Types/Sentinels/SentinelPrecepts/ProcAbsorb
+>/Lotus/Types/Sentinels/SentinelPrecepts/ProcAbsorb
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/ProcAbsorbStoreItemName
@@ -7,62 +7,62 @@ StatusDescTag=/Lotus/Language/Buffs/ModCooldownDesc
 Icon=/Lotus/Interface/Cards/Images/Pets/SentinelProcAbsorb.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Items/ProcAbsorbStoreItemDesc
-    LocKeyWordScript={
-    Script=/Lotus/Types/Sentinels/SentinelAbilities/ProcAbsorb.lua
-    Function=GetDescriptionInfo
-    _blockedEffect=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Items/ProcAbsorbStoreItemDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/ProcAbsorb.lua
+            Function=GetDescriptionInfo
+            _blockedEffect=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 BaseDrain=QA_MEDIUM
 ItemCompatibility=/Lotus/Types/Sentinels/SentinelPowersuits/WyrmBasePowerSuit
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/WyrmBuffIcon.png
 Ability={
-Script={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/ProcAbsorb.lua
-Function=ActivateAbility
-_blockedEffect=/Lotus/Fx/Sentinels/Precepts/Wyrm/ProcAbsorbed
-}
+    Script={
+        Script=/Lotus/Types/Sentinels/SentinelAbilities/ProcAbsorb.lua
+        Function=ActivateAbility
+        _blockedEffect=/Lotus/Fx/Sentinels/Precepts/Wyrm/ProcAbsorbed
+    }
 SecondaryScripts={
-{
-tag=DoProckBlock
-executionMode=EM_ALL
-inheritPrimary=0
-functionName=""
-scriptInstance={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/ProcAbsorb.lua
-Function=DoProcBlock
-_blockedEffect=""
-}
+    {
+        tag=DoProckBlock
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/ProcAbsorb.lua
+            Function=DoProcBlock
+            _blockedEffect=""
+        }
 }
 }
 AbilityEvents={
-{
-tag=ProcBlocked
-eventType=ET_ON_PROC_BLOCK
-scriptInstance={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/ProcAbsorb.lua
-Function=ProcBlocked
-_blockedEffect=""
-}
+    {
+        tag=ProcBlocked
+        eventType=ET_ON_PROC_BLOCK
+        scriptInstance={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/ProcAbsorb.lua
+            Function=ProcBlocked
+            _blockedEffect=""
+        }
 }
 }
 CooldownDuration=10

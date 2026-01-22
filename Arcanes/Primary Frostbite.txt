@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/PrimaryCritDmgAndMultishotOnColdProc
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/PrimaryCritDmgAndMultishotOnColdProc
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/PrimaryCritDmgAndMultishotOnColdProc
@@ -26,59 +26,59 @@ Upgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=1
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.0049999999
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-        },
-        {
-            UpgradeType=WEAPON_FIRE_ITERATIONS
-            OperationType=STACKING_MULTIPLY
-            Value=0.0037499999
-            DamageType=DT_ANY
-            AutoType=1
-            ValidType=/Lotus/Weapons/Tenno/LotusLongGun
-            CheckTypeOnInstall=0
-            SymbolFilter=""
-            UpgradeObject=""
-            ValidPostures={}
-            ValidModifiers={}
-            InvalidModifiers={}
-            ValidProcTypes={}
-            OverrideLocalization=1
-            LocTag=/Lotus/Language/Upgrades/WeaponMultishotModDesc
-            LocKeyWordScript={
-                Script=""
-            }
-            DisplayAsMultiplier=0
-            DisplayAsPercent=1
-            ReverseValueSymbol=0
-            SmallerIsBetter=0
-            RoundTo=0.001
-            RoundingMode=RM_ROUND
-            AllowConditionalLocMerge=0
-        }
-    }
-    ApplyUpgradesByDefault=0
-    FusionLimit=QA_HIGH
-    ItemCompatibility=/Lotus/Weapons/Tenno/LotusLongGun
-    MultiBonusLoc=1
-    EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceTwoBonusesWithDurationAndStacks
-    EnhancementTagLocScript={
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.0049999999
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+},
+{
+    UpgradeType=WEAPON_FIRE_ITERATIONS
+    OperationType=STACKING_MULTIPLY
+    Value=0.0037499999
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=/Lotus/Weapons/Tenno/LotusLongGun
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponMultishotModDesc
+    LocKeyWordScript={
         Script=""
     }
-    UpgradeChance=1
-    UpgradeDuration=12
-    DurationScalesWithRank=0
-    StackMode=SM_GROUP
-    MaxConditionalStacks=40
-    ConditionalUpgrades={
-        OnColdProcCondition
-    }
-    ConditionTag=/Lotus/Language/Upgrades/OnColdProcCondition_Description
-    HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCC.png
-    UpgradeDifferentWeapon=1
-    BaseDistillPointValue=22
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.001
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/LotusLongGun
+MultiBonusLoc=1
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceTwoBonusesWithDurationAndStacks
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+UpgradeDuration=12
+DurationScalesWithRank=0
+StackMode=SM_GROUP
+MaxConditionalStacks=40
+ConditionalUpgrades={
+    OnColdProcCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnColdProcCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCC.png
+UpgradeDifferentWeapon=1
+BaseDistillPointValue=22

@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Stances/PvPWhipStanceOne
+>/Lotus/Upgrades/Mods/PvPMods/Stances/PvPWhipStanceOne
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/PvPWhipStanceOne
@@ -9,10 +9,10 @@ AvailableOnPve=0
 AvailableOnPvp=1
 ArtifactPolarity=AP_POWER
 UnequippedAttackSets={
-CC_GROUND=Combos/PvPWhipComboOneEquipped
+    CC_GROUND=Combos/PvPWhipComboOneEquipped
 }
 EquippedAttackSets={
-CC_GROUND=Combos/PvPWhipComboA
-CC_GROUND_BRANCH_A=Combos/PvPWhipComboOneEquipped
-CC_GROUND_BRANCH_B=Combos/PvPWhipComboB
+    CC_GROUND=Combos/PvPWhipComboA
+    CC_GROUND_BRANCH_A=Combos/PvPWhipComboOneEquipped
+    CC_GROUND_BRANCH_B=Combos/PvPWhipComboB
 }

@@ -1,0 +1,7 @@
+>/Lotus/Upgrades/Mods/Rifle/Expert/WeaponSnipersConvertAmmoModExpert
+Rarity=LEGENDARY
+LocalizeTag=/Lotus/Language/Mods/SniperModConvertAmmoExpert
+CodexSecret=1
+BaseDrain=QA_NONE
+FusionLimit=QA_VERY_HIGH
+IncludeInBoosterPack=0

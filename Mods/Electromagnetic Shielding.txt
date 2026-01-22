@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Melee/Event/ProjectNightwatch/AckBruntNightwatchMod
+>/Lotus/Upgrades/Mods/Melee/Event/ProjectNightwatch/AckBruntNightwatchMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/AckBruntNightwatchMod
@@ -7,47 +7,47 @@ Icon=/Lotus/Interface/Cards/Images/Melee/AckBruntNightwatchMod.png
 ExcludeFromCodex=0
 TradeCapability=RO_ALWAYS
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=STACKING_MULTIPLY
-    Value=0.050000001
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/ChannelingRedirectDamage
-    LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/LinkAlliesOnChannel.lua
-    Function=GetLoc
-    _auraType=""
-    _baseDamageTransferPct=25
-    _damageTransferPctScaling=5
-    _baseAuraRange=2
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=NONE
+        OperationType=STACKING_MULTIPLY
+        Value=0.050000001
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/ChannelingRedirectDamage
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/LinkAlliesOnChannel.lua
+            Function=GetLoc
+            _auraType=""
+            _baseDamageTransferPct=25
+            _damageTransferPctScaling=5
+            _baseAuraRange=2
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_DEFENSE
 BaseDrain=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Grineer/Melee/GrineerTylAxeAndBoar/RegorAxeShield
 IncompatibilityTags={
-POWER_WEAPON
+    POWER_WEAPON
 }
 Script={
-Script=/Lotus/Scripts/Mods/LinkAlliesOnChannel.lua
-Function=ApplyUpgrades
-_auraType=LinkAlliesAura
-_baseDamageTransferPct=25
-_damageTransferPctScaling=5
-_baseAuraRange=2
+    Script=/Lotus/Scripts/Mods/LinkAlliesOnChannel.lua
+    Function=ApplyUpgrades
+    _auraType=LinkAlliesAura
+    _baseDamageTransferPct=25
+    _damageTransferPctScaling=5
+    _baseAuraRange=2
 }
 IsUtility=1
 PlayEffect=0

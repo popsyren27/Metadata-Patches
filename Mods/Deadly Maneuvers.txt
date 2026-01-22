@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Nightwave/MagnusNightwaveMod
+>/Lotus/Upgrades/Mods/Nightwave/MagnusNightwaveMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Upgrades/MagnusRollHeadShotBonus
@@ -7,33 +7,33 @@ StatusDescTag=/Lotus/Language/Buffs/DeadlyManeuversBuffDesc
 Icon=/Lotus/Interface/Cards/Images/Pistol/MagnusNightwaveMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/MagnusRollHeadShotBonusDesc
-    LocKeyWordScript={
-    Script=MagnumNightwaveMod.lua
-    Function=GetDescription
-    _critChance={
-    1,
-    2,
-    3,
-    4
-}
-_numShots=2
-}
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/MagnusRollHeadShotBonusDesc
+        LocKeyWordScript={
+            Script=MagnumNightwaveMod.lua
+            Function=GetDescription
+            _critChance={
+                1,
+                2,
+                3,
+                4
+            }
+        _numShots=2
+    }
 SmallerIsBetter=0
 RoundTo=0.1
 RoundingMode=RM_ROUND
@@ -46,22 +46,22 @@ BaseDrain=QA_MEDIUM
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Tenno/Pistols/Magnum/Magnum
 IncompatibilityTags={
-POWER_WEAPON
+    POWER_WEAPON
 }
 Script={
-Script=MagnumNightwaveMod.lua
-Function=ApplyUpgrade
-_critChance={
-1,
-2,
-3,
-4
-}
+    Script=MagnumNightwaveMod.lua
+    Function=ApplyUpgrade
+    _critChance={
+        1,
+        2,
+        3,
+        4
+    }
 _numShots=2
 }
 UpgradeChance=1
 PlayEffect=0
 ConditionalUpgrades={
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/OnRollCondition
+    /Lotus/Upgrades/CosmeticEnhancers/Offensive/OnRollCondition
 }
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/CritHeadshotBuffIcon.png

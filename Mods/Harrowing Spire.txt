@@ -1,0 +1,13 @@
+>/Lotus/Weapons/Tenno/Melee/MeleeTrees/BayonetCmbOneMeleeTree
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/BayonetCmbOneMeleeTreeName
+LocalizeDescTag=/Lotus/Language/Mods/BayonetCmbOneMeleeTreeDesc
+Icon=/Lotus/Interface/Cards/Images/Stances/BayonetCmbOneMelee.png
+ExcludeFromCodex=0
+ArtifactPolarity=AP_ATTACK
+EquippedAttackSets={
+    CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/BayonetForwardBlockCombo
+    CC_GROUND_BRANCH_C=/Lotus/Weapons/Tenno/Melee/AttackSets/BayonetBlockCombo
+}
+AvatarDamageFalloff=0.5

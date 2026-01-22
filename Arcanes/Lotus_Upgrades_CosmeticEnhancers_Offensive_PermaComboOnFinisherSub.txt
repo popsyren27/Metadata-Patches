@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/PermaComboOnFinisherSub
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/PermaComboOnFinisherSub
 MarketMode=MM_HIDDEN
 ExcludeFromCodex=0
 ApplyUpgradesByDefault=0

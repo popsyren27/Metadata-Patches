@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/HealthOnOperatorMode
+>/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/HealthOnOperatorMode
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/HealthOnOperatorMode
 LocalizeDescTag=""
@@ -24,14 +24,14 @@ Upgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=0
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 FusionLimit=QA_HIGH
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple

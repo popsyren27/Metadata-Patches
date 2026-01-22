@@ -1,5 +1,0 @@
-/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetCPowerSuit
-Icon=/Lotus/Interface/Icons/StoreIcons/Companions/Zanukas/ZanukaPetHeadC.png
-MiniMapIcon=/Lotus/Interface/Icons/Markers/Companions/HoundCPortrait.png
-MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Companions/LargePortraits/HoundCLargePortrait.png
-DefaultWeapon=ZanukaPetMeleeWeaponPS

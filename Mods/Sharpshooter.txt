@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Rifle/EnergyOnHeadshotRifle
+>/Lotus/Upgrades/Mods/Rifle/EnergyOnHeadshotRifle
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/EnergyOnHeadshotRifle
@@ -6,39 +6,39 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Rifle/EnergyOnHeadshotRifle.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Mods/EnergyOnHeadshot
-    LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/EnergyOnHeadshotRifle.lua
-    Function=GetDescription
-    _energy={
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15
-}
-}
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Mods/EnergyOnHeadshot
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/EnergyOnHeadshotRifle.lua
+            Function=GetDescription
+            _energy={
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+            }
+    }
 SmallerIsBetter=0
 RoundTo=0.1
 RoundingMode=RM_ROUND
@@ -49,19 +49,19 @@ ArtifactPolarity=AP_TACTIC
 FusionLimit=QA_VERY_HIGH
 ItemCompatibility=/Lotus/Weapons/Tenno/Rifle/LotusSniperRifle
 Script={
-Script=/Lotus/Scripts/Mods/EnergyOnHeadshotRifle.lua
-Function=StartMod
-_energy={
-5,
-6,
-7,
-8,
-9,
-10,
-11,
-12,
-13,
-14,
-15
-}
+    Script=/Lotus/Scripts/Mods/EnergyOnHeadshotRifle.lua
+    Function=StartMod
+    _energy={
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+    }
 }

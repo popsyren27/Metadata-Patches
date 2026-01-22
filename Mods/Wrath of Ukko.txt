@@ -1,4 +1,4 @@
-/Lotus/Powersuits/PaxDuviricus/PaxFieldAugmentCard
+>/Lotus/Powersuits/PaxDuviricus/PaxFieldAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/PaxDuviricusFieldAbilityAugment1Name
@@ -6,36 +6,36 @@ Icon=/Lotus/Interface/Cards/Images/AbilityAugments/KullervoFieldAugment.png
 RectangleIcon=0
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/PaxFieldAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/PaxDuviricusFieldAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/PaxField.lua
-    Function=GetAugmentDescriptionInfo
-    _activateAnim=""
-    _castEffect=""
-    _castBurst=""
-    _rangeDeco=""
-    _movingBlade=""
-    _movingBladeHit=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/PaxFieldAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/PaxDuviricusFieldAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/PaxField.lua
+            Function=GetAugmentDescriptionInfo
+            _activateAnim=""
+            _castEffect=""
+            _castBurst=""
+            _rangeDeco=""
+            _movingBlade=""
+            _movingBladeHit=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_POWER

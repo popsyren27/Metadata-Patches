@@ -1,0 +1,65 @@
+>/Lotus/Upgrades/Mods/Antiques/VoidSlingCrateBreaker
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Upgrades/AntiqueVoidSlingCrateBreaker
+Icon=/Lotus/Interface/Cards/Images/AntiqueMods/OrokinImageR.png
+ExcludeFromCodex=0
+SearchTags={
+    /Lotus/Language/TennoWay/Unairu
+}
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/AntiqueVoidSlingCrateBreakerDesc
+        LocKeyWordScript={
+            Script=Looter.lua
+            Function=GetDescription
+            _validTargetTypes={}
+            _validTargetTags={}
+            _explodeFx=""
+            _distance=2
+            _heightAdjustment=0.30000001
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
+}
+ApplyUpgradesByDefault=0
+AssociatedSchool=AP_WARD
+Script={
+    Script=Looter.lua
+    Function=ApplyUpgrade
+    _validTargetTypes={
+        /Lotus/Types/PickUps/BaseMediumLootCrate
+    }
+_validTargetTags={
+    WyrmGiblit
+}
+_explodeFx=/Lotus/Fx/Sentinels/Precepts/Carrier/LooterBurst
+_distance=2
+_heightAdjustment=0.30000001
+}
+SubUpgrades={
+    BonusAntiqueUpgradeVoidSlingCrateBreakerUnique
+}
+UpgradeChance=1
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Events/OnVoidDashCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnVoidDashCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/Protected.png

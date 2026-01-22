@@ -1,4 +1,4 @@
-/Lotus/Powersuits/Revenant/RevenantAfflictionAugmentCard
+>/Lotus/Powersuits/Revenant/RevenantAfflictionAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/RevenantAfflictionAbilityAugment1Name
@@ -6,34 +6,34 @@ Icon=/Lotus/Interface/Cards/Images/AbilityAugments/RevenantReaveAugment.png
 RectangleIcon=0
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/RevenantAfflictionAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/RevenantAfflictionAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/RevenantAffliction.lua
-    Function=GetAugmentDescriptionInfo
-    _activateAnim=""
-    _activateFreezeAnim=""
-    _triggerType=""
-    _fightingTriggerType=""
-    _rebornActiveCastSound=""
-    _augmentBlindEffect=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/RevenantAfflictionAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/RevenantAfflictionAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/RevenantAffliction.lua
+            Function=GetAugmentDescriptionInfo
+            _activateAnim=""
+            _activateFreezeAnim=""
+            _triggerType=""
+            _fightingTriggerType=""
+            _rebornActiveCastSound=""
+            _augmentBlindEffect=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_POWER

@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Warframe/Expert/AvatarShieldMaxModExpert
-patch not applied (yet)

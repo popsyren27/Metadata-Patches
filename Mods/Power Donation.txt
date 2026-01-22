@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Aura/AvatarAuraPowerMaxMod
+>/Lotus/Upgrades/Mods/Aura/AvatarAuraPowerMaxMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/AvatarAuraPowerMaxMod
@@ -6,41 +6,41 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Auras/AvatarAuraPowerMaxMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Mods/AuraSquadPower
-    LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/AuraSquadPower.lua
-    Function=GetDescription
-    _selfReduceAmount={
-    0.050000001,
-    0.1,
-    0.15000001,
-    0.2,
-    0.25,
-    0.30000001
-}
-_teamStrengthAmount={
-0.050000001,
-0.1,
-0.15000001,
-0.2,
-0.25,
-0.30000001
-}
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Mods/AuraSquadPower
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/AuraSquadPower.lua
+            Function=GetDescription
+            _selfReduceAmount={
+                0.050000001,
+                0.1,
+                0.15000001,
+                0.2,
+                0.25,
+                0.30000001
+            }
+        _teamStrengthAmount={
+            0.050000001,
+            0.1,
+            0.15000001,
+            0.2,
+            0.25,
+            0.30000001
+        }
 }
 SmallerIsBetter=0
 RoundTo=0.1
@@ -54,45 +54,45 @@ ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
 TargetMode=TM_OWNER_FACTION
 TargetType=/Lotus/Types/Player/TennoAvatar
 ExcludedAvatars={
-/Lotus/Types/Player/LotusOperatorAvatar
+    /Lotus/Types/Player/LotusOperatorAvatar
 }
 OnEnterAuraScript={
-Script=/Lotus/Scripts/Mods/AuraSquadPower.lua
-Function=OnEnter
-_selfReduceAmount={
-0.050000001,
-0.1,
-0.15000001,
-0.2,
-0.25,
-0.30000001
-}
+    Script=/Lotus/Scripts/Mods/AuraSquadPower.lua
+    Function=OnEnter
+    _selfReduceAmount={
+        0.050000001,
+        0.1,
+        0.15000001,
+        0.2,
+        0.25,
+        0.30000001
+    }
 _teamStrengthAmount={
-0.050000001,
-0.1,
-0.15000001,
-0.2,
-0.25,
-0.30000001
+    0.050000001,
+    0.1,
+    0.15000001,
+    0.2,
+    0.25,
+    0.30000001
 }
 }
 OnExitAuraScript={
-Script=/Lotus/Scripts/Mods/AuraSquadPower.lua
-Function=OnExit
-_selfReduceAmount={
-0.050000001,
-0.1,
-0.15000001,
-0.2,
-0.25,
-0.30000001
-}
+    Script=/Lotus/Scripts/Mods/AuraSquadPower.lua
+    Function=OnExit
+    _selfReduceAmount={
+        0.050000001,
+        0.1,
+        0.15000001,
+        0.2,
+        0.25,
+        0.30000001
+    }
 _teamStrengthAmount={
-0.050000001,
-0.1,
-0.15000001,
-0.2,
-0.25,
-0.30000001
+    0.050000001,
+    0.1,
+    0.15000001,
+    0.2,
+    0.25,
+    0.30000001
 }
 }

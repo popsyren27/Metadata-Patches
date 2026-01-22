@@ -1,2 +1,3 @@
-/Lotus/Upgrades/Mods/Warframe/Intermediate/AvatarArmourModIntermediate
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Warframe/Intermediate/AvatarArmourModIntermediate
+FusionLimit=QA_HIGH
+IncludeInBoosterPack=0

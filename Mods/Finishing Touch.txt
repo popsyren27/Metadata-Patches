@@ -1,44 +1,44 @@
-/Lotus/Upgrades/Mods/Melee/WeaponMeleeFinisherDamageMod
+>/Lotus/Upgrades/Mods/Melee/WeaponMeleeFinisherDamageMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/MeleeModFinisherDamage
 Icon=/Lotus/Interface/Cards/Images/Melee/MeleeFinishingTouchMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_MELEE_FINISHER_DAMAGE
-    OperationType=STACKING_MULTIPLY
-    Value=0.15000001
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/WeaponMeleeFinisherDmgModDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=WEAPON_MELEE_FINISHER_DAMAGE
+        OperationType=STACKING_MULTIPLY
+        Value=0.15000001
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponMeleeFinisherDmgModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_ATTACK
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
 IncompatibilityTags={
-SENTINEL_WEAPON,
-HOUND_WEAPON,
-NO_FINISHER
+    SENTINEL_WEAPON,
+    HOUND_WEAPON,
+    NO_FINISHER
 }
 IncludeInBoosterPack=1

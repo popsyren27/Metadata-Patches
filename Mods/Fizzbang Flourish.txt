@@ -1,0 +1,39 @@
+>/Lotus/Upgrades/Mods/Hoverboard/HBFireWorksMod
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Hoverboards/HoverboardFireworksMod
+Icon=/Lotus/Interface/Cards/Images/Hoverboard/HoverboardModP.png
+Upgrades={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Hoverboards/HoverboardFireworksModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBFireWorks.lua
+            Function=GetDescriptionInfo
+            _FireWorkFX=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_DEFENSE
+BaseDrain=QA_MEDIUM
+FusionLimit=QA_MEDIUM
+ItemCompatibility=/Lotus/Types/Vehicles/Hoverboard/HoverboardSuit
+Script={
+    Script=/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBFireWorks.lua
+    Function=AddUpgrades
+    _FireWorkFX=/Lotus/Fx/Gameplay/HoverBoard/Abilities/HBFireworksSpawn
+}

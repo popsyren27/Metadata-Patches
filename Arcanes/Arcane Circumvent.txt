@@ -1,0 +1,89 @@
+>/Lotus/Upgrades/CosmeticEnhancers/Defensive/StealDefensiveStatsOnRoll
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/StealDefensiveStatsOnRollName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Buffs/StealDefensiveStatsOnRollBuffDesc
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionDY.png
+ExcludeFromCodex=0
+ExtraUpgrades={
+    {
+        UpgradeType=GAMEPLAY_FREE_REVIVE_COUNT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerBonusRevive
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+Script={
+    Script=StealDefensiveStatsOnRoll.lua
+    Function=ApplyUpgrade
+    _armourToStealBase=0.25
+    _armourToStealPerLevel=0.050000001
+    _armourToStealCap=1000
+    _shieldsToStealBase=0.25
+    _shieldsToStealPerLevel=0.050000001
+    _preventEnemyShieldsFromRecharging=1
+    _overguardToStealBase=0.25
+    _overguardToStealPerLevel=0.050000001
+    _overguardToStealCap=10000
+    _durationBase=15
+    _durationPerLevel=0
+    _radiusBase=4
+    _radiusPerLevel=0
+    _cooldownBase=0
+    _cooldownPerLevel=0
+    _refreshRate=0.1
+    _rollStartFX=""
+}
+EnhancementTag=/Lotus/Language/Arcanes/StealDefensiveStatsOnRollDesc
+EnhancementTagLocScript={
+    Script=StealDefensiveStatsOnRoll.lua
+    Function=GetDescriptionInfo
+    _armourToStealBase=0.25
+    _armourToStealPerLevel=0.050000001
+    _armourToStealCap=-1
+    _shieldsToStealBase=0.25
+    _shieldsToStealPerLevel=0.050000001
+    _preventEnemyShieldsFromRecharging=1
+    _overguardToStealBase=0.25
+    _overguardToStealPerLevel=0.050000001
+    _overguardToStealCap=15000
+    _durationBase=15
+    _durationPerLevel=0
+    _radiusBase=1
+    _radiusPerLevel=0
+    _cooldownBase=0
+    _cooldownPerLevel=0
+    _refreshRate=0.1
+    _rollStartFX=""
+}
+UpgradeChance=1
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Offensive/OnRollCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnRollCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDYBuff.png
+BaseDistillPointValue=24

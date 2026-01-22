@@ -1,4 +1,4 @@
-/Lotus/Types/Friendly/Pets/KubrowPetPrecepts/KubrowDisarmPrecept
+>/Lotus/Types/Friendly/Pets/KubrowPetPrecepts/KubrowDisarmPrecept
 Rarity=RARE
 MarketMode=MM_HIDDEN
 RegularPrice=5000
@@ -8,54 +8,54 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Kubrow/KubrowNeutralize.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Items/KubrowDisarmPreceptDesc
-    LocKeyWordScript={
-    Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowDisarmAbility.lua
-    Function=GetDescriptionInfo
-    _lotusNpcAvatarType=""
-    _runBehaviour=""
-    _activationDistance=2
-    _disarmedAgentType=""
-    _powerSymbol=""
-    _meleeWeapon=""
-    _disarmAnimation=""
-    _disarmEffect=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Items/KubrowDisarmPreceptDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowDisarmAbility.lua
+            Function=GetDescriptionInfo
+            _lotusNpcAvatarType=""
+            _runBehaviour=""
+            _activationDistance=2
+            _disarmedAgentType=""
+            _powerSymbol=""
+            _meleeWeapon=""
+            _disarmAnimation=""
+            _disarmEffect=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 BaseDrain=QA_NONE
 ItemCompatibility=/Lotus/Types/Game/KubrowPet/RetrieverKubrowPetPowerSuit
 Ability={
-Script={
-Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowDisarmAbility.lua
-Function=NpcEvaluateAbility
-_lotusNpcAvatarType=/Lotus/Types/Game/LotusNpcAvatar
-_runBehaviour=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowAbilityMeleeTactic
-_activationDistance=2
-_disarmedAgentType=/Lotus/Types/Enemies/GenericDisarmedAgent
-_powerSymbol=LOKI_DISARM
-_meleeWeapon=/Lotus/Weapons/Tenno/Melee/DisarmBasicMeleeWeapon
-_disarmAnimation=/Lotus/Animations/Creatures/KubrowFeral/Bite_anim.fbx
-_disarmEffect=/Lotus/Fx/Sentinels/Precepts/KubrowDisarmBurstFx
-}
+    Script={
+        Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowDisarmAbility.lua
+        Function=NpcEvaluateAbility
+        _lotusNpcAvatarType=/Lotus/Types/Game/LotusNpcAvatar
+        _runBehaviour=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowAbilityMeleeTactic
+        _activationDistance=2
+        _disarmedAgentType=/Lotus/Types/Enemies/GenericDisarmedAgent
+        _powerSymbol=LOKI_DISARM
+        _meleeWeapon=/Lotus/Weapons/Tenno/Melee/DisarmBasicMeleeWeapon
+        _disarmAnimation=/Lotus/Animations/Creatures/KubrowFeral/Bite_anim.fbx
+        _disarmEffect=/Lotus/Fx/Sentinels/Precepts/KubrowDisarmBurstFx
+    }
 CooldownDuration=15
 EnergyRequiredToActivate=0
 ActivationXP=15

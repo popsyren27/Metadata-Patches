@@ -1,2 +1,32 @@
-/Lotus/Upgrades/Mods/Pistol/Beginner/WeaponToxinDamageModBeginner
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Pistol/Beginner/WeaponToxinDamageModBeginner
+Upgrades={
+    {
+        UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+        OperationType=ADD
+        Value=0.1
+        DamageType=DT_POISON
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponPoisonDamage
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+}
+}
+BaseDrain=QA_MEDIUM
+FusionLimit=QA_MEDIUM
+IncludeInBoosterPack=0
+IsStarter=1

@@ -1,30 +1,72 @@
-/Lotus/Powersuits/Fairy/FairyDisablePassiveMod
+>/Lotus/Powersuits/Fairy/FairyDisablePassiveMod
 Rarity=RARE
 LocalizeTag=/Lotus/Language/Mods/FairyPassiveDisableModName
 Icon=/Lotus/Interface/Cards/Images/AbilityAugments/TitaniaDisablePassiveMod.png
 Upgrades={
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=""
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+},
 {
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
+    UpgradeType=AVATAR_DAMAGE_TAKEN
+    OperationType=MULTIPLY
+    Value=0.89999998
     DamageType=DT_ANY
-    AutoType=1
+    AutoType=0
     ValidType=""
     CheckTypeOnInstall=0
-    SymbolFilter=AUGMENT_TWO
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/FairyFlightAbility
+    SymbolFilter=""
+    UpgradeObject=""
     ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=""
-    LocKeyWordScript={
-    Script=""
+    ValidModifiers={
+        PM_IN_AIR
+    }
+InvalidModifiers={}
+ValidProcTypes={}
+OverrideLocalization=1
+LocTag=/Lotus/Language/Mods/FairyPassiveDisableModDesc
+LocKeyWordScript={
+    Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
+    Function=GetDescriptionInfo
+    _displayAsPercent={
+        1
+    }
+_absoluteValue={
+    1
 }
-DisplayAsMultiplier=0
-DisplayAsPercent=0
-ReverseValueSymbol=0
+_maxDecimals={
+    -1
+}
+_addPlusses={
+    0
+}
+_multiplyDown={
+    1
+}
+}
 SmallerIsBetter=0
 RoundTo=0.1
 RoundingMode=RM_ROUND
@@ -42,56 +84,14 @@ AllowConditionalLocMerge=0
     UpgradeObject=""
     ValidPostures={}
     ValidModifiers={
-    PM_IN_AIR
-}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Mods/FairyPassiveDisableModDesc
-LocKeyWordScript={
-Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
-Function=GetDescriptionInfo
-_displayAsPercent={
-1
-}
-_absoluteValue={
-1
-}
-_maxDecimals={
--1
-}
-_addPlusses={
-0
-}
-_multiplyDown={
-1
-}
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
-},
-{
-UpgradeType=AVATAR_DAMAGE_TAKEN
-OperationType=MULTIPLY
-Value=0.89999998
-DamageType=DT_ANY
-AutoType=0
-ValidType=""
-CheckTypeOnInstall=0
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={
-PM_AIRBORNE
-}
+        PM_AIRBORNE
+    }
 InvalidModifiers={}
 ValidProcTypes={}
 OverrideLocalization=1
 LocTag=""
 LocKeyWordScript={
-Script=""
+    Script=""
 }
 DisplayAsMultiplier=0
 DisplayAsPercent=0

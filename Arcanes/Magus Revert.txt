@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/ReverseOnDash
+>/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/ReverseOnDash
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/ReverseOnDash
@@ -34,14 +34,14 @@ Upgrades={
                 50,
                 60
             }
-            _duration=3
-            _cooldown=3
-        }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
+        _duration=3
+        _cooldown=3
     }
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 ApplyUpgradesByDefault=0
 FusionLimit=QA_HIGH
@@ -56,8 +56,8 @@ Script={
         50,
         60
     }
-    _duration=3
-    _cooldown=3
+_duration=3
+_cooldown=3
 }
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
 EnhancementTagLocScript={

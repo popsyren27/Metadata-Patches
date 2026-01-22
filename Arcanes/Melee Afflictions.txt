@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/DuplicateStatusOnKnock
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/DuplicateStatusOnKnock
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/DuplicateStatusName

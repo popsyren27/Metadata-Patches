@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Melee/IncreasedMobilityEquipped
+>/Lotus/Upgrades/Mods/PvPMods/Melee/IncreasedMobilityEquipped
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/IncreasedMobilityEquipped
@@ -8,30 +8,30 @@ ExcludeFromCodex=0
 AvailableOnPve=0
 AvailableOnPvp=1
 Upgrades={
-{
-    UpgradeType=AVATAR_PARKOUR_BOOST
-    OperationType=STACKING_MULTIPLY
-    Value=0.025
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/PvPMobilityDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_PARKOUR_BOOST
+        OperationType=STACKING_MULTIPLY
+        Value=0.025
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/PvPMobilityDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 },
 {
     UpgradeType=AVATAR_SLIDE_BOOST
@@ -49,8 +49,8 @@ RoundingMode=RM_ROUND
     OverrideLocalization=1
     LocTag=""
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
 ReverseValueSymbol=0
@@ -74,8 +74,8 @@ RoundingMode=RM_ROUND
     OverrideLocalization=1
     LocTag=""
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
 ReverseValueSymbol=0
@@ -99,8 +99,8 @@ RoundingMode=RM_ROUND
     OverrideLocalization=1
     LocTag=/Lotus/Language/Upgrades/SprintSpeedModDesc
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -114,8 +114,8 @@ BaseDrain=QA_VERY_HIGH
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
 Script={
-Script=/Lotus/Scripts/Mods/RequireWeaponEquipped.lua
-Function=StartMod
+    Script=/Lotus/Scripts/Mods/RequireWeaponEquipped.lua
+    Function=StartMod
 }
 UpgradeChance=1
 UpgradeDuration=-1

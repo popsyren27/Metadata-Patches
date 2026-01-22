@@ -1,10 +1,10 @@
-/Lotus/Upgrades/Mods/Warframe/Kahl/KahlAvatarAbilityDurationMod
+>/Lotus/Upgrades/Mods/Warframe/Kahl/KahlAvatarAbilityDurationMod
 Rarity=LEGENDARY
 LocalizeTag=/Lotus/Language/Mods/KahlAvatarAbilityDuration
 Icon=/Lotus/Interface/Cards/Images/Kahl/KahlAvatarAbilityDurationMod.png
 BaseDrain=QA_HIGH
 FusionLimit=QA_VERY_HIGH
 SubUpgrades={
-KahlAvatarApplyCorrosiveSubMod
+    KahlAvatarApplyCorrosiveSubMod
 }
 IncludeInBoosterPack=0

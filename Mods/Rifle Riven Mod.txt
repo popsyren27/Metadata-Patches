@@ -1,19 +1,2135 @@
-/Lotus/Upgrades/Mods/Randomized/RawRifleRandomMod
+>/Lotus/Upgrades/Mods/Randomized/LotusRifleRandomModRare
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Omega/OmegaRifleMod
 LocalizeDescTag=""
-CodexSecret=0
 ExcludeFromCodex=0
 SearchTags={
-/Lotus/Language/Items/RifleCategoryName
+    /Lotus/Language/Items/RifleCategoryName
 }
 ItemCompatibility=/Lotus/Weapons/Tenno/Rifle/LotusRifle
-IncompatibilityTags={
-SENTINEL_WEAPON
+UpgradeEntries={
+    {
+        Tag=WeaponArmorPiercingDamageMod
+        Icon=/Lotus/Interface/Cards/Images/Rifle/RiflePunctureDepthMod.png
+        Upgrades={
+            {
+                Upgrade={
+                    UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                    OperationType=STACKING_MULTIPLY
+                    Value=0.01333
+                    DamageType=DT_PUNCTURE
+                    AutoType=1
+                    ValidType=""
+                    CheckTypeOnInstall=0
+                    SymbolFilter=""
+                    UpgradeObject=""
+                    ValidPostures={}
+                    ValidModifiers={}
+                    InvalidModifiers={}
+                    ValidProcTypes={}
+                }
+            Schema={
+                OverrideLocalization=1
+                LocTag=/Lotus/Language/Upgrades/WeaponPunctureDamage
+                LocKeyWordScript={
+                    Script=""
+                }
+            DisplayAsMultiplier=0
+            DisplayAsPercent=1
+            ReverseValueSymbol=0
+            SmallerIsBetter=0
+            RoundTo=0.1
+            RoundingMode=RM_ROUND
+            AllowConditionalLocMerge=0
+        }
 }
-OmegaUpgradeTypes={
-LotusRifleRandomModRare
 }
-OmegaUpgradeWeights={
-1
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    DamageTypes
+}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/PuncturePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/PunctureSuffix
+},
+{
+    Tag=WeaponCritChanceMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RifleCritChanceMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_CRIT_CHANCE
+                OperationType=STACKING_MULTIPLY
+                Value=0.016666001
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponCritChance
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/CritChancePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/CritChanceSuffix
+},
+{
+    Tag=WeaponCritDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RifleCritDamageMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_CRIT_DAMAGE
+                OperationType=STACKING_MULTIPLY
+                Value=0.013333
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponCritDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/CritDamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/CritDamageSuffix
+},
+{
+    Tag=WeaponElectricityDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RifleElectricityDamageMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.0099999998
+                DamageType=DT_ELECTRICITY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponElectricityDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/ElectricityPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ElectricitySuffix
+},
+{
+    Tag=WeaponFireDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RifleFireDamageMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.0099999998
+                DamageType=DT_FIRE
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFireDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/FirePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/FireSuffix
+},
+{
+    Tag=WeaponFireRateMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RifleFireRateMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_FIRE_RATE
+                OperationType=STACKING_MULTIPLY
+                Value=0.00667
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFireRate
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+},
+{
+    Upgrade={
+        UpgradeType=WEAPON_FIRE_RATE
+        OperationType=STACKING_MULTIPLY
+        Value=0.00667
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=/Lotus/Weapons/Tenno/Bows/LotusBow
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+    }
+Schema={
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+        Script=""
+    }
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/FireRatePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/FireRateSuffix
+},
+{
+    Tag=WeaponFreezeDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RifleFreezeDamageMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.0099999998
+                DamageType=DT_FREEZE
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFreezeDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/FrostPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/FrostSuffix
+},
+{
+    Tag=WeaponImpactDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/ImpactDamageRifleMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=STACKING_MULTIPLY
+                Value=0.013333
+                DamageType=DT_IMPACT
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponImpactDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    DamageTypes
+}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ImpactPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ImpactSuffix
+},
+{
+    Tag=WeaponProcTimeMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/WeaponProcTimeRifleMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PROC_TIME
+                OperationType=STACKING_MULTIPLY
+                Value=0.01111
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponProcTimeModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ProcTimePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ProcTimeSuffix
+},
+{
+    Tag=WeaponSlashDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/EventSlashDamageRifleMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=STACKING_MULTIPLY
+                Value=0.013333
+                DamageType=DT_SLASH
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponSlashDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    DamageTypes
+}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/SlashPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/SlashSuffix
+},
+{
+    Tag=WeaponStunChanceMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RifleStunChanceMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PROC_CHANCE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0099999998
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/StatusChance
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/StatusChancePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/StatusChanceSuffix
+},
+{
+    Tag=WeaponToxinDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/PoisonDamageRifleMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.0099999998
+                DamageType=DT_POISON
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponPoisonDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/ToxinPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ToxinSuffix
+},
+{
+    Tag=WeaponAmmoMaxMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RifleAmmoMaxMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_AMMO_MAX
+                OperationType=STACKING_MULTIPLY
+                Value=0.0055499999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponMaxAmmoModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    NotSentinel
+}
+CanBeBuff=1
+CurseRestrictions={
+    NotSentinel
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/MaxAmmoPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/MaxAmmoSuffix
+},
+{
+    Tag=WeaponClipMaxMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RifleClipMaxMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_CLIP_MAX
+                OperationType=STACKING_MULTIPLY
+                Value=0.0055550002
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponClipMaxModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ClipSizePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ClipSizeSuffix
+},
+{
+    Tag=WeaponDamageAmountMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RifleDamageAmountMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_DAMAGE_AMOUNT
+                OperationType=STACKING_MULTIPLY
+                Value=0.018333299
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponDamageModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/DamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/DamageSuffix
+},
+{
+    Tag=WeaponFireIterationsMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RifleFireIterationsMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_FIRE_ITERATIONS
+                OperationType=STACKING_MULTIPLY
+                Value=0.0099999998
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponMultishotModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/MultishotPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/MultishotSuffix
+},
+{
+    Tag=WeaponProjectileSpeedMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/WeaponProjectileSpeedRifleMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PROJECTILE_SPEED
+                OperationType=STACKING_MULTIPLY
+                Value=0.0099999998
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponProjectileSpeedModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={
+    PROJECTILE
+}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ProjectileSpeedPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ProjectileSpeedSuffix
+},
+{
+    Tag=WeaponPunctureDepthMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RiflePunctureDepthMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PUNCTURE_DEPTH
+                OperationType=ADD
+                Value=0.029999999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponPunctureDepthModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/PunchThroughPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/PunchThroughSuffix
+},
+{
+    Tag=WeaponRecoilReductionMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RifleRecoilReductionMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_RECOIL
+                OperationType=STACKING_MULTIPLY
+                Value=-0.0099999998
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponRecoilModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    NotSentinel
+}
+CanBeBuff=1
+CurseRestrictions={
+    NotSentinel
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/RecoilPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/RecoilSuffix
+},
+{
+    Tag=WeaponReloadSpeedMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RifleReloadSpeedMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_RELOAD_SPEED
+                OperationType=STACKING_MULTIPLY
+                Value=0.0055550002
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponReloadSpeedModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ReloadSpeedPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ReloadSpeedSuffix
+},
+{
+    Tag=WeaponFactionDamageCorpus
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RifleDamageCorpus.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=GAMEPLAY_FACTION_DAMAGE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0049999999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=Corpus
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFactionDamageCorpusDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=1
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.0099999998
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/CorpusDamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/CorpusDamageSuffix
+},
+{
+    Tag=WeaponFactionDamageGrineer
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RifleDamageGrineer.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=GAMEPLAY_FACTION_DAMAGE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0049999999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=Grineer
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFactionDamageGrineerDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=1
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.0099999998
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/GrineerDamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/GrineerDamageSuffix
+},
+{
+    Tag=WeaponFactionDamageInfested
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RifleDamageInfested.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=GAMEPLAY_FACTION_DAMAGE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0049999999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=Infestation
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFactionDamageInfestedDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=1
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.0099999998
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/InfestedDamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/InfestedDamageSuffix
+},
+{
+    Tag=WeaponZoomFovMod
+    Icon=/Lotus/Interface/Cards/Images/Rifle/RifleZoomMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_ZOOM
+                OperationType=STACKING_MULTIPLY
+                Value=0.006666
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponZoomModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    NotSentinel
+}
+CanBeBuff=1
+CurseRestrictions={
+    NotSentinel
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ZoomPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ZoomSuffix
+}
+}
+ItemCompatibilities={
+    {
+        ItemType=/Lotus/Powersuits/Frumentarius/ExaltedSniper
+        Rarity=NONE
+        Attenuation=1.3
+    },
+{
+    ItemType=/Lotus/Powersuits/Ranger/ExaltedBow
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/Ranger/PrimeExaltedBow
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/Temple/ExaltedGuitar
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetComponents/CryoxionWeapon
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetComponents/HextraWeapon
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetComponents/SwarmerWeapon
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetComponents/TazronWeapon
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetComponents/ThermocorMoaWeapon
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/DethMachineRifle
+    Rarity=NONE
+    Attenuation=1.455
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/Gremlin
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/LaserRifle
+    Rarity=NONE
+    Attenuation=1.21
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/PrimeDethMachineRifle
+    Rarity=NONE
+    Attenuation=1.455
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/PrimeLaserRifle
+    Rarity=NONE
+    Attenuation=1.21
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/PrimeSentBioWeapon
+    Rarity=NONE
+    Attenuation=1.3150001
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/PrimeSentElecRailgun
+    Rarity=NONE
+    Attenuation=1.245
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/SentBioWeapon
+    Rarity=NONE
+    Attenuation=1.3150001
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/SentElecRailgun
+    Rarity=NONE
+    Attenuation=1.245
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/SentinelFreezeRayPrimeRifle
+    Rarity=NONE
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/SentinelFreezeRayRifle
+    Rarity=NONE
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Cephalon/Primary/CephPrimary/CephPrimary
+    Rarity=COMMON
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/ClanTech/Bio/BioWeapon
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/ClanTech/Chemical/FlameThrower
+    Rarity=COMMON
+    Attenuation=0.64999998
+},
+{
+    ItemType=/Lotus/Weapons/ClanTech/Chemical/FlameThrowerWraith
+    Rarity=NONE
+    Attenuation=0.60000002
+},
+{
+    ItemType=/Lotus/Weapons/ClanTech/Chemical/RocketLauncher
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/ClanTech/Energy/CrpHeavyRifle
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/ClanTech/Energy/CrpLaserRifle
+    Rarity=COMMON
+    Attenuation=1.55
+},
+{
+    ItemType=/Lotus/Weapons/ClanTech/Energy/DeraVandal
+    Rarity=NONE
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/ClanTech/Energy/EnergyRifle
+    Rarity=COMMON
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/ClanTech/Energy/Railgun
+    Rarity=COMMON
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/BoardExec/Primary/CrpBEFerrox/CrpBEFerrox
+    Rarity=NONE
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/BoardExec/Primary/CrpBEFluxRifle/CrpBEFluxRifle
+    Rarity=NONE
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/BoardExec/Primary/CrpBEGlaxion/CrpBEGlaxion
+    Rarity=NONE
+    Attenuation=0.64999998
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/BoardExec/Primary/CrpBETetra/CrpBETetra
+    Rarity=NONE
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/Bow/Longbow/PrismaLenz/PrismaLenzWeapon
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/Bow/Longbow/CrpBow
+    Rarity=COMMON
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/ChainLightningGun/ChainLightningRifle
+    Rarity=COMMON
+    Attenuation=0.85000002
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/CorpusUMP/CorpusUMP
+    Rarity=COMMON
+    Attenuation=1.5
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/CorpusUMP/PrismaCorpusUMP
+    Rarity=NONE
+    Attenuation=1.45
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/CrpArSniper/CrpArSniperRifle
+    Rarity=COMMON
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/CrpBFG/Vandal/VandalCrpBFG
+    Rarity=NONE
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/CrpBFG/ConclaveBFG
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/CrpBFG/CrpBFG
+    Rarity=COMMON
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/CrpBriefcaseLauncher/CrpBriefcaseLauncher
+    Rarity=COMMON
+    Attenuation=0.64999998
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/CrpFreezeRay/Vandal/CrpFreezeRayVandalRifle
+    Rarity=NONE
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/CrpFreezeRay/CrpFreezeRayRifle
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/CrpRubanRifle/CrpRubanRifle
+    Rarity=COMMON
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/CrpSentAmlgSniper/CrpSentAmlgSniper
+    Rarity=COMMON
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/CrpSentExperimentRifle/CrpSentExperimentRifle
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/CrpShockRifle/CrpShockRifle
+    Rarity=COMMON
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/CrpShockRifle/QuantaVandal
+    Rarity=NONE
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/GrenadeLauncher/CarminePenta
+    Rarity=NONE
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/GrenadeLauncher/GrenadeLauncher
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/Machinegun/SupraVandal
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/LongGuns/Spears/Railgun/CorpusRailgun
+    Rarity=COMMON
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Bows/GrnBow/GrnBowWeapon
+    Rarity=COMMON
+    Attenuation=0.64999998
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Hind/KuvaHind
+    Rarity=NONE
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Karak/KuvaKarak
+    Rarity=NONE
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Ogris/KuvaOgris
+    Rarity=NONE
+    Attenuation=0.69999999
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Quartakk/KuvaQuartakk
+    Rarity=NONE
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Tonkor/KuvaTonkor
+    Rarity=NONE
+    Attenuation=0.89999998
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Zarr/KuvaZarr
+    Rarity=NONE
+    Attenuation=0.69999999
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/BurstRifle/GrnBurstRifle
+    Rarity=COMMON
+    Attenuation=1.42
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/GrineerAssaultRifle/GrnAssaultRifle
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/GrineerLeverActionRifle/GLARifle
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/GrineerLeverActionRifle/PrismaGrinlokWeapon
+    Rarity=NONE
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/GrineerM16Homage/GrineerM16Rifle
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/GrineerM16Homage/KarakWraith
+    Rarity=NONE
+    Attenuation=1.28
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/GrineerSawbladeGun/SawBladeGun
+    Rarity=COMMON
+    Attenuation=1.5
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/GrineerSniperRifle/GrnSniperRifle
+    Rarity=COMMON
+    Attenuation=1.45
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/GrineerSniperRifle/VulkarWraith
+    Rarity=NONE
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/GrineerSniperRifle/WraithGrnSniperRifle
+    Rarity=NONE
+    Attenuation=1.45
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/GrnCannon/GrnCannonWeapon
+    Rarity=COMMON
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/GrnChemstrikeNox/GrnChemstrikeNoxRiflePlayer
+    Rarity=NONE
+    Attenuation=0.5
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/GrnFlameSpear/GrnFlameSpear
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/GrnFourBarrelRifle/GrnFourBarrelRifleWeapon
+    Rarity=COMMON
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/GrnGorgSniperRifle/GrnGorgSniperRifle
+    Rarity=COMMON
+    Attenuation=1.45
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/GrnGrenadeLauncher/GrnGrenadeLauncher
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/GrnHarpoonGun/GrnHarpoonGun
+    Rarity=COMMON
+    Attenuation=1.55
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/GrnKuvaLichRifle/GrnKuvaLichRifleWeapon
+    Rarity=COMMON
+    Attenuation=0.94999999
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/GrnOrokinRifle/GrnOrokinRifleWeapon
+    Rarity=COMMON
+    Attenuation=0.85000002
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/LaserAimRifle/LaserAimRifle
+    Rarity=COMMON
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/VoidTraderGorgon/VTGorgon
+    Rarity=NONE
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/LongGuns/WraithGorgon/WraithGorgon
+    Rarity=NONE
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Infested/Bow/InfCernosBow/InfCernos
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Infested/InfestedLich/LongGuns/CodaHema
+    Rarity=NONE
+    Attenuation=0.89999998
+},
+{
+    ItemType=/Lotus/Weapons/Infested/InfestedLich/LongGuns/CodaSporothrix
+    Rarity=NONE
+    Attenuation=0.85000002
+},
+{
+    ItemType=/Lotus/Weapons/Infested/InfestedLich/LongGuns/CodaSynapse
+    Rarity=NONE
+    Attenuation=0.85000002
+},
+{
+    ItemType=/Lotus/Weapons/Infested/LongGuns/InfCrpShockSwarm/InfCrpShockSwarmRifle
+    Rarity=COMMON
+    Attenuation=1.5
+},
+{
+    ItemType=/Lotus/Weapons/Infested/LongGuns/InfSniperRifle/InfSniperRifle
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Infested/LongGuns/InfWFAccompanyingPri/InfestedBurstRifle
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Infested/LongGuns/QuantaFullyInfested/InfQuantaRifle
+    Rarity=COMMON
+    Attenuation=1.3099999
+},
+{
+    ItemType=/Lotus/Weapons/Infested/LongGuns/InfestedRifle
+    Rarity=COMMON
+    Attenuation=1.3099999
+},
+{
+    ItemType=/Lotus/Weapons/Lasria/AK47/TC2024AK47Weapon
+    Rarity=COMMON
+    Attenuation=0.80000001
+},
+{
+    ItemType=/Lotus/Weapons/Lasria/LasGooAK/LasGooAKPlayerWeapon
+    Rarity=COMMON
+    Attenuation=0.94999999
+},
+{
+    ItemType=/Lotus/Weapons/Lasria/LasGrenadeLauncher/LasrianNoxPlayerWeapon
+    Rarity=COMMON
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/MK1Series/MK1Paris
+    Rarity=NONE
+    Attenuation=1.45
+},
+{
+    ItemType=/Lotus/Weapons/Operator/Pistols/DrifterPistol/DrifterPistolPlayerWeapon
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Sentients/OperatorAmplifiers/SentTrainingAmplifier/OperatorTrainingAmpWeapon
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Sentients/OperatorAmplifiers/OperatorAmpWeapon
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Sentients/SentRifleNewWar/SentRifleNewWarGun
+    Rarity=COMMON
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Sentients/Shedu/SheduHeavyWeapon
+    Rarity=COMMON
+    Attenuation=0.75
+},
+{
+    ItemType=/Lotus/Weapons/Syndicates/ArbitersOfHexis/LongGuns/AHBoltor
+    Rarity=NONE
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Syndicates/CephalonSuda/LongGuns/CSSimulor
+    Rarity=NONE
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Syndicates/PerrinSequence/LongGuns/PSPenta
+    Rarity=NONE
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Syndicates/RedVeil/Bows/RVCernos
+    Rarity=NONE
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Bayonet/TnBayonetRifleWeapon
+    Rarity=COMMON
+    Attenuation=0.5
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Bows/AntlerBow/AntlerBow
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Bows/AsymetricalBow/AsymetricalBow
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Bows/DaxDuviriAsymetricalBow/DaxDuviriAsymmetricalLongBowPlayerWeapon
+    Rarity=COMMON
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Bows/Omicrus/OmicrusPlayerWep
+    Rarity=COMMON
+    Attenuation=0.64999998
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Bows/PrimeCernos/PrimeCernos
+    Rarity=NONE
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Bows/PrimeDaikyu/PrimeDaikyuBow
+    Rarity=NONE
+    Attenuation=0.80000001
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Bows/PrimeDerelictCernos/DerelictCernos
+    Rarity=COMMON
+    Attenuation=0.89999998
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Bows/TnChoirBow/TnChoirBow
+    Rarity=COMMON
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Bows/HuntingBow
+    Rarity=COMMON
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Bows/PrimeHuntingBow
+    Rarity=NONE
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Bows/StalkerBow
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Bows/ValentinesConclaveVariantBow
+    Rarity=NONE
+    Attenuation=0.96499997
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/DexTheThird/DexTheThird
+    Rarity=NONE
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/DrakeRifle/DrakeRifle
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/FiveShotSniper/FiveShotSniper
+    Rarity=COMMON
+    Attenuation=0.94999999
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/GarudaCrossbow/GarudaCrossbow
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/Gunbrella/ShrineMaidenGunbrellaWeapon
+    Rarity=COMMON
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/GyreRifle/GyreRifleWeapon
+    Rarity=COMMON
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/LoginPrimary/SundialRifle
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/Miter/TnoMiter
+    Rarity=COMMON
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeAcceltra/PrimeAcceltraWeapon
+    Rarity=NONE
+    Attenuation=0.55000001
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeAlternox/PrimeAlternoxWeapon
+    Rarity=NONE
+    Attenuation=0.5
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeBaza/PrimeBazaGun
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeBoltor/PrimeBoltor
+    Rarity=NONE
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeBurston/PrimeBurston
+    Rarity=NONE
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeFulmin/PrimeFulmin
+    Rarity=NONE
+    Attenuation=0.75
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeLightningGun/PrimeLightningGun
+    Rarity=COMMON
+    Attenuation=0.64999998
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeNagantaka/PrimeNagantakaWeapon
+    Rarity=NONE
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimePanthera/PrimePanthera
+    Rarity=NONE
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeScourge/PrimeScourgeWeapon
+    Rarity=NONE
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeSoma/PrimeSomaRifle
+    Rarity=NONE
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeStradavar/PrimeStradavarGun
+    Rarity=NONE
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeSybaris/PrimeSybarisRifle
+    Rarity=NONE
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeTenora/TenoraPrimeWeapon
+    Rarity=NONE
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeTiberon/PrimeTiberonRifle
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeTrumna/PrimeTrumnaWeapon
+    Rarity=NONE
+    Attenuation=0.64999998
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeVectis/PrimeVectisRifle
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/PrimeZhuge/PrimeZhugeCrossbow
+    Rarity=NONE
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/RepeatingCrossbow/RepeatingCrossbow
+    Rarity=COMMON
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/RubicoPrime/RubicoPrimeWeapon
+    Rarity=NONE
+    Attenuation=0.69999999
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/SapientPrimary/SapientPrimaryWeapon
+    Rarity=COMMON
+    Attenuation=0.64999998
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/TennoTommyGun/TennoTommyGunRifle
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/TnBardRifle/TnBardRifle
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/TnBeltFedRifle/TnBeltFedRifleWeapon
+    Rarity=COMMON
+    Attenuation=0.89999998
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/TnHopliteSpear/TnHopliteSpearGunWeapon
+    Rarity=COMMON
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/TnModQuestRifle/TnModQuestRifleWeapon
+    Rarity=COMMON
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/TnPriestSpear/TnPriestSpearGun
+    Rarity=COMMON
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/TnQuadSniper/TnQuadSniper
+    Rarity=COMMON
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/TnRailjackRifle/RailjackRifleGun
+    Rarity=COMMON
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/TnRevolverRifle/TnRevolverRifleGun
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/TnRifleErsatz/TnRifleErsatzWeapon
+    Rarity=COMMON
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/TnSMG/TnSMGWeapon
+    Rarity=COMMON
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/TnWispRifle/TnWispRifle
+    Rarity=COMMON
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/TnoLeverAction/TnoLeverActionRifle
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/TnoPrmryXbow/TnoPrmryXbowWeapon
+    Rarity=COMMON
+    Attenuation=1.42
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/LongGuns/WraithLatron/WraithLatron
+    Rarity=NONE
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Rifle/BoltoRifle
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Rifle/BratonPrime
+    Rarity=NONE
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Rifle/BurstRifle
+    Rarity=COMMON
+    Attenuation=1.45
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Rifle/HeavyRifle
+    Rarity=COMMON
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Rifle/LatronPrime
+    Rarity=NONE
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Rifle/Rifle
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Rifle/SemiAutoRifle
+    Rarity=COMMON
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Rifle/SniperRifle
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Rifle/StartingRifle
+    Rarity=NONE
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Rifle/TennoAR
+    Rarity=COMMON
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Rifle/TennoSniperRifle
+    Rarity=COMMON
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Rifle/VIPRifle
+    Rarity=NONE
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Rifle/VandalSniperRifle
+    Rarity=NONE
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Zariman/LongGuns/SemiAutoRifle/ZarimanSemiAutoRifle
+    Rarity=COMMON
+    Attenuation=0.60000002
+},
+{
+    ItemType=/Lotus/Weapons/Thanotech/ThanoRifle/ThanotechRifle
+    Rarity=COMMON
+    Attenuation=0.85000002
+},
+{
+    ItemType=/Lotus/Weapons/VoidTrader/PrismaGrakata
+    Rarity=NONE
+    Attenuation=1.3
+}
+}
+SentinelItemCompatibilities={
+    {
+        ItemType=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetComponents/CryoxionWeapon
+        Rarity=COMMON
+        Attenuation=1
+    },
+{
+    ItemType=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetComponents/HextraWeapon
+    Rarity=COMMON
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetComponents/SwarmerWeapon
+    Rarity=COMMON
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetComponents/TazronWeapon
+    Rarity=COMMON
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Types/Friendly/Pets/MoaPets/MoaPetComponents/ThermocorMoaWeapon
+    Rarity=COMMON
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/DethMachineRifle
+    Rarity=COMMON
+    Attenuation=1.455
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/Gremlin
+    Rarity=COMMON
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/LaserRifle
+    Rarity=COMMON
+    Attenuation=1.21
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/PrimeDethMachineRifle
+    Rarity=NONE
+    Attenuation=1.455
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/PrimeLaserRifle
+    Rarity=NONE
+    Attenuation=1.21
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/PrimeSentBioWeapon
+    Rarity=NONE
+    Attenuation=1.3150001
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/PrimeSentElecRailgun
+    Rarity=NONE
+    Attenuation=1.245
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/SentBioWeapon
+    Rarity=COMMON
+    Attenuation=1.3150001
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/SentElecRailgun
+    Rarity=COMMON
+    Attenuation=1.245
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/SentinelFreezeRayPrimeRifle
+    Rarity=NONE
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/SentinelFreezeRayRifle
+    Rarity=COMMON
+    Attenuation=1.3
+}
 }

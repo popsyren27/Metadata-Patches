@@ -1,58 +1,58 @@
-/Lotus/Types/Sentinels/SentinelPrecepts/BeastLoyalRetriever
+>/Lotus/Types/Sentinels/SentinelPrecepts/BeastLoyalRetriever
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Pets/LuckyCompanionModName
 Icon=/Lotus/Interface/Cards/Images/Kubrow/BeastLoyalRetriever.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Pets/LuckyCompanionModDesc
-    LocKeyWordScript={
-    Script=/Lotus/Types/Sentinels/SentinelAbilities/LuckyCompanion.lua
-    Function=GetDescriptionInfo
-    _baseLuck=0.029999999
-    _luckPerLevel=0.02
-    _doubleResources=1
-    _doubleCredits=1
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Pets/LuckyCompanionModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/LuckyCompanion.lua
+            Function=GetDescriptionInfo
+            _baseLuck=0.029999999
+            _luckPerLevel=0.02
+            _doubleResources=1
+            _doubleCredits=1
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_TACTIC
 ItemCompatibility=/Lotus/Types/Game/Pets/PetPowerSuit
 IncompatibilityTags={
-VENARI_MOD
+    VENARI_MOD
 }
 Script={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/LuckyCompanion.lua
-Function=UpgradeApplied
-_baseLuck=0.029999999
-_luckPerLevel=0.02
-_doubleResources=1
-_doubleCredits=1
+    Script=/Lotus/Types/Sentinels/SentinelAbilities/LuckyCompanion.lua
+    Function=UpgradeApplied
+    _baseLuck=0.029999999
+    _luckPerLevel=0.02
+    _doubleResources=1
+    _doubleCredits=1
 }
 UnappliedScript={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/LuckyCompanion.lua
-Function=UpgradeUnapplied
-_baseLuck=0.029999999
-_luckPerLevel=0.02
-_doubleResources=1
-_doubleCredits=1
+    Script=/Lotus/Types/Sentinels/SentinelAbilities/LuckyCompanion.lua
+    Function=UpgradeUnapplied
+    _baseLuck=0.029999999
+    _luckPerLevel=0.02
+    _doubleResources=1
+    _doubleCredits=1
 }

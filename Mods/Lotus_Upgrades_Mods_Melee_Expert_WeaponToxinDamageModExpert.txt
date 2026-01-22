@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Melee/Expert/WeaponToxinDamageModExpert
-patch not applied (yet)

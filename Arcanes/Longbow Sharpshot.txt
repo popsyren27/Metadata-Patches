@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/LongbowDamageOnHeadshot
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/LongbowDamageOnHeadshot
 Rarity=LEGENDARY
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/LongbowDamageOnHeadshot
@@ -34,16 +34,17 @@ Upgrades={
                 2.5,
                 3
             }
-        }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
     }
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 ApplyUpgradesByDefault=0
 FusionLimit=QA_HIGH
 ItemCompatibility=/Lotus/Weapons/Tenno/Bows/LotusLongBow
+ExtraItemCompatibility={}
 IncompatibilityTags={}
 Script={
     Script=BonusDamageForNextShot.lua

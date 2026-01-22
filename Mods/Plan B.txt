@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Rifle/FasterPistolRoFOnHitBowMod
+>/Lotus/Upgrades/Mods/PvPMods/Rifle/FasterPistolRoFOnHitBowMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/FasterPistolRoFOnHitBowMod
@@ -9,30 +9,30 @@ ExcludeFromCodex=0
 AvailableOnPve=0
 AvailableOnPvp=1
 Upgrades={
-{
-    UpgradeType=WEAPON_FIRE_RATE
-    OperationType=STACKING_MULTIPLY
-    Value=0.050000001
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=/Lotus/Weapons/Tenno/Pistol/LotusPistol
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Mods/FasterPistolRoFOnHitBowMod_desc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=WEAPON_FIRE_RATE
+        OperationType=STACKING_MULTIPLY
+        Value=0.050000001
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=/Lotus/Weapons/Tenno/Pistol/LotusPistol
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Mods/FasterPistolRoFOnHitBowMod_desc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ApplyUpgradesByDefault=0
@@ -41,21 +41,21 @@ BaseDrain=QA_VERY_HIGH
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Tenno/Bows/LotusBow
 IncompatibilityTags={
-ATTICA,
-INFCERNOS,
-CRPBOW,
-ZHUGE
+    ATTICA,
+    INFCERNOS,
+    CRPBOW,
+    ZHUGE
 }
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDuration
 EnhancementTagLocScript={
-Script=""
+    Script=""
 }
 UpgradeChance=1
 UpgradeDuration=0.75
 CanReproc=0
 CanReprocPvp=0
 ConditionalUpgrades={
-/Lotus/Upgrades/Mods/PvPMods/Conditions/OnBowHitCondition
+    /Lotus/Upgrades/Mods/PvPMods/Conditions/OnBowHitCondition
 }
 ConditionTag=/Lotus/Language/Upgrades/OnHitCondition_Description
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/Berserker.png

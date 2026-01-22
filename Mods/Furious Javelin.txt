@@ -1,51 +1,52 @@
-/Lotus/Powersuits/Excalibur/RadialJavelinAugmentCard
+>/Lotus/Powersuits/Excalibur/RadialJavelinAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/RadialJavelinAbilityAugment1Name
 Icon=/Lotus/Interface/Cards/Images/AbilityAugments/ExcaliburJavelinAugment2.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/RadialJavelinAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/RadialJavelinAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/RadialJavelinAbility.lua
-    Function=GetAugmentDescriptionInfo
-    _energySwordDeco=""
-    _javelinSpawnType=""
-    _javelinProjectileType=""
-    _javelinPvpProjectileType=""
-    _javelinProjectilePrimeType=""
-    _javelinProjectileDarkType=""
-    _javelinPvpProjectilePrimeType=""
-    _javelinPvpProjectileDarkType=""
-    _activateAnim=""
-    _range=15
-    _baseDamage=500
-    _furiousAugmentAttachType=""
-    _doomSwordType=""
-    _energySwordPrimeMesh=""
-    _energySwordDarkMesh=""
-    _energySwordCYDarkMesh=""
-    _cyUmbraType=""
-    _animTimeout=0.80000001
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/RadialJavelinAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/RadialJavelinAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/RadialJavelinAbility.lua
+            Function=GetAugmentDescriptionInfo
+            _energySwordDeco=""
+            _javelinSpawnType=""
+            _javelinProjectileType=""
+            _javelinPvpProjectileType=""
+            _javelinProjectilePrimeType=""
+            _javelinProjectileDarkType=""
+            _javelinPvpProjectilePrimeType=""
+            _javelinPvpProjectileDarkType=""
+            _activateAnim=""
+            _range=15
+            _baseDamage=500
+            _furiousAugmentAttachType=""
+            _doomSwordType=""
+            _energySwordPrimeMesh=""
+            _energySwordDarkMesh=""
+            _energySwordCYDarkMesh=""
+            _cyUmbraType=""
+            _animTimeout=0.80000001
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_POWER

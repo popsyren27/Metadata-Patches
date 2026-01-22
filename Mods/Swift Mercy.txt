@@ -1,37 +1,37 @@
-/Lotus/Upgrades/Mods/DataSpike/Assassin/SwiftExecuteMod
+>/Lotus/Upgrades/Mods/DataSpike/Assassin/SwiftExecuteMod
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/SwiftExecuteModName
 Icon=/Lotus/Interface/Cards/Images/DataSpike/SwiftExecuteMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_FIRE_RATE
-    OperationType=STACKING_MULTIPLY
-    Value=0.5
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/DataSpikeSwiftMercy
-    LocKeyWordScript={
-    Script=SwiftMercy.lua
-    Function=GetDescription
-    _speed=50
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=WEAPON_FIRE_RATE
+        OperationType=STACKING_MULTIPLY
+        Value=0.5
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/DataSpikeSwiftMercy
+        LocKeyWordScript={
+            Script=SwiftMercy.lua
+            Function=GetDescription
+            _speed=50
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ItemCompatibility=/Lotus/Weapons/Tenno/HackingDevices/TnHackingDevice/TnHackingDeviceWeapon
 IncludeInBoosterPack=1
 UpgradeChance=1
 ConditionalUpgrades={
-OnExecutionEnd
+    OnExecutionEnd
 }

@@ -1,4 +1,4 @@
-/Lotus/Powersuits/Garuda/GarudaUnstoppableAugmentCard
+>/Lotus/Powersuits/Garuda/GarudaUnstoppableAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/GarudaUnstopplableAbilityAugment1Name
@@ -6,24 +6,49 @@ Icon=/Lotus/Interface/Cards/Images/AbilityAugments/GarudaSeekingTalonsAugment.pn
 RectangleIcon=0
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/GarudaUnstoppableAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/GarudaUnstopplableAbilityAugment1Desc
-    LocKeyWordScript={
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/GarudaUnstoppableAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/GarudaUnstopplableAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/GarudaUnstoppable.lua
+            Function=GetAugmentDescriptionInfo
+            _activateStartAnim=""
+            _activateEndAnim=""
+            _projectileType=""
+            _markFxType=""
+            _elementType=""
+            _pushTriggerType=""
+            _inputFilter=""
+            _loopSequencer=""
+            _chargeLoopSequencer=""
+            _augmentBurst=""
+            _quadHudType=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_POWER
+BaseDrain=QA_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=GarudaBaseSuit
+IsAbilityAugment=1
+Script={
     Script=/Lotus/Powersuits/PowersuitAbilities/GarudaUnstoppable.lua
-    Function=GetAugmentDescriptionInfo
+    Function=AugmentOneEquipped
     _activateStartAnim=""
     _activateEndAnim=""
     _projectileType=""
@@ -36,43 +61,18 @@ Upgrades={
     _augmentBurst=""
     _quadHudType=""
 }
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-}
-}
-ArtifactPolarity=AP_POWER
-BaseDrain=QA_HIGH
-FusionLimit=QA_MEDIUM
-ItemCompatibility=GarudaBaseSuit
-IsAbilityAugment=1
-Script={
-Script=/Lotus/Powersuits/PowersuitAbilities/GarudaUnstoppable.lua
-Function=AugmentOneEquipped
-_activateStartAnim=""
-_activateEndAnim=""
-_projectileType=""
-_markFxType=""
-_elementType=""
-_pushTriggerType=""
-_inputFilter=""
-_loopSequencer=""
-_chargeLoopSequencer=""
-_augmentBurst=""
-_quadHudType=""
-}
 UnappliedScript={
-Script=/Lotus/Powersuits/PowersuitAbilities/GarudaUnstoppable.lua
-Function=AugmentOneUnequipped
-_activateStartAnim=""
-_activateEndAnim=""
-_projectileType=""
-_markFxType=""
-_elementType=""
-_pushTriggerType=""
-_inputFilter=""
-_loopSequencer=""
-_chargeLoopSequencer=""
-_augmentBurst=""
-_quadHudType=""
+    Script=/Lotus/Powersuits/PowersuitAbilities/GarudaUnstoppable.lua
+    Function=AugmentOneUnequipped
+    _activateStartAnim=""
+    _activateEndAnim=""
+    _projectileType=""
+    _markFxType=""
+    _elementType=""
+    _pushTriggerType=""
+    _inputFilter=""
+    _loopSequencer=""
+    _chargeLoopSequencer=""
+    _augmentBurst=""
+    _quadHudType=""
 }

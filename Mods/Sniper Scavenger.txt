@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Aura/PlayerSniperAmmoAuraMod
+>/Lotus/Upgrades/Mods/Aura/PlayerSniperAmmoAuraMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/PlayerSniperAmmoBuffName
@@ -6,37 +6,37 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/MissionBuffs/PlayerSniperAmmoBuff.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_AMMO_RETRIEVED
-    OperationType=STACKING_MULTIPLY
-    Value=0.25
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=/Lotus/Weapons/Ammo/RifleAmmoEx
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/SniperAmmoAuraModDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=WEAPON_AMMO_RETRIEVED
+        OperationType=STACKING_MULTIPLY
+        Value=0.25
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=/Lotus/Weapons/Ammo/RifleAmmoEx
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/SniperAmmoAuraModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_TACTIC
 ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
 TargetType=/Lotus/Types/Player/TennoAvatar
 ExcludedAvatars={
-/Lotus/Types/Player/LotusOperatorAvatar
+    /Lotus/Types/Player/LotusOperatorAvatar
 }

@@ -1,48 +1,48 @@
-/Lotus/Upgrades/Mods/Warframe/HealthPickupGivesArmourMod
+>/Lotus/Upgrades/Tau/HealthPickupGivesArmourMax
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/HealthPickupGivesArmourMod
-StatusDescTag=/Lotus/Language/Buffs/HealthConversionBuffDesc
+LocalizeDescTag=/Lotus/Language/Mods/HealthPickupGivesArmourModDesc
 Icon=/Lotus/Interface/Cards/Images/Simaris/HealthPickupGivesArmourMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Mods/HealthPickupGivesArmourModDesc
-    LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/OnPickup.lua
-    Function=GetArmourForOneHitDesc
-    _activeEffect=""
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=""
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/OnPickup.lua
+            Function=GetArmourForOneHitDesc
+            _activeEffect=""
+            _stackSymbol=ArmourMoteOnPickup
+            _value=75
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
 }
-}
-ArtifactPolarity=AP_DEFENSE
+ArtifactPolarity=AP_WARD
 BaseDrain=QA_VERY_HIGH
 ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
 Script={
-Script=/Lotus/Scripts/Mods/OnPickup.lua
-Function=InitializeMod
-_activeEffect=/Lotus/Fx/Gameplay/Librarian/Mods/PickupArmourIncrease
-}
-SubUpgrades={
-HealthPickupGivesArmourModSubUpgrade
+    Script=/Lotus/Scripts/Mods/OnPickup.lua
+    Function=InitializeModMaxIncrease
+    _activeEffect=""
+    _stackSymbol=ArmourMoteOnPickup
+    _value=75
 }
 UpgradeChance=1
-HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/Protected.png

@@ -1,69 +1,69 @@
-/Lotus/Weapons/Grineer/KuvaLich/Upgrades/InnateDamageRandomMod
+>/Lotus/Weapons/Grineer/KuvaLich/Upgrades/InnateDamageRandomMod
 MarketMode=MM_HIDDEN
 Script={
-Script=/Lotus/Scripts/WeaponAttachments/ApplyEmissiveFromElements.lua
-Function=UpgradeApplied
-_damageEmissivesHi={
-{0,0,0,255},
-{35,0,0,255},
-{0,13,28,255},
-{255,125,0,255},
-{94,166,171,255},
-{156,174,179,255},
-{242,237,166,255},
-{255,221,64,255},
-{120,26,207,255},
-{73,73,73,255},
-{55,128,254,255},
-{162,243,97,255},
-{87,251,58,255},
-{255,255,255,255}
-}
+    Script=/Lotus/Scripts/WeaponAttachments/ApplyEmissiveFromElements.lua
+    Function=UpgradeApplied
+    _damageEmissivesHi={
+        {0,0,0,255},
+        {35,0,0,255},
+        {0,13,28,255},
+        {255,125,0,255},
+        {94,166,171,255},
+        {156,174,179,255},
+        {242,237,166,255},
+        {255,221,64,255},
+        {120,26,207,255},
+        {73,73,73,255},
+        {55,128,254,255},
+        {162,243,97,255},
+        {87,251,58,255},
+        {255,255,255,255}
+    }
 _damageEmissivesLo={
-{78,63,25,255},
-{150,14,14,255},
-{29,58,97,255},
-{255,12,0,255},
-{16,25,84,255},
-{45,22,75,255},
-{0,125,85,255},
-{255,138,0,255},
-{0,48,160,255},
-{14,49,79,255},
-{0,24,136,255},
-{0,48,160,255},
-{0,125,85,255},
-{255,255,255,255}
+    {78,63,25,255},
+    {150,14,14,255},
+    {29,58,97,255},
+    {255,12,0,255},
+    {16,25,84,255},
+    {45,22,75,255},
+    {0,125,85,255},
+    {255,138,0,255},
+    {0,48,160,255},
+    {14,49,79,255},
+    {0,24,136,255},
+    {0,48,160,255},
+    {0,125,85,255},
+    {255,255,255,255}
 }
 }
 AvailableChallenges={}
 UpgradeEntries={
-{
-Tag=InnateElectricityDamage
-Icon=""
-Upgrades={
-{
-Upgrade={
-UpgradeType=WEAPON_PERCENT_BASE_INNATE_DAMAGE_ADDED
-OperationType=ADD
-Value=0.1
-DamageType=DT_ELECTRICITY
-AutoType=1
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-}
-Schema={
-OverrideLocalization=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-}
-}
+    {
+        Tag=InnateElectricityDamage
+        Icon=""
+        Upgrades={
+            {
+                Upgrade={
+                    UpgradeType=WEAPON_PERCENT_BASE_INNATE_DAMAGE_ADDED
+                    OperationType=ADD
+                    Value=0.1
+                    DamageType=DT_ELECTRICITY
+                    AutoType=1
+                    ValidType=""
+                    SymbolFilter=""
+                    UpgradeObject=""
+                    ValidPostures={}
+                    ValidModifiers={}
+                    InvalidModifiers={}
+                    ValidProcTypes={}
+                }
+            Schema={
+                OverrideLocalization=0
+                SmallerIsBetter=0
+                RoundTo=0.1
+                RoundingMode=RM_ROUND
+            }
+    }
 }
 Rarity=COMMON
 CompatibilityTags={}
@@ -75,66 +75,30 @@ LocalizePrefixTag=""
 LocalizeSuffixTag=""
 },
 {
-Tag=InnateFreezeDamage
-Icon=""
-Upgrades={
-{
-Upgrade={
-UpgradeType=WEAPON_PERCENT_BASE_INNATE_DAMAGE_ADDED
-OperationType=ADD
-Value=0.1
-DamageType=DT_FREEZE
-AutoType=1
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-}
-Schema={
-OverrideLocalization=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-}
-}
-}
-Rarity=COMMON
-CompatibilityTags={}
-BuffRestrictions={}
-CanBeBuff=1
-CurseRestrictions={}
-CanBeCurse=1
-LocalizePrefixTag=""
-LocalizeSuffixTag=""
-},
-{
-Tag=InnateHeatDamage
-Icon=""
-Upgrades={
-{
-Upgrade={
-UpgradeType=WEAPON_PERCENT_BASE_INNATE_DAMAGE_ADDED
-OperationType=ADD
-Value=0.1
-DamageType=DT_FIRE
-AutoType=1
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-}
-Schema={
-OverrideLocalization=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-}
+    Tag=InnateFreezeDamage
+    Icon=""
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_INNATE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.1
+                DamageType=DT_FREEZE
+                AutoType=1
+                ValidType=""
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=0
+            SmallerIsBetter=0
+            RoundTo=0.1
+            RoundingMode=RM_ROUND
+        }
 }
 }
 Rarity=COMMON
@@ -147,66 +111,30 @@ LocalizePrefixTag=""
 LocalizeSuffixTag=""
 },
 {
-Tag=InnateImpactDamage
-Icon=""
-Upgrades={
-{
-Upgrade={
-UpgradeType=WEAPON_PERCENT_BASE_INNATE_DAMAGE_ADDED
-OperationType=ADD
-Value=0.1
-DamageType=DT_IMPACT
-AutoType=1
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-}
-Schema={
-OverrideLocalization=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-}
-}
-}
-Rarity=COMMON
-CompatibilityTags={}
-BuffRestrictions={}
-CanBeBuff=1
-CurseRestrictions={}
-CanBeCurse=1
-LocalizePrefixTag=""
-LocalizeSuffixTag=""
-},
-{
-Tag=InnateMagDamage
-Icon=""
-Upgrades={
-{
-Upgrade={
-UpgradeType=WEAPON_PERCENT_BASE_INNATE_DAMAGE_ADDED
-OperationType=ADD
-Value=0.1
-DamageType=DT_MAGNETIC
-AutoType=1
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-}
-Schema={
-OverrideLocalization=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-}
+    Tag=InnateHeatDamage
+    Icon=""
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_INNATE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.1
+                DamageType=DT_FIRE
+                AutoType=1
+                ValidType=""
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=0
+            SmallerIsBetter=0
+            RoundTo=0.1
+            RoundingMode=RM_ROUND
+        }
 }
 }
 Rarity=COMMON
@@ -219,30 +147,30 @@ LocalizePrefixTag=""
 LocalizeSuffixTag=""
 },
 {
-Tag=InnateRadDamage
-Icon=""
-Upgrades={
-{
-Upgrade={
-UpgradeType=WEAPON_PERCENT_BASE_INNATE_DAMAGE_ADDED
-OperationType=ADD
-Value=0.1
-DamageType=DT_RADIATION
-AutoType=1
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-}
-Schema={
-OverrideLocalization=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-}
+    Tag=InnateImpactDamage
+    Icon=""
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_INNATE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.1
+                DamageType=DT_IMPACT
+                AutoType=1
+                ValidType=""
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=0
+            SmallerIsBetter=0
+            RoundTo=0.1
+            RoundingMode=RM_ROUND
+        }
 }
 }
 Rarity=COMMON
@@ -255,30 +183,102 @@ LocalizePrefixTag=""
 LocalizeSuffixTag=""
 },
 {
-Tag=InnateToxinDamage
-Icon=""
-Upgrades={
+    Tag=InnateMagDamage
+    Icon=""
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_INNATE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.1
+                DamageType=DT_MAGNETIC
+                AutoType=1
+                ValidType=""
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=0
+            SmallerIsBetter=0
+            RoundTo=0.1
+            RoundingMode=RM_ROUND
+        }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=""
+LocalizeSuffixTag=""
+},
 {
-Upgrade={
-UpgradeType=WEAPON_PERCENT_BASE_INNATE_DAMAGE_ADDED
-OperationType=ADD
-Value=0.1
-DamageType=DT_POISON
-AutoType=1
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
+    Tag=InnateRadDamage
+    Icon=""
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_INNATE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.1
+                DamageType=DT_RADIATION
+                AutoType=1
+                ValidType=""
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=0
+            SmallerIsBetter=0
+            RoundTo=0.1
+            RoundingMode=RM_ROUND
+        }
 }
-Schema={
-OverrideLocalization=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
 }
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=""
+LocalizeSuffixTag=""
+},
+{
+    Tag=InnateToxinDamage
+    Icon=""
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_INNATE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.1
+                DamageType=DT_POISON
+                AutoType=1
+                ValidType=""
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=0
+            SmallerIsBetter=0
+            RoundTo=0.1
+            RoundingMode=RM_ROUND
+        }
 }
 }
 Rarity=COMMON
@@ -295,37 +295,37 @@ BasePowerRange={0.25,0.60000002}
 BuffGimmeValue=0.94142848
 FusionLimitRange={1,1}
 NumBuffs={
-COMMON={
-1,
-1
-}
+    COMMON={
+        1,
+        1
+    }
 }
 NumBuffsAtten={
-1,
-1,
-1,
-1,
-1,
-1
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
 }
 NumCurses={
-COMMON={}
+    COMMON={}
 }
 NumBuffsCurseAtten={
-1,
-1,
-1,
-1,
-1,
-1
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
 }
 CurseAtten=1
 Polarities={}
 ItemCompatibilities={
-{
-ItemType=/Lotus/Types/Game/LotusWeapon
-Rarity=COMMON
-Attenuation=1
-}
+    {
+        ItemType=/Lotus/Types/Game/LotusWeapon
+        Rarity=COMMON
+        Attenuation=1
+    }
 }
 SpecificFitAttenuation=1

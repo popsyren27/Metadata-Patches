@@ -1,34 +1,34 @@
-/Lotus/Upgrades/Mods/Rifle/WeaponBowConvertAmmoMod
+>/Lotus/Upgrades/Mods/Rifle/WeaponBowConvertAmmoMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/BowModConvertAmmo
 Icon=/Lotus/Interface/Cards/Images/Rifle/BowAmmoMutatorMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_CONVERT_AMMO
-    OperationType=ADD
-    Value=0.083999999
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Items/BowModConvertAmmoDesc
-    LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/AmmoMutationMod.lua
-    Function=GetDescriptionInfo
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=WEAPON_CONVERT_AMMO
+        OperationType=ADD
+        Value=0.083999999
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Items/BowModConvertAmmoDesc
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/AmmoMutationMod.lua
+            Function=GetDescriptionInfo
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_TACTIC

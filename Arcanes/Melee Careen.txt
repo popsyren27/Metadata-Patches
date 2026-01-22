@@ -1,0 +1,53 @@
+>/Lotus/Upgrades/CosmeticEnhancers/Utility/FreezeEnemiesOnRoll
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/FreezeEnemiesOnRollName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionDX.png
+ExcludeFromCodex=0
+ApplyUpgradesByDefault=0
+Script={
+    Script=ApplyStatusToEnemiesOnRoll.lua
+    Function=OnRoll
+    _statusToApply=DT_FREEZE
+    _damageToApplyBase=0.25
+    _damageToApplyPerLevel=0.25
+    _numStatusProcsToApplyBase=5
+    _numStatusProcsToApplyPerLevel=1
+    _radiusBase=3
+    _radiusPerLevel=0.5
+    _cooldownBase=2
+    _cooldownPerLevel=0
+    _refreshRate=0.1
+    _rollStartFX=/Lotus/Fx/Gameplay/Arcanes/FreezeAndDragEnemiesOnRoll
+    _bonusDamageProcCount=10
+    _frozenStateExtension=3
+}
+SubUpgrades={
+    FreezeEnemiesOnRollSub
+}
+EnhancementTag=/Lotus/Language/Arcanes/FreezeEnemiesOnRollDesc
+EnhancementTagLocScript={
+    Script=ApplyStatusToEnemiesOnRoll.lua
+    Function=GetDescriptionInfo
+    _statusToApply=DT_FREEZE
+    _damageToApplyBase=1.25
+    _damageToApplyPerLevel=0.25
+    _numStatusProcsToApplyBase=5
+    _numStatusProcsToApplyPerLevel=1
+    _radiusBase=3
+    _radiusPerLevel=0.5
+    _cooldownBase=2
+    _cooldownPerLevel=0
+    _refreshRate=0.1
+    _rollStartFX=""
+    _bonusDamageProcCount=10
+    _frozenStateExtension=3
+}
+UpgradeChance=1
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Offensive/OnRollCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnRollCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDXBuff.png
+BaseDistillPointValue=24

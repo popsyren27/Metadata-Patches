@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Nightwave/NightwaveTnJetTurbinePistolAugmentMod
+>/Lotus/Upgrades/Mods/Nightwave/NightwaveTnJetTurbinePistolAugmentMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/NightwaveTnJetTurbinePistolAugmentModName
@@ -7,32 +7,32 @@ StatusDescTag=/Lotus/Language/Mods/NightwaveTnJetTurbinePistolAugmentModBuffDesc
 Icon=/Lotus/Interface/Cards/Images/Nightwave/NightwaveTnJetTurbinePistolAugmentMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_DAMAGE_WEAKPOINT
-    OperationType=ADD
-    Value=0.1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/WeaponWeakpointDamage
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=WEAPON_DAMAGE_WEAKPOINT
+        OperationType=ADD
+        Value=0.1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponWeakpointDamage
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ApplyUpgradesByDefault=0
@@ -40,7 +40,7 @@ ArtifactPolarity=AP_ATTACK
 ItemCompatibility=/Lotus/Weapons/Tenno/Pistols/TnJetTurbine/TnJetTurbinePistolWeapon
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDurationAndStacks
 EnhancementTagLocScript={
-Script=""
+    Script=""
 }
 UpgradeChance=1
 UpgradeDuration=5
@@ -49,7 +49,7 @@ ChanceScalesWithRank=0
 StackMode=SM_GROUP
 MaxConditionalStacks=10
 ConditionalUpgrades={
-/Lotus/Weapons/Tenno/Pistols/TnJetTurbine/PistolPrimaryFireWeakpointHitCondition
+    /Lotus/Weapons/Tenno/Pistols/TnJetTurbine/PistolPrimaryFireWeakpointHitCondition
 }
 ConditionTag=/Lotus/Language/Mods/NightwaveTnJetTurbinePistolAugmentModConditionDesc
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/TheoremContagionStatusEffect.png

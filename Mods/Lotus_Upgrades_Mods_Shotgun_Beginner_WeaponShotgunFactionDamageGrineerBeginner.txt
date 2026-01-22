@@ -1,2 +1,32 @@
-/Lotus/Upgrades/Mods/Shotgun/Beginner/WeaponShotgunFactionDamageGrineerBeginner
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Shotgun/Beginner/WeaponShotgunFactionDamageGrineerBeginner
+Upgrades={
+    {
+        UpgradeType=GAMEPLAY_FACTION_DAMAGE
+        OperationType=STACKING_MULTIPLY
+        Value=0.029999999
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=Grineer
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponFactionDamageGrineerDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=1
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.0099999998
+    RoundingMode=RM_ROUND
+}
+}
+BaseDrain=QA_LOW
+FusionLimit=QA_MEDIUM
+IncludeInBoosterPack=0
+IsStarter=1

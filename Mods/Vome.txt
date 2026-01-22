@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Immortal/ImmortalFourMod
+>/Lotus/Upgrades/Mods/Immortal/ImmortalFourMod
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/ImmortalFourModName
 LocalizeDescTag=/Lotus/Language/Mods/ImmortalFourModDesc

@@ -1,46 +1,46 @@
-/Lotus/Powersuits/Yareli/YareliBoardAugmentTwoCard
+>/Lotus/Powersuits/Yareli/YareliBoardAugmentTwoCard
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/YareliBoardAbilityAugment2Name
 Icon=/Lotus/Interface/Cards/Images/AbilityAugments/YareliBoardAugmentTwo.png
 RectangleIcon=0
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_TWO
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/YareliBoardAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/YareliBoardAbilityAugment2Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/YareliBoard.lua
-    Function=GetAugmentDescriptionInfo
-    _mountAnim=""
-    _dismountAnim=""
-    _hoverBoardAvatarType=""
-    _boardPhysics=""
-    _walkPhysics=""
-    _despawn=""
-    _dodgeEffect=""
-    _transferenceAbilityType=""
-    _yareliHoverboardHud=""
-    _augmentTwoActivateAnim=""
-    _augmentTwoCastEffect=""
-    _augmentTwoBoardCastEffect=""
-    _augmentTwoBoardSpawnEffect=""
-    _augmentTwoBoardDespawnEffect=""
-    _augmentTwoBoardAgent=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=AUGMENT_TWO
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/YareliBoardAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/YareliBoardAbilityAugment2Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/YareliBoard.lua
+            Function=GetAugmentDescriptionInfo
+            _mountAnim=""
+            _dismountAnim=""
+            _hoverBoardAvatarType=""
+            _boardPhysics=""
+            _walkPhysics=""
+            _despawn=""
+            _dodgeEffect=""
+            _transferenceAbilityType=""
+            _yareliHoverboardHud=""
+            _augmentTwoActivateAnim=""
+            _augmentTwoCastEffect=""
+            _augmentTwoBoardCastEffect=""
+            _augmentTwoBoardSpawnEffect=""
+            _augmentTwoBoardDespawnEffect=""
+            _augmentTwoBoardAgent=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }

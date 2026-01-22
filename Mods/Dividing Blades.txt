@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Stances/PvPDualSwordStanceOne
+>/Lotus/Upgrades/Mods/PvPMods/Stances/PvPDualSwordStanceOne
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/PvPDualSwordStanceOne
@@ -9,13 +9,13 @@ AvailableOnPve=0
 AvailableOnPvp=1
 ArtifactPolarity=AP_TACTIC
 UnequippedAttackSets={
-CC_GROUND=Combos/PvPDualSwordComboOneEquipped
+    CC_GROUND=Combos/PvPDualSwordComboOneEquipped
 }
 EquippedAttackSets={
-CC_GROUND=Combos/PvPDualSwordComboA
-CC_GROUND_BRANCH_A=Combos/PvPDualSwordComboOneEquipped
-CC_GROUND_BRANCH_B=Combos/PvPDualSwordComboB
+    CC_GROUND=Combos/PvPDualSwordComboA
+    CC_GROUND_BRANCH_A=Combos/PvPDualSwordComboOneEquipped
+    CC_GROUND_BRANCH_B=Combos/PvPDualSwordComboB
 }
 AerialDirectionThresholds={
-BP_JUMP=-45
+    BP_JUMP=-45
 }

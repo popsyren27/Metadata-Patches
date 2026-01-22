@@ -1,30 +1,30 @@
-/Lotus/Upgrades/Mods/PvPMods/Melee/BlockMoreAttackSlowerMeleeMod
+>/Lotus/Upgrades/Mods/PvPMods/Melee/BlockMoreAttackSlowerMeleeMod
 LocalizeTag=/Lotus/Language/Mods/BlockMoreAttackSlowerMeleeMod
 Upgrades={
-{
-    UpgradeType=WEAPON_PARRY_DAMAGE_BLOCKED
-    OperationType=STACKING_MULTIPLY
-    Value=0.075000003
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Mods/BlockMoreAttackSlowerMeleeMod_desc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=WEAPON_PARRY_DAMAGE_BLOCKED
+        OperationType=STACKING_MULTIPLY
+        Value=0.075000003
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Mods/BlockMoreAttackSlowerMeleeMod_desc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 },
 {
     UpgradeType=WEAPON_MELEE_DAMAGE
@@ -42,8 +42,8 @@ RoundingMode=RM_ROUND
     OverrideLocalization=1
     LocTag=/Lotus/Language/Upgrades/MeleeDamageBuffDesc
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
 ReverseValueSymbol=0
@@ -53,5 +53,5 @@ RoundingMode=RM_ROUND
 }
 }
 UnappliedScript={
-Script=""
+    Script=""
 }

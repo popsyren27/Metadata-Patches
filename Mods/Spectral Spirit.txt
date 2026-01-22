@@ -1,53 +1,53 @@
-/Lotus/Powersuits/Dagath/DagathApparitionAugmentCard
+>/Lotus/Powersuits/Dagath/DagathApparitionAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/DagathApparitionAbilityAugment1Name
 Icon=/Lotus/Interface/Cards/Images/AbilityAugments/DagathApparitionAugment.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/DagathApparitionAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/DagathApparitionAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/DagathApparition.lua
-    Function=GetAugmentDescriptionInfo
-    _activateAnim=""
-    _becomeSpectreAnim=""
-    _buffEffectProj=""
-    _buffEffectSpawner=""
-    _spectreEffectProj=""
-    _spectreEffectSpawner=""
-    _castEffect=""
-    _castEffectBurst=""
-    _buffEndFX=""
-    _apparitionSeq=""
-    _activateEvent=""
-    _becomeSpectreEvent=""
-    _spectreModeSeq=""
-    _spectreModeEndSound=""
-    _pickupType=""
-    _overlayMovie=/Lotus/Interface/FullScreenQuad.swf
-    _colorCorrection=""
-    _shockwaveFx=""
-    _spectralBuffLoc=""
-    _protectionBuffLoc=""
-    _combinedBuffLoc=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/DagathApparitionAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/DagathApparitionAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/DagathApparition.lua
+            Function=GetAugmentDescriptionInfo
+            _activateAnim=""
+            _becomeSpectreAnim=""
+            _buffEffectProj=""
+            _buffEffectSpawner=""
+            _spectreEffectProj=""
+            _spectreEffectSpawner=""
+            _castEffect=""
+            _castEffectBurst=""
+            _buffEndFX=""
+            _apparitionSeq=""
+            _activateEvent=""
+            _becomeSpectreEvent=""
+            _spectreModeSeq=""
+            _spectreModeEndSound=""
+            _pickupType=""
+            _overlayMovie=/Lotus/Interface/FullScreenQuad.swf
+            _colorCorrection=""
+            _shockwaveFx=""
+            _spectralBuffLoc=""
+            _protectionBuffLoc=""
+            _combinedBuffLoc=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_POWER

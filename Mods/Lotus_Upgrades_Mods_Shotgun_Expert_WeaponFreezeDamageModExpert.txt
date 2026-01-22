@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Shotgun/Expert/WeaponFreezeDamageModExpert
-patch not applied (yet)

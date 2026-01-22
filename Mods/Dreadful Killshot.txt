@@ -1,0 +1,74 @@
+>/Lotus/Upgrades/Mods/Rifle/Event/Nightwave/NightwaveBasmuAugmentMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Mods/NightwaveBasmuAugmentModName
+LocalizeDescTag=""
+StatusDescTag=/Lotus/Language/Mods/NightwaveBasmuAugmentModStatusDesc
+Icon=/Lotus/Interface/Cards/Images/Nightwave/NightwaveBasmuAugmentMod.png
+ExcludeFromCodex=0
+ArtifactPolarity=AP_ATTACK
+FusionPowerCurve=QC_NONE
+ItemCompatibility=/Lotus/Weapons/Sentients/SentRifleNewWar/SentRifleNewWarGun
+Script={
+    Script=/Lotus/Upgrades/Boons/Corrupted/StatIncreasePerHealth.lua
+    Function=ApplyUpgrade
+    _hpAmountPerStatIncrease=75
+    _statUpgradeTypes={
+        WEAPON_DAMAGE_AMOUNT,
+        WEAPON_PROC_CHANCE
+    }
+_operationType=STACKING_MULTIPLY
+_statModifierLevels={
+    0.1,
+    0.12,
+    0.14,
+    0.16,
+    0.18000001,
+    0.2
+}
+_compareAgainstMaxHealth=0
+_pollInterval=0.75
+_hpDecreaseMultiplier=0.5
+_buffCap=3.5999999
+}
+UnappliedScript={
+    Script=/Lotus/Upgrades/Boons/Corrupted/StatIncreasePerHealth.lua
+    Function=RemoveUpgrade
+    _hpAmountPerStatIncrease=100
+    _statUpgradeTypes={
+        WEAPON_DAMAGE_AMOUNT,
+        WEAPON_PROC_CHANCE
+    }
+_operationType=STACKING_MULTIPLY
+_statModifierLevels={
+    0.1
+}
+_compareAgainstMaxHealth=1
+_pollInterval=1
+_hpDecreaseMultiplier=0.5
+_buffCap=7.5
+}
+EnhancementTag=/Lotus/Language/Mods/NightwaveBasmuAugmentModDesc
+EnhancementTagLocScript={
+    Script=/Lotus/Upgrades/Boons/Corrupted/StatIncreasePerHealth.lua
+    Function=GetDescription
+    _hpAmountPerStatIncrease=75
+    _statUpgradeTypes={
+        WEAPON_DAMAGE_AMOUNT
+    }
+_operationType=STACKING_MULTIPLY
+_statModifierLevels={
+    0.1,
+    0.12,
+    0.14,
+    0.16,
+    0.18000001,
+    0.2
+}
+_compareAgainstMaxHealth=1
+_pollInterval=1
+_hpDecreaseMultiplier=0
+_buffCap=3.5999999
+}
+UpgradeChance=1
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/IncreasedDamage.png

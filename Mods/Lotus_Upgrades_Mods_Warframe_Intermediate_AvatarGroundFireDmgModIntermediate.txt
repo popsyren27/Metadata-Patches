@@ -1,2 +1,3 @@
-/Lotus/Upgrades/Mods/Warframe/Intermediate/AvatarGroundFireDmgModIntermediate
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Warframe/Intermediate/AvatarGroundFireDmgModIntermediate
+FusionLimit=QA_HIGH
+IncludeInBoosterPack=0

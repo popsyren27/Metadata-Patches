@@ -1,36 +1,36 @@
-/Lotus/Upgrades/Mods/Rifle/SniperHeadshotMultiplierMod
+>/Lotus/Upgrades/Mods/Rifle/SniperHeadshotMultiplierMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/SniperHeadshotMultiplier
 Icon=/Lotus/Interface/Cards/Images/Rifle/SniperHeadshotMultiplierMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_HEADSHOT_MULTIPLIER
-    OperationType=STACKING_MULTIPLY
-    Value=0.1
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=/Lotus/Weapons/Tenno/Rifle/LotusSniperRifle
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/SniperHeadshotMultiplierModDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=WEAPON_HEADSHOT_MULTIPLIER
+        OperationType=STACKING_MULTIPLY
+        Value=0.1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=/Lotus/Weapons/Tenno/Rifle/LotusSniperRifle
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/SniperHeadshotMultiplierModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_ATTACK

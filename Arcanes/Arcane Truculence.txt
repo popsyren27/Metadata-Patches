@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Defensive/RadialViralAttackOnOverguardGain
+>/Lotus/Upgrades/CosmeticEnhancers/Defensive/RadialViralAttackOnOverguardGain
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/1999/RadialViralAttackOnOverguardGainName
@@ -26,14 +26,14 @@ ExtraUpgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=0
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 ApplyUpgradesByDefault=0
 FusionLimit=QA_HIGH
@@ -51,7 +51,7 @@ Script={
     _attackProcTypes={
         MAX_ProcType
     }
-    _attackProcCount=10
+_attackProcCount=10
 }
 SubUpgrades={
     RadialViralAttackOnOverguardGainSubMod
@@ -71,7 +71,7 @@ EnhancementTagLocScript={
     _attackProcTypes={
         MAX_ProcType
     }
-    _attackProcCount=10
+_attackProcCount=10
 }
 UpgradeChance=1
 ChanceScalesWithRank=0

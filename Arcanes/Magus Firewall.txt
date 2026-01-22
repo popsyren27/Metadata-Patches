@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/DamageReductionOnVoidMode
+>/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/DamageReductionOnVoidMode
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/DamageReductionOnVoidMode
 LocalizeDescTag=""
@@ -32,21 +32,21 @@ Upgrades={
                 1,
                 1
             }
-            _duration={
-                10,
-                20,
-                30,
-                40,
-                50,
-                60
-            }
-            _decoType=""
+        _duration={
+            10,
+            20,
+            30,
+            40,
+            50,
+            60
         }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    _decoType=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 ApplyUpgradesByDefault=0
 FusionLimit=QA_HIGH
@@ -61,15 +61,15 @@ Script={
         1,
         1
     }
-    _duration={
-        10,
-        20,
-        30,
-        40,
-        50,
-        60
-    }
-    _decoType=/Lotus/Fx/PowersuitAbilities/Operator/FirewallParentDeco
+_duration={
+    10,
+    20,
+    30,
+    40,
+    50,
+    60
+}
+_decoType=/Lotus/Fx/PowersuitAbilities/Operator/FirewallParentDeco
 }
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
 EnhancementTagLocScript={

@@ -1,46 +1,48 @@
-/Lotus/Powersuits/Alchemist/SerpentAugmentCard
+>/Lotus/Powersuits/Alchemist/SerpentAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/AlchemistSerpent_AbilityAugment1Name
 Icon=/Lotus/Interface/Cards/Images/AbilityAugments/LavosSerpentAugment.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/AlchemistSerpentAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/AlchemistSerpent_AbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/AlchemistSerpent.lua
-    Function=GetAugmentDescriptionInfo
-    _activateStartAnim=""
-    _activateAnim=""
-    _castEffect=""
-    _sweepTrail=""
-    _elementalTrails={}
-    _snakeLeftType=""
-    _snakeLeftStartAnim=""
-    _snakeLeftAnim=""
-    _snakeRightType=""
-    _snakeRightStartAnim=""
-    _snakeRightAnim=""
-    _burstEffect=""
-    _lineDecoType=""
-    _augmentOneBurst=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/AlchemistSerpentAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/AlchemistSerpent_AbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/AlchemistSerpent.lua
+            Function=GetAugmentDescriptionInfo
+            _activateStartAnim=""
+            _activateAnim=""
+            _castEffect=""
+            _sweepTrail=""
+            _elementalTrails={}
+            _snakeLeftType=""
+            _snakeLeftStartAnim=""
+            _snakeLeftAnim=""
+            _snakeRightType=""
+            _snakeRightStartAnim=""
+            _snakeRightAnim=""
+            _burstEffect=""
+            _lineDecoType=""
+            _augmentOneBurst=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_POWER

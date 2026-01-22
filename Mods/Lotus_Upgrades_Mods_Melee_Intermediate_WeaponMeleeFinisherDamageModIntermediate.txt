@@ -1,2 +1,3 @@
-/Lotus/Upgrades/Mods/Melee/Intermediate/WeaponMeleeFinisherDamageModIntermediate
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Melee/Intermediate/WeaponMeleeFinisherDamageModIntermediate
+FusionLimit=QA_HIGH
+IncludeInBoosterPack=0

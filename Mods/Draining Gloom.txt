@@ -1,29 +1,55 @@
-/Lotus/Upgrades/Mods/PvPMods/Pistol/DespairEnergyDrainAoE
+>/Lotus/Upgrades/Mods/PvPMods/Pistol/DespairEnergyDrainAoE
 Rarity=RARE
 LocalizeTag=/Lotus/Language/Mods/DespairEnergyDrainAoE
 Icon=/Lotus/Interface/Cards/Images/PvP/Pistol/DespairEnergyDrainAoE.png
 CompatibilityTags={
-PROJECTILE
+    PROJECTILE
 }
 Upgrades={
+    {
+        UpgradeType=WEAPON_PROJECTILE_EXPLOSION_CHANCE
+        OperationType=ADD
+        Value=0.25
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Mods/DespairEnergyDrainAoEDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+},
 {
-UpgradeType=WEAPON_PROJECTILE_EXPLOSION_CHANCE
-OperationType=ADD
-Value=0.25
-DamageType=DT_ANY
-AutoType=1
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Mods/DespairEnergyDrainAoEDesc
-LocKeyWordScript={
-Script=""
-}
+    UpgradeType=WEAPON_CLIP_MAX
+    OperationType=STACKING_MULTIPLY
+    Value=-0.15000001
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponClipMaxModDesc
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -33,49 +59,23 @@ RoundingMode=RM_ROUND
 AllowConditionalLocMerge=0
 },
 {
-UpgradeType=WEAPON_CLIP_MAX
-OperationType=STACKING_MULTIPLY
-Value=-0.15000001
-DamageType=DT_ANY
-AutoType=1
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/WeaponClipMaxModDesc
-LocKeyWordScript={
-Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
-},
-{
-UpgradeType=WEAPON_AMMO_MAX
-OperationType=STACKING_MULTIPLY
-Value=-0.15000001
-DamageType=DT_ANY
-AutoType=1
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/WeaponMaxAmmoModDesc
-LocKeyWordScript={
-Script=""
-}
+    UpgradeType=WEAPON_AMMO_MAX
+    OperationType=STACKING_MULTIPLY
+    Value=-0.15000001
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponMaxAmmoModDesc
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0

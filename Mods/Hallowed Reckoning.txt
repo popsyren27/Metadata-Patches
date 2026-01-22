@@ -1,47 +1,48 @@
-/Lotus/Powersuits/Paladin/ReckoningAugmentCard
+>/Lotus/Powersuits/Paladin/ReckoningAugmentCard
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/ReckoningAbilityAugment1Name
 Icon=/Lotus/Interface/Cards/Images/AbilityAugments/OberonReckoningAugment.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/ReckoningAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/ReckoningAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/Reckoning.lua
-    Function=GetAugmentDescriptionInfo
-    _activateAnim=""
-    _healthOrbSpawner=""
-    _healthOrbSpawnerPvp=""
-    _enemyEffect=""
-    _primeEffect=""
-    _enemyExplode=""
-    _castEffect=""
-    _castBurst=""
-    _effectBone=GAME_L1_WEAPON1
-    _blindProjector=""
-    _preventStasisTypes={}
-    _augmentDamageTriggerType=""
-    _augmentOneDecoType=""
-    _pvpStartAnim=""
-    _pvpLoopAnim=""
-    _pvpEndAnim=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/ReckoningAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/ReckoningAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/Reckoning.lua
+            Function=GetAugmentDescriptionInfo
+            _activateAnim=""
+            _healthOrbSpawner=""
+            _healthOrbSpawnerPvp=""
+            _enemyEffect=""
+            _primeEffect=""
+            _enemyExplode=""
+            _castEffect=""
+            _castBurst=""
+            _effectBone=GAME_L1_WEAPON1
+            _preventStasisTypes={}
+            _augmentDamageTriggerType=""
+            _augmentOneDecoType=""
+            _pvpStartAnim=""
+            _pvpLoopAnim=""
+            _pvpEndAnim=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_POWER

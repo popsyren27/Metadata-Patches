@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Utility/RadialHealOnHealthPickup
+>/Lotus/Upgrades/CosmeticEnhancers/Utility/RadialHealOnHealthPickup
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/RadialHealOnHealthPickupName
@@ -35,183 +35,183 @@ Upgrades={
                 400,
                 500
             }
-            _healRadius={
-                5,
-                5,
-                5,
-                5,
-                5,
-                5
-            }
-            _burstEffect=""
-            _isEnergy=0
-            _cooldown=15
+        _healRadius={
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
         }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-        },
-        {
-            UpgradeType=NONE
-            OperationType=ADD
-            Value=0
-            DamageType=DT_ANY
-            AutoType=1
-            ValidType=""
-            CheckTypeOnInstall=0
-            SymbolFilter=""
-            UpgradeObject=""
-            ValidPostures={}
-            ValidModifiers={}
-            InvalidModifiers={}
-            ValidProcTypes={}
-            OverrideLocalization=1
-            LocTag=/Lotus/Language/Upgrades/FlatValueDesc
-            LocKeyWordScript={
-                Script=RadialHeal.lua
-                Function=GetHealRadius
-                _healLoc=/Lotus/Language/Actions/HealthIncrease
-                _healAmount={
-                    25,
-                    50,
-                    75,
-                    100,
-                    125,
-                    150
-                }
-                _healRadius={
-                    25,
-                    25,
-                    25,
-                    25,
-                    25,
-                    25
-                }
-                _burstEffect=""
-                _isEnergy=0
-                _cooldown=15
-            }
-            SmallerIsBetter=0
-            RoundTo=0.1
-            RoundingMode=RM_ROUND
-            AllowConditionalLocMerge=0
-            },
-            {
-                UpgradeType=NONE
-                OperationType=ADD
-                Value=0
-                DamageType=DT_ANY
-                AutoType=1
-                ValidType=""
-                CheckTypeOnInstall=0
-                SymbolFilter=""
-                UpgradeObject=""
-                ValidPostures={}
-                ValidModifiers={}
-                InvalidModifiers={}
-                ValidProcTypes={}
-                OverrideLocalization=1
-                LocTag=/Lotus/Language/Upgrades/FlatValueDesc
-                LocKeyWordScript={
-                    Script=RadialHeal.lua
-                    Function=GetCooldown
-                    _healLoc=/Lotus/Language/Actions/HealthIncrease
-                    _healAmount={
-                        25,
-                        50,
-                        75,
-                        100,
-                        125,
-                        150
-                    }
-                    _healRadius={
-                        5,
-                        6,
-                        7,
-                        10,
-                        12,
-                        15
-                    }
-                    _burstEffect=""
-                    _isEnergy=0
-                    _cooldown=15
-                }
-                SmallerIsBetter=0
-                RoundTo=0.1
-                RoundingMode=RM_ROUND
-                AllowConditionalLocMerge=0
-            }
+    _burstEffect=""
+    _isEnergy=0
+    _cooldown=15
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+},
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/FlatValueDesc
+    LocKeyWordScript={
+        Script=RadialHeal.lua
+        Function=GetHealRadius
+        _healLoc=/Lotus/Language/Actions/HealthIncrease
+        _healAmount={
+            25,
+            50,
+            75,
+            100,
+            125,
+            150
         }
-        ExtraUpgrades={
-            {
-                UpgradeType=GAMEPLAY_FREE_REVIVE_COUNT
-                OperationType=ADD
-                Value=1
-                DamageType=DT_ANY
-                AutoType=0
-                ValidType=""
-                CheckTypeOnInstall=0
-                SymbolFilter=""
-                UpgradeObject=""
-                ValidPostures={}
-                ValidModifiers={}
-                InvalidModifiers={}
-                ValidProcTypes={}
-                OverrideLocalization=1
-                LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerBonusRevive
-                LocKeyWordScript={
-                    Script=""
-                }
-                DisplayAsMultiplier=0
-                DisplayAsPercent=0
-                ReverseValueSymbol=0
-                SmallerIsBetter=0
-                RoundTo=0.1
-                RoundingMode=RM_ROUND
-                AllowConditionalLocMerge=0
-            }
+    _healRadius={
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+    }
+_burstEffect=""
+_isEnergy=0
+_cooldown=15
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+},
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/FlatValueDesc
+    LocKeyWordScript={
+        Script=RadialHeal.lua
+        Function=GetCooldown
+        _healLoc=/Lotus/Language/Actions/HealthIncrease
+        _healAmount={
+            25,
+            50,
+            75,
+            100,
+            125,
+            150
         }
-        ApplyUpgradesByDefault=0
-        FusionLimit=QA_HIGH
-        Script={
-            Script=RadialHeal.lua
-            Function=ApplyUpgrade
-            _healLoc=/Lotus/Language/Actions/HealthIncrease
-            _healAmount={
-                50,
-                100,
-                200,
-                300,
-                400,
-                500
-            }
-            _healRadius={
-                25,
-                25,
-                25,
-                25,
-                25,
-                25
-            }
-            _burstEffect=/Lotus/Fx/Gameplay/Arcanes/RadialHealOnPickup
-            _isEnergy=0
-            _cooldown=15
-        }
-        MultiBonusLoc=1
-        EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionRadialHeal
-        EnhancementTagLocScript={
+    _healRadius={
+        5,
+        6,
+        7,
+        10,
+        12,
+        15
+    }
+_burstEffect=""
+_isEnergy=0
+_cooldown=15
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ExtraUpgrades={
+    {
+        UpgradeType=GAMEPLAY_FREE_REVIVE_COUNT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerBonusRevive
+        LocKeyWordScript={
             Script=""
         }
-        UpgradeChance=0.60000002
-        UpgradeDuration=15
-        DurationScalesWithRank=0
-        ChanceScalesWithRank=0
-        CanReproc=0
-        ConditionalUpgrades={
-            OnHealthPickupCondition
-        }
-        ConditionTag=/Lotus/Language/Upgrades/OnHealthPickupCondition_Description
-        HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionAT.png
-        UseDebuffIcon=1
-        BaseDistillPointValue=28
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+Script={
+    Script=RadialHeal.lua
+    Function=ApplyUpgrade
+    _healLoc=/Lotus/Language/Actions/HealthIncrease
+    _healAmount={
+        50,
+        100,
+        200,
+        300,
+        400,
+        500
+    }
+_healRadius={
+    25,
+    25,
+    25,
+    25,
+    25,
+    25
+}
+_burstEffect=/Lotus/Fx/Gameplay/Arcanes/RadialHealOnPickup
+_isEnergy=0
+_cooldown=15
+}
+MultiBonusLoc=1
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionRadialHeal
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=0.60000002
+UpgradeDuration=15
+DurationScalesWithRank=0
+ChanceScalesWithRank=0
+CanReproc=0
+ConditionalUpgrades={
+    OnHealthPickupCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnHealthPickupCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionAT.png
+UseDebuffIcon=1
+BaseDistillPointValue=28

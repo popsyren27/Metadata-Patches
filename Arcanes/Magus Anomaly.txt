@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/PullOnTransferenceIn
+>/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/PullOnTransferenceIn
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/PullOnTransferenceIn
 LocalizeDescTag=""
@@ -32,14 +32,14 @@ Upgrades={
                 25,
                 30
             }
-            _pullEffect=""
-            _invalidTypes={}
-        }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
+        _pullEffect=""
+        _invalidTypes={}
     }
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 ApplyUpgradesByDefault=0
 FusionLimit=QA_HIGH
@@ -54,11 +54,11 @@ Script={
         25,
         30
     }
-    _pullEffect=/Lotus/Fx/PowersuitAbilities/Operator/PullAttach
-    _invalidTypes={
-        /Lotus/Types/Game/DropshipAvatar,
-        /Lotus/Types/Game/VoidNegationTowerAvatar
-    }
+_pullEffect=/Lotus/Fx/PowersuitAbilities/Operator/PullAttach
+_invalidTypes={
+    /Lotus/Types/Game/DropshipAvatar,
+    /Lotus/Types/Game/VoidNegationTowerAvatar
+}
 }
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
 EnhancementTagLocScript={

@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Pistol/Expert/PrimedWeaponCritDamageMod
-patch not applied (yet)

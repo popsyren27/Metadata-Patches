@@ -1,0 +1,40 @@
+>/Lotus/Upgrades/Mods/Antiques/AntiqueArmour
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Upgrades/AntiqueArmour
+Icon=/Lotus/Interface/Cards/Images/AntiqueMods/OrokinImageB.png
+ExcludeFromCodex=0
+SearchTags={
+    /Lotus/Language/TennoWay/Vazarin
+}
+Upgrades={
+    {
+        UpgradeType=AVATAR_ARMOUR
+        OperationType=ADD_BASE
+        Value=100
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/AntiqueArmourDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
+}
+AssociatedSchool=AP_DEFENSE
+FusionLimit=QA_MEDIUM
+UpgradeChance=1

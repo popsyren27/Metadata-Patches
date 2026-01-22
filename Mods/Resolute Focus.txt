@@ -1,30 +1,30 @@
-/Lotus/Upgrades/Mods/Archwing/Rifle/ArchwingCCImmunityIfAimingMod
+>/Lotus/Upgrades/Mods/Archwing/Rifle/ArchwingCCImmunityIfAimingMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/ArchwingCCImmunityifAiming
 Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingRifle/ArchwingCCImmunityIfAimingMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_INJURY_BLOCK_CHANCE
-    OperationType=ADD
-    Value=0.167
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=""
-    SymbolFilter=PT_STAGGERED
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={
-    PM_AIM
-}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/ResistanceKnockdownifAimingDesc
-LocKeyWordScript={
-Script=""
-}
+    {
+        UpgradeType=AVATAR_INJURY_BLOCK_CHANCE
+        OperationType=ADD
+        Value=0.167
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=PT_STAGGERED
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={
+            PM_AIM
+        }
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/ResistanceKnockdownifAimingDesc
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -33,24 +33,24 @@ RoundTo=1
 RoundingMode=RM_ROUND
 },
 {
-UpgradeType=AVATAR_INJURY_BLOCK_CHANCE
-OperationType=ADD
-Value=0.25
-DamageType=DT_ANY
-AutoType=0
-ValidType=""
-SymbolFilter=PT_BIG_STAGGER
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={
-PM_AIM
-}
+    UpgradeType=AVATAR_INJURY_BLOCK_CHANCE
+    OperationType=ADD
+    Value=0.25
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=PT_BIG_STAGGER
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={
+        PM_AIM
+    }
 InvalidModifiers={}
 ValidProcTypes={}
 OverrideLocalization=1
 LocTag=""
 LocKeyWordScript={
-Script=""
+    Script=""
 }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
@@ -60,24 +60,24 @@ RoundTo=0.1
 RoundingMode=RM_ROUND
 },
 {
-UpgradeType=AVATAR_INJURY_BLOCK_CHANCE
-OperationType=ADD
-Value=0.25
-DamageType=DT_ANY
-AutoType=0
-ValidType=""
-SymbolFilter=PT_STUNNED
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={
-PM_AIM
-}
+    UpgradeType=AVATAR_INJURY_BLOCK_CHANCE
+    OperationType=ADD
+    Value=0.25
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=PT_STUNNED
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={
+        PM_AIM
+    }
 InvalidModifiers={}
 ValidProcTypes={}
 OverrideLocalization=1
 LocTag=""
 LocKeyWordScript={
-Script=""
+    Script=""
 }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
@@ -87,24 +87,24 @@ RoundTo=0.1
 RoundingMode=RM_ROUND
 },
 {
-UpgradeType=AVATAR_INJURY_BLOCK_CHANCE
-OperationType=ADD
-Value=0.25
-DamageType=DT_ANY
-AutoType=0
-ValidType=""
-SymbolFilter=PT_KNOCKED_DOWN
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={
-PM_AIM
-}
+    UpgradeType=AVATAR_INJURY_BLOCK_CHANCE
+    OperationType=ADD
+    Value=0.25
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=PT_KNOCKED_DOWN
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={
+        PM_AIM
+    }
 InvalidModifiers={}
 ValidProcTypes={}
 OverrideLocalization=1
 LocTag=""
 LocKeyWordScript={
-Script=""
+    Script=""
 }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
@@ -114,24 +114,24 @@ RoundTo=0.1
 RoundingMode=RM_ROUND
 },
 {
-UpgradeType=AVATAR_INJURY_BLOCK_CHANCE
-OperationType=ADD
-Value=0.25
-DamageType=DT_ANY
-AutoType=0
-ValidType=""
-SymbolFilter=PT_RAGDOLL
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={
-PM_AIM
-}
+    UpgradeType=AVATAR_INJURY_BLOCK_CHANCE
+    OperationType=ADD
+    Value=0.25
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=PT_RAGDOLL
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={
+        PM_AIM
+    }
 InvalidModifiers={}
 ValidProcTypes={}
 OverrideLocalization=1
 LocTag=""
 LocKeyWordScript={
-Script=""
+    Script=""
 }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
@@ -141,24 +141,24 @@ RoundTo=0.1
 RoundingMode=RM_ROUND
 },
 {
-UpgradeType=WEAPON_SPREAD
-OperationType=ADD
-Value=-0.083499998
-DamageType=DT_ANY
-AutoType=1
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={
-PM_AIM
-}
+    UpgradeType=WEAPON_SPREAD
+    OperationType=ADD
+    Value=-0.083499998
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={
+        PM_AIM
+    }
 InvalidModifiers={}
 ValidProcTypes={}
 OverrideLocalization=1
 LocTag=/Lotus/Language/Upgrades/SupraHigherAccuracyAiming_desc
 LocKeyWordScript={
-Script=""
+    Script=""
 }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
@@ -172,8 +172,8 @@ ArtifactPolarity=AP_TACTIC
 BaseDrain=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Tenno/Archwing/Primary/ArchGun
 Script={
-Script=/Lotus/Scripts/Mods/ArchwingImmunityAiming.lua
-Function=OnApplied
+    Script=/Lotus/Scripts/Mods/ArchwingImmunityAiming.lua
+    Function=OnApplied
 }
 IncludeInBoosterPack=1
 UpgradeChance=0.25

@@ -1,2 +1,4 @@
-/Lotus/Upgrades/Mods/Warframe/Beginner/AvatarSlideBoostModBeginner
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Warframe/Beginner/AvatarSlideBoostModBeginner
+FusionLimit=QA_MEDIUM
+IncludeInBoosterPack=0
+IsStarter=1

@@ -1,40 +1,40 @@
-/Lotus/Powersuits/Necro/SoulPunchAugmentCard
+>/Lotus/Powersuits/Necro/SoulPunchAugmentCard
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/SoulPunchAbilityAugment1Name
 Icon=/Lotus/Interface/Cards/Images/AbilityAugments/NekrosSoulPunchAugment1.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/SoulPunchAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/SoulPunchAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/SoulPunch.lua
-    Function=GetAugmentDescriptionInfo
-    _projTypes={}
-    _pvpProjTypes={}
-    _launchSound=""
-    _castFx=""
-    _avatarHitEffect=""
-    _throwEvent=ThrowAbility
-    _throwDoneEvent=PreFireDone
-    _markFx=""
-    _pvpSoftTargetRadius=1
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/SoulPunchAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/SoulPunchAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/SoulPunch.lua
+            Function=GetAugmentDescriptionInfo
+            _projTypes={}
+            _pvpProjTypes={}
+            _launchSound=""
+            _castFx=""
+            _avatarHitEffect=""
+            _throwEvent=ThrowAbility
+            _throwDoneEvent=PreFireDone
+            _markFx=""
+            _pvpSoftTargetRadius=1
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_POWER

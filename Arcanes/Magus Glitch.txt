@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/NoPenaltyOnDeath
+>/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/NoPenaltyOnDeath
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/NoPenaltyOnDeath
@@ -33,12 +33,12 @@ Upgrades={
                 0.85000002,
                 1.02
             }
-        }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
     }
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 FusionLimit=QA_HIGH
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple

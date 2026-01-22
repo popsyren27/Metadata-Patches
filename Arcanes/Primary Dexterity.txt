@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/PrimaryDamageOnMeleeKill
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/PrimaryDamageOnMeleeKill
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/PrimaryDamageOnMeleeKill
@@ -12,7 +12,7 @@ Upgrades={
         OperationType=STACKING_MULTIPLY
         Value=0.1
         DamageType=DT_ANY
-        AutoType=0
+        AutoType=1
         ValidType=/Lotus/Weapons/Tenno/LotusLongGun
         CheckTypeOnInstall=0
         SymbolFilter=""
@@ -26,14 +26,14 @@ Upgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=1
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 ExtraUpgrades={
     {
@@ -55,14 +55,14 @@ ExtraUpgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=0
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 ExtraUpgradeFusionLevel=QA_HIGH
 ApplyUpgradesByDefault=0
@@ -79,7 +79,7 @@ DurationScalesWithRank=0
 StackMode=SM_DECAY
 MaxConditionalStacks=6
 ConditionalUpgrades={
-    OnMeleeKillCondition
+    OnMeleeKillAnySourceCondition
 }
 ConditionTag=/Lotus/Language/Upgrades/OnMeleeKillCondition_Description
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/SteelPathArcanesBuff19.png

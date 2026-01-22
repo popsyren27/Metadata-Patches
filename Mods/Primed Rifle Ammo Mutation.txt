@@ -1,0 +1,7 @@
+>/Lotus/Upgrades/Mods/Rifle/Expert/WeaponRifleConvertAmmoModExpert
+Rarity=LEGENDARY
+LocalizeTag=/Lotus/Language/Items/PrimedRifleModConvertAmmo
+CodexSecret=1
+BaseDrain=QA_NONE
+FusionLimit=QA_VERY_HIGH
+IncludeInBoosterPack=0

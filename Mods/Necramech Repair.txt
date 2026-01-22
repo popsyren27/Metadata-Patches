@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Necromech/NecromechRegenOnLowHealthMod
+>/Lotus/Upgrades/Mods/Necromech/NecromechRegenOnLowHealthMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Necromech/NecromechRegenOnLowHealthMod
@@ -7,43 +7,43 @@ StatusDescTag=/Lotus/Language/Buffs/ModCooldownDesc
 Icon=/Lotus/Interface/Cards/Images/Necramech/NechramechRepairMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/NecramechHealthRegen
-    LocKeyWordScript={
-    Script=NecromechRegenOnLowHealthMod.lua
-    Function=GetDescriptionInfo
-    _cooldown={
-    60,
-    45,
-    30,
-    15
-}
-_duration=3
-_amount={
-2.5,
-5,
-7.5,
-10
-}
-_thresholdPct={
-5,
-10,
-15,
-20
-}
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/NecramechHealthRegen
+        LocKeyWordScript={
+            Script=NecromechRegenOnLowHealthMod.lua
+            Function=GetDescriptionInfo
+            _cooldown={
+                60,
+                45,
+                30,
+                15
+            }
+        _duration=3
+        _amount={
+            2.5,
+            5,
+            7.5,
+            10
+        }
+    _thresholdPct={
+        5,
+        10,
+        15,
+        20
+    }
 }
 SmallerIsBetter=0
 RoundTo=0.1
@@ -56,31 +56,31 @@ BaseDrain=QA_VERY_HIGH
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Powersuits/EntratiMech/BaseMechSuit
 Script={
-Script=NecromechRegenOnLowHealthMod.lua
-Function=ApplyUpgrade
-_cooldown={
-60,
-45,
-30,
-15
-}
+    Script=NecromechRegenOnLowHealthMod.lua
+    Function=ApplyUpgrade
+    _cooldown={
+        60,
+        45,
+        30,
+        15
+    }
 _duration=3
 _amount={
-2.5,
-5,
-7.5,
-10
+    2.5,
+    5,
+    7.5,
+    10
 }
 _thresholdPct={
-5,
-10,
-15,
-20
+    5,
+    10,
+    15,
+    20
 }
 }
 UpgradeChance=1
 CanReprocPvp=0
 ConditionalUpgrades={
-/Lotus/Upgrades/CosmeticEnhancers/Defensive/OnHealthDamageCondition
+    /Lotus/Upgrades/CosmeticEnhancers/Defensive/OnHealthDamageCondition
 }
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/HealthRegen.png

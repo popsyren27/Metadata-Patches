@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Rifle/HigherAirAimFoVRifleMod
+>/Lotus/Upgrades/Mods/PvPMods/Rifle/HigherAirAimFoVRifleMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/HigherAirAimFoVRifleMod
@@ -7,26 +7,26 @@ Icon=/Lotus/Interface/Cards/Images/PvP/Rifle/HigherAirAimFoVRifleMod.png
 ExcludeFromCodex=0
 AvailableOnPvp=1
 Upgrades={
-{
-    UpgradeType=WEAPON_ZOOM
-    OperationType=STACKING_MULTIPLY
-    Value=-0.1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={
-    PM_IN_AIR
-}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Mods/HigherAirAimFoVRifleModDesc
-LocKeyWordScript={
-Script=""
-}
+    {
+        UpgradeType=WEAPON_ZOOM
+        OperationType=STACKING_MULTIPLY
+        Value=-0.1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={
+            PM_IN_AIR
+        }
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Mods/HigherAirAimFoVRifleModDesc
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0

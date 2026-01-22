@@ -1,9 +1,0 @@
-/Lotus/Powersuits/Devourer/Devourer
-MarketMode=MM_VISIBLE
-PremiumPrice=325
-SellingPrice=10000
-AdditionalItems={
-    /Lotus/Upgrades/Skins/Devourer/DevourerHelmet
-}
-ExcludeFromCodex=0
-RecipeHelpText=/Lotus/Language/Suits/DetailedPurchase_GrendelRecipeHelpText

@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Melee/Expert/WeaponMeleeFactionDamageCorruptedExpert
+>/Lotus/Upgrades/Mods/Melee/Expert/WeaponMeleeFactionDamageCorruptedExpert
 Rarity=LEGENDARY
 LocalizeTag=/Lotus/Language/Mods/MeleeModFactionDamageCorruptedExpert
 FusionLimit=QA_VERY_HIGH

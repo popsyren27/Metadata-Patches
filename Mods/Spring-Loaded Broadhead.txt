@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Rifle/DaikyuMoreDamageOverDistanceMod
+>/Lotus/Upgrades/Mods/PvPMods/Rifle/DaikyuMoreDamageOverDistanceMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/DaikyuMoreDamageOverDistance
@@ -7,30 +7,30 @@ Icon=/Lotus/Interface/Cards/Images/PvP/Rifle/DaikyuMoreDamageOverDistanceMod.png
 ExcludeFromCodex=0
 AvailableOnPvp=1
 Upgrades={
-{
-    UpgradeType=WEAPON_DAMAGE_OVER_DISTANCE
-    OperationType=STACKING_MULTIPLY
-    Value=0.40000001
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/DaikyuMoreDamage
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=WEAPON_DAMAGE_OVER_DISTANCE
+        OperationType=STACKING_MULTIPLY
+        Value=0.40000001
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/DaikyuMoreDamage
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 },
 {
     UpgradeType=WEAPON_DAMAGE_OVER_DISTANCE
@@ -48,9 +48,9 @@ RoundingMode=RM_ROUND
     OverrideLocalization=1
     LocTag=/Lotus/Language/Upgrades/DaikyuDistance
     LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/ProjectileDamageOverDistance.lua
-    Function=GetDescriptionInfo
-}
+        Script=/Lotus/Scripts/Mods/ProjectileDamageOverDistance.lua
+        Function=GetDescriptionInfo
+    }
 SmallerIsBetter=0
 RoundTo=0.1
 RoundingMode=RM_ROUND
@@ -61,10 +61,10 @@ BaseDrain=QA_VERY_HIGH
 FusionPowerCurve=QC_NONE
 ItemCompatibility=/Lotus/Weapons/Tenno/Bows/AsymetricalBow/AsymetricalBow
 Script={
-Script=/Lotus/Scripts/Mods/ProjectileDamageOverDistance.lua
-Function=GiveUpgrade
+    Script=/Lotus/Scripts/Mods/ProjectileDamageOverDistance.lua
+    Function=GiveUpgrade
 }
 UnappliedScript={
-Script=/Lotus/Scripts/Mods/ProjectileDamageOverDistance.lua
-Function=RemoveUpgrade
+    Script=/Lotus/Scripts/Mods/ProjectileDamageOverDistance.lua
+    Function=RemoveUpgrade
 }

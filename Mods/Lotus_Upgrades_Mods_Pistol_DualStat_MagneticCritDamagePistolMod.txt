@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Pistol/DualStat/MagneticCritDamagePistolMod
-patch not applied (yet)

@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Rifle/Event/SomaCritChanceOnHitMod
+>/Lotus/Upgrades/Mods/Rifle/Event/SomaCritChanceOnHitMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/SomaCritChanceOnHitModName
@@ -6,40 +6,40 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Unique/SomaPrimeCritChanceMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Mods/SomaCritChanceOnHitModDesc
-    LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/SomaCritChanceOnHit.lua
-    Function=GetModDescriptionInfo
-    _hudBuffType=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Mods/SomaCritChanceOnHitModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/SomaCritChanceOnHit.lua
+            Function=GetModDescriptionInfo
+            _hudBuffType=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ApplyUpgradesByDefault=0
 ArtifactPolarity=AP_ATTACK
 ItemCompatibility=/Lotus/Weapons/Tenno/LongGuns/PrimeSoma/PrimeSomaRifle
 Script={
-Script=/Lotus/Scripts/Mods/SomaCritChanceOnHit.lua
-Function=ApplyUpgrade
-_hudBuffType=SomaCritChanceOnHitHudBuff
+    Script=/Lotus/Scripts/Mods/SomaCritChanceOnHit.lua
+    Function=ApplyUpgrade
+    _hudBuffType=SomaCritChanceOnHitHudBuff
 }
 UpgradeChance=1
 ConditionalUpgrades={
-SomaCritChanceOnHitChallenge
+    SomaCritChanceOnHitChallenge
 }

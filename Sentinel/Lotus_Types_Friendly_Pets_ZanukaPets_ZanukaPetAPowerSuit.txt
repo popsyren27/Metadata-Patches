@@ -1,4 +1,0 @@
-/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetAPowerSuit
-MiniMapIcon=/Lotus/Interface/Icons/Markers/Companions/HoundAPortrait.png
-MiniMapLargeIcon=/Lotus/Interface/Icons/Markers/Companions/LargePortraits/HoundALargePortrait.png
-DefaultWeapon=ZanukaPetMeleeWeaponIP

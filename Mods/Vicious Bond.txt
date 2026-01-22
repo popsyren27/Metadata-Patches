@@ -1,4 +1,4 @@
-/Lotus/Types/Sentinels/SentinelPrecepts/VoidBond/BoneSplitter
+>/Lotus/Types/Sentinels/SentinelPrecepts/VoidBond/BoneSplitter
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/VoidBondBoneSplitterMod
@@ -6,78 +6,78 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Pets/SentinelBoneSplitter.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/VoidBondBoneSplitterModDesc
-    LocKeyWordScript={
-    Script=/Lotus/Types/Sentinels/SentinelAbilities/BoneSplitter.lua
-    Function=GetDescription
-    _armourStripPerLevel=2.5
-    _bonusArmourStripPerLevel=2.5
-    _rangePerLevel=1.5
-    _markedDuration=10
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/VoidBondBoneSplitterModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/BoneSplitter.lua
+            Function=GetDescription
+            _armourStripPerLevel=2.5
+            _bonusArmourStripPerLevel=2.5
+            _rangePerLevel=1.5
+            _markedDuration=10
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_ATTACK
 BaseDrain=QA_MEDIUM
 SubUpgrades={
-BonesplitterSubmod
+    BonesplitterSubmod
 }
 Ability={
-ExcludeFromCodex=0
-Script={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/BoneSplitter.lua
-Function=ActivateAbility
-_armourStripPerLevel=2.5
-_bonusArmourStripPerLevel=2.5
-_rangePerLevel=1.5
-_markedDuration=10
-}
+    ExcludeFromCodex=0
+    Script={
+        Script=/Lotus/Types/Sentinels/SentinelAbilities/BoneSplitter.lua
+        Function=ActivateAbility
+        _armourStripPerLevel=2.5
+        _bonusArmourStripPerLevel=2.5
+        _rangePerLevel=1.5
+        _markedDuration=10
+    }
 SecondaryScripts={
-{
-tag=ApplyBonesplitterMark
-executionMode=EM_HOST
-inheritPrimary=0
-functionName=""
-scriptInstance={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/BoneSplitter.lua
-Function=ApplyBonesplitterMark
-_armourStripPerLevel=2.5
-_bonusArmourStripPerLevel=2.5
-_rangePerLevel=1.5
-_markedDuration=10
-}
+    {
+        tag=ApplyBonesplitterMark
+        executionMode=EM_HOST
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/BoneSplitter.lua
+            Function=ApplyBonesplitterMark
+            _armourStripPerLevel=2.5
+            _bonusArmourStripPerLevel=2.5
+            _rangePerLevel=1.5
+            _markedDuration=10
+        }
 }
 }
 AbilityEvents={
-{
-tag=OnPetMeleeHit
-eventType=ET_ON_MELEE_HIT
-scriptInstance={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/BoneSplitter.lua
-Function=OnPetMeleeHit
-_armourStripPerLevel=2.5
-_bonusArmourStripPerLevel=2.5
-_rangePerLevel=1.5
-_markedDuration=10
-}
+    {
+        tag=OnPetMeleeHit
+        eventType=ET_ON_MELEE_HIT
+        scriptInstance={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/BoneSplitter.lua
+            Function=OnPetMeleeHit
+            _armourStripPerLevel=2.5
+            _bonusArmourStripPerLevel=2.5
+            _rangePerLevel=1.5
+            _markedDuration=10
+        }
 }
 }
 EnergyRequiredToActivate=0

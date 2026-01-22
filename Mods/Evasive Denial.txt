@@ -1,4 +1,4 @@
-/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPrecepts/ZanukaPetEvasionPrecept
+>/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPrecepts/ZanukaPetEvasionPrecept
 Rarity=RARE
 MarketMode=MM_HIDDEN
 RegularPrice=5000
@@ -8,52 +8,52 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Zanukas/ZanukaPetEvasionPrecept.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Pets/ZanukaPetEvasionPreceptDesc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/NpcPowersuits/NpcPowersuitAbilities/Lich/TeleportAbility.lua
-    Function=GetDescriptionInfo
-    _minRange=6
-    _maxRange=50
-    _teleportRangeMultiplier=30
-    _teleportFX=""
-    _doShockwave=0
-    _shockwaveEntity=""
-    _teleportWindupAnim=""
-    _teleportRecoverAnim=""
-    _ScriptedTeleportFx=1
-    _isDefensive=0
-    _resetCooldownOnDamage=1
-    _givePostTeleportDodge=0
-    _postTeleportBulletDodgeDurationPerLevel={
-    3,
-    4,
-    5,
-    6,
-    7,
-    8
-}
-_postTeleportBulletDodgeChancePerLevel={
-25,
-35,
-45,
-55,
-65,
-75
-}
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Pets/ZanukaPetEvasionPreceptDesc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/NpcPowersuits/NpcPowersuitAbilities/Lich/TeleportAbility.lua
+            Function=GetDescriptionInfo
+            _minRange=6
+            _maxRange=50
+            _teleportRangeMultiplier=30
+            _teleportFX=""
+            _doShockwave=0
+            _shockwaveEntity=""
+            _teleportWindupAnim=""
+            _teleportRecoverAnim=""
+            _ScriptedTeleportFx=1
+            _isDefensive=0
+            _resetCooldownOnDamage=1
+            _givePostTeleportDodge=0
+            _postTeleportBulletDodgeDurationPerLevel={
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            }
+        _postTeleportBulletDodgeChancePerLevel={
+            25,
+            35,
+            45,
+            55,
+            65,
+            75
+        }
 }
 SmallerIsBetter=0
 RoundTo=0.1
@@ -63,54 +63,54 @@ RoundingMode=RM_ROUND
 BaseDrain=QA_NONE
 ItemCompatibility=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPowerSuit
 Ability={
-Script={
-Script=/Lotus/Powersuits/NpcPowersuits/NpcPowersuitAbilities/Lich/TeleportAbility.lua
-Function=ActivateAbility
-_minRange=0
-_maxRange=20
-_teleportRangeMultiplier=30
-_teleportFX=/Lotus/Fx/PowersuitAbilities/Kingpins/Lawyers/DefensiveTeleportFXPrecept
-_doShockwave=0
-_shockwaveEntity=""
-_teleportWindupAnim=/Lotus/Animations/Corpus/ParvosLich/Kubrow/CastLaser01Start_anim.fbx
-_teleportRecoverAnim=/Lotus/Animations/Corpus/ParvosLich/Kubrow/CastLaser01End_anim.fbx
-_ScriptedTeleportFx=1
-_isDefensive=0
-_resetCooldownOnDamage=0
-_givePostTeleportDodge=1
-_postTeleportBulletDodgeDurationPerLevel={
-3,
-4,
-5,
-6,
-7,
-8
-}
-_postTeleportBulletDodgeChancePerLevel={
-0.25,
-0.34999999,
-0.44999999,
-0.55000001,
-0.64999998,
-0.75
-}
+    Script={
+        Script=/Lotus/Powersuits/NpcPowersuits/NpcPowersuitAbilities/Lich/TeleportAbility.lua
+        Function=ActivateAbility
+        _minRange=0
+        _maxRange=20
+        _teleportRangeMultiplier=30
+        _teleportFX=/Lotus/Fx/PowersuitAbilities/Kingpins/Lawyers/DefensiveTeleportFXPrecept
+        _doShockwave=0
+        _shockwaveEntity=""
+        _teleportWindupAnim=/Lotus/Animations/Corpus/ParvosLich/Kubrow/CastLaser01Start_anim.fbx
+        _teleportRecoverAnim=/Lotus/Animations/Corpus/ParvosLich/Kubrow/CastLaser01End_anim.fbx
+        _ScriptedTeleportFx=1
+        _isDefensive=0
+        _resetCooldownOnDamage=0
+        _givePostTeleportDodge=1
+        _postTeleportBulletDodgeDurationPerLevel={
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        }
+    _postTeleportBulletDodgeChancePerLevel={
+        0.25,
+        0.34999999,
+        0.44999999,
+        0.55000001,
+        0.64999998,
+        0.75
+    }
 }
 CooldownDuration=12
 EnergyRequiredToActivate=0
 EvaluateScript=0
 Evaluator:Evaluators={
-/Lotus/Types/Game/AbilityEvaluators/DamageInTimeEvaluator,
-/Lotus/Types/Game/AbilityEvaluators/CheckTargetEvaluator
+    /Lotus/Types/Game/AbilityEvaluators/DamageInTimeEvaluator,
+    /Lotus/Types/Game/AbilityEvaluators/CheckTargetEvaluator
 }
 Evaluator:DamageInTimeEvaluator={
-DamagePercent=0.1
-TimePeriod=2
+    DamagePercent=0.1
+    TimePeriod=2
 }
 Evaluator:CheckTargetEvaluator={
-TargetRange={0,50}
-LastSeemTime=0
-PersonallySeen=1
-RequireLivingAvatar=1
-SetAbilityArg=1
+    TargetRange={0,50}
+    LastSeemTime=0
+    PersonallySeen=1
+    RequireLivingAvatar=1
+    SetAbilityArg=1
 }
 }

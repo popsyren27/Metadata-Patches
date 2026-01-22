@@ -1,34 +1,34 @@
-/Lotus/Upgrades/Mods/Sets/Amar/AmarWarframeMod
+>/Lotus/Upgrades/Mods/Sets/Amar/AmarWarframeMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/AmarWarframeMod
 Icon=/Lotus/Interface/Cards/Images/Sets/Amar/AmarWarframeMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ARMOUR
-    OperationType=STACKING_MULTIPLY
-    Value=0.041669998
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/Armour
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_ARMOUR
+        OperationType=STACKING_MULTIPLY
+        Value=0.041669998
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/Armour
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=1
+    RoundingMode=RM_ROUND
 },
 {
     UpgradeType=AVATAR_ABILITY_STRENGTH
@@ -46,8 +46,8 @@ RoundingMode=RM_ROUND
     OverrideLocalization=1
     LocTag=/Lotus/Language/Upgrades/AvatarAbilityStrengthModDesc
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0

@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/PullEnemiesOnMeleeKill
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/PullEnemiesOnMeleeKill
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/PullEnemiesOnMeleeKillName

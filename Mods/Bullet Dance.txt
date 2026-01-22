@@ -1,4 +1,4 @@
-/Lotus/Weapons/Tenno/Melee/MeleeTrees/GunbladeCmbTwoMeleeTree
+>/Lotus/Weapons/Tenno/Melee/MeleeTrees/GunbladeCmbTwoMeleeTree
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/GunbladeStanceB
@@ -8,11 +8,11 @@ ExcludeFromCodex=0
 ArtifactPolarity=AP_ATTACK
 IncludeInBoosterPack=1
 UnequippedAttackSets={
-CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/GunbladeCmbTwoQuickDefaults
+    CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/GunbladeCmbTwoQuickDefaults
 }
 EquippedAttackSets={
-CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/GunbladeCmbTwoBranchC
-CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/GunbladeCmbTwoBranchA
-CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/GunbladeCmbTwoBranchB
-CC_GROUND_BRANCH_C=/Lotus/Weapons/Tenno/Melee/AttackSets/GunbladeCmbTwoDefaults
+    CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/GunbladeCmbTwoBranchC
+    CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/GunbladeCmbTwoBranchA
+    CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/GunbladeCmbTwoBranchB
+    CC_GROUND_BRANCH_C=/Lotus/Weapons/Tenno/Melee/AttackSets/GunbladeCmbTwoDefaults
 }

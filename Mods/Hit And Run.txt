@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/DataSpike/Assassin/OnExecutionParkourSpeedMod
+>/Lotus/Upgrades/Mods/DataSpike/Assassin/OnExecutionParkourSpeedMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/OnExecutionParkourSpeedModName
@@ -6,34 +6,34 @@ StatusDescTag=/Lotus/Language/Buffs/HitAndRunBuffDesc
 Icon=/Lotus/Interface/Cards/Images/DataSpike/OnExecutionParkourMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/DataSpikeOnExecutionParkour
-    LocKeyWordScript={
-    Script=ParkourSpeed.lua
-    Function=GetDescription
-    _upgradeVal=0.60000002
-    _duration={
-    15,
-    2,
-    3,
-    4,
-    5,
-    6
-}
-}
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/DataSpikeOnExecutionParkour
+        LocKeyWordScript={
+            Script=ParkourSpeed.lua
+            Function=GetDescription
+            _upgradeVal=0.60000002
+            _duration={
+                15,
+                2,
+                3,
+                4,
+                5,
+                6
+            }
+    }
 SmallerIsBetter=0
 RoundTo=0.1
 RoundingMode=RM_ROUND
@@ -42,22 +42,22 @@ RoundingMode=RM_ROUND
 ApplyUpgradesByDefault=0
 ItemCompatibility=/Lotus/Weapons/Tenno/HackingDevices/TnHackingDevice/TnHackingDeviceWeapon
 Script={
-Script=ParkourSpeed.lua
-Function=ModApplied
-_upgradeVal=0.60000002
-_duration={
-15,
-2,
-3,
-4,
-5,
-6
-}
+    Script=ParkourSpeed.lua
+    Function=ModApplied
+    _upgradeVal=0.60000002
+    _duration={
+        15,
+        2,
+        3,
+        4,
+        5,
+        6
+    }
 }
 IncludeInBoosterPack=1
 UpgradeChance=1
 UpgradeDuration=15
 ConditionalUpgrades={
-OnExecutionEnd
+    OnExecutionEnd
 }
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/IncreasedBulletJump.png

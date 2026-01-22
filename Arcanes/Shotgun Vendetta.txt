@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/ShotgunMultishotAndReloadSpeedOnCloseKill
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/ShotgunMultishotAndReloadSpeedOnCloseKill
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/ShotgunMultishotAndReloadSpeedOnCloseKill
@@ -26,58 +26,62 @@ Upgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=1
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-        },
-        {
-            UpgradeType=WEAPON_RELOAD_SPEED
-            OperationType=STACKING_MULTIPLY
-            Value=0.125
-            DamageType=DT_ANY
-            AutoType=1
-            ValidType=""
-            CheckTypeOnInstall=0
-            SymbolFilter=""
-            UpgradeObject=""
-            ValidPostures={}
-            ValidModifiers={}
-            InvalidModifiers={}
-            ValidProcTypes={}
-            OverrideLocalization=1
-            LocTag=/Lotus/Language/Upgrades/WeaponReloadSpeedModDesc
-            LocKeyWordScript={
-                Script=""
-            }
-            DisplayAsMultiplier=0
-            DisplayAsPercent=1
-            ReverseValueSymbol=0
-            SmallerIsBetter=0
-            RoundTo=0.1
-            RoundingMode=RM_ROUND
-            AllowConditionalLocMerge=0
-        }
-    }
-    ApplyUpgradesByDefault=0
-    FusionLimit=QA_HIGH
-    ItemCompatibility=/Lotus/Weapons/Tenno/Shotgun/LotusShotgun
-    IncompatibilityTags={}
-    MultiBonusLoc=1
-    EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceTwoBonusesWithDuration
-    EnhancementTagLocScript={
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+},
+{
+    UpgradeType=WEAPON_RELOAD_SPEED
+    OperationType=STACKING_MULTIPLY
+    Value=0.125
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponReloadSpeedModDesc
+    LocKeyWordScript={
         Script=""
     }
-    UpgradeChance=1
-    UpgradeDuration=15
-    DurationScalesWithRank=0
-    ChanceScalesWithRank=0
-    ConditionalUpgrades={
-        OnShotgunCloseKillCondition
-    }
-    ConditionTag=/Lotus/Language/Upgrades/OnKillWithinFiveMetersCondition_Description
-    HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCOBuff.png
-    BaseDistillPointValue=24
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/Shotgun/LotusShotgun
+ExtraItemCompatibility={
+    /Lotus/Weapons/Tenno/Archwing/Primary/LaunchGrenade/ArchCannon,
+    /Lotus/Weapons/Tenno/Archwing/Primary/TnConcreteArchgun/TnConcreteArchgunWeapon
+}
+IncompatibilityTags={}
+MultiBonusLoc=1
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceTwoBonusesWithDuration
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+UpgradeDuration=15
+DurationScalesWithRank=0
+ChanceScalesWithRank=0
+ConditionalUpgrades={
+    OnShotgunCloseKillCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnKillWithinFiveMetersCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCOBuff.png
+BaseDistillPointValue=24

@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Melee/Event/ProjectNightwatch/RipkasNightwatchMod
+>/Lotus/Upgrades/Mods/Melee/Event/ProjectNightwatch/RipkasNightwatchMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/RipkasNightwatchMod
@@ -7,10 +7,48 @@ Icon=/Lotus/Interface/Cards/Images/Melee/RipkasEventMod.png
 ExcludeFromCodex=0
 TradeCapability=RO_ALWAYS
 Upgrades={
+    {
+        UpgradeType=WEAPON_MELEE_FINISHER_DAMAGE
+        OperationType=STACKING_MULTIPLY
+        Value=0.2
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=CC_DOWNED_ENEMY
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/RipkasNightwatchModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
+            Function=GetDescriptionInfo
+            _displayAsPercent={
+                1
+            }
+        _absoluteValue={
+            0
+        }
+    _maxDecimals={
+        -1
+    }
+_addPlusses={
+    0
+}
+_multiplyDown={
+    0
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
 {
-    UpgradeType=WEAPON_MELEE_FINISHER_DAMAGE
+    UpgradeType=WEAPON_PROC_CHANCE
     OperationType=STACKING_MULTIPLY
-    Value=0.2
+    Value=0.1
     DamageType=DT_ANY
     AutoType=1
     ValidType=""
@@ -21,48 +59,10 @@ Upgrades={
     InvalidModifiers={}
     ValidProcTypes={}
     OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/RipkasNightwatchModDesc
+    LocTag=""
     LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
-    Function=GetDescriptionInfo
-    _displayAsPercent={
-    1
-}
-_absoluteValue={
-0
-}
-_maxDecimals={
--1
-}
-_addPlusses={
-0
-}
-_multiplyDown={
-0
-}
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-},
-{
-UpgradeType=WEAPON_PROC_CHANCE
-OperationType=STACKING_MULTIPLY
-Value=0.1
-DamageType=DT_ANY
-AutoType=1
-ValidType=""
-SymbolFilter=CC_DOWNED_ENEMY
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=""
-LocKeyWordScript={
-Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -74,6 +74,6 @@ RoundingMode=RM_ROUND
 ArtifactPolarity=AP_ATTACK
 ItemCompatibility=/Lotus/Weapons/Grineer/Melee/GrineerClaws/GrnClaws
 IncompatibilityTags={
-POWER_WEAPON
+    POWER_WEAPON
 }
 PlayEffect=0

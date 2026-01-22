@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Melee/Expert/WeaponMeleeFactionDamageInfestedExpert
-patch not applied (yet)

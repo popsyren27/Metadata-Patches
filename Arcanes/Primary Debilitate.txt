@@ -1,0 +1,28 @@
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/SplitStatusProcsOnStackedStatusHit
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Arcanes/SplitStatusProcsOnStackedStatusHitName
+LocalizeDescTag=""
+Icon=/Lotus/Interface/Icons/CosmeticEnhancers/Arcanes/Projections/ArcaneProjectionDW.png
+ExcludeFromCodex=0
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/LotusLongGun
+Script={
+    Script=SplitStatusProcsOnStackedStatusHit.lua
+    Function=OnStackedStatusHit
+    _stacksRequiredToSplit=10
+}
+EnhancementTag=/Lotus/Language/Arcanes/SplitStatusProcsOnStackedStatusHitDesc
+EnhancementTagLocScript={
+    Script=SplitStatusProcsOnStackedStatusHit.lua
+    Function=GetDescriptionInfo
+    _stacksRequiredToSplit=10
+}
+UpgradeChance=0.5
+UpgradeChanceScalePerRank=0.1
+ConditionalUpgrades={
+    SplitStatusProcsOnStackedStatusHitCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDWBuff.png
+BaseDistillPointValue=24

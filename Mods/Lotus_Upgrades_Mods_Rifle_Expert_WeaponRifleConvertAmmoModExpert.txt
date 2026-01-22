@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Rifle/Expert/WeaponRifleConvertAmmoModExpert
-patch not applied (yet)

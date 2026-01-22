@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/DataSpike/Cipher/OnHackSprintSpeedMod
+>/Lotus/Upgrades/Mods/DataSpike/Cipher/OnHackSprintSpeedMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/OnHackSprintSpeedModName
@@ -6,30 +6,30 @@ StatusDescTag=/Lotus/Language/Buffs/RuntimeBuffDesc
 Icon=/Lotus/Interface/Cards/Images/DataSpike/OnHackSprintSpeedMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_SPRINT_SPEED
-    OperationType=STACKING_MULTIPLY
-    Value=0.75
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/DataSpikeOnHackSprintSpeed
-    LocKeyWordScript={
-    Script=RunningAfterHacking.lua
-    Function=GetDescription
-    _upgradeVal=0.75
-    _duration=15
-}
-SmallerIsBetter=0
-RoundTo=1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_SPRINT_SPEED
+        OperationType=STACKING_MULTIPLY
+        Value=0.75
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/DataSpikeOnHackSprintSpeed
+        LocKeyWordScript={
+            Script=RunningAfterHacking.lua
+            Function=GetDescription
+            _upgradeVal=0.75
+            _duration=15
+        }
+    SmallerIsBetter=0
+    RoundTo=1
+    RoundingMode=RM_ROUND
 }
 }
 ApplyUpgradesByDefault=0
@@ -38,6 +38,6 @@ IncludeInBoosterPack=1
 UpgradeChance=1
 UpgradeDuration=15
 ConditionalUpgrades={
-HackSolved
+    HackSolved
 }
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/SprintSpeedBuffIcon.png

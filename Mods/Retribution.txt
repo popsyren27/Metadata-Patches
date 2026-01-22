@@ -1,36 +1,36 @@
-/Lotus/Upgrades/Mods/Warframe/AvatarRevengeDamageMelee
+>/Lotus/Upgrades/Mods/Warframe/AvatarRevengeDamageMelee
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/WarframeModRevengeDamage
 Icon=/Lotus/Interface/Cards/Images/AvatarMods/ShockingBarrierMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_REVENGE_DAMAGE_CHANCE
-    OperationType=ADD
-    Value=0.15000001
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/ShieldRevengeDamageDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=AVATAR_REVENGE_DAMAGE_CHANCE
+        OperationType=ADD
+        Value=0.15000001
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/ShieldRevengeDamageDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 },
 {
     UpgradeType=AVATAR_REVENGE_DAMAGE_AMOUNT
@@ -49,8 +49,8 @@ AllowConditionalLocMerge=0
     OverrideLocalization=1
     LocTag=/Lotus/Language/Upgrades/WeaponElectricityDamageNoPercent
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
 ReverseValueSymbol=0

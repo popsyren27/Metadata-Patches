@@ -1,0 +1,44 @@
+>/Lotus/Weapons/Tenno/LongGuns/Gunbrella/ShrineMaidenGunbrellaAugment
+Rarity=RARE
+LocalizeTag=/Lotus/Language/Mods/ShrineMaidenGunbrellaAugmentModName
+LocalizeDescTag=/Lotus/Language/Mods/ShrineMaidenGunbrellaAugmentModDesc
+Icon=/Lotus/Interface/Cards/Images/Unique/ShrineMaidenGunbrellaAugment.png
+Upgrades={
+    {
+        UpgradeType=WEAPON_DAMAGE_AMOUNT
+        OperationType=STACKING_MULTIPLY
+        Value=0.75
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponDamage
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+}
+}
+WeaponBehaviorIndex=1
+BaseDrain=QA_HIGH
+FusionLimit=QA_HIGH
+ItemCompatibility=ShrineMaidenGunbrellaWeapon
+Script={
+    Script=/Lotus/Scripts/Mods/ShrineMaidenGunbrellaAugment.lua
+    Function=ApplyUpgrades
+    _randomProcChance=1
+}
+IncludeInBoosterPack=0
+CanReproc=0
+CanReprocPvp=0

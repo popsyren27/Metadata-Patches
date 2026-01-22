@@ -1,2 +1,0 @@
-/Lotus/Weapons/Tenno/Melee/Polearms/Naginata/ShrineMaidenNaginataAugment
-patch not applied (yet)

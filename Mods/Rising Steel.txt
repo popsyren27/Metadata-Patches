@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Stances/PvPSwordStanceOne
+>/Lotus/Upgrades/Mods/PvPMods/Stances/PvPSwordStanceOne
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/PvPSwordStanceOne
@@ -9,19 +9,19 @@ AvailableOnPve=0
 AvailableOnPvp=1
 ArtifactPolarity=AP_WARD
 UnequippedAttackSets={
-CC_GROUND=Combos/PvPSwordComboOneEquipped
+    CC_GROUND=Combos/PvPSwordComboOneEquipped
 }
 EquippedAttackSets={
-CC_GROUND=Combos/PvPSwordComboB
-CC_GROUND_BRANCH_A=Combos/PvPSwordComboOneEquipped
-CC_GROUND_BRANCH_B=Combos/PvPSwordComboA
+    CC_GROUND=Combos/PvPSwordComboB
+    CC_GROUND_BRANCH_A=Combos/PvPSwordComboOneEquipped
+    CC_GROUND_BRANCH_B=Combos/PvPSwordComboA
 }
 AerialAttacks={
-BP_UP=/Lotus/Weapons/Tenno/Melee/Attacks/MacheteJumpForward
+    BP_UP=/Lotus/Weapons/Tenno/Melee/Attacks/MacheteJumpForward
 }
 ContextFallbacks={
-{
-context=CC_GROUND_BRANCH_C
-fallback=CC_GROUND_BRANCH_B
-}
+    {
+        context=CC_GROUND_BRANCH_C
+        fallback=CC_GROUND_BRANCH_B
+    }
 }

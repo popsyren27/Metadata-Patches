@@ -1,34 +1,34 @@
-/Lotus/Upgrades/Mods/Syndicate/EmbolistMod
+>/Lotus/Upgrades/Mods/Syndicate/EmbolistMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/SyndicateRewards/EmbolistMod
 Icon=/Lotus/Interface/Cards/Images/Syndicate/Embolist.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_CLIP_MAX
-    OperationType=STACKING_MULTIPLY
-    Value=0.5
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/WeaponClipMaxModDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=WEAPON_CLIP_MAX
+        OperationType=STACKING_MULTIPLY
+        Value=0.5
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponClipMaxModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 },
 {
     UpgradeType=WEAPON_SYNDICATE_POWER
@@ -54,5 +54,5 @@ BaseDrain=QA_MEDIUM
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Infested/Pistols/InfestedPistol
 TipTags={
-BLIGHT
+    BLIGHT
 }

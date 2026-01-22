@@ -1,0 +1,24 @@
+>/Lotus/Upgrades/Mods/Antiques/SampleAntiqueUpgrade
+MarketMode=MM_HIDDEN
+Upgrades={
+    {
+        UpgradeType=AVATAR_HEAL_RATE
+        OperationType=ADD
+        Value=5000
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}

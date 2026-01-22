@@ -1,37 +1,37 @@
-/Lotus/Powersuits/Volt/SpeedAugmentCard
+>/Lotus/Powersuits/Volt/SpeedAugmentCard
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/SpeedAbilityAugment1Name
 Icon=/Lotus/Interface/Cards/Images/AbilityAugments/VoltSpeedAugment.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/SpeedAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/SpeedAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/Speed.lua
-    Function=GetAugmentDescriptionInfo
-    _SpeedSound=""
-    _SpeedEndSound=""
-    _SpeedTrail=""
-    _augmentOneElementType=""
-    _ambientBeamEffectType=""
-    _ExcludedBoostTypes={
-    /Lotus/Types/Enemies/Duviri/VoidEclipse/EclipseDuviriDaxAvatar
-}
-}
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/SpeedAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/SpeedAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/Speed.lua
+            Function=GetAugmentDescriptionInfo
+            _SpeedSound=""
+            _SpeedEndSound=""
+            _SpeedTrail=""
+            _augmentOneElementType=""
+            _ambientBeamEffectType=""
+            _ExcludedBoostTypes={
+                /Lotus/Types/Enemies/Duviri/VoidEclipse/EclipseDuviriDaxAvatar
+            }
+    }
 SmallerIsBetter=0
 RoundTo=0.1
 RoundingMode=RM_ROUND

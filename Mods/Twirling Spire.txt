@@ -1,4 +1,4 @@
-/Lotus/Weapons/Tenno/Melee/MeleeTrees/PolearmCmbThreeMeleeTree
+>/Lotus/Weapons/Tenno/Melee/MeleeTrees/PolearmCmbThreeMeleeTree
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/PolearmCmbThreeMeleeTreeName
@@ -8,11 +8,11 @@ ExcludeFromCodex=0
 ArtifactPolarity=AP_TACTIC
 IncludeInBoosterPack=1
 UnequippedAttackSets={
-CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/PolearmCmbThreeQuickDefaults
+    CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/PolearmCmbThreeQuickDefaults
 }
 EquippedAttackSets={
-CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/PolearmCmbThreeEquippedDefaults
-CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/PolearmCmbThreeBranchA
-CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/PolearmCmbThreeBranchC
-CC_GROUND_BRANCH_C=/Lotus/Weapons/Tenno/Melee/AttackSets/PolearmCmbThreeBranchB
+    CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/PolearmCmbThreeEquippedDefaults
+    CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/PolearmCmbThreeBranchA
+    CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/PolearmCmbThreeBranchC
+    CC_GROUND_BRANCH_C=/Lotus/Weapons/Tenno/Melee/AttackSets/PolearmCmbThreeBranchB
 }

@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/MeleeDamageForActiveShields
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/MeleeDamageForActiveShields
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/MeleeDamageForActiveShieldsName
@@ -33,11 +33,11 @@ Upgrades={
             _shieldsToGetBonusStepPerFusionLevel=0
             _meleeDamageLimit=4.1999998
         }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 Script={
     Script=MeleeDamageForActiveShields.lua

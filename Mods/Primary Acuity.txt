@@ -1,36 +1,36 @@
-/Lotus/Upgrades/Mods/Rifle/WeaponWeakpointCriticalChanceMod
+>/Lotus/Upgrades/Mods/Rifle/WeaponWeakpointCriticalChanceMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/WeaponWeakpointCriticalChanceRifleMod
 Icon=/Lotus/Interface/Cards/Images/Rifle/WeaponWeakpointCriticalChanceMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_DAMAGE_WEAKPOINT
-    OperationType=ADD
-    Value=0.31799999
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/WeaponWeakpointDamage
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=WEAPON_DAMAGE_WEAKPOINT
+        OperationType=ADD
+        Value=0.31799999
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponWeakpointDamage
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 },
 {
     UpgradeType=WEAPON_CRIT_CHANCE_WEAKPOINT
@@ -49,8 +49,8 @@ AllowConditionalLocMerge=0
     OverrideLocalization=1
     LocTag=/Lotus/Language/Upgrades/WeaponWeakpointCriticalChanceMod
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -65,10 +65,10 @@ BaseDrain=QA_HIGH
 FusionLimit=QA_VERY_HIGH
 ItemCompatibility=/Lotus/Weapons/Tenno/Rifle/LotusRifle
 Script={
-Script=/Lotus/Upgrades/Mods/WeaponStatOverride/LimitMultishot.lua
-Function=OnApplyUpgrade
+    Script=/Lotus/Upgrades/Mods/WeaponStatOverride/LimitMultishot.lua
+    Function=OnApplyUpgrade
 }
 UnappliedScript={
-Script=/Lotus/Upgrades/Mods/WeaponStatOverride/LimitMultishot.lua
-Function=OnUnapplyUpgrade
+    Script=/Lotus/Upgrades/Mods/WeaponStatOverride/LimitMultishot.lua
+    Function=OnUnapplyUpgrade
 }

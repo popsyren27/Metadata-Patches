@@ -1,34 +1,34 @@
-/Lotus/Upgrades/Mods/Archwing/Suit/ArchwingDamageToEnergyMod
+>/Lotus/Upgrades/Mods/Archwing/Suit/ArchwingDamageToEnergyMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/ArchwingDamageToEnergyMod
 Icon=/Lotus/Interface/Cards/Images/ArchwingMods/ArchwingSuit/ArchwingDamageToEnergyMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_DAMAGE_POWER_MULTIPLIER
-    OperationType=ADD
-    Value=0.1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/DamageToEnergyDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_DAMAGE_POWER_MULTIPLIER
+        OperationType=ADD
+        Value=0.1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/DamageToEnergyDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_ATTACK
@@ -36,19 +36,19 @@ BaseDrain=QA_HIGH
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Types/Game/FlightJetPackItems/PlayerFlightJetPackItem
 Script={
-Script=/Lotus/Scripts/Gameplay/OverguardDamageToEnergy.lua
-Function=UpgradeApplied
-_perLevel=0.1
-_upgradeWeak=ArchwingDamageToEnergyMod
-_upgradeID=KineticDiversion
+    Script=/Lotus/Scripts/Gameplay/OverguardDamageToEnergy.lua
+    Function=UpgradeApplied
+    _perLevel=0.1
+    _upgradeWeak=ArchwingDamageToEnergyMod
+    _upgradeID=KineticDiversion
 }
 UnappliedScript={
-Script=/Lotus/Scripts/Gameplay/OverguardDamageToEnergy.lua
-Function=UpgradeUnapplied
-_perLevel=0.1
-_upgradeWeak=""
-_upgradeID=KineticDiversion
+    Script=/Lotus/Scripts/Gameplay/OverguardDamageToEnergy.lua
+    Function=UpgradeUnapplied
+    _perLevel=0.1
+    _upgradeWeak=""
+    _upgradeID=KineticDiversion
 }
 TipTags={
-OVERGUARD
+    OVERGUARD
 }

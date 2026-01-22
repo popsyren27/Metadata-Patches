@@ -1,50 +1,50 @@
-/Lotus/Types/Sentinels/SentinelPrecepts/SentinelAttack
+>/Lotus/Types/Sentinels/SentinelPrecepts/SentinelAttack
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/SentinelAttackMod
 LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Pets/SentinelAssaultMode.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Items/WarriorStoreItemDesc
-    LocKeyWordScript={
-    Script=/Lotus/Types/Sentinels/SentinelAbilities/WarriorAbility.lua
-    Function=GetDescriptionInfo
-    _invalidTargetTypes={}
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Items/WarriorStoreItemDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/WarriorAbility.lua
+            Function=GetDescriptionInfo
+            _invalidTargetTypes={}
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 BaseDrain=QA_NONE
 ItemCompatibility=/Lotus/Types/Sentinels/SentinelPowerSuit
 Ability={
-Script={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/WarriorAbility.lua
-Function=NpcEvaluateAbility
-_invalidTargetTypes={
-/Lotus/Types/Enemies/Corpus/Turrets/TurretAvatars/AutoTurretAvatar,
-/Lotus/Types/Enemies/Corpus/Turrets/TurretAvatars/SecurityCameraAvatar,
-/Lotus/Types/Enemies/Grineer/SpecialEvents/SurveillanceDroneAvatar,
-/Lotus/Types/Enemies/Grineer/Vip/Avatars/DoubleBossAvatar,
-/Lotus/Types/Game/CreatureBaseAvatar
-}
+    Script={
+        Script=/Lotus/Types/Sentinels/SentinelAbilities/WarriorAbility.lua
+        Function=NpcEvaluateAbility
+        _invalidTargetTypes={
+            /Lotus/Types/Enemies/Corpus/Turrets/TurretAvatars/AutoTurretAvatar,
+            /Lotus/Types/Enemies/Corpus/Turrets/TurretAvatars/SecurityCameraAvatar,
+            /Lotus/Types/Enemies/Grineer/SpecialEvents/SurveillanceDroneAvatar,
+            /Lotus/Types/Enemies/Grineer/Vip/Avatars/DoubleBossAvatar,
+            /Lotus/Types/Game/CreatureBaseAvatar
+        }
 }
 EnergyRequiredToActivate=0
 ActivationXP=0

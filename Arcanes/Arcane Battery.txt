@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/MaxEnergyForArmor
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/MaxEnergyForArmor
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/MaxEnergyForArmorName
@@ -26,14 +26,14 @@ ExtraUpgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=0
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 FusionLimit=QA_HIGH
 Script={
@@ -43,11 +43,11 @@ Script={
     _statUpgradeTypes={
         AVATAR_POWER_MAX
     }
-    _abilityStatModifier=0.050000001
-    _maxStatIncrease=1000
-    _refreshRateInSeconds=2
-    _displayDecimalLimit=0
-    _operationType=ADD
+_abilityStatModifier=0.050000001
+_maxStatIncrease=1000
+_refreshRateInSeconds=2
+_displayDecimalLimit=0
+_operationType=ADD
 }
 UnappliedScript={
     Script=/Lotus/Upgrades/Boons/Offensive/StatIncreasePerArmor.lua
@@ -56,11 +56,11 @@ UnappliedScript={
     _statUpgradeTypes={
         AVATAR_POWER_MAX
     }
-    _abilityStatModifier=0.1
-    _maxStatIncrease=10
-    _refreshRateInSeconds=1
-    _displayDecimalLimit=0
-    _operationType=ADD
+_abilityStatModifier=0.1
+_maxStatIncrease=10
+_refreshRateInSeconds=1
+_displayDecimalLimit=0
+_operationType=ADD
 }
 EnhancementTag=/Lotus/Language/Arcanes/MaxEnergyForArmorDesc
 EnhancementTagLocScript={
@@ -70,11 +70,11 @@ EnhancementTagLocScript={
     _statUpgradeTypes={
         AVATAR_ABILITY_STRENGTH
     }
-    _abilityStatModifier=0.050000001
-    _maxStatIncrease=1000
-    _refreshRateInSeconds=1
-    _displayDecimalLimit=2
-    _operationType=ADD
+_abilityStatModifier=0.050000001
+_maxStatIncrease=1000
+_refreshRateInSeconds=1
+_displayDecimalLimit=2
+_operationType=ADD
 }
 UpgradeChance=1
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDFBuff.png

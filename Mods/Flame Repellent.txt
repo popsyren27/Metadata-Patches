@@ -1,35 +1,35 @@
-/Lotus/Upgrades/Mods/Warframe/AvatarDamageResistanceFire
+>/Lotus/Upgrades/Mods/Warframe/AvatarDamageResistanceFire
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/WarframeModDmgResistanceFire
 Icon=/Lotus/Interface/Cards/Images/AvatarMods/AvatarDamageResistanceFire.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_DAMAGE_TAKEN
-    OperationType=MULTIPLY
-    Value=0.89999998
-    DamageType=DT_FIRE
-    AutoType=0
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/AvatarDamageResistanceFirePercentModDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=AVATAR_DAMAGE_TAKEN
+        OperationType=MULTIPLY
+        Value=0.89999998
+        DamageType=DT_FIRE
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/AvatarDamageResistanceFirePercentModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_DEFENSE

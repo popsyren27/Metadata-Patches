@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/HoverboardSpeedOnTransferenceIn
+>/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/HoverboardSpeedOnTransferenceIn
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/HoverboardSpeedOnTransferenceIn
 LocalizeDescTag=""
@@ -33,21 +33,21 @@ Upgrades={
                 30,
                 30
             }
-            _speed={
-                0.25,
-                0.5,
-                0.75,
-                1,
-                1.25,
-                1.5
-            }
-            _hoverboardType=""
+        _speed={
+            0.25,
+            0.5,
+            0.75,
+            1,
+            1.25,
+            1.5
         }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    _hoverboardType=""
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 ApplyUpgradesByDefault=0
 FusionLimit=QA_HIGH
@@ -62,15 +62,15 @@ Script={
         30,
         30
     }
-    _speed={
-        0.25,
-        0.5,
-        0.75,
-        1,
-        1.25,
-        1.5
-    }
-    _hoverboardType=/Lotus/Types/Vehicles/Hoverboard/HoverboardSuit
+_speed={
+    0.25,
+    0.5,
+    0.75,
+    1,
+    1.25,
+    1.5
+}
+_hoverboardType=/Lotus/Types/Vehicles/Hoverboard/HoverboardSuit
 }
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
 EnhancementTagLocScript={

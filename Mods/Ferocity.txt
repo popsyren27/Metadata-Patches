@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Sentinel/Kubrow/KubrowFinisherMod
+>/Lotus/Upgrades/Mods/Sentinel/Kubrow/KubrowFinisherMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 RegularPrice=5000
@@ -8,43 +8,43 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Kubrow/KubrowModFinisherDamage.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Pets/KubrowFerocityModDesc
-    LocKeyWordScript={
-    Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowFerocityAbility.lua
-    Function=GetDescriptionInfo
-    _abilityFxType=""
-    _runBehavior=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Pets/KubrowFerocityModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowFerocityAbility.lua
+            Function=GetDescriptionInfo
+            _abilityFxType=""
+            _runBehavior=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 BaseDrain=QA_NONE
 ItemCompatibility=/Lotus/Types/Game/KubrowPet/AdventurerKubrowPetPowerSuit
 IncludeInBoosterPack=1
 Ability={
-Script={
-Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowFerocityAbility.lua
-Function=NpcEvaluateAbility
-_abilityFxType=/Lotus/Fx/Sentinels/Precepts/KubrowDisarmBurstFx
-_runBehavior=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowAbilityMeleeTactic
-}
+    Script={
+        Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowFerocityAbility.lua
+        Function=NpcEvaluateAbility
+        _abilityFxType=/Lotus/Fx/Sentinels/Precepts/KubrowDisarmBurstFx
+        _runBehavior=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowAbilityMeleeTactic
+    }
 CooldownDuration=1
 EnergyRequiredToActivate=0
 }

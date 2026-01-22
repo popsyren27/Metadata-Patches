@@ -1,6 +1,0 @@
-/Lotus/Powersuits/Glass/Glass
-MarketMode=MM_VISIBLE
-ExcludeFromCodex=0
-RecipeHelpText=/Lotus/Language/Suits/RecipeHelpGlass
-MaxHealthOverride=270
-MaxShieldOverride=270

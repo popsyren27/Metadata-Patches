@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryExtraDamagePerFreezeStack
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryExtraDamagePerFreezeStack
 Rarity=LEGENDARY
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/SecondaryExtraDamagePerFreezeStack
@@ -22,19 +22,19 @@ Upgrades={
         ValidProcTypes={
             PT_CHILLED
         }
-        OverrideLocalization=1
-        LocTag=/Lotus/Language/Upgrades/DamagePerFreezeStack
-        LocKeyWordScript={
-            Script=""
-        }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=1
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/DamagePerFreezeStack
+    LocKeyWordScript={
+        Script=""
     }
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 FusionLimit=QA_HIGH
 ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol

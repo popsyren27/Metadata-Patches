@@ -1,0 +1,145 @@
+>/Lotus/Upgrades/Mods/Warframe/Expert/AvatarKnockdownResistanceModExpert
+Rarity=LEGENDARY
+LocalizeTag=/Lotus/Language/Items/PrimedWarframeModKnockdownResistance
+CodexSecret=1
+TradeCapability=RO_NEVER
+Upgrades={
+    {
+        UpgradeType=AVATAR_INJURY_BLOCK_CHANCE
+        OperationType=ADD
+        Value=0.090910003
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=PT_STAGGERED
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/ResistanceKnockdownChanceDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+},
+{
+    UpgradeType=AVATAR_INJURY_BLOCK_CHANCE
+    OperationType=ADD
+    Value=0.090910003
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=PT_BIG_STAGGER
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+        Script=""
+    }
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+},
+{
+    UpgradeType=AVATAR_INJURY_BLOCK_CHANCE
+    OperationType=ADD
+    Value=0.090910003
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=PT_STUNNED
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+        Script=""
+    }
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+},
+{
+    UpgradeType=AVATAR_INJURY_BLOCK_CHANCE
+    OperationType=ADD
+    Value=0.090910003
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=PT_KNOCKED_DOWN
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+        Script=""
+    }
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+},
+{
+    UpgradeType=AVATAR_INJURY_BLOCK_CHANCE
+    OperationType=ADD
+    Value=0.090910003
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=PT_RAGDOLL
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+        Script=""
+    }
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+FusionLimit=QA_VERY_HIGH
+IncludeInBoosterPack=0
+IsUnsellable=1

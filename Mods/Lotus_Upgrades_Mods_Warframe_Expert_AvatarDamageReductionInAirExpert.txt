@@ -1,2 +1,4 @@
-/Lotus/Upgrades/Mods/Warframe/Expert/AvatarDamageReductionInAirExpert
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Warframe/Expert/AvatarDamageReductionInAirExpert
+CodexSecret=1
+TradeCapability=RO_NEVER
+FusionLimit=QA_VERY_HIGH

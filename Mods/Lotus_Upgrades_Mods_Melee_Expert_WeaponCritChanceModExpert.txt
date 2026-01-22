@@ -1,2 +1,5 @@
-/Lotus/Upgrades/Mods/Melee/Expert/WeaponCritChanceModExpert
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Melee/Expert/WeaponCritChanceModExpert
+CodexSecret=1
+TradeCapability=RO_NEVER
+FusionLimit=QA_VERY_HIGH
+IncludeInBoosterPack=0

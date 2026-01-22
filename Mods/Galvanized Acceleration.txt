@@ -1,34 +1,34 @@
-/Lotus/Upgrades/Mods/Shotgun/WeaponProjectileSpeedSPMod
+>/Lotus/Upgrades/Mods/Shotgun/WeaponProjectileSpeedSPMod
 Rarity=RARE
 LocalizeTag=/Lotus/Language/Mods/WeaponProjectileSpeedSPMod
 Icon=/Lotus/Interface/Cards/Images/Shotgun/Galvanized/WeaponProjectileSpeedSPMod.png
 Upgrades={
-{
-    UpgradeType=WEAPON_PROJECTILE_SPEED
-    OperationType=STACKING_MULTIPLY
-    Value=0.027272699
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/WeaponProjectileSpeedBeamLengthModDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=WEAPON_PROJECTILE_SPEED
+        OperationType=STACKING_MULTIPLY
+        Value=0.027272699
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponProjectileSpeedBeamLengthModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 },
 {
     UpgradeType=WEAPON_RANGE
@@ -47,8 +47,8 @@ AllowConditionalLocMerge=0
     OverrideLocalization=1
     LocTag=""
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -61,7 +61,7 @@ AllowConditionalLocMerge=0
 BaseDrain=QA_LOW
 FusionLimit=QA_VERY_HIGH
 SubUpgrades={
-WeaponProjectileSpeedSPSubMod
+    WeaponProjectileSpeedSPSubMod
 }
 IncludeInBoosterPack=0
 IsGalvanized=1

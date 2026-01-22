@@ -1,4 +1,4 @@
-/Lotus/Weapons/Tenno/Melee/MeleeTrees/MacheteCmbOneMeleeTree
+>/Lotus/Weapons/Tenno/Melee/MeleeTrees/MacheteCmbOneMeleeTree
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/MacheteStanceA
@@ -8,8 +8,8 @@ ExcludeFromCodex=0
 ArtifactPolarity=AP_POWER
 IncludeInBoosterPack=1
 EquippedAttackSets={
-CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/MacheteComboABranch
-CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/MacheteEquippedQuickDefaults
-CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/MacheteComboCBranch
-CC_GROUND_BRANCH_C=/Lotus/Weapons/Tenno/Melee/AttackSets/MacheteComboBBranch
+    CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/MacheteComboABranch
+    CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/MacheteEquippedQuickDefaults
+    CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/MacheteComboCBranch
+    CC_GROUND_BRANCH_C=/Lotus/Weapons/Tenno/Melee/AttackSets/MacheteComboBBranch
 }

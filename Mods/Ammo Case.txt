@@ -1,42 +1,42 @@
-/Lotus/Types/Sentinels/SentinelPrecepts/ItemVacum
+>/Lotus/Types/Sentinels/SentinelPrecepts/ItemVacum
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/ItemVacuumStoreItemName
 Icon=/Lotus/Interface/Cards/Images/Pets/ItemVacuumMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Items/ItemVacuumStoreItemDesc
-    LocKeyWordScript={
-    Script=/Lotus/Types/Sentinels/SentinelAbilities/AmmoBuff.lua
-    Function=GetDescriptionInfo
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Items/ItemVacuumStoreItemDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/AmmoBuff.lua
+            Function=GetDescriptionInfo
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_PRECEPT
 ItemCompatibility=/Lotus/Types/Sentinels/SentinelPowersuits/CarrierBasePowerSuit
 Script={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/AmmoBuff.lua
-Function=ApplyUpgrades
+    Script=/Lotus/Types/Sentinels/SentinelAbilities/AmmoBuff.lua
+    Function=ApplyUpgrades
 }
 UnappliedScript={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/AmmoBuff.lua
-Function=UnapplyUpgrades
+    Script=/Lotus/Types/Sentinels/SentinelAbilities/AmmoBuff.lua
+    Function=UnapplyUpgrades
 }

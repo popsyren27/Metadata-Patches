@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Utility/HealthWhileUsingChanneledAbilities
+>/Lotus/Upgrades/CosmeticEnhancers/Utility/HealthWhileUsingChanneledAbilities
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/HealthWhileUsingChanneledAbilities
@@ -34,13 +34,13 @@ Upgrades={
                 200,
                 250
             }
-            _cooldownTime=1
-        }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
+        _cooldownTime=1
     }
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 ExtraUpgrades={
     {
@@ -62,14 +62,14 @@ ExtraUpgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=0
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 ApplyUpgradesByDefault=0
 FusionLimit=QA_HIGH
@@ -84,7 +84,7 @@ Script={
         200,
         250
     }
-    _cooldownTime=1
+_cooldownTime=1
 }
 SubUpgrades={
     HealthWhileUsingChanneledAbilitiesSubUpgrade

@@ -1,2 +1,3 @@
-/Lotus/Upgrades/Mods/Rifle/Intermediate/WeaponZoomFovModIntermediate
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Rifle/Intermediate/WeaponZoomFovModIntermediate
+FusionLimit=QA_HIGH
+IncludeInBoosterPack=0

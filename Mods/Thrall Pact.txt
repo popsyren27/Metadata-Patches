@@ -1,4 +1,4 @@
-/Lotus/Powersuits/Revenant/RevenantMarkAugmentCard
+>/Lotus/Powersuits/Revenant/RevenantMarkAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/RevenantMarkAbilityAugment1Name
@@ -6,33 +6,33 @@ Icon=/Lotus/Interface/Cards/Images/AbilityAugments/RevenantEnthrallAugment.png
 RectangleIcon=0
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/RevenantMarkAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/RevenantMarkAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/RevenantMark.lua
-    Function=GetAugmentDescriptionInfo
-    _activateAnim=""
-    _enragedDeathElement=""
-    _projType=""
-    _elementBurstEffect=""
-    _hitProxyType=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/RevenantMarkAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/RevenantMarkAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/RevenantMark.lua
+            Function=GetAugmentDescriptionInfo
+            _activateAnim=""
+            _enragedDeathElement=""
+            _projType=""
+            _elementBurstEffect=""
+            _hitProxyType=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_POWER

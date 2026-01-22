@@ -1,4 +1,4 @@
-/Lotus/Types/Friendly/Pets/KubrowPetPrecepts/KubrowGrabPrecept
+>/Lotus/Types/Friendly/Pets/KubrowPetPrecepts/KubrowGrabPrecept
 Rarity=RARE
 MarketMode=MM_HIDDEN
 RegularPrice=5000
@@ -8,52 +8,52 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Kubrow/HelminthGrab.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Items/KubrowGrabPreceptDesc
-    LocKeyWordScript={
-    Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowGrabAbility.lua
-    Function=GetDescriptionInfo
-    _sound=""
-    _soundDetach=""
-    _activateAnim=""
-    _beamType=""
-    _slideSound=""
-    _animEventToWaitFor=""
-    _projType=""
-    _canBeBlocked=1
-    _canBeDodged=1
-    _maxTime=4
-    _minRange=0
-    _maxRange={
-    15,
-    20,
-    25,
-    30
-}
-_damage={
-25,
-50,
-75,
-100
-}
-_forbiddenTargetTypes={
-/Lotus/Powersuits/PowersuitAbilities/DecoyAvatar,
-/Lotus/Powersuits/Saryn/ShedDecoyAvatar,
-/Lotus/Powersuits/Harlequin/IllusionMirrorAvatar
-}
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Items/KubrowGrabPreceptDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowGrabAbility.lua
+            Function=GetDescriptionInfo
+            _sound=""
+            _soundDetach=""
+            _activateAnim=""
+            _beamType=""
+            _slideSound=""
+            _animEventToWaitFor=""
+            _projType=""
+            _canBeBlocked=1
+            _canBeDodged=1
+            _maxTime=4
+            _minRange=0
+            _maxRange={
+                15,
+                20,
+                25,
+                30
+            }
+        _damage={
+            25,
+            50,
+            75,
+            100
+        }
+    _forbiddenTargetTypes={
+        /Lotus/Powersuits/PowersuitAbilities/DecoyAvatar,
+        /Lotus/Powersuits/Saryn/ShedDecoyAvatar,
+        /Lotus/Powersuits/Harlequin/IllusionMirrorAvatar
+    }
 _targetWhenStanding=1
 _targetWhenKnockedDown=0
 }
@@ -67,81 +67,81 @@ BaseDrain=QA_NONE
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Types/Game/KubrowPet/ChargerKubrowPetPowerSuit
 Ability={
-Script={
-Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowGrabAbility.lua
-Function=ActivateAbility
-_sound=/Lotus/Sounds/Enemies/Kubrow/InfCharger/Precepts/Grab/KubrowInfChargerGrappleThrow
-_soundDetach=/Lotus/Sounds/Enemies/Kubrow/InfCharger/Precepts/Grab/KubrowInfChargerGrappleRetract
-_activateAnim=/Lotus/Animations/Creatures/KubrowTame/Howl_anim.fbx
-_beamType=/Lotus/Fx/Kubrow/Powers/GrabBeam
-_slideSound=""
-_animEventToWaitFor=KubrowGrabProjectileFire
-_projType=ChargerSpikeProjectile
-_canBeBlocked=0
-_canBeDodged=0
-_maxTime=1.5
-_minRange=0
-_maxRange={
-5,
-10,
-15,
-20,
-25,
-30
-}
-_damage={
-25,
-50,
-75,
-100,
-125,
-150
-}
+    Script={
+        Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowGrabAbility.lua
+        Function=ActivateAbility
+        _sound=/Lotus/Sounds/Enemies/Kubrow/InfCharger/Precepts/Grab/KubrowInfChargerGrappleThrow
+        _soundDetach=/Lotus/Sounds/Enemies/Kubrow/InfCharger/Precepts/Grab/KubrowInfChargerGrappleRetract
+        _activateAnim=/Lotus/Animations/Creatures/KubrowTame/Howl_anim.fbx
+        _beamType=/Lotus/Fx/Kubrow/Powers/GrabBeam
+        _slideSound=""
+        _animEventToWaitFor=KubrowGrabProjectileFire
+        _projType=ChargerSpikeProjectile
+        _canBeBlocked=0
+        _canBeDodged=0
+        _maxTime=1.5
+        _minRange=0
+        _maxRange={
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+        }
+    _damage={
+        25,
+        50,
+        75,
+        100,
+        125,
+        150
+    }
 _forbiddenTargetTypes={
-/Lotus/Powersuits/PowersuitAbilities/DecoyAvatar,
-/Lotus/Powersuits/Saryn/ShedDecoyAvatar,
-/Lotus/Powersuits/Harlequin/IllusionMirrorAvatar
+    /Lotus/Powersuits/PowersuitAbilities/DecoyAvatar,
+    /Lotus/Powersuits/Saryn/ShedDecoyAvatar,
+    /Lotus/Powersuits/Harlequin/IllusionMirrorAvatar
 }
 _targetWhenStanding=1
 _targetWhenKnockedDown=0
 }
 SecondaryScripts={
-{
-tag=DoPull
-executionMode=EM_ALL
-inheritPrimary=0
-functionName=""
-scriptInstance={
-Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowGrabAbility.lua
-Function=DoPull
-_sound=""
-_soundDetach=/Lotus/Sounds/Weapons/Grapple/GrapplePullback
-_activateAnim=""
-_beamType=/Lotus/Fx/Kubrow/Powers/GrabBeamB
-_slideSound=""
-_animEventToWaitFor=KubrowGrabProjectileFire
-_projType=""
-_canBeBlocked=1
-_canBeDodged=1
-_maxTime=4
-_minRange=5
-_maxRange={
-15,
-20,
-25,
-30
-}
-_damage={
-25,
-50,
-75,
-100
-}
-_forbiddenTargetTypes={
-/Lotus/Powersuits/PowersuitAbilities/DecoyAvatar,
-/Lotus/Powersuits/Saryn/ShedDecoyAvatar,
-/Lotus/Powersuits/Harlequin/IllusionMirrorAvatar
-}
+    {
+        tag=DoPull
+        executionMode=EM_ALL
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowGrabAbility.lua
+            Function=DoPull
+            _sound=""
+            _soundDetach=/Lotus/Sounds/Weapons/Grapple/GrapplePullback
+            _activateAnim=""
+            _beamType=/Lotus/Fx/Kubrow/Powers/GrabBeamB
+            _slideSound=""
+            _animEventToWaitFor=KubrowGrabProjectileFire
+            _projType=""
+            _canBeBlocked=1
+            _canBeDodged=1
+            _maxTime=4
+            _minRange=5
+            _maxRange={
+                15,
+                20,
+                25,
+                30
+            }
+        _damage={
+            25,
+            50,
+            75,
+            100
+        }
+    _forbiddenTargetTypes={
+        /Lotus/Powersuits/PowersuitAbilities/DecoyAvatar,
+        /Lotus/Powersuits/Saryn/ShedDecoyAvatar,
+        /Lotus/Powersuits/Harlequin/IllusionMirrorAvatar
+    }
 _targetWhenStanding=1
 _targetWhenKnockedDown=0
 }

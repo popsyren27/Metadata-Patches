@@ -1,2 +1,5 @@
-/Lotus/Upgrades/Mods/Rifle/Expert/WeaponBowConvertAmmoModExpert
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Rifle/Expert/WeaponBowConvertAmmoModExpert
+TradeCapability=RO_NEVER
+BaseDrain=QA_NONE
+FusionLimit=QA_VERY_HIGH
+IncludeInBoosterPack=0

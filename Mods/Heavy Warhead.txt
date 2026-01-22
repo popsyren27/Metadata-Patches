@@ -1,32 +1,32 @@
-/Lotus/Upgrades/Mods/PvPMods/Pistol/BiggerRadiusSlowerVelocityPistolMod
+>/Lotus/Upgrades/Mods/PvPMods/Pistol/BiggerRadiusSlowerVelocityPistolMod
 LocalizeTag=/Lotus/Language/Mods/BiggerRadiusSlowerVelocityRifleMod
 Icon=/Lotus/Interface/Cards/Images/PvP/Pistol/LargerRadiusSlowerVelocityPistol.png
 Upgrades={
-{
-    UpgradeType=WEAPON_EXPLOSION_RADIUS
-    OperationType=STACKING_MULTIPLY
-    Value=0.25
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/WeaponExplosionRadiusModDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=WEAPON_EXPLOSION_RADIUS
+        OperationType=STACKING_MULTIPLY
+        Value=0.25
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponExplosionRadiusModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 },
 {
     UpgradeType=WEAPON_PROJECTILE_SPEED
@@ -44,8 +44,8 @@ AllowConditionalLocMerge=0
     OverrideLocalization=1
     LocTag=/Lotus/Language/Upgrades/WeaponProjectileSpeedModDesc
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -57,6 +57,6 @@ AllowConditionalLocMerge=0
 }
 BaseDrain=QA_VERY_HIGH
 IncompatibilityTags={
-DEPLOYABLE,
-SECONDARYSHOTGUN
+    DEPLOYABLE,
+    SECONDARYSHOTGUN
 }

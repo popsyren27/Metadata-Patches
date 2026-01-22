@@ -1,2 +1,0 @@
-/Lotus/Powersuits/IronFrame/BlastWeapon
-MarketMode=MM_HIDDEN

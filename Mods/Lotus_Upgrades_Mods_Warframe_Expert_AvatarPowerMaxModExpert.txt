@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Warframe/Expert/AvatarPowerMaxModExpert
-patch not applied (yet)

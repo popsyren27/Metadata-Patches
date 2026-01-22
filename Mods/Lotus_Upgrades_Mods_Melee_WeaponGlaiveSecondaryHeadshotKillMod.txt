@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Melee/WeaponGlaiveSecondaryHeadshotKillMod
-patch not applied (yet)

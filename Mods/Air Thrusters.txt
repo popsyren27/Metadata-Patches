@@ -1,27 +1,52 @@
-/Lotus/Upgrades/Mods/PvPMods/Warframe/AirSlideBoost
+>/Lotus/Upgrades/Mods/PvPMods/Warframe/AirSlideBoost
 LocalizeTag=/Lotus/Language/Mods/AirSlideBoost
 Icon=/Lotus/Interface/Cards/Images/PvP/Warframe/AirSlideBoost.png
 Upgrades={
+    {
+        UpgradeType=AVATAR_SLIDE_BOOST
+        OperationType=STACKING_MULTIPLY
+        Value=0.25
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={
+            PM_IN_AIR
+        }
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Mods/AirSlideBoost_desc
+    LocKeyWordScript={
+        Script=""
+    }
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
 {
-    UpgradeType=AVATAR_SLIDE_BOOST
+    UpgradeType=AVATAR_PARKOUR_BOOST
     OperationType=STACKING_MULTIPLY
-    Value=0.25
+    Value=-0.050000001
     DamageType=DT_ANY
     AutoType=0
     ValidType=""
     SymbolFilter=""
     UpgradeObject=""
     ValidPostures={}
-    ValidModifiers={
-    PM_IN_AIR
-}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Mods/AirSlideBoost_desc
-LocKeyWordScript={
-Script=""
-}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Mods/PvPMobility
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -30,48 +55,23 @@ RoundTo=0.1
 RoundingMode=RM_ROUND
 },
 {
-UpgradeType=AVATAR_PARKOUR_BOOST
-OperationType=STACKING_MULTIPLY
-Value=-0.050000001
-DamageType=DT_ANY
-AutoType=0
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Mods/PvPMobility
-LocKeyWordScript={
-Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-},
-{
-UpgradeType=AVATAR_SLIDE_BOOST
-OperationType=STACKING_MULTIPLY
-Value=-0.025
-DamageType=DT_ANY
-AutoType=0
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=""
-LocKeyWordScript={
-Script=""
-}
+    UpgradeType=AVATAR_SLIDE_BOOST
+    OperationType=STACKING_MULTIPLY
+    Value=-0.025
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
 ReverseValueSymbol=0
@@ -80,23 +80,23 @@ RoundTo=0.1
 RoundingMode=RM_ROUND
 },
 {
-UpgradeType=AVATAR_SLIDE_FRICTION
-OperationType=STACKING_MULTIPLY
-Value=0.025
-DamageType=DT_ANY
-AutoType=0
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=""
-LocKeyWordScript={
-Script=""
-}
+    UpgradeType=AVATAR_SLIDE_FRICTION
+    OperationType=STACKING_MULTIPLY
+    Value=0.025
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
 ReverseValueSymbol=0

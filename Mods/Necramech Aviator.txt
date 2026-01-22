@@ -1,9 +1,49 @@
-/Lotus/Upgrades/Mods/Necromech/NecromechAvatarDamageReductionInAir
+>/Lotus/Upgrades/Mods/Necromech/NecromechAvatarDamageReductionInAir
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Necromech/NecromechAvatarDamageReductionInAir
 Icon=/Lotus/Interface/Cards/Images/Necramech/NecromechAvatarDamageReductionInAir.png
 ExcludeFromCodex=0
 Upgrades={
+    {
+        UpgradeType=AVATAR_DAMAGE_TAKEN
+        OperationType=MULTIPLY
+        Value=0.89999998
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={
+            PM_IN_AIR
+        }
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WarframeModDmgReductionInAirDesc
+    LocKeyWordScript={
+        Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
+        Function=GetDescriptionInfo
+        _displayAsPercent={
+            1
+        }
+    _absoluteValue={
+        1
+    }
+_maxDecimals={
+    -1
+}
+_addPlusses={
+    0
+}
+_multiplyDown={
+    1
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
 {
     UpgradeType=AVATAR_DAMAGE_TAKEN
     OperationType=MULTIPLY
@@ -15,54 +55,14 @@ Upgrades={
     UpgradeObject=""
     ValidPostures={}
     ValidModifiers={
-    PM_IN_AIR
-}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/WarframeModDmgReductionInAirDesc
-LocKeyWordScript={
-Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
-Function=GetDescriptionInfo
-_displayAsPercent={
-1
-}
-_absoluteValue={
-1
-}
-_maxDecimals={
--1
-}
-_addPlusses={
-0
-}
-_multiplyDown={
-1
-}
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-},
-{
-UpgradeType=AVATAR_DAMAGE_TAKEN
-OperationType=MULTIPLY
-Value=0.89999998
-DamageType=DT_ANY
-AutoType=0
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={
-PM_AIRBORNE
-}
+        PM_AIRBORNE
+    }
 InvalidModifiers={}
 ValidProcTypes={}
 OverrideLocalization=1
 LocTag=""
 LocKeyWordScript={
-Script=""
+    Script=""
 }
 DisplayAsMultiplier=0
 DisplayAsPercent=0

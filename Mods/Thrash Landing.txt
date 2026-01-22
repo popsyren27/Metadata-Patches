@@ -1,41 +1,41 @@
-/Lotus/Upgrades/Mods/Hoverboard/HBTrickExplosionMod
+>/Lotus/Upgrades/Mods/Hoverboard/HBTrickExplosionMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Upgrades/HoverboardTrickExplosionMod
 Icon=/Lotus/Interface/Cards/Images/Hoverboard/HoverboardModK.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/HoverboardTrickExplosionModDesc
-    LocKeyWordScript={
-    Script=/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBTrickExplosions.lua
-    Function=GetDescriptionInfo
-    _explosionFX=""
-    _damagePerLevel={
-    10,
-    20,
-    30,
-    40
-}
-_radiusPerLevel={
-1,
-2,
-3,
-4
-}
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/HoverboardTrickExplosionModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBTrickExplosions.lua
+            Function=GetDescriptionInfo
+            _explosionFX=""
+            _damagePerLevel={
+                10,
+                20,
+                30,
+                40
+            }
+        _radiusPerLevel={
+            1,
+            2,
+            3,
+            4
+        }
 }
 SmallerIsBetter=0
 RoundTo=0.1
@@ -47,36 +47,36 @@ BaseDrain=QA_HIGH
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Types/Vehicles/Hoverboard/HoverboardSuit
 Script={
-Script=/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBTrickExplosions.lua
-Function=AddUpgrades
-_explosionFX=/Lotus/Fx/Gameplay/HoverBoard/Abilities/TrickExplosionBlast
-_damagePerLevel={
-10,
-20,
-30,
-40
-}
+    Script=/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBTrickExplosions.lua
+    Function=AddUpgrades
+    _explosionFX=/Lotus/Fx/Gameplay/HoverBoard/Abilities/TrickExplosionBlast
+    _damagePerLevel={
+        10,
+        20,
+        30,
+        40
+    }
 _radiusPerLevel={
-1,
-2,
-3,
-4
+    1,
+    2,
+    3,
+    4
 }
 }
 UnappliedScript={
-Script=/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBTrickExplosions.lua
-Function=RemoveUpgrades
-_explosionFX=""
-_damagePerLevel={
-10,
-20,
-30,
-40
-}
+    Script=/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBTrickExplosions.lua
+    Function=RemoveUpgrades
+    _explosionFX=""
+    _damagePerLevel={
+        10,
+        20,
+        30,
+        40
+    }
 _radiusPerLevel={
-1,
-2,
-3,
-4
+    1,
+    2,
+    3,
+    4
 }
 }

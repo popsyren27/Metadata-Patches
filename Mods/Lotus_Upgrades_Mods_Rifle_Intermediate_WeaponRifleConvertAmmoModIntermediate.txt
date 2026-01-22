@@ -1,2 +1,2 @@
-/Lotus/Upgrades/Mods/Rifle/Intermediate/WeaponRifleConvertAmmoModIntermediate
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Rifle/Intermediate/WeaponRifleConvertAmmoModIntermediate
+IncludeInBoosterPack=0

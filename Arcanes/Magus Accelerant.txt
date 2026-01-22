@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/HeatResistOnBlast
+>/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/HeatResistOnBlast
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/HeatResistOnBlast
 LocalizeDescTag=""
@@ -38,11 +38,11 @@ Upgrades={
             _blastRobotStunnedEffect=""
             _blastRobotStunExplosion=""
         }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 FusionLimit=QA_HIGH
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple

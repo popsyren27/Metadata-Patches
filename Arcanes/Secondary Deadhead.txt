@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryDamageOnNoMelee
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryDamageOnNoMelee
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/SecondaryDamageOnPrecisionHeadshotKill
@@ -26,14 +26,14 @@ Upgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=1
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 ExtraUpgrades={
     {
@@ -55,64 +55,60 @@ ExtraUpgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=1
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-        },
-        {
-            UpgradeType=WEAPON_RECOIL
-            OperationType=STACKING_MULTIPLY
-            Value=-0.5
-            DamageType=DT_ANY
-            AutoType=1
-            ValidType=""
-            CheckTypeOnInstall=0
-            SymbolFilter=""
-            UpgradeObject=""
-            ValidPostures={}
-            ValidModifiers={}
-            InvalidModifiers={}
-            ValidProcTypes={}
-            OverrideLocalization=1
-            LocTag=/Lotus/Language/Upgrades/WeaponRecoilModDesc
-            LocKeyWordScript={
-                Script=""
-            }
-            DisplayAsMultiplier=0
-            DisplayAsPercent=1
-            ReverseValueSymbol=0
-            SmallerIsBetter=0
-            RoundTo=0.1
-            RoundingMode=RM_ROUND
-            AllowConditionalLocMerge=0
-        }
-    }
-    ExtraUpgradeFusionLevel=QA_HIGH
-    ApplyUpgradesByDefault=0
-    FusionLimit=QA_HIGH
-    ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol
-    UnappliedScript={
-        Script=/Lotus/Upgrades/Mods/Rifle/WeaponDamageOnNoMeleeArcane.lua
-        Function=OnUpgradeUnapplied
-    }
-    EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDurationAndStacks
-    EnhancementTagLocScript={
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+},
+{
+    UpgradeType=WEAPON_RECOIL
+    OperationType=STACKING_MULTIPLY
+    Value=-0.5
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponRecoilModDesc
+    LocKeyWordScript={
         Script=""
     }
-    UpgradeChance=1
-    UpgradeDuration=24
-    DurationScalesWithRank=0
-    StackMode=SM_DECAY
-    MaxConditionalStacks=3
-    ConditionalUpgrades={
-        /Lotus/Upgrades/CosmeticEnhancers/Events/OnSecondaryHeadshotKillResetOnMeleeCondition
-    }
-    ConditionTag=/Lotus/Language/Upgrades/OnPrecisionHeadshotKillCondition_Description
-    HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/SteelPathArcanesBuff18.png
-    HudBuffIconScaleWidth=1.35
-    HudBuffIconScaleHeight=1.35
-    BaseDistillPointValue=20
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ExtraUpgradeFusionLevel=QA_HIGH
+ApplyUpgradesByDefault=0
+FusionLimit=QA_HIGH
+ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDurationAndStacks
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+UpgradeDuration=24
+DurationScalesWithRank=0
+StackMode=SM_DECAY
+MaxConditionalStacks=3
+ConditionalUpgrades={
+    OnHeadshotKillAnySourceCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnPrecisionHeadshotKillCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/SteelPathArcanesBuff18.png
+HudBuffIconScaleWidth=1.35
+HudBuffIconScaleHeight=1.35
+BaseDistillPointValue=20

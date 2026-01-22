@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/MeleeArcaneShockwaveOnJump
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/MeleeArcaneShockwaveOnJump
 Rarity=LEGENDARY
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/MeleeArcaneShockwaveOnJump
@@ -44,195 +44,195 @@ Upgrades={
             _enemyFloatTimeAddPerLevel=1
             _enemyFloatFX=""
         }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-        },
-        {
-            UpgradeType=NONE
-            OperationType=ADD
-            Value=0
-            DamageType=DT_ANY
-            AutoType=1
-            ValidType=""
-            CheckTypeOnInstall=0
-            SymbolFilter=""
-            UpgradeObject=""
-            ValidPostures={}
-            ValidModifiers={}
-            InvalidModifiers={}
-            ValidProcTypes={}
-            OverrideLocalization=1
-            LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionMeleeShockwaveStasisDuration
-            LocKeyWordScript={
-                Script=MeleeArcaneOnJumpShockwave.lua
-                Function=GetDescriptionInfo
-                _projectileType=""
-                _projectileSpawnOffset={0,0,0}
-                _projectileSpeed=5
-                _impactFx=""
-                _shockwaveExplosionDmg=200
-                _shockwaveExplosionRadius=6
-                _shockwaveExplosionDmgFalloff=1
-                _shockwaveExplosionImpulse=200
-                _shockwaveLifetime=1
-                _shockwaveRaycastSteps=3
-                _shockwaveUpHeight=1.5
-                _shockwaveDownHeight=3
-                _shockwaveHeightOffsetFromGround=0.15000001
-                _enemyAttenuation=0.1
-                _enemyBounceTime=5
-                _enemyFloatTime=1
-                _enemyFloatTimeAddPerLevel=1
-                _enemyFloatFX=""
-            }
-            SmallerIsBetter=0
-            RoundTo=0.1
-            RoundingMode=RM_ROUND
-            AllowConditionalLocMerge=0
-            },
-            {
-                UpgradeType=NONE
-                OperationType=ADD
-                Value=0
-                DamageType=DT_ANY
-                AutoType=1
-                ValidType=""
-                CheckTypeOnInstall=0
-                SymbolFilter=""
-                UpgradeObject=""
-                ValidPostures={}
-                ValidModifiers={}
-                InvalidModifiers={}
-                ValidProcTypes={}
-                OverrideLocalization=1
-                LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionMeleeShockwaveStasisDuration
-                LocKeyWordScript={
-                    Script=MeleeArcaneOnJumpShockwave.lua
-                    Function=GetDescriptionInfo
-                    _projectileType=""
-                    _projectileSpawnOffset={0,0,0}
-                    _projectileSpeed=5
-                    _impactFx=""
-                    _shockwaveExplosionDmg=200
-                    _shockwaveExplosionRadius=6
-                    _shockwaveExplosionDmgFalloff=1
-                    _shockwaveExplosionImpulse=200
-                    _shockwaveLifetime=1
-                    _shockwaveRaycastSteps=3
-                    _shockwaveUpHeight=1.5
-                    _shockwaveDownHeight=3
-                    _shockwaveHeightOffsetFromGround=0.15000001
-                    _enemyAttenuation=0.1
-                    _enemyBounceTime=5
-                    _enemyFloatTime=1
-                    _enemyFloatTimeAddPerLevel=1
-                    _enemyFloatFX=""
-                }
-                SmallerIsBetter=0
-                RoundTo=0.1
-                RoundingMode=RM_ROUND
-                AllowConditionalLocMerge=0
-                },
-                {
-                    UpgradeType=NONE
-                    OperationType=ADD
-                    Value=0
-                    DamageType=DT_ANY
-                    AutoType=1
-                    ValidType=""
-                    CheckTypeOnInstall=0
-                    SymbolFilter=""
-                    UpgradeObject=""
-                    ValidPostures={}
-                    ValidModifiers={}
-                    InvalidModifiers={}
-                    ValidProcTypes={}
-                    OverrideLocalization=1
-                    LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionMeleeShockwaveStasisDuration
-                    LocKeyWordScript={
-                        Script=MeleeArcaneOnJumpShockwave.lua
-                        Function=GetDescriptionInfo
-                        _projectileType=""
-                        _projectileSpawnOffset={0,0,0}
-                        _projectileSpeed=5
-                        _impactFx=""
-                        _shockwaveExplosionDmg=200
-                        _shockwaveExplosionRadius=6
-                        _shockwaveExplosionDmgFalloff=1
-                        _shockwaveExplosionImpulse=200
-                        _shockwaveLifetime=1
-                        _shockwaveRaycastSteps=3
-                        _shockwaveUpHeight=1.5
-                        _shockwaveDownHeight=3
-                        _shockwaveHeightOffsetFromGround=0.15000001
-                        _enemyAttenuation=0.1
-                        _enemyBounceTime=5
-                        _enemyFloatTime=1
-                        _enemyFloatTimeAddPerLevel=1
-                        _enemyFloatFX=""
-                    }
-                    SmallerIsBetter=0
-                    RoundTo=0.1
-                    RoundingMode=RM_ROUND
-                    AllowConditionalLocMerge=0
-                }
-            }
-            ApplyUpgradesByDefault=0
-            IncompatibilityTags={
-                OPERATOR_SUIT,
-                POWER_WEAPON
-            }
-            Script={
-                Script=MeleeArcaneOnJumpShockwave.lua
-                Function=MeleeShockwave
-                _projectileType=ShockwaveWaveProjectile
-                _projectileSpawnOffset={0,0,0}
-                _projectileSpeed=40
-                _impactFx=/Lotus/Fx/Weapons/Ostron/Arcanes/ShockwaveRadialBlast
-                _shockwaveExplosionDmg=72
-                _shockwaveExplosionRadius=8
-                _shockwaveExplosionDmgFalloff=1
-                _shockwaveExplosionImpulse=3000
-                _shockwaveLifetime=0.63999999
-                _shockwaveRaycastSteps=6
-                _shockwaveUpHeight=2
-                _shockwaveDownHeight=6
-                _shockwaveHeightOffsetFromGround=0.2
-                _enemyAttenuation=0.1
-                _enemyBounceTime=0.2
-                _enemyFloatTime=1
-                _enemyFloatTimeAddPerLevel=1
-                _enemyFloatFX=/Lotus/Fx/Weapons/Ostron/Arcanes/ShockwaveEnemyAttach
-            }
-            EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionMeleeShockwave
-            EnhancementTagLocScript={
-                Script=""
-            }
-            UpgradeChance=1
-            PlayEffect=0
-            ConditionalUpgrades={
-                OnBulletOrDoubleJumpCondition
-            }
-            ConditionTag=/Lotus/Language/Upgrades/OnSpecialJumpCondition_Description
-            HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/MeleeArcaneShockwaveOnJump.png
-            UseUpgradesForRankLocs=1
-            ModularReplacements={
-                {
-                    Original=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageAttachment
-                    Replacement=/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Balances/InfestedBalanceDamageAttachment
-                    },
-                    {
-                        Original=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceCritAttachment
-                        Replacement=/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Balances/InfestedBalanceCritAttachment
-                        },
-                        {
-                            Original=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceStatusAttachment
-                            Replacement=/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Balances/InfestedBalanceStatusAttachment
-                            },
-                            {
-                                Original=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedAttachment
-                                Replacement=/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Balances/InfestedBalanceSpeedAttachment
-                            }
-                        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+},
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionMeleeShockwaveStasisDuration
+    LocKeyWordScript={
+        Script=MeleeArcaneOnJumpShockwave.lua
+        Function=GetDescriptionInfo
+        _projectileType=""
+        _projectileSpawnOffset={0,0,0}
+        _projectileSpeed=5
+        _impactFx=""
+        _shockwaveExplosionDmg=200
+        _shockwaveExplosionRadius=6
+        _shockwaveExplosionDmgFalloff=1
+        _shockwaveExplosionImpulse=200
+        _shockwaveLifetime=1
+        _shockwaveRaycastSteps=3
+        _shockwaveUpHeight=1.5
+        _shockwaveDownHeight=3
+        _shockwaveHeightOffsetFromGround=0.15000001
+        _enemyAttenuation=0.1
+        _enemyBounceTime=5
+        _enemyFloatTime=1
+        _enemyFloatTimeAddPerLevel=1
+        _enemyFloatFX=""
+    }
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+},
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionMeleeShockwaveStasisDuration
+    LocKeyWordScript={
+        Script=MeleeArcaneOnJumpShockwave.lua
+        Function=GetDescriptionInfo
+        _projectileType=""
+        _projectileSpawnOffset={0,0,0}
+        _projectileSpeed=5
+        _impactFx=""
+        _shockwaveExplosionDmg=200
+        _shockwaveExplosionRadius=6
+        _shockwaveExplosionDmgFalloff=1
+        _shockwaveExplosionImpulse=200
+        _shockwaveLifetime=1
+        _shockwaveRaycastSteps=3
+        _shockwaveUpHeight=1.5
+        _shockwaveDownHeight=3
+        _shockwaveHeightOffsetFromGround=0.15000001
+        _enemyAttenuation=0.1
+        _enemyBounceTime=5
+        _enemyFloatTime=1
+        _enemyFloatTimeAddPerLevel=1
+        _enemyFloatFX=""
+    }
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+},
+{
+    UpgradeType=NONE
+    OperationType=ADD
+    Value=0
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionMeleeShockwaveStasisDuration
+    LocKeyWordScript={
+        Script=MeleeArcaneOnJumpShockwave.lua
+        Function=GetDescriptionInfo
+        _projectileType=""
+        _projectileSpawnOffset={0,0,0}
+        _projectileSpeed=5
+        _impactFx=""
+        _shockwaveExplosionDmg=200
+        _shockwaveExplosionRadius=6
+        _shockwaveExplosionDmgFalloff=1
+        _shockwaveExplosionImpulse=200
+        _shockwaveLifetime=1
+        _shockwaveRaycastSteps=3
+        _shockwaveUpHeight=1.5
+        _shockwaveDownHeight=3
+        _shockwaveHeightOffsetFromGround=0.15000001
+        _enemyAttenuation=0.1
+        _enemyBounceTime=5
+        _enemyFloatTime=1
+        _enemyFloatTimeAddPerLevel=1
+        _enemyFloatFX=""
+    }
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+ApplyUpgradesByDefault=0
+IncompatibilityTags={
+    OPERATOR_SUIT,
+    POWER_WEAPON
+}
+Script={
+    Script=MeleeArcaneOnJumpShockwave.lua
+    Function=MeleeShockwave
+    _projectileType=ShockwaveWaveProjectile
+    _projectileSpawnOffset={0,0,0}
+    _projectileSpeed=40
+    _impactFx=/Lotus/Fx/Weapons/Ostron/Arcanes/ShockwaveRadialBlast
+    _shockwaveExplosionDmg=72
+    _shockwaveExplosionRadius=8
+    _shockwaveExplosionDmgFalloff=1
+    _shockwaveExplosionImpulse=3000
+    _shockwaveLifetime=0.63999999
+    _shockwaveRaycastSteps=6
+    _shockwaveUpHeight=2
+    _shockwaveDownHeight=6
+    _shockwaveHeightOffsetFromGround=0.2
+    _enemyAttenuation=0.1
+    _enemyBounceTime=0.2
+    _enemyFloatTime=1
+    _enemyFloatTimeAddPerLevel=1
+    _enemyFloatFX=/Lotus/Fx/Weapons/Ostron/Arcanes/ShockwaveEnemyAttach
+}
+EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionMeleeShockwave
+EnhancementTagLocScript={
+    Script=""
+}
+UpgradeChance=1
+PlayEffect=0
+ConditionalUpgrades={
+    OnBulletOrDoubleJumpCondition
+}
+ConditionTag=/Lotus/Language/Upgrades/OnSpecialJumpCondition_Description
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/MeleeArcaneShockwaveOnJump.png
+UseUpgradesForRankLocs=1
+ModularReplacements={
+    {
+        Original=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageAttachment
+        Replacement=/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Balances/InfestedBalanceDamageAttachment
+    },
+{
+    Original=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceCritAttachment
+    Replacement=/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Balances/InfestedBalanceCritAttachment
+},
+{
+    Original=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceStatusAttachment
+    Replacement=/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Balances/InfestedBalanceStatusAttachment
+},
+{
+    Original=/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedAttachment
+    Replacement=/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Balances/InfestedBalanceSpeedAttachment
+}
+}

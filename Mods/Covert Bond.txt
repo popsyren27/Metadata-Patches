@@ -1,4 +1,4 @@
-/Lotus/Types/Sentinels/SentinelPrecepts/VoidBond/PredatoryResponse
+>/Lotus/Types/Sentinels/SentinelPrecepts/VoidBond/PredatoryResponse
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/VoidBondPredatoryResponseMod
@@ -7,79 +7,79 @@ StatusDescTag=/Lotus/Language/Buffs/PredatoryResponseBuffDesc
 Icon=/Lotus/Interface/Cards/Images/Pets/SentinelPredatoryResponse.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/VoidBondPredatoryResponseModDesc
-    LocKeyWordScript={
-    Script=/Lotus/Types/Sentinels/SentinelAbilities/PredatoryResponse.lua
-    Function=GetDescription
-    _timeAddedOnMercyKillPerLevel=1.67
-    _maxTime=60
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/VoidBondPredatoryResponseModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/PredatoryResponse.lua
+            Function=GetDescription
+            _timeAddedOnMercyKillPerLevel=1.67
+            _maxTime=60
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ApplyUpgradesByDefault=0
 ArtifactPolarity=AP_TACTIC
 Script={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/PredatoryResponse.lua
-Function=ApplyUpgrade
-_timeAddedOnMercyKillPerLevel=1.67
-_maxTime=60
+    Script=/Lotus/Types/Sentinels/SentinelAbilities/PredatoryResponse.lua
+    Function=ApplyUpgrade
+    _timeAddedOnMercyKillPerLevel=1.67
+    _maxTime=60
 }
 UpgradeChance=1
 ChanceScalesWithRank=0
 ConditionalUpgrades={
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/OnFinisherCondition,
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/OnFinisherWorkaroundCondition
+    /Lotus/Upgrades/CosmeticEnhancers/Offensive/OnFinisherCondition,
+    /Lotus/Upgrades/CosmeticEnhancers/Offensive/OnFinisherWorkaroundCondition
 }
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/PredatoryResponse.png
 Ability={
-Script={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/PredatoryResponse.lua
-Function=ActivateAbility
-_timeAddedOnMercyKillPerLevel=1.67
-_maxTime=60
-}
+    Script={
+        Script=/Lotus/Types/Sentinels/SentinelAbilities/PredatoryResponse.lua
+        Function=ActivateAbility
+        _timeAddedOnMercyKillPerLevel=1.67
+        _maxTime=60
+    }
 SecondaryScripts={
-{
-tag=ApplyInvisibilityHost
-executionMode=EM_HOST
-inheritPrimary=0
-functionName=""
-scriptInstance={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/PredatoryResponse.lua
-Function=ApplyInvisibility
-_timeAddedOnMercyKillPerLevel=1.67
-_maxTime=60
-}
+    {
+        tag=ApplyInvisibilityHost
+        executionMode=EM_HOST
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/PredatoryResponse.lua
+            Function=ApplyInvisibility
+            _timeAddedOnMercyKillPerLevel=1.67
+            _maxTime=60
+        }
 },
 {
-tag=ApplyInvisibilityClient
-executionMode=EM_CLIENT
-inheritPrimary=0
-functionName=""
-scriptInstance={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/PredatoryResponse.lua
-Function=ApplyInvisibility
-_timeAddedOnMercyKillPerLevel=1.67
-_maxTime=60
-}
+    tag=ApplyInvisibilityClient
+    executionMode=EM_CLIENT
+    inheritPrimary=0
+    functionName=""
+    scriptInstance={
+        Script=/Lotus/Types/Sentinels/SentinelAbilities/PredatoryResponse.lua
+        Function=ApplyInvisibility
+        _timeAddedOnMercyKillPerLevel=1.67
+        _maxTime=60
+    }
 }
 }
 EnergyRequiredToActivate=0

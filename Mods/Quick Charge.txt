@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Warframe/ReduceShieldRechargeDelayWarframe
+>/Lotus/Upgrades/Mods/PvPMods/Warframe/ReduceShieldRechargeDelayWarframe
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/ReduceShieldRechargeDelayWarframe
@@ -8,30 +8,30 @@ ExcludeFromCodex=0
 AvailableOnPve=0
 AvailableOnPvp=1
 Upgrades={
-{
-    UpgradeType=AVATAR_SHIELD_RECHARGE_DELAY
-    OperationType=STACKING_MULTIPLY
-    Value=-0.050000001
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/AvatarShieldRechargeDelayModDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=1
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_SHIELD_RECHARGE_DELAY
+        OperationType=STACKING_MULTIPLY
+        Value=-0.050000001
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/AvatarShieldRechargeDelayModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=1
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 },
 {
     UpgradeType=AVATAR_SHIELD_MAX
@@ -49,8 +49,8 @@ RoundingMode=RM_ROUND
     OverrideLocalization=1
     LocTag=/Lotus/Language/Upgrades/AvatarShieldMaxNoPercentModDesc
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
 ReverseValueSymbol=0
@@ -64,5 +64,5 @@ BaseDrain=QA_HIGH
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
 IncompatibilityTags={
-SANDMAN
+    SANDMAN
 }

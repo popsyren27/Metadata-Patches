@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Utility/ExtraProcOnProc
+>/Lotus/Upgrades/CosmeticEnhancers/Utility/ExtraProcOnProc
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Upgrades/ExtraProcOnProc
@@ -11,7 +11,7 @@ Upgrades={
         OperationType=ADD
         Value=0.039999999
         DamageType=DT_ANY
-        AutoType=0
+        AutoType=1
         ValidType=/Lotus/Weapons/Tenno/Pistol/LotusPistol
         CheckTypeOnInstall=0
         SymbolFilter=""
@@ -25,14 +25,14 @@ Upgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=1
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 FusionLimit=QA_HIGH
 ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol

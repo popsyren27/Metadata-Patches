@@ -1,34 +1,34 @@
-/Lotus/Upgrades/Mods/Sets/Hawk/HawkModA
+>/Lotus/Upgrades/Mods/Sets/Hawk/HawkModA
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/HawkModAName
 Icon=/Lotus/Interface/Cards/Images/Sets/Hawk/HawksVantage.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_PARKOUR_GRAVITY
-    OperationType=STACKING_MULTIPLY
-    Value=-0.25
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/HawkModADesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=1
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_PARKOUR_GRAVITY
+        OperationType=STACKING_MULTIPLY
+        Value=-0.25
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/HawkModADesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=1
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_TACTIC
@@ -39,5 +39,5 @@ IsUtility=1
 UpgradeChance=1
 ModSet=HawkSetMod
 TipTags={
-SLEEP
+    SLEEP
 }

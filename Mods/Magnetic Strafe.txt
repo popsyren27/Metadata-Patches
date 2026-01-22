@@ -1,56 +1,56 @@
-/Lotus/Upgrades/Mods/Shotgun/DualStat/MagneticFireRateShotgunMod
+>/Lotus/Upgrades/Mods/Shotgun/DualStat/MagneticFireRateShotgunMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Upgrades/MagneticFireRateShotgunMod
 Icon=/Lotus/Interface/Cards/Images/Shotgun/MagneticFireRateShotgunMod.png
 ExcludeFromCodex=0
 SearchTags={
-/Lotus/Language/Game/DT_RADIATION_NoIcon
+    /Lotus/Language/Game/DT_RADIATION_NoIcon
 }
 Upgrades={
-{
-UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
-OperationType=ADD
-Value=0.15000001
-DamageType=DT_MAGNETIC
-AutoType=1
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/WeaponMagneticDamage
-LocKeyWordScript={
-Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+        OperationType=ADD
+        Value=0.15000001
+        DamageType=DT_MAGNETIC
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponMagneticDamage
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 },
 {
-UpgradeType=WEAPON_FIRE_RATE
-OperationType=STACKING_MULTIPLY
-Value=0.1
-DamageType=DT_ANY
-AutoType=1
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/FireRateModDesc
-LocKeyWordScript={
-Script=""
-}
+    UpgradeType=WEAPON_FIRE_RATE
+    OperationType=STACKING_MULTIPLY
+    Value=0.1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/FireRateModDesc
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0

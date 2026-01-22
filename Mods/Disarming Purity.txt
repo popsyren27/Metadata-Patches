@@ -1,38 +1,38 @@
-/Lotus/Upgrades/Mods/Syndicate/PantheraMod
+>/Lotus/Upgrades/Mods/Syndicate/PantheraMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/SyndicateRewards/PantheraMod
 Icon=/Lotus/Interface/Cards/Images/Syndicate/Panthera.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_SYNDICATE_POWER
-    OperationType=ADD
-    Value=0.25
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=/Lotus/Syndicates/NewLokaSyndicate
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=0
-    SmallerIsBetter=0
-    RoundTo=0.1
-    RoundingMode=RM_ROUND
-}
+    {
+        UpgradeType=WEAPON_SYNDICATE_POWER
+        OperationType=ADD
+        Value=0.25
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=/Lotus/Syndicates/NewLokaSyndicate
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+    }
 }
 ArtifactPolarity=AP_TACTIC
 BaseDrain=QA_MEDIUM
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Tenno/LongGuns/Miter/TnoMiter
 SubUpgrades={
-PantheraDisarmSubMod
+    PantheraDisarmSubMod
 }
 PrependSubUpgradeLoc=1
 TipTags={
-PURITY,
-DISARM
+    PURITY,
+    DISARM
 }

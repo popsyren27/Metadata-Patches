@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Rifle/Expert/WeaponRecoilReductionModExpert
-patch not applied (yet)

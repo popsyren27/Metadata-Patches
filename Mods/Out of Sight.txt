@@ -1,34 +1,34 @@
-/Lotus/Upgrades/Mods/DataSpike/Assassin/OnExecutionBlindMod
+>/Lotus/Upgrades/Mods/DataSpike/Assassin/OnExecutionBlindMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/OnExecutionBlindModName
 Icon=/Lotus/Interface/Cards/Images/DataSpike/OnExecutionBlindMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/DataSpikeOnExecutionBlind
-    LocKeyWordScript={
-    Script=BlindingFinisher.lua
-    Function=GetDescription
-    _range={
-    18
-}
-_blindedFx=""
-_procChance=1
-}
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/DataSpikeOnExecutionBlind
+        LocKeyWordScript={
+            Script=BlindingFinisher.lua
+            Function=GetDescription
+            _range={
+                18
+            }
+        _blindedFx=""
+        _procChance=1
+    }
 SmallerIsBetter=0
 RoundTo=0.1
 RoundingMode=RM_ROUND
@@ -37,17 +37,17 @@ RoundingMode=RM_ROUND
 ApplyUpgradesByDefault=0
 ItemCompatibility=/Lotus/Weapons/Tenno/HackingDevices/TnHackingDevice/TnHackingDeviceWeapon
 Script={
-Script=BlindingFinisher.lua
-Function=ModApplied
-_range={
-18
-}
+    Script=BlindingFinisher.lua
+    Function=ModApplied
+    _range={
+        18
+    }
 _blindedFx=/Lotus/Fx/PowersuitAbilities/Excalibur/BlindedSpawner
 _procChance=1
 }
 IncludeInBoosterPack=1
 UpgradeChance=1
 ConditionalUpgrades={
-OnExecutionEnd
+    OnExecutionEnd
 }
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/InvulnerabilityBuffIcon.png

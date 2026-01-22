@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/HeavyCritOnRegularMelee
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/HeavyCritOnRegularMelee
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/HeavyCritOnRegularMeleeName

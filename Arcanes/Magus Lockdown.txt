@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/TetherMineOnDash
+>/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/TetherMineOnDash
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/TetherMineOnDash
@@ -33,24 +33,24 @@ Upgrades={
                 10,
                 10
             }
-            _range={
-                3,
-                6,
-                9,
-                12,
-                13,
-                15
-            }
-            _attachEffect=""
-            _beamType=""
-            _mineDecoType=""
-            _unaffectedTypes={}
+        _range={
+            3,
+            6,
+            9,
+            12,
+            13,
+            15
         }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    _attachEffect=""
+    _beamType=""
+    _mineDecoType=""
+    _unaffectedTypes={}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 ApplyUpgradesByDefault=0
 FusionLimit=QA_HIGH
@@ -63,28 +63,28 @@ Script={
         6,
         8
     }
-    _range={
-        3,
-        6,
-        9,
-        12,
-        15,
-        18
-    }
-    _attachEffect=""
-    _beamType=""
-    _mineDecoType=DashTetherMine
-    _unaffectedTypes={
-        /Lotus/Types/Game/RopalolystAvatar,
-        /Lotus/Types/Enemies/Kingpins/LotusNemesisAvatar,
-        /Lotus/Types/Enemies/Orokin/Special/OrokinGoldenMawAvatar,
-        /Lotus/Types/Enemies/Orokin/Special/OrokinGoldenMawAvatarWithBurrowFinisher,
-        /Lotus/Types/Enemies/Zariman/Avatars/VoidAngelAvatar,
-        /Lotus/Types/Enemies/Zariman/Avatars/EtherealVoidAngelAvatar,
-        /Lotus/Types/Enemies/NewWar/Archons/ArchonAmarAvatarPNW,
-        /Lotus/Types/Enemies/NewWar/Archons/ArchonNiraAvatarNewPNW,
-        /Lotus/Types/Enemies/NewWar/Archons/ArchonBorealAvatarPNW
-    }
+_range={
+    3,
+    6,
+    9,
+    12,
+    15,
+    18
+}
+_attachEffect=""
+_beamType=""
+_mineDecoType=DashTetherMine
+_unaffectedTypes={
+    /Lotus/Types/Game/RopalolystAvatar,
+    /Lotus/Types/Enemies/Kingpins/LotusNemesisAvatar,
+    /Lotus/Types/Enemies/Orokin/Special/OrokinGoldenMawAvatar,
+    /Lotus/Types/Enemies/Orokin/Special/OrokinGoldenMawAvatarWithBurrowFinisher,
+    /Lotus/Types/Enemies/Zariman/Avatars/VoidAngelAvatar,
+    /Lotus/Types/Enemies/Zariman/Avatars/EtherealVoidAngelAvatar,
+    /Lotus/Types/Enemies/NewWar/Archons/ArchonAmarAvatarPNW,
+    /Lotus/Types/Enemies/NewWar/Archons/ArchonNiraAvatarNewPNW,
+    /Lotus/Types/Enemies/NewWar/Archons/ArchonBorealAvatarPNW
+}
 }
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
 EnhancementTagLocScript={

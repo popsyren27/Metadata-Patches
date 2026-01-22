@@ -1,2 +1,3 @@
-/Lotus/Upgrades/Mods/Pistol/Intermediate/WeaponDamageAmountModIntermediate
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Pistol/Intermediate/WeaponDamageAmountModIntermediate
+FusionLimit=QA_HIGH
+IncludeInBoosterPack=0

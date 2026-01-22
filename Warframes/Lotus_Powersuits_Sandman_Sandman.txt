@@ -1,9 +1,0 @@
-/Lotus/Powersuits/Sandman/Sandman
-MarketMode=MM_VISIBLE
-ExcludeFromCodex=0
-ResourceOverrides={
-    {
-        Tag=Tombstone
-        Resource=/Lotus/Fx/PowersuitAbilities/Sandman/PreDeathDevourSandmanAttach
-    }
-}

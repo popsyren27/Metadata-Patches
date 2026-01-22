@@ -1,31 +1,31 @@
-/Lotus/Upgrades/Mods/Warframe/AvatarAutoParryMod
+>/Lotus/Upgrades/Mods/Warframe/AvatarAutoParryMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/WarframeModAutoParry
 Icon=/Lotus/Interface/Cards/Images/AvatarMods/AvatarBlockReflectionMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_MELEE_COMBO_GAIN_EXTRA_CHANCE
-    OperationType=STACKING_MULTIPLY
-    Value=0.090908997
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={
-    PM_PARRY
-}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/MeleeComboPointMissChanceBlocking
-LocKeyWordScript={
-Script=""
-}
+    {
+        UpgradeType=WEAPON_MELEE_COMBO_GAIN_EXTRA_CHANCE
+        OperationType=STACKING_MULTIPLY
+        Value=0.090908997
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={
+            PM_PARRY
+        }
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/MeleeComboPointMissChanceBlocking
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0

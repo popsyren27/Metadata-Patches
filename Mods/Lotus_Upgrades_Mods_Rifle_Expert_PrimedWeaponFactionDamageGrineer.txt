@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Rifle/Expert/PrimedWeaponFactionDamageGrineer
-patch not applied (yet)

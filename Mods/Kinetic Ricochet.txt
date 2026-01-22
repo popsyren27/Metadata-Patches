@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Rifle/Event/CorpusArena/TetraCorpusArenaMod
+>/Lotus/Upgrades/Mods/Rifle/Event/CorpusArena/TetraCorpusArenaMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/TetraCorpusArenaModName
@@ -7,10 +7,49 @@ Icon=/Lotus/Interface/Cards/Images/Rifle/TetraCorpusArenaMod.png
 ExcludeFromCodex=0
 TradeCapability=RO_ALWAYS
 Upgrades={
+    {
+        UpgradeType=WEAPON_PROJECTILE_BOUNCES
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Mods/TetraCorpusArenaModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
+            Function=GetDescriptionInfo
+            _displayAsPercent={
+                0,
+                1
+            }
+        _absoluteValue={
+            0
+        }
+    _maxDecimals={
+        -1
+    }
+_addPlusses={
+    0
+}
+_multiplyDown={
+    0
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
 {
-    UpgradeType=WEAPON_PROJECTILE_BOUNCES
-    OperationType=ADD
-    Value=1
+    UpgradeType=WEAPON_RANGE
+    OperationType=STACKING_MULTIPLY
+    Value=0.050000001
     DamageType=DT_ANY
     AutoType=1
     ValidType=""
@@ -21,49 +60,10 @@ Upgrades={
     InvalidModifiers={}
     ValidProcTypes={}
     OverrideLocalization=1
-    LocTag=/Lotus/Language/Mods/TetraCorpusArenaModDesc
+    LocTag=""
     LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
-    Function=GetDescriptionInfo
-    _displayAsPercent={
-    0,
-    1
-}
-_absoluteValue={
-0
-}
-_maxDecimals={
--1
-}
-_addPlusses={
-0
-}
-_multiplyDown={
-0
-}
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-},
-{
-UpgradeType=WEAPON_RANGE
-OperationType=STACKING_MULTIPLY
-Value=0.050000001
-DamageType=DT_ANY
-AutoType=1
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=""
-LocKeyWordScript={
-Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
 ReverseValueSymbol=0
@@ -75,14 +75,14 @@ RoundingMode=RM_ROUND
 ArtifactPolarity=AP_TACTIC
 ItemCompatibility=/Lotus/Weapons/Corpus/LongGuns/CorpusUMP/CorpusUMP
 IncompatibilityTags={
-POWER_WEAPON
+    POWER_WEAPON
 }
 Script={
-Script=/Lotus/Scripts/Mods/ChangeProjectileType.lua
-Function=ApplyUpgrades
-_frameType=""
-_behaviorIndex=0
-_embedMeshOverride=""
+    Script=/Lotus/Scripts/Mods/ChangeProjectileType.lua
+    Function=ApplyUpgrades
+    _frameType=""
+    _behaviorIndex=0
+    _embedMeshOverride=""
 }
 IsUtility=1
 PlayEffect=0

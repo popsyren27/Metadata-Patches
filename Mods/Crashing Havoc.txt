@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Stances/PvPHammerStanceOne
+>/Lotus/Upgrades/Mods/PvPMods/Stances/PvPHammerStanceOne
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/PvPHammerStanceOne
@@ -9,10 +9,10 @@ AvailableOnPve=0
 AvailableOnPvp=1
 ArtifactPolarity=AP_DEFENSE
 UnequippedAttackSets={
-CC_GROUND=Combos/PvPHammerComboOneEquipped
+    CC_GROUND=Combos/PvPHammerComboOneEquipped
 }
 EquippedAttackSets={
-CC_GROUND=Combos/PvPHammerComboA
-CC_GROUND_BRANCH_A=Combos/PvPHammerComboOneEquipped
-CC_GROUND_BRANCH_B=Combos/PvPHammerComboB
+    CC_GROUND=Combos/PvPHammerComboA
+    CC_GROUND_BRANCH_A=Combos/PvPHammerComboOneEquipped
+    CC_GROUND_BRANCH_B=Combos/PvPHammerComboB
 }

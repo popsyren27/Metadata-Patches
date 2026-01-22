@@ -1,33 +1,33 @@
-/Lotus/Upgrades/Mods/Necromech/NecromechMeleeRangeMod
+>/Lotus/Upgrades/Mods/Necromech/NecromechMeleeRangeMod
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Necromech/NecromechMeleeRangeMod
 Icon=/Lotus/Interface/Cards/Images/Necramech/NecramechMeleeRange.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_RANGE
-    OperationType=ADD
-    Value=0.25
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=/Lotus/Types/Game/LotusMeleeWeapon
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/WeaponMeleeRangeModDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=0
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.0099999998
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=WEAPON_RANGE
+        OperationType=ADD
+        Value=0.25
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=/Lotus/Types/Game/LotusMeleeWeapon
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponMeleeRangeModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.0099999998
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_ATTACK

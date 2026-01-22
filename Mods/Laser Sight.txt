@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Shotgun/Event/CritChanceWhileAimingShotgunMod
+>/Lotus/Upgrades/Mods/Shotgun/Event/CritChanceWhileAimingShotgunMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/CritChanceWhileAimingShotgunMod
@@ -7,26 +7,26 @@ StatusDescTag=/Lotus/Language/Buffs/CritChanceWhileAimingBuffDesc
 Icon=/Lotus/Interface/Cards/Images/Shotgun/CritChanceWhileAiming.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_CRIT_CHANCE
-    OperationType=STACKING_MULTIPLY
-    Value=0.2
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={
-    PM_AIM
-}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/CritChanceWhileAimingModDesc
-LocKeyWordScript={
-Script=""
-}
+    {
+        UpgradeType=WEAPON_CRIT_CHANCE
+        OperationType=STACKING_MULTIPLY
+        Value=0.2
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={
+            PM_AIM
+        }
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/CritChanceWhileAimingModDesc
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -40,17 +40,17 @@ ArtifactPolarity=AP_ATTACK
 BaseDrain=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Tenno/Shotgun/LotusShotgun
 IncompatibilityTags={
-POWER_WEAPON
+    POWER_WEAPON
 }
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDuration
 EnhancementTagLocScript={
-Script=""
+    Script=""
 }
 UpgradeChance=1
 UpgradeDuration=1.5
 PlayEffect=0
 ConditionalUpgrades={
-/Lotus/Upgrades/CosmeticEnhancers/Events/OnHeadshotShotgunCondition
+    /Lotus/Upgrades/CosmeticEnhancers/Events/OnHeadshotShotgunCondition
 }
 ConditionTag=/Lotus/Language/Upgrades/OnHeadshotCondition_Description
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/NextShotCritChance.png

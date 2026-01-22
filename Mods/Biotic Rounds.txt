@@ -1,32 +1,59 @@
-/Lotus/Upgrades/Mods/Nightwave/NightwaveTC2024AK47AugmentMod
+>/Lotus/Upgrades/Mods/Nightwave/NightwaveTC2024AK47AugmentMod
 Rarity=RARE
 LocalizeTag=/Lotus/Language/Mods/NightwaveTC2024AK47AugmentModName
 StatusDescTag=/Lotus/Language/Buffs/NightwaveTC2024AK47AugmentModBuffDesc
 Icon=/Lotus/Interface/Cards/Images/Nightwave/NightwaveTC2024AK47AugmentMod.png
 SearchTags={
-/Lotus/Language/Game/DT_GAS_NoIcon,
-/Lotus/Language/Game/DT_MAGNETIC_NoIcon
+    /Lotus/Language/Game/DT_GAS_NoIcon,
+    /Lotus/Language/Game/DT_MAGNETIC_NoIcon
 }
 Upgrades={
+    {
+        UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+        OperationType=ADD
+        Value=0.25
+        DamageType=DT_VIRAL
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Mods/NightwaveTC2024AK47AugmentModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+},
 {
-UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
-OperationType=ADD
-Value=0.25
-DamageType=DT_VIRAL
-AutoType=1
-ValidType=""
-CheckTypeOnInstall=0
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Mods/NightwaveTC2024AK47AugmentModDesc
-LocKeyWordScript={
-Script=""
-}
+    UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+    OperationType=ADD
+    Value=0.25
+    DamageType=DT_MAGNETIC
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -36,51 +63,24 @@ RoundingMode=RM_ROUND
 AllowConditionalLocMerge=0
 },
 {
-UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
-OperationType=ADD
-Value=0.25
-DamageType=DT_MAGNETIC
-AutoType=1
-ValidType=""
-CheckTypeOnInstall=0
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=""
-LocKeyWordScript={
-Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
-},
-{
-UpgradeType=WEAPON_PROC_CHANCE
-OperationType=STACKING_MULTIPLY
-Value=0.25
-DamageType=DT_ANY
-AutoType=1
-ValidType=""
-CheckTypeOnInstall=0
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=""
-LocKeyWordScript={
-Script=""
-}
+    UpgradeType=WEAPON_PROC_CHANCE
+    OperationType=STACKING_MULTIPLY
+    Value=0.25
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
 ReverseValueSymbol=0
@@ -97,13 +97,13 @@ ItemCompatibility=/Lotus/Weapons/Lasria/AK47/TC2024AK47Weapon
 IncludeInBoosterPack=0
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDuration
 EnhancementTagLocScript={
-Script=""
+    Script=""
 }
 UpgradeChance=1
 UpgradeDuration=15
 DurationScalesWithRank=0
 ConditionalUpgrades={
-/Lotus/Upgrades/Calendar/OnWeakpointKillCondition
+    /Lotus/Upgrades/Calendar/OnWeakpointKillCondition
 }
 ConditionTag=/Lotus/Language/Upgrades/OnWeakPointKillCondition_Description
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/Warframes/KoumeiPassiveBuffPrimary.png

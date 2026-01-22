@@ -1,0 +1,41 @@
+>/Lotus/Upgrades/Mods/Sentinel/Kubrow/ChargerFinisherMod
+Rarity=RARE
+MarketMode=MM_HIDDEN
+RegularPrice=5000
+PremiumPrice=2
+LocalizeTag=/Lotus/Language/Items/KubrowChargerFinisherModName
+LocalizeDescTag=/Lotus/Language/Pets/KubrowHelminthFerocityModDesc
+Icon=/Lotus/Interface/Cards/Images/Kubrow/KubrowModFinisherDamage.png
+CodexSecret=1
+ExcludeFromCodex=0
+TradeCapability=RO_NEVER
+Upgrades={
+    {
+        UpgradeType=AVATAR_SENTINEL_FINISHER_DAMAGE
+        OperationType=STACKING_MULTIPLY
+        Value=0.2
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponMeleeFinisherDmgModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_PRECEPT
+BaseDrain=QA_NONE
+ItemCompatibility=/Lotus/Types/Game/KubrowPet/ChargerKubrowPetPowerSuit

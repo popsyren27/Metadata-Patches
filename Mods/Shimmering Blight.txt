@@ -1,4 +1,4 @@
-/Lotus/Weapons/Tenno/Melee/MeleeTrees/PolearmCmbOneMeleeTree
+>/Lotus/Weapons/Tenno/Melee/MeleeTrees/PolearmCmbOneMeleeTree
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/PoleArmStanceA
@@ -8,7 +8,7 @@ ExcludeFromCodex=0
 ArtifactPolarity=AP_POWER
 IncludeInBoosterPack=1
 EquippedAttackSets={
-CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/PolearmEquippedADefaults
-CC_GROUND_BRANCH_A=""
-CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/PolearmBranchADefaults
+    CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/PolearmEquippedADefaults
+    CC_GROUND_BRANCH_A=""
+    CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/PolearmBranchADefaults
 }

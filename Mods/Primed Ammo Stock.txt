@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Shotgun/Expert/WeaponClipMaxModExpert
+>/Lotus/Upgrades/Mods/Shotgun/Expert/WeaponClipMaxModExpert
 Rarity=LEGENDARY
 LocalizeTag=/Lotus/Language/Items/PrimedShotgunModClipMax
 FusionLimit=QA_VERY_HIGH

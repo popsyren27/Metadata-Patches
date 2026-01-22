@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Stances/PvPGlaiveStanceOne
+>/Lotus/Upgrades/Mods/PvPMods/Stances/PvPGlaiveStanceOne
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/PvPGlaiveStanceOne
@@ -9,10 +9,10 @@ AvailableOnPve=0
 AvailableOnPvp=1
 ArtifactPolarity=AP_TACTIC
 UnequippedAttackSets={
-CC_GROUND=Combos/PvPGlaiveComboOneEquipped
+    CC_GROUND=Combos/PvPGlaiveComboOneEquipped
 }
 EquippedAttackSets={
-CC_GROUND=Combos/PvPGlaiveComboA
-CC_GROUND_BRANCH_A=Combos/PvPGlaiveComboOneEquipped
-CC_GROUND_BRANCH_B=Combos/PvPGlaiveComboB
+    CC_GROUND=Combos/PvPGlaiveComboA
+    CC_GROUND_BRANCH_A=Combos/PvPGlaiveComboOneEquipped
+    CC_GROUND_BRANCH_B=Combos/PvPGlaiveComboB
 }

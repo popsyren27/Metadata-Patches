@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Archwing/Rifle/Expert/ArchwingRifleDamageAmountModExpert
-patch not applied (yet)

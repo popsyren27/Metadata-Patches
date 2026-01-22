@@ -1,4 +1,0 @@
-/Lotus/Powersuits/Brawler/AtlasPunchWeaponPrime
-LocalizeTag=/Lotus/Language/Suits/AtlasPunchWeaponPrimeName
-LocalizeDescTag=/Lotus/Language/Suits/AtlasPunchWeaponPrimeDesc
-VariantType=VT_PRIME

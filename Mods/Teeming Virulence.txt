@@ -1,4 +1,4 @@
-/Lotus/Powersuits/Infestation/InfestRuptureAugmentCard
+>/Lotus/Powersuits/Infestation/InfestRuptureAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/RuptureAbilityAugment1Name
@@ -6,43 +6,43 @@ Icon=/Lotus/Interface/Cards/Images/AbilityAugments/NidusVirulenceAugment.png
 RectangleIcon=0
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/InfestRuptureAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/RuptureAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/InfestRupture.lua
-    Function=GetAugmentDescriptionInfo
-    _activateStartAnim=""
-    _activateAnim=""
-    _castEffect=""
-    _castEffectOnPartner=""
-    _castBurstEffect=""
-    _beamHintType=""
-    _minionAvatarType=""
-    _effectDecoType=""
-    _effectSpikesDecoType=""
-    _effectSpikesDecoPrimeType=""
-    _spikeAnimations={}
-    _castBurstSound=""
-    _waveSound=""
-    _destructibleTypes={}
-    _minionMarkFxType=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/InfestRuptureAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/RuptureAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/InfestRupture.lua
+            Function=GetAugmentDescriptionInfo
+            _activateStartAnim=""
+            _activateAnim=""
+            _castEffect=""
+            _castEffectOnPartner=""
+            _castBurstEffect=""
+            _beamHintType=""
+            _minionAvatarType=""
+            _effectDecoType=""
+            _effectSpikesDecoType=""
+            _effectSpikesDecoPrimeType=""
+            _spikeAnimations={}
+            _castBurstSound=""
+            _waveSound=""
+            _destructibleTypes={}
+            _minionMarkFxType=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_POWER

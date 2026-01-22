@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Grimoire/FassAuraMod
+>/Lotus/Upgrades/Grimoire/FassAuraMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/FassAura
@@ -8,35 +8,35 @@ ExcludeFromCodex=0
 ArtifactPolarity=AP_TACTIC
 BaseDrain=QA_MEDIUM
 Script={
-Script=RangeUpgradeApplicator.lua
-Function=FriendlyRangeTimedUpgradeAura
-_buffValues={
-0.25,
--0.07
-}
+    Script=RangeUpgradeApplicator.lua
+    Function=FriendlyRangeTimedUpgradeAura
+    _buffValues={
+        0.25,
+        -0.07
+    }
 _buffValueFusionLevelSteps={
-0.050000001,
--0.07
+    0.050000001,
+    -0.07
 }
 _buffDurations={
-15,
-15
+    15,
+    15
 }
 _buffDurationFusionLevelSteps={
-0,
-0
+    0,
+    0
 }
 _buffTypes={
-AVATAR_SHIELD_RECHARGE_RATE,
-AVATAR_SHIELD_RECHARGE_DELAY
+    AVATAR_SHIELD_RECHARGE_RATE,
+    AVATAR_SHIELD_RECHARGE_DELAY
 }
 _operationTypes={
-STACKING_MULTIPLY,
-STACKING_MULTIPLY
+    STACKING_MULTIPLY,
+    STACKING_MULTIPLY
 }
 _damageTypes={
-DT_ANY,
-DT_ANY
+    DT_ANY,
+    DT_ANY
 }
 _auraRange=-1
 _auraRangeFusionLevelStep=0
@@ -45,33 +45,33 @@ _buffStackSymbol=FassAuraMod
 }
 EnhancementTag=/Lotus/Language/Mods/FassAuraDesc
 EnhancementTagLocScript={
-Script=RangeUpgradeApplicator.lua
-Function=GetDescription
-_buffValues={
-0.25,
--0.07
-}
+    Script=RangeUpgradeApplicator.lua
+    Function=GetDescription
+    _buffValues={
+        0.25,
+        -0.07
+    }
 _buffValueFusionLevelSteps={
-0.050000001,
--0.07
+    0.050000001,
+    -0.07
 }
 _buffDurations={
-15,
-15
+    15,
+    15
 }
 _buffDurationFusionLevelSteps={
-0,
-0
+    0,
+    0
 }
 _buffTypes={
-WEAPON_FIRE_RATE
+    WEAPON_FIRE_RATE
 }
 _operationTypes={
-STACKING_MULTIPLY,
-STACKING_MULTIPLY
+    STACKING_MULTIPLY,
+    STACKING_MULTIPLY
 }
 _damageTypes={
-DT_ANY
+    DT_ANY
 }
 _auraRange=-1
 _auraRangeFusionLevelStep=0

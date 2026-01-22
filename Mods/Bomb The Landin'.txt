@@ -1,40 +1,40 @@
-/Lotus/Upgrades/Mods/Hoverboard/HBGrindSlamMod
+>/Lotus/Upgrades/Mods/Hoverboard/HBGrindSlamMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Hoverboards/HoverboardGrindSlamMod
 Icon=/Lotus/Interface/Cards/Images/Hoverboard/HBGrindSlamMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Hoverboards/HoverboardGrindSlamModDesc
-    LocKeyWordScript={
-    Script=/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBGroundSlamUpgrade.lua
-    Function=GetDescriptionInfo
-    _shockwaveDamage={
-    150,
-    200,
-    250,
-    300
-}
-_shockwaveRadius={
-5,
-10,
-15,
-20
-}
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Hoverboards/HoverboardGrindSlamModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBGroundSlamUpgrade.lua
+            Function=GetDescriptionInfo
+            _shockwaveDamage={
+                150,
+                200,
+                250,
+                300
+            }
+        _shockwaveRadius={
+            5,
+            10,
+            15,
+            20
+        }
 }
 SmallerIsBetter=0
 RoundTo=0.1
@@ -46,18 +46,18 @@ BaseDrain=QA_HIGH
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Types/Vehicles/Hoverboard/HoverboardSuit
 Script={
-Script=/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBGroundSlamUpgrade.lua
-Function=AddUpgrades
-_shockwaveDamage={
-150,
-200,
-250,
-300
-}
+    Script=/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBGroundSlamUpgrade.lua
+    Function=AddUpgrades
+    _shockwaveDamage={
+        150,
+        200,
+        250,
+        300
+    }
 _shockwaveRadius={
-5,
-10,
-15,
-20
+    5,
+    10,
+    15,
+    20
 }
 }

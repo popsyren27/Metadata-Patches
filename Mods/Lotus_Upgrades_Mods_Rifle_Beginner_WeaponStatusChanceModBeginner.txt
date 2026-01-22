@@ -1,2 +1,5 @@
-/Lotus/Upgrades/Mods/Rifle/Beginner/WeaponStatusChanceModBeginner
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Rifle/Beginner/WeaponStatusChanceModBeginner
+BaseDrain=QA_LOW
+FusionLimit=QA_MEDIUM
+IncludeInBoosterPack=0
+IsStarter=1

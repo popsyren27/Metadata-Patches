@@ -1,28 +1,47 @@
-/Lotus/Types/Friendly/Pets/BeastWeapons/Stances/BeastSpreadAttacksStance
+>/Lotus/Types/Friendly/Pets/BeastWeapons/Stances/BeastSpreadAttacksStance
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Pets/BeastSpreadAttacksStanceName
 LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Kubrow/BeastSpreadAttacksStance.png
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Pets/BeastSpreadAttacksStanceDesc
-    LocKeyWordScript={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Pets/BeastSpreadAttacksStanceDesc
+        LocKeyWordScript={
+            Script=PostureMods.lua
+            Function=GetDescription
+            _factor=2
+            _range=15
+            _amountPerLevel=0.2
+            _protectorTrainingWeak=""
+            _magneticImpactWeak=""
+            _lifestealWeak=""
+            _reelingImpactWeak=""
+            _chancePerLevel=0.25
+            _healPerLevel=25
+            _neutralPostureDamageTriggerType=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+}
+}
+Script={
     Script=PostureMods.lua
-    Function=GetDescription
-    _factor=2
+    Function=DifferentTargetPosture
+    _factor=5
     _range=15
     _amountPerLevel=0.2
     _protectorTrainingWeak=""
@@ -33,36 +52,17 @@ Upgrades={
     _healPerLevel=25
     _neutralPostureDamageTriggerType=""
 }
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-}
-}
-Script={
-Script=PostureMods.lua
-Function=DifferentTargetPosture
-_factor=5
-_range=15
-_amountPerLevel=0.2
-_protectorTrainingWeak=""
-_magneticImpactWeak=""
-_lifestealWeak=""
-_reelingImpactWeak=""
-_chancePerLevel=0.25
-_healPerLevel=25
-_neutralPostureDamageTriggerType=""
-}
 UnappliedScript={
-Script=PostureMods.lua
-Function=UnapplyDifferentTargetPosture
-_factor=20
-_range=15
-_amountPerLevel=0.2
-_protectorTrainingWeak=""
-_magneticImpactWeak=""
-_lifestealWeak=""
-_reelingImpactWeak=""
-_chancePerLevel=0.25
-_healPerLevel=25
-_neutralPostureDamageTriggerType=""
+    Script=PostureMods.lua
+    Function=UnapplyDifferentTargetPosture
+    _factor=20
+    _range=15
+    _amountPerLevel=0.2
+    _protectorTrainingWeak=""
+    _magneticImpactWeak=""
+    _lifestealWeak=""
+    _reelingImpactWeak=""
+    _chancePerLevel=0.25
+    _healPerLevel=25
+    _neutralPostureDamageTriggerType=""
 }

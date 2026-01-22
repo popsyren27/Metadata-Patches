@@ -1,4 +1,4 @@
-/Lotus/Types/Sentinels/SentinelPrecepts/AntigravDilator
+>/Lotus/Types/Sentinels/SentinelPrecepts/AntigravDilator
 Rarity=RARE
 MarketMode=MM_HIDDEN
 RegularPrice=5000
@@ -8,30 +8,30 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Parkour/AntigravDilator.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0.1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/AntigravDilatorDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0.1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/AntigravDilatorDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ApplyUpgradesByDefault=0
@@ -42,15 +42,15 @@ UpgradeChance=1
 CanReproc=0
 PlayEffect=0
 Ability={
-Script={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/AntigravDilator.lua
-Function=NpcEvaluateAbility
-_jumpMultipliers={
-0.375,
-0.75,
-1.125,
-1.5
-}
+    Script={
+        Script=/Lotus/Types/Sentinels/SentinelAbilities/AntigravDilator.lua
+        Function=NpcEvaluateAbility
+        _jumpMultipliers={
+            0.375,
+            0.75,
+            1.125,
+            1.5
+        }
 }
 CooldownDuration=30
 EnergyRequiredToActivate=0

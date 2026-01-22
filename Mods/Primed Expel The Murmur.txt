@@ -1,0 +1,5 @@
+>/Lotus/Upgrades/Mods/Pistol/Expert/WeaponPistolFactionDamageMurmursExpert
+Rarity=LEGENDARY
+LocalizeTag=/Lotus/Language/Mods/PrimedPistolModFactionDamageMurmurs
+CodexSecret=1
+FusionLimit=QA_VERY_HIGH

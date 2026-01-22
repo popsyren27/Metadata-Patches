@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Melee/Event/ComboStatusChanceMod
+>/Lotus/Upgrades/Mods/Melee/Event/ComboStatusChanceMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/ComboStatusChanceMod
@@ -7,30 +7,30 @@ StatusDescTag=/Lotus/Language/Buffs/WeepingWoundsBuffDesc
 Icon=/Lotus/Interface/Cards/Images/Melee/ComboStatusChanceMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_PROC_CHANCE
-    OperationType=STACKING_MULTIPLY
-    Value=0.066660002
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/ComboStatusEffectModDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=WEAPON_PROC_CHANCE
+        OperationType=STACKING_MULTIPLY
+        Value=0.066660002
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/ComboStatusEffectModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ApplyUpgradesByDefault=0
@@ -38,8 +38,8 @@ ArtifactPolarity=AP_ATTACK
 BaseDrain=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
 IncompatibilityTags={
-SENTINEL_WEAPON,
-HOUND_WEAPON
+    SENTINEL_WEAPON,
+    HOUND_WEAPON
 }
 UpgradeChance=1
 UpgradeDuration=1
@@ -47,7 +47,7 @@ StackMode=SM_DECAY
 MaxConditionalStacks=11
 PlayEffect=0
 ConditionalUpgrades={
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/OnComboTierCondition
+    /Lotus/Upgrades/CosmeticEnhancers/Offensive/OnComboTierCondition
 }
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/StatChanceModifier.png
 TransferenceSupport=TS_WARFRAME_ONLY

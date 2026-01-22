@@ -1,10 +1,50 @@
-/Lotus/Upgrades/Mods/OrokinChallenge/OrokinChallengeModAgility
+>/Lotus/Upgrades/Mods/OrokinChallenge/OrokinChallengeModAgility
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/OrokinChallengeModAgility
 Icon=/Lotus/Interface/Cards/Images/OrokinMoonChallenges/OrokinChallengeModAgility.png
 ExcludeFromCodex=0
 Upgrades={
+    {
+        UpgradeType=AVATAR_DAMAGE_TAKEN
+        OperationType=MULTIPLY
+        Value=0.98000002
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={
+            PM_IN_AIR
+        }
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WarframeModDmgReductionInAirDesc
+    LocKeyWordScript={
+        Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
+        Function=GetDescriptionInfo
+        _displayAsPercent={
+            1
+        }
+    _absoluteValue={
+        0
+    }
+_maxDecimals={
+    -1
+}
+_addPlusses={
+    0
+}
+_multiplyDown={
+    1
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
 {
     UpgradeType=AVATAR_DAMAGE_TAKEN
     OperationType=MULTIPLY
@@ -16,54 +56,14 @@ Upgrades={
     UpgradeObject=""
     ValidPostures={}
     ValidModifiers={
-    PM_IN_AIR
-}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/WarframeModDmgReductionInAirDesc
-LocKeyWordScript={
-Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
-Function=GetDescriptionInfo
-_displayAsPercent={
-1
-}
-_absoluteValue={
-0
-}
-_maxDecimals={
--1
-}
-_addPlusses={
-0
-}
-_multiplyDown={
-1
-}
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-},
-{
-UpgradeType=AVATAR_DAMAGE_TAKEN
-OperationType=MULTIPLY
-Value=0.98000002
-DamageType=DT_ANY
-AutoType=0
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={
-PM_AIRBORNE
-}
+        PM_AIRBORNE
+    }
 InvalidModifiers={}
 ValidProcTypes={}
 OverrideLocalization=1
 LocTag=""
 LocKeyWordScript={
-Script=""
+    Script=""
 }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
@@ -73,23 +73,23 @@ RoundTo=0.1
 RoundingMode=RM_ROUND
 },
 {
-UpgradeType=AVATAR_EVADE_NPC_BULLET
-OperationType=STACKING_MULTIPLY
-Value=-0.0099999998
-DamageType=DT_ANY
-AutoType=1
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/WarframeModEvadeInAirDesc
-LocKeyWordScript={
-Script=""
-}
+    UpgradeType=AVATAR_EVADE_NPC_BULLET
+    OperationType=STACKING_MULTIPLY
+    Value=-0.0099999998
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WarframeModEvadeInAirDesc
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0

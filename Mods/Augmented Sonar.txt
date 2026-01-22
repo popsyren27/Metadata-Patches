@@ -1,0 +1,40 @@
+>/Lotus/Powersuits/Banshee/SonarPvPAugmentCard
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/SonarAbilityAugment1PvPName
+Icon=/Lotus/Interface/Cards/Images/PvP/Augments/SonarAugment.png
+AvailableOnPve=0
+Upgrades={
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=AUGMENT_PVP_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/SonarAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/SonarAbilityAugment1PvPDesc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/Sonar.lua
+            Function=GetAugmentDescriptionInfo
+            _activateAnim=""
+            _weakPointFx=""
+            _burstFx=""
+            _localBlastDecoType=""
+            _ignoredTypes={}
+            _augmentOneBurst=""
+            _augmentPvpHightlightFx=""
+            _primeBeam=""
+            _markerInfoType=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+}
+}
+ArtifactPolarity=AP_POWER

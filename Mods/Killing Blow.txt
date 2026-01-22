@@ -1,31 +1,31 @@
-/Lotus/Upgrades/Mods/Melee/WeaponMeleeHeavyDamageMod
+>/Lotus/Upgrades/Mods/Melee/WeaponMeleeHeavyDamageMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/MeleeModHeavyDamage
 Icon=/Lotus/Interface/Cards/Images/MeleeChanneling/ChannelingKillingBlow.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_MELEE_DAMAGE
-    OperationType=STACKING_MULTIPLY
-    Value=0.2
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={
-    PM_HEAVY_MELEE
-}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/MeleeDamageBuffOnHeavyDesc
-LocKeyWordScript={
-Script=""
-}
+    {
+        UpgradeType=WEAPON_MELEE_DAMAGE
+        OperationType=STACKING_MULTIPLY
+        Value=0.2
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={
+            PM_HEAVY_MELEE
+        }
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/MeleeDamageBuffOnHeavyDesc
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -35,24 +35,24 @@ RoundingMode=RM_ROUND
 AllowConditionalLocMerge=0
 },
 {
-UpgradeType=WEAPON_MELEE_HEAVY_CHARGE_SPEED
-OperationType=STACKING_MULTIPLY
-Value=0.1
-DamageType=DT_ANY
-AutoType=1
-ValidType=""
-CheckTypeOnInstall=0
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/WeaponHeavyChargeSpeed
-LocKeyWordScript={
-Script=""
-}
+    UpgradeType=WEAPON_MELEE_HEAVY_CHARGE_SPEED
+    OperationType=STACKING_MULTIPLY
+    Value=0.1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponHeavyChargeSpeed
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -66,9 +66,9 @@ ArtifactPolarity=AP_ATTACK
 BaseDrain=QA_HIGH
 ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
 IncompatibilityTags={
-SENTINEL_WEAPON,
-HOUND_WEAPON,
-POWER_WEAPON_LITE,
-NO_HEAVY_ATTACK
+    SENTINEL_WEAPON,
+    HOUND_WEAPON,
+    POWER_WEAPON_LITE,
+    NO_HEAVY_ATTACK
 }
 IncludeInBoosterPack=1

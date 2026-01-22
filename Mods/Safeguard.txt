@@ -1,43 +1,43 @@
-/Lotus/Powersuits/Nezha/NezhaSashAugmentCard
+>/Lotus/Powersuits/Nezha/NezhaSashAugmentCard
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/NezhaSashAbilityAugment1Name
 Icon=/Lotus/Interface/Cards/Images/AbilityAugments/NezhaWardingHaloAugment.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/NezhaSashAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/NezhaSashAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/NezhaSash.lua
-    Function=GetAugmentDescriptionInfo
-    _damageTriggerType=""
-    _pvpDamageTriggerType=""
-    _attachEffect=""
-    _attachRingDeco=""
-    _attachRingDecoLowSpec=""
-    _activateAnim=""
-    _castEffect=""
-    _castBurstEffect=""
-    _pvpHitProxy=""
-    _pvpAugmentOneEffect=""
-    _augmentOneIgnoreTypes={}
-    _endEffect=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/NezhaSashAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/NezhaSashAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/NezhaSash.lua
+            Function=GetAugmentDescriptionInfo
+            _damageTriggerType=""
+            _pvpDamageTriggerType=""
+            _attachEffect=""
+            _attachRingDeco=""
+            _attachRingDecoLowSpec=""
+            _activateAnim=""
+            _castEffect=""
+            _castBurstEffect=""
+            _pvpHitProxy=""
+            _pvpAugmentOneEffect=""
+            _augmentOneIgnoreTypes={}
+            _endEffect=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_POWER

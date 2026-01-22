@@ -1,4 +1,4 @@
-/Lotus/Weapons/Tenno/Melee/MeleeTrees/IronPhoenixMeleeTree
+>/Lotus/Weapons/Tenno/Melee/MeleeTrees/IronPhoenixMeleeTree
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/IronPhoenix
@@ -8,16 +8,16 @@ ExcludeFromCodex=0
 ArtifactPolarity=AP_WARD
 IncludeInBoosterPack=1
 EquippedAttackSets={
-CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/SwordQuickAttacksDefault
-CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/SwordQuickA
-CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/SwordBranchADefaults
+    CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/SwordQuickAttacksDefault
+    CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/SwordQuickA
+    CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/SwordBranchADefaults
 }
 AerialAttacks={
-BP_UP=/Lotus/Weapons/Tenno/Melee/Attacks/MacheteJumpForward
+    BP_UP=/Lotus/Weapons/Tenno/Melee/Attacks/MacheteJumpForward
 }
 ContextFallbacks={
-{
-context=CC_GROUND_BRANCH_C
-fallback=CC_GROUND
-}
+    {
+        context=CC_GROUND_BRANCH_C
+        fallback=CC_GROUND
+    }
 }

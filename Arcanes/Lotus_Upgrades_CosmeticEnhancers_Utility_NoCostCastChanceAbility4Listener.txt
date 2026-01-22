@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Utility/NoCostCastChanceAbility4Listener
+>/Lotus/Upgrades/CosmeticEnhancers/Utility/NoCostCastChanceAbility4Listener
 ExcludeFromCodex=1
 SearchTags={}
 Upgrades={}

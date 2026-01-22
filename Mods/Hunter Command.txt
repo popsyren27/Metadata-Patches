@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Sets/Hunter/CompanionHunterCommandMod
+>/Lotus/Upgrades/Mods/Sets/Hunter/CompanionHunterCommandMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/CompanionHunterCommandModName
@@ -6,33 +6,33 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Sets/Hunter/HunterCommand.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/CompanionFocusSlashTargetModDesc
-    LocKeyWordScript={
-    Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowFocusBleederAbility.lua
-    Function=GetDescriptionInfo
-    _durations={
-    1,
-    2,
-    3,
-    4,
-    5,
-    6
-}
-}
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/CompanionFocusSlashTargetModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowFocusBleederAbility.lua
+            Function=GetDescriptionInfo
+            _durations={
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            }
+    }
 SmallerIsBetter=0
 RoundTo=0.1
 RoundingMode=RM_ROUND
@@ -43,34 +43,34 @@ BaseDrain=QA_MEDIUM
 ItemCompatibility=/Lotus/Types/Game/Pets/PetPowerSuit
 ModSet=HunterSetMod
 Ability={
-Script={
-Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowFocusBleederAbility.lua
-Function=ActivateAbility
-_durations={
-1,
-2,
-3,
-4,
-5,
-6
-}
+    Script={
+        Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowFocusBleederAbility.lua
+        Function=ActivateAbility
+        _durations={
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        }
 }
 AbilityEvents={
-{
-tag=CreatorProcced
-eventType=ET_ON_CREATOR_APPLY_BLEED
-scriptInstance={
-Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowFocusBleederAbility.lua
-Function=OnEnemyProcced
-_durations={
-1,
-2,
-3,
-4,
-5,
-6
-}
-}
+    {
+        tag=CreatorProcced
+        eventType=ET_ON_CREATOR_APPLY_BLEED
+        scriptInstance={
+            Script=/Lotus/Types/Friendly/Pets/KubrowPetBehaviors/KubrowFocusBleederAbility.lua
+            Function=OnEnemyProcced
+            _durations={
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            }
+    }
 }
 }
 CooldownDuration=5

@@ -1,5 +1,5 @@
-/Lotus/Upgrades/CosmeticEnhancers/Defensive/InvulnerabilityOnDeathOnMercyKill
-Rarity=RARE
+>/Lotus/Upgrades/CosmeticEnhancers/Defensive/InvulnerabilityOnDeathOnMercyKill
+Rarity=LEGENDARY
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/InvulnerabilityOnDeathOnMercyKillName
 LocalizeDescTag=""
@@ -26,14 +26,14 @@ ExtraUpgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=0
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 FusionLimit=QA_HIGH
 Script={
@@ -72,4 +72,4 @@ EnhancementTagLocScript={
 }
 UpgradeChance=1
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDRBuff.png
-BaseDistillPointValue=21
+BaseDistillPointValue=84

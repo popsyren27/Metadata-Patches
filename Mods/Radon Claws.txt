@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Sentinel/Kubrow/DualStat/KubrowRadiationEventMeleeMod
+>/Lotus/Upgrades/Mods/Sentinel/Kubrow/DualStat/KubrowRadiationEventMeleeMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Pets/KubrowRadiationEventMeleeModName
@@ -6,52 +6,52 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Kubrow/KubrowRadiationEventMeleeMod.png
 ExcludeFromCodex=0
 SearchTags={
-/Lotus/Language/Game/DT_RADIATION_NoIcon
+    /Lotus/Language/Game/DT_RADIATION_NoIcon
 }
 Upgrades={
-{
-UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
-OperationType=ADD
-Value=0.15000001
-DamageType=DT_RADIATION
-AutoType=0
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/WeaponRadiationDamage
-LocKeyWordScript={
-Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+        OperationType=ADD
+        Value=0.15000001
+        DamageType=DT_RADIATION
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponRadiationDamage
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 },
 {
-UpgradeType=WEAPON_CRIT_DAMAGE
-OperationType=STACKING_MULTIPLY
-Value=0.2
-DamageType=DT_ANY
-AutoType=0
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/WeaponCritDamage
-LocKeyWordScript={
-Script=""
-}
+    UpgradeType=WEAPON_CRIT_DAMAGE
+    OperationType=STACKING_MULTIPLY
+    Value=0.2
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponCritDamage
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0

@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Rifle/Expert/WeaponFreezeDamageModExpert
-patch not applied (yet)

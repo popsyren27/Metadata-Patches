@@ -1,2 +1,0 @@
-/Lotus/Types/Friendly/Pets/KubrowPetPrecepts/ChargerChargePrecept
-patch not applied (yet)

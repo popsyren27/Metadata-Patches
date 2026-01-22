@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Stances/PvPStavesStanceOne
+>/Lotus/Upgrades/Mods/PvPMods/Stances/PvPStavesStanceOne
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/PvPStavesStanceOne
@@ -9,10 +9,10 @@ AvailableOnPve=0
 AvailableOnPvp=1
 ArtifactPolarity=AP_ATTACK
 UnequippedAttackSets={
-CC_GROUND=Combos/PvPStavesComboOneEquipped
+    CC_GROUND=Combos/PvPStavesComboOneEquipped
 }
 EquippedAttackSets={
-CC_GROUND=Combos/PvPStavesComboA
-CC_GROUND_BRANCH_A=Combos/PvPStavesComboOneEquipped
-CC_GROUND_BRANCH_B=Combos/PvPStavesComboB
+    CC_GROUND=Combos/PvPStavesComboA
+    CC_GROUND_BRANCH_A=Combos/PvPStavesComboOneEquipped
+    CC_GROUND_BRANCH_B=Combos/PvPStavesComboB
 }

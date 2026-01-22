@@ -1,0 +1,23 @@
+>/Lotus/Upgrades/Mods/Antiques/DamageWhileInvisible
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Upgrades/AntiqueDamageWhileInvisible
+Icon=/Lotus/Interface/Cards/Images/AntiqueMods/OrokinImageD.png
+ExcludeFromCodex=0
+SearchTags={
+    /Lotus/Language/TennoWay/Naramon
+}
+AssociatedSchool=AP_TACTIC
+Script={
+    Script=NextShootMultiplier.lua
+    Function=OnApplyUpgrade
+    _cooldown=5
+    _multiplier=0.5
+}
+EnhancementTag=/Lotus/Language/Upgrades/AntiqueDamageWhileInvisibleDesc
+EnhancementTagLocScript={
+    Script=NextShootMultiplier.lua
+    Function=GetDescription
+    _cooldown=5
+    _multiplier=0.5
+}
+UpgradeChance=1

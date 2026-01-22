@@ -1,34 +1,34 @@
-/Lotus/Upgrades/Mods/Syndicate/ObexMod
+>/Lotus/Upgrades/Mods/Syndicate/ObexMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/SyndicateRewards/ObexMod
 Icon=/Lotus/Interface/Cards/Images/Syndicate/Obex.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_CORPSE_EXPLODE_DAMAGE
-    OperationType=ADD
-    Value=250
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=CC_DOWNED_ENEMY
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/SyndicateRewards/ObexModDescA
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=0
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=WEAPON_CORPSE_EXPLODE_DAMAGE
+        OperationType=ADD
+        Value=250
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=CC_DOWNED_ENEMY
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/SyndicateRewards/ObexModDescA
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 },
 {
     UpgradeType=WEAPON_CORPSE_EXPLODE_DAMAGE_ENEMY_HEALTH_PCT
@@ -46,8 +46,8 @@ RoundingMode=RM_ROUND
     OverrideLocalization=1
     LocTag=/Lotus/Language/SyndicateRewards/ObexModDescB
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -71,8 +71,8 @@ RoundingMode=RM_ROUND
     OverrideLocalization=1
     LocTag=/Lotus/Language/SyndicateRewards/ObexModDescC
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
 ReverseValueSymbol=0
@@ -104,5 +104,5 @@ BaseDrain=QA_MEDIUM
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Corpus/Melee/KickAndPunch/KickPunchWeapon
 TipTags={
-ENTROPY
+    ENTROPY
 }

@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Stances/PvPDaggerStanceOne
+>/Lotus/Upgrades/Mods/PvPMods/Stances/PvPDaggerStanceOne
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/PvPDaggerStanceOne
@@ -9,10 +9,10 @@ AvailableOnPve=0
 AvailableOnPvp=1
 ArtifactPolarity=AP_TACTIC
 UnequippedAttackSets={
-CC_GROUND=Combos/PvPDaggerComboOneEquipped
+    CC_GROUND=Combos/PvPDaggerComboOneEquipped
 }
 EquippedAttackSets={
-CC_GROUND=Combos/PvPDaggerComboB
-CC_GROUND_BRANCH_A=Combos/PvPDaggerComboOneEquipped
-CC_GROUND_BRANCH_B=Combos/PvPDaggerComboA
+    CC_GROUND=Combos/PvPDaggerComboB
+    CC_GROUND_BRANCH_A=Combos/PvPDaggerComboOneEquipped
+    CC_GROUND_BRANCH_B=Combos/PvPDaggerComboA
 }

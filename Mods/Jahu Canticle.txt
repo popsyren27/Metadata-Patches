@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Grimoire/JahuAuraMod
+>/Lotus/Upgrades/Grimoire/JahuAuraMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/JahuAura
@@ -8,33 +8,33 @@ ExcludeFromCodex=0
 ArtifactPolarity=AP_ATTACK
 BaseDrain=QA_MEDIUM
 Script={
-Script=RangeUpgradeApplicator.lua
-Function=EnemyRangePermanentUpgradeAura
-_buffValues={
--0.02,
--0.02
-}
+    Script=RangeUpgradeApplicator.lua
+    Function=EnemyRangePermanentUpgradeAura
+    _buffValues={
+        -0.02,
+        -0.02
+    }
 _buffValueFusionLevelSteps={
--0.0099999998,
--0.0099999998
+    -0.0099999998,
+    -0.0099999998
 }
 _buffDurations={
-15
+    15
 }
 _buffDurationFusionLevelSteps={
-0
+    0
 }
 _buffTypes={
-AVATAR_ARMOUR,
-AVATAR_SHIELD_MAX
+    AVATAR_ARMOUR,
+    AVATAR_SHIELD_MAX
 }
 _operationTypes={
-STACKING_MULTIPLY,
-STACKING_MULTIPLY
+    STACKING_MULTIPLY,
+    STACKING_MULTIPLY
 }
 _damageTypes={
-DT_ANY,
-DT_ANY
+    DT_ANY,
+    DT_ANY
 }
 _auraRange=-1
 _auraRangeFusionLevelStep=0
@@ -43,33 +43,33 @@ _buffStackSymbol=JahuAuraMod
 }
 EnhancementTag=/Lotus/Language/Mods/JahuAuraDesc
 EnhancementTagLocScript={
-Script=RangeUpgradeApplicator.lua
-Function=GetDescription
-_buffValues={
--0.02,
--0.02
-}
+    Script=RangeUpgradeApplicator.lua
+    Function=GetDescription
+    _buffValues={
+        -0.02,
+        -0.02
+    }
 _buffValueFusionLevelSteps={
--0.0099999998,
--0.0099999998
+    -0.0099999998,
+    -0.0099999998
 }
 _buffDurations={
-0,
-0
+    0,
+    0
 }
 _buffDurationFusionLevelSteps={
-0,
-0
+    0,
+    0
 }
 _buffTypes={
-WEAPON_FIRE_RATE
+    WEAPON_FIRE_RATE
 }
 _operationTypes={
-STACKING_MULTIPLY,
-STACKING_MULTIPLY
+    STACKING_MULTIPLY,
+    STACKING_MULTIPLY
 }
 _damageTypes={
-DT_ANY
+    DT_ANY
 }
 _auraRange=-1
 _auraRangeFusionLevelStep=0

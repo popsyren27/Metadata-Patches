@@ -1,4 +1,4 @@
-/Lotus/Powersuits/AntiMatter/MolecularPrimeAugmentCard
+>/Lotus/Powersuits/AntiMatter/MolecularPrimeAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/MolecularPrimeAbilityAugment1Name
@@ -6,38 +6,38 @@ Icon=/Lotus/Interface/Cards/Images/AbilityAugments/NovaMolecularPrimeAugment.png
 RectangleIcon=0
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/MolecularPrimeAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/MolecularPrimeAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/MolecularPrime.lua
-    Function=GetAugmentDescriptionInfo
-    _activateAnim=""
-    _rangeDeco=""
-    _rangeBDeco=""
-    _impactFx=""
-    _enemyFx=""
-    _dissolveEffect=""
-    _enemyExplosion=""
-    _sound=""
-    _deluxeSkin=""
-    _deluxeArmsDecoType=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/MolecularPrimeAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/MolecularPrimeAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/MolecularPrime.lua
+            Function=GetAugmentDescriptionInfo
+            _activateAnim=""
+            _rangeDeco=""
+            _rangeBDeco=""
+            _impactFx=""
+            _enemyFx=""
+            _dissolveEffect=""
+            _enemyExplosion=""
+            _sound=""
+            _deluxeSkin=""
+            _deluxeArmsDecoType=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_POWER

@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Zariman/SecondaryOnOvershieldCritChance
+>/Lotus/Upgrades/CosmeticEnhancers/Zariman/SecondaryOnOvershieldCritChance
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/SecondaryOnOvershieldCritChance
@@ -35,12 +35,12 @@ Upgrades={
                 2.5,
                 3
             }
-        }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
     }
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 FusionLimit=QA_HIGH
 ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol

@@ -1,28 +1,58 @@
-/Lotus/Types/Sentinels/SentinelPrecepts/VoidBond/VoidClone
+>/Lotus/Types/Sentinels/SentinelPrecepts/VoidBond/VoidClone
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/VoidBondVoidCloneMod
 Icon=/Lotus/Interface/Cards/Images/Pets/SentinelVoidClone.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/VoidBondVoidCloneModDesc
-    LocKeyWordScript={
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/VoidBondVoidCloneModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/VoidClone.lua
+            Function=GetDescription
+            _cloneDurationPerRank=5
+            _orbChancePerRank=0.083400004
+            _spendEnergy=100
+            _cloneSpawnRange=0.25
+            _startSpawner=""
+            _endSpawner=""
+            _ambientSpawner=""
+            _cloneSentinelType=""
+            _cloneKubrowType=""
+            _cloneKavatType=""
+            _cloneMoaType=""
+            _cloneZanukaType=""
+            _cloneOrbAbility=""
+            _copyableModWhitelist={}
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_ATTACK
+BaseDrain=QA_MEDIUM
+ItemCompatibility=/Lotus/Types/Game/SentinelPowerSuit
+IncompatibilityTags={
+    VENARI_MOD
+}
+Script={
     Script=/Lotus/Types/Sentinels/SentinelAbilities/VoidClone.lua
-    Function=GetDescription
+    Function=MonitorEnergyUse
     _cloneDurationPerRank=5
     _orbChancePerRank=0.083400004
     _spendEnergy=100
@@ -30,51 +60,21 @@ Upgrades={
     _startSpawner=""
     _endSpawner=""
     _ambientSpawner=""
-    _cloneSentinelType=""
-    _cloneKubrowType=""
-    _cloneKavatType=""
-    _cloneMoaType=""
-    _cloneZanukaType=""
-    _cloneOrbAbility=""
-    _copyableModWhitelist={}
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
-}
-}
-ArtifactPolarity=AP_ATTACK
-BaseDrain=QA_MEDIUM
-ItemCompatibility=/Lotus/Types/Game/SentinelPowerSuit
-IncompatibilityTags={
-VENARI_MOD
-}
-Script={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/VoidClone.lua
-Function=MonitorEnergyUse
-_cloneDurationPerRank=5
-_orbChancePerRank=0.083400004
-_spendEnergy=100
-_cloneSpawnRange=0.25
-_startSpawner=""
-_endSpawner=""
-_ambientSpawner=""
-_cloneSentinelType=VoidCloneSentinelAgent
-_cloneKubrowType=VoidCloneKubrowPetAgent
-_cloneKavatType=VoidCloneCatbrowPetAgent
-_cloneMoaType=VoidCloneMoaPetAgent
-_cloneZanukaType=VoidCloneZanukaPetAgent
-_cloneOrbAbility=VoidCloneOrbPassiveAbility
-_copyableModWhitelist={
-/Lotus/Upgrades/Mods/Sentinel/Kubrow/DualStat/KubrowPoisonEventMeleeMod,
-/Lotus/Upgrades/Mods/Sentinel/Kubrow/DualStat/KubrowIceEventMeleeMod,
-/Lotus/Upgrades/Mods/Sentinel/Kubrow/DualStat/KubrowFireEventMeleeMod,
-/Lotus/Upgrades/Mods/Sentinel/Kubrow/DualStat/KubrowElectEventMeleeMod,
-/Lotus/Upgrades/Mods/Sentinel/Kubrow/KubrowMeleeDamageMod,
-/Lotus/Upgrades/Mods/Sentinel/Kubrow/KubrowCritMod,
-/Lotus/Types/Friendly/Pets/CatbrowPetPrecepts/CatbrowSwipePrecept
-}
+    _cloneSentinelType=VoidCloneSentinelAgent
+    _cloneKubrowType=VoidCloneKubrowPetAgent
+    _cloneKavatType=VoidCloneCatbrowPetAgent
+    _cloneMoaType=VoidCloneMoaPetAgent
+    _cloneZanukaType=VoidCloneZanukaPetAgent
+    _cloneOrbAbility=VoidCloneOrbPassiveAbility
+    _copyableModWhitelist={
+        /Lotus/Upgrades/Mods/Sentinel/Kubrow/DualStat/KubrowPoisonEventMeleeMod,
+        /Lotus/Upgrades/Mods/Sentinel/Kubrow/DualStat/KubrowIceEventMeleeMod,
+        /Lotus/Upgrades/Mods/Sentinel/Kubrow/DualStat/KubrowFireEventMeleeMod,
+        /Lotus/Upgrades/Mods/Sentinel/Kubrow/DualStat/KubrowElectEventMeleeMod,
+        /Lotus/Upgrades/Mods/Sentinel/Kubrow/KubrowMeleeDamageMod,
+        /Lotus/Upgrades/Mods/Sentinel/Kubrow/KubrowCritMod,
+        /Lotus/Types/Friendly/Pets/CatbrowPetPrecepts/CatbrowSwipePrecept
+    }
 }
 UpgradeChance=1
 ChanceScalesWithRank=0

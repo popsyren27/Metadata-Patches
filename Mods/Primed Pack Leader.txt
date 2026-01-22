@@ -1,0 +1,6 @@
+>/Lotus/Upgrades/Mods/Sentinel/Kubrow/Expert/KubrowPackLeaderExpertMod
+Rarity=LEGENDARY
+LocalizeTag=/Lotus/Language/Items/KubrowPackLeaderExpertMod
+CodexSecret=1
+FusionLimit=QA_VERY_HIGH
+IncludeInBoosterPack=0

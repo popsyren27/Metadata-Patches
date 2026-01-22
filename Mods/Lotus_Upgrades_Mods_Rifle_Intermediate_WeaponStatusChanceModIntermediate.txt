@@ -1,2 +1,2 @@
-/Lotus/Upgrades/Mods/Rifle/Intermediate/WeaponStatusChanceModIntermediate
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Rifle/Intermediate/WeaponStatusChanceModIntermediate
+IncludeInBoosterPack=0

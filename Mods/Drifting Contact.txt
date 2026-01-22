@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Melee/DualStat/ComboTimeStatusChanceMod
+>/Lotus/Upgrades/Mods/Melee/DualStat/ComboTimeStatusChanceMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/ComboTimeStatusChanceMod
@@ -6,31 +6,31 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Melee/ComboTimeStatusChanceMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_MELEE_COMBO_DURATION_BONUS
-    OperationType=ADD
-    Value=2.5
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/ComboDurationSimpleModDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=0
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=WEAPON_MELEE_COMBO_DURATION_BONUS
+        OperationType=ADD
+        Value=2.5
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/ComboDurationSimpleModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 },
 {
     UpgradeType=WEAPON_PROC_CHANCE
@@ -48,8 +48,8 @@ AllowConditionalLocMerge=0
     OverrideLocalization=1
     LocTag=/Lotus/Language/Upgrades/StatusChance
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -63,6 +63,6 @@ ArtifactPolarity=AP_DEFENSE
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
 IncompatibilityTags={
-SENTINEL_WEAPON,
-HOUND_WEAPON
+    SENTINEL_WEAPON,
+    HOUND_WEAPON
 }

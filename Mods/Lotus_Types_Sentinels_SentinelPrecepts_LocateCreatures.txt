@@ -1,2 +1,0 @@
-/Lotus/Types/Sentinels/SentinelPrecepts/LocateCreatures
-patch not applied (yet)

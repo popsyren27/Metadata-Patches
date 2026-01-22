@@ -1,32 +1,32 @@
-/Lotus/Upgrades/Mods/PvPMods/Rifle/TonkorAccuracySmallerMag
+>/Lotus/Upgrades/Mods/PvPMods/Rifle/TonkorAccuracySmallerMag
 Rarity=RARE
 LocalizeTag=/Lotus/Language/Upgrades/TonkorAccuracySmallerMag
 Icon=/Lotus/Interface/Cards/Images/PvP/Rifle/TonkorAccuracySmallerMag.png
 Upgrades={
-{
-    UpgradeType=WEAPON_SPREAD
-    OperationType=STACKING_MULTIPLY
-    Value=-1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/WeaponAccuracy
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=1
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=WEAPON_SPREAD
+        OperationType=STACKING_MULTIPLY
+        Value=-1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponAccuracy
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=1
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 },
 {
     UpgradeType=WEAPON_PROJECTILE_SPEED
@@ -44,8 +44,8 @@ RoundingMode=RM_ROUND
     OverrideLocalization=1
     LocTag=/Lotus/Language/Upgrades/WeaponProjectileSpeedModDesc
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0

@@ -1,30 +1,30 @@
-/Lotus/Upgrades/Mods/Melee/Channel/ChannelProcTimeExtendOnHitMod
+>/Lotus/Upgrades/Mods/Melee/Channel/ChannelProcTimeExtendOnHitMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/WeaponProcTimeExtendOnHitMod
 Icon=/Lotus/Interface/Cards/Images/Melee/ChannelProcTimeExtendOnHitMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_PROC_CHANCE
-    OperationType=STACKING_MULTIPLY
-    Value=0.16666
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={
-    PT_LIFT_HIT
-}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/StatusChanceOnLifted
-LocKeyWordScript={
-Script=""
-}
+    {
+        UpgradeType=WEAPON_PROC_CHANCE
+        OperationType=STACKING_MULTIPLY
+        Value=0.16666
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={
+            PT_LIFT_HIT
+        }
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/StatusChanceOnLifted
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -39,5 +39,5 @@ ArtifactPolarity=AP_DEFENSE
 BaseDrain=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
 TipTags={
-LIFTED
+    LIFTED
 }

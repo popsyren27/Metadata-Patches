@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Grimoire/VomeStrikeMod
+>/Lotus/Upgrades/Grimoire/VomeStrikeMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/VomeStrike
@@ -6,28 +6,28 @@ StatusDescTag=/Lotus/Language/Buffs/VomeStrikeBuffDesc
 Icon=/Lotus/Interface/Icons/ImmortalRunes/ImmortalRuneOrder.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_STRENGTH
-    OperationType=STACKING_MULTIPLY
-    Value=0.0099999998
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Mods/VomeStrikeDesc
-    LocKeyWordScript={
-    Script=GrimoireStrike.lua
-    Function=GetDescription
-}
-SmallerIsBetter=0
-RoundTo=0.001
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_ABILITY_STRENGTH
+        OperationType=STACKING_MULTIPLY
+        Value=0.0099999998
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Mods/VomeStrikeDesc
+        LocKeyWordScript={
+            Script=GrimoireStrike.lua
+            Function=GetDescription
+        }
+    SmallerIsBetter=0
+    RoundTo=0.001
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_ATTACK
@@ -37,7 +37,7 @@ StackMode=SM_GROUP
 MaxConditionalStacks=15
 ShowBonusForStacks=1
 ConditionalUpgrades={
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/OnAltHitIgnoreDOTCondition
+    /Lotus/Upgrades/CosmeticEnhancers/Offensive/OnAltHitIgnoreDOTCondition
 }
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/Grimoire/ImmortalRuneOrderBuff.png
 IsInfinite=0

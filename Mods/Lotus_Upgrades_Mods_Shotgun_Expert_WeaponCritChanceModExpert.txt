@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Shotgun/Expert/WeaponCritChanceModExpert
-patch not applied (yet)

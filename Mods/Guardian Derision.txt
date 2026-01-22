@@ -1,34 +1,34 @@
-/Lotus/Upgrades/Mods/Melee/WeaponBlockingTauntMod
+>/Lotus/Upgrades/Mods/Melee/WeaponBlockingTauntMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/WeaponBlockingTauntMod
 Icon=/Lotus/Interface/Cards/Images/Melee/WeaponBlockingTauntMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Mods/WeaponBlockingTauntModDescription
-    LocKeyWordScript={
-    Script=WeaponBlockingTaunt.lua
-    Function=GetDescriptionInfo
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Mods/WeaponBlockingTauntModDescription
+        LocKeyWordScript={
+            Script=WeaponBlockingTaunt.lua
+            Function=GetDescriptionInfo
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 },
 {
     UpgradeType=WEAPON_MELEE_COMBO_GAIN_EXTRA_CHANCE
@@ -42,14 +42,14 @@ AllowConditionalLocMerge=0
     UpgradeObject=""
     ValidPostures={}
     ValidModifiers={
-    PM_PARRY
-}
+        PM_PARRY
+    }
 InvalidModifiers={}
 ValidProcTypes={}
 OverrideLocalization=1
 LocTag=/Lotus/Language/Upgrades/MeleeComboPointMissChanceBlocking
 LocKeyWordScript={
-Script=""
+    Script=""
 }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
@@ -64,17 +64,17 @@ ArtifactPolarity=AP_DEFENSE
 BaseDrain=QA_HIGH
 ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
 IncompatibilityTags={
-SENTINEL_WEAPON,
-HOUND_WEAPON,
-POWER_WEAPON_LITE
+    SENTINEL_WEAPON,
+    HOUND_WEAPON,
+    POWER_WEAPON_LITE
 }
 Script={
-Script=WeaponBlockingTaunt.lua
-Function=TauntNearbyEnemies
+    Script=WeaponBlockingTaunt.lua
+    Function=TauntNearbyEnemies
 }
 UnappliedScript={
-Script=WeaponBlockingTaunt.lua
-Function=StopTauntingEnemies
+    Script=WeaponBlockingTaunt.lua
+    Function=StopTauntingEnemies
 }
 IncludeInBoosterPack=1
 IsUtility=1

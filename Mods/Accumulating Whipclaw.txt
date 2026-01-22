@@ -1,4 +1,4 @@
-/Lotus/Powersuits/Khora/KhoraCrackAugmentCard
+>/Lotus/Powersuits/Khora/KhoraCrackAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/KhoraCrackAbilityAugment1Name
@@ -6,35 +6,35 @@ Icon=/Lotus/Interface/Cards/Images/AbilityAugments/KhoraWhipclawAugment.png
 RectangleIcon=0
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/KhoraCrackAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/KhoraCrackAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/KhoraCrack.lua
-    Function=GetAugmentDescriptionInfo
-    _whipAnim=""
-    _whipDecoType=""
-    _whipDespawnEffect=""
-    _whipDespawnAnim=""
-    _crackDamageBurst=""
-    _augmentSound=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/KhoraCrackAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/KhoraCrackAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/KhoraCrack.lua
+            Function=GetAugmentDescriptionInfo
+            _whipAnim=""
+            _whipDecoType=""
+            _whipDespawnEffect=""
+            _whipDespawnAnim=""
+            _crackDamageBurst=""
+            _augmentSound=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_POWER

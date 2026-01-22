@@ -1,2 +1,2 @@
-/Lotus/Upgrades/Mods/Warframe/Intermediate/AvatarDamageReductionInAirIntermediate
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Warframe/Intermediate/AvatarDamageReductionInAirIntermediate
+FusionLimit=QA_HIGH

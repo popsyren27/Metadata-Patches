@@ -1,0 +1,57 @@
+>/Lotus/Powersuits/Alchemist/AlchemistTransmuteAugmentCard
+Rarity=RARE
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Suits/AlchemistTransmute_AbilityAugment1Name
+Icon=/Lotus/Interface/Cards/Images/AbilityAugments/AlchemistTransmuteAugmentCard.png
+RectangleIcon=0
+ExcludeFromCodex=0
+Upgrades={
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/AlchemistTransmuteAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/AlchemistTransmute_AbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/AlchemistTransmute.lua
+            Function=GetAugmentDescriptionInfo
+            _activateAnim=""
+            _transmuteSource={}
+            _transmuteTarget={}
+            _castEffect=""
+            _castBurst=""
+            _augmentActivateSound=""
+            _deviceDecos={}
+            _rangeDeco=""
+            _transmuteSound=""
+            _elementalTrail=""
+            _elementalDeco=""
+            _areaEffect=""
+            _snakeLeftType=""
+            _snakeLeftAnim=""
+            _snakeRightType=""
+            _snakeRightAnim=""
+            _primeTransmuteDecoMesh=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
+}
+ArtifactPolarity=AP_POWER
+BaseDrain=QA_HIGH
+FusionLimit=QA_MEDIUM
+ItemCompatibility=AlchemistBaseSuit
+IsAbilityAugment=1
+HudBuffIcon=/Lotus/Interface/Icons/Abilities/AlchemistTransmuter.png

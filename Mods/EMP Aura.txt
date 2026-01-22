@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Aura/RobotPoorAimAuraMod
+>/Lotus/Upgrades/Mods/Aura/RobotPoorAimAuraMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/RobotPoorAimBuffName
@@ -6,32 +6,32 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/MissionBuffs/EnemyRobotPoorAimBuff.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_NPC_HIT_CHANCE
-    OperationType=ADD
-    Value=-0.025
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/RobotPoorAimAuraDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=1
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=AVATAR_NPC_HIT_CHANCE
+        OperationType=ADD
+        Value=-0.025
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/RobotPoorAimAuraDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=1
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_DEFENSE

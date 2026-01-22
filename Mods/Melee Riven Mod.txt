@@ -1,19 +1,2660 @@
-/Lotus/Upgrades/Mods/Randomized/RawMeleeRandomMod
+>/Lotus/Upgrades/Mods/Randomized/PlayerMeleeWeaponRandomModRare
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Omega/OmegaMeleeMod
 LocalizeDescTag=""
-CodexSecret=0
 ExcludeFromCodex=0
 SearchTags={
-/Lotus/Language/Items/RifleCategoryName
+    /Lotus/Language/Items/MeleeCategoryName
 }
 ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
-IncompatibilityTags={
-SENTINEL_WEAPON
+RawItemType=RawMeleeRandomMod
+UpgradeEntries={
+    {
+        Tag=WeaponMeleeDamageMod
+        Icon=/Lotus/Interface/Cards/Images/Melee/MeleeDamageMod.png
+        Upgrades={
+            {
+                Upgrade={
+                    UpgradeType=WEAPON_MELEE_DAMAGE
+                    OperationType=STACKING_MULTIPLY
+                    Value=0.018300001
+                    DamageType=DT_ANY
+                    AutoType=1
+                    ValidType=""
+                    CheckTypeOnInstall=0
+                    SymbolFilter=""
+                    UpgradeObject=""
+                    ValidPostures={}
+                    ValidModifiers={}
+                    InvalidModifiers={}
+                    ValidProcTypes={}
+                }
+            Schema={
+                OverrideLocalization=1
+                LocTag=/Lotus/Language/Upgrades/MeleeDamageBuffDesc
+                LocKeyWordScript={
+                    Script=""
+                }
+            DisplayAsMultiplier=0
+            DisplayAsPercent=1
+            ReverseValueSymbol=0
+            SmallerIsBetter=0
+            RoundTo=0.1
+            RoundingMode=RM_ROUND
+            AllowConditionalLocMerge=0
+        }
 }
-OmegaUpgradeTypes={
-PlayerMeleeWeaponRandomModRare
 }
-OmegaUpgradeWeights={
-1
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/DamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/DamageSuffix
+},
+{
+    Tag=WeaponArmorPiercingDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeArmorPiercingDamageMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=STACKING_MULTIPLY
+                Value=0.0133
+                DamageType=DT_PUNCTURE
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponPunctureDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+},
+{
+    Upgrade={
+        UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+        OperationType=STACKING_MULTIPLY
+        Value=0.066500001
+        DamageType=DT_PUNCTURE
+        AutoType=0
+        ValidType=/Lotus/Weapons/Infested/InfestedLich/Melee/InfestedHammer/InfLichHammerWeapon
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+    }
+Schema={
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+        Script=""
+    }
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=1
+}
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    DamageTypes
+}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/PuncturePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/PunctureSuffix
+},
+{
+    Tag=WeaponImpactDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/ImpactDamageMeleeMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=STACKING_MULTIPLY
+                Value=0.0133
+                DamageType=DT_IMPACT
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponImpactDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+},
+{
+    Upgrade={
+        UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+        OperationType=STACKING_MULTIPLY
+        Value=0.066500001
+        DamageType=DT_IMPACT
+        AutoType=0
+        ValidType=/Lotus/Weapons/Infested/InfestedLich/Melee/InfestedHammer/InfLichHammerWeapon
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+    }
+Schema={
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+        Script=""
+    }
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=1
+}
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    DamageTypes
+}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ImpactPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ImpactSuffix
+},
+{
+    Tag=WeaponSlashDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/BleedDamageMeleeMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=STACKING_MULTIPLY
+                Value=0.0133
+                DamageType=DT_SLASH
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponSlashDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+},
+{
+    Upgrade={
+        UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+        OperationType=STACKING_MULTIPLY
+        Value=0.066500001
+        DamageType=DT_SLASH
+        AutoType=0
+        ValidType=/Lotus/Weapons/Infested/InfestedLich/Melee/InfestedHammer/InfLichHammerWeapon
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+    }
+Schema={
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+        Script=""
+    }
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=1
+}
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    DamageTypes
+}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/SlashPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/SlashSuffix
+},
+{
+    Tag=WeaponCritChanceMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeCritChanceMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_CRIT_CHANCE
+                OperationType=STACKING_MULTIPLY
+                Value=0.02
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponHeavyCritChance
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+},
+{
+    Upgrade={
+        UpgradeType=WEAPON_CRIT_CHANCE
+        OperationType=STACKING_MULTIPLY
+        Value=0.02
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={
+            PM_HEAVY_MELEE
+        }
+    InvalidModifiers={}
+    ValidProcTypes={}
+}
+Schema={
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+        Script=""
+    }
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/CritChancePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/CritChanceSuffix
+},
+{
+    Tag=WeaponCritDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeCritDamageMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_CRIT_DAMAGE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0099999998
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponCritDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/CritDamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/CritDamageSuffix
+},
+{
+    Tag=WeaponElectricityDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeElectricityDamageMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.0099999998
+                DamageType=DT_ELECTRICITY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponElectricityDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/ElectricityPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ElectricitySuffix
+},
+{
+    Tag=WeaponFireDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeFireDamageMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.0099999998
+                DamageType=DT_FIRE
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFireDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/FirePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/FireSuffix
+},
+{
+    Tag=WeaponFreezeDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeFreezeDamageMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.0099999998
+                DamageType=DT_FREEZE
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFreezeDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/FrostPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/FrostSuffix
+},
+{
+    Tag=WeaponToxinDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/PoisonDamageMeleeMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+                OperationType=ADD
+                Value=0.0099999998
+                DamageType=DT_POISON
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponPoisonDamage
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={
+    DamageTypes
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/ToxinPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ToxinSuffix
+},
+{
+    Tag=WeaponProcTimeMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/WeaponProcTimeMeleeMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PROC_TIME
+                OperationType=STACKING_MULTIPLY
+                Value=0.01111
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponProcTimeModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ProcTimePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ProcTimeSuffix
+},
+{
+    Tag=WeaponMeleeFactionDamageCorpus
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeDamageCorpus.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=GAMEPLAY_FACTION_DAMAGE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0049999999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=Corpus
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFactionDamageCorpusDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=1
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.0099999998
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/CorpusDamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/CorpusDamageSuffix
+},
+{
+    Tag=WeaponMeleeFactionDamageGrineer
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeDamageGrineer.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=GAMEPLAY_FACTION_DAMAGE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0049999999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=Grineer
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFactionDamageGrineerDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=1
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.0099999998
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/GrineerDamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/GrineerDamageSuffix
+},
+{
+    Tag=WeaponMeleeFactionDamageInfested
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeDamageInfested.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=GAMEPLAY_FACTION_DAMAGE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0049999999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=Infestation
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponFactionDamageInfestedDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=1
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.0099999998
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/InfestedDamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/InfestedDamageSuffix
+},
+{
+    Tag=WeaponFireRateMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeFireRateMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_FIRE_RATE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0060999999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponMeleeAttackSpeed
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/FireRatePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/FireRateSuffix
+},
+{
+    Tag=WeaponStunChanceMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeStunChanceMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_PROC_CHANCE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0099999998
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/StatusChance
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/StatusChancePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/StatusChanceSuffix
+},
+{
+    Tag=ComboDurationMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/ComboDurationMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_MELEE_COMBO_DURATION_BONUS
+                OperationType=ADD
+                Value=0.090000004
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/ComboDurationSimpleModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    NotSentinel
+}
+CanBeBuff=1
+CurseRestrictions={
+    NotSentinel
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/ComboDurationPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/ComboDurationSuffix
+},
+{
+    Tag=SlideAttackCritChanceMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/SlideAttackCritChanceMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_CRIT_CHANCE
+                OperationType=STACKING_MULTIPLY
+                Value=0.013334
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=CC_SLIDING
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/SlideAttackCritChanceModDesc
+            LocKeyWordScript={
+                Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
+                Function=GetDescriptionInfo
+                _displayAsPercent={
+                    1
+                }
+            _absoluteValue={
+                0
+            }
+        _maxDecimals={
+            1
+        }
+    _addPlusses={
+        1
+    }
+_multiplyDown={
+    0
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+},
+{
+    Upgrade={
+        UpgradeType=WEAPON_CRIT_CHANCE
+        OperationType=STACKING_MULTIPLY
+        Value=0.013334
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=CC_SLIDING_PVP
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+    }
+Schema={
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+        Script=""
+    }
+DisplayAsMultiplier=0
+DisplayAsPercent=0
+ReverseValueSymbol=0
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    NotSentinel
+}
+CanBeBuff=1
+CurseRestrictions={
+    NotSentinel
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/SlideCritChancePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/SlideCritChanceSuffix
+},
+{
+    Tag=WeaponMeleeRangeIncMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeRangeMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_RANGE
+                OperationType=ADD
+                Value=0.021579999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponRangeModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/AttackRangePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/AttackRangeSuffix
+},
+{
+    Tag=WeaponMeleeFinisherDamageMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeFinishingTouchMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_MELEE_FINISHER_DAMAGE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0133
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponMeleeFinisherDmgModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    NotSentinel
+}
+CanBeBuff=1
+CurseRestrictions={
+    NotSentinel
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/MeleeFinisherDamagePrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/MeleeFinisherDamageSuffix
+},
+{
+    Tag=WeaponMeleeComboEfficiencyMod
+    Icon=/Lotus/Interface/Cards/Images/Melee/MeleeChargeRateMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_MELEE_COMBO_USAGE_EFFICIENCY
+                OperationType=ADD
+                Value=0.0081599997
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/WeaponMeleeComboUsageEfficiency
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    NotSentinel
+}
+CanBeBuff=1
+CurseRestrictions={
+    NotSentinel
+}
+CanBeCurse=1
+LocalizePrefixTag=/Lotus/Language/Omega/MeleeComboHeavyEfficiencyPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/MeleeComboHeavyEfficiencySuffix
+},
+{
+    Tag=WeaponMeleeComboInitialBonusMod
+    Icon=/Lotus/Interface/Cards/Images/MeleeChanneling/ChannelingKillingBlow.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_MELEE_COMBO_INITIAL_BONUS
+                OperationType=ADD
+                Value=0.27224001
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/ComboInitialBonusModDesc
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=0
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_FLOOR
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    NotSentinel
+}
+CanBeBuff=1
+CurseRestrictions={
+    NotSentinel
+}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/MeleeComboInitialBonusPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/MeleeComboInitialBonusSuffix
+},
+{
+    Tag=WeaponMeleeComboPointsOnHitMod
+    Icon=/Lotus/Interface/Cards/Images/MeleeChanneling/ChannelingSecondWindMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_MELEE_COMBO_GAIN_MISS_CHANCE
+                OperationType=ADD
+                Value=-0.01165
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/ComboPointsMissOnHitMod
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=1
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={
+    NotSentinel
+}
+CanBeBuff=0
+CurseRestrictions={
+    NotSentinel
+}
+CanBeCurse=1
+LocalizePrefixTag=""
+LocalizeSuffixTag=""
+},
+{
+    Tag=WeaponMeleeComboBonusOnHitMod
+    Icon=/Lotus/Interface/Cards/Images/MeleeChanneling/ChannelingSecondWindMod.png
+    Upgrades={
+        {
+            Upgrade={
+                UpgradeType=WEAPON_MELEE_COMBO_GAIN_EXTRA_CHANCE
+                OperationType=STACKING_MULTIPLY
+                Value=0.0065299999
+                DamageType=DT_ANY
+                AutoType=1
+                ValidType=""
+                CheckTypeOnInstall=0
+                SymbolFilter=""
+                UpgradeObject=""
+                ValidPostures={}
+                ValidModifiers={}
+                InvalidModifiers={}
+                ValidProcTypes={}
+            }
+        Schema={
+            OverrideLocalization=1
+            LocTag=/Lotus/Language/Upgrades/MeleeComboGainExtraChance
+            LocKeyWordScript={
+                Script=""
+            }
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+}
+Rarity=COMMON
+CompatibilityTags={}
+BuffRestrictions={}
+CanBeBuff=1
+CurseRestrictions={}
+CanBeCurse=0
+LocalizePrefixTag=/Lotus/Language/Omega/MeleeComboGainBonusPrefix
+LocalizeSuffixTag=/Lotus/Language/Omega/MeleeComboGainBonusSuffix
+}
+}
+ItemCompatibilities={
+    {
+        ItemType=/Lotus/Powersuits/Berserker/BerserkerMelee
+        Rarity=NONE
+        Attenuation=1
+    },
+{
+    ItemType=/Lotus/Powersuits/Berserker/BerserkerMeleePrime
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/Brawler/AtlasPunchWeapon
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/Brawler/AtlasPunchWeaponPrime
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/Excalibur/DoomSword
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/Excalibur/DoomSwordCYUmbra
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/Excalibur/DoomSwordPrime
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/Excalibur/DoomSwordUmbra
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/Fairy/FlightSword
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/Fairy/PrimeFlightSword
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/Garuda/GarudaClaws
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/Garuda/GarudaPrimeClaws
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/Glass/GaraShankWeapon
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/Glass/GaraShankWeaponPrime
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/Khora/KhoraWhipclawWeapon
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/Khora/KhoraWhipclawWeaponPrime
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/MonkeyKing/MonkeyKingStaff
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/MonkeyKing/WukongPrimeStaff
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/Ninja/NinjaStormWeapon
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/Ninja/NinjaStormWeaponPrime
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/Pacifist/PacifistFist
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/Pacifist/PacifistFistPrime
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Powersuits/Wraith/ReaperMeleeWeapon
+    Rarity=NONE
+    Attenuation=0.5
+},
+{
+    ItemType=/Lotus/Powersuits/Wraith/SevagothShadowPrimeClawsWeapon
+    Rarity=NONE
+    Attenuation=0.5
+},
+{
+    ItemType=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetMeleeWeaponIP
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetMeleeWeaponIS
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetMeleeWeaponPS
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Types/Friendly/PlayerControllable/Weapons/DuviriDualSwords
+    Rarity=NONE
+    Attenuation=0.5
+},
+{
+    ItemType=/Lotus/Types/Friendly/PlayerControllable/Weapons/DuviriDualSwordsWeapon
+    Rarity=COMMON
+    Attenuation=0.80000001
+},
+{
+    ItemType=/Lotus/Types/Friendly/Tenno/OperatorMeleeWeapon
+    Rarity=NONE
+    Attenuation=1.46
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/DeconstructorPrime/PrimeHeliosGlaiveWeapon
+    Rarity=NONE
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/SentGlaiveWeapon
+    Rarity=NONE
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Archon/Melee/DualDaggers/ArchonDualDaggersPlayerWep
+    Rarity=COMMON
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Archon/Melee/Trident/ArchonTridentPlayerWep
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Archon/Melee/Whip/ArchonWhipPlayerWep
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Cephalon/Melee/Hammer/CephHammerWeapon
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/ClanTech/Energy/ElectroProd
+    Rarity=COMMON
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/ClanTech/Energy/VandalElectroProd
+    Rarity=NONE
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/Melee/CrpBriefcase2HKatana/CrpBriefcase2HKatana
+    Rarity=COMMON
+    Attenuation=0.94999999
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/Melee/CrpBriefcaseScythe/CrpBriefcaseScythe
+    Rarity=COMMON
+    Attenuation=0.89999998
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/Melee/CrpTonfa/CrpPrismaTonfa
+    Rarity=NONE
+    Attenuation=0.89999998
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/Melee/CrpTonfa/CrpTonfa
+    Rarity=COMMON
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/Melee/CrpVenusHatchet/CrpVenusHatchet
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/Melee/Glaive/CrpGhostCatcherGlaive/CrpGhostCatcherGlaive
+    Rarity=COMMON
+    Attenuation=0.64999998
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/Melee/Glaive/CrpGlaive/CrpGlaive
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/Melee/Gunblade/CrpGunBlade/CrpGunbladeWeapon
+    Rarity=COMMON
+    Attenuation=0.64999998
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/Melee/Hammer/CorpusHammerWeapon
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/Melee/KickAndPunch/KickPunchWeapon
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/Melee/KickAndPunch/PrismaObex
+    Rarity=NONE
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/Melee/Polearm/CorpusPolearm01/CorpusPolearmWeapon
+    Rarity=COMMON
+    Attenuation=1.38
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/Melee/ShieldAndSword/CrpHammerShield/CrpHammerShield
+    Rarity=COMMON
+    Attenuation=0.89999998
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/Melee/Whip/CorpusWhipWeapon
+    Rarity=COMMON
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Corpus/Melee/Whips/CrpShockGrip/CrpShockGripWhipWeapon
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrineerClaws/GrnClaws
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrineerCombatKnife/GrineerCombatKnife
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrineerHalberd/GrnHalberd
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrineerJetPoweredPolearm/GrineerJetPolearm
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/DualCleaverWeapon
+    Rarity=COMMON
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/Machete
+    Rarity=COMMON
+    Attenuation=1.45
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/PrismaDualCleavers
+    Rarity=NONE
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/PrismaMachete
+    Rarity=NONE
+    Attenuation=1.45
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/WraithMacheteWeapon
+    Rarity=NONE
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrineerTylAxeAndBoar/RegorAxeShield
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrineerWhip/GrineerWhip
+    Rarity=COMMON
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrnBoomerang/GrnBoomerang
+    Rarity=COMMON
+    Attenuation=1.4400001
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrnBoomerang/HalikarWraithWeapon
+    Rarity=NONE
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrnDualFireAxe/GrnDualFireAxe
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrnEgyptSwd/DualGrnEgyptSwdWeapon
+    Rarity=COMMON
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrnEgyptSwd/GrnEgyptSwdWeapon
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrnGhoulSaw/GrnGhoulSawPlayer
+    Rarity=COMMON
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrnKusarigama/GrnKusarigamaWeapon
+    Rarity=COMMON
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrnKuvaLichScythe/GrnKuvaLichScytheWeapon
+    Rarity=COMMON
+    Attenuation=0.80000001
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrnMiniSaw/GrnMiniSawMeleeWeapon
+    Rarity=NONE
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrnQueenSceptre/GrnQueenSceptreWeapon
+    Rarity=COMMON
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrnSharbola/GrnSharbolaWeapon
+    Rarity=COMMON
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrnSparring/GrnSpiderSparring/GrnSpiderSparring
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GrnTrident/GrnTridentWeapon
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/GunBlade/GrnGunBlade/GrnGunblade
+    Rarity=COMMON
+    Attenuation=0.89999998
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/Scythe/GrnDrillScythe/GrnDrillScythe
+    Rarity=COMMON
+    Attenuation=0.5
+},
+{
+    ItemType=/Lotus/Weapons/Grineer/Melee/Tonfa/GrnChainSawTonfa/GrnChainSawTonfaWeapon
+    Rarity=COMMON
+    Attenuation=0.5
+},
+{
+    ItemType=/Lotus/Weapons/Infested/InfestedLich/Melee/CodaCaustacyst/CodaCaustacyst
+    Rarity=NONE
+    Attenuation=0.85000002
+},
+{
+    ItemType=/Lotus/Weapons/Infested/InfestedLich/Melee/CodaPathocyst/CodaPathocyst
+    Rarity=NONE
+    Attenuation=0.60000002
+},
+{
+    ItemType=/Lotus/Weapons/Infested/InfestedLich/Melee/InfestedHammer/InfLichHammerWeapon
+    Rarity=COMMON
+    Attenuation=0.69999999
+},
+{
+    ItemType=/Lotus/Weapons/Infested/InfestedLich/Melee/CodaHirudo
+    Rarity=NONE
+    Attenuation=0.69999999
+},
+{
+    ItemType=/Lotus/Weapons/Infested/InfestedLich/Melee/CodaMire
+    Rarity=NONE
+    Attenuation=0.64999998
+},
+{
+    ItemType=/Lotus/Weapons/Infested/Melee/Glaives/PunctureGlaive/PunctureGlaiveWeapon
+    Rarity=COMMON
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Infested/Melee/InfBoomerang/InfBoomerangWeapon
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Infested/Melee/InfEmbolistScythe/InfestedScythe
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Infested/Melee/InfTransformClaw/InfTransformClawsWeapon
+    Rarity=COMMON
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Infested/Melee/InfWFAccompanyingSparring/InfestedKogake
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Infested/Melee/InfWarfan/InfWarfanWeapon
+    Rarity=COMMON
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Infested/Melee/Nunchaku/InfNunchuck/InfNunchuck
+    Rarity=COMMON
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Infested/Melee/Staff/InfStaff/InfStaff
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Infested/Melee/Swords/Mios/Mios
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Infested/Melee/Swords/Mire/MireSword
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Infested/Melee/TipedoStaff/InfTipedoStaff
+    Rarity=COMMON
+    Attenuation=0.85000002
+},
+{
+    ItemType=/Lotus/Weapons/Infested/Melee/Whip/InfestedWhip/InfestedWhipWeapon
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Lasria/LasGooSickle/LasGooSicklePlayerWeapon
+    Rarity=COMMON
+    Attenuation=0.75
+},
+{
+    ItemType=/Lotus/Weapons/MK1Series/MK1Bo
+    Rarity=NONE
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/MK1Series/MK1Furax
+    Rarity=NONE
+    Attenuation=1.45
+},
+{
+    ItemType=/Lotus/Weapons/Operator/Melee/DrifterTazer/DrifterTazerPlayerWep
+    Rarity=COMMON
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Orokin/BallasSword/BallasSwordWeapon
+    Rarity=COMMON
+    Attenuation=0.60000002
+},
+{
+    ItemType=/Lotus/Weapons/Ostron/Melee/LotusModularWeapon
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Sentients/SentJointedScythe/SentJointedScytheWeapon
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Syndicates/ArbitersOfHexis/Melee/AHBoltace
+    Rarity=NONE
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Syndicates/CephalonSuda/Melee/CSHeliocor
+    Rarity=NONE
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Syndicates/NewLoka/Melee/NLMagistar
+    Rarity=NONE
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Syndicates/PerrinSequence/Melee/PSLecta
+    Rarity=NONE
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Syndicates/RedVeil/Melee/RVDarkDagger
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Syndicates/SteelMeridian/Melee/SMSydon
+    Rarity=NONE
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Archwing/Melee/ExaltedArchScythe/ExaltedAWScytheWeapon
+    Rarity=COMMON
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Bayonet/TnBayonetMeleeWeapon
+    Rarity=COMMON
+    Attenuation=0.5
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Axe/PrimeScindo/PrimeScindoWeapon
+    Rarity=NONE
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Axe/PrimeZoren/PrimeZorenAxeWeapon
+    Rarity=NONE
+    Attenuation=0.85000002
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Axe/AxeWeapon
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Axe/DualAxeWeapon
+    Rarity=COMMON
+    Attenuation=1.4400001
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Axe/DualInfestedAxesWeapon
+    Rarity=COMMON
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Axe/WolfFrameAxeWeapon
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/BrassKnuckles/BrassKnuckles
+    Rarity=COMMON
+    Attenuation=1.46
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Claws/TennoClaws
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/CronusSword/CronusLongSword
+    Rarity=COMMON
+    Attenuation=1.48
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/CronusSword/PrimeCronusLongSword
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Dagger/CeramicDagger
+    Rarity=COMMON
+    Attenuation=1.4299999
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Dagger/Dagger
+    Rarity=COMMON
+    Attenuation=1.4400001
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Dagger/DarkDagger
+    Rarity=NONE
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Dagger/DarkDaggerBase
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/DualDagger/DualDagger
+    Rarity=COMMON
+    Attenuation=1.36
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/DualDagger/DualEtherDagger
+    Rarity=COMMON
+    Attenuation=1.49
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/DualDagger/FangPrimeDagger
+    Rarity=NONE
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/DualKamas/DualKamas
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/DualKamas/SingleKama
+    Rarity=COMMON
+    Attenuation=1.47
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/DualShortSword/DualEtherSword
+    Rarity=COMMON
+    Attenuation=1.45
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/DualShortSword/DualHeatSwords
+    Rarity=COMMON
+    Attenuation=1.4400001
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/DualShortSword/DualShortSword
+    Rarity=COMMON
+    Attenuation=1.48
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Fist/Fist
+    Rarity=COMMON
+    Attenuation=1.38
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Fist/FuraxWraith
+    Rarity=NONE
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Gauntlet/BrawlerKnuckles/BrawlerKnuckles
+    Rarity=COMMON
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Gauntlet/PrimeAnkyros/PrimeAnkyros
+    Rarity=NONE
+    Attenuation=1.45
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Gauntlet/Gauntlet
+    Rarity=COMMON
+    Attenuation=1.5
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Glaives/Boomerang/BoomerangWeapon
+    Rarity=COMMON
+    Attenuation=1.45
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Glaives/LightGlaive/LightGlaiveWeapon
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Glaives/LightGlaive/LightGlaiveWeaponVariant
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Glaives/PrimeGlaive/PrimeGlaiveWeapon
+    Rarity=NONE
+    Attenuation=0.69999999
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Glaives/PrimeKestrel/PrimeKestrel
+    Rarity=NONE
+    Attenuation=0.5
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Glaives/TeshinGlaive/TnTeshinGlaiveWep
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/GreatSword/GreatSword
+    Rarity=COMMON
+    Attenuation=1.4400001
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Gunblade/GunbladeAutomatic/TnoGunbladeAutomatic
+    Rarity=COMMON
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Gunblade/RedeemerPrime/RedeemerPrimeWep
+    Rarity=NONE
+    Attenuation=0.64999998
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Gunblade/TnoGunblade
+    Rarity=COMMON
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Hammer/DaxDuviriHammer/DaxDuviriHammerPlayerWeapon
+    Rarity=NONE
+    Attenuation=0.5
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Hammer/DaxDuviriHammer/DaxDuviriHammerWeapon
+    Rarity=COMMON
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Hammer/GlassHammer/GlassHammer
+    Rarity=COMMON
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Hammer/IceHammer/IceHammer
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Hammer/HammerWeapon
+    Rarity=COMMON
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Hammer/ThrowingHammer
+    Rarity=COMMON
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/HeavyScythe/DuviriScythe/DuviriHeavyScytheWeapon
+    Rarity=COMMON
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/LongSword/EtherSword
+    Rarity=COMMON
+    Attenuation=1.4400001
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/LongSword/LongSword
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/LongSword/SkanaPrime
+    Rarity=NONE
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Maces/PaladinMace/PaladinMaceWeapon
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Nunchaku/Nunchaku/Nunchaku
+    Rarity=COMMON
+    Attenuation=1.41
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Nunchaku/TnoNunchaku/TnoNunchaku
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/PersianMachete/DjinnMachete
+    Rarity=COMMON
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Polearms/DaxDuviriPolearm/DaxDuviriPolearmSpearPlayerWeapon
+    Rarity=NONE
+    Attenuation=0.5
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Polearms/DaxDuviriPolearm/DaxDuviriPolearmWeapon
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Polearms/FlowerPowerPolearm/FlowerPowerPolearmWep
+    Rarity=COMMON
+    Attenuation=1.38
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Polearms/Naginata/ShrineMaidenNaginataWeapon
+    Rarity=COMMON
+    Attenuation=0.85000002
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Polearms/PrimeGuandao/PrimeGuandaoWeapon
+    Rarity=NONE
+    Attenuation=0.69999999
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Polearms/TnGuandaoPolearm/TnGuandaoPolearmWeapon
+    Rarity=COMMON
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Polearms/TnHalberdPolearm/TnHalberdPolearmWeapon
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Polearms/PolearmWeapon
+    Rarity=COMMON
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Polearms/PrimePolearmWeapon
+    Rarity=NONE
+    Attenuation=0.69999999
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/PrimeDualKamas/PrimeDualKamas
+    Rarity=NONE
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/PrimeFragor/PrimeFragor
+    Rarity=NONE
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/PrimeKogake/KogakePrimeKnuckles
+    Rarity=NONE
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/PrimeNinkondi/PrimeNikondi
+    Rarity=NONE
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/PrimeSilvaAegis/PrimeSilvaAegis
+    Rarity=NONE
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/PrimeTekko/PrimeTekko
+    Rarity=NONE
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/PrimeVenKa/PrimeVenkaClaws
+    Rarity=NONE
+    Attenuation=0.85000002
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/PrimeVolnus/VolnusPrimeWeapon
+    Rarity=NONE
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Scythe/ParisScythe/ParisScythe
+    Rarity=COMMON
+    Attenuation=1.46
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Scythe/ParisScythe/VariantXmasScythe
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Scythe/PrimeVento/PrimeVentoScythe
+    Rarity=NONE
+    Attenuation=0.5
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Scythe/TnChoirScythe/TnChoirScythe
+    Rarity=COMMON
+    Attenuation=0.60000002
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Scythe/EtherScytheWeapon
+    Rarity=COMMON
+    Attenuation=1.45
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Scythe/ReaperWeapon
+    Rarity=COMMON
+    Attenuation=0.80000001
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Scythe/StalkerScytheWeapon
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Soma/SomaDualKamas
+    Rarity=COMMON
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Staff/MonkSpade/TnoMonkStaff
+    Rarity=COMMON
+    Attenuation=1.3099999
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Staff/PrimeBo/PrimeBoWeapon
+    Rarity=NONE
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Staff/TipedoPrime/TipedoPrimeWeapon
+    Rarity=NONE
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Staff/BaseStaff
+    Rarity=NONE
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Staff/GrnStaff
+    Rarity=COMMON
+    Attenuation=1.5
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Staff/SingleStaff
+    Rarity=COMMON
+    Attenuation=1.29
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Staff/Staff
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/SunDialAxe/SundialAxeWeapon
+    Rarity=COMMON
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/CrpBigSlash/CrpBigSlash
+    Rarity=COMMON
+    Attenuation=0.80000001
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/CutlassAndPoignard/CutlassPoignardSwords
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/CutlassAndPoignard/TennoCutlass
+    Rarity=COMMON
+    Attenuation=1.4299999
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/DarkSword/DarkLongSword
+    Rarity=COMMON
+    Attenuation=1.48
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/DarkSword/DarkSwordDaggerDuals
+    Rarity=NONE
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/DarkSword/DarkSwordDaggerHybridWeapon
+    Rarity=COMMON
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/DarkSword/DarkSwordDaggerSingle
+    Rarity=NONE
+    Attenuation=1.3
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/DaxDuviriKatana/DaxDuviriKatanaPlayerWeapon
+    Rarity=NONE
+    Attenuation=0.5
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/DaxDuviriKatana/DaxDuviriKatanaWeapon
+    Rarity=COMMON
+    Attenuation=0.75
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/DaxDuviriTwoHandedKatana/DaxDuviriTwoHandedKatanaPlayerWeapon
+    Rarity=NONE
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/DaxDuviriTwoHandedKatana/DaxDuviriTwoHandedKatanaWeapon
+    Rarity=COMMON
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/DexTheSecond/DexTheSecond
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/GreatSword/TennoGreatSword
+    Rarity=COMMON
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/HeatSword/HeatLongSword
+    Rarity=COMMON
+    Attenuation=1.48
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/JawSword/JawLongSword
+    Rarity=COMMON
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/KatanaAndWakizashi/Dex2023Nikana/Dex2023Nikana
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/KatanaAndWakizashi/Katana
+    Rarity=COMMON
+    Attenuation=0.94999999
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/KatanaAndWakizashi/LowKatana
+    Rarity=COMMON
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/KatanaAndWakizashi/VariantKatana
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/KrisDagger/KrisDagger
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/NWIIIOrokinSword/NWOrokinSword
+    Rarity=COMMON
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/PRapier/DestrezaPrime
+    Rarity=NONE
+    Attenuation=1.14
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/PangolinSword/PangolinLongSword
+    Rarity=COMMON
+    Attenuation=1.47
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/PlasmaSword/PlasmaLongSword
+    Rarity=COMMON
+    Attenuation=1.48
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/PrimeDualKeres/PrimeDualKeresWeapon
+    Rarity=NONE
+    Attenuation=0.80000001
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/PrimeGalatine/PrimeGalatine
+    Rarity=NONE
+    Attenuation=0.89999998
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/PrimeGram/PrimeGram
+    Rarity=NONE
+    Attenuation=0.75
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/PrimeKaryst/PrimeKrisDagger
+    Rarity=NONE
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/PrimeKatana/PrimeNikana
+    Rarity=NONE
+    Attenuation=0.60000002
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/PrimeMasseter/PrimeMasseter
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/PrimeNamiSkyla/PrimeNamiSkyla
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/PrimeOkina/PrimeOkina
+    Rarity=NONE
+    Attenuation=0.69999999
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/PrimePangolinSword/PrimePangolinSword
+    Rarity=NONE
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/PrimeTatsu/PrimeTatsuWeapon
+    Rarity=NONE
+    Attenuation=0.89999998
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/QuillSword/QuillDualSwords
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/StalkerMios/OperationsLacera
+    Rarity=NONE
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/StalkerMios/StalkerMios
+    Rarity=COMMON
+    Attenuation=1.3099999
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/StalkerTwo/StalkerTwoGreatSword
+    Rarity=COMMON
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/StalkerTwo/StalkerTwoSmallSword
+    Rarity=COMMON
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/TennoSai/TennoSais
+    Rarity=COMMON
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/ThreeLeaf/ThreeLeaf
+    Rarity=COMMON
+    Attenuation=1.4
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/TnChiselKanabo/TnChiselKanabo
+    Rarity=COMMON
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/TnDagathBladeWhip/TnDagathBladeWhip
+    Rarity=COMMON
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/TnRailjackGreatKatana/TnRailJackGreatKatanaWeapon
+    Rarity=COMMON
+    Attenuation=0.94999999
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/TnTwoHandedKatana/TnTwoHandedKatana
+    Rarity=COMMON
+    Attenuation=1.05
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/TnoRapier/TnoRapier
+    Rarity=COMMON
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Swords/UmbraKatana/UmbraKatana
+    Rarity=COMMON
+    Attenuation=0.89999998
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/MeleeContestWinnerOne/TennoSwordShield
+    Rarity=COMMON
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/MortiforShieldAndSword/MortiforShieldAndSword
+    Rarity=COMMON
+    Attenuation=0.5
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/PacifistShieldAndSword/PacifistShieldSword
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/PrimeCobraAndCrane/PrimeCobraAndCraneWeapon
+    Rarity=NONE
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/SundialSwordBoard/SundialBoardSword
+    Rarity=COMMON
+    Attenuation=1.1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/DaxDuviriMaceShieldPlayerWeapon
+    Rarity=NONE
+    Attenuation=0.5
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/DaxDuviriMaceShieldWeapon
+    Rarity=COMMON
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Tonfa/Boltonfa/Boltonfa
+    Rarity=COMMON
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Tonfa/TonfaContestWinner/TennoTonfa
+    Rarity=COMMON
+    Attenuation=1.4299999
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Tonfa/TonfaContestWinnerPrime/TonfaContestWinnerPrimeWeapon
+    Rarity=NONE
+    Attenuation=0.64999998
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Warfan/PrimeGunsen/PrimeGunsenWeapon
+    Rarity=NONE
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Warfan/PrimeQuassus/PrimeQuassusWeapon
+    Rarity=NONE
+    Attenuation=0.85000002
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Warfan/TnBrokenFrameWarfan/TnBrokenFrameWarfanWeapon
+    Rarity=COMMON
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Warfan/TnMoonWarfan/MoonWarfanWeapon
+    Rarity=COMMON
+    Attenuation=1.15
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Warfan/WarfanWeapon
+    Rarity=COMMON
+    Attenuation=1.35
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Melee/Whips/SpiderWhip/SpiderWhipWeapon
+    Rarity=COMMON
+    Attenuation=0.60000002
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Zariman/Melee/Dagger/ZarimanDaggerWeapon
+    Rarity=COMMON
+    Attenuation=0.64999998
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Zariman/Melee/HeavyScythe/ZarimanHeavyScythe/ZarimanHeavyScytheWeapon
+    Rarity=COMMON
+    Attenuation=0.60000002
+},
+{
+    ItemType=/Lotus/Weapons/Tenno/Zariman/Melee/Tonfas/ZarimanTonfaWeapon
+    Rarity=COMMON
+    Attenuation=0.60000002
+},
+{
+    ItemType=/Lotus/Weapons/Thanotech/EntFistIncarnon/EntFistIncarnon
+    Rarity=COMMON
+    Attenuation=0.89999998
+},
+{
+    ItemType=/Lotus/Weapons/Thanotech/EntSphereHammer/EntSphereHammer
+    Rarity=COMMON
+    Attenuation=1.2
+},
+{
+    ItemType=/Lotus/Weapons/VoidTrader/PrismaSkana
+    Rarity=NONE
+    Attenuation=1.2
+}
+}
+SentinelItemCompatibilities={
+    {
+        ItemType=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetMeleeWeaponIP
+        Rarity=COMMON
+        Attenuation=1
+    },
+{
+    ItemType=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetMeleeWeaponIS
+    Rarity=COMMON
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetMeleeWeaponPS
+    Rarity=COMMON
+    Attenuation=1
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/DeconstructorPrime/PrimeHeliosGlaiveWeapon
+    Rarity=NONE
+    Attenuation=1.25
+},
+{
+    ItemType=/Lotus/Types/Sentinels/SentinelWeapons/SentGlaiveWeapon
+    Rarity=COMMON
+    Attenuation=1.25
+}
 }

@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Melee/WeaponGlaiveOnKillBuffSecondary
-patch not applied (yet)

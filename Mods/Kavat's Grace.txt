@@ -1,37 +1,37 @@
-/Lotus/Upgrades/Mods/Warframe/WarframeCatMod
+>/Lotus/Upgrades/Mods/Warframe/WarframeCatMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/WarframeCatModName
 Icon=/Lotus/Interface/Cards/Images/Parkour/KavatsGrace.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_HEAVY_LAND_RESIST_CHANCE
-    OperationType=ADD
-    Value=0.25
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/WarframeCatModDesc
-    LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/CatModDescription.lua
-    Function=GetDescriptionInfo
-    _baseValue=0
-    _perLevelValues={
-    25,
-    50,
-    75,
-    100
-}
-}
+    {
+        UpgradeType=AVATAR_HEAVY_LAND_RESIST_CHANCE
+        OperationType=ADD
+        Value=0.25
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WarframeCatModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/CatModDescription.lua
+            Function=GetDescriptionInfo
+            _baseValue=0
+            _perLevelValues={
+                25,
+                50,
+                75,
+                100
+            }
+    }
 SmallerIsBetter=0
 RoundTo=0.050000001
 RoundingMode=RM_ROUND

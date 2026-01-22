@@ -1,42 +1,42 @@
-/Lotus/Powersuits/Priest/PriestPactAugmentCard
+>/Lotus/Powersuits/Priest/PriestPactAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/PriestWarPactAbilityAugment1Name
 Icon=/Lotus/Interface/Cards/Images/AbilityAugments/HarrowCovenantAugment.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/PriestPactAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/PriestWarPactAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/PriestPact.lua
-    Function=GetAugmentDescriptionInfo
-    _activateAnim=""
-    _castEffect=""
-    _castEffectPhaseTwo=""
-    _invulnAttach=""
-    _critBuffAttach=""
-    _invulnBuffType=""
-    _critBuffType=""
-    _castBeamType=""
-    _pactBuffStartSound=""
-    _pactBuffEndSound=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/PriestPactAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/PriestWarPactAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/PriestPact.lua
+            Function=GetAugmentDescriptionInfo
+            _activateAnim=""
+            _castEffect=""
+            _castEffectPhaseTwo=""
+            _invulnAttach=""
+            _critBuffAttach=""
+            _invulnBuffType=""
+            _critBuffType=""
+            _castBeamType=""
+            _pactBuffStartSound=""
+            _pactBuffEndSound=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_POWER

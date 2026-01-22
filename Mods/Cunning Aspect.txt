@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Stances/PvPRapierStanceOne
+>/Lotus/Upgrades/Mods/PvPMods/Stances/PvPRapierStanceOne
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/PvPRapierStanceOne
@@ -8,10 +8,10 @@ ExcludeFromCodex=0
 AvailableOnPve=0
 AvailableOnPvp=1
 UnequippedAttackSets={
-CC_GROUND=Combos/PvPRapierComboOneEquipped
+    CC_GROUND=Combos/PvPRapierComboOneEquipped
 }
 EquippedAttackSets={
-CC_GROUND=Combos/PvPRapierComboOneEquipped
-CC_GROUND_BRANCH_A=Combos/PvPRapierComboA
-CC_GROUND_BRANCH_B=Combos/PvPRapierComboB
+    CC_GROUND=Combos/PvPRapierComboOneEquipped
+    CC_GROUND_BRANCH_A=Combos/PvPRapierComboA
+    CC_GROUND_BRANCH_B=Combos/PvPRapierComboB
 }

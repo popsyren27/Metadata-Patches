@@ -1,4 +1,4 @@
-/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPrecepts/ZanukaPetPhotonStrikePrecept
+>/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPrecepts/ZanukaPetPhotonStrikePrecept
 Rarity=RARE
 MarketMode=MM_HIDDEN
 RegularPrice=5000
@@ -8,48 +8,48 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Zanukas/ZanukaPetPhotonStrikePrecept.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Pets/ZanukaPetPhotonStrikePreceptDesc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/NpcPowersuits/NpcPowersuitAbilities/Lich/PetPhotonStrike.lua
-    Function=GetDescriptionInfo
-    _damage={
-    200,
-    400,
-    600,
-    800,
-    1000,
-    1200
-}
-_radius={
-2,
-3,
-4,
-5,
-6,
-7
-}
-_maxRange={
-12,
-15,
-18,
-21,
-24,
-27
-}
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Pets/ZanukaPetPhotonStrikePreceptDesc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/NpcPowersuits/NpcPowersuitAbilities/Lich/PetPhotonStrike.lua
+            Function=GetDescriptionInfo
+            _damage={
+                200,
+                400,
+                600,
+                800,
+                1000,
+                1200
+            }
+        _radius={
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        }
+    _maxRange={
+        12,
+        15,
+        18,
+        21,
+        24,
+        27
+    }
 _activateAnim=""
 _projTypes={}
 _launchSound=""
@@ -69,41 +69,41 @@ RoundingMode=RM_ROUND
 BaseDrain=QA_NONE
 ItemCompatibility=/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPowerSuit
 Ability={
-Script={
-Script=/Lotus/Powersuits/NpcPowersuits/NpcPowersuitAbilities/Lich/PetPhotonStrike.lua
-Function=GetDescriptionInfo
-_damage={
-200,
-400,
-600,
-800,
-1000,
-1200
-}
-_radius={
-2,
-3,
-4,
-5,
-6,
-7
-}
+    Script={
+        Script=/Lotus/Powersuits/NpcPowersuits/NpcPowersuitAbilities/Lich/PetPhotonStrike.lua
+        Function=GetDescriptionInfo
+        _damage={
+            200,
+            400,
+            600,
+            800,
+            1000,
+            1200
+        }
+    _radius={
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+    }
 _maxRange={
-12,
-15,
-18,
-21,
-24,
-27
+    12,
+    15,
+    18,
+    21,
+    24,
+    27
 }
 _activateAnim=/Lotus/Animations/Corpus/ParvosLich/Kubrow/CastForward01_anim.fbx
 _projTypes={
-/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPreceptComponents/ZanukaPlayerPetOrbitalStrikeProjectileOne,
-/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPreceptComponents/ZanukaPlayerPetOrbitalStrikeProjectileTwo,
-/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPreceptComponents/ZanukaPlayerPetOrbitalStrikeProjectileThree,
-/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPreceptComponents/ZanukaPlayerPetOrbitalStrikeProjectileFour,
-/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPreceptComponents/ZanukaPlayerPetOrbitalStrikeProjectileFive,
-/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPreceptComponents/ZanukaPlayerPetOrbitalStrikeProjectileSix
+    /Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPreceptComponents/ZanukaPlayerPetOrbitalStrikeProjectileOne,
+    /Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPreceptComponents/ZanukaPlayerPetOrbitalStrikeProjectileTwo,
+    /Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPreceptComponents/ZanukaPlayerPetOrbitalStrikeProjectileThree,
+    /Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPreceptComponents/ZanukaPlayerPetOrbitalStrikeProjectileFour,
+    /Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPreceptComponents/ZanukaPlayerPetOrbitalStrikeProjectileFive,
+    /Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPreceptComponents/ZanukaPlayerPetOrbitalStrikeProjectileSix
 }
 _launchSound=""
 _animEventToWaitFor=Fire

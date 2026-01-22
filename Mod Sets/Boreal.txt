@@ -1,0 +1,106 @@
+>/Lotus/Upgrades/Mods/Sets/Boreal/BorealSetMod
+Rarity=RARE
+LocalizeTag=/Lotus/Language/Mods/BorealSetMod
+CodexSecret=1
+Upgrades={
+    {
+        UpgradeType=AVATAR_DAMAGE_TAKEN
+        OperationType=STACKING_MULTIPLY
+        Value=-0.2
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={
+            PM_IN_AIR
+        }
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/BorealSetBonus
+    LocKeyWordScript={
+        Script=""
+    }
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=1
+SmallerIsBetter=1
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=AVATAR_DAMAGE_TAKEN
+    OperationType=STACKING_MULTIPLY
+    Value=-0.2
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={
+        PM_AIRBORNE
+    }
+InvalidModifiers={}
+ValidProcTypes={}
+OverrideLocalization=1
+LocTag=""
+LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=1
+SmallerIsBetter=1
+RoundTo=0.1
+RoundingMode=RM_ROUND
+},
+{
+    UpgradeType=AVATAR_DAMAGE_TAKEN
+    OperationType=STACKING_MULTIPLY
+    Value=0.2
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={
+        PM_IN_AIR,
+        PM_AIRBORNE
+    }
+InvalidModifiers={}
+ValidProcTypes={}
+OverrideLocalization=1
+LocTag=""
+LocKeyWordScript={
+    Script=""
+}
+DisplayAsMultiplier=0
+DisplayAsPercent=1
+ReverseValueSymbol=1
+SmallerIsBetter=1
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+FusionLimit=QA_VERY_HIGH
+IncompatibilityTags={
+    POWER_WEAPON
+}
+UpgradeChance=1
+UpgradeDuration=1
+StackMode=SM_DECAY
+MaxConditionalStacks=11
+PlayEffect=0
+ConditionalUpgrades={
+    /Lotus/Upgrades/CosmeticEnhancers/Offensive/OnComboTierCondition
+}
+HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/BorealSpeedBuff.png
+ModSetIcon=/Lotus/Interface/Cards/Images/Sets/Boreal/BorealHeader.png
+InstallSound=/Lotus/Sounds/UI/NewUI/Common/UICommonAccent
+InstallEffect=/Lotus/Fx/Interface/ModSets/ArchonInstall
+NumUpgradesInSet=3
+IsInfinite=1

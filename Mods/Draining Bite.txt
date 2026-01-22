@@ -1,4 +1,4 @@
-/Lotus/Types/Friendly/Pets/CatbrowPetPrecepts/CatbrowVampireBitePrecept
+>/Lotus/Types/Friendly/Pets/CatbrowPetPrecepts/CatbrowVampireBitePrecept
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/CatbrowVampireBitePreceptName
@@ -6,44 +6,44 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Kavat/VampireBitePrecept.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Items/CatbrowVampireBitePreceptDesc
-    LocKeyWordScript={
-    Script=/Lotus/Types/Friendly/Pets/CatbrowPetBehaviors/CatbrowVampireBiteAbility.lua
-    Function=GetDescriptionInfo
-    _activateAnim=""
-    _biteAnimEvent=Bite
-    _meleePct={
-    0.375,
-    0.75,
-    1.125,
-    1.5
-}
-_stacks={
-2,
-3,
-4,
-5
-}
-_healPct={
-0.025,
-0.050000001,
-0.075000003,
-0.1
-}
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Items/CatbrowVampireBitePreceptDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Friendly/Pets/CatbrowPetBehaviors/CatbrowVampireBiteAbility.lua
+            Function=GetDescriptionInfo
+            _activateAnim=""
+            _biteAnimEvent=Bite
+            _meleePct={
+                0.375,
+                0.75,
+                1.125,
+                1.5
+            }
+        _stacks={
+            2,
+            3,
+            4,
+            5
+        }
+    _healPct={
+        0.025,
+        0.050000001,
+        0.075000003,
+        0.1
+    }
 _vampireEffectDmgReduction=0.25
 _maxVampireEffectDays=4
 _specialVoiceBoxes={}
@@ -67,28 +67,28 @@ BaseDrain=QA_NONE
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Types/Game/CatbrowPet/VampireCatbrowPetPowerSuit
 Ability={
-Script={
-Script=/Lotus/Types/Friendly/Pets/CatbrowPetBehaviors/CatbrowVampireBiteAbility.lua
-Function=NpcEvaluateAbility
-_activateAnim=/Lotus/Animations/Creatures/Catbrow/Melee02_anim.fbx
-_biteAnimEvent=Bite
-_meleePct={
-0.375,
-0.75,
-1.125,
-1.5
-}
-_stacks={
-2,
-3,
-4,
-5
-}
+    Script={
+        Script=/Lotus/Types/Friendly/Pets/CatbrowPetBehaviors/CatbrowVampireBiteAbility.lua
+        Function=NpcEvaluateAbility
+        _activateAnim=/Lotus/Animations/Creatures/Catbrow/Melee02_anim.fbx
+        _biteAnimEvent=Bite
+        _meleePct={
+            0.375,
+            0.75,
+            1.125,
+            1.5
+        }
+    _stacks={
+        2,
+        3,
+        4,
+        5
+    }
 _healPct={
-0.025,
-0.050000001,
-0.075000003,
-0.1
+    0.025,
+    0.050000001,
+    0.075000003,
+    0.1
 }
 _vampireEffectDmgReduction=0.25
 _maxVampireEffectDays=4

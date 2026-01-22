@@ -1,46 +1,46 @@
-/Lotus/Upgrades/Mods/Shotgun/Event/ProjectNightwatch/WeaponNoiseReductionMod
+>/Lotus/Upgrades/Mods/Shotgun/Event/ProjectNightwatch/WeaponNoiseReductionMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/ShotgunModNoiseReduction
 Icon=/Lotus/Interface/Cards/Images/Shotgun/WeaponNoiseReductionMod.png
 ExcludeFromCodex=0
 SearchTags={
-/Lotus/Language/Labels/WEAPON_NOISE
+    /Lotus/Language/Labels/WEAPON_NOISE
 }
 Upgrades={
-{
-UpgradeType=WEAPON_NOISE_REDUCTION
-OperationType=MULTIPLY
-Value=0.75
-DamageType=DT_ANY
-AutoType=1
-ValidType=""
-CheckTypeOnInstall=0
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/NoiseReduction
-LocKeyWordScript={
-Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
-Function=GetDescriptionInfo
-_displayAsPercent={
-1
-}
-_absoluteValue={
-0
-}
-_maxDecimals={
--1
-}
+    {
+        UpgradeType=WEAPON_NOISE_REDUCTION
+        OperationType=MULTIPLY
+        Value=0.75
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/NoiseReduction
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
+            Function=GetDescriptionInfo
+            _displayAsPercent={
+                1
+            }
+        _absoluteValue={
+            0
+        }
+    _maxDecimals={
+        -1
+    }
 _addPlusses={
-0
+    0
 }
 _multiplyDown={
-1
+    1
 }
 }
 SmallerIsBetter=0

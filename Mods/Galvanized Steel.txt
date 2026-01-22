@@ -1,36 +1,36 @@
-/Lotus/Upgrades/Mods/Melee/Expert/WeaponCritChanceSPSubMod
+>/Lotus/Upgrades/Mods/Melee/Expert/WeaponCritChanceSPSubMod
 Rarity=RARE
 LocalizeTag=/Lotus/Language/Mods/WeaponCritChanceSPMod
 StatusDescTag=/Lotus/Language/Buffs/WeaponCritChanceSPModBuff
 Icon=/Lotus/Interface/Cards/Images/Shotgun/ShotgunFireIterationsMod.png
 ExcludeFromCodex=1
 Upgrades={
-{
-    UpgradeType=WEAPON_CRIT_DAMAGE
-    OperationType=STACKING_MULTIPLY
-    Value=0.02727
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/WeaponCritDamage
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=WEAPON_CRIT_DAMAGE
+        OperationType=STACKING_MULTIPLY
+        Value=0.02727
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponCritDamage
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ApplyUpgradesByDefault=0
@@ -40,7 +40,7 @@ ItemCompatibility=/Lotus/Weapons/Tenno/Shotgun/LotusShotgun
 IncludeInBoosterPack=0
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDurationAndStacks
 EnhancementTagLocScript={
-Script=""
+    Script=""
 }
 UpgradeChance=1
 UpgradeDuration=20
@@ -48,7 +48,7 @@ DurationScalesWithRank=0
 StackMode=SM_DECAY
 MaxConditionalStacks=4
 ConditionalUpgrades={
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/OnMeleeKillCondition
+    /Lotus/Upgrades/CosmeticEnhancers/Offensive/OnMeleeKillCondition
 }
 ConditionTag=/Lotus/Language/Upgrades/OnMeleeKillCondition_Description
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/IncreasedCritChance.png

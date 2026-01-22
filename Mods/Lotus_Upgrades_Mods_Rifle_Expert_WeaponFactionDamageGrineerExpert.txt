@@ -1,2 +1,4 @@
-/Lotus/Upgrades/Mods/Rifle/Expert/WeaponFactionDamageGrineerExpert
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Rifle/Expert/WeaponFactionDamageGrineerExpert
+TradeCapability=RO_NEVER
+FusionLimit=QA_VERY_HIGH
+IncludeInBoosterPack=0

@@ -1,5 +1,0 @@
-/Lotus/Powersuits/Garuda/GarudaClaws
-MarketMode=MM_HIDDEN
-DefaultModOverrides={
-    Stance=/Lotus/Weapons/Tenno/Melee/MeleeTrees/ClawCmbOneMeleeTree
-}

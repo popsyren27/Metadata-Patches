@@ -1,47 +1,49 @@
-/Lotus/Powersuits/Hoplite/HopliteArmyAugmentCard
+>/Lotus/Powersuits/Hoplite/HopliteArmyAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/HopliteArmyAbilityAugment1Name
 Icon=/Lotus/Interface/Cards/Images/AbilityAugments/StyanaxArmyAugment.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/HopliteArmyAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/HopliteArmyAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/HopliteArmy.lua
-    Function=GetAugmentDescriptionInfo
-    _activateAnim=""
-    _loopAnim=""
-    _deactivateAnim=""
-    _throwAnims={}
-    _throwHandRight={
-    1
-}
-_throwHandLeft={
-0
-}
-_projectileType=""
-_ghostDecoType=""
-_castEffect=""
-_castSeq=""
-_cloneAttach=""
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/HopliteArmyAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/HopliteArmyAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/HopliteArmy.lua
+            Function=GetAugmentDescriptionInfo
+            _activateAnim=""
+            _loopAnim=""
+            _deactivateAnim=""
+            _throwAnims={}
+            _throwHandRight={
+                1
+            }
+        _throwHandLeft={
+            0
+        }
+    _projectileType=""
+    _ghostDecoType=""
+    _castEffect=""
+    _castSeq=""
+    _cloneAttach=""
 }
 SmallerIsBetter=0
 RoundTo=0.1
 RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_POWER
@@ -50,5 +52,5 @@ FusionLimit=QA_MEDIUM
 ItemCompatibility=HopliteBaseSuit
 IsAbilityAugment=1
 TipTags={
-OVERGUARD
+    OVERGUARD
 }

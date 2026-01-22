@@ -1,2 +1,3 @@
-/Lotus/Upgrades/Mods/Melee/Intermediate/WeaponPowerDamageModIntermediate
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Melee/Intermediate/WeaponPowerDamageModIntermediate
+FusionLimit=QA_HIGH
+IncludeInBoosterPack=0

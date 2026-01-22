@@ -1,2 +1,2 @@
-/Lotus/Upgrades/Mods/Pistol/Intermediate/WeaponStatusChanceModIntermediate
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Pistol/Intermediate/WeaponStatusChanceModIntermediate
+IncludeInBoosterPack=0

@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Rifle/Expert/WeaponReloadSpeedModExpert
-patch not applied (yet)

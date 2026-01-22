@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Rifle/Event/CorpusArena/PentaCorpusArenaMod
+>/Lotus/Upgrades/Mods/Rifle/Event/CorpusArena/PentaCorpusArenaMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/PentaCorpusArenaMod
@@ -7,50 +7,50 @@ Icon=/Lotus/Interface/Cards/Images/Rifle/PentaCorpusArenaMod.png
 ExcludeFromCodex=0
 TradeCapability=RO_ALWAYS
 Upgrades={
-{
-    UpgradeType=WEAPON_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=TetherMine
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Mods/PentaCorpusArenaModDesc
-    LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/PentaTetherMine.lua
-    Function=GetLoc
-    _triggerType=""
-    _faction=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=WEAPON_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=TetherMine
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Mods/PentaCorpusArenaModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/PentaTetherMine.lua
+            Function=GetLoc
+            _triggerType=""
+            _faction=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_TACTIC
 ItemCompatibility=/Lotus/Weapons/Corpus/LongGuns/GrenadeLauncher/GrenadeLauncher
 IncompatibilityTags={
-POWER_WEAPON
+    POWER_WEAPON
 }
 Script={
-Script=/Lotus/Scripts/Mods/ChangeProjectileType.lua
-Function=ApplyUpgrades
-_frameType=""
-_behaviorIndex=0
-_embedMeshOverride=""
+    Script=/Lotus/Scripts/Mods/ChangeProjectileType.lua
+    Function=ApplyUpgrades
+    _frameType=""
+    _behaviorIndex=0
+    _embedMeshOverride=""
 }
 UnappliedScript={
-Script=/Lotus/Scripts/Mods/ChangeProjectileType.lua
-Function=UnapplyUpgrades
-_frameType=""
-_behaviorIndex=0
-_embedMeshOverride=""
+    Script=/Lotus/Scripts/Mods/ChangeProjectileType.lua
+    Function=UnapplyUpgrades
+    _frameType=""
+    _behaviorIndex=0
+    _embedMeshOverride=""
 }
 IsUtility=1
 PlayEffect=0

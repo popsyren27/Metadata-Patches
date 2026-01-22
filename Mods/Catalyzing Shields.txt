@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Warframe/DualStat/FixedShieldAndShieldGatingDuration
+>/Lotus/Upgrades/Mods/Warframe/DualStat/FixedShieldAndShieldGatingDuration
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/FixedShieldAndShieldGatingDuration
@@ -6,30 +6,30 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/AvatarMods/FixedShieldAndShieldGatingDuration.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/AvatarSetShieldMaxModDesc
-    LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/FixedShieldAndShieldGatingDurationMod.lua
-    Function=GetMaxShieldMultiplierDescription
-    _maxShieldMultiplier=0.2
-    _newShieldGateTimerMultiplier=0.333
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/AvatarSetShieldMaxModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/FixedShieldAndShieldGatingDurationMod.lua
+            Function=GetMaxShieldMultiplierDescription
+            _maxShieldMultiplier=0.2
+            _newShieldGateTimerMultiplier=0.333
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 },
 {
     UpgradeType=NONE
@@ -47,11 +47,11 @@ RoundingMode=RM_ROUND
     OverrideLocalization=1
     LocTag=/Lotus/Language/Upgrades/AvatarSetShieldGateDurationModDesc
     LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/FixedShieldAndShieldGatingDurationMod.lua
-    Function=GetShieldGateTimerDescription
-    _maxShieldMultiplier=0.1875
-    _newShieldGateTimerMultiplier=0.333
-}
+        Script=/Lotus/Scripts/Mods/FixedShieldAndShieldGatingDurationMod.lua
+        Function=GetShieldGateTimerDescription
+        _maxShieldMultiplier=0.1875
+        _newShieldGateTimerMultiplier=0.333
+    }
 SmallerIsBetter=0
 RoundTo=0.1
 RoundingMode=RM_ROUND
@@ -62,8 +62,8 @@ BaseDrain=QA_VERY_HIGH
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
 Script={
-Script=/Lotus/Scripts/Mods/FixedShieldAndShieldGatingDurationMod.lua
-Function=StartMod
-_maxShieldMultiplier=0.2
-_newShieldGateTimerMultiplier=0.333
+    Script=/Lotus/Scripts/Mods/FixedShieldAndShieldGatingDurationMod.lua
+    Function=StartMod
+    _maxShieldMultiplier=0.2
+    _newShieldGateTimerMultiplier=0.333
 }

@@ -1,30 +1,30 @@
-/Lotus/Upgrades/Mods/Melee/Channel/ChannelVampireMod
+>/Lotus/Upgrades/Mods/Melee/Channel/ChannelVampireMod
 Rarity=RARE
 MarketMode=MM_VISIBLE
 LocalizeTag=/Lotus/Language/Items/ChannelVampireMod
 Icon=/Lotus/Interface/Cards/Images/MeleeChanneling/ChannelingLifeDrain.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_LIFE_STEAL
-    OperationType=ADD
-    Value=0.050000001
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={
-    PM_HEAVY_MELEE
-}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/WeaponLifeStealOnHeavy
-LocKeyWordScript={
-Script=""
-}
+    {
+        UpgradeType=WEAPON_LIFE_STEAL
+        OperationType=ADD
+        Value=0.050000001
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={
+            PM_HEAVY_MELEE
+        }
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponLifeStealOnHeavy
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -39,9 +39,9 @@ BaseDrain=QA_MEDIUM
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
 IncompatibilityTags={
-SENTINEL_WEAPON,
-HOUND_WEAPON,
-POWER_WEAPON_LITE,
-NO_HEAVY_ATTACK
+    SENTINEL_WEAPON,
+    HOUND_WEAPON,
+    POWER_WEAPON_LITE,
+    NO_HEAVY_ATTACK
 }
 IncludeInBoosterPack=1

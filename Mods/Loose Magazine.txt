@@ -1,32 +1,32 @@
-/Lotus/Upgrades/Mods/PvPMods/Pistol/FasterReloadMoreRecoilPistolMod
+>/Lotus/Upgrades/Mods/PvPMods/Pistol/FasterReloadMoreRecoilPistolMod
 LocalizeTag=/Lotus/Language/Mods/FasterReloadMoreRecoilPistolMod
 Icon=/Lotus/Interface/Cards/Images/PvP/Pistol/FasterReloadMoreRecoilPistolMod.png
 Upgrades={
-{
-    UpgradeType=WEAPON_RELOAD_SPEED
-    OperationType=STACKING_MULTIPLY
-    Value=0.083400004
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/WeaponReloadSpeedModDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=WEAPON_RELOAD_SPEED
+        OperationType=STACKING_MULTIPLY
+        Value=0.083400004
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponReloadSpeedModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 },
 {
     UpgradeType=WEAPON_RECOIL
@@ -44,8 +44,8 @@ AllowConditionalLocMerge=0
     OverrideLocalization=1
     LocTag=/Lotus/Language/Upgrades/WeaponRecoilModDesc
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0

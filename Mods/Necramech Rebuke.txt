@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Necromech/NecromechReflectOnShieldBreakMod
+>/Lotus/Upgrades/Mods/Necromech/NecromechReflectOnShieldBreakMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Necromech/NecromechReflectOnShieldBreakMod
@@ -7,42 +7,42 @@ StatusDescTag=/Lotus/Language/Buffs/ModCooldownDesc
 Icon=/Lotus/Interface/Cards/Images/Necramech/NecromechAvatarResistanceOnDamageMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/NecramechReflectOnShieldBreakMod
-    LocKeyWordScript={
-    Script=NecromechReflectOnShieldBreakMod.lua
-    Function=GetDescriptionInfo
-    _weaponBurstFX=""
-    _weaponBurstSound=""
-    _enemyHitSound=""
-    _range={
-    5,
-    10,
-    15,
-    20
-}
-_damage={
-75,
-150,
-225,
-300
-}
-_maxNumReactionAnims=3
-_cooldown=10
-_duration=3
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/NecramechReflectOnShieldBreakMod
+        LocKeyWordScript={
+            Script=NecromechReflectOnShieldBreakMod.lua
+            Function=GetDescriptionInfo
+            _weaponBurstFX=""
+            _weaponBurstSound=""
+            _enemyHitSound=""
+            _range={
+                5,
+                10,
+                15,
+                20
+            }
+        _damage={
+            75,
+            150,
+            225,
+            300
+        }
+    _maxNumReactionAnims=3
+    _cooldown=10
+    _duration=3
 }
 SmallerIsBetter=0
 RoundTo=0.1
@@ -55,22 +55,22 @@ BaseDrain=QA_HIGH
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Powersuits/EntratiMech/BaseMechSuit
 Script={
-Script=NecromechReflectOnShieldBreakMod.lua
-Function=StartMod
-_weaponBurstFX=/Lotus/Fx/PowersuitAbilities/Volt/OverloadBurst
-_weaponBurstSound=/Lotus/Sounds/Vehicles/NechroMech/Abilities/NechroMechShieldMod
-_enemyHitSound=/Lotus/Sounds/Vehicles/NechroMech/Abilities/NechroMechTelaCoilAbilityDischarge
-_range={
-5,
-10,
-15,
-20
-}
+    Script=NecromechReflectOnShieldBreakMod.lua
+    Function=StartMod
+    _weaponBurstFX=/Lotus/Fx/PowersuitAbilities/Volt/OverloadBurst
+    _weaponBurstSound=/Lotus/Sounds/Vehicles/NechroMech/Abilities/NechroMechShieldMod
+    _enemyHitSound=/Lotus/Sounds/Vehicles/NechroMech/Abilities/NechroMechTelaCoilAbilityDischarge
+    _range={
+        5,
+        10,
+        15,
+        20
+    }
 _damage={
-75,
-150,
-225,
-300
+    75,
+    150,
+    225,
+    300
 }
 _maxNumReactionAnims=3
 _cooldown=10
@@ -79,6 +79,6 @@ _duration=3
 UpgradeChance=1
 CanReprocPvp=0
 ConditionalUpgrades={
-/Lotus/Upgrades/CosmeticEnhancers/Defensive/OnHealthDamageCondition
+    /Lotus/Upgrades/CosmeticEnhancers/Defensive/OnHealthDamageCondition
 }
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/MultiShotBuffIcon.png

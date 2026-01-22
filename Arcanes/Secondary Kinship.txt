@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryCritChancePerBuff
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryCritChancePerBuff
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/CritChancePerAllyBuffName
@@ -32,11 +32,11 @@ Upgrades={
             _rankValue=0.034000002
             _isPercent=1
         }
-        SmallerIsBetter=0
-        RoundTo=0.0099999998
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    SmallerIsBetter=0
+    RoundTo=0.0099999998
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 FusionLimit=QA_HIGH
 ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol

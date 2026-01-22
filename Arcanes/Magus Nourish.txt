@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/HealOnTransferenceOut
+>/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/HealOnTransferenceOut
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/HealOnTransferenceOut
@@ -33,20 +33,20 @@ Upgrades={
                 0.85000002,
                 0.94999999
             }
-            _healAmount={
-                10,
-                15,
-                20,
-                25,
-                30,
-                35
-            }
+        _healAmount={
+            10,
+            15,
+            20,
+            25,
+            30,
+            35
         }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 ApplyUpgradesByDefault=0
 FusionLimit=QA_HIGH
@@ -61,14 +61,14 @@ Script={
         0.85000002,
         0.94999999
     }
-    _healAmount={
-        10,
-        15,
-        20,
-        25,
-        30,
-        35
-    }
+_healAmount={
+    10,
+    15,
+    20,
+    25,
+    30,
+    35
+}
 }
 EnhancementTag=/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionSimple
 EnhancementTagLocScript={

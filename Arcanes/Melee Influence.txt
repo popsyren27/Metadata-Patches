@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/MeleeProcsSpread
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/MeleeProcsSpread
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/MeleeProcsSpreadName

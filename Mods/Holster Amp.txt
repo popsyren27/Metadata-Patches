@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Aura/PlayerHolsterSpeedAuraMod
+>/Lotus/Upgrades/Mods/Aura/PlayerHolsterSpeedAuraMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/PlayerHolsterSpeedBuffName
@@ -7,30 +7,30 @@ StatusDescTag=/Lotus/Language/Buffs/HolsterAmpBuffDesc
 Icon=/Lotus/Interface/Cards/Images/MissionBuffs/PlayerWeaponSwitchSpeedBuff.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Mods/AvatarHolsterDamageAura
-    LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/AuraAvatarHolsterDamage.lua
-    Function=GetDescription
-}
-SmallerIsBetter=0
-RoundTo=1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Mods/AvatarHolsterDamageAura
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/AuraAvatarHolsterDamage.lua
+            Function=GetDescription
+        }
+    SmallerIsBetter=0
+    RoundTo=1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_TACTIC
@@ -38,13 +38,13 @@ ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/IncreasedDamage.png
 TargetType=/Lotus/Types/Player/TennoAvatar
 ExcludedAvatars={
-/Lotus/Types/Player/LotusOperatorAvatar
+    /Lotus/Types/Player/LotusOperatorAvatar
 }
 OnEnterAuraScript={
-Script=/Lotus/Scripts/Mods/AuraAvatarHolsterDamage.lua
-Function=StartMod
+    Script=/Lotus/Scripts/Mods/AuraAvatarHolsterDamage.lua
+    Function=StartMod
 }
 OnExitAuraScript={
-Script=/Lotus/Scripts/Mods/AuraAvatarHolsterDamage.lua
-Function=EndMod
+    Script=/Lotus/Scripts/Mods/AuraAvatarHolsterDamage.lua
+    Function=EndMod
 }

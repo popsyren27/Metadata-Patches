@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Grimoire/LohkAuraMod
+>/Lotus/Upgrades/Grimoire/LohkAuraMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/LohkAura
@@ -8,28 +8,28 @@ ExcludeFromCodex=0
 ArtifactPolarity=AP_ATTACK
 BaseDrain=QA_MEDIUM
 Script={
-Script=RangeUpgradeApplicator.lua
-Function=FriendlyRangeTimedUpgradeAura
-_buffValues={
-0.075000003
-}
+    Script=RangeUpgradeApplicator.lua
+    Function=FriendlyRangeTimedUpgradeAura
+    _buffValues={
+        0.075000003
+    }
 _buffValueFusionLevelSteps={
-0.075000003
+    0.075000003
 }
 _buffDurations={
-15
+    15
 }
 _buffDurationFusionLevelSteps={
-0
+    0
 }
 _buffTypes={
-WEAPON_FIRE_RATE
+    WEAPON_FIRE_RATE
 }
 _operationTypes={
-STACKING_MULTIPLY
+    STACKING_MULTIPLY
 }
 _damageTypes={
-DT_ANY
+    DT_ANY
 }
 _auraRange=-1
 _auraRangeFusionLevelStep=0
@@ -38,28 +38,28 @@ _buffStackSymbol=LohkAuraMod
 }
 EnhancementTag=/Lotus/Language/Mods/LohkAuraDesc
 EnhancementTagLocScript={
-Script=RangeUpgradeApplicator.lua
-Function=GetDescription
-_buffValues={
-0.075000003
-}
+    Script=RangeUpgradeApplicator.lua
+    Function=GetDescription
+    _buffValues={
+        0.075000003
+    }
 _buffValueFusionLevelSteps={
-0.075000003
+    0.075000003
 }
 _buffDurations={
-15
+    15
 }
 _buffDurationFusionLevelSteps={
-0
+    0
 }
 _buffTypes={
-WEAPON_FIRE_RATE
+    WEAPON_FIRE_RATE
 }
 _operationTypes={
-STACKING_MULTIPLY
+    STACKING_MULTIPLY
 }
 _damageTypes={
-DT_ANY
+    DT_ANY
 }
 _auraRange=-1
 _auraRangeFusionLevelStep=0

@@ -1,4 +1,4 @@
-/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedPredatorFinisherSporesPrecept
+>/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedPredatorFinisherSporesPrecept
 Rarity=RARE
 MarketMode=MM_HIDDEN
 RegularPrice=5000
@@ -8,42 +8,42 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Pets/Deimos/InfestedPredatorFinisherSporesPrecept.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Pets/InfestedPredatorFinisherSporesPreceptDesc
-    LocKeyWordScript={
-    Script=InfestedPredatorFinisherSpores.lua
-    Function=GetDescriptionInfo
-    _dmg={
-    40,
-    80,
-    120,
-    160
-}
-_sporeRadius={
-4,
-8,
-12,
-16
-}
-_cooldownTime={
-20,
-16,
-12,
-8
-}
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Pets/InfestedPredatorFinisherSporesPreceptDesc
+        LocKeyWordScript={
+            Script=InfestedPredatorFinisherSpores.lua
+            Function=GetDescriptionInfo
+            _dmg={
+                40,
+                80,
+                120,
+                160
+            }
+        _sporeRadius={
+            4,
+            8,
+            12,
+            16
+        }
+    _cooldownTime={
+        20,
+        16,
+        12,
+        8
+    }
 _stunDuration=3
 _finisherDuration=5
 _slowDuration=10
@@ -65,26 +65,26 @@ BaseDrain=QA_NONE
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Types/Friendly/Pets/CreaturePets/MedjayPredatorKubrowPetPowerSuit
 Ability={
-Script={
-Script=InfestedPredatorFinisherSpores.lua
-Function=ActivateAbility
-_dmg={
-40,
-80,
-120,
-160
-}
-_sporeRadius={
-3,
-6,
-9,
-12
-}
+    Script={
+        Script=InfestedPredatorFinisherSpores.lua
+        Function=ActivateAbility
+        _dmg={
+            40,
+            80,
+            120,
+            160
+        }
+    _sporeRadius={
+        3,
+        6,
+        9,
+        12
+    }
 _cooldownTime={
-20,
-16,
-12,
-8
+    20,
+    16,
+    12,
+    8
 }
 _stunDuration=3
 _finisherDuration=5

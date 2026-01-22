@@ -1,2 +1,32 @@
-/Lotus/Upgrades/Mods/Warframe/Beginner/AvatarDamageResistanceLaserBeginner
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Warframe/Beginner/AvatarDamageResistanceLaserBeginner
+Upgrades={
+    {
+        UpgradeType=AVATAR_DAMAGE_TAKEN
+        OperationType=MULTIPLY
+        Value=0.94999999
+        DamageType=DT_RADIATION
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/AvatarDamageResistanceRadiationPercentModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+}
+}
+BaseDrain=QA_LOW
+FusionLimit=QA_MEDIUM
+IncludeInBoosterPack=0
+IsStarter=1

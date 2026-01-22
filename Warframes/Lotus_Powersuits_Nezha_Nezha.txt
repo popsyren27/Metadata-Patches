@@ -1,4 +1,0 @@
-/Lotus/Powersuits/Nezha/Nezha
-MarketMode=MM_VISIBLE
-ExcludeFromCodex=0
-RecipeHelpText=/Lotus/Language/WarframeCrafting/NezhaRecipeHelp

@@ -1,4 +1,4 @@
-/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedCatbrowEvasionBuffPrecept
+>/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedCatbrowEvasionBuffPrecept
 Rarity=RARE
 MarketMode=MM_HIDDEN
 RegularPrice=5000
@@ -9,38 +9,38 @@ StatusDescTag=/Lotus/Language/Buffs/ModCooldownDesc
 Icon=/Lotus/Interface/Cards/Images/Pets/Deimos/InfestedKavatEvasionBuffPrecept.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Pets/InfestedCatbrowEvasionBuffPreceptDesc
-    LocKeyWordScript={
-    Script=InfestedCatbrowBulletJumpVanish.lua
-    Function=GetDescriptionInfo
-    _duration={
-    8,
-    7,
-    6,
-    5
-}
-_buff={
-0.60000002,
-0.89999998,
-1.2,
-1.5
-}
-_decoyAvatarType=""
-_jumpVFX=""
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Pets/InfestedCatbrowEvasionBuffPreceptDesc
+        LocKeyWordScript={
+            Script=InfestedCatbrowBulletJumpVanish.lua
+            Function=GetDescriptionInfo
+            _duration={
+                8,
+                7,
+                6,
+                5
+            }
+        _buff={
+            0.60000002,
+            0.89999998,
+            1.2,
+            1.5
+        }
+    _decoyAvatarType=""
+    _jumpVFX=""
 }
 SmallerIsBetter=0
 RoundTo=0.1
@@ -52,58 +52,58 @@ BaseDrain=QA_NONE
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Types/Friendly/Pets/CreaturePets/VulpineInfestedCatbrowPetPowerSuit
 SubUpgrades={
-InfestedCatbrowEvasionBuffSubmod
+    InfestedCatbrowEvasionBuffSubmod
 }
 RemoveOnShieldDamage=1
 HudBuffIcon=/Lotus/Interface/Icons/Pets/Deimos/SlyVulpaphyla.png
 Ability={
-SecondaryScripts={
-{
-tag=SpawnDecoy
-executionMode=EM_ALL
-inheritPrimary=0
-functionName=""
-scriptInstance={
-Script=InfestedCatbrowBulletJumpVanish.lua
-Function=SpawnDecoy
-_duration={
-2,
-4,
-6,
-8
-}
-_buff={
-0.60000002,
-0.89999998,
-1.2,
-1.5
-}
-_decoyAvatarType=/Lotus/Types/Game/LotusCloneAvatar
-_jumpVFX=/Lotus/Fx/PowersuitAbilities/Ninja/SmokeLingeringFastB
-}
+    SecondaryScripts={
+        {
+            tag=SpawnDecoy
+            executionMode=EM_ALL
+            inheritPrimary=0
+            functionName=""
+            scriptInstance={
+                Script=InfestedCatbrowBulletJumpVanish.lua
+                Function=SpawnDecoy
+                _duration={
+                    2,
+                    4,
+                    6,
+                    8
+                }
+            _buff={
+                0.60000002,
+                0.89999998,
+                1.2,
+                1.5
+            }
+        _decoyAvatarType=/Lotus/Types/Game/LotusCloneAvatar
+        _jumpVFX=/Lotus/Fx/PowersuitAbilities/Ninja/SmokeLingeringFastB
+    }
 }
 }
 AbilityEvents={
-{
-tag=OwnerKillCritter
-eventType=ET_ON_KILL
-scriptInstance={
-Script=InfestedCatbrowBulletJumpVanish.lua
-Function=GetDescriptionInfo
-_duration={
-8,
-7,
-6,
-5
-}
-_buff={
-0.60000002,
-0.89999998,
-1.2,
-1.5
-}
-_decoyAvatarType=""
-_jumpVFX=""
+    {
+        tag=OwnerKillCritter
+        eventType=ET_ON_KILL
+        scriptInstance={
+            Script=InfestedCatbrowBulletJumpVanish.lua
+            Function=GetDescriptionInfo
+            _duration={
+                8,
+                7,
+                6,
+                5
+            }
+        _buff={
+            0.60000002,
+            0.89999998,
+            1.2,
+            1.5
+        }
+    _decoyAvatarType=""
+    _jumpVFX=""
 }
 }
 }

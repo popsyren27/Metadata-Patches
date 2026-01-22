@@ -1,45 +1,45 @@
-/Lotus/Powersuits/Harlequin/IllusionAugmentCard
+>/Lotus/Powersuits/Harlequin/IllusionAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/IllusionAbilityAugment1Name
 Icon=/Lotus/Interface/Cards/Images/AbilityAugments/MirageIllusionAugment1.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/IllusionAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/IllusionAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/Illusion.lua
-    Function=GetAugmentDescriptionInfo
-    _activateAnim=""
-    _mirrorAvatarType=""
-    _pvpMirrorAvatarType=""
-    _spawnEffect=""
-    _castEffect=""
-    _onDestroySound=""
-    _mirrorMaterials={}
-    _mirrorMaterialsPacked={}
-    _numClones=1
-    _duration=10
-    _damageMult=0.050000001
-    _theta=90
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/IllusionAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/IllusionAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/Illusion.lua
+            Function=GetAugmentDescriptionInfo
+            _activateAnim=""
+            _mirrorAvatarType=""
+            _pvpMirrorAvatarType=""
+            _spawnEffect=""
+            _castEffect=""
+            _onDestroySound=""
+            _mirrorMaterials={}
+            _mirrorMaterialsPacked={}
+            _numClones=1
+            _duration=10
+            _damageMult=0.050000001
+            _theta=90
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_POWER

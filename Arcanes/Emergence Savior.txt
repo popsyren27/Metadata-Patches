@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Zariman/OperatorOnDeathInvulnerability
+>/Lotus/Upgrades/CosmeticEnhancers/Zariman/OperatorOnDeathInvulnerability
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Arcanes/OperatorOnDeathInvulnerability
@@ -39,13 +39,13 @@ Upgrades={
                 50,
                 60
             }
-            _cooldown=90
-        }
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
+        _cooldown=90
     }
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 FusionLimit=QA_HIGH
 Script={
@@ -64,7 +64,7 @@ Script={
         0.5,
         0.60000002
     }
-    _cooldown=90
+_cooldown=90
 }
 SubUpgrades={
     OperatorOnDeathInvulnerabilitySubUpgrade

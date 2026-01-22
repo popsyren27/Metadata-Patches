@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Sets/Synth/WarframeSynthReflexMod
+>/Lotus/Upgrades/Mods/Sets/Synth/WarframeSynthReflexMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/WarframeSynthReflexMod
@@ -6,28 +6,28 @@ StatusDescTag=/Lotus/Language/Buffs/SynthReflexBuffDesc
 Icon=/Lotus/Interface/Cards/Images/Sets/Synth/WarframeSynthReflexMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Mods/AvatarHolsterBulletJump
-    LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/AvatarHolsterBulletJump.lua
-    Function=GetDescription
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Mods/AvatarHolsterBulletJump
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/AvatarHolsterBulletJump.lua
+            Function=GetDescription
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_ATTACK
@@ -35,8 +35,8 @@ BaseDrain=QA_MEDIUM
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
 Script={
-Script=/Lotus/Scripts/Mods/AvatarHolsterBulletJump.lua
-Function=StartMod
+    Script=/Lotus/Scripts/Mods/AvatarHolsterBulletJump.lua
+    Function=StartMod
 }
 IsUtility=1
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/IncreasedBulletJump.png

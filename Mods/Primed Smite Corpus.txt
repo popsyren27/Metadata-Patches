@@ -1,0 +1,6 @@
+>/Lotus/Upgrades/Mods/Melee/Expert/WeaponMeleeFactionDamageCorpusExpert
+Rarity=LEGENDARY
+LocalizeTag=/Lotus/Language/Mods/MeleeModFactionDamageCorpusExpert
+CodexSecret=1
+FusionLimit=QA_VERY_HIGH
+IncludeInBoosterPack=0

@@ -1,16 +1,64 @@
-/Lotus/Upgrades/Mods/DualSource/Melee/FuraxLauncherMod
+>/Lotus/Upgrades/Mods/DualSource/Melee/FuraxLauncherMod
 Rarity=RARE
 LocalizeTag=/Lotus/Language/Mods/FuraxLauncherMod
 Icon=/Lotus/Interface/Cards/Images/DualSource/AmalgamFurax.png
 TradeCapability=RO_NEVER
 Upgrades={
+    {
+        UpgradeType=WEAPON_MELEE_COMBO_DURATION_BONUS
+        OperationType=ADD
+        Value=2.5
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/FuraxLauncherPartBDesc
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
+            Function=GetDescriptionInfo
+            _displayAsPercent={
+                0,
+                1,
+                0,
+                0
+            }
+        _absoluteValue={
+            0,
+            0,
+            1,
+            0
+        }
+    _maxDecimals={
+        -1,
+        -1,
+        0,
+        -1
+    }
+_addPlusses={
+    0
+}
+_multiplyDown={
+    0
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+},
 {
-    UpgradeType=WEAPON_MELEE_COMBO_DURATION_BONUS
-    OperationType=ADD
-    Value=2.5
+    UpgradeType=WEAPON_FIRE_RATE
+    OperationType=STACKING_MULTIPLY
+    Value=0.075000003
     DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
+    AutoType=0
+    ValidType=/Lotus/Weapons/Tenno/Pistol/LotusPistol
     SymbolFilter=""
     UpgradeObject=""
     ValidPostures={}
@@ -18,58 +66,10 @@ Upgrades={
     InvalidModifiers={}
     ValidProcTypes={}
     OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/FuraxLauncherPartBDesc
+    LocTag=""
     LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
-    Function=GetDescriptionInfo
-    _displayAsPercent={
-    0,
-    1,
-    0,
-    0
-}
-_absoluteValue={
-0,
-0,
-1,
-0
-}
-_maxDecimals={
--1,
--1,
-0,
--1
-}
-_addPlusses={
-0
-}
-_multiplyDown={
-0
-}
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
-},
-{
-UpgradeType=WEAPON_FIRE_RATE
-OperationType=STACKING_MULTIPLY
-Value=0.075000003
-DamageType=DT_ANY
-AutoType=0
-ValidType=/Lotus/Weapons/Tenno/Pistol/LotusPistol
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=""
-LocKeyWordScript={
-Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
 ReverseValueSymbol=0
@@ -79,23 +79,23 @@ RoundingMode=RM_ROUND
 AllowConditionalLocMerge=0
 },
 {
-UpgradeType=WEAPON_CORPSE_EXPLODE_PROC_CHANCE
-OperationType=SET
-Value=1
-DamageType=DT_EXPLOSION
-AutoType=0
-ValidType=/Lotus/Weapons/Tenno/Melee/Fist/Fist
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=""
-LocKeyWordScript={
-Script=""
-}
+    UpgradeType=WEAPON_CORPSE_EXPLODE_PROC_CHANCE
+    OperationType=SET
+    Value=1
+    DamageType=DT_EXPLOSION
+    AutoType=0
+    ValidType=/Lotus/Weapons/Tenno/Melee/Fist/Fist
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
 ReverseValueSymbol=0
@@ -105,23 +105,23 @@ RoundingMode=RM_ROUND
 AllowConditionalLocMerge=0
 },
 {
-UpgradeType=WEAPON_CORPSE_EXPLODE_RADIUS
-OperationType=ADD
-Value=2.5
-DamageType=DT_ANY
-AutoType=0
-ValidType=/Lotus/Weapons/Tenno/Melee/Fist/Fist
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=""
-LocKeyWordScript={
-Script=""
-}
+    UpgradeType=WEAPON_CORPSE_EXPLODE_RADIUS
+    OperationType=ADD
+    Value=2.5
+    DamageType=DT_ANY
+    AutoType=0
+    ValidType=/Lotus/Weapons/Tenno/Melee/Fist/Fist
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
 ReverseValueSymbol=0
@@ -131,23 +131,23 @@ RoundingMode=RM_ROUND
 AllowConditionalLocMerge=0
 },
 {
-UpgradeType=WEAPON_CORPSE_EXPLODE_PROC_CHANCE
-OperationType=SET
-Value=1
-DamageType=DT_IMPACT
-AutoType=0
-ValidType=/Lotus/Weapons/Tenno/Melee/Fist/Fist
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=""
-LocKeyWordScript={
-Script=""
-}
+    UpgradeType=WEAPON_CORPSE_EXPLODE_PROC_CHANCE
+    OperationType=SET
+    Value=1
+    DamageType=DT_IMPACT
+    AutoType=0
+    ValidType=/Lotus/Weapons/Tenno/Melee/Fist/Fist
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=""
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
 ReverseValueSymbol=0
@@ -160,7 +160,7 @@ AllowConditionalLocMerge=0
 BaseDrain=QA_HIGH
 ItemCompatibility=/Lotus/Weapons/Tenno/Melee/Fist/Fist
 IncompatibilityTags={
-SENTINEL_WEAPON,
-POWER_WEAPON
+    SENTINEL_WEAPON,
+    POWER_WEAPON
 }
 IsAmalgam=1

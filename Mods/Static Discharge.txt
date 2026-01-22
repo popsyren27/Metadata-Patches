@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Melee/Event/CorpusArena/ProvaCorpusArenaMod
+>/Lotus/Upgrades/Mods/Melee/Event/CorpusArena/ProvaCorpusArenaMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/ProvaCorpusArenaMod
@@ -7,49 +7,49 @@ Icon=/Lotus/Interface/Cards/Images/Melee/ProvaCorpusArenaMod.png
 ExcludeFromCodex=0
 TradeCapability=RO_ALWAYS
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/ProvaCorpusArenaModDesc
-    LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/ElectroProdZap.lua
-    Function=GetLoc
-    _beamType=""
-    _damagePercent=0.30000001
-    _damageScaling=0.1
-    _chargeOneZapInterval=0.5
-    _chargeAttackZapInterval=0.2
-    _chargeTwoZapInterval=0.25
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/ProvaCorpusArenaModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/ElectroProdZap.lua
+            Function=GetLoc
+            _beamType=""
+            _damagePercent=0.30000001
+            _damageScaling=0.1
+            _chargeOneZapInterval=0.5
+            _chargeAttackZapInterval=0.2
+            _chargeTwoZapInterval=0.25
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_TACTIC
 ItemCompatibility=/Lotus/Weapons/ClanTech/Energy/ElectroProd
 IncompatibilityTags={
-POWER_WEAPON
+    POWER_WEAPON
 }
 Script={
-Script=/Lotus/Scripts/Mods/ElectroProdZap.lua
-Function=ApplyUpgrades
-_beamType=/Lotus/Fx/Levels/Grineer/Game/BrokenLightShockBeam
-_damagePercent=0.30000001
-_damageScaling=0.1
-_chargeOneZapInterval=0.5
-_chargeAttackZapInterval=0.2
-_chargeTwoZapInterval=0.25
+    Script=/Lotus/Scripts/Mods/ElectroProdZap.lua
+    Function=ApplyUpgrades
+    _beamType=/Lotus/Fx/Levels/Grineer/Game/BrokenLightShockBeam
+    _damagePercent=0.30000001
+    _damageScaling=0.1
+    _chargeOneZapInterval=0.5
+    _chargeAttackZapInterval=0.2
+    _chargeTwoZapInterval=0.25
 }
 PlayEffect=0

@@ -1,4 +1,4 @@
-/Lotus/Weapons/Tenno/Melee/MeleeTrees/StaffCmbTwoMeleeTree
+>/Lotus/Weapons/Tenno/Melee/MeleeTrees/StaffCmbTwoMeleeTree
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/StaffStanceB
@@ -8,7 +8,7 @@ ExcludeFromCodex=0
 ArtifactPolarity=AP_WARD
 IncludeInBoosterPack=1
 EquippedAttackSets={
-CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/StaffBranchBDefaults
-CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/StaffEquippedBDefaults
-CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/StaffBranchDDefaults
+    CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/StaffBranchBDefaults
+    CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/StaffEquippedBDefaults
+    CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/StaffBranchDDefaults
 }

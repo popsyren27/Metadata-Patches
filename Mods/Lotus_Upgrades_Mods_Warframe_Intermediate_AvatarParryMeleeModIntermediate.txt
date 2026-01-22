@@ -1,2 +1,2 @@
-/Lotus/Upgrades/Mods/Warframe/Intermediate/AvatarParryMeleeModIntermediate
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Warframe/Intermediate/AvatarParryMeleeModIntermediate
+IncludeInBoosterPack=0

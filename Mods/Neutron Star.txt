@@ -1,47 +1,47 @@
-/Lotus/Powersuits/AntiMatter/NullStarAugmentCard
+>/Lotus/Powersuits/AntiMatter/NullStarAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/NullstarAbilityAugment1Name
 Icon=/Lotus/Interface/Cards/Images/AbilityAugments/NovaNullStarAugment1.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/NullStarAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/NullstarAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/NullStar.lua
-    Function=GetAugmentDescriptionInfo
-    _baseRange=10
-    _baseCharges=3
-    _damage=80
-    _activateAnim=""
-    _zapSound=""
-    _starType=""
-    _Nullstars={}
-    _NullstarsPvp={}
-    _sound=""
-    _invalidTargetTypes={}
-    _primeStarMaterial=""
-    _starAttachDeco=""
-    _augmentExplosionEffect=""
-    _deluxeSkin=""
-    _deluxeArmsDecoType=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/NullStarAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/NullstarAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/NullStar.lua
+            Function=GetAugmentDescriptionInfo
+            _baseRange=10
+            _baseCharges=3
+            _damage=80
+            _activateAnim=""
+            _zapSound=""
+            _starType=""
+            _Nullstars={}
+            _NullstarsPvp={}
+            _sound=""
+            _invalidTargetTypes={}
+            _primeStarMaterial=""
+            _starAttachDeco=""
+            _augmentExplosionEffect=""
+            _deluxeSkin=""
+            _deluxeArmsDecoType=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_POWER

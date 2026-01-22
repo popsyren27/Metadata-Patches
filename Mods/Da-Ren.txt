@@ -1,0 +1,43 @@
+>/Lotus/Upgrades/Mods/Antiques/ShieldSchool
+Rarity=UNCOMMON
+MarketMode=MM_HIDDEN
+LocalizeTag=/Lotus/Language/Upgrades/AntiqueShieldSchool
+Icon=/Lotus/Interface/Cards/Images/AntiqueMods/OrokinImageO.png
+ExcludeFromCodex=0
+SearchTags={
+    /Lotus/Language/TennoWay/Vazarin
+}
+Upgrades={
+    {
+        UpgradeType=AVATAR_SHIELD_MAX
+        OperationType=ADD_BASE
+        Value=50
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/AntiqueShieldSchoolDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
+}
+AssociatedSchool=AP_DEFENSE
+SubUpgrades={
+    BonusAntiqueUpgradeOperatorShieldUnairu
+}
+UpgradeChance=1

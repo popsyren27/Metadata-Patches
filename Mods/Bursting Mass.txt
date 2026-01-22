@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Rifle/Event/Arbitration/InfCrpShockSwarmRifleArbitrationMod
+>/Lotus/Upgrades/Mods/Rifle/Event/Arbitration/InfCrpShockSwarmRifleArbitrationMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/MutalistQuantaArbitrationMod
@@ -6,41 +6,41 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Rifle/InfCrpShockSwarmRifleArbitrationMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Mods/MutalistQuantaArbitrationModDesc
-    LocKeyWordScript={
-    Script=/Lotus/Scripts/WeaponAttachments/InfCrpShockSwarm.lua
-    Function=GetLocValues
-    _TimeLength=1.5
-    _OriginalScale=1
-    _NewScale=6
-    _HitProxyTypeWhatNeedsReregistration=""
-    _newDieEffect=""
-    _arbitrationModType=""
-    _radialDmgPct={
-    0.5,
-    0.80000001,
-    1.1,
-    1.4,
-    1.7,
-    2
-}
-_radialRadius=15
-_attachedFlareType=""
-}
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Mods/MutalistQuantaArbitrationModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/WeaponAttachments/InfCrpShockSwarm.lua
+            Function=GetLocValues
+            _TimeLength=1.5
+            _OriginalScale=1
+            _NewScale=6
+            _HitProxyTypeWhatNeedsReregistration=""
+            _newDieEffect=""
+            _arbitrationModType=""
+            _radialDmgPct={
+                0.5,
+                0.80000001,
+                1.1,
+                1.4,
+                1.7,
+                2
+            }
+        _radialRadius=15
+        _attachedFlareType=""
+    }
 SmallerIsBetter=0
 RoundTo=0.1
 RoundingMode=RM_ROUND
@@ -50,6 +50,6 @@ ArtifactPolarity=AP_TACTIC
 BaseDrain=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Infested/LongGuns/InfCrpShockSwarm/InfCrpShockSwarmRifle
 IncompatibilityTags={
-POWER_WEAPON
+    POWER_WEAPON
 }
 PlayEffect=0

@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/PvPMods/Pistol/HigherVelocityLessAccuratePistolMod
+>/Lotus/Upgrades/Mods/PvPMods/Pistol/HigherVelocityLessAccuratePistolMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/HigherVelocityLessAccuratePistolMod
@@ -6,55 +6,55 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/PvP/Pistol/HigherVelocityLessAccuratePistolMod.png
 ExcludeFromCodex=0
 CompatibilityTags={
-PROJECTILE
+    PROJECTILE
 }
 AvailableOnPve=0
 AvailableOnPvp=1
 Upgrades={
-{
-UpgradeType=WEAPON_PROJECTILE_SPEED
-OperationType=STACKING_MULTIPLY
-Value=0.1
-DamageType=DT_ANY
-AutoType=1
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/WeaponProjectileSpeedModDesc
-LocKeyWordScript={
-Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=WEAPON_PROJECTILE_SPEED
+        OperationType=STACKING_MULTIPLY
+        Value=0.1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponProjectileSpeedModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 },
 {
-UpgradeType=WEAPON_SPREAD
-OperationType=ADD
-Value=1
-DamageType=DT_ANY
-AutoType=1
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/WeaponAccuracy
-LocKeyWordScript={
-Script=""
-}
+    UpgradeType=WEAPON_SPREAD
+    OperationType=ADD
+    Value=1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/WeaponAccuracy
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
 ReverseValueSymbol=1
@@ -69,6 +69,6 @@ BaseDrain=QA_HIGH
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Tenno/Pistol/LotusPistol
 IncompatibilityTags={
-AOE,
-SECONDARYSHOTGUN
+    AOE,
+    SECONDARYSHOTGUN
 }

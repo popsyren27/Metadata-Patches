@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/AbilityStrengthForMaxHealth
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/AbilityStrengthForMaxHealth
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/1999/AbilityStrengthForMaxHealthName
@@ -26,14 +26,14 @@ ExtraUpgrades={
         LocKeyWordScript={
             Script=""
         }
-        DisplayAsMultiplier=0
-        DisplayAsPercent=0
-        ReverseValueSymbol=0
-        SmallerIsBetter=0
-        RoundTo=0.1
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=0
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
 }
 FusionLimit=QA_HIGH
 Script={
@@ -43,11 +43,36 @@ Script={
     _giveStatIncreasePerLevel=0.0099999998
     _giveStatType=AVATAR_ABILITY_STRENGTH
     _giveStatOperation=STACKING_MULTIPLY
+    _haveStatThresholdMin=0
     _haveStatThresholdBase=250
     _haveStatThresholdPerLevel=0
     _haveStatType=AVATAR_HEALTH_MAX
     _discreteBuffTiers=0
     _maxStacks=12
+    _allowNegativeHaveStat=0
+    _giveStatCapBase=0
+    _giveStatCapPerLevel=0
+    _showBuffNotification=1
+    _buffNotificationType=BT_PERCENT
+}
+UnappliedScript={
+    Script=GiveStatForStat.lua
+    Function=UnapplyUpgrade
+    _giveStatIncreaseBase=0
+    _giveStatIncreasePerLevel=0
+    _giveStatType=AVATAR_ABILITY
+    _giveStatOperation=ADD
+    _haveStatThresholdMin=0
+    _haveStatThresholdBase=0
+    _haveStatThresholdPerLevel=0
+    _haveStatType=AVATAR_ABILITY
+    _discreteBuffTiers=1
+    _maxStacks=0
+    _allowNegativeHaveStat=0
+    _giveStatCapBase=0
+    _giveStatCapPerLevel=0
+    _showBuffNotification=1
+    _buffNotificationType=BT_PERCENT
 }
 EnhancementTag=/Lotus/Language/1999/AbilityStrengthForMaxHealthDesc
 EnhancementTagLocScript={
@@ -57,11 +82,17 @@ EnhancementTagLocScript={
     _giveStatIncreasePerLevel=0.0099999998
     _giveStatType=AVATAR_ABILITY
     _giveStatOperation=ADD
+    _haveStatThresholdMin=0
     _haveStatThresholdBase=250
     _haveStatThresholdPerLevel=0
     _haveStatType=AVATAR_ABILITY
     _discreteBuffTiers=1
     _maxStacks=12
+    _allowNegativeHaveStat=0
+    _giveStatCapBase=0
+    _giveStatCapPerLevel=0
+    _showBuffNotification=1
+    _buffNotificationType=BT_PERCENT
 }
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionDIBuff.png
 BaseDistillPointValue=24

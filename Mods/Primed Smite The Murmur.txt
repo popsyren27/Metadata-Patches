@@ -1,0 +1,5 @@
+>/Lotus/Upgrades/Mods/Melee/Expert/WeaponMeleeFactionDamageMurmursExpert
+Rarity=LEGENDARY
+LocalizeTag=/Lotus/Language/Mods/PrimedMeleeModFactionDamageMurmurs
+CodexSecret=1
+FusionLimit=QA_VERY_HIGH

@@ -1,0 +1,42 @@
+>/Lotus/Weapons/Tenno/Melee/Polearms/Naginata/ShrineMaidenNaginataAugment
+Rarity=RARE
+LocalizeTag=/Lotus/Language/Mods/ShrineMaidenNaginataAugmentModName
+LocalizeDescTag=/Lotus/Language/Mods/ShrineMaidenNaginataAugmentModDesc
+Icon=/Lotus/Interface/Cards/Images/Unique/ShrineMaidenNaginataAugment.png
+Upgrades={
+    {
+        UpgradeType=WEAPON_MELEE_DAMAGE
+        OperationType=STACKING_MULTIPLY
+        Value=0.55000001
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/MeleeDamageBuffDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
+}
+}
+BaseDrain=QA_HIGH
+ItemCompatibility=ShrineMaidenNaginataWeapon
+SubUpgrades={
+    ShrineMaidenNaginataHeavyAttackSubUpgrade
+}
+IncludeInBoosterPack=0
+CanReproc=0
+CanReprocPvp=0

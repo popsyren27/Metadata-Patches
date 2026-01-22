@@ -1,41 +1,41 @@
-/Lotus/Upgrades/Mods/Melee/WeaponElectricityDamageMod
+>/Lotus/Upgrades/Mods/Melee/WeaponElectricityDamageMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/MeleeModElectricityDamage
 Icon=/Lotus/Interface/Cards/Images/Melee/MeleeElectricityDamageMod.png
 ExcludeFromCodex=0
 SearchTags={
-/Lotus/Language/Game/DT_RADIATION_NoIcon,
-/Lotus/Language/Game/DT_MAGNETIC_NoIcon,
-/Lotus/Language/Game/DT_CORROSIVE_NoIcon
+    /Lotus/Language/Game/DT_RADIATION_NoIcon,
+    /Lotus/Language/Game/DT_MAGNETIC_NoIcon,
+    /Lotus/Language/Game/DT_CORROSIVE_NoIcon
 }
 Upgrades={
-{
-UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
-OperationType=ADD
-Value=0.15000001
-DamageType=DT_ELECTRICITY
-AutoType=1
-ValidType=""
-CheckTypeOnInstall=0
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/WeaponElectricityDamage
-LocKeyWordScript={
-Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=WEAPON_PERCENT_BASE_DAMAGE_ADDED
+        OperationType=ADD
+        Value=0.15000001
+        DamageType=DT_ELECTRICITY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponElectricityDamage
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_TACTIC

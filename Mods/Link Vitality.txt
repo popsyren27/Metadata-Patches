@@ -1,44 +1,44 @@
-/Lotus/Upgrades/Mods/Sentinel/Kubrow/KubrowLinkHealthMaxMod
+>/Lotus/Upgrades/Mods/Sentinel/Kubrow/KubrowLinkHealthMaxMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/KubrowHealthLinkModName
 Icon=/Lotus/Interface/Cards/Images/Kubrow/KubrowLifeLink.png
 ExcludeFromCodex=0
 CompatibilityTags={
-KAVAT_MOD,
-KUBROW_MOD,
-HELMINTH_MOD,
-MOA_MOD,
-PREDASITE_MOD,
-VULPAPHYLA_MOD,
-ZANUKA_MOD
+    KAVAT_MOD,
+    KUBROW_MOD,
+    HELMINTH_MOD,
+    MOA_MOD,
+    PREDASITE_MOD,
+    VULPAPHYLA_MOD,
+    ZANUKA_MOD
 }
 Upgrades={
-{
-UpgradeType=AVATAR_SENTINEL_HEALTH_LINK
-OperationType=STACKING_MULTIPLY
-Value=0.11363
-DamageType=DT_ANY
-AutoType=0
-ValidType=""
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/AvatarSentinelHealthLinkModDesc
-LocKeyWordScript={
-Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=AVATAR_SENTINEL_HEALTH_LINK
+        OperationType=STACKING_MULTIPLY
+        Value=0.11363
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/AvatarSentinelHealthLinkModDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_DEFENSE

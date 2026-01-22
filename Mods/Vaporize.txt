@@ -1,57 +1,57 @@
-/Lotus/Types/Sentinels/SentinelPrecepts/Vaporize
+>/Lotus/Types/Sentinels/SentinelPrecepts/Vaporize
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/VaporizeStoreItemName
 LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Pets/SentinelSwiftDethMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Items/VaporizeStoreItemDesc
-    LocKeyWordScript={
-    Script=/Lotus/Types/Sentinels/SentinelAbilities/Vaporize.lua
-    Function=GetDescriptionInfo
-    _invalidTargetTypes={}
-    _beamType=""
-    _beamEndType=""
-    _sound=""
-    _deathFx=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Items/VaporizeStoreItemDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/Vaporize.lua
+            Function=GetDescriptionInfo
+            _invalidTargetTypes={}
+            _beamType=""
+            _beamEndType=""
+            _sound=""
+            _deathFx=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ItemCompatibility=/Lotus/Types/Sentinels/SentinelPowersuits/DethCubeBasePowerSuit
 Ability={
-Script={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/Vaporize.lua
-Function=NpcEvaluateAbility
-_invalidTargetTypes={
-/Lotus/Types/Enemies/Corpus/Turrets/TurretAvatars/AutoTurretAvatar,
-/Lotus/Types/Enemies/Corpus/Turrets/TurretAvatars/SecurityCameraAvatar,
-/Lotus/Types/Enemies/Grineer/SpecialEvents/SurveillanceDroneAvatar,
-/Lotus/Types/Enemies/Grineer/Vip/Avatars/DoubleBossAvatar,
-/Lotus/Types/Game/CreatureBaseAvatar
-}
-_beamType=/Lotus/Fx/Sentinels/Precepts/DethCube/VaporizeBeam
-_beamEndType=/Lotus/Fx/Sentinels/Precepts/DethCube/VaporizeEndPointSpawn
-_sound=/Lotus/Sounds/Weapons/Sentinel/DethMachineRifle/DethCubeVaporize
-_deathFx=/Lotus/Fx/Sentinels/Precepts/DethCube/VaporizeDeathGoo
+    Script={
+        Script=/Lotus/Types/Sentinels/SentinelAbilities/Vaporize.lua
+        Function=NpcEvaluateAbility
+        _invalidTargetTypes={
+            /Lotus/Types/Enemies/Corpus/Turrets/TurretAvatars/AutoTurretAvatar,
+            /Lotus/Types/Enemies/Corpus/Turrets/TurretAvatars/SecurityCameraAvatar,
+            /Lotus/Types/Enemies/Grineer/SpecialEvents/SurveillanceDroneAvatar,
+            /Lotus/Types/Enemies/Grineer/Vip/Avatars/DoubleBossAvatar,
+            /Lotus/Types/Game/CreatureBaseAvatar
+        }
+    _beamType=/Lotus/Fx/Sentinels/Precepts/DethCube/VaporizeBeam
+    _beamEndType=/Lotus/Fx/Sentinels/Precepts/DethCube/VaporizeEndPointSpawn
+    _sound=/Lotus/Sounds/Weapons/Sentinel/DethMachineRifle/DethCubeVaporize
+    _deathFx=/Lotus/Fx/Sentinels/Precepts/DethCube/VaporizeDeathGoo
 }
 CooldownDuration=8
 EnergyRequiredToActivate=0

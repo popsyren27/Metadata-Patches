@@ -1,4 +1,4 @@
-/Lotus/Types/Sentinels/SentinelPrecepts/VoidBond/TandemTactics
+>/Lotus/Types/Sentinels/SentinelPrecepts/VoidBond/TandemTactics
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/VoidBondTandemTacticsMod
@@ -7,75 +7,75 @@ StatusDescTag=/Lotus/Language/Buffs/TandemTacticsBuffDesc
 Icon=/Lotus/Interface/Cards/Images/Pets/SentinelTandemTactics.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/VoidBondTandemTacticsModDesc
-    LocKeyWordScript={
-    Script=/Lotus/Types/Sentinels/SentinelAbilities/TandemTactics.lua
-    Function=GetDescription
-    _comboGainPerLevel=1
-    _damagePctPerLevel=0.050000001
-    _duration=30
-}
-SmallerIsBetter=0
-RoundTo=0.050000001
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/VoidBondTandemTacticsModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/TandemTactics.lua
+            Function=GetDescription
+            _comboGainPerLevel=1
+            _damagePctPerLevel=0.050000001
+            _duration=30
+        }
+    SmallerIsBetter=0
+    RoundTo=0.050000001
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_ATTACK
 ItemCompatibility=/Lotus/Types/Game/Pets/PetPowerSuit
 SubUpgrades={
-TandemTacticsHeavyAttackSubmod
+    TandemTacticsHeavyAttackSubmod
 }
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/TandemTactics.png
 Ability={
-ExcludeFromCodex=0
-Script={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/TandemTactics.lua
-Function=ActivateAbility
-_comboGainPerLevel=1
-_damagePctPerLevel=0.050000001
-_duration=30
-}
+    ExcludeFromCodex=0
+    Script={
+        Script=/Lotus/Types/Sentinels/SentinelAbilities/TandemTactics.lua
+        Function=ActivateAbility
+        _comboGainPerLevel=1
+        _damagePctPerLevel=0.050000001
+        _duration=30
+    }
 SecondaryScripts={
-{
-tag=ApplyUpgrade
-executionMode=EM_HOST
-inheritPrimary=0
-functionName=""
-scriptInstance={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/TandemTactics.lua
-Function=ApplyUpgrade
-_comboGainPerLevel=1
-_damagePctPerLevel=0.050000001
-_duration=30
-}
+    {
+        tag=ApplyUpgrade
+        executionMode=EM_HOST
+        inheritPrimary=0
+        functionName=""
+        scriptInstance={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/TandemTactics.lua
+            Function=ApplyUpgrade
+            _comboGainPerLevel=1
+            _damagePctPerLevel=0.050000001
+            _duration=30
+        }
 }
 }
 AbilityEvents={
-{
-tag=MeleeHit
-eventType=ET_ON_MELEE_HIT
-scriptInstance={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/TandemTactics.lua
-Function=OnPetMeleeHit
-_comboGainPerLevel=1
-_damagePctPerLevel=0.050000001
-_duration=30
-}
+    {
+        tag=MeleeHit
+        eventType=ET_ON_MELEE_HIT
+        scriptInstance={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/TandemTactics.lua
+            Function=OnPetMeleeHit
+            _comboGainPerLevel=1
+            _damagePctPerLevel=0.050000001
+            _duration=30
+        }
 }
 }
 EnergyRequiredToActivate=0

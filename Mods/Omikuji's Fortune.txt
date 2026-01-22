@@ -1,50 +1,51 @@
-/Lotus/Powersuits/Koumei/KoumeiFortuneAugmentCard
+>/Lotus/Powersuits/Koumei/KoumeiFortuneAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/KoumeiFortuneAbilityAugment1Name
 Icon=/Lotus/Interface/Cards/Images/AbilityAugments/KoumeiFortuneAugmentCard.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/KoumeiFortuneAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/KoumeiFortuneAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/KoumeiFortune.lua
-    Function=GetAugmentDescriptionInfo
-    _activateAnim=""
-    _challenges={}
-    _higherLevelTreshold=100
-    _higherLevelChallenges={}
-    _complications={}
-    _castEffect=""
-    _activateEffect=""
-    _challengeIcon=""
-    _challengeFailedSound=""
-    _boonSelectionMovie=""
-    _holdSoundStart=""
-    _holdSoundLoop=""
-    _holdSoundEnd=""
-    _complicationValue=5
-    _complicationTickTime=1
-    _complicationProc=PT_IMMOLATION
-    _complicationDamagePercent=0.02
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/KoumeiFortuneAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/KoumeiFortuneAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/KoumeiFortune.lua
+            Function=GetAugmentDescriptionInfo
+            _activateAnim=""
+            _challenges={}
+            _higherLevelTreshold=100
+            _higherLevelChallenges={}
+            _complications={}
+            _castEffect=""
+            _activateEffect=""
+            _challengeIcon=""
+            _challengeFailedSound=""
+            _boonSelectionMovie=""
+            _holdSoundStart=""
+            _holdSoundLoop=""
+            _holdSoundEnd=""
+            _complicationValue=5
+            _complicationTickTime=1
+            _complicationProc=PT_IMMOLATION
+            _complicationDamagePercent=0.02
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 }
 }
 ArtifactPolarity=AP_POWER

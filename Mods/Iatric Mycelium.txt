@@ -1,4 +1,4 @@
-/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedPredatorHealingSporesPrecept
+>/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedPredatorHealingSporesPrecept
 Rarity=RARE
 MarketMode=MM_HIDDEN
 RegularPrice=5000
@@ -9,45 +9,45 @@ StatusDescTag=/Lotus/Language/Buffs/IatricMyceliumBuffDesc
 Icon=/Lotus/Interface/Cards/Images/Pets/Deimos/InfestedPredatorHealingSporesPrecept.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Pets/InfestedPredatorHealingSporesDesc
-    LocKeyWordScript={
-    Script=InfestedPredatorHealingSpores.lua
-    Function=GetDescriptionInfo
-    _trailCreationDuration=6
-    _trailExistenceDuration=3
-    _healingDuration=5
-    _healAmount={
-    75,
-    150,
-    225,
-    300
-}
-_cooldownTime={
-20,
-16,
-12,
-8
-}
-_sporesAbilityType=""
-_distanceBetweenCreates=3
-_sporesAttachType=""
-_sporesType=""
-_castAnimation=""
-_castSound=""
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Pets/InfestedPredatorHealingSporesDesc
+        LocKeyWordScript={
+            Script=InfestedPredatorHealingSpores.lua
+            Function=GetDescriptionInfo
+            _trailCreationDuration=6
+            _trailExistenceDuration=3
+            _healingDuration=5
+            _healAmount={
+                75,
+                150,
+                225,
+                300
+            }
+        _cooldownTime={
+            20,
+            16,
+            12,
+            8
+        }
+    _sporesAbilityType=""
+    _distanceBetweenCreates=3
+    _sporesAttachType=""
+    _sporesType=""
+    _castAnimation=""
+    _castSound=""
 }
 SmallerIsBetter=0
 RoundTo=0.1
@@ -60,24 +60,24 @@ FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Types/Friendly/Pets/CreaturePets/VizierPredatorKubrowPetPowerSuit
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/HealthRegen.png
 Ability={
-Script={
-Script=InfestedPredatorHealingSpores.lua
-Function=ActivateAbility
-_trailCreationDuration=6
-_trailExistenceDuration=3
-_healingDuration=5
-_healAmount={
-75,
-150,
-225,
-300
-}
-_cooldownTime={
-20,
-16,
-12,
-8
-}
+    Script={
+        Script=InfestedPredatorHealingSpores.lua
+        Function=ActivateAbility
+        _trailCreationDuration=6
+        _trailExistenceDuration=3
+        _healingDuration=5
+        _healAmount={
+            75,
+            150,
+            225,
+            300
+        }
+    _cooldownTime={
+        20,
+        16,
+        12,
+        8
+    }
 _sporesAbilityType=InfestedPredatorHealingSporesPrecept
 _distanceBetweenCreates=4
 _sporesAttachType=/Lotus/Fx/Sentinels/Precepts/InfestedPredators/HealingSporeAttachFX

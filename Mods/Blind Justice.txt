@@ -1,4 +1,4 @@
-/Lotus/Weapons/Tenno/Melee/MeleeTrees/KatanaCmbThreeMeleeTree
+>/Lotus/Weapons/Tenno/Melee/MeleeTrees/KatanaCmbThreeMeleeTree
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/KatanaStanceC
@@ -8,18 +8,18 @@ ExcludeFromCodex=0
 ArtifactPolarity=AP_ATTACK
 IncludeInBoosterPack=1
 UnequippedAttackSets={
-CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaThreeQuickDefaults
-CC_SLIDING=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaZatoSlide
-CC_WALLRUN=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaWallrunZato
-CC_SLIDING_PVP=/Lotus/Weapons/Tenno/Melee/AttackSets/PVPKatanaZatoSlide
+    CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaThreeQuickDefaults
+    CC_SLIDING=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaZatoSlide
+    CC_WALLRUN=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaWallrunZato
+    CC_SLIDING_PVP=/Lotus/Weapons/Tenno/Melee/AttackSets/PVPKatanaZatoSlide
 }
 EquippedAttackSets={
-CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaComboThreeABranch
-CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaThreeQuickDefaults
-CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaComboThreeBBranch
-CC_GROUND_BRANCH_C=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaComboThreeCBranch
-CC_SLIDING=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaZatoSlide
-CC_WALLRUN=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaWallrunZato
+    CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaComboThreeABranch
+    CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaThreeQuickDefaults
+    CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaComboThreeBBranch
+    CC_GROUND_BRANCH_C=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaComboThreeCBranch
+    CC_SLIDING=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaZatoSlide
+    CC_WALLRUN=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaWallrunZato
 }
 HasMeleeStyleOverride=1
 MeleeStyle=MS_KATANA_ALT

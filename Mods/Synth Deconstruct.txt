@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Sets/Synth/SentinelSynthDeconstructMod
+>/Lotus/Upgrades/Mods/Sets/Synth/SentinelSynthDeconstructMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/SentinelSynthDeconstructMod
@@ -6,34 +6,34 @@ LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Sets/Synth/SentinelSynthDeconstructMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/SynthDeconstructSentinelModDesc
-    LocKeyWordScript={
-    Script=/Lotus/Types/Sentinels/SentinelAbilities/SynthDeconstruct.lua
-    Function=GetDescription
-    _healthOrbType=""
-    _chanceToDrop={
-    0.025,
-    0.050000001,
-    0.1,
-    0.15000001,
-    0.2,
-    0.25
-}
-}
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/SynthDeconstructSentinelModDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/SynthDeconstruct.lua
+            Function=GetDescription
+            _healthOrbType=""
+            _chanceToDrop={
+                0.025,
+                0.050000001,
+                0.1,
+                0.15000001,
+                0.2,
+                0.25
+            }
+    }
 SmallerIsBetter=0
 RoundTo=0.1
 RoundingMode=RM_ROUND
@@ -43,36 +43,36 @@ ArtifactPolarity=AP_ATTACK
 BaseDrain=QA_MEDIUM
 ModSet=SynthSetMod
 Ability={
-Script={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/SynthDeconstruct.lua
-Function=ActivateAbility
-_healthOrbType=/Lotus/Types/PickUps/HealthIncrease
-_chanceToDrop={
-0.025,
-0.050000001,
-0.1,
-0.15000001,
-0.2,
-0.25
-}
+    Script={
+        Script=/Lotus/Types/Sentinels/SentinelAbilities/SynthDeconstruct.lua
+        Function=ActivateAbility
+        _healthOrbType=/Lotus/Types/PickUps/HealthIncrease
+        _chanceToDrop={
+            0.025,
+            0.050000001,
+            0.1,
+            0.15000001,
+            0.2,
+            0.25
+        }
 }
 AbilityEvents={
-{
-tag=SentinelHit
-eventType=ET_ON_HIT
-scriptInstance={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/SynthDeconstruct.lua
-Function=OnHit
-_healthOrbType=/Lotus/Types/PickUps/HealthIncrease
-_chanceToDrop={
-0.025,
-0.050000001,
-0.1,
-0.15000001,
-0.2,
-0.25
-}
-}
+    {
+        tag=SentinelHit
+        eventType=ET_ON_HIT
+        scriptInstance={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/SynthDeconstruct.lua
+            Function=OnHit
+            _healthOrbType=/Lotus/Types/PickUps/HealthIncrease
+            _chanceToDrop={
+                0.025,
+                0.050000001,
+                0.1,
+                0.15000001,
+                0.2,
+                0.25
+            }
+    }
 }
 }
 EnergyRequiredToActivate=0

@@ -1,2 +1,45 @@
-/Lotus/Upgrades/Mods/Warframe/Beginner/AvatarPowerToHealthOnDeathModBeginner
-patch not applied (yet)
+>/Lotus/Upgrades/Mods/Warframe/Beginner/AvatarPowerToHealthOnDeathModBeginner
+Upgrades={
+    {
+        UpgradeType=GAMEPLAY_POWER_TO_HEALTH_ON_DEATH
+        OperationType=ADD
+        Value=0.2
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/PowerToHealthOnDeath
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
+            Function=GetDescriptionInfo
+            _displayAsPercent={
+                1
+            }
+        _absoluteValue={
+            0
+        }
+    _maxDecimals={
+        -1
+    }
+_addPlusses={
+    0
+}
+_multiplyDown={
+    0
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+}
+}
+BaseDrain=QA_MEDIUM
+FusionLimit=QA_MEDIUM
+IncludeInBoosterPack=0
+IsStarter=1

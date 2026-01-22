@@ -1,51 +1,51 @@
-/Lotus/Powersuits/Tengu/DiveBombAugmentCard
+>/Lotus/Powersuits/Tengu/DiveBombAugmentCard
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Suits/ZephyrTailWindAbilityAugment1Name
 Icon=/Lotus/Interface/Cards/Images/AbilityAugments/ZephyDivebombAugment1.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=AVATAR_ABILITY_AUGMENT
-    OperationType=ADD
-    Value=1
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=AUGMENT_ONE
-    UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/TailWindAbility
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Suits/ZephyrTailWindAbilityAugment1Desc
-    LocKeyWordScript={
-    Script=/Lotus/Powersuits/PowersuitAbilities/TailWind.lua
-    Function=GetAugmentDescriptionInfo
-    _inputFilter=""
-    _duviriInputFilter=""
-    _dashStartAnim=""
-    _dashLoopAnim=""
-    _dashFinishAnim=""
-    _sprintProjector=""
-    _expfx=""
-    _heavyBombAnim=""
-    _bombAnim=""
-    _heavyBombEndAnim=""
-    _bombEndAnim=""
-    _attachEffect=""
-    _primeAttach=""
-    _blastEffect=""
-    _fizzleEffect=""
-    _fallImpactEffect=""
-    _bombSound=""
-    _bombDiveSound=""
-    _hoverEffect=""
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
+    {
+        UpgradeType=AVATAR_ABILITY_AUGMENT
+        OperationType=ADD
+        Value=1
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=AUGMENT_ONE
+        UpgradeObject=/Lotus/Powersuits/PowersuitAbilities/TailWindAbility
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Suits/ZephyrTailWindAbilityAugment1Desc
+        LocKeyWordScript={
+            Script=/Lotus/Powersuits/PowersuitAbilities/TailWind.lua
+            Function=GetAugmentDescriptionInfo
+            _inputFilter=""
+            _duviriInputFilter=""
+            _dashStartAnim=""
+            _dashLoopAnim=""
+            _dashFinishAnim=""
+            _sprintProjector=""
+            _expfx=""
+            _heavyBombAnim=""
+            _bombAnim=""
+            _heavyBombEndAnim=""
+            _bombEndAnim=""
+            _attachEffect=""
+            _primeAttach=""
+            _blastEffect=""
+            _fizzleEffect=""
+            _fallImpactEffect=""
+            _bombSound=""
+            _bombDiveSound=""
+            _hoverEffect=""
+        }
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
 }
 }
 ArtifactPolarity=AP_POWER

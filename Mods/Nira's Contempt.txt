@@ -1,59 +1,59 @@
-/Lotus/Upgrades/Mods/Sets/Nira/NiraMeleeMod
+>/Lotus/Upgrades/Mods/Sets/Nira/NiraMeleeMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/NiraMeleeMod
 Icon=/Lotus/Interface/Cards/Images/Sets/Nira/NiraMeleeMod.png
 ExcludeFromCodex=0
 CompatibilityTags={
-WHIPS_STANCE
+    WHIPS_STANCE
 }
 Upgrades={
-{
-UpgradeType=WEAPON_MELEE_DAMAGE
-OperationType=STACKING_MULTIPLY
-Value=0.15000001
-DamageType=DT_ANY
-AutoType=1
-ValidType=""
-CheckTypeOnInstall=0
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/MeleeDamageBuffDesc
-LocKeyWordScript={
-Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=WEAPON_MELEE_DAMAGE
+        OperationType=STACKING_MULTIPLY
+        Value=0.15000001
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/MeleeDamageBuffDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 },
 {
-UpgradeType=WEAPON_PROC_CHANCE
-OperationType=STACKING_MULTIPLY
-Value=0.1
-DamageType=DT_ANY
-AutoType=1
-ValidType=""
-CheckTypeOnInstall=0
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=/Lotus/Language/Upgrades/StatusChance
-LocKeyWordScript={
-Script=""
-}
+    UpgradeType=WEAPON_PROC_CHANCE
+    OperationType=STACKING_MULTIPLY
+    Value=0.1
+    DamageType=DT_ANY
+    AutoType=1
+    ValidType=""
+    CheckTypeOnInstall=0
+    SymbolFilter=""
+    UpgradeObject=""
+    ValidPostures={}
+    ValidModifiers={}
+    InvalidModifiers={}
+    ValidProcTypes={}
+    OverrideLocalization=1
+    LocTag=/Lotus/Language/Upgrades/StatusChance
+    LocKeyWordScript={
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0
@@ -67,7 +67,7 @@ ArtifactPolarity=AP_ATTACK
 BaseDrain=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
 IncompatibilityTags={
-POWER_WEAPON
+    POWER_WEAPON
 }
 ItemCompatibilityLocOverride=/Lotus/Language/Items/WhipsCategoryName
 ModSet=NiraSetMod

@@ -1,4 +1,4 @@
-/Lotus/Upgrades/CosmeticEnhancers/Offensive/PrimaryDamagePerAmmoOnReload
+>/Lotus/Upgrades/CosmeticEnhancers/Offensive/PrimaryDamagePerAmmoOnReload
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Upgrades/PrimaryDamagePerAmmoOnReload
@@ -31,20 +31,20 @@ Upgrades={
             _damagePerStack={
                 0.15000001
             }
-            _durations={
-                3,
-                4,
-                5,
-                6,
-                8,
-                10
-            }
+        _durations={
+            3,
+            4,
+            5,
+            6,
+            8,
+            10
         }
-        SmallerIsBetter=0
-        RoundTo=0.0099999998
-        RoundingMode=RM_ROUND
-        AllowConditionalLocMerge=0
-    }
+}
+SmallerIsBetter=0
+RoundTo=0.0099999998
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+}
 }
 ExtraUpgradeFusionLevel=QA_HIGH
 FusionLimit=QA_HIGH
@@ -60,14 +60,14 @@ Script={
     _damagePerStack={
         0.15000001
     }
-    _durations={
-        3,
-        4,
-        5,
-        6,
-        8,
-        10
-    }
+_durations={
+    3,
+    4,
+    5,
+    6,
+    8,
+    10
+}
 }
 HudBuffIcon=/Lotus/Interface/Icons/ModBuffIndicators/ArcaneBuffs/ArcaneProjectionCHBuff.png
 BaseDistillPointValue=24

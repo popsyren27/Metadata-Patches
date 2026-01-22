@@ -1,36 +1,36 @@
-/Lotus/Upgrades/Mods/Warframe/AvatarParryReflectMod
+>/Lotus/Upgrades/Mods/Warframe/AvatarParryReflectMod
 Rarity=UNCOMMON
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/WarframeModParryReflect
 Icon=/Lotus/Interface/Cards/Images/AvatarMods/AvatarParryReflectMod.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=WEAPON_PARRY_COUNTER_CHANCE_STAGGER
-    OperationType=ADD
-    Value=0.066600002
-    DamageType=DT_ANY
-    AutoType=0
-    ValidType=/Lotus/Types/Game/LotusMeleeWeapon
-    CheckTypeOnInstall=0
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/ChanceToStaggerOnBlockDesc
-    LocKeyWordScript={
-    Script=""
-}
-DisplayAsMultiplier=0
-DisplayAsPercent=1
-ReverseValueSymbol=0
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
+    {
+        UpgradeType=WEAPON_PARRY_COUNTER_CHANCE_STAGGER
+        OperationType=ADD
+        Value=0.066600002
+        DamageType=DT_ANY
+        AutoType=0
+        ValidType=/Lotus/Types/Game/LotusMeleeWeapon
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/ChanceToStaggerOnBlockDesc
+        LocKeyWordScript={
+            Script=""
+        }
+    DisplayAsMultiplier=0
+    DisplayAsPercent=1
+    ReverseValueSymbol=0
+    SmallerIsBetter=0
+    RoundTo=0.1
+    RoundingMode=RM_ROUND
+    AllowConditionalLocMerge=0
 },
 {
     UpgradeType=WEAPON_PARRY_COUNTER_CHANCE_STUN
@@ -49,8 +49,8 @@ AllowConditionalLocMerge=0
     OverrideLocalization=1
     LocTag=/Lotus/Language/Upgrades/ChanceToStunOnBlockDesc
     LocKeyWordScript={
-    Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=1
 ReverseValueSymbol=0

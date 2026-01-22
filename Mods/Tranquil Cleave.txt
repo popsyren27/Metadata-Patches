@@ -1,4 +1,4 @@
-/Lotus/Weapons/Tenno/Melee/MeleeTrees/KatanaCmbOneMeleeTree
+>/Lotus/Weapons/Tenno/Melee/MeleeTrees/KatanaCmbOneMeleeTree
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/KatanaStanceA
@@ -8,8 +8,8 @@ ExcludeFromCodex=0
 ArtifactPolarity=AP_ATTACK
 IncludeInBoosterPack=1
 EquippedAttackSets={
-CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaBranchADefaults
-CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaEquippedDefaults
-CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaBranchBDefaults
-CC_GROUND_BRANCH_C=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaBranchCDefaults
+    CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaBranchADefaults
+    CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaEquippedDefaults
+    CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaBranchBDefaults
+    CC_GROUND_BRANCH_C=/Lotus/Weapons/Tenno/Melee/AttackSets/KatanaBranchCDefaults
 }

@@ -1,4 +1,4 @@
-/Lotus/Weapons/Tenno/Melee/MeleeTrees/SawBladeCmbOneMeleeTree
+>/Lotus/Weapons/Tenno/Melee/MeleeTrees/SawBladeCmbOneMeleeTree
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Mods/BladeSawMeleeTreeAName
@@ -7,13 +7,13 @@ Icon=/Lotus/Interface/Cards/Images/Stances/SawBladeCmbOne.png
 RectangleIcon=0
 ExcludeFromCodex=0
 CompatibilityTags={
-BLADESAW_STANCE
+    BLADESAW_STANCE
 }
 ArtifactPolarity=AP_TACTIC
 ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
 EquippedAttackSets={
-CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/SawBladeNeutralCombo
-CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/SawBladeForwardCombo
-CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/SawBladeForwardBlockCombo
-CC_GROUND_BRANCH_C=/Lotus/Weapons/Tenno/Melee/AttackSets/SawBladeNeutralBlockCombo
+    CC_GROUND=/Lotus/Weapons/Tenno/Melee/AttackSets/SawBladeNeutralCombo
+    CC_GROUND_BRANCH_A=/Lotus/Weapons/Tenno/Melee/AttackSets/SawBladeForwardCombo
+    CC_GROUND_BRANCH_B=/Lotus/Weapons/Tenno/Melee/AttackSets/SawBladeForwardBlockCombo
+    CC_GROUND_BRANCH_C=/Lotus/Weapons/Tenno/Melee/AttackSets/SawBladeNeutralBlockCombo
 }

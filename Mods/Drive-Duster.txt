@@ -1,4 +1,4 @@
-/Lotus/Upgrades/Mods/Immortal/AntivirusFiveMod
+>/Lotus/Upgrades/Mods/Immortal/AntivirusFiveMod
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/1999Coda/AntivirusFiveModName
 LocalizeDescTag=/Lotus/Language/1999Coda/AntivirusFiveModDesc

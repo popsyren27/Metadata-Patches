@@ -1,14 +1,54 @@
-/Lotus/Upgrades/Mods/Melee/WeaponPowerDamageMod
+>/Lotus/Upgrades/Mods/Melee/WeaponPowerDamageMod
 Rarity=RARE
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Items/MeleeModPowerDmgBonus
 Icon=/Lotus/Interface/Cards/Images/Melee/MeleeChannel.png
 ExcludeFromCodex=0
 Upgrades={
+    {
+        UpgradeType=WEAPON_POWER_DAMAGE_MULTIPLIER
+        OperationType=SET
+        Value=0.5
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        CheckTypeOnInstall=0
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/EnergyChannelDesc
+        LocKeyWordScript={
+            Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
+            Function=GetDescriptionInfo
+            _displayAsPercent={
+                1
+            }
+        _absoluteValue={
+            0
+        }
+    _maxDecimals={
+        -1
+    }
+_addPlusses={
+    0
+}
+_multiplyDown={
+    0
+}
+}
+SmallerIsBetter=0
+RoundTo=0.1
+RoundingMode=RM_ROUND
+AllowConditionalLocMerge=0
+},
 {
-    UpgradeType=WEAPON_POWER_DAMAGE_MULTIPLIER
-    OperationType=SET
-    Value=0.5
+    UpgradeType=WEAPON_POWER_DAMAGE_MAX
+    OperationType=ADD
+    Value=50
     DamageType=DT_ANY
     AutoType=1
     ValidType=""
@@ -20,50 +60,10 @@ Upgrades={
     InvalidModifiers={}
     ValidProcTypes={}
     OverrideLocalization=1
-    LocTag=/Lotus/Language/Upgrades/EnergyChannelDesc
+    LocTag=""
     LocKeyWordScript={
-    Script=/Lotus/Scripts/Mods/ModDescriptionStats.lua
-    Function=GetDescriptionInfo
-    _displayAsPercent={
-    1
-}
-_absoluteValue={
-0
-}
-_maxDecimals={
--1
-}
-_addPlusses={
-0
-}
-_multiplyDown={
-0
-}
-}
-SmallerIsBetter=0
-RoundTo=0.1
-RoundingMode=RM_ROUND
-AllowConditionalLocMerge=0
-},
-{
-UpgradeType=WEAPON_POWER_DAMAGE_MAX
-OperationType=ADD
-Value=50
-DamageType=DT_ANY
-AutoType=1
-ValidType=""
-CheckTypeOnInstall=0
-SymbolFilter=""
-UpgradeObject=""
-ValidPostures={}
-ValidModifiers={}
-InvalidModifiers={}
-ValidProcTypes={}
-OverrideLocalization=1
-LocTag=""
-LocKeyWordScript={
-Script=""
-}
+        Script=""
+    }
 DisplayAsMultiplier=0
 DisplayAsPercent=0
 ReverseValueSymbol=0
@@ -78,7 +78,7 @@ BaseDrain=QA_MEDIUM
 FusionLimit=QA_MEDIUM
 ItemCompatibility=/Lotus/Weapons/Tenno/Melee/PlayerMeleeWeapon
 IncompatibilityTags={
-SENTINEL_WEAPON,
-HOUND_WEAPON
+    SENTINEL_WEAPON,
+    HOUND_WEAPON
 }
 IncludeInBoosterPack=1

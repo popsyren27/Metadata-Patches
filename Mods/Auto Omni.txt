@@ -1,38 +1,38 @@
-/Lotus/Types/Sentinels/SentinelPrecepts/RepairShip
+>/Lotus/Types/Sentinels/SentinelPrecepts/RepairShip
 MarketMode=MM_HIDDEN
 LocalizeTag=/Lotus/Language/Pets/RepairShipPreceptName
 LocalizeDescTag=""
 Icon=/Lotus/Interface/Cards/Images/Pets/SentinelRepairShip.png
 ExcludeFromCodex=0
 Upgrades={
-{
-    UpgradeType=NONE
-    OperationType=ADD
-    Value=0
-    DamageType=DT_ANY
-    AutoType=1
-    ValidType=""
-    SymbolFilter=""
-    UpgradeObject=""
-    ValidPostures={}
-    ValidModifiers={}
-    InvalidModifiers={}
-    ValidProcTypes={}
-    OverrideLocalization=1
-    LocTag=/Lotus/Language/Pets/RepairShipPreceptDesc
-    LocKeyWordScript={
-    Script=/Lotus/Types/Sentinels/SentinelAbilities/RepairShip.lua
-    Function=GetDescriptionInfo
-    _repairChance={
-    0.17,
-    0.34,
-    0.50999999,
-    0.68000001,
-    0.85000002,
-    1
-}
-_repairBeam=""
-}
+    {
+        UpgradeType=NONE
+        OperationType=ADD
+        Value=0
+        DamageType=DT_ANY
+        AutoType=1
+        ValidType=""
+        SymbolFilter=""
+        UpgradeObject=""
+        ValidPostures={}
+        ValidModifiers={}
+        InvalidModifiers={}
+        ValidProcTypes={}
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Pets/RepairShipPreceptDesc
+        LocKeyWordScript={
+            Script=/Lotus/Types/Sentinels/SentinelAbilities/RepairShip.lua
+            Function=GetDescriptionInfo
+            _repairChance={
+                0.17,
+                0.34,
+                0.50999999,
+                0.68000001,
+                0.85000002,
+                1
+            }
+        _repairBeam=""
+    }
 SmallerIsBetter=0
 RoundTo=0.1
 RoundingMode=RM_ROUND
@@ -40,18 +40,18 @@ RoundingMode=RM_ROUND
 }
 ItemCompatibility=/Lotus/Types/Sentinels/SentinelPowersuits/EmpyreanSentinelBasePowerSuit
 Ability={
-Script={
-Script=/Lotus/Types/Sentinels/SentinelAbilities/RepairShip.lua
-Function=NpcEvaluateAbility
-_repairChance={
-0.17,
-0.34,
-0.50999999,
-0.68000001,
-0.85000002,
-1
-}
-_repairBeam=/Lotus/Fx/Weapons/Corpus/FreezeRay/FreezeRayBeam
+    Script={
+        Script=/Lotus/Types/Sentinels/SentinelAbilities/RepairShip.lua
+        Function=NpcEvaluateAbility
+        _repairChance={
+            0.17,
+            0.34,
+            0.50999999,
+            0.68000001,
+            0.85000002,
+            1
+        }
+    _repairBeam=/Lotus/Fx/Weapons/Corpus/FreezeRay/FreezeRayBeam
 }
 CooldownDuration=20
 EnergyRequiredToActivate=0

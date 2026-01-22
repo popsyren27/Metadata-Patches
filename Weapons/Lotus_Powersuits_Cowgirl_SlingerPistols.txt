@@ -1,2 +1,0 @@
-/Lotus/Powersuits/Cowgirl/SlingerPistols
-MarketMode=MM_HIDDEN

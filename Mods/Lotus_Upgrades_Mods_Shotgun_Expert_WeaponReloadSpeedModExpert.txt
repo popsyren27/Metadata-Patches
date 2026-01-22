@@ -1,2 +1,0 @@
-/Lotus/Upgrades/Mods/Shotgun/Expert/WeaponReloadSpeedModExpert
-patch not applied (yet)
